@@ -17,5 +17,41 @@ mixin header-arrow-svg
 
 
 mixin arrow-right 
-  svg(width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+  svg(class=attributes.class width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
     path(d='M6.25 17.5L13.75 10L6.25 2.5' stroke='white' stroke-width='1.5')
+
+
+mixin column-svg 
+    svg(class=attributes.class width='361' height='559' viewBox='0 0 361 559' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M361 154.56L0 0V1401H361V154.56Z' fill='url(#paint0_linear_906_5834)')
+        defs
+            lineargradient#paint0_linear_906_5834(x1='180.5' y1='0' x2='180.5' y2='915.837' gradientUnits='userSpaceOnUse')
+                stop(stop-color='#BEF0D7')
+                stop(offset='0.598958' stop-color='#B6EBC9' stop-opacity='0')
+mixin column-small-svg 
+    svg(class=attributes.class width='140' height='359' viewBox='0 0 140 359' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M140 59.5733L0 0V540H140V59.5733Z' fill='url(#paint0_linear_906_5835)')
+        defs
+            lineargradient#paint0_linear_906_5835(x1='70' y1='0' x2='70' y2='671.734' gradientUnits='userSpaceOnUse')
+                stop(stop-color='#BEF0D7')
+                stop(offset='0.608311' stop-color='#B6EBC9' stop-opacity='0')
+
+
+
+mixin double-column-svg 
+    svg(class=attributes.class width='363' height='124' viewBox='0 0 363 124' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M202.679 91.5958L0 0L0 524.209H202.679L202.679 91.5958Z' fill='#F4F4F4')
+        path(d='M363.001 128.759L201.68 55.8286L201.68 473.214H363.001V128.759Z' fill='#F4F4F4')
+
+mixin column-top-svg 
+    svg(class=attributes.class width='158' height='129' viewBox='0 0 158 129' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M158 61.6651L0 129V0H158V61.6651Z' fill='url(#paint0_linear_906_5902)')
+        defs
+            lineargradient#paint0_linear_906_5902(x1='79' y1='129' x2='79' y2='-31.4698' gradientUnits='userSpaceOnUse')
+                stop(stop-color='#BAF2CD')
+                stop(offset='0.744792' stop-color='#BAF2CD' stop-opacity='0')
+
+
+mixin mark-text-svg 
+    svg(class=attributes.class width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M2.99951 9.79102L7.99951 14.791L16.9995 5.79102' stroke='#045C25' stroke-width='1.66667')

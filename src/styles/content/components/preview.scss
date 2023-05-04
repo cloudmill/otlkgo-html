@@ -1,0 +1,104 @@
+.preview {
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+    height: 640px;
+    background: color(grey);
+
+  }
+
+  &__col-left {
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+  }
+
+  &__description {
+    margin-top: 32px;
+    max-width: 540px;
+
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: color(dark);
+  }
+
+  &__col-right {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: right;
+
+    color: color(dark);
+  }
+
+  &__job {
+    margin-top: 4px;
+
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+    color: color(alt-grey);
+    white-space: nowrap;
+  }
+
+  &__elem_1,
+  &__elem_2,
+  &__elem_3 {
+    position: absolute;
+  }
+
+  &__elem_1 {
+    top: 81px;
+
+    width: 361px;
+  }
+
+  &__elem_2 {
+    top: 281px;
+    right: 40px;
+
+    width: 140px;
+  }
+
+  &__elem_3 {
+    bottom: 0;
+    z-index: $index-1;
+  }
+
+  &__img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+.landscape-preview {
+  &__img {
+    margin-top: 19px;
+  }
+}
+
+.transit-preview {
+
+  &__img {
+    margin-top: 19px;
+  }
+}

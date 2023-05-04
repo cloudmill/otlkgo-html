@@ -1,0 +1,16 @@
+.button {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+
+  width: 64px;
+  height: 64px;
+
+  background: color(green);
+
+  &-svg {
+    @include absolute-center;
+    width: 20px;
+    height: 20px;
+  }
+}

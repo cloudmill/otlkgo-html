@@ -2,22 +2,27 @@
   &::-webkit-input-placeholder {
     @content;
   }
+
   &::-moz-placeholder {
     @content;
   }
-  &:-ms-input-placeholder{
+
+  &:-ms-input-placeholder {
     @content;
   }
+
   &:-moz-placeholder {
     @content;
   }
-  &::placeholder  {
+
+  &::placeholder {
     @content;
   }
 }
 
 @mixin fsl($font-size, $line-height: null) {
   font-size: unquote('#{calc($font-size / $fs)}rem');
+
   @if $line-height {
     line-height: $line-height / 100%;
   }
@@ -41,9 +46,9 @@
   scrollbar-track-color: $scrollbar-bg;
   scrollbar-darkshadow-color: $scrollbar-bg;
   scrollbar-3dlight-color: $scrollbar-bg;
-  
+
   scrollbar-arrow-color: color(green);
-  
+
   scrollbar-highlight-color: color(green);
   scrollbar-shadow-color: color(green);
   scrollbar-face-color: color(green);
@@ -56,9 +61,11 @@
   &::-webkit-scrollbar {
     width: $size;
   }
+
   &::-webkit-scrollbar-track {
     background-color: $scrollbar-bg;
   }
+
   &::-webkit-scrollbar-thumb {
     // margin: 4px 0;
     background-color: color(green);
@@ -75,4 +82,11 @@
   box-orient: vertical;
   -webkit-line-clamp: $lineCount;
   line-clamp: $lineCount;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

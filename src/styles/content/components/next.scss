@@ -1,0 +1,67 @@
+.next {
+  margin-top: 100px;
+  overflow: hidden;
+
+  &__inner {
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    height: 400px;
+
+
+    background: color(light-green);
+  }
+
+  &__text {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: color(green);
+  }
+
+  &__title {
+    margin-top: 20px;
+
+    max-width: 600px;
+
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: color(white);
+  }
+
+  &__number {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    z-index: $index-1;
+
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 300px;
+    line-height: 80%;
+    letter-spacing: -0.03em;
+    background: linear-gradient(180deg, #006525 0%, #35CA76 95.26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    // text-fill-color: transparent;
+  }
+
+  &-svg {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 356px;
+
+  }
+
+}

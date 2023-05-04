@@ -1,4 +1,3 @@
-
 // fonts
 $fs: 16px;
 
@@ -17,30 +16,42 @@ $breakpoints: (
   xs: 375px,
   xxs: 320px,
 );
+
 @function breakpoint($variant: d) {
   @return map.get($breakpoints, $variant);
 }
+
 @function media($direction: ">", $variant: d) {
-  @if $direction == ">" {
+  @if $direction ==">" {
     @return "(min-width: #{breakpoint($variant)})";
-  } @else if $direction == "<" {
+  }
+
+  @else if $direction =="<" {
     @return "(max-width: #{breakpoint($variant) - 1px})";
-  } @else if $direction == "<=" {
+  }
+
+  @else if $direction =="<=" {
     @return "(max-width: #{breakpoint($variant)})";
-  } @else if $direction == "mt" {
+  }
+
+  @else if $direction =="mt" {
     @return "(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(t) - 1px})";
-  } @else if $direction == "td" {
+  }
+
+  @else if $direction =="td" {
     @return "(min-width: #{breakpoint(t)}) and (max-width: #{breakpoint(d) - 1px})";
-  } @else if $direction == "md" {
+  }
+
+  @else if $direction =="md" {
     @return "(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(d) - 1px})";
   }
 }
 
 // colors
 $colors: (
-  black: #2A2E2B,
+  dark: #2A2E2B,
   white: #fff,
-  total-black: #181D1D,
+  black: #181D1D,
   grey: #F4F4F4,
   alt-grey: #727A75,
   green: #045C25,
@@ -48,6 +59,7 @@ $colors: (
   borders: #E8E8E8,
 
 );
+
 @function color($variant: black) {
   @return map.get($colors, $variant);
 }
@@ -74,3 +86,18 @@ $col-part-d: '(#{$col-width-d} + #{$col-gap-d})';
 $transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 $transition-duration: .5s;
 $transition: $transition-duration $transition-timing-function;
+
+
+
+// transitions
+$transition: .3s;
+
+
+//z-index 
+$index-1: 1; //Для наподзающих элементов в общем потоке 
+$index-2: 2; //Для наподзающих элементов в общем потоке 
+$index-3: 3; //Для наползающих элементов вне потока 
+$index-4: 4; //Для масок 
+$index-5: 5; //Для оверлея 
+$index-6: 6; //Для сайдбаров 
+$index-7: 7; //Для элементов, перекрывающих все

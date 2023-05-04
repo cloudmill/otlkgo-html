@@ -1,0 +1,301 @@
+.strategy-ticket {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  padding: 30px;
+
+  width: 560px;
+  height: 208px;
+
+
+  border: 2px solid #69DA91;
+  overflow: hidden;
+
+  &__title {
+    z-index: $index-1;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: color(dark);
+
+  }
+
+  &__text {
+    z-index: $index-1;
+
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: color(dark);
+
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}
+
+.strategy-cards {
+  margin-top: 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.strategy-stakeholder {
+  margin-top: 100px;
+
+  &__inner {}
+
+  &__box {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+}
+
+.strategy-card {
+  padding: 25px;
+  position: relative;
+
+  width: 292px;
+  height: 258px;
+
+  border: 1.10476px solid #E8E8E8;
+
+  &_small {
+    height: 154px;
+    border-top: 0;
+  }
+
+  &__text {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: color(dark);
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 44.2px;
+    height: 44.2px;
+
+    border: 1.10476px solid #E8E8E8;
+    border-right: 0;
+    border-bottom: 0;
+
+    p {
+      @include absolute-center;
+      font-family: 'Halvar Breitschrift';
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 80%;
+      letter-spacing: -0.08em;
+      background: linear-gradient(180deg, #045C25 16.15%, rgba(85, 222, 145, 0.37) 79.17%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
+
+.strategy-principles {
+  margin-top: 100px;
+
+
+  &__inner {
+    border-top: 1px solid #69DA91;
+    padding-top: 20px;
+  }
+
+  &__box {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .row {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__subtitle {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__description {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: color(dark);
+  }
+
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+  }
+
+  &-svg {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #2A2E2B;
+  }
+}
+
+.strategy-mechanism {
+  display: block;
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+}
+
+.strategy-iter {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+
+  &__box {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  &__text {
+    max-width: 561px;
+  }
+}
+
+.strategy-partners {
+  margin-top: 100px;
+
+  .col {
+    width: 50%;
+  }
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__text {
+    margin-top: 40px;
+
+    max-width: 561px;
+  }
+}
+
+.strategy-cargo {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__text {
+    margin-top: 40px;
+
+    max-width: 561px;
+  }
+}
+
+.strategy-cooperation {
+  margin-top: 100px;
+
+  .col {
+    width: 50%;
+  }
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+
+  &__box {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  &__list {}
+
+  &__item {
+    display: flex;
+    gap: 8px;
+
+    p {
+      font-family: 'Manrope';
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: color(dark);
+    }
+  }
+
+
+  &-svg {
+    flex-shrink: 0;
+  }
+}
