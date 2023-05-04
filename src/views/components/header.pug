@@ -1,3 +1,26 @@
 mixin header
   header.header
-    |header
+    .header-container
+      .header-col 
+        .header-burger 
+          .header-burger__content 
+            .header-burger__content-line 
+            .header-burger__content-line 
+            .header-burger__content-line 
+        .header-logo 
+          +header-logo-svg 
+        .header-title Человек как 
+          span.header-title__green главная ценность
+        .header-text 
+          .header-text__top годовой отчет 2022
+          .header-text__bot стратегический отчет
+      .header-col
+        .header-actions
+          .header-actions__item 
+            .header-actions__item-icon 
+              +search-normal-svg
+          .header-actions__item
+            .header-actions__item-text EN
+            .header-actions__item-arrow
+              +header-arrow-svg
+          .header-actions__item
