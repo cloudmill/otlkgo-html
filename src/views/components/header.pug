@@ -2,7 +2,7 @@ mixin header
   header.header
     .header-container
       .header-col 
-        .header-burger 
+        .header-burger(data-header-burger) 
           .header-burger__content 
             .header-burger__content-line 
             .header-burger__content-line 
@@ -18,9 +18,97 @@ mixin header
         .header-actions
           .header-actions__item 
             .header-actions__item-icon 
-              +search-normal-svg
+              +search-normal-svg.search
           .header-actions__item
-            .header-actions__item-text EN
-            .header-actions__item-arrow
-              +header-arrow-svg
+            .header-actions__item-row
+              .header-actions__item-text EN
+              .header-actions__item-icon
+                +header-arrow-svg.arrow
           .header-actions__item
+            .header-actions__item-row
+              .header-actions__item-icon
+                +header-download-svg.download
+              .header-actions__item-text.dark PDF
+      .header-menu(data-header-menu) 
+        .header-menu__title годовой отчет 2022
+        .header-menu__list 
+          .header-menu__item(data-header-item="about")
+            .header-menu__item-text О компании
+            .header-menu__item-num 1
+          .header-menu__item(data-header-item="strategy")
+            .header-menu__item-text Стратегический <br>отчет
+            .header-menu__item-num 2
+          .header-menu__item
+            .header-menu__item-text Результаты <br>деятельности
+            .header-menu__item-num 3
+          .header-menu__item
+            .header-menu__item-text Устойчивое <br>развитие
+            .header-menu__item-num 4
+          .header-menu__item
+            .header-menu__item-text Корпоративное <br>управление
+            .header-menu__item-num 5
+          .header-menu__item
+            .header-menu__item-text Приложения
+            .header-menu__item-num 6
+        .header-menu__code 
+          +header-qr-svg
+      .header-sub(data-header-sub="about") 
+        .header-sub__list 
+          .header-sub__item 
+            .header-sub__item-title ОТЛК ЕРА. Кто мы?
+            .header-sub__item-subsection Новые горизонты
+          .header-sub__item 
+            .header-sub__item-title Справка о Компании
+            .header-sub__item-subsection Наша миссия
+          .header-sub__item 
+            .header-sub__item-title Десять достижений 2022 года
+          .header-sub__item 
+            .header-sub__item-title Об отчете
+          .header-sub__item 
+            .header-sub__item-title Обращение Генерального <br>директора
+          .header-sub__item 
+            .header-sub__item-title Обращение председателя <br>Совета Директоров
+          .header-sub__item 
+            .header-sub__item-title Календарь событий 2022
+          .header-sub__item 
+            .header-sub__item-title Ключевые показатели 
+          .header-sub__item 
+            .header-sub__item-title Бизнес–модель
+          .header-sub__item 
+            .header-sub__item-title География деятельности
+          .header-sub__item 
+            .header-sub__item-title Противодействие коррупции
+            .header-sub__item-subsection Задачи антикоррупционной политики
+            .header-sub__item-subsection Принципы безопасности 
+            .header-sub__item-subsection Система проверки контрагентов
+      .header-sub(data-header-sub="strategy") 
+        .header-sub__list 
+          .header-sub__item 
+            .header-sub__item-title ОТЛК ЕРА. Кто мы?
+            .header-sub__item-subsection Новые горизонты
+          .header-sub__item 
+            .header-sub__item-title Справка о Компании
+            .header-sub__item-subsection Наша миссия
+          .header-sub__item 
+            .header-sub__item-title Десять достижений 2022 года
+          .header-sub__item 
+            .header-sub__item-title Об отчете
+          .header-sub__item 
+            .header-sub__item-title Обращение Генерального <br>директора
+          .header-sub__item 
+            .header-sub__item-title Обращение председателя <br>Совета Директоров
+          .header-sub__item 
+            .header-sub__item-title Календарь событий 2022
+          .header-sub__item 
+            .header-sub__item-title Ключевые показатели 
+          .header-sub__item 
+            .header-sub__item-title Бизнес–модель
+          .header-sub__item 
+            .header-sub__item-title География деятельности
+          .header-sub__item 
+            .header-sub__item-title Противодействие коррупции
+            .header-sub__item-subsection Задачи антикоррупционной политики
+            .header-sub__item-subsection Принципы безопасности 
+            .header-sub__item-subsection Система проверки контрагентов
+
+
