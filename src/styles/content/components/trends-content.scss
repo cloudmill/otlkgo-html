@@ -1,0 +1,121 @@
+.trends-market {
+  margin-top: 100px;
+
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+  }
+
+  &__box {
+    margin-top: 40px;
+    display: flex;
+
+    .col {
+      &:nth-child(1) {}
+    }
+  }
+
+  &__description {
+    width: 374px;
+
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__item {
+    margin-top: 40px;
+    padding-top: 12px;
+
+    width: 360px;
+
+    border-top: 1px solid color(green);
+
+    .row {
+      display: flex;
+
+      gap: 8px;
+
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__number {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80%;
+    letter-spacing: -0.08em;
+    color: color(green);
+  }
+
+  &__grey {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    color: color(alt-grey);
+  }
+
+  &__sub {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: color(alt-grey);
+
+  }
+
+}
+
+.trends-volume {
+  margin-top: 100px;
+
+
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+
+  }
+
+  &__svg {
+    margin-top: 44px;
+  }
+
+  &__links {
+    margin-top: 20px;
+  }
+
+  .row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__text {
+    &:nth-child(1) {
+      width: 460px;
+    }
+
+    &:nth-child(2) {
+      width: 560px;
+    }
+  }
+}
+
+.trends-dynamic {
+  margin-top: 100px;
+
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+
+  }
+
+}
