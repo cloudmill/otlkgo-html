@@ -23,7 +23,7 @@ mixin trends-content
         .trends-volume__svg 
           +trends-volume-svg 
         .links.trends-volume__links
-          p.links__text.trends-volume__links-text Источник:
+          p.links__text.trends-volume__links-text Источник:&nbsp;
           a(href="https://www.containerstatistics.com/").links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
         .row 
           .col 
@@ -35,7 +35,9 @@ mixin trends-content
       .trends-dynamic__inner 
         .row
           h6.trends-dynamic__title Динамика значений ставок WCI, 2021–2022 гг., $/СФЭ
-          a.link.trends-dynamic__link(href="https://www.drewry.co.uk/") Источник: <span>Drewry</span>
+          .links.trends-dynamic__links
+            p.links__text.trends-dynamic__links-text Источник: &nbsp;
+            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/")  Drewry
         .trends-dynamic__svg 
           +trends-dynamic-svg
         .row 
@@ -48,11 +50,11 @@ mixin trends-content
         .row
           h6.trends-rates__title Соотношение ставок WCI к ERAI по направлениям, 2020–2022 гг.
           .links.trends-rates__links
-            p.links__text.trends-rates__links-text Источники:
-            a.links__link.trends-rates__links-link  Drewry,
-            a.links__link.trends-rates__links-link ERAI
-          .trends-rates__svg 
-            +trends-rates-svg 
+            p.links__text.trends-rates__links-text Источники:&nbsp;
+            a.links__link.trends-rates__links-link(href='https://index1520.com/')  Drewry,&nbsp;
+            a.links__link.trends-rates__links-link(href='https://index1520.com/') ERAI
+        .trends-rates__svg 
+          +trends-rates-svg 
   section.trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -61,7 +63,7 @@ mixin trends-content
             h6.trends-demand__title Спрос на глобальные морские контейнерные перевозки, факт 2020–2022 гг., <br/> прогноз 2023–2026 гг., млн ДФЭ и %
           .col 
             .links.trends-demand__links 
-              p.links__text Источник:
+              p.links__text.trends-demand__links-text Источник:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/") Drewry
         .trends-demand__svg 
           +trends-demand-svg 
@@ -87,5 +89,5 @@ mixin trends-content
           .col 
             p.trends-forecast2__description По мнению участников рынка, спрос на грузовые авиаперевозки, вероятнее всего, будет находиться на пониженных уровнях в ближайшие месяцы, но некоторый рост возможен с первого полугодия 2023 года.
           .col 
-            p.trends-forecast2__text Осторожный оптимизм преимущественно связан с перспективой резкого подъема экономической активности в Китае. Тем не менее, неопределенность относительно будущих перспектив высока, как минимум из-за высоких запасов нереализованной продукции у ритейлеров в Европе, но также и из-за растущей конкуренции со стороны морских сервисов. Если работа в портах и соблюдение сроков доставки продолжат показывать улучшения, то это может привести еще к большему оттоку грузов в пользу морских перевозчиков. Также необходимо учитывать фактор транзитного времени. При текущих высоких запасах инвентаря в Европе у ритейлеров нет необходимости в быстром восполнении продукции, то есть ключевое преимущество авиаперевозок — скорость — не имеет сильной востребованности.
-            p.trends-forecast2__text Сокращение ставок авиа-сервисов, в свою очередь, может изменить ситуацию. Уровень предложения, вероятнее всего, продолжит восстанавливаться, что вкупе со слабыми ожиданиями по росту объемов перевозок может привести к снижению ставок в ближайшие кварталы. Таким образом, вероятно улучшение конкурентоспособности ставок на авиагрузоперевозки относительно железнодорожных за указанный период.
+            p.text.trends-forecast2__text Осторожный оптимизм преимущественно связан с перспективой резкого подъема экономической активности в Китае. Тем не менее, неопределенность относительно будущих перспектив высока, как минимум из-за высоких запасов нереализованной продукции у ритейлеров в Европе, но также и из-за растущей конкуренции со стороны морских сервисов. Если работа в портах и соблюдение сроков доставки продолжат показывать улучшения, то это может привести еще к большему оттоку грузов в пользу морских перевозчиков. Также необходимо учитывать фактор транзитного времени. При текущих высоких запасах инвентаря в Европе у ритейлеров нет необходимости в быстром восполнении продукции, то есть ключевое преимущество авиаперевозок — скорость — не имеет сильной востребованности.
+            p.text.trends-forecast2__text Сокращение ставок авиа-сервисов, в свою очередь, может изменить ситуацию. Уровень предложения, вероятнее всего, продолжит восстанавливаться, что вкупе со слабыми ожиданиями по росту объемов перевозок может привести к снижению ставок в ближайшие кварталы. Таким образом, вероятно улучшение конкурентоспособности ставок на авиагрузоперевозки относительно железнодорожных за указанный период.

@@ -118,4 +118,175 @@
 
   }
 
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__svg {
+    margin-top: 20px;
+  }
+
+  .row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 760px;
+  }
+
+}
+
+.trends-rates {
+  margin-top: 100px;
+
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+  }
+
+  &__title {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__svg {
+    margin-top: 20px;
+  }
+}
+
+.trends-demand {
+  margin-top: 100px;
+
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+  }
+
+  &__title {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__svg {
+    margin-top: 20px;
+  }
+}
+
+.trends-forecast {
+  margin-top: 100px;
+
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+  }
+
+  .row {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .col {
+    &:nth-child(1) {
+      padding-right: 40px;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__description {
+    width: 360px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__item {
+    margin-top: 40px;
+    padding-top: 12px;
+
+    width: 360px;
+
+    border-top: 1px solid color(light-green);
+  }
+
+  &__number {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80%;
+    letter-spacing: -0.08em;
+    color: color(light-green);
+  }
+
+  &__sub {
+    width: 291px;
+
+    margin-top: 20px;
+    font-family: 'Manrope';
+    font-size: 15px;
+    line-height: 160%;
+    color: color(alt-grey);
+
+  }
+
+
+}
+
+.trends-forecast2 {
+  margin-top: 100px;
+
+  .row {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .col {
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px
+    }
+  }
+
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+  }
+
+  &__description {
+    width: 360px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
 }

@@ -1,5 +1,6 @@
 .preview {
   overflow: hidden;
+  margin-top: 100px;
 
   &__inner {
     display: flex;
@@ -97,6 +98,7 @@
 }
 
 .transit-preview {
+  margin-top: 100px;
 
   &__img {
     margin-top: 19px;
