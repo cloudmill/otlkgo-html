@@ -1,5 +1,8 @@
 .preview {
   overflow: hidden;
+  &.preview-margin{
+    margin-bottom: 100px;
+  }
 
   &__inner {
     display: flex;
@@ -16,6 +19,8 @@
     justify-content: space-between;
 
     width: 50%;
+
+    
   }
 
   &__description {
@@ -30,8 +35,11 @@
   }
 
   &__col-right {
+    padding-left: 53.5px;
     position: relative;
     overflow: hidden;
+
+    
   }
 
   &__name {
@@ -80,6 +88,12 @@
   &__elem_3 {
     bottom: 0;
     z-index: $index-1;
+
+    &.hero-elem{
+      z-index: 4;
+      padding-left: 40px;
+      padding-top: 30px;
+    }
   }
 
   &__img {

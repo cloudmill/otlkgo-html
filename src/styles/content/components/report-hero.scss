@@ -1,0 +1,47 @@
+.report-hero{
+  position: relative;
+  margin-top: 84px;
+  margin-bottom: 20px;
+
+  width: 1440px;
+  height: 707px;
+
+  &__background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+  }
+
+  &__row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__col{
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  &__portrait{
+    position: absolute;
+    top: 60px;
+    left: 37px;
+    z-index: 2;
+    width: 691px;
+    height: 647px;
+    width: 100%;
+    height: auto;
+
+    picture{
+      width: 100%;
+      height: 100%;
+
+      img{
+        object-fit: cover;
+      }
+    }
+  }
+}
