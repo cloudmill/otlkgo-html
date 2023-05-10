@@ -1,0 +1,132 @@
+mixin profit-content 
+  section.profit
+    .container-content 
+      .profit__inner 
+        .col 
+          .item 
+            .item__row 
+              .item__col 
+                p.item__number 7 812
+              .item__col 
+                p.item__grey млн руб
+            .item__row 
+              p.item__subtext Показатель валовой прибыли ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 2%
+            .item__row 
+              p.text.item__text Валовая прибыль по итогам 2022 года составила 7 812 млн руб, что на 149 млн руб или 2% ниже аналогичного периода прошлого года. При этом в 2022 году растет рентабельность по валовой прибыли за счет опережающего снижения себестоимости благодаря мерам по оптимизации себестоимости, снижению среднегодового курса доллара США и начала применения ФСБУ 25/2018. 
+        .col  
+          .profit__img 
+            +picture('profit-content.png')
+  section.ebitda 
+    .container-content 
+      .ebitda__inner 
+        h2.ebtida__title EBITDA
+        .ebitda__row 
+          .col 
+            .item 
+              .item__row 
+                .item__col 
+                  p.item__number 6 461
+                .item__col 
+                  p.item__grey млн руб
+              .item__row 
+                p.item__subtext Показатель прибыли от продаж ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 5%
+              .item__row 
+                p.text.item__text Снижение прибыли от продаж обусловлено снижением валовой прибыли и ростом управленческих расходов.
+          .col 
+            .ebitda__img 
+              +picture('ebitda.png')
+  section.profit-net 
+    .container-content 
+      .profit-net__inner 
+        h2.profit-net__title Чистая прибыль 
+        .profit-net__row 
+          .col 
+            .item 
+              .item__row 
+                .item__col 
+                  p.item__number 6 123
+                .item__col 
+                  p.item__grey млн руб
+              .item__row 
+                p.item__subtext Показатель EBITDA ОТЛК ЕРА за 2022 год, что на 761 млн руб или 11% ниже уровня 2022 года
+              .item__row 
+                p.text.item__text Показатель EBITDA рассчитывается на основании формы 2 финансовой отчетности по РСБУ как прибыль до вычета амортизации, процентов и курсовых разниц в составе прочих доходов и расходов. 
+          .col 
+            +picture('pforit-net.png')
+  section.profit-reporting 
+    .container-content 
+      .profit-reporting__inner 
+        h2.profit-reporting__title Финансовая отчетность по МСФО
+        .profit-reporting__row 
+          .col 
+            p.profit-reporting__description Финансовая отчетность ОТЛК ЕРА по МСФО включает результаты деятельности компании по состоянию на 31 декабря 2022 года*.
+            p.profit-reporting__subtext * Относительно 2021 г.
+          .profit-reporting__column   
+            .row
+              .item 
+                .item__row 
+                  h6.item__title Доходы
+                .item__row 
+                  .item__col 
+                    p.item__number 55 375
+                  .item__col 
+                    p.item__grey млн руб
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -15%
+                .item__row 
+                  p.item__subtext Доходы ОТЛК ЕРА по итогам 2022 года уменьшились на 15% к уровню 2021 года до 55 375 млн руб, или на 9 470 млн руб
+              .item 
+                .item__row 
+                  h6.item__title Валовая прибыль
+                .item__row 
+                  .item__col 
+                    p.item__number 7 682
+                  .item__col 
+                    p.item__grey млн руб
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -11%
+                .item__row 
+                  p.item__subtext Валовая прибыль компании составила 7 682 млн руб, что на 11%, или 970 млн руб, ниже показателя 2021 года
+              .item 
+                .item__row 
+                  h6.item__title Операционная прибыль
+                .item__row 
+                  .item__col 
+                    p.item__number 6 327
+                  .item__col 
+                    p.item__grey млн руб
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -6%
+                .item__row 
+                  p.item__subtext Операционная прибыль составила 6 327 млн руб, что на 6%, или 407 млн руб, ниже аналогичного показателя 2021 года
+              .item 
+                .item__row 
+                  h6.item__title Чистая прибыль
+                .item__row 
+                  .item__col 
+                    p.item__number 4 761
+                  .item__col 
+                    p.item__grey млн руб
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -4%
+                .item__row 
+                  p.item__subtext Чистая прибыль достигла 4 761 млн руб, что на 4%, или 208 млн руб, ниже аналогичного показателя прошлого года
+            .profit-reporting__row_bottom 
+              .item 
+                .item__row 
+                  h6.item__title Чистый долг
+                .item__row 
+                  .item__col 
+                    p.item__number 2 742
+                  .item__col 
+                    p.item__grey млн руб
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -12%
+              p.text.profit-reporting__text Чистый долг составил 2 742 млн. рублей, что ниже показателя 2021 года на 12%, или 390 млн. рублей. Уменьшение чистого долга обусловлено ростом денежных средств и их эквивалентов.
+
+      

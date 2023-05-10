@@ -98,3 +98,37 @@ mixin preservation-preview
           +double-column-svg.preview__elem_3
           .preview__img 
             +picture('preservation-preview.png')
+
+mixin profit-preview
+  section.preview.profit-preview
+    .container 
+      .preview__inner
+        .preview__col-left
+          h2.preview__title Прибыль от продаж 
+          .row
+            p.preview__name Соловьева <br/>Екатерина Михайловна
+            p.preview__job Заместитель главного бухгалтера —директора департамента
+        .preview__col-right
+          +column-svg.preview__elem_1
+          +column-small-svg.preview__elem_2
+          +double-column-svg.preview__elem_3
+          .preview__img 
+            +picture('profit-preview.png')
+
+mixin case-preview
+  section.preview.case-preview
+    .container 
+      .preview__inner
+        .preview__col-left
+          .row
+            h2.preview__title С заботой о деловом <br/> климате
+            p.preview__description Мы работаем над формированием благоприятных правовых <br/>  условий, которые способствуют предоставлению высокого уровня <br/>  сервиса.
+          .row
+            p.preview__name Липатова <br/>Марина Александровна
+            p.preview__job Заместитель начальника управления делами
+        .preview__col-right
+          +column-svg.preview__elem_1
+          +column-small-svg.preview__elem_2
+          +double-column-svg.preview__elem_3
+          .preview__img 
+            +picture('case-preview.png')

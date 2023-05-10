@@ -176,16 +176,16 @@ module.exports = (env) => {
         ],
       }),
 
-      new ImageMinimizerPlugin({
-        minimizerOptions: {
-          cache: true,
-          plugins: [
-            ["gifsicle", { interlaced: true }],
-            ["mozjpeg", { quality: 70 }],
-            ["optipng", { optimizationLevel: 5 }],
-          ],
-        },
-      }),
+      // new ImageMinimizerPlugin({
+      //   minimizerOptions: {
+      //     cache: true,
+      //     plugins: [
+      //       ["gifsicle", { interlaced: true }],
+      //       ["mozjpeg", { quality: 70 }],
+      //       ["optipng", { optimizationLevel: 5 }],
+      //     ],
+      //   },
+      // }),
 
       new MiniCssExtractPlugin({
         filename: "[name].css",
