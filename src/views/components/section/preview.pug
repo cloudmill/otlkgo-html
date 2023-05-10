@@ -33,7 +33,7 @@ mixin transit-preview
             +picture('preview-3.png')
 
 mixin landscape-preview
-  section.preview
+  section.preview.landscape-preview
     .container 
       .preview__inner
         .preview__col-left
@@ -49,7 +49,7 @@ mixin landscape-preview
             +picture('preview-4.png')
 
 mixin strategy-preview
-  section.preview
+  section.preview.strategy-preview
     .container 
       .preview__inner
         .preview__col-left
@@ -65,3 +65,36 @@ mixin strategy-preview
             +picture('preview-5.png')
 
 
+////Page-3
+
+mixin direction-preview
+  section.preview.direction-preview
+    .container 
+      .preview__inner
+        .preview__col-left
+          h2.preview__title Главные направления <br/>цифрового развития
+          .row
+            p.preview__name Анпилов <br/>Кирилл Андреевич
+            p.preview__job Начальник отдела сопровождения информационных систем
+        .preview__col-right
+          +column-svg.preview__elem_1
+          +column-small-svg.preview__elem_2
+          +double-column-svg.preview__elem_3
+          .preview__img 
+            +picture('direction-preview.png')
+
+mixin preservation-preview
+  section.preview.preservation-preview
+    .container 
+      .preview__inner
+        .preview__col-left
+          h2.preview__title Сохранить достигнутое
+          .row
+            p.preview__name Лазутова <br/>Елена Михайловна
+            p.preview__job Директор финансово-экономического департамента
+        .preview__col-right
+          +column-svg.preview__elem_1
+          +column-small-svg.preview__elem_2
+          +double-column-svg.preview__elem_3
+          .preview__img 
+            +picture('preservation-preview.png')

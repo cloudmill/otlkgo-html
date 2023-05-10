@@ -1,6 +1,5 @@
 {
   "title": "test-html",
-
   "routes": [
     {
       "href": "/main",
@@ -9,6 +8,10 @@
     {
       "href": "/about",
       "title": "О компании"
+    },
+    {
+      "href": "/page-3",
+      "title": "page-3"
     }
   ]
 }

@@ -93,7 +93,7 @@
 
 .landscape-preview {
   &__img {
-    margin-top: 19px;
+    margin-top: rem(19px);
   }
 }
 
@@ -101,6 +101,10 @@
   margin-top: 100px;
 
   &__img {
-    margin-top: 19px;
+    margin-top: rem(19px);
   }
+}
+
+.direction-preview {
+
 }
