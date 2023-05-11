@@ -1,0 +1,128 @@
+.report-hero{
+  position: relative;
+  margin-top: 84px;
+  margin-bottom: 20px;
+
+  width: 1440px;
+  height: 707px;
+
+  &__background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+  }
+
+  &__row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+  }
+
+  &__col{
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  &__portrait{
+    position: absolute;
+    top: 60px;
+    left: 37px;
+    z-index: 2;
+    width: 691px;
+    height: 647px;
+    width: 100%;
+    height: auto;
+
+    picture{
+      width: 100%;
+      height: 100%;
+
+      img{
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__name{
+    margin: 40px 0px 10px 40px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: color(dark);
+  }
+
+  &__job-title{
+    margin-left: 40px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: color(alt-grey);
+  }
+
+
+  &__title{
+    padding: 40px 40px 60px 60px;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__list{
+    margin-left: 100px;
+    &-item{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      margin-bottom: 16px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 130%;
+      color: color(dark);
+
+      &::before{
+        position: relative;
+        display: block;
+        width: 12px;
+        height: 12px;
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M3.75 10.5L8.25 6L3.75 1.5' stroke='%232A2E2B' stroke-width='1.5'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        z-index: 4;
+      }
+    }
+  }
+
+  &__number{
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+
+    font-weight: 700;
+    font-size: 340px;
+    line-height: 80%;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    letter-spacing: -0.03em;
+
+    background: linear-gradient(180deg, #006525 0%, #35CA76 95.26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

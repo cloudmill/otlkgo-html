@@ -1,0 +1,17 @@
+mixin report-hero 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row 
+      .report-hero__col
+        .report-hero__portrait 
+          +picture('hero-2-prev.png')
+        .report-hero__name Фрадкина <br> Екатерина Григорьевна
+        .report-hero__job-title Директор по маркетингу
+      +double-column-svg.preview__elem_3.hero-elem
+      .report-hero__col
+        .report-hero__title Стратегический <br>отчет
+        .report-hero__list
+          each item in ['Макроэкономическая ситуация и обзор ключевых рынков', 'Тренды логистической отрасли', 'Рынок ж/д транзита Китай — Европа — Китай', 'Контекст бизнеса: санкционный ландшафт', 'Стратегия технологического лидера']
+            a.report-hero__list-item(href="#")=item
+        .report-hero__number 2

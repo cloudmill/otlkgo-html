@@ -2,6 +2,10 @@
   overflow: hidden;
   margin-top: 100px;
 
+  // &.preview-margin{
+  //   margin-bottom: 100px;
+  // }
+
   &__inner {
     display: flex;
     height: 640px;
@@ -17,6 +21,8 @@
     justify-content: space-between;
 
     width: 50%;
+
+    
   }
 
   &__description {
@@ -31,8 +37,11 @@
   }
 
   &__col-right {
+    padding-left: 53.5px;
     position: relative;
     overflow: hidden;
+
+    
   }
 
   &__name {
@@ -81,6 +90,12 @@
   &__elem_3 {
     bottom: 0;
     z-index: $index-1;
+
+    &.hero-elem{
+      z-index: 4;
+      padding-left: 27px;
+      padding-top: 30px;
+    }
   }
 
   &__img {

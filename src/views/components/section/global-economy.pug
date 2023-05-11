@@ -1,0 +1,299 @@
+mixin global-economy
+  .container-content
+    section.macroeconomics
+      h2.macroeconomics-title Макроэкономическая ситуация
+      .macroeconomics-row 
+        .macroeconomics-col 
+          h4.macroeconomics-subtitle В 2022 году мировая экономика столкнулась с множеством препятствий и негативных влияний.
+        .macroeconomics-col 
+          .macroeconomics-text.top Работа глобальных цепочек поставок была крайне нестабильной на фоне острой геополитической ситуации, а также физического дефицита различного сырья и комплектующих. Волатильность на рынках энергоносителей и сильнейший разгон инфляции замедлили глобальный экономический рост. В большинстве регионов ужесточилась денежно-кредитная политика, что оказывало дополнительное давление на производства и потребление. В Китае практически весь год выявляли новые вспышки COVID и вводили жесткие противовирусные меры.
+          .macroeconomics-text Однако в конце года можно было наблюдать ряд позитивных событий. Например, в декабре правительство Китая приняло решение уйти от практики «нулевой терпимости» к COVID. <br>Оно может стать важнейшим катализатором для роста мировой экономики в 2023 году, так как Китай является не только крупнейшим производителем и экспортером товаров различного передела, но также и потребителем. Высвобождение сбережений китайских домохозяйств, накопленных за время пандемии, может привести к росту спроса на различную продукцию, в том числе производства Европы. В связи с этим экономический рост Европы и многих других стран будет тесно зависеть от происходящего в Китае.
+          .macroeconomics-subrow 
+            .macroeconomics-subcol.green
+              .macroeconomics-subcol__top
+                .macroeconomics-subcol__num 3,1%
+                .macroeconomics-subcol__text к мировому ВВП
+              .macroeconomics-subcol_bot
+                .macroeconomics-subcol__text-grey Средняя оценка по итогам 2022 года
+            .macroeconomics-subcol.light-green
+              .macroeconomics-subcol__top
+                .macroeconomics-subcol__num.light 2,1%
+              .macroeconomics-subcol_bot
+                .macroeconomics-subcol__text-grey Прогноз роста мирового ВВП на 2023 год
+      .macroeconomics-grafics 
+        .macroeconomics-grafics__col
+          h4.macroeconomics-grafics__col-title Прирост мирового ВВП в 2022 году
+          .macroeconomics-grafics__col-img 
+            +picture('macro-grafic1.png')
+          .macroeconomics-grafics__col-links
+            .macroeconomics-grafics__col-text Источники: 
+            .macroeconomics-grafics__col-list 
+              a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home") World Bank,
+              a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home") IMF,
+              a.macroeconomics-grafics__col-link(href="https://www.un.org/") UN World Economic Situation and Prospects Report,
+              a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/") S&P Global,
+              a.macroeconomics-grafics__col-link(href="https://www.pwc.com/") PwC
+        .macroeconomics-grafics__col
+          h4.macroeconomics-grafics__col-title.second Прогноз роста мирового ВВП на 2023 год
+          .macroeconomics-grafics__col-img 
+            +picture('macro-grafic2.png')
+    section.chinese-economy
+      h2.chinese-economy__title Экономика Китая
+      .chinese-economy__hero-row 
+        .chinese-economy__hero-col 
+          .chinese-economy__hero-text В начале 2022 года экономика Китая была на пути к достижению целевого показателя роста в размере 5,5%, однако локальные вспышки заболеваемости и жесткая политика сдерживания COVID сильно ограничили перспективы. В итоге ВВП Китая показал по итогам 2022 года слабейший результат с середины 1970-х.
+        .chinese-economy__hero-col
+          h4.chinese-economy__hero-subtitle Годовой прирост ВВП Китая, 2022–2023 гг.
+          .chinese-economy__hero-grafic 
+            +picture('chinese-eco-grafic1.png')
+          .macroeconomics-grafics__col-links.chinese
+            .macroeconomics-grafics__col-text Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.reuters.com/") Reuters,
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.credit-suisse.com/ru/ru.html") Credit Suisse,
+                a.macroeconomics-grafics__col-link(href="https://www.goldmansachs.com/") Goldman Sachs,
+                a.macroeconomics-grafics__col-link(href="https://www.fitchratings.com/") Fitch Ratings,
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/") UN World <br>Economic Situation and Prospects Report
+      .chinese-economy__quarter
+        h4.chinese-economy__quarter-title Поквартальная динамика ВВП Китая, 2020–2022 гг.
+        .chinese-economy__quarter-vector 
+          +picture('quarter-vector.png')
+        .macroeconomics-grafics__col-links.quarter
+            .macroeconomics-grafics__col-text Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/") Национальное статистическое бюро Китая
+        .chinese-economy__quarter-row 
+          .chinese-economy__quarter-col 
+            .ge-card.green.upper
+              .ge-card__top
+                .ge-card__num.green -27%
+              .ge-card__bot
+                .ge-card__text-grey Падение спроса на недвижимость в Китае<br> по итогам 2022 года
+            .ge-card.light-green
+                .ge-card__top
+                  .ge-card__num.light 25%
+                  .ge-card__text ВВП страны
+                .ge-card__bot
+                  .ge-card__text-grey Приходится на сектор недвижимости
+          .chinese-economy__quarter-col 
+            .chinese-economy__quarter-text.top В течение всего 2022 года в экономическом ландшафте Китая также прослеживались и другие сложности. К примеру, турбулентность в секторе недвижимости так и не была разрешена. Китайское правительство принимало меры для помощи застройщикам, одним из ключевых стало решение по смягчению ограничений по финансированию и кредитованию. Тем не менее, некоторые девелоперы все еще имеют серьезные финансовые проблемы. Вероятно, что правительству Китая придется утверждать новые меры поддержки сектора, хотя в стране отрицают критичность ситуации. Крах девелоперов Китая способен привести к полноценному мировому экономическому кризису, в результате чего дальнейшее развитие данной проблемы крайне важно.
+            .chinese-economy__quarter-text Важнейшим событием в конце 2022 года стала отмена политики «нулевой терпимости» к COVID, что одновременно создало сложные условия для экономики в моменте, но и позволило с оптимизмом смотреть в 2023 год. Считается, что правительство Китая утвердит цель роста ВВП не менее 4,7%. 
+    section.chinese-forecast
+      h2.chinese-forecast__title Ключевые прогнозы по Китаю
+      .chinese-forecast__row 
+        .chinese-forecast__col
+          h4.chinese-forecast__subtitle Снижение безработицы
+          .chinese-forecast__text.line Уровень безработицы коррелировался со вспышками COVID в течение года. Прогнозы предполагают значительное снижение показателя в 2023 году — до 5,2% — на фоне восстановления Китая после пандемии.
+          .chinese-forecast__title-small.vector-1  Уровень безработицы городского населения за 2022 г.
+          .chinese-forecast__grafic
+            +picture('chinese-forecast-vector1.png')
+          .macroeconomics-grafics__col-links.quarter
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.worldbank.org/en/home") World Bank,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.imf.org/en/Home") IMF,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.credit-suisse.com/ru/ru.html") Credit Suisse,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/") Goldman Sachs,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/") Fitch Ratings,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html") ECB
+          h4.chinese-forecast__subtitle.mg-top Рост розничной торговли
+          .chinese-forecast__text.line В 2023 году ожидается рост объема розничной торговли до порядка 2,5-3% после снижения в 2022 году на 0,2%. Вспышки COVID влияли на потребление в заключительном квартале 2022 года, однако их эффект был не настолько сильным, как в самом начале пандемии. 
+          .chinese-forecast__subtitle-small Динамика объема розничной торговли в годовом выражении,<br> 2020–2022 гг.
+          .chinese-forecast__grafic-left 
+            +picture('chinese-forecast-vector2.png')
+        .chinese-forecast__col
+          h4.chinese-forecast__subtitle Резкое восстановление со второго квартала
+          .chinese-forecast__text.margin-small В первом квартале 2023 года COVID будет негативно сказываться на экономике страны. По некоторой информации, большая часть населения Китая уже могла быть инфицирована в январе, что снижает вероятность повторных сильных вспышек в течение года. Как результат, экономическая активность и потребление могут начать резкое восстановление со второго квартала на фоне потенциального улучшения эпидемиологической обстановки, высвобождения избыточных сбережений домохозяйств, стимулирующих мер правительства.
+          .chinese-forecast__text.margin Так считают многие эксперты, хотя правительство неоднократно заявляло о приоритетности стимулирования внутреннего спроса. Данный факт может быть связан с относительной слабостью мировой экономики, а также с растущей геополитической напряженностью.
+          h4.chinese-forecast__subtitle Улучшение динамики производства
+          .chinese-forecast__text.line В 2023 году ожидается улучшение динамики до порядка 4,5% в годовом исчислении. Для сравнения: по итогам 2022 года рост производства составил 3,6%. Лучше других ситуация выглядела в химической промышленности (+12,8%) и отрасли машиностроения (+10,8%). 
+          .chinese-forecast__subtitle-small.mg-big Динамика промышленного производства за 2022 г.
+          .chinese-forecast__grafic 
+            +picture('chinese-forecast-vector3.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-14 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-14(href="http://www.stats.gov.cn/") Национальное статистическое бюро Китая
+    section.europe-economy
+      h2.europe-economy__title Экономика Европы
+      .europe-economy__row 
+        .europe-economy__col
+          .europe-economy__subtitle-custom По итогам 2022 года ВВП ЕС вырос на 3,6%, а ВВП еврозоны – на 3,5%.
+        .europe-economy__col
+          .europe-economy__text Регион оказался под сильным давлением после реализации геополитических рисков в первом квартале года. Волатильность в цепочках поставок усилилась, физическая доступность отдельных товаров, производимых в России и Украине, встала под вопрос. Логистические цепи стали изламываться, а процессы, связанные с таможенной деятельностью и денежными операциями — усложняться.
+          .europe-economy__text Произошел всплеск цен на энергоносители и другое сырье, что привело к разгону инфляции практически по всему миру и заставило всерьез рассматривать риск «стагфляции» в Европе. Все эти события привели к ужесточению денежно-кредитной политики со стороны ЕЦБ и росту стоимости капитала, а также ослаблению покупательского спроса в регионе. Однако в течение года некоторые сложности в экономике удалось разрешить, что отразилось на росте ВВП в 2022 году.
+      .europe-economy__subsection 
+        h4.europe-economy__subtitle Поквартальная динамика роста ВВП ЕС и еврозоны, 2020–2022 гг.
+        .europe-economy__cubes 
+          .europe-economy__cubes-item
+            .europe-economy__cubes-cube.green 
+            .europe-economy__cubes-text ЕС, 27 стран
+          .europe-economy__cubes-item
+            .europe-economy__cubes-cube.light-green 
+            .europe-economy__cubes-text Еврозона, 19 стран
+        .europe-economy__vector 
+          +picture('eco-europe-vector.png')
+        .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+    section.key-forecast 
+      h2.key-forecast__title Ключевые прогнозы по ЕС
+      .key-forecast__row 
+        .key-forecast__col 
+          h4.key-forecast__subtitle Восстановление спроса с середины <br>2023 года
+          .key-forecast__text Прогнозы предполагают положительную динамику ВВП еврозоны, однако, торговля (в особенности импорт) и спрос на перевозки в сообщении с регионом, вероятно, будут снижены. У ритейлеров в Европе скопился значительный объем продукции, которую еще не успели реализовать. Восстановление спроса возможно с третьего квартала 2023 года, но есть ярко выраженные риски и ограничители. Например, перспективы европейской экономики и торговли будут существенно зависеть от восстановления Китая после COVID. 
+        .key-forecast__col
+          .key-forecast__subtitle-small Годовой прирост ВВП еврозоны, 2022-2023 гг.
+          .key-forecast__vector 
+            +picture('key-forecast1.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.worldbank.org/en/home") World Bank,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.imf.org/en/Home") IMF,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.credit-suisse.com/ru/ru.html") Credit Suisse,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/") Goldman Sachs,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/") Fitch Ratings,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html") ECB
+      .key-forecast__row.bot 
+        .key-forecast__col 
+          h4.key-forecast__subtitle Германия избежит рецессии
+          .key-forecast__text Ключевая европейская экономика и крупнейший потребитель российских энергоносителей, Германия особенно пострадала в результате роста цен на газ и нефть. Рост ВВП замедлился с 2,1% в 2021 году до 1,9% в 2022 году, а прогнозы на 2023 год предполагали сокращение экономики на 0,4%. Однако позже эксперты стали говорить о том, что страна может полностью избежать рецессии. Правительство Германии ожидает прироста ВВП на 0,2% в 2023 году и на 1,8% в 2024 году. Текущая мягкая зима, высокие запасы газа и пакеты помощи для бизнеса и населения помогут росту экономики. 
+        .key-forecast__col.col
+          h4.key-forecast__subtitle Дальнейшее охлаждение инфляции
+          .key-forecast__text В 2021 году инфляции в еврозоне стабильно росла, а по итогам октября 2022 года этот показатель достиг пика в размере 10,6%, что в разы выше целевого значения ЕЦБ. Тем не менее, в декабре показатель опустился, и тренд на снижение, вероятно, продолжится. Охлаждению инфляции способствуют меры ЕЦБ: ключевая ставка в январе составляет уже 2,5%, и в марте 2023 года ожидается очередное повышение на 50 б.п. Резкий спад стоимости энергоносителей в четвертом квартале также заметно снизил инфляционное давление.
+      .key-forecast__subsection 
+        .key-forecast__subsection-title Динамика годового изменения инфляции в еврозоне, 2021–2022 гг.
+        .key-forecast__subsection-vector
+          +picture('key-forecast2.png')
+        .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+      .key-forecast__stability 
+        .key-forecast__stability-col 
+          h4.key-forecast__stability-title Стабильный уровень безработицы
+          .key-forecast__stability-text Уровень безработицы в еврозоне закрепился на уровне 6,6% в декабре 2022 (в декабре 2021 — 7%). По различным прогнозам, показатель безработицы может составить 7% по итогам 2023 года. Меры ЕЦБ по сдерживанию инфляции способны негативно повлиять на занятость, так как продолжительное ужесточение монетарной политики, как правило, ведет к сокращению найма.
+        .key-forecast__stability-col
+          .key-forecast__stability-subtitle Уровень безработицы населения за 2022 г.
+          .key-forecast__stability-vector 
+            +picture('stability-forecast-vector.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+      .key-forecast__dinamic 
+        .key-forecast__dinamic-col 
+          h4.key-forecast__dinamic-title Динамика торговли постепенно улучшится
+          .key-forecast__dinamic-text Европейские потребители сокращали траты в течение 2022 года в результате растущей инфляции, ужесточения монетарной политики в регионе. Однако, положительные прогнозы по росту ВВП еврозоны в 2023 году отчасти опираются на потенциальное улучшение в потребительском аппетите. Считается, что динамика объема розничной торговли будет постепенно увеличиваться в грядущем году. Вероятно, это поможет решить текущую проблему рекордных запасов нереализованной продукции у ритейлеров, достигших 91,2 млрд евро в третьем квартале 2022 года.
+        .key-forecast__dinamic-col 
+          h4.key-forecast__dinamic-title Невыполненные заказы поддержат объемы производства
+          .key-forecast__dinamic-text В течение 2022 года объемы производства колебались на уровне предыдущего года. Некоторые индустрии, например, химическая промышленность, были крайне негативно затронуты высокими ценами на энергоносители, в результате чего Европе пришлось удовлетворять потребности в отдельных химических номенклатурах за счет импорта. Как и отмечалось ранее, объемы новых заказов для производств стабильно снижаются, но высокое число невыполненных заказов позволит поддерживать объемы производства в ближайшие месяцы.
+      .key-forecast__dinamic2
+        .key-forecast__dinamic2-col 
+          .key-forecast__dinamic2-lefttitle Динамика объема розничной торговли, 2020–2022 гг.
+          .key-forecast__dinamic2-vector.left
+            +picture('dinamic-vector-left.png')
+        .key-forecast__dinamic2-col
+          .key-forecast__dinamic2-righttitle Динамика промышленного производства в годовом выражении, 2022 г.
+          .key-forecast__dinamic2-vector.right
+            +picture('dinamic-vector-right.png')
+    section.mutal-trade 
+      h2.mutal-trade__title Взаимная торговля Китая и Европы
+      .mutal-trade__hero 
+        .mutal-trade__hero-col 
+          h4.mutal-trade__hero-title Двусторонняя торговля Китая<br> и Европы — один из основных<br> сегментов мировой торговли<br> и центральная ось трансъевразийских перевозок.
+        .mutal-trade__hero-col
+          .mutal-trade__hero-text Динамика торговли между партнерами определяет грузовую базу евразийского железнодорожного транзитного маршрута, а также баланс грузопотоков.
+          .mutal-trade__hero-row 
+            .mutal-trade__hero-subcol
+              .ge-card.light-green
+                .ge-card__top
+                  .ge-card__num.light 851,9
+                  .ge-card__text млрд евро
+                .ge-card__bot
+                  .ge-card__text-grey Общий объем торговли между партнерами в рамках основных товарных позиций в 2022 году
+            .mutal-trade__hero-subcol
+              .ge-card.green
+              .ge-card__top
+                .ge-card__num.green +32%
+                .ge-card__text.top до 624,3 
+                  .ge-card__text млрд евро
+              .ge-card__bot
+                .ge-card__text-grey Рост экспорта Китая в Европу в 2022 году
+      .mutal-trade__subsection 
+        .mutal-trade__subsection-col 
+          .ge-card.green
+              .ge-card__top
+                .ge-card__num.green +3,2%
+                .ge-card__text.top до 227,6
+                  .ge-card__text млрд евро 
+              .ge-card__bot
+                .ge-card__text-grey Рост экспорта ЕС в Китай в 2022 году
+        .mutal-trade__subsection-col 
+          .mutal-trade__subsection-text Резкий рост китайского экспорта произошел за счет увеличения отправок продуктов органической химии и прочих химических продуктов, различных электрических устройств, бытовых товаров. Нормализация цепочек поставок также поспособствовала росту торговли. Тем не менее, важно отметить сокращение в объеме натуральной торговли: суммарный объем снизился на 3,7%, экспорт Европы сократился на 25,6%, но экспорт Китая вырос на 13,9%.
+          .mutal-trade__subsection-text Характерно, что тенденция к росту дефицита Европы в торговле с Китаем наблюдается с 2019 года, и динамика постоянно ускоряется. Так, в 2022 году, согласно доступным данным, экспорт Китая почти в 2,5 превзошел импорт. Ухудшение баланса грузопотоков неизбежным образом создает вызовы для индустрии перевозок в части поиска и борьбы за грузы для обратных отправок.
+      .mutal-trade__balance 
+        .mutal-trade__balance-top 
+          h4.mutal-trade__balance-title Взаимная торговля Китая и Европы, 2021–2022 гг., млрд евро
+          .mutal-trade__balance-copy
+            .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+        .mutal-trade__balance-vector 
+          +picture('mutal-trade-balance.png')
+      .mutal-trade__shares 
+        .mutal-trade__shares-vector 
+          +picture('mutal-trade-shares.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+      .mutal-trade__shares2 
+        .mutal-trade__shares2-top 
+          .mutal-trade__shares2-title Доли товаров в экспорте Китай-Европа, 2022 г.
+          .mutal-trade__shares2-copy
+            .macroeconomics-grafics__col-links
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+        .mutal-trade__shaeres2-vector
+          +picture('mutal-trade-shares2.png')
+      .mutal-trade__shares3 
+        .mutal-trade__shares3-top 
+          .mutal-trade__shares3-title Доли товаров в экспорте Китай-Европа, 2022 г.
+          .mutal-trade__shares3-copy
+            .macroeconomics-grafics__col-links
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+        .mutal-trade__shaeres2-vector
+          +picture('mutal-trade-shares3.png')
+      .mutal-trade__export 
+        .mutal-trade__export-title Экспорт Китай-Европа посредством основных видов транспорта, 2021–2022 гг., % от стоимостной торговли
+        .mutal-trade__export-vector
+          +picture('mutal-trade-export.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+      .mutal-trade__export2 
+        .mutal-trade__export2-title Экспорт Китай-Европа посредством основных видов транспорта, 2021–2022 гг., % от стоимостной торговли
+        .mutal-trade__export2-vector
+          +picture('mutal-trade-export2.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+    section.ge-results 
+      .ge-results__rect 
+        +result-plug-svg
+      .ge-results__title Вывод
+      .ge-results__main 
+        .ge-results__main-title Согласно последнему прогнозу S&P Global, в 2023 году рост мировой торговли замедлится до 0,6% в связи с многочисленными ограничительными факторами и рисками.
+        .ge-results__main-text Китай, в свою очередь, может нарастить экспорт за счет потенциальной активизации экономики в результате отмены антиковидных ограничений. Тем не менее, рост экспорта в пользу Европу маловероятен из-за крайне сильной динамики в последние годы и возросшей диспропорции торговых потоков. Экспорт Европы в Китай же может увеличиться за счет возрождения спроса китайского населения.
+        .ge-results__main-text Европейские компании, к примеру Volkswagen, Bosch, Ferrari, возлагают большие надежды на китайский рынок в 2023 году. Важно отметить, что международная торговля зависит от взаимоотношений партнеров. В свою очередь, европейские политики рассматривают внедрение новой стратегии в отношении Китая, направленной на снижение зависимости от страны. Соответственно, политические риски могут повлиять на торговлю между партнерами.
