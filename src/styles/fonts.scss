@@ -1,15 +1,17 @@
-// $files: (("Manrope-Medium", 500), ("Manrope-SemiBold", 600), ("Manrope-Bold", 700));
+$files: (
+  ("Manrope-Regular", 400),
+  ("Manrope-Medium", 500),
+  ("Manrope-SemiBold", 600),
+  ("Manrope-Bold", 700),
+  ("Halvar-Breitschrift-Bold", 700),
+);
 
-// @each $filename, $font-weight in $files {
-//     @font-face {
-//     src: font-url($filename);
+@each $filename,
+$font-weight in $files {
+  @font-face {
+    src: font-url($filename);
 
-//     font-family: $ff-primary;
-//     font-weight: $font-weight;
-//     }
-// }
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
-//font-family: 'Manrope', sans-serif;
+    font-family: $ff-primary;
+    font-weight: $font-weight;
+  }
+}
