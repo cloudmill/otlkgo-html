@@ -1,0 +1,58 @@
+.item {
+  &__row {
+    &:nth-child(1) {
+      display: flex;
+      padding-top: 12px;
+      gap: 8px;
+
+      width: 360px;
+
+      border-top: 1px solid #045C25;
+    }
+
+    &:nth-child(2) {
+      margin-top: 20px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 24px;
+      width: 560px;
+    }
+
+  }
+
+  &__title {
+    padding-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
+  &__number {
+    font-family: 'Halvar Breitschrift';
+    font-size: 60px;
+    line-height: 80%;
+    letter-spacing: -0.08em;
+    color: color(green);
+  }
+
+  &__grey {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    color: #727A75;
+  }
+
+  &__subtext {
+    width: 360px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #727A75;
+  }
+}

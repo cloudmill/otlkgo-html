@@ -24,8 +24,7 @@ mixin preservation-content
             p.text.preservation-revenue__text По результатам работы нашей компании за 2022 год валовая выручка составила 55 577 млн руб, что на 9 274 млн руб или 14% ниже показателя прошлого года. Выручка 2022 года полностью представлена доходами за оказание транспортно-экспедиционных услуг, преимущественно номинированными в долларах США. 
             p.text.preservation-revenue__text Снижение выручки прежде всего связано со снижением среднегодового курса доллара США 2022 года по сравнению с 2021 годом на 7% (2022 — 68,58 руб., 2021 — 73,66 руб.), в связи с тем, что выручка номинирована в долларах, а также в связи с перераспределением объемов в сторону увеличения доли перевозок, ставка по которым ниже.
           .col 
-            p.preservation-revenue__description Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
-            .preservation-revenue__svg  
+            .preservation-revenue__img  
               +picture('preservation-revenue.png')
   seciton.preservation-sales 
     .container-content 
@@ -36,13 +35,13 @@ mixin preservation-content
             p.text.preservation-sales__text Себестоимость продаж ОТЛК ЕРА по итогам 2022 года составила 47 765 млн. руб., что на 9 125 млн. руб. или 16% ниже показателя себестоимости продаж прошлого года. Себестоимость 2022 года полностью представлена расходами на организацию транспортно-экспедиционных услуг.
             p.text.preservation-sales__text Снижение себестоимости прежде всего связано с проведенными мерами по оптимизации расходов, а также снижением курсов основных валют расходов по сравнению с 2021 годом.
           .col 
-            p.preservation-sale__description Себестоимость продаж ОТЛК ЕРА за 2020–2022 годы, млн руб
-            .preservation-sale__svg
+            p.preservation-sales__description Себестоимость продаж ОТЛК ЕРА за 2020–2022 годы, млн руб
+            .preservation-sales__img
               +picture('preservation-sale.png')
   setction.preservation-structure 
     .container-content 
       .preservation-structure__inner 
-        h6.preservatioin-structure__title Структура себестоимости продаж в 2022 году, %
+        h6.preservation-structure__title Структура себестоимости продаж в 2022 году, %
         .preservation-structure__img 
           +picture('preservation-structure.png')
         .preservation-structure__row  
@@ -57,19 +56,19 @@ mixin preservation-content
         h3.preservation-profit__title Валовая прибыль
         .preservation-profit__row 
           .col 
-            .preservation-profit__item 
-              .row 
-                .col 
-                  p.preservation-profit__number 7 812
-                .col 
-                  p.preservation-profit__grey млн руб
-              .row 
-                p.preservation-profit__sub Показатель валовой прибыли ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 2%
-              .row
-                p.text.preservation-profit__text Валовая прибыль по итогам 2022 года составила 7 812 млн руб, что на 149 млн руб или 2% ниже аналогичного периода прошлого года. При этом в 2022 году растет рентабельность по валовой прибыли за счет опережающего снижения себестоимости благодаря мерам по оптимизации себестоимости, снижению среднегодового курса доллара США и начала применения ФСБУ 25/2018. 
+            .item.preservation-profit__item
+              .item__row 
+                .item__col 
+                  p.item__number 7 812
+                .item__col 
+                  p.item__grey млн руб
+              .item__row 
+                p.item__subtext Показатель валовой прибыли ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 2%
+              .item__row 
+                p.text.item__text Валовая прибыль по итогам 2022 года составила 7 812 млн руб, что на 149 млн руб или 2% ниже аналогичного периода прошлого года. При этом в 2022 году растет рентабельность по валовой прибыли за счет опережающего снижения себестоимости благодаря мерам по оптимизации себестоимости, снижению среднегодового курса доллара США и начала применения ФСБУ 25/2018. 
           .col 
             p.preservation-profit__description Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
-            .preservtation-profit__img
+            .preservation-profit__img
               +picture('preservation-profit.png')
   section.preservation-expenses 
     .container-content 
@@ -81,3 +80,10 @@ mixin preservation-content
       .preservation-statistics__inner 
         .preservation-statistics__img
           +picture('preservation-statistics.png')
+        .preservation-statistics__row
+          .col 
+            p.text.preservation-statistics__text Рост управленческих расходов по сравнению с прошлым годом в основном обусловлен ростом расходов на персонал. Расходы на персонал в 2022 году в составе управленческих расходов составили 78% или 1 049 млн. руб. По факту 2022 года рост расходов на персонал составил 170 млн. руб. или 19% и был вызван ростом среднесписочной численности персонала, индексацией ФОТ, а также точечным изменением окладов и ротацией персонала в течение года. 
+          .col 
+            p.text.preservation-statistics__text Также существенный рост показали расходы на консультационные услуги в связи с переносом части проектов с 2021 года и дополнительным привлечением консультантов в течение 2022 года. 
+
+        

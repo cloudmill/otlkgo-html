@@ -107,4 +107,64 @@
 
 .direction-preview {
 
+  .preview__inner {
+    justify-content: space-between;
+  }
+
+  .preview__col-right {
+    overflow: visible;
+  }
+
+  .preview__elem_1 {
+    left: -16%;
+  }
+
+  .preview__elem_3 {
+    left: -16%;
+  }
+
+  .preview__img {
+    transform: translateY(13px);
+  }
+}
+
+.preservation-preview {
+  .preview__col-left {
+    width: 62%;
+  }
+
+  img {
+    object-position: -138px 20px;
+  }
+
+}
+
+.profit-preview {
+  .preview__col-left {
+    width: 51%;
+  }
+
+  .preview__col-right {
+    width: 49%;
+  }
+
+  .preview__img {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+
+    height: 97%;
+    width: 75%;
+  }
+
+}
+
+.case-preview {
+  .preview__col-left {
+    width: 52%;
+  }
+
+  .preview__elem_2 {
+    right: 19px;
+  }
 }

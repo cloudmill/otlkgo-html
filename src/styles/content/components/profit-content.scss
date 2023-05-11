@@ -1,0 +1,209 @@
+.profit {
+  margin-top: 100px;
+  position: relative;
+  padding-bottom: 380px;
+
+  overflow: hidden;
+
+  .col {
+    &:nth-child(2) {
+      width: 100%;
+    }
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__item {
+    width: 460px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -84px;
+    right: 65px;
+
+    width: 695px;
+    height: 695px;
+
+  }
+}
+
+.ebitda {
+  overflow: hidden;
+  padding-bottom: 380px;
+  position: relative;
+
+
+  .col {
+
+    &:nth-child(2) {
+      width: 100%;
+    }
+  }
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+
+  &__row {
+    padding-top: 40px;
+    display: flex;
+  }
+
+  &__item {
+    width: 460px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 54px;
+    width: 647px;
+    height: 701px;
+    right: 123px;
+
+  }
+}
+
+.profit-net {
+  overflow: hidden;
+  padding-bottom: 380px;
+  position: relative;
+
+
+  .col {
+
+    &:nth-child(2) {
+      width: 100%;
+    }
+  }
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+
+  &__row {
+    padding-top: 40px;
+    display: flex;
+  }
+
+  &__item {
+    width: 460px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 53px;
+    right: 65px;
+
+    width: 725px;
+    height: 725px;
+  }
+}
+
+.profit-reporting {
+  margin-top: 100px;
+
+  .col {
+    width: 360px;
+    flex-shrink: 0;
+  }
+
+  &__inner {
+    padding-top: 20px;
+    border-top: 1px solid #045C25;
+  }
+
+  &__row {
+    display: flex;
+    margin-top: 40px;
+
+    &_bottom {
+
+      margin-top: 40px;
+      display: flex;
+      gap: 124px;
+
+      border-top: 1px solid color(green);
+
+      .item__row:nth-child(1) {
+        border-top: none;
+      }
+    }
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__subtext {
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #727A75;
+  }
+
+  &__column {
+    .row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+    }
+
+
+    .item {
+      width: 360px;
+
+      &__col {
+        display: flex;
+        flex-direction: column;
+
+        gap: 16px;
+      }
+
+      &__row {
+        &:nth-child(2) {
+          display: flex;
+          gap: 8px
+        }
+      }
+
+      &__row_top {
+        display: flex;
+        gap: 4px;
+      }
+
+      &__grey_bottom {
+        font-family: 'Halvar Breitschrift';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 80%;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+        color: #727A75;
+
+      }
+    }
+  }
+
+  &__text {
+    width: 358px;
+    margin-top: 63px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #727A75;
+  }
+}
