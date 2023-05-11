@@ -20,8 +20,8 @@ mixin trends-content
     .container-content 
       .trends-volume__inner 
         h6.trends-volume__title Объем мировой торговли посредством морского транспорта, 2021 – 2022 гг., млн ДФЭ
-        .trends-volume__svg 
-          +trends-volume-svg 
+        .trends-volume__svg
+          +picture('trends-volume.png').trends-volume-img
         .links.trends-volume__links
           p.links__text.trends-volume__links-text Источник:&nbsp;
           a(href="https://www.containerstatistics.com/").links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
@@ -38,8 +38,8 @@ mixin trends-content
           .links.trends-dynamic__links
             p.links__text.trends-dynamic__links-text Источник: &nbsp;
             a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/")  Drewry
-        .trends-dynamic__svg 
-          +trends-dynamic-svg
+        .trends-dynamic__svg
+          +picture('trends-dynamic.png')
         .row 
           .col 
           .col 
@@ -54,7 +54,7 @@ mixin trends-content
             a.links__link.trends-rates__links-link(href='https://index1520.com/')  Drewry,&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/') ERAI
         .trends-rates__svg 
-          +trends-rates-svg 
+          +picture('trends-rates.png')
   section.trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -66,7 +66,7 @@ mixin trends-content
               p.links__text.trends-demand__links-text Источник:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/") Drewry
         .trends-demand__svg 
-          +trends-demand-svg 
+          +picture('trends-demand.png')
   section.trends-forecast 
     .container-content 
       .trends-forecast__inner 

@@ -10,6 +10,10 @@
       "title": "О компании"
     },
     {
+      "href": "/page-2",
+      "title": "page-2"
+    },
+    {
       "href": "/page-3",
       "title": "page-3"
     }
