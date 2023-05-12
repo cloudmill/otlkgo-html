@@ -1,0 +1,24 @@
+mixin formation-park 
+  .container  
+    .formation-park__picture 
+      +picture('number-train.png')
+  section.formation-park
+    .container-content
+      .formation-park__row.first
+        .formation-park__col-first 
+          h4.formation-park__title Важно не допускать ни дефицита, ни профицита, и в этом помогает регулярная оценка потребностей.
+        .formation-park__col-first 
+          .formation-park__subtitle Мы анализируем множество показателей, среди них:
+          ul.formation-park__list 
+            each item in ['Прогнозный объем перевозок', 'Оборот вагона', 'Дисбаланс грузопотока Китай – Европа и Европа – Китай', 'Доля объединенных XL-поездов', 'Объем перевозок на оптимизационных направлениях']
+              li.formation-park__list-item=item
+          .formation-park__text Учитывая постоянно растущий объем перевозок, с 2017 года мы применяем эффективный способ оптимизации использования парка – технологию формирования удлиненных контейнерных поездов (XL-поезда), актуальность которой с каждым годом возрастает. Компания регулярно проводит развернутый анализ оборота вагона, выявляет слабые звенья перевозочного процесса и принимает соответствующие меры.
+      .formation-park__row.second
+        .formation-park__col-second 
+          .ge-card.light-green
+              .ge-card__top
+                .ge-card__num.light-green 2000-3000
+                .ge-card__text платформ/мес 
+              .ge-card__bot
+                .ge-card__text-grey Оценка оптимизации парка за счет XL-поездов
+        .formation-park__col-second

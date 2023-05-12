@@ -136,7 +136,7 @@ mixin econimics-preview
   section.preview.transit-preview.preview-margin
     .container 
       .preview__inner
-        .preview__col-left.left
+        .preview__col-left.left.alt
           h2.preview__title Глобальная экономика<br/> и логистический рынок <br/>в 2022 году
           .row
             p.preview__name Иванов <br/>Артемий Павлович
@@ -147,3 +147,41 @@ mixin econimics-preview
           +double-column-svg.preview__elem_3
           .preview__img.transit-preview__img
             +picture('ivanov-prev.png')
+
+mixin share-provinces-preview
+  section.preview.alt-margin
+    .container 
+      .preview__inner
+        .preview__col-left.alt
+          .preview-left__top 
+            .preview__title.small-title Доля провинций в 2022 году
+            .preview__vector 
+              +picture('share-provinces-page3.png')
+          .row
+            p.preview__name Пахомов <br/>Евгений Владимирович 
+            p.preview__job.alt Заместитель директора департамента по контролю расчетов <br>и производственного анализа коммерческой дирекции
+        .preview__col-right
+          +column-svg.preview__elem_1
+          +column-small-svg.preview__elem_2
+          +double-column-svg.preview__elem_3.alt
+          .preview__img 
+            +picture('pahomov.png')
+
+mixin formation-park-preview
+  section.preview
+    .container 
+      .preview__inner
+        .preview__line
+        .preview__col-left.alt
+          .preview-left__top 
+            h2.preview__title Формирование парка: <br>оптимизация
+            .preview__text Ключевой фактор роста перевозок — наличие у компании необходимого количества подвижного состава для крупнотоннажных контейнеров. В 2019–2022 годах на волне спроса мы серьезно увеличили парк. 
+          .row
+            p.preview__name Андросова <br/>Елена Владимировна 
+            p.preview__job.alt Начальник отдела по организации расчетов коммерческой дирекции
+        .preview__col-right
+          +column-svg.preview__elem_1
+          +column-small-svg.preview__elem_2
+          +double-column-svg.preview__elem_3.alt
+          .preview__img 
+            +picture('androsova.png')
