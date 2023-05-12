@@ -2,7 +2,7 @@
   overflow: hidden;
   margin-top: 100px;
 
-  &.preview-margin{
+  &.preview-margin {
     margin-bottom: 100px;
   }
 
@@ -16,13 +16,14 @@
   &__col-left {
     padding: 40px;
     padding-top: 80px;
+    padding-right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     width: 50%;
 
-    
+
   }
 
   &__description {
@@ -41,11 +42,10 @@
     position: relative;
     overflow: hidden;
 
-    
+
   }
 
   &__name {
-    font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 20px;
     line-height: 110%;
@@ -91,7 +91,7 @@
     bottom: 0;
     z-index: $index-1;
 
-    &.hero-elem{
+    &.hero-elem {
       z-index: 4;
       padding-left: 27px;
       padding-top: 30px;
@@ -131,11 +131,11 @@
   }
 
   .preview__elem_1 {
-    left: -16%;
+    left: -5%;
   }
 
   .preview__elem_3 {
-    left: -16%;
+    left: -5%;
   }
 
   .preview__img {
@@ -149,7 +149,17 @@
   }
 
   img {
-    object-position: -138px 20px;
+    object-position: -176px 8px;
+  }
+
+  .preview__elem_1 {
+    top: 81px;
+    left: 20px;
+    width: 361px;
+  }
+
+  .preview__elem_3 {
+    left: 20px;
   }
 
 }
@@ -171,6 +181,8 @@
     height: 97%;
     width: 75%;
   }
+
+
 
 }
 
