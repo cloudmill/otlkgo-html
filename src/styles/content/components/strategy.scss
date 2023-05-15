@@ -130,6 +130,7 @@
   &__box {
     display: flex;
     margin-top: 40px;
+    gap: 40px;
   }
 
   .col {
@@ -156,6 +157,13 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
+    color: color(dark);
+  }
+
+  &__subtitile {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
     color: color(dark);
   }
 

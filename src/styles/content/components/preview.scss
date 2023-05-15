@@ -259,29 +259,6 @@
     }
   }
 
-  .preservation-preview {
-    .preview__col-left {
-      width: 62%;
-    }
-
-    img {
-      object-position: -176px 8px;
-    }
-
-    .preview__elem_1 {
-      top: 81px;
-      left: 20px;
-      width: 361px;
-    }
-
-    .preview__elem_3 {
-      left: 20px;
-    }
-
-  }
-
-
-
   .case-preview {
     .preview__description {
       max-width: none;
@@ -297,26 +274,26 @@
   }
 }
 
+
+
 .profit-preview {
   .preview__col-left {
-    width: 51%;
+    width: 50%;
   }
 
   img {
-
     object-fit: contain;
   }
 
   .preview__col-right {
-    width: 49%;
+    width: 50%;
   }
 
   .preview__img {
     position: absolute;
-    left: 10%;
-    bottom: 0;
-
-    height: 97%;
-    width: 75%;
+    left: 40px;
+    bottom: -8px;
+    height: 100%;
+    width: 643px;
   }
 }

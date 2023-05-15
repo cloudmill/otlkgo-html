@@ -8,6 +8,7 @@
   .col {
     &:nth-child(2) {
       width: 100%;
+      position: relative;
     }
   }
 
@@ -22,7 +23,7 @@
   &__img {
     position: absolute;
     top: -84px;
-    right: 65px;
+    right: -52px;
 
     width: 695px;
     height: 695px;
@@ -95,6 +96,7 @@
 
     &:nth-child(2) {
       width: 100%;
+      position: relative;
     }
   }
 
@@ -115,10 +117,10 @@
 
   &__img {
     position: absolute;
-    top: 54px;
+    top: -63px;
     width: 647px;
     height: 701px;
-    right: 123px;
+    right: 0;
 
   }
 }
@@ -133,6 +135,7 @@
 
     &:nth-child(2) {
       width: 100%;
+      position: relative;
     }
   }
 
@@ -153,8 +156,8 @@
 
   &__img {
     position: absolute;
-    top: 53px;
-    right: 65px;
+    top: -61px;
+    right: -82px;
 
     width: 725px;
     height: 725px;
