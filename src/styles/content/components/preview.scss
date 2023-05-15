@@ -280,24 +280,7 @@
 
   }
 
-  .profit-preview {
-    .preview__col-left {
-      width: 51%;
-    }
 
-    .preview__col-right {
-      width: 49%;
-    }
-
-    .preview__img {
-      position: absolute;
-      left: 10%;
-      bottom: 0;
-
-      height: 97%;
-      width: 75%;
-    }
-  }
 
   .case-preview {
     .preview__description {
@@ -311,5 +294,29 @@
     .preview__elem_2 {
       right: 19px;
     }
+  }
+}
+
+.profit-preview {
+  .preview__col-left {
+    width: 51%;
+  }
+
+  img {
+
+    object-fit: contain;
+  }
+
+  .preview__col-right {
+    width: 49%;
+  }
+
+  .preview__img {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+
+    height: 97%;
+    width: 75%;
   }
 }
