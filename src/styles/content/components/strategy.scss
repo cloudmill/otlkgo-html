@@ -72,6 +72,10 @@
 
   border: 1.10476px solid #E8E8E8;
 
+  &:not(:last-child) {
+    border-right: 0;
+  }
+
   &_small {
     height: 154px;
     border-top: 0;
@@ -250,6 +254,13 @@
     border-top: 1px solid #69DA91;
   }
 
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
   &__box {
     display: flex;
   }
@@ -279,7 +290,11 @@
     margin-top: 40px;
   }
 
-  &__list {}
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
 
   &__item {
     display: flex;

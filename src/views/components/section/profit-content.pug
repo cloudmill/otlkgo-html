@@ -16,6 +16,22 @@ mixin profit-content
         .col  
           .profit__img 
             +picture('profit-content.png')
+  section.percente 
+    .container-content 
+      .percente__inner 
+        h2.precente__title Проценты полученные/уплаченные
+        .percente__row
+          p.percente__text.text В связи с началом применения ФСБУ 25/2018 в отчете о финансовых результатах<br/>отражены проценты по лизингу в сумме 256 млн руб
+        .percente__img
+          +picture('percente.png').percente-img
+  section.profit-statistics 
+    .container-content 
+      .profit-statistics__inner 
+        h2.profit-statistics__title Прочие доходы и расходы
+        p.profit-statistics__description Состав прочих доходов и расходов, млн руб
+        .profit-statistics__img 
+          +picture('profit-statistics.png')
+        p.profit-statistics__text.text По итогам 2022 года сложилось отрицательное сальдо прочих доходов и расходов в размере 408 млн руб. Существенное снижение отрицательного сальдо вызвано положительным результатом от курсовых разниц и операций с валютой в 2022 году, тогда как по итогам 2021 года результат от курсовых разниц и операций с валютой был отрицательным. 
   section.ebitda 
     .container-content 
       .ebitda__inner 
