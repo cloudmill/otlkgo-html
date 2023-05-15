@@ -3,6 +3,10 @@
   margin-top: 100px;
   position: relative;
 
+  .container {
+    width: auto;
+  }
+
   &.preview-margin {
     margin-bottom: 100px;
   }

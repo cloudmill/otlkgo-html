@@ -2,19 +2,19 @@
   "title": "test-html",
   "routes": [
     {
-      "href": "/main",
+      "href": "main",
       "title": "Главная"
     },
     {
-      "href": "/about",
+      "href": "about",
       "title": "О компании"
     },
     {
-      "href": "/page-2",
+      "href": "page-2",
       "title": "page-2"
     },
     {
-      "href": "/page-3",
+      "href": "page-3",
       "title": "page-3"
     }
   ]
