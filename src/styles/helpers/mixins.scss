@@ -33,6 +33,11 @@
   font-family: $ff-primary;
 }
 
+@mixin f-second($font-weight: 700) {
+  font-weight: $font-weight;
+  font-family: $ff-secondary;
+}
+
 @mixin scrollbar-hidden() {
   -ms-overflow-style: none;
   scrollbar-width: none;
