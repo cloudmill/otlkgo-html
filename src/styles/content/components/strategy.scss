@@ -53,8 +53,6 @@
 .strategy-stakeholder {
   margin-top: 100px;
 
-  &__inner {}
-
   &__box {
     margin-top: 40px;
     display: grid;
@@ -67,12 +65,11 @@
   padding: 25px;
   position: relative;
 
-  width: 292px;
   height: 258px;
 
   border: 1.10476px solid #E8E8E8;
 
-  &:not(:last-child) {
+  &:not(:last-child, :nth-child(4)) {
     border-right: 0;
   }
 
