@@ -11,6 +11,15 @@
     &.first{
       gap: 140px;
     }
+
+    &.second{
+      margin-top: 60px;
+      gap: 40px;
+    }
+    &.third{
+      margin-top: 60px;
+      gap: 240px;
+    }
   }
 
   &__col{
@@ -20,6 +29,18 @@
       }
       &:nth-child(2){
         width: 559px;
+      }
+    }
+
+    &-second{
+      
+      &:nth-child(1){
+        width: 560px;
+      }
+      &:nth-child(2){
+        border-top: 1px solid #E8E8E8;
+        padding-top: 12px;
+        width: 460px;
       }
     }
   }
@@ -67,5 +88,124 @@
     font-size: 15px;
     line-height: 160%;
     color: color(dark);
+
+    &.top{
+      margin-bottom: 16px;
+    }
+  }
+
+  &__possession{
+    margin-top: 60px;
+    &-title{
+      margin-bottom: 32px;
+
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      color: colo(dark);
+    }
+
+    &-item{
+      border: 1px solid color(borders);
+      padding: 20px 20px 0px 20px;
+
+      height: 145px;
+
+      &:nth-child(1){
+        border-top: 2px solid color(light-green);
+      }
+      &:nth-child(2){
+        border-top: 2px solid color(green);
+      }
+      &:nth-child(3){
+        border-top: 2px solid color(light-green);
+      }
+    }
+
+    &-subtitle{
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 150%;
+      color: color(dark);
+    }
+
+    &-text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #2A2E2B;
+    }
+
+    &-row{
+      display: flex;
+
+      &.plugs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+      }
+    }
+  }
+
+  &__structure{
+    
+    &-row{
+      margin-top: 60px;
+      display: flex;
+      gap: 140px;
+
+    }
+    &-col{
+      &:nth-child(1){
+        padding-top: 12px;
+        
+        width: 460px;
+
+        border-top: 1px solid #E8E8E8;
+      }
+      &:nth-child(2){
+        width: 560px;
+      }
+    }
+
+    &-title{
+      margin-bottom: 24px;
+
+      width: 460px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: #2A2E2B;
+    }
+
+    &-subtitle{
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 150%;
+      color: #2A2E2B;
+    }
+
+    &-plug{
+      margin-bottom: 24px;
+      position: relative;
+      padding: 24px 10px 24px 24px;
+
+      background: #F4F4F4;
+      border-radius: 16px;
+    }
+
+    &-icon{
+      position: absolute;
+      left: -10px;
+      top: -10px;
+    }
+
+    &-text{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #2A2E2B;
+    }
   }
 }

@@ -57,7 +57,9 @@
     position: relative;
     overflow: hidden;
 
-    
+    &.pt-14{
+      padding-top: 14px;
+    }
   }
 
   &__name {
@@ -147,6 +149,15 @@
     picture{
       img{
         object-fit: fill;
+      }
+    }
+  }
+
+  &__cards{
+    margin-top: 32px;
+    .ge-card{
+      &:nth-child(1){
+        margin-bottom: 20px;
       }
     }
   }
