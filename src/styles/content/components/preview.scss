@@ -10,7 +10,34 @@
   &.preview-margin {
     margin-bottom: 100px;
   }
+  &__cards {
+    margin-top: 32px;
 
+    .ge-card {
+      &:nth-child(1) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__title {
+    &.small-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: color(dark);
+    }
+  }
+  &__vector {
+    width: 530px;
+    height: 260px;
+    margin-top: 40px;
+
+    picture {
+      img {
+        object-fit: fill;
+      }
+    }
+  }
   &__text {
     width: 540px;
 
@@ -189,36 +216,11 @@
       width: 100%;
     }
 
-    &__title {
-      &.small-title {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 150%;
-        color: color(dark);
-      }
-    }
+    
 
-    &__vector {
-      width: 530px;
-      height: 260px;
-      margin-top: 40px;
+    
 
-      picture {
-        img {
-          object-fit: fill;
-        }
-      }
-    }
-
-    &__cards {
-      margin-top: 32px;
-
-      .ge-card {
-        &:nth-child(1) {
-          margin-bottom: 20px;
-        }
-      }
-    }
+    
   }
 
 

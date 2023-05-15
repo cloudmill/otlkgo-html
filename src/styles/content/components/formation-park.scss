@@ -193,6 +193,10 @@
 
       background: #F4F4F4;
       border-radius: 16px;
+
+      &.paperless{
+        width: 560px;
+      }
     }
 
     &-icon{

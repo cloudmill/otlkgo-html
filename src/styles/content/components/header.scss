@@ -93,6 +93,10 @@
         font-size: 12px;
         line-height: 100%;
         text-transform: uppercase;
+
+        @media #{media(">")} {
+            margin-left: 330px;
+        }
         &__top{
             margin-bottom: 8px;
 
