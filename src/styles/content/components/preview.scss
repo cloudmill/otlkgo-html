@@ -11,6 +11,24 @@
     margin-bottom: 100px;
   }
 
+  &__text {
+    width: 540px;
+
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #2A2E2B;
+  }
+
+  &.preview-margin {
+    margin-bottom: 100px;
+  }
+
+  &.alt-margin {
+    margin-top: 20px;
+  }
+
   &__inner {
     display: flex;
     height: 640px;
@@ -66,6 +84,10 @@
     justify-content: space-between;
 
     width: 50%;
+
+    &.alt {
+      padding: 80px 0px 40px 40px;
+    }
   }
 
   &__description {
@@ -83,6 +105,9 @@
     overflow: hidden;
 
 
+    &.pt-14 {
+      padding-top: 14px;
+    }
   }
 
   &__name {
@@ -104,6 +129,8 @@
     text-align: right;
     color: color(alt-grey);
     white-space: nowrap;
+
+
   }
 
   &__elem_1,
@@ -131,106 +158,151 @@
 
     &.hero-elem {
       z-index: 4;
-      padding-left: 27px;
-      padding-top: 30px;
+
+      &.hero-elem {
+        z-index: 2;
+        padding-left: 27px;
+        padding-top: 30px;
+      }
+
+      &.alt-hero-elem {
+        padding-left: 0px;
+        width: 360px;
+        height: 160px;
+      }
+
+      &.alt {
+        margin-left: -1px;
+      }
+    }
+
+    &__img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__title {
+      &.small-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: color(dark);
+      }
+    }
+
+    &__vector {
+      width: 530px;
+      height: 260px;
+      margin-top: 40px;
+
+      picture {
+        img {
+          object-fit: fill;
+        }
+      }
+    }
+
+    &__cards {
+      margin-top: 32px;
+
+      .ge-card {
+        &:nth-child(1) {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 
-  &__img {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-}
 
-
-.landscape-preview {
-  &__img {
-    margin-top: rem(19px);
-  }
-}
-
-.transit-preview {
-  margin-top: 100px;
-
-  &__img {
-    margin-top: rem(19px);
-  }
-}
-
-.direction-preview {
-
-  .preview__inner {
-    justify-content: space-between;
+  .landscape-preview {
+    &__img {
+      margin-top: rem(19px);
+    }
   }
 
-  .preview__col-right {
-    overflow: visible;
+  .transit-preview {
+    margin-top: 100px;
+
+    &__img {
+      margin-top: rem(19px);
+    }
   }
 
-  .preview__elem_1 {
-    left: -5%;
+  .direction-preview {
+
+    .preview__inner {
+      justify-content: space-between;
+    }
+
+    .preview__col-right {
+      overflow: visible;
+    }
+
+    .preview__elem_1 {
+      left: -5%;
+    }
+
+    .preview__elem_3 {
+      left: -5%;
+    }
+
+    .preview__img {
+      transform: translateY(13px);
+    }
   }
 
-  .preview__elem_3 {
-    left: -5%;
+  .preservation-preview {
+    .preview__col-left {
+      width: 62%;
+    }
+
+    img {
+      object-position: -176px 8px;
+    }
+
+    .preview__elem_1 {
+      top: 81px;
+      left: 20px;
+      width: 361px;
+    }
+
+    .preview__elem_3 {
+      left: 20px;
+    }
+
   }
 
-  .preview__img {
-    transform: translateY(13px);
-  }
-}
+  .profit-preview {
+    .preview__col-left {
+      width: 51%;
+    }
 
-.preservation-preview {
-  .preview__col-left {
-    width: 62%;
-  }
+    .preview__col-right {
+      width: 49%;
+    }
 
-  img {
-    object-position: -176px 8px;
-  }
+    .preview__img {
+      position: absolute;
+      left: 10%;
+      bottom: 0;
 
-  .preview__elem_1 {
-    top: 81px;
-    left: 20px;
-    width: 361px;
-  }
-
-  .preview__elem_3 {
-    left: 20px;
+      height: 97%;
+      width: 75%;
+    }
   }
 
-}
+  .case-preview {
+    .preview__description {
+      max-width: none;
+    }
 
-.profit-preview {
-  .preview__col-left {
-    width: 51%;
-  }
+    .preview__col-left {
+      width: 52%;
+    }
 
-  .preview__col-right {
-    width: 49%;
-  }
-
-  .preview__img {
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-
-    height: 97%;
-    width: 75%;
-  }
-}
-
-.case-preview {
-  .preview__description {
-    max-width: none;
-  }
-
-  .preview__col-left {
-    width: 52%;
-  }
-
-  .preview__elem_2 {
-    right: 19px;
+    .preview__elem_2 {
+      right: 19px;
+    }
   }
 }

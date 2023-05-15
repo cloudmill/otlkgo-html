@@ -1,0 +1,61 @@
+mixin formation-park 
+  .container  
+    .formation-park__picture 
+      +picture('number-train.png')
+  section.formation-park
+    .container-content
+      .formation-park__row.first
+        .formation-park__col-first 
+          h4.formation-park__title Важно не допускать ни дефицита, ни профицита, и в этом помогает регулярная оценка потребностей.
+        .formation-park__col-first 
+          .formation-park__subtitle Мы анализируем множество показателей, среди них:
+          ul.formation-park__list 
+            each item in ['Прогнозный объем перевозок', 'Оборот вагона', 'Дисбаланс грузопотока Китай – Европа и Европа – Китай', 'Доля объединенных XL-поездов', 'Объем перевозок на оптимизационных направлениях']
+              li.formation-park__list-item=item
+          .formation-park__text Учитывая постоянно растущий объем перевозок, с 2017 года мы применяем эффективный способ оптимизации использования парка – технологию формирования удлиненных контейнерных поездов (XL-поезда), актуальность которой с каждым годом возрастает. Компания регулярно проводит развернутый анализ оборота вагона, выявляет слабые звенья перевозочного процесса и принимает соответствующие меры.
+      .formation-park__row.second
+        .formation-park__col-second 
+          .ge-card.light-green.large
+              .ge-card__top
+                .ge-card__num.light.large 2000-3000
+                .ge-card__text платформ/мес 
+              .ge-card__bot
+                .ge-card__text-grey Оценка оптимизации парка за счет XL-поездов
+          .formation-park__text.top До 2019 года компания обеспечивала парк фитинговых платформ в основном за счет привлечения подвижного состава на рейс. Переход к использованию аренды и финансового лизинга был вызван существенным ростом объемов перевозок и, как следствие, необходимостью максимально оперативно увеличить парк (в 1,5 раза в первом полугодии 2020 года). Среди других факторов — сильный дефицит фитинговых платформ на рынке в конце 2018 — начале 2019 года, риск вывода основными контрагентами парка из привлечения на рейс, значительным ростом ставок на привлечение платформ. 
+          .formation-park__text Опыт эксплуатации лизингового парка с 2019 по 2022 год показал экономичность аренды и финансового лизинга.
+        .formation-park__col-second
+          h4.formation-park__mini-heading Динамика количества XL-поездов, шт
+          .formation-park__vector-right 
+            +picture('formation-park-right-vector.png')
+      .formation-park__row.third
+        .formation-park__col-third
+          .formation-park__text В итоге компания сформировала наиболее комфортную структуру парка вагонов по видам привлечения. К концу 2022 года доля арендованных и лизинговых платформ составила 62%, что позволило с наименьшими рисками и наиболее эффективно, но при этом максимально гибко использовать перевозочный ресурс. Арендованный и лизинговый парк — гарантированный парк для обеспечения объемов перевозок подвижным составом, а в случае изменения объемов компания прибегает к «спотовому» привлечению/возврату парка в рамках договоров привлечения на рейс.
+        .formation-park__col-third 
+          .ge-card.green
+              .ge-card__top
+                .ge-card__num.green 600
+                .ge-card__text фитинговых <br>платформ 
+              .ge-card__bot
+                .ge-card__text-grey Получены в лизинг в первой половине 2022 года
+      .formation-park__possession
+      .formation-park__possession-title Кроме того, владение вагонами на правах лизинга и аренды позволяет
+      .formation-park__possession-row.plugs
+        .formation-park__possession-item 
+          .formation-park__possession-subtitle Контролировать своевременное техническое обслуживание парка
+        .formation-park__possession-item
+          .formation-park__possession-subtitle Осуществлять перевозки, 
+          .formation-park__possession-text при которых обязательно наличие в системе автоматизированного банка данных парка вагонов кода ОКПО
+        .formation-park__possession-item
+          .formation-park__possession-subtitle Оперативно принимать решение 
+          .formation-park__possession-text по использованию подвижного состава без согласования с собственником вагона
+      .formation-park__structure-row
+        .formation-park__structure-col
+          .formation-park__structure-title Структура среднесуточного рабочего парка в управлении, %
+          .formation-park__structure-vector
+            +picture('formation-park-structure.png')
+        .formation-park__structure-col
+          .formation-park__structure-plug 
+            .formation-park__structure-subtitle При этом среднесуточная ставка привлечения вагона с учетом расходов на эксплуатацию в течение 2022 года снизилась на 8% по отношению к 2021 году.
+            .formation-park__structure-icon
+              +green-chat-svg
+          .formation-park__structure-text В 2023 году планируется дополнительно получить 200 единиц платформ в финансовый лизинг. Также необходимое количество фитинговых платформ может быть арендовано на рынке или привлечено на рейс.
