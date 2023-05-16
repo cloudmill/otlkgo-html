@@ -365,6 +365,7 @@
     &__svg-bottom {
       margin-top: 16px;
       overflow-x: scroll;
+      width: calc(100% + 20px);
 
       @include scrollbar-hidden()
     }

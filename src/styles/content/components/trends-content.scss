@@ -360,7 +360,8 @@
 
     &__svg {
       overflow-x: scroll;
-      @include scrollbar-hidden()
+      @include scrollbar-hidden();
+      width: calc(100% + 20px);
     }
 
     &-img {
