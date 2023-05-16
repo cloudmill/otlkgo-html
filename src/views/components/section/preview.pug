@@ -1,6 +1,6 @@
 
 mixin trends-preview
-  section.preview.transit-preview
+  section.preview.trends-preview
     .container 
       .preview__inner
         .preview__line
@@ -10,8 +10,10 @@ mixin trends-preview
             p.preview__name коробов <br/>Денис Сергеевич
             p.preview__job Начальник отдела клиентского сервиса департамента <br/> по работе с клиентами коммерческой дирекции
         .preview__col-right
-          .preview__img.transit-preview__img
+          .preview__img.transit-preview__img.desktop
             +picture('korobov.png')
+          .preview__img.transit-preview__img.mobile
+            +picture('korobov-mobile.png')
 mixin transit-preview
   section.preview.transit-preview
     .container 
