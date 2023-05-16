@@ -25,18 +25,26 @@ mixin global-economy
           h4.macroeconomics-grafics__col-title Прирост мирового ВВП в 2022 году
           .macroeconomics-grafics__col-img 
             +picture('macro-grafic1.png')
-          .macroeconomics-grafics__col-links
+          .macroeconomics-grafics__col-links.first
             .macroeconomics-grafics__col-text Источники: 
-            .macroeconomics-grafics__col-list 
-              a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home") World Bank,
-              a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home") IMF,
-              a.macroeconomics-grafics__col-link(href="https://www.un.org/") UN World Economic Situation and Prospects Report,
-              a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/") S&P Global,
-              a.macroeconomics-grafics__col-link(href="https://www.pwc.com/") PwC
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/") UN World Economic Situation and Prospects Report,
+                a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/") S&P Global,
+                a.macroeconomics-grafics__col-link(href="https://www.pwc.com/") PwC
         .macroeconomics-grafics__col
           h4.macroeconomics-grafics__col-title.second Прогноз роста мирового ВВП на 2023 год
           .macroeconomics-grafics__col-img 
             +picture('macro-grafic2.png')
+          .macroeconomics-grafics__col-links.second
+            .macroeconomics-grafics__col-text Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/") UN World Economic Situation and Prospects Report,
+                a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/") S&P Global,
+                a.macroeconomics-grafics__col-link(href="https://www.pwc.com/") PwC
     section.chinese-economy
       h2.chinese-economy__title Экономика Китая
       .chinese-economy__hero-row 
@@ -55,11 +63,12 @@ mixin global-economy
                 a.macroeconomics-grafics__col-link(href="https://www.credit-suisse.com/ru/ru.html") Credit Suisse,
                 a.macroeconomics-grafics__col-link(href="https://www.goldmansachs.com/") Goldman Sachs,
                 a.macroeconomics-grafics__col-link(href="https://www.fitchratings.com/") Fitch Ratings,
-                a.macroeconomics-grafics__col-link(href="https://www.un.org/") UN World <br>Economic Situation and Prospects Report
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/") UN World Economic Situation and Prospects Report
       .chinese-economy__quarter
         h4.chinese-economy__quarter-title Поквартальная динамика ВВП Китая, 2020–2022 гг.
-        .chinese-economy__quarter-vector 
-          +picture('quarter-vector.png')
+        .chinese-economy__quarter-container
+          .chinese-economy__quarter-vector 
+            +picture('quarter-vector.png')
         .macroeconomics-grafics__col-links.quarter
             .macroeconomics-grafics__col-text Источники: 
               span.macroeconomics-grafics__col-list 
@@ -70,7 +79,7 @@ mixin global-economy
               .ge-card__top
                 .ge-card__num.green -27%
               .ge-card__bot
-                .ge-card__text-grey Падение спроса на недвижимость в Китае<br> по итогам 2022 года
+                .ge-card__text-grey Падение спроса на недвижимость в Китае по итогам 2022 года
             .ge-card.light-green
                 .ge-card__top
                   .ge-card__num.light 25%
@@ -100,7 +109,7 @@ mixin global-economy
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html") ECB
           h4.chinese-forecast__subtitle.mg-top Рост розничной торговли
           .chinese-forecast__text.line В 2023 году ожидается рост объема розничной торговли до порядка 2,5-3% после снижения в 2022 году на 0,2%. Вспышки COVID влияли на потребление в заключительном квартале 2022 года, однако их эффект был не настолько сильным, как в самом начале пандемии. 
-          .chinese-forecast__subtitle-small Динамика объема розничной торговли в годовом выражении,<br> 2020–2022 гг.
+          .chinese-forecast__subtitle-small Динамика объема розничной торговли в годовом выражении, 2020–2022 гг.
           .chinese-forecast__grafic-left 
             +picture('chinese-forecast-vector2.png')
         .chinese-forecast__col
@@ -133,8 +142,9 @@ mixin global-economy
           .europe-economy__cubes-item
             .europe-economy__cubes-cube.light-green 
             .europe-economy__cubes-text Еврозона, 19 стран
-        .europe-economy__vector 
-          +picture('eco-europe-vector.png')
+        .europe-economy__vector-container
+          .europe-economy__vector 
+            +picture('eco-europe-vector.png')
         .macroeconomics-grafics__col-links.forecast
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
@@ -143,7 +153,7 @@ mixin global-economy
       h2.key-forecast__title Ключевые прогнозы по ЕС
       .key-forecast__row 
         .key-forecast__col 
-          h4.key-forecast__subtitle Восстановление спроса с середины <br>2023 года
+          h4.key-forecast__subtitle Восстановление спроса с середины 2023 года
           .key-forecast__text Прогнозы предполагают положительную динамику ВВП еврозоны, однако, торговля (в особенности импорт) и спрос на перевозки в сообщении с регионом, вероятно, будут снижены. У ритейлеров в Европе скопился значительный объем продукции, которую еще не успели реализовать. Восстановление спроса возможно с третьего квартала 2023 года, но есть ярко выраженные риски и ограничители. Например, перспективы европейской экономики и торговли будут существенно зависеть от восстановления Китая после COVID. 
         .key-forecast__col
           .key-forecast__subtitle-small Годовой прирост ВВП еврозоны, 2022-2023 гг.
@@ -167,8 +177,9 @@ mixin global-economy
           .key-forecast__text В 2021 году инфляции в еврозоне стабильно росла, а по итогам октября 2022 года этот показатель достиг пика в размере 10,6%, что в разы выше целевого значения ЕЦБ. Тем не менее, в декабре показатель опустился, и тренд на снижение, вероятно, продолжится. Охлаждению инфляции способствуют меры ЕЦБ: ключевая ставка в январе составляет уже 2,5%, и в марте 2023 года ожидается очередное повышение на 50 б.п. Резкий спад стоимости энергоносителей в четвертом квартале также заметно снизил инфляционное давление.
       .key-forecast__subsection 
         .key-forecast__subsection-title Динамика годового изменения инфляции в еврозоне, 2021–2022 гг.
-        .key-forecast__subsection-vector
-          +picture('key-forecast2.png')
+        .key-forecast__subsection-container
+          .key-forecast__subsection-vector
+            +picture('key-forecast2.png')
         .macroeconomics-grafics__col-links.forecast
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 

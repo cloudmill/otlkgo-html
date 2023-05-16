@@ -13,6 +13,7 @@
 
   width: 1160px;
   @media #{media("<", m)} {
+    padding: 0px rem(20px);
     width: auto;
   }
 }
