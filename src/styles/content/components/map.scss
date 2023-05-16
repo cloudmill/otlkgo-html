@@ -3,3 +3,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media #{media('<',m)} {
+  .map {
+    margin-top: 40px;
+  }
+}

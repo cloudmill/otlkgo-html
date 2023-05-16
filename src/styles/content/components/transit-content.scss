@@ -28,6 +28,7 @@
     border-top: 1px solid #045C25;
     flex-shrink: 0;
     width: 360px;
+
   }
 
   &__number {
@@ -55,6 +56,10 @@
 .transit-volume {
   margin-top: 100px;
 
+  .row {
+    position: relative;
+  }
+
   &__inner {
     padding-top: 12px;
 
@@ -73,6 +78,19 @@
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+
+    font-size: 12px;
+    line-height: 150%;
+    color: #727A75;
+
+    span {
+      color: color(black)
+    }
   }
 
   &__item {
@@ -310,4 +328,262 @@
   &__text {
     margin-top: 16px;
   }
+}
+
+
+@media #{media('<',m)} {
+  .transit-dynamic {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__svg {
+      margin-top: 12px;
+    }
+
+    &__links {
+      top: 355px;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__item {
+      width: auto;
+    }
+
+    &__svg-top {
+      height: 41px;
+      width: 243px;
+    }
+
+    &__svg-bottom {
+      margin-top: 16px;
+      overflow-x: scroll;
+
+      @include scrollbar-hidden()
+    }
+
+    &__svg-img {
+      width: 578px;
+      height: 237px;
+    }
+
+
+    &__sub {
+      margin-top: 12px;
+
+      width: auto;
+
+      font-size: 12px;
+    }
+  }
+
+  .transit-volume {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+
+
+    &__svg {
+      margin-top: 20px;
+
+      overflow-x: scroll;
+      @include scrollbar-hidden();
+    }
+
+    &__subtitle {
+      margin-top: 75px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      width: auto;
+    }
+
+    &__place {
+      font-size: 14px;
+    }
+
+    &__number {
+      margin-top: 12px;
+    }
+
+    &__sub {
+      margin-top: 12px;
+
+      font-size: 12px;
+    }
+  }
+
+  .transit-china {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__svg {
+      margin-top: 12px;
+    }
+
+    &__subtitle {
+      margin-top: 40px;
+    }
+
+    &__box {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 0;
+      grid-row-gap: 12px;
+    }
+
+  }
+
+  .transit-level {
+    margin-top: 40px;
+
+    .col {
+      gap: 12px;
+    }
+
+    &__inner {
+      gap: 12px;
+      padding-top: 8px;
+    }
+
+    &__description {
+      width: auto;
+
+      font-size: 12px;
+    }
+
+  }
+
+  .transit-value {
+    margin-top: 40px;
+
+    &__inner {
+      gap: 12px;
+      padding-top: 8px;
+
+      border-top: 1px solid #69DA91;
+    }
+
+    &__links {
+      margin-top: 20px;
+    }
+
+    &__row {
+      margin-top: 100px;
+      display: flex;
+      gap: 142px
+    }
+
+    &__description {
+      width: 358px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: color(dark);
+
+    }
+
+    &__img {
+      margin-top: -62px;
+    }
+
+    &__text {
+      width: 660px;
+    }
+  }
+
+  .transit-export {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__svg {
+      margin-top: 12px;
+    }
+  }
+
+  .transit-adaptation {
+    margin-top: 40px;
+
+    .col {
+      gap: 12px;
+    }
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__description {
+      width: auto;
+
+      font-size: 14px;
+    }
+  }
+
+  .transit-conclusion {
+    margin-top: 40px;
+
+    .col {
+      &:nth-child(1) {
+        width: auto;
+        flex-shrink: 0;
+
+      }
+    }
+
+    &__inner {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &-svg {
+      width: 115px;
+      height: 93px;
+    }
+
+    &__description {
+      position: relative;
+      margin-top: 20px;
+      font-size: 14px;
+      z-index: $index-1;
+    }
+
+    &__text {
+      margin-top: 12px;
+    }
+  }
+
 }

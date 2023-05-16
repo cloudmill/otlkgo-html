@@ -3,7 +3,7 @@
   width: 1440px;
   padding: 0 20px;
 
-  @media #{media("<", m)} {
+  @media #{media("<", t)} {
     width: auto;
   }
 }
@@ -12,7 +12,14 @@
   margin: 0 auto;
 
   width: 1160px;
-  @media #{media("<", m)} {
+
+
+}
+
+@media #{media("<", t)} {
+  .container-content {
+    padding: 0 20px;
+
     width: auto;
   }
 }

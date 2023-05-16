@@ -14,12 +14,12 @@
 
     height: 400px;
 
-
     background: color(light-green);
   }
 
   &__text {
-    font-family: 'Manrope';
+    z-index: $index-1;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
@@ -28,6 +28,7 @@
 
   &__title {
     margin-top: 20px;
+    z-index: $index-1;
 
     max-width: 600px;
 
@@ -65,4 +66,46 @@
 
   }
 
+}
+
+@media #{media('<',m)} {
+  .next {
+    margin-top: 40px;
+
+    &__inner {
+      padding: 20px;
+
+      height: 260px;
+    }
+
+    &__text {
+      z-index: $index-1;
+
+      font-size: 16px;
+    }
+
+    &__title {
+      margin-top: 12px;
+      z-index: $index-1;
+
+      max-width: 600px;
+
+      font-size: 32px;
+    }
+
+    &__number {
+      bottom: 20px;
+      right: 20px;
+
+      font-size: 140px;
+    }
+
+    &-svg {
+      top: -20px;
+
+      width: 160px;
+
+    }
+
+  }
 }

@@ -319,3 +319,224 @@
     flex-shrink: 0;
   }
 }
+
+@media #{media('<',m)} {
+  .strategy-ticket {
+    position: relative;
+    gap: 12px;
+    padding: 20px;
+
+    width: auto;
+    height: auto;
+
+    &__title {
+      z-index: $index-1;
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__svg {
+      width: 176px;
+      height: 93px;
+    }
+
+  }
+
+  .strategy-cards {
+    margin-top: 40px;
+
+    &__inner {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .strategy-stakeholder {
+    margin-top: 40px;
+
+    &__box {
+      margin-top: 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .strategy-card {
+    padding: 20px;
+
+    height: auto;
+
+    border: 1.10476px solid #E8E8E8;
+
+    // &:last-child,
+    // &:nth-child(4) {
+    //   border-right: 1.10476px solid #E8E8E8;
+    // }
+
+    // &:not(:last-child) {
+    //   border-bottom: none;
+    // }
+
+    &_small {
+      height: auto;
+      border-top: 1.10476px solid #E8E8E8;
+    }
+  }
+
+  .strategy-principles {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 12px;
+    }
+
+    .col {
+      width: auto;
+    }
+
+    .row {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__description {
+      font-size: 12px;
+    }
+
+    &__subtitile {
+      font-size: 14px;
+    }
+
+    &__list {
+      margin-top: 12px;
+      gap: 4px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+
+  .strategy-mechanism {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+  }
+
+  .strategy-iter {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__box {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col {
+      width: auto;
+    }
+
+    &__text {
+      max-width: auto;
+    }
+  }
+
+  .strategy-partners {
+    margin-top: 40px;
+
+    .col {
+      width: auto;
+    }
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      margin-top: 20px;
+
+      max-width: auto;
+    }
+  }
+
+  .strategy-cargo {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__text {
+      margin-top: 20px;
+
+      max-width: auto;
+    }
+  }
+
+  .strategy-cooperation {
+    margin-top: 40px;
+
+    .col {
+      width: auto;
+    }
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__box {
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    &__item {
+      p {
+        font-size: 12px;
+      }
+    }
+
+  }
+}

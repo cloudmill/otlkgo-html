@@ -28,7 +28,11 @@ h4 {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
-  color: color(black)
+  color: color(black);
+
+  @media #{media('<',m)} {
+    font-size: 14px;
+  }
 }
 
 h5 {
@@ -43,6 +47,10 @@ h5 {
   font-size: 15px;
   line-height: 160%;
   color: color(black);
+
+  @media #{media('<',m)} {
+    font-size: 12px;
+  }
 
 }
 
