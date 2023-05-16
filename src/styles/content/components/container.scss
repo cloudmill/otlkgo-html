@@ -2,10 +2,17 @@
   margin: 0 auto;
   width: 1440px;
   padding: 0 20px;
+
+  @media #{media("<", m)} {
+    width: auto;
+  }
 }
 
 .container-content {
   margin: 0 auto;
 
   width: 1160px;
+  @media #{media("<", m)} {
+    width: auto;
+  }
 }

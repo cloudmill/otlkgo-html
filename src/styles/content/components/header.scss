@@ -9,6 +9,10 @@
     border-bottom: 1px solid color(borders);
     background: color(white);
     z-index: 3;
+
+    @media #{media("<", m)} {
+        height: rem(56px);
+    }
     &-container{
         display: flex;
         justify-content: space-between;
@@ -29,6 +33,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
 
         width: 84px;
         height: 84px;
@@ -37,6 +42,10 @@
         cursor: pointer;
         transition: 0.3s;
 
+        @media #{media("<", m)} {
+            width: rem(56px);
+            height: rem(56px);
+        }
         &.active{
             background: color(dark);
         }
@@ -48,11 +57,17 @@
                 height: 1.5px;
 
                 background-color: color(white);
+
+                @media #{media("<", m)} {
+                    width: rem(19.5px);
+                }
                 &:last-child{
                     margin-bottom: 0px;
                 }
             }
         }
+
+        
     }
 
     &-logo{
@@ -67,6 +82,15 @@
         svg{
             width: 119px;
             height: 44px;
+            @media #{media("<", m)} {
+                width: rem(86.5px);
+                height: rem(32px);
+            }
+        }
+
+        @media #{media("<", m)} {
+            margin-left: 12px;
+            width: rem(86.5px);
         }
     }
 
@@ -82,6 +106,10 @@
 
         &__green{
             color: color(green);
+        }
+
+        @media #{media("<", m)} {
+            display: none;
         }
     }
 
@@ -106,6 +134,9 @@
         &__bot{
             color: color(green);
         }
+        @media #{media("<", m)} {
+            display: none;
+        }
     }
 
     &-actions{
@@ -121,21 +152,36 @@
 
             border-left: 1px solid color(borders);
             cursor: pointer;
+
+            
             &:nth-child(2){
                 width: 84px;
+                @media #{media("<", m)} {
+                    width: rem(57px);
+                    height: rem(57px);
+                }
             }
 
             &:nth-child(3){
                 width: 100px;
+                @media #{media("<", m)} {
+                    display: none;
+                }
             }
-
+            @media #{media("<", m)} {
+                width: rem(57px);
+                height: rem(57px);
+            }
             &-row{
                 display: flex;
                 align-items: center;
                 &:nth-child(1){
                     gap: 12px;
+                    @media #{media("<", m)} {
+                        gap: rem(6px);
+                    }
                 }
-                &:nth-child(1){
+                &:nth-child(2){
                     gap: 8px;
                 }
             }
@@ -170,6 +216,10 @@
                 text-align: center;
                 color: color(black);
 
+                @media #{media("<", m)} {
+                    font-size: rem(14px);
+                    line-height: 130%;
+                }
                 &.black{
                     color: color(dark);
                 }

@@ -206,6 +206,9 @@
     &.hero-elem {
       z-index: 4;
 
+      @media #{media("<", m)} {
+        display: none;
+      }
       &.hero-elem {
         z-index: 2;
         padding-left: 27px;
