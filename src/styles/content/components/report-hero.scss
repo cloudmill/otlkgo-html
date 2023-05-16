@@ -10,6 +10,10 @@
     width: 100%;
     height: 936px;
   }
+  @media #{media("<", m)} {
+    margin-top: 56px;
+    width: 100%;
+  }
   &__background{
     position: absolute;
     top: 0px;
@@ -18,6 +22,9 @@
     @media #{media(">", ll)} {
       width: 100%;
     }
+    @media #{media("<", m)} {
+      display: none;
+    }
   }
 
   &__row{
@@ -25,12 +32,41 @@
     width: 100%;
     height: 100%;
     gap: 40px;
+    @media #{media("<", m)} {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+    }
   }
 
   &__col{
     position: relative;
     overflow: hidden;
     width: 50%;
+    @media #{media("<", m)} {
+      width: 100%;
+
+      &:nth-child(1){
+        height: 475px;
+      }
+      &:nth-child(3){
+        order: -1;
+        height: 260px;
+      }
+    }
+
+    &-background{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      display: none;
+      @media #{media("<", m)} {
+        z-index: -1;
+        display: block;
+      }
+    }
   }
 
   &__portrait{
@@ -46,12 +82,26 @@
     @media #{media(">", ll)} {
       width: 980px;
     }
+    @media #{media("<", m)} {
+      display: none;
+
+      &.mobile{
+        height: 390px;
+        display: block;
+        top: rem(85px);
+        left: 0px;
+      }
+    }
+
     picture{
       width: 100%;
       height: 100%;
 
       img{
         object-fit: cover;
+        @media #{media("<", m)} {
+          object-fit: fill;
+        }
       }
     }
 
@@ -69,6 +119,9 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: color(dark);
+    @media #{media("<", m)} {
+      margin: 20px 0px 4px 20px;
+    }
   }
 
   &__job-title{
@@ -78,6 +131,10 @@
     font-size: 14px;
     line-height: 150%;
     color: color(alt-grey);
+
+    @media #{media("<", m)} {
+      margin-left: 20px;
+    }
   }
 
 
@@ -90,6 +147,20 @@
     letter-spacing: -0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media #{media("<", m)} {
+      padding: 40px 20px 0px 20px;
+
+      font-size: rem(32px);
+      line-height: 90%;
+    }
+
+    &.page-2{
+      width: 600px;
+      @media #{media("<", m)} {
+        width: 335px;
+      }
+    }
   }
 
   &__list{
@@ -117,6 +188,9 @@
         z-index: 2;
       }
     }
+    @media #{media("<", m)} {
+      display: none;
+    }
   }
 
   &__number{
@@ -138,5 +212,11 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media #{media("<", m)} {
+      font-size: rem(140px);
+      bottom: 10px;
+      right: 13px;
+    }
   }
 }

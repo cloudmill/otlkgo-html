@@ -4,7 +4,7 @@
   padding: 0 20px;
 
   @media #{media("<", m)} {
-    width: 335px;
+    width: auto;
   }
 }
 
@@ -13,6 +13,6 @@
 
   width: 1160px;
   @media #{media("<", m)} {
-    width: 335px;
+    width: auto;
   }
 }
