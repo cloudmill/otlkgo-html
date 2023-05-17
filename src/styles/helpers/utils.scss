@@ -1,10 +1,19 @@
 .mt-40 {
   margin-top: 40px;
+
+  @media #{media('<',m)} {
+    margin-top: 20px;
+  }
 }
 
 .desktop {
-
   @media #{media('<',m)} {
+    display: none !important;
+  }
+}
+
+.desktop-t {
+  @media #{media('<',t)} {
     display: none !important;
   }
 }
@@ -15,4 +24,21 @@
   @media #{media('<',m)} {
     display: block !important;
   }
+}
+
+.mobile-t {
+  display: none !important;
+
+  @media #{media('<',t)} {
+    display: block !important;
+  }
+}
+
+//colors
+.green-bg {
+  background: #045C25;
+}
+
+.green-light-bg {
+  background: #69DA91;
 }

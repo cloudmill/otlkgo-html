@@ -47,11 +47,26 @@ mixin transit-content
       .transit-china__inner
         .row
           h4.transit-china__title Динамика долей погранпереходов в направлении Китай-Европа-Китай, 2022 г.
-          a.transit-china__link(href="#") 
+          a.transit-china__link.desktop(href="#") 
             <span>Источник: </span>АО «ОТЛК ЕРА»
-              
-        .transit-china__svg 
-          +transit-china-svg.transit-china-svg
+        .row 
+          .transit-china__items 
+            .transit-china__item 
+              span.transit-china__item_green-dark
+              p ОТЛК ЕРА
+            .transit-china__item 
+              span.transit-china__item_green
+              p Наушки
+            .transit-china__item 
+              span.transit-china__item_grey
+              p Забайкальск
+            .transit-china__item 
+              span.transit-china__item_alt-grey
+              p Порты и станции ДВ РФ
+        .transit-china__img 
+          +picture('transit-china.png').transit-china-img
+        a.transit-china__link.mobile(href="#") 
+            <span>Источник: </span>АО «ОТЛК ЕРА»
         .transit-china__row 
           h4.transit-china__subtitle Нисходящая динамика объемов транзитных перевозок, в том числе для сервисов <br/> ОТЛК ЕРА, характеризуется различными внешними влияниями:
           .transit-china__box 
@@ -60,7 +75,6 @@ mixin transit-content
                 +mark-text-svg 
               .col 
                 p.text.transit-china__text <span> Вспышки коронавирусной инфекции в Китае </span>  на протяжении всего года приводили к ограничению или закрытию производств и ключевых транспортных узлов страны. Влияние COVID также негативно сказалось на потреблении внутри страны, спросе на импорт. В 2022 году объем розничной торговли в Китае снизился на 0,2%.
-           
             .transit-china__item 
               .col 
                 +mark-text-svg 
@@ -100,11 +114,21 @@ mixin transit-content
     .container-content 
       .transit-value__inner 
         h4.transit-value__title Объем импортных контейнерных перевозок Китай-Россия в сервисах «АО ОТЛК ЕРА», <br/> ДФЭ и число импортных маршрутов, 2021–2022 гг.
-        .links.transit-value__links 
+        .links.transit-value__links.desktop
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#") АО "ОТЛК ЕРА"
+        .transit-value__items 
+          .transit-value__item 
+            span.transit-value__span.green-light-bg 
+            p 2021
+          .transit-value__item 
+            span.transit-value__span.green-bg
+            p 2022
         .transit-value__img 
-          +picture('transit-value.png')
+          +picture('transit-value.png').transit-value-img
+        .links.transit-value__links.mobile
+          p.links__text.transit-value__links-text Источник:&nbsp;
+          a.links__link.transit-value__link(href="#") АО "ОТЛК ЕРА"
         .transit-value__row 
           .col 
             p.transit-value__description По видам перевозок за 2022 год также следует отметить увеличение экспортных объемов.

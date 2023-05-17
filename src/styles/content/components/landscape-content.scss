@@ -247,9 +247,11 @@
 
   .strategy-cart {
     display: flex;
+    justify-content: space-between;
     position: relative;
     padding: 30px 31px;
     margin-top: 100px;
+    gap: 30px;
 
     border: 1px solid color(light-green);
 
@@ -266,14 +268,10 @@
     }
 
     &__text {
-      margin-left: 230px;
-
       width: 660px;
     }
 
     &__description {
-      margin-left: 230px;
-
       width: 660px;
 
       font-weight: 700;
@@ -426,6 +424,10 @@
       margin-top: 20px;
       grid-template-columns: repeat(1, 1fr);
       row-gap: 20px;
+    }
+
+    &__img {
+      margin-top: 20px;
     }
 
     &__item {

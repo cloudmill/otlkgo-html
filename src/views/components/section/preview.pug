@@ -7,13 +7,14 @@ mixin trends-preview
         .preview__col-left
           h2.preview__title Тренды логистической <br/>отрасли: время <br/>альтернатив
           .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('korobov-mobile.png')
             p.preview__name коробов <br/>Денис Сергеевич
             p.preview__job Начальник отдела клиентского сервиса департамента <br/> по работе с клиентами коммерческой дирекции
         .preview__col-right
-          .preview__img.transit-preview__img.desktop
+          .preview__img.transit-preview__img.desktop-t
             +picture('korobov.png')
-          .preview__img.transit-preview__img.mobile
-            +picture('korobov-mobile.png')
+
 mixin transit-preview
   section.preview.transit-preview
     .container 
@@ -22,12 +23,15 @@ mixin transit-preview
         .preview__col-left
           .row
             h2.preview__title Рынок ж/д транзита   <br/>Китай — Европа — Китай
-            p.preview__description По итогам 2022 года общий объем железнодорожных транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по основным маршрутам МТК «Восток-Запад» сократился, а позиция ОТЛК ЕРА на рынке значительно упрочилась.
+            p.preview__description.desktop По итогам 2022 года общий объем железнодорожных транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по основным маршрутам МТК «Восток-Запад» сократился, а позиция ОТЛК ЕРА на рынке значительно упрочилась.
           .row
+            .preview__img.mobile-t
+              +picture('kadyrov-mobile.png')
             p.preview__name кадыров <br/>Айдар Ерболатович
             p.preview__job Ведущий менеджер департамента логистики коммерческой дирекции
+            p.preview__description.mobile По итогам 2022 года общий объем железнодорожных транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по основным маршрутам МТК «Восток-Запад» сократился, а позиция ОТЛК ЕРА на рынке значительно упрочилась.
         .preview__col-right
-          .preview__img
+          .preview__img.desktop-t
             +picture('kadyrov.png')
 
 mixin landscape-preview
@@ -38,11 +42,14 @@ mixin landscape-preview
         .preview__col-left
           h2.preview__title Контекст бизнеса:  <br/>санкционный ландшафт
           .row
+            .preview__img.landscape-preview__img.mobile-t
+              +picture('seleznev-mobile.png')
             p.preview__name селезнев <br/>Андрей Сергеевич
             p.preview__job Сотрудник диспетчерского центра дирекции по перевозкам
         .preview__col-right
-          .preview__img.landscape-preview__img
+          .preview__img.landscape-preview__img.desktop-t
             +picture('seleznev.png')
+          
 
 mixin strategy-preview
   section.preview.strategy-preview
@@ -52,10 +59,12 @@ mixin strategy-preview
         .preview__col-left
           h2.preview__title Стратегия <br/>технологического лидера
           .row
+            .preview__img.mobile-t 
+              +picture('kovaleva-mobile.png')
             p.preview__name Ковалева <br/>Дарья Александровна
             p.preview__job Системный аналитик отдела сопровождения информационных систем
         .preview__col-right
-          .preview__img 
+          .preview__img.desktop-t
             +picture('kovaleva.png')
 
 

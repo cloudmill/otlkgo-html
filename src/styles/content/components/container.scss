@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   padding: 0 20px;
 
   @media #{media("<", t)} {
@@ -11,12 +11,12 @@
 .container-content {
   margin: 0 auto;
 
-  width: 1160px;
-
+  max-width: 1200px;
+  padding: 0 20px;
 
 }
 
-@media #{media("<", t)} {
+@media (max-width: 1060px) {
   .container-content {
     padding: 0 20px;
 

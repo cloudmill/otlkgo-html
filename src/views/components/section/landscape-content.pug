@@ -49,8 +49,10 @@ mixin landscape-content
           p.text.landscape-orientation__text Санкционные ограничения во многом определили ориентацию на восток для большинства российских компаний. Так, развитие импортных и экспортных сервисов в 2022 году неразрывно связано с китайскими коллегами. 
         .landscape-orientation__row
           h6.landscape-orientation__subtitle Три  направления с наибольшим развитием
-          .landscape-orientation__svg 
-            +landscape-content-svg 
+          .landscape-orientation__img.desktop 
+            +picture('landscape.png').landscape-orientation-img
+          .landscape-orientation__img.mobile
+            +picture('landscape-mobile.png').landscape-orientation-img
           .landscape-orientation__row-bottom
             .landscape-orientation__item 
               p.landscape-orientation__number +260%

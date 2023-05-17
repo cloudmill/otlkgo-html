@@ -7,5 +7,17 @@
 @media #{media('<',m)} {
   .map {
     margin-top: 40px;
+
+    &__img {
+      overflow-x: scroll;
+    }
+
+
+    .img {
+      height: 610px;
+      width: 940px;
+    }
+
+
   }
 }

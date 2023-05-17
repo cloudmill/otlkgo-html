@@ -46,6 +46,7 @@
 
   &__inner {
     display: flex;
+    gap: 12px;
     justify-content: space-between;
   }
 }
@@ -339,6 +340,7 @@
     }
 
     &__svg {
+      left: -33px;
       width: 176px;
       height: 93px;
     }
