@@ -245,6 +245,12 @@
         border-right: 1px solid color(borders);
         z-index: 4;
 
+        @media #{media("<", m)} {
+            padding: rem(24px) rem(20px) rem(20px) 20px;
+            height: 100vh;
+            width: rem(355px);
+            top: rem(56px);
+        }
         &.active{
             transform: translateX(0%);
         }
@@ -256,6 +262,11 @@
             line-height: 100%;
             text-transform: uppercase;
             color: color(alt-grey);
+            @media #{media("<", m)} {
+                margin-bottom: rem(24px);
+                font-size: rem(12px);
+                line-height: 100%;
+            }
         }
 
         &__list{
@@ -270,11 +281,19 @@
             align-items: start;
             justify-content: space-between;
 
+            
+
             border-bottom: 1px solid color(borders);
             cursor: pointer;
             transition: 0.3s;
 
+            @media #{media("<", m)} {
+                
+                padding-bottom: rem(12px);
+            }
             &-text{
+                width: 309px;
+
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 100%;
@@ -282,6 +301,11 @@
                 text-transform: uppercase;
                 color: color(dark);
                 transition: 0.3s;
+                @media #{media("<", m)} {
+                    width: rem(268px);
+                    font-size: rem(16px);
+                    line-height: 110%;
+                }
             }
 
             &-num{
@@ -293,6 +317,10 @@
                 text-transform: uppercase;
                 color: #E1E7E3;
                 transition: 0.3s;
+                @media #{media("<", m)} {
+                    font-size: rem(16px);
+                    line-height: 100%;
+                }
             }
 
             &:hover{

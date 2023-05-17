@@ -148,8 +148,14 @@
         margin-bottom: 60px;
         border-top: 1px solid #E8E8E8;
 
+        @media #{media('<',m)}{
+          margin-bottom: rem(28px);
+        }
         &.second{
           margin-bottom: 88px;
+          @media #{media('<',m)}{
+            margin-bottom: rem(28px);
+          }
         }
       }
 
@@ -1065,7 +1071,10 @@ line-height: 160%;
   &__title{
     margin-bottom: 40px;
     @media #{media("<", m)} {
+      width: rem(315px);
       margin-bottom: rem(24px);
+      font-size: rem(20px);
+      line-height: 120%;
     }
   }
 
@@ -1082,9 +1091,15 @@ line-height: 160%;
       flex-shrink: 0;
       &:nth-child(1){
         width: 360px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
       &:nth-child(2){
         width: 760px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
 
@@ -1095,11 +1110,21 @@ line-height: 160%;
       font-size: 18px;
       line-height: 160%;
       color: color(dark);
+      @media #{media("<", m)} {
+        &.desktop{
+          display: none;
+        }
+      }
     }
 
     &-row{
       display: flex;
       gap: 40px;
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: rem(20px);
+      }
     }
   }
 
@@ -1107,6 +1132,12 @@ line-height: 160%;
     margin-top: 40px;
     display: flex;
     gap: 40px;
+
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
 
     &-text{
       font-weight: 400;
@@ -1116,6 +1147,13 @@ line-height: 160%;
 
       &:nth-child(1){
         margin-bottom: 20px;
+        @media #{media("<", m)} {
+          margin-bottom: rem(12px);
+        }
+      }
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
       }
     }
   }
@@ -1123,8 +1161,13 @@ line-height: 160%;
   &__balance{
     margin-top: 100px;
   
-  padding-top: 12px;
-  border-top: 1px solid color(green);
+    padding-top: 12px;
+    border-top: 1px solid color(green);
+    @media #{media("<", m)} {
+      width: rem(307px);
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
     &-top{
       margin-bottom: 20px;
       display: flex;
@@ -1136,6 +1179,35 @@ line-height: 160%;
       display: flex;
       align-items: start;
     }
+    &-title{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: color(dark);
+      width: 320px;
+      @media #{media("<", m)} {
+        width: rem(335px);
+        font-size: rem(12px);
+        line-height: 150%;
+      }
+    }
+
+    &-container{
+      @media #{media("<", m)} {
+        width: rem(375px);
+        padding-left: rem(20px);
+        margin-left: rem(-20px);
+        overflow-x: scroll;
+      }
+      
+    }
+    &-vector{
+      @media #{media("<", m)} {
+        width: rem(674px);
+        overflow-x: scroll;
+      }
+      
+    }
   }
 
   &__shares{
@@ -1143,6 +1215,37 @@ line-height: 160%;
   
     padding-top: 12px;
     border-top: 1px solid color(light-green);
+    &.desktop{
+      @media #{media("<", m)} {
+        display: none;
+      }
+    }
+    &.mobile{
+      display: none;
+      @media #{media("<", m)} {
+        padding-top: 0px;
+        border: none;
+        margin-top: rem(20px);
+        display: block;
+      }
+    }
+
+    &-title{
+      padding-top: rem(5px);
+      margin-bottom: rem(23px);
+
+      font-weight: 700;
+      font-size: rem(14px);
+      line-height: 150%;
+      color: #2A2E2B;
+      border-top: 1px solid color(light-green);
+    }
+    .macroeconomics-grafics__col-links{
+      margin-bottom: rem(20px);
+      @media #{media("<", m)} {
+        margin-top: rem(16px);
+      }
+    }
   }
   &__shares2{
     margin-top: 100px;
@@ -1150,12 +1253,20 @@ line-height: 160%;
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(40px);
+      padding-top: rem(5px);
+    }
     &-top{
       margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
+      @media #{media("<", m)} {
+        margin-bottom: rem(16px);
+        display: block;
+      }
       .mutal-trade__shares2-copy{
         display: flex;
         align-items: start;
@@ -1167,6 +1278,45 @@ line-height: 160%;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      width: 320px;
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+        width: 100%;
+      }
+    }
+
+    &-container{
+      @media #{media("<", m)} {
+        width: rem(375px);
+        overflow-x: scroll;
+        padding-left: rem(20px);
+        margin-left: rem(-20px);
+        padding-right: rem(20px);
+      }
+      
+    }
+
+    &-vector{
+      &.desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+      }
+      &.mobile{
+        display: none;
+        @media #{media("<", m)} {
+          display: block;
+          overflow-x: scroll;
+        }
+      }
+
+      &.vector-1{
+        width: rem(710px);
+      }
+      &.vector-2{
+        width: rem(936px);
+      }
     }
   }
 
@@ -1176,12 +1326,19 @@ line-height: 160%;
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(40px);
+      padding-top: rem(5px);
+    }
     &-top{
       margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      @media #{media("<", m)} {
+        margin-bottom: rem(16px);
+        display: block;
+      }
       .mutal-trade__shares2-copy{
         display: flex;
         align-items: start;
@@ -1193,6 +1350,24 @@ line-height: 160%;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+        width: 100%;
+      }
+    }
+    &-vector{
+      &.desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+      }
+      &.mobile{
+        display: none;
+        @media #{media("<", m)} {
+          display: block;
+        }
+      }
     }
   }
 
@@ -1202,6 +1377,10 @@ line-height: 160%;
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
     &-title{
       margin-bottom: 20px;
 
@@ -1209,6 +1388,25 @@ line-height: 160%;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      @media #{media("<", m)} {
+        margin-bottom: rem(12px);
+        font-size: rem(14px);
+        line-height: 150%;
+      }
+    }
+
+    &-vector{
+      &.custom-desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+        &.custom-mobile{
+          display: none;
+          @media #{media("<", m)} {
+            display: block;
+          }
+        }
+      }
     }
   }
 
@@ -1218,6 +1416,10 @@ line-height: 160%;
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
     &-title{
       margin-bottom: 20px;
 
@@ -1225,6 +1427,24 @@ line-height: 160%;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      @media #{media("<", m)} {
+        margin-bottom: rem(12px);
+        font-size: rem(14px);
+        line-height: 150%;
+      }
+    }
+    &-vector{
+      &.custom-desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+        &.custom-mobile{
+          display: none;
+          @media #{media("<", m)} {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
@@ -1240,11 +1460,21 @@ line-height: 160%;
   gap: 244px;
   border: 1px solid color(light-green);
 
+  @media #{media("<", m)} {
+    margin-top: rem(40px);
+    display: block;
+  }
   &__rect{
     position: absolute;
     z-index: 1;
     top: 0px;
     left: 0px;
+    @media #{media("<", m)} {
+      svg{
+        width: rem(115px);
+        height: rem(93px);
+      }
+    }
   }
 
   &__title{
@@ -1258,16 +1488,32 @@ line-height: 160%;
     line-height: 120%;
     letter-spacing: -0.02em;
     color: color(dark);
+
+    @media #{media("<", m)} {
+      font-size: rem(20px);
+      line-height: 120%;
+      margin: rem(19px) 0px rem(20px) rem(19px);
+    }
   }
 
   &__main{
     padding: 40px 100px 40px 0px;
+    @media #{media("<", m)} {
+      padding: 0px rem(15px) rem(25px) rem(20px);
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
     &-title{
       margin-bottom: 16px;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
       color: color(dark);
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 140%;
+      }
     }
 
     &-text{
@@ -1278,6 +1524,14 @@ line-height: 160%;
 
       &:nth-child(2){
         margin-bottom: 16px;
+        @media #{media("<", m)} {
+          margin-bottom: rem(12px);
+        }
+      }
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
       }
     }
   }

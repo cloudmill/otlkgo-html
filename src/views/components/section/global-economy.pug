@@ -216,9 +216,9 @@ mixin global-economy
       h2.mutal-trade__title Взаимная торговля Китая и Европы
       .mutal-trade__hero 
         .mutal-trade__hero-col 
-          h4.mutal-trade__hero-title Двусторонняя торговля Китая<br> и Европы — один из основных<br> сегментов мировой торговли<br> и центральная ось трансъевразийских перевозок.
+          h4.mutal-trade__hero-title Двусторонняя торговля Китая и Европы — один из основных сегментов мировой торговли и центральная ось трансъевразийских перевозок.
         .mutal-trade__hero-col
-          .mutal-trade__hero-text Динамика торговли между партнерами определяет грузовую базу евразийского железнодорожного транзитного маршрута, а также баланс грузопотоков.
+          .mutal-trade__hero-text.desktop Динамика торговли между партнерами определяет грузовую базу евразийского железнодорожного транзитного маршрута, а также баланс грузопотоков.
           .mutal-trade__hero-row 
             .mutal-trade__hero-subcol
               .ge-card.light-green
@@ -249,17 +249,37 @@ mixin global-economy
           .mutal-trade__subsection-text Характерно, что тенденция к росту дефицита Европы в торговле с Китаем наблюдается с 2019 года, и динамика постоянно ускоряется. Так, в 2022 году, согласно доступным данным, экспорт Китая почти в 2,5 превзошел импорт. Ухудшение баланса грузопотоков неизбежным образом создает вызовы для индустрии перевозок в части поиска и борьбы за грузы для обратных отправок.
       .mutal-trade__balance 
         .mutal-trade__balance-top 
-          h4.mutal-trade__balance-title Взаимная торговля Китая и Европы, 2021–2022 гг., млрд евро
+          .mutal-trade__balance-title Взаимная торговля Китая и Европы, 2021–2022 гг., млрд евро
           .mutal-trade__balance-copy
-            .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-links.forecast.first
+              .macroeconomics-grafics__col-text.big-12 Источники: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+        .mutal-trade__balance-container
+          .mutal-trade__balance-vector 
+            +picture('mutal-trade-balance.png')
+        .macroeconomics-grafics__col-links.forecast.second
+              .macroeconomics-grafics__col-text.big-12 Источники: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+      .mutal-trade__shares.desktop 
+        .mutal-trade__shares-vector 
+          +picture('mutal-trade-shares.png')
+        .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
-        .mutal-trade__balance-vector 
-          +picture('mutal-trade-balance.png')
-      .mutal-trade__shares 
+      .mutal-trade__shares.mobile
+        .mutal-trade__shares-title Доли стран Европы в импорте из Китая, 2022 г.
         .mutal-trade__shares-vector 
-          +picture('mutal-trade-shares.png')
+          +picture('shares-mobile-1.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Источники: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+        .mutal-trade__shares-title Доли стран Европы в экспорте из Китая, 2022 г.
+        .mutal-trade__shares-vector 
+          +picture('shares-mobile-2.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
@@ -268,34 +288,44 @@ mixin global-economy
         .mutal-trade__shares2-top 
           .mutal-trade__shares2-title Доли товаров в экспорте Китай-Европа, 2022 г.
           .mutal-trade__shares2-copy
-            .macroeconomics-grafics__col-links
-            .macroeconomics-grafics__col-text.big-12 Источники: 
-              span.macroeconomics-grafics__col-list 
-                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
-        .mutal-trade__shaeres2-vector
+            .macroeconomics-grafics__col-links.first
+              .macroeconomics-grafics__col-text.big-12 Источники: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+        .mutal-trade__shares2-vector.desktop
           +picture('mutal-trade-shares2.png')
+        .mutal-trade__shares2-container
+          .mutal-trade__shares2-vector.mobile.vector-1
+            +picture('shares-to-mobile-2.png')
       .mutal-trade__shares3 
         .mutal-trade__shares3-top 
           .mutal-trade__shares3-title Доли товаров в экспорте Китай-Европа, 2022 г.
           .mutal-trade__shares3-copy
-            .macroeconomics-grafics__col-links
-            .macroeconomics-grafics__col-text.big-12 Источники: 
-              span.macroeconomics-grafics__col-list 
-                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
-        .mutal-trade__shaeres2-vector
+            .macroeconomics-grafics__col-links.first
+              .macroeconomics-grafics__col-text.big-12 Источники: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
+        .mutal-trade__shares2-vector.desktop
           +picture('mutal-trade-shares3.png')
+        .mutal-trade__shares2-container
+          .mutal-trade__shares2-vector.mobile.vector-2
+            +picture('shares-to-mobile-3.png')
       .mutal-trade__export 
         .mutal-trade__export-title Экспорт Китай-Европа посредством основных видов транспорта, 2021–2022 гг., % от стоимостной торговли
-        .mutal-trade__export-vector
+        .mutal-trade__export-vector.custom-desktop
           +picture('mutal-trade-export.png')
+        .mutal-trade__export-vector.custom-mobile
+          +picture('mutal-trade-ex-mobile1.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/") Eurostat
       .mutal-trade__export2 
         .mutal-trade__export2-title Экспорт Китай-Европа посредством основных видов транспорта, 2021–2022 гг., % от стоимостной торговли
-        .mutal-trade__export2-vector
+        .mutal-trade__export2-vector.custom-desktop
           +picture('mutal-trade-export2.png')
+        .mutal-trade__export2-vector.custom-mobile
+          +picture('mutal-trade-ex-mobile2.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
