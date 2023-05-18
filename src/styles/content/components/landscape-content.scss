@@ -302,6 +302,22 @@
 
 }
 
+
+@media #{media('<',t)} {
+  .landscape-description {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__description {
+      width: auto;
+    }
+  }
+
+
+
+}
+
 @media #{media('<',m)} {
   .landscape-description {
     margin-top: 40px;
@@ -428,6 +444,12 @@
 
     &__img {
       margin-top: 20px;
+      height: 335px;
+
+      img {
+        object-fit: contain;
+        object-position: left;
+      }
     }
 
     &__item {

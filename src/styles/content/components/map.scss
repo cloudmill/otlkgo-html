@@ -8,16 +8,19 @@
   .map {
     margin-top: 40px;
 
-    &__img {
+    .container {
+      width: 100%;
+    }
+
+    &__inner {
+      width: calc(100% + 40px);
+      margin-left: -20px;
       overflow-x: scroll;
     }
 
-
-    .img {
-      height: 610px;
+    &__img {
       width: 940px;
+      height: 610px;
     }
-
-
   }
 }

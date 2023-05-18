@@ -79,6 +79,22 @@
 
   }
 
+  &__list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+
+    &-text{
+      
+    }
+  }
+
   &__line {
     position: absolute;
     top: 40px;
@@ -275,6 +291,12 @@
   }
 }
 
+.corruption-preview {
+  .preview__item {
+    max-width: 540px;
+  }
+}
+
 @media #{media('<',d)} {
   .preview {
     &__col-left {
@@ -311,7 +333,8 @@
     }
 
     img {
-      object-position: top;
+      object-position: left;
+      object-fit: contain;
     }
 
     &__name {
@@ -410,7 +433,7 @@
     }
 
     &__img {
-      height: auto;
+      height: 385px;
     }
 
     &__name {

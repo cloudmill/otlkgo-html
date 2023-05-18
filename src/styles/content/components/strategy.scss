@@ -242,6 +242,7 @@
 
   &__box {
     display: flex;
+    gap: 20px;
   }
 
   &__text {
@@ -321,6 +322,25 @@
   }
 }
 
+@media #{media('<',t)} {
+  .strategy-card {
+
+    height: auto;
+    padding-bottom: 45px;
+
+
+    // &:last-child,
+    // &:nth-child(4) {
+    //   border-right: 1.10476px solid #E8E8E8;
+    // }
+
+    // &:not(:last-child) {
+    //   border-bottom: none;
+    // }
+
+  }
+}
+
 @media #{media('<',m)} {
   .strategy-ticket {
     position: relative;
@@ -367,19 +387,15 @@
 
   .strategy-card {
     padding: 20px;
+    padding-right: 50px;
 
     height: auto;
 
-    border: 1.10476px solid #E8E8E8;
+    border: 1.10476px solid #E8E8E8 !important;
 
-    // &:last-child,
-    // &:nth-child(4) {
-    //   border-right: 1.10476px solid #E8E8E8;
-    // }
-
-    // &:not(:last-child) {
-    //   border-bottom: none;
-    // }
+    &:not(:last-child) {
+      border-bottom: 0px !important;
+    }
 
     &_small {
       height: auto;

@@ -433,6 +433,13 @@
   }
 }
 
+@media #{media('<',t)} {
+  .transit-value {
+    &__text {
+      width: auto;
+    }
+  }
+}
 
 @media #{media('<',m)} {
   .transit-dynamic {

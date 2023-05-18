@@ -1,4 +1,63 @@
+//about
 
+mixin busines-preview
+  section.preview.busines-preview
+    .container 
+      .preview__inner
+        .preview__line
+        .preview__col-left
+          .row
+            h2.preview__title Бизнес–модель
+            p.preview__description.desktop Наша операционная модель направлена на повышение объемов транзитных перевозок на полигоне 1520 за счет таких ключевых процессов, как:
+            ul.preview__list.desktop 
+              each item in ['Минимизация издержек','Формирование конкурентоспособного ценового предложения','Балансировка транзитных маршрутов','Организация вывода на рынок новых логистических услуг','Адаптация транзитных сервисов для новых групп грузоотправителей','Повышение скорости перевозки',]
+                li.preview__item
+                  +mark-text-svg
+                  p.preview__item-text.text=item
+          .row
+            .preview__img.mobile-t
+              +picture('selutin.png')
+            p.preview__name Селютин <br/>Михаил Иванович
+            p.preview__job Директор по развитию бизнеса и анализу рисков
+            p.preview__description.mobile Наша операционная модель направлена на повышение объемов транзитных перевозок на полигоне 1520 за счет таких ключевых процессов, как:
+            ul.preview__list.mobile 
+              each item in ['Минимизация издержек','Формирование конкурентоспособного ценового предложения','Балансировка транзитных маршрутов','Организация вывода на рынок новых логистических услуг','Адаптация транзитных сервисов для новых групп грузоотправителей','Повышение скорости перевозки',]
+                li.preview__item
+                  +mark-text-svg
+                  p.preview__item-text.text=item
+        .preview__col-right
+          .preview__img.desktop-t
+            +picture('selutin.png')
+
+mixin corruption-preview
+  section.preview.corruption-preview
+    .container 
+      .preview__inner
+        .preview__line
+        .preview__col-left
+          .row
+            h2.preview__title Противодействие коррупции
+            p.preview__description.desktop ОТЛК ЕРА категорически во всех видах и формах не приемлет коррупцию. 
+            ul.preview__list.desktop 
+              each item in ['Этот принцип распространяется не только на сотрудников компании, но и на контрагентов, с которыми нас связывают деловые и неформальные отношения.','В настоящее время повседневная и хозяйственная деятельность компании осуществляется в соответствии с Антикоррупционной политикой ОТЛК ЕРА, которую совет директоров утвердил 25 января 2021 года. ']
+                li.preview__item
+                  p.preview__item-text.text=item
+          .row
+            .preview__img.mobile-t
+              +picture('klimochkin.png')
+            p.preview__name Климочкин <br/>Александр Николаевич
+            p.preview__job Директор по безопасности
+            p.preview__description.mobile ОТЛК ЕРА категорически во всех видах и формах не приемлет коррупцию. 
+            ul.preview__list.mobile 
+              each item in ['Этот принцип распространяется не только на сотрудников компании, но и на контрагентов, с которыми нас связывают деловые и неформальные отношения.','В настоящее время повседневная и хозяйственная деятельность компании осуществляется в соответствии с Антикоррупционной политикой ОТЛК ЕРА, которую совет директоров утвердил 25 января 2021 года. ']
+                li.preview__item
+                  p.preview__item-text.text=item
+        .preview__col-right
+          .preview__img.desktop-t
+            +picture('klimochkin.png')
+
+
+//page-2
 mixin trends-preview
   section.preview.trends-preview
     .container 
