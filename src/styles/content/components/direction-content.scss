@@ -44,8 +44,12 @@
     padding-top: 20px;
   }
 
+  .row {
+    display: flex;
+    justify-content: end;
+  }
+
   &__text {
-    transform: translateX(534px);
     margin-top: 40px;
 
     width: 654px;
@@ -82,4 +86,3 @@
     justify-content: flex-end;
   }
 }
-

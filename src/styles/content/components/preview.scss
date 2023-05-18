@@ -78,6 +78,8 @@
     display: flex;
     height: 640px;
     background: color(grey);
+
+    gap: 20px;
   }
 
   &__img {
@@ -203,7 +205,7 @@
     line-height: 150%;
     text-align: right;
     color: color(alt-grey);
-    white-space: nowrap;
+    // white-space: nowrap;
 
 
   }
