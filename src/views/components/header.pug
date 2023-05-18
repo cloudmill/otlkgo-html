@@ -1,5 +1,6 @@
 mixin header
   header.header
+    +overlay
     .header-container
       .header-col 
         .header-burger(data-header-burger) 
@@ -29,30 +30,38 @@ mixin header
               .header-actions__item-icon
                 +header-download-svg.download
               .header-actions__item-text.dark PDF
-      .header-menu(data-header-menu) 
-        .header-menu__title годовой отчет 2022
-        .header-menu__list 
-          .header-menu__item(data-header-item="about")
-            .header-menu__item-text О компании
-            .header-menu__item-num 1
-          .header-menu__item(data-header-item="strategy")
-            .header-menu__item-text Стратегический отчет
-            .header-menu__item-num 2
-          .header-menu__item
-            .header-menu__item-text Результаты деятельности
-            .header-menu__item-num 3
-          .header-menu__item
-            .header-menu__item-text Устойчивое развитие
-            .header-menu__item-num 4
-          .header-menu__item
-            .header-menu__item-text Корпоративное управление
-            .header-menu__item-num 5
-          .header-menu__item
-            .header-menu__item-text Приложения
-            .header-menu__item-num 6
-        .header-menu__code 
-          +header-qr-svg
-      .header-sub(data-header-sub="about") 
+      .header-menu(data-header-menu)
+        .header-menu__top-container
+          .header-menu__title годовой отчет 2022
+          .header-menu__list 
+            .header-menu__item(data-header-item="about")
+              .header-menu__item-text О компании
+              .header-menu__item-num 1
+            .header-menu__item(data-header-item="strategy")
+              .header-menu__item-text Стратегический отчет
+              .header-menu__item-num 2
+            .header-menu__item
+              .header-menu__item-text Результаты деятельности
+              .header-menu__item-num 3
+            .header-menu__item
+              .header-menu__item-text Устойчивое развитие
+              .header-menu__item-num 4
+            .header-menu__item
+              .header-menu__item-text Корпоративное управление
+              .header-menu__item-num 5
+            .header-menu__item
+              .header-menu__item-text Приложения
+              .header-menu__item-num 6
+        .header-menu__bot-container
+          //- .header-menu__code 
+          //-   +header-qr-svg
+          a.header-menu__download(href="#")  
+            .header-menu__download-icon 
+              +header-download-svg
+            .header-menu__download-text Скачать в PDF
+      .header-sub(data-header-sub="about")
+        .header-sub__back-item.mobile-custom(data-sub-back='')
+          .header-sub__back-text О компании
         .header-sub__list 
           .header-sub__item 
             .header-sub__item-title ОТЛК ЕРА. Кто мы?

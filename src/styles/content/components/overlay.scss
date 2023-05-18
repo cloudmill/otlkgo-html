@@ -1,0 +1,21 @@
+.overlay-header{
+  position: absolute;
+  top: 84px;
+  left: 0px;
+  
+  width: 100vw;
+  height: 100vh;
+  
+  background: #000000;
+  opacity: 0.2;
+  z-index: 3;
+  transform: translateX(-100%);
+  transition: 0.3s;
+
+  &.active{
+    transform: translateX(0%);
+  }
+  @media #{media("<", m)} {
+    top: rem(56px);
+}
+}

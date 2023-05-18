@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!$('[data-header-burger]').hasClass('active')){
       $('[data-header-menu]').addClass('active')
       $('[data-header-burger]').addClass('active')
+      addOverlay()
     } else {
       removeBurger()
       removeActive()
+      removeOverlay()
     }
   })
 
@@ -32,4 +34,24 @@ document.addEventListener('DOMContentLoaded', () => {
     $('[data-header-menu]').removeClass('active')
     $('[data-header-burger]').removeClass('active')
   }
+
+  function addOverlay(){
+    $('.overlay-header').addClass('active')
+    $('.body').addClass('overlay')
+  }
+  function removeOverlay(){
+    $('.overlay-header').removeClass('active')
+    $('.body').removeClass('overlay')
+  }
+
+  $('.overlay-header').on('click', function(){
+    removeActive()
+    removeBurger()
+    removeOverlay()
+  })
+
+
+  $('[data-sub-back]').on('click', function(){
+    removeActive()
+  })
 })
