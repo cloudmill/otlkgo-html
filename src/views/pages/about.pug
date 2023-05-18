@@ -1,10 +1,18 @@
 extends ../app
 
 include ../components/section/calendar-content
+include ../components/section/business-content
+include ../components/section/corruption-content
+include ../components/section/geography
+include ../components/section/indicators
 
 
 block content
   +calendar-content
+  +indicators
   +busines-preview
+  +business-content
+  +geography
   +corruption-preview
+  +corruption-content
 

@@ -8,7 +8,7 @@ mixin corruption-content
             ul.corruption__list
               each item in ['Разъяснить позицию руководителей и сотрудников компании о неприятии коррупции в любых ее формах и проявлениях','Информировать руководителей и и сотрудников компании о требованиях российского законодательства и документах, принятых акционерами в области противодействия коррупции и ответственности за коррупционные правонарушения','Обобщить и разъяснить меры, которые предпринимает компания в области противодействия коррупции','Формировать антикоррупционное сознание руководителей и сотрудников компании','Минимизировать коррупционные риски в деятельности компании',]
                 li.corruption__item
-                  +mark-text-svg
+                  +mark-text-svg.corruption-svg
                   p.corruption__text.text=item
           .col 
             p.corruption__text.text Наши руководители и сотрудники обязаны организовывать свою трудовую деятельность в строгом соответствии с принципами и целями Антикоррупционной политики. В случае происшествий, имеющих коррупционные признаки (например, неисполнение должностных обязанностей или превышение полномочий со стороны сотрудников и контрагентов), каждый обязан сообщить об этом на действующую горячую антикоррупционную линию. 
@@ -19,7 +19,8 @@ mixin corruption-content
         .corruption-principles__row 
           .col 
             p.corruption-principles__text.text Чтобы не допустить имущественного вреда, компания занимается своевременной профилактикой преступлений и правонарушений на маршрутах следования поездов ОТЛК ЕРА, взаимодействуя при этом с правоохранительными территориальными органами.
-            .corruption-principles__item 
+            .corruption-principles__elem
+              +message-svg.corruption-principles-svg
               p.corruption-principles__description Один из главных приоритетов ОТЛК ЕРА — обеспечение безопасности перевозки грузов и построение системы информационной безопасности.
           .col 
             p.corruption-principles__text.text В 2021 году в компании был проведен комплексный аудит, направленный на поиск уязвимости ИТ-инфраструктуры. В 2022 году для построения системы информационной безопасности и закрытия ИБ-рисков мы предприняли ряд важных мер:
@@ -45,7 +46,13 @@ mixin corruption-content
         .corruption-counterparty__row 
           .corruption-counterparty__item 
             p.corruption-counterparty__item-title Юридические лица
-            p.corruption-counterparty__number 298
+            p.corruption-counterparty__item-number.corruption-counterparty__item-number_light 298
+          .corruption-counterparty__item 
+            p.corruption-counterparty__item-title ИНДВИДУАЛЬНЫЕ ПРЕДПРИНИМАТЕЛИ
+            p.corruption-counterparty__item-number 31
+          .corruption-counterparty__item 
+            p.corruption-counterparty__item-title Физические лица
+            p.corruption-counterparty__item-number.corruption-counterparty__item-number_light 17
   section.next 
     .container 
       .next__inner 

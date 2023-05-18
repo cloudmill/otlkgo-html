@@ -1,0 +1,102 @@
+.geography {
+  padding: 40px 0;
+
+  background: url('../assets/images/geography-bg.jpg') center/contain no-repeat;
+  background-color: #F8F8F8;
+
+
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 482px;
+  }
+
+  &__top {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+
+    border-top: 1px solid #045C25;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+  }
+
+  &__title {
+    font-size: 42px;
+  }
+
+  &__number {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 80%;
+    letter-spacing: -0.08em;
+    color: color(green);
+  }
+
+  &__row {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 160%;
+    color: color(dark);
+
+    span {
+      padding-right: 8px;
+      font-family: 'Halvar Breitschrift';
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      color: color(dark);
+    }
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+
+    max-width: 660px;
+
+    border-top: 1px solid color(green);
+
+    .col {
+      &:nth-child(2) {
+        width: 361px;
+      }
+    }
+  }
+
+  &__img {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,126 @@
+.indicators {
+
+  &__inner {
+    padding: 100px 14px;
+  }
+
+  &__row {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__number {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 160px;
+    line-height: 80%;
+    letter-spacing: -0.08em;
+    color: color(green);
+
+  }
+
+  &__top {
+    padding: 100px 0;
+    background: url('../assets/images/indicators-bg.png'), center/cover, no-repeat;
+  }
+
+  &__bottom {
+    margin-top: 100px;
+
+    .indicators__item {
+
+      &:nth-child(even) {
+        border-top: 1px solid #045C25;
+      }
+
+      &:nth-child(odd) {
+        border-top: 1px solid #69DA91;
+      }
+    }
+  }
+
+  &__description {
+    max-width: 463px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__box {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 100px;
+
+    &_bottom {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid #045C25;
+
+    .row {
+      display: flex;
+      gap: 8px;
+
+    }
+
+    &-number {
+      font-family: 'Halvar Breitschrift';
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 80%;
+      letter-spacing: -0.08em;
+      color: color(green);
+
+      &_light {
+        color: #69DA91;
+      }
+    }
+
+    &-grey {
+
+      font-family: 'Halvar Breitschrift';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      color: #727A75;
+    }
+  }
+
+}
+
+.indicators-finance {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #045C25;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
+  &__img {
+    margin-top: 40px;
+  }
+}
