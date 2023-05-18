@@ -38,6 +38,10 @@
       flex-wrap: wrap;
       gap: 0px;
     }
+
+    &.about-row{
+      gap: 0px;
+    }
   }
 
   &__col{
@@ -66,6 +70,15 @@
       @media #{media("<", m)} {
         z-index: -1;
         display: block;
+      }
+    }
+
+    &.about{
+      &-left{
+        width: 740px;
+      }
+      &-right{
+        width: 700px;
       }
     }
   }

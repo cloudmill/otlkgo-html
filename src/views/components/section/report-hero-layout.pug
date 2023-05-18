@@ -19,3 +19,20 @@ mixin report-hero-3
           each item in ['Операционные результаты', 'Формирование парка: оптимизация', 'Клиентский портфель', 'Безбумажные перевозки: инновационное развитие', 'Главные направления цифрового развития', 'Сохранить достигнутое. Финансовый обзор', 'С заботой о деловом климате']
             a.report-hero__list-item(href="#")=item
         .report-hero__number 3
+
+mixin report-hero-about 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row.about-row 
+      .report-hero__col.about-left
+        .report-hero__img-about 
+          +picture('report-hero-about.png')
+      .report-hero__col.about-right
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title о компании
+        .report-hero__list
+          each item in ['ОТЛК ЕРА. Кто мы?', 'Справка о Компании', 'Об Отчете', 'Календарь событий – 2022', 'Бизнес-модель', 'География деятельности', 'Противодействие коррупции']
+            a.report-hero__list-item(href="#")=item
+        .report-hero__number 1
