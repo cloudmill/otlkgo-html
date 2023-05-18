@@ -303,7 +303,7 @@
 }
 
 
-@media #{media('<',t)} {
+@media #{media('<',d)} {
   .landscape-description {
     &__inner {
       flex-direction: column;
@@ -313,9 +313,18 @@
       width: auto;
     }
   }
+}
+
+@media #{media('<',t)} {
 
 
-
+  .landscape-orientation {
+    &__row {
+      &-bottom {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }
 
 @media #{media('<',m)} {
@@ -426,6 +435,8 @@
     &__row {
       margin-top: 20px;
       padding-top: 12px;
+
+      &-bottom {}
     }
 
     &__subtitle {

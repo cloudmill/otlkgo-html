@@ -16,6 +16,7 @@
       width: calc(100% + 40px);
       margin-left: -20px;
       overflow-x: scroll;
+      @include scrollbar-hidden;
     }
 
     &__img {
