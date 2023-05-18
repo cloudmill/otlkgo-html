@@ -15,6 +15,9 @@
 
   &.preview-margin {
     margin-bottom: 100px;
+    @media #{media('<',m)} {
+      margin-bottom: 40px;
+    }
   }
 
   &__cards {
@@ -60,6 +63,9 @@
 
   &.preview-margin {
     margin-bottom: 100px;
+    @media #{media('<',m)} {
+      margin-bottom: 40px;
+    }
   }
 
   &.alt-margin {
@@ -147,6 +153,10 @@
 
     &.alt {
       padding: 80px 0px 40px 40px;
+      @media #{media('<',m)} {
+        margin-bottom: 39px;
+        padding: 20px 13px 0px 12px;
+      }
     }
   }
 
@@ -201,6 +211,9 @@
   &__elem_2,
   &__elem_3 {
     position: absolute;
+    @media #{media("<", m)} {
+      display: none;
+    }
   }
 
   &__elem_1 {

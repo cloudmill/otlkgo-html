@@ -4,8 +4,21 @@
 
   border-top: 1px solid color(light-green);
 
+  @media #{media('<',m)} {
+    padding-top: rem(8px);
+  }
   &-title{
     margin-bottom: 40px;
+    @media #{media('<',m)} {
+      margin-bottom: rem(20px);
+      width: rem(335px);
+    }
+  }
+
+  &-subtitle{
+    @media #{media('<',m)} {
+      margin-bottom: rem(16px);
+    }
   }
 
   &-row{
@@ -13,6 +26,10 @@
 
     display: flex;
     gap: 40px;
+    @media #{media('<',m)} {
+      margin-bottom: 20px;
+      display: block;
+    }
   }
 
   &-col{
@@ -30,6 +47,14 @@
 
     &.top{
       margin-bottom: 16px;
+      @media #{media('<',m)} {
+        margin-bottom: rem(8px);
+      }
+    }
+
+    @media #{media('<',m)} {
+      font-size: rem(12px);
+      line-height: 160%;
     }
   }
 
@@ -37,12 +62,22 @@
     margin-top: 40px;
     display: flex;
     gap: 40px;
+
+    @media #{media('<',m)} {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
   }
 
   &-subcol{
     width: 50%;
     padding-top: 12px;
 
+    @media #{media('<',m)} {
+      width: 100%;
+    }
     &.green{
       border-top: 1px solid color(green);
     }
@@ -90,15 +125,37 @@
     display: flex;
     gap: 140px;
 
+    @media #{media('<',m)} {
+      width: 100%;
+      padding: 0px;
+      display: block;
+    }
     &__col{
       width: 460px;
       flex-shrink: 0;
 
-      &-title{
-        margin-bottom: 60px;
+      @media #{media('<',m)} {
+        width: 100%;
+        padding: 0px;
+        display: block;
 
+        &:nth-child(2){
+          margin-top: 20px;
+        }
+      }
+      &-title{
+        padding-top: 12px;
+        margin-bottom: 60px;
+        border-top: 1px solid #E8E8E8;
+
+        @media #{media('<',m)}{
+          margin-bottom: rem(28px);
+        }
         &.second{
           margin-bottom: 88px;
+          @media #{media('<',m)}{
+            margin-bottom: rem(28px);
+          }
         }
       }
 
@@ -111,6 +168,17 @@
         display: flex;
         gap: 2px;
 
+        &.second{
+          display: none;
+        }
+        @media #{media('<',m)} {
+          &.first{
+            display: none;
+          }
+          &.second{
+            display: flex;
+          }
+        }
         &.chinese{
           margin-top: 40px;
         }
@@ -134,9 +202,15 @@
 
         &.big-12{
           font-size: 12px;
+          @media #{media("<", m)} {
+            font-size: rem(10px);
+          }
         }
         &.big-14{
           font-size: 14px;
+          @media #{media("<", m)} {
+            font-size: rem(10px);
+          }
         }
       }
 
@@ -149,9 +223,15 @@
 
         &.big-12{
           font-size: 12px;
+          @media #{media("<", m)} {
+            font-size: rem(10px);
+          }
         }
         &.big-14{
           font-size: 14px;
+          @media #{media("<", m)} {
+            font-size: rem(10px);
+          }
         }
       }
     }
@@ -165,14 +245,27 @@
 
   border-top: 1px solid color(light-green);
 
+  @media #{media('<',m)} {
+    padding-top: 12px;
+    margin-top: 40px;
+  }
   &__title{
     margin-bottom: 40px;
+    @media #{media('<',m)} {
+      margin-bottom: 20px;
+    }
   }
 
   &__hero{
     &-row{
       display: flex;
       gap: 140px;
+      @media #{media('<',m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: rem(20px);
+        width: 335px;
+      }
     }
 
     &-col{
@@ -180,6 +273,10 @@
 
       &:nth-child(1){
         width: 460px;
+        @media #{media('<',m)} {
+          width: 100%;
+          width: 335px;
+        }
       }
     }
 
@@ -188,14 +285,26 @@
       font-size: 18px;
       line-height: 160%;
       color: color(dark);
+
+      @media #{media('<',m)} {
+        width: 100%;
+        font-size: rem(14px);
+        line-height: 160%;
+      }
     }
 
     &-subtitle{
       margin-bottom: 60px;
+      @media #{media('<',m)} {
+        margin-bottom: rem(25px);
+      }
     }
 
     &-grafic{
       width: 560px;
+      @media #{media('<',m)} {
+        width: 100%;
+      }
     }
   }
 
@@ -206,15 +315,37 @@
 
     border-top: 1px solid color(light-green);
 
+    @media #{media('<',m)} {
+      padding-top: rem(5px);
+      margin-top: rem(40px);
+    }
     &-row{
       margin-top: 40px;
 
       display: flex;
       gap: 240px;
+
+      @media #{media('<',m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: rem(40px);
+      }
     }
 
     &-title{
       margin-bottom: 56px;
+      @media #{media('<',m)} {
+        margin-bottom: rem(15px);
+      }
+    }
+
+    &-container{
+      @media #{media('<',m)} {
+        width: rem(375px);
+        padding-left: 20px;
+        margin-left: -20px;
+        overflow-x: scroll;
+      }
     }
 
     &-vector{
@@ -228,6 +359,10 @@
             object-fit: fill;
           }
         }
+
+        @media #{media('<',m)} {
+          overflow-x: scroll;
+        }
     }
 
     &-text{
@@ -239,7 +374,10 @@
         margin-bottom: 12px;
       }
 
-      
+      @media #{media('<',m)} {
+        font-size: rem(12px);
+        line-height: 160%;
+      }
     }
   }
 }
@@ -249,6 +387,9 @@
 
   width: 360px;
 
+  @media #{media('<',m)} {
+    width: rem(335px);
+  }
   &.large{
     width: 560px;
   }
@@ -299,15 +440,26 @@
     text-transform: uppercase;
     color: #727A75;
 
+    @media #{media('<',m)} {
+      font-size: rem(14px);
+      line-height: 100%;
+    }
     &.top{
       color: color(green);
     }
 
     &-grey{
+      width: 320px;
+
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
       color: #727A75;
+      @media #{media('<',m)} {
+        width: 335px;
+        font-size: rem(12px);
+        line-height: 160%;
+      }
     }
   }
 }
@@ -322,9 +474,19 @@
 
   border-top: 1px solid color(light-green);
 
+  @media #{media('<',m)} {
+    margin-top: rem(40px);
+    padding-top: rem(8px);
+  }
   &__title{
     margin-bottom: 40px;
 
+    @media #{media('<',m)} {
+      margin-bottom: rem(20px);
+      font-weight: 700;
+      font-size: rem(20px);
+      line-height: 120%;
+    }
     &-small{
       font-weight: 700;
       font-size: 16px;
@@ -332,6 +494,13 @@
       color: #2A2E2B;
       &.vector-1{
         margin-bottom: 23px;
+        @media #{media("<", m)} {
+          margin-bottom: rem(18px);
+        }
+      }
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 150%;
       }
     }
   }
@@ -339,21 +508,43 @@
   &__row{
     display: flex;
     gap: 140px;
+
+    @media #{media('<',m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
   }
 
+
+  &__col{
+    @media #{media('<',m)} {
+      width: rem(335px);
+    }
+  }
   &__subtitle{
     margin-bottom: 20px;
 
+    @media #{media('<',m)} {
+      margin-bottom: rem(8px);
+    }
     &.mg-top{
       margin-top: 40px;
     }
 
     &-small{
+      width: 460px;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
       color: #2A2E2B;
 
+      @media #{media("<", m)} {
+        margin-bottom: rem(30px);
+        width: rem(335px);
+        font-size: rem(12px);
+        line-height: 150%;
+      }
       &.mg-big{
         margin-bottom: 70px;
       }
@@ -368,11 +559,20 @@
     line-height: 160%;
     color: #2A2E2B;
 
+    @media #{media('<',m)} {
+      width: 100%;
+      font-size: rem(12px);
+      line-height: 160%;
+    }
     &.line{
       margin-bottom: 12px;
       padding-bottom: 20px;
 
       border-bottom: 1px solid color(borders);
+      @media #{media('<',m)} {
+        margin-bottom: rem(5px);
+        
+      }
     }
 
     &.margin-small{
@@ -381,11 +581,17 @@
 
     &.margin{
       margin-bottom: 63px;
+      @media #{media('<',m)} {
+        margin-bottom: rem(20px);
+      }
     }
   }
 
   &__grafic{
     width: 460px;
+    @media #{media("<", m)} {
+      width: 100%;
+    }
   }
 }
 
@@ -398,32 +604,58 @@
 
   border-top: 1px solid color(light-green);
 
+  @media #{media("<", m)} {
+    margin-top: rem(40px);
+    padding-top: rem(8px);
+  }
   &__title{
     margin-bottom: 40px;
+    @media #{media("<", m)} {
+      margin-bottom: rem(20px);
+    }
   }
 
   &__row{
     display: flex;
     gap: 40px;
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
   }
 
   &__col{
     flex-shrink: 0;
     &:nth-child(1){
       width: 360px;
+      @media #{media("<", m)} {
+        width: 100%;
+      }
     }
     &:nth-child(2){
       width: 760px;
+      @media #{media("<", m)} {
+        width: 100%;
+      }
     }
   }
 
-  &__text{font-weight: 400;
+  &__text{
+    font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: color(dark);
 
     &:nth-child(1){
       margin-bottom: 16px;
+      @media #{media("<", m)} {
+        margin-bottom: rem(8px);
+      }
+    }
+    @media #{media("<", m)} {
+      font-size: rem(12px);
+      line-height: 160%;
     }
   }
 
@@ -433,6 +665,11 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -441,6 +678,11 @@
     padding-top: 12px;
 
     border-top: 1px solid color(green);
+
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
   }
 
   &__cubes{
@@ -456,6 +698,7 @@
     &-cube{
       width: 10px;
       height: 10px;
+      border-radius: rem(2px);
 
       &.green{
         background: color(green);
@@ -470,11 +713,30 @@
       font-size: 12px;
       line-height: 150%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        font-size: rem(10px);
+        line-height: 150%;
+      }
     }
   }
 
   &__vector{
     margin-top: 40px;
+    @media #{media("<", m)} {
+      width: rem(742px);
+      margin-top: rem(23px);
+      overflow-x: scroll;
+    }
+
+    &-container{
+      @media #{media("<", m)} {
+        padding-left: rem(20px);
+        margin-left: rem(-20px);
+        width: rem(375px);
+        overflow-x: scroll;
+      }
+    }
   }
 }
 
@@ -486,13 +748,25 @@
   padding-top: 20px;
   border-top: 1px solid #69DA91;
 
+  @media #{media("<", m)} {
+    margin-top: rem(40px);
+    padding-top: rem(8px);
+  }
   &__title{
     margin-bottom: 40px;
+    @media #{media("<", m)} {
+      margin-bottom: rem(20px);
+    }
   }
 
   &__subtitle{
+    width: 386px;
     margin-bottom: 20px;
 
+    @media #{media("<", m)} {
+      width: 100%;
+      margin-bottom: rem(8px);
+    }
     &-small{
       margin-bottom: 24px;
 
@@ -500,6 +774,11 @@
       font-size: 16px;
       line-height: 140%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -507,8 +786,16 @@
     display: flex;
     gap: 140px;
 
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
     &.bot{
       margin-top: 39px;
+      @media #{media("<", m)} {
+        margin-top: rem(20px);
+      }
     }
   }
 
@@ -517,13 +804,22 @@
 
     &:nth-child(1){
       width: 460px;
+      @media #{media("<", m)} {
+        width: 100%;
+      }
     }
     &:nth-child(2){
       width: 560px;
+      @media #{media("<", m)} {
+        width: 100%;
+      }
     }
 
     &.col{
       width: 460px;
+      @media #{media("<", m)} {
+        width: 100%;
+      }
     }
   }
 
@@ -532,6 +828,10 @@
     font-size: 15px;
     line-height: 160%;
     color: #2A2E2B;
+    @media #{media("<", m)} {
+      font-size: rem(12px);
+line-height: 160%;
+    }
   }
 
   &__subsection{
@@ -540,6 +840,10 @@
     padding-top: 20px;
     border-top: 1px solid color(green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
     &-title{
       margin-bottom: 22px;
 
@@ -547,6 +851,24 @@
       font-size: 16px;
       line-height: 140%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: rem(9px);
+        font-size: rem(12px);
+        line-height: 150%;
+      }
+    }
+
+    &-container{
+      @media #{media("<", m)} {
+        width: rem(375px);
+        padding-left: rem(20px);
+        margin-left: rem(-20px);
+        overflow-x: scroll;
+      }
+    }
+    &-vector{
+      width: rem(677px);
     }
   }
 
@@ -555,25 +877,45 @@
     display: flex;
     gap: 140px;
 
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
     &-col{
       &:nth-child(1){
         width: 460px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
       &:nth-child(2){
         width: 560px;
         padding-top: 8px;
         border-top: 1px solid color(borders);
+        @media #{media("<", m)} {
+          padding-top: rem(5px);
+          width: 100%;
+        }
       }
     }
 
     &-title{
       margin-bottom: 20px;
+      
+
     }
     &-text{
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
+      }
     }
 
     &-subtitle{
@@ -583,6 +925,12 @@
       font-size: 16px;
       line-height: 140%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: rem(16px);
+        font-size: rem(12px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -591,17 +939,32 @@
     display: flex;
     gap: 44px;
 
+
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
     &-col{
       &:nth-child(1){
         width: 556px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
       &:nth-child(2){
         width: 560px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
     }
 
     &-title{
       margin-bottom: 20px;
+      @media #{media("<", m)} {
+        margin-bottom: rem(8px);
+      }
     }
 
     &-text{
@@ -609,6 +972,11 @@
       font-size: 15px;
       line-height: 160%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
+      }
     }
   }
 
@@ -617,14 +985,28 @@
     display: flex;
     gap: 40px;
 
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
     &-col{
       padding-top: 12px;
       border-top: 2px solid color(borders);
       &:nth-child(1){
         width: 560px;
+        @media #{media("<", m)} {
+          padding-top: rem(5px);
+          width: 100%;
+        }
       }
       &:nth-child(2){
         width: 559px;
+        @media #{media("<", m)} {
+          padding-top: rem(5px);
+          width: 100%;
+        }
       }
     }
 
@@ -634,6 +1016,12 @@
       font-size: 16px;
       line-height: 140%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: rem(15px);
+        font-size: rem(12px);
+        line-height: 150%;
+      }
     }
 
     &-righttitle{
@@ -642,14 +1030,26 @@
       font-size: 18px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: rem(15px);
+        font-size: rem(12px);
+        line-height: 150%;
+      }
     }
 
     &-vector{
       &.left{
         width: 460px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
       &.right{
         width: 559px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
     }
   }
@@ -663,20 +1063,43 @@
   padding-top: 20px;
   border-top: 1px solid #69DA91;
 
+
+  @media #{media("<", m)} {
+    margin-top: rem(40px);
+    padding-top: rem(8px);
+  }
   &__title{
     margin-bottom: 40px;
+    @media #{media("<", m)} {
+      width: rem(315px);
+      margin-bottom: rem(24px);
+      font-size: rem(20px);
+      line-height: 120%;
+    }
   }
 
   &__hero{
     display: flex;
     gap: 40px;
+
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
     &-col{
       flex-shrink: 0;
       &:nth-child(1){
         width: 360px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
       &:nth-child(2){
         width: 760px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
 
@@ -687,11 +1110,21 @@
       font-size: 18px;
       line-height: 160%;
       color: color(dark);
+      @media #{media("<", m)} {
+        &.desktop{
+          display: none;
+        }
+      }
     }
 
     &-row{
       display: flex;
       gap: 40px;
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: rem(20px);
+      }
     }
   }
 
@@ -699,6 +1132,12 @@
     margin-top: 40px;
     display: flex;
     gap: 40px;
+
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(20px);
+    }
 
     &-text{
       font-weight: 400;
@@ -708,6 +1147,13 @@
 
       &:nth-child(1){
         margin-bottom: 20px;
+        @media #{media("<", m)} {
+          margin-bottom: rem(12px);
+        }
+      }
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
       }
     }
   }
@@ -715,8 +1161,13 @@
   &__balance{
     margin-top: 100px;
   
-  padding-top: 12px;
-  border-top: 1px solid color(green);
+    padding-top: 12px;
+    border-top: 1px solid color(green);
+    @media #{media("<", m)} {
+      width: rem(307px);
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
     &-top{
       margin-bottom: 20px;
       display: flex;
@@ -728,6 +1179,35 @@
       display: flex;
       align-items: start;
     }
+    &-title{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: color(dark);
+      width: 320px;
+      @media #{media("<", m)} {
+        width: rem(335px);
+        font-size: rem(12px);
+        line-height: 150%;
+      }
+    }
+
+    &-container{
+      @media #{media("<", m)} {
+        width: rem(375px);
+        padding-left: rem(20px);
+        margin-left: rem(-20px);
+        overflow-x: scroll;
+      }
+      
+    }
+    &-vector{
+      @media #{media("<", m)} {
+        width: rem(674px);
+        overflow-x: scroll;
+      }
+      
+    }
   }
 
   &__shares{
@@ -735,6 +1215,37 @@
   
     padding-top: 12px;
     border-top: 1px solid color(light-green);
+    &.desktop{
+      @media #{media("<", m)} {
+        display: none;
+      }
+    }
+    &.mobile{
+      display: none;
+      @media #{media("<", m)} {
+        padding-top: 0px;
+        border: none;
+        margin-top: rem(20px);
+        display: block;
+      }
+    }
+
+    &-title{
+      padding-top: rem(5px);
+      margin-bottom: rem(23px);
+
+      font-weight: 700;
+      font-size: rem(14px);
+      line-height: 150%;
+      color: #2A2E2B;
+      border-top: 1px solid color(light-green);
+    }
+    .macroeconomics-grafics__col-links{
+      margin-bottom: rem(20px);
+      @media #{media("<", m)} {
+        margin-top: rem(16px);
+      }
+    }
   }
   &__shares2{
     margin-top: 100px;
@@ -742,12 +1253,20 @@
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(40px);
+      padding-top: rem(5px);
+    }
     &-top{
       margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
+      @media #{media("<", m)} {
+        margin-bottom: rem(16px);
+        display: block;
+      }
       .mutal-trade__shares2-copy{
         display: flex;
         align-items: start;
@@ -759,6 +1278,45 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      width: 320px;
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+        width: 100%;
+      }
+    }
+
+    &-container{
+      @media #{media("<", m)} {
+        width: rem(375px);
+        overflow-x: scroll;
+        padding-left: rem(20px);
+        margin-left: rem(-20px);
+        padding-right: rem(20px);
+      }
+      
+    }
+
+    &-vector{
+      &.desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+      }
+      &.mobile{
+        display: none;
+        @media #{media("<", m)} {
+          display: block;
+          overflow-x: scroll;
+        }
+      }
+
+      &.vector-1{
+        width: rem(710px);
+      }
+      &.vector-2{
+        width: rem(936px);
+      }
     }
   }
 
@@ -768,12 +1326,19 @@
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(40px);
+      padding-top: rem(5px);
+    }
     &-top{
       margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      @media #{media("<", m)} {
+        margin-bottom: rem(16px);
+        display: block;
+      }
       .mutal-trade__shares2-copy{
         display: flex;
         align-items: start;
@@ -785,6 +1350,24 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+        width: 100%;
+      }
+    }
+    &-vector{
+      &.desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+      }
+      &.mobile{
+        display: none;
+        @media #{media("<", m)} {
+          display: block;
+        }
+      }
     }
   }
 
@@ -794,6 +1377,10 @@
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
     &-title{
       margin-bottom: 20px;
 
@@ -801,6 +1388,25 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      @media #{media("<", m)} {
+        margin-bottom: rem(12px);
+        font-size: rem(14px);
+        line-height: 150%;
+      }
+    }
+
+    &-vector{
+      &.custom-desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+        &.custom-mobile{
+          display: none;
+          @media #{media("<", m)} {
+            display: block;
+          }
+        }
+      }
     }
   }
 
@@ -810,6 +1416,10 @@
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: rem(20px);
+      padding-top: rem(5px);
+    }
     &-title{
       margin-bottom: 20px;
 
@@ -817,6 +1427,24 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+      @media #{media("<", m)} {
+        margin-bottom: rem(12px);
+        font-size: rem(14px);
+        line-height: 150%;
+      }
+    }
+    &-vector{
+      &.custom-desktop{
+        @media #{media("<", m)} {
+          display: none;
+        }
+        &.custom-mobile{
+          display: none;
+          @media #{media("<", m)} {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
@@ -832,11 +1460,21 @@
   gap: 244px;
   border: 1px solid color(light-green);
 
+  @media #{media("<", m)} {
+    margin-top: rem(40px);
+    display: block;
+  }
   &__rect{
     position: absolute;
     z-index: 1;
     top: 0px;
     left: 0px;
+    @media #{media("<", m)} {
+      svg{
+        width: rem(115px);
+        height: rem(93px);
+      }
+    }
   }
 
   &__title{
@@ -850,16 +1488,32 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     color: color(dark);
+
+    @media #{media("<", m)} {
+      font-size: rem(20px);
+      line-height: 120%;
+      margin: rem(19px) 0px rem(20px) rem(19px);
+    }
   }
 
   &__main{
     padding: 40px 100px 40px 0px;
+    @media #{media("<", m)} {
+      padding: 0px rem(15px) rem(25px) rem(20px);
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
     &-title{
       margin-bottom: 16px;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
       color: color(dark);
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 140%;
+      }
     }
 
     &-text{
@@ -870,6 +1524,14 @@
 
       &:nth-child(2){
         margin-bottom: 16px;
+        @media #{media("<", m)} {
+          margin-bottom: rem(12px);
+        }
+      }
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
       }
     }
   }

@@ -70,6 +70,10 @@ body {
   color: color(black);
   @include fsl(16px, 130%);
   background: color(white);
+  
+  &.overlay{
+    overflow: hidden;
+  }
 }
 
 img {

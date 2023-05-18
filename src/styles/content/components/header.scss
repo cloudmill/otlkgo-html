@@ -8,7 +8,7 @@
 
     border-bottom: 1px solid color(borders);
     background: color(white);
-    z-index: 3;
+    z-index: 4;
 
     @media #{media("<", m)} {
         height: rem(56px);
@@ -23,6 +23,7 @@
 
     &-container{
         position: relative;
+        z-index: 4;
     }
 
     &-col{
@@ -245,6 +246,16 @@
         border-right: 1px solid color(borders);
         z-index: 4;
 
+        @media #{media("<", m)} {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding: rem(24px) rem(20px) rem(20px) 20px;
+            height: calc(100vh - rem(56px));
+            width: rem(355px);
+            top: rem(56px);
+        }
         &.active{
             transform: translateX(0%);
         }
@@ -256,6 +267,11 @@
             line-height: 100%;
             text-transform: uppercase;
             color: color(alt-grey);
+            @media #{media("<", m)} {
+                margin-bottom: rem(24px);
+                font-size: rem(12px);
+                line-height: 100%;
+            }
         }
 
         &__list{
@@ -270,11 +286,19 @@
             align-items: start;
             justify-content: space-between;
 
+            
+
             border-bottom: 1px solid color(borders);
             cursor: pointer;
             transition: 0.3s;
 
+            @media #{media("<", m)} {
+                
+                padding-bottom: rem(12px);
+            }
             &-text{
+                width: 309px;
+
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 100%;
@@ -282,6 +306,11 @@
                 text-transform: uppercase;
                 color: color(dark);
                 transition: 0.3s;
+                @media #{media("<", m)} {
+                    width: rem(268px);
+                    font-size: rem(16px);
+                    line-height: 110%;
+                }
             }
 
             &-num{
@@ -293,6 +322,10 @@
                 text-transform: uppercase;
                 color: #E1E7E3;
                 transition: 0.3s;
+                @media #{media("<", m)} {
+                    font-size: rem(16px);
+                    line-height: 100%;
+                }
             }
 
             &:hover{
@@ -313,6 +346,43 @@
                 width: 83px;
                 height: 83px;
             }
+
+            @media #{media("<", m)} {
+                display: none;
+            }
+        }
+
+        &__download{
+            display: none;
+            @media #{media("<", m)} {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: rem(14px);
+    
+                width: rem(315px);
+                height: rem(57px);
+
+                border: 1px solid #E8E8E8;
+            }
+
+            &-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg{
+                    width: rem(20px);
+                    height: rem(20px);
+                }
+            }
+
+            &-text{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 130%;
+                color: color(dark);
+            }
         }
     }
 
@@ -322,7 +392,6 @@
         left: 0px;
 
         width: 465px;
-        height: 938px;
         height: calc(100vh - 84px);
 
         transform: translateX(-100%);
@@ -333,9 +402,17 @@
         z-index: 3;
         overflow-y: scroll;
 
-
+        @media #{media("<", m)} {
+            top: rem(56px);
+            width: rem(355px);
+            height: calc(100vh - rem(56px));
+        }
         &.active{
             transform: translateX(100%);
+            @media #{media("<", m)} {
+                transform: translateX(0%);
+                z-index: 5;
+            }
         }
         &__list{
             padding: 90px 49px 23px 60px;
@@ -344,9 +421,15 @@
             gap: 32px;
 
             height: 100%;
+
+            @media #{media("<", m)} {
+                padding: rem(24px) rem(20px) rem(22px);
+                gap: rem(20px);
+            }
         }
 
         &__item{
+            
             &-title{
                 display: flex;
                 align-items: center;
@@ -357,6 +440,7 @@
                 line-height: 130%;
                 color: color(dark);
 
+                cursor: pointer;
                 &::before{
                     display: block;
                     content: "";
@@ -366,6 +450,11 @@
 
                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='13' viewBox='0 0 12 13' fill='none'%3E%3Cpath d='M3.75 11L8.25 6.5L3.75 2' stroke='%232A2E2B' stroke-width='1.5'/%3E%3C/svg%3E");
                     background-repeat: no-repeat;
+                }
+
+                @media #{media("<", m)} {
+                    font-size: rem(16px);
+                    line-height: 130%;
                 }
             }
 
@@ -379,9 +468,50 @@
                 line-height: 130%;
                 color: color(alt-grey);
                 border-bottom: 1px solid color(borders);
-
+                cursor: pointer;
                 
+                @media #{media("<", m)} {
+                    margin-top: rem(12px);
+                    font-size: rem(14px);
+                }
             }
         }
+
+        &__back{
+            &-item{
+                display: none;
+                @media #{media("<", m)} {
+                    margin-top: rem(24px);
+                    margin-left: rem(20px);
+                    display: block;
+
+                    cursor: pointer;
+                }
+            }
+
+            &-text{
+                display: flex;
+                align-items: center;
+                gap: rem(8px);
+
+                font-weight: 700;
+                font-size: rem(20px);
+                line-height: 110%;
+                letter-spacing: -0.04em;
+                text-transform: uppercase;
+                color: #045C25;
+                &::before{
+                    display: block;
+                    content: "";
+
+                    width: 12px;
+                    height: 12px;
+
+                    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.25 10.5L3.75 6L8.25 1.5' stroke='%23045C25' stroke-width='1.5'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        //
     }
 }

@@ -187,7 +187,7 @@ mixin case-preview
           .preview__img 
             +picture('case-preview.png')
 mixin econimics-preview
-  section.preview.transit-preview.preview-margin
+  section.preview.preview-margin
     .container 
       .preview__inner
         .preview__line
@@ -200,8 +200,10 @@ mixin econimics-preview
           +column-svg.preview__elem_1
           +column-small-svg.preview__elem_2
           +double-column-svg.preview__elem_3
-          .preview__img.transit-preview__img
+          .preview__img.transit-preview__img.desktop
             +picture('ivanov-prev.png')
+          .preview__img.transit-preview__img.mobile
+            +picture('ivanov-mobile.png')
 
 mixin share-provinces-preview
   section.preview.alt-margin

@@ -13,6 +13,7 @@
   @media #{media("<", m)} {
     margin-top: 56px;
     width: 100%;
+    height: 735px;
   }
   &__background{
     position: absolute;
@@ -79,6 +80,9 @@
     width: 100%;
     height: auto;
 
+    &.mobile{
+      display: none;
+    }
     @media #{media(">", ll)} {
       width: 980px;
     }
@@ -121,6 +125,11 @@
     color: color(dark);
     @media #{media("<", m)} {
       margin: 20px 0px 4px 20px;
+      
+    }
+    @media #{media(">", ll)} {
+      font-size: rem(20px);
+      line-height: 110%;
     }
   }
 
@@ -133,7 +142,7 @@
     color: color(alt-grey);
 
     @media #{media("<", m)} {
-      margin-left: 20px;
+      margin-left: 20px; 
     }
   }
 
@@ -154,11 +163,18 @@
       font-size: rem(32px);
       line-height: 90%;
     }
+    @media #{media(">", ll)}{
+      font-size: rem(80px);
+      line-height: 90%;
+    }
 
     &.page-2{
       width: 600px;
       @media #{media("<", m)} {
         width: 335px;
+      }
+      @media #{media(">", ll)} {
+        width: rem(810px);
       }
     }
   }
@@ -187,6 +203,11 @@
         background-repeat: no-repeat;
         z-index: 2;
       }
+      @media #{media(">", ll)} {
+        margin-bottom: rem(20px);
+        font-size: куь(16px);
+        line-height: 130%;
+      }
     }
     @media #{media("<", m)} {
       display: none;
@@ -195,8 +216,8 @@
 
   &__number{
     position: absolute;
-    right: 20px;
-    bottom: 14px;
+    right: 30px;
+    bottom: 30px;
 
     font-weight: 700;
     font-size: 340px;
@@ -217,6 +238,10 @@
       font-size: rem(140px);
       bottom: 10px;
       right: 13px;
+    }
+    @media #{media(">", ll)} {
+      font-size: 450px;
+      line-height: 80%;
     }
   }
 }
