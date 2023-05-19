@@ -179,6 +179,11 @@
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @media #{media('<', d)} {
+      grid-template-columns: repeat(2, 1fr);
+
+    }
   }
 
   &__item {
@@ -269,6 +274,10 @@
 
     &__text {
       width: 660px;
+
+      @media #{media("<",t)} {
+        width: auto;
+      }
     }
 
     &__description {
@@ -279,6 +288,10 @@
       line-height: 140%;
       letter-spacing: -0.02em;
       color: color(dark);
+
+      @media #{media("<",t)} {
+        width: auto;
+      }
     }
   }
 

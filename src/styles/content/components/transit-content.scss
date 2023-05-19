@@ -181,7 +181,6 @@
 
   &__item {
     display: flex;
-    align-items: center;
     gap: 13px;
 
     font-weight: 500;
@@ -399,6 +398,10 @@
     display: flex;
     border: 1px solid #69DA91;
     padding: 40px 100px 40px 43px;
+
+    @media #{media('<',t)} {
+      padding-right: 10px;
+    }
   }
 
   &__title {
