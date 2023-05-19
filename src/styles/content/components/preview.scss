@@ -364,6 +364,17 @@
     &__job {
       text-align: left;
     }
+
+    &__img{
+
+      &.no-pos{
+
+        img{
+
+          object-position: center;
+        }
+      }
+    }
   }
 
   .transit-preview,

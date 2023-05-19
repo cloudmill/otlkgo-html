@@ -264,7 +264,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: rem(20px);
-        width: 335px;
+        width: rem(335px);
       }
     }
 
@@ -275,7 +275,7 @@
         width: 460px;
         @media #{media('<',m)} {
           width: 100%;
-          width: 335px;
+          width: rem(335px);
         }
       }
     }
@@ -456,7 +456,7 @@
       line-height: 160%;
       color: #727A75;
       @media #{media('<',m)} {
-        width: 335px;
+        width: rem(335px);
         font-size: rem(12px);
         line-height: 160%;
       }
@@ -868,7 +868,9 @@ line-height: 160%;
       }
     }
     &-vector{
-      width: rem(677px);
+      @media #{media("<", m)} {
+        width: rem(677px);
+      }
     }
   }
 
@@ -1400,11 +1402,12 @@ line-height: 160%;
         @media #{media("<", m)} {
           display: none;
         }
-        &.custom-mobile{
-          display: none;
-          @media #{media("<", m)} {
-            display: block;
-          }
+        
+      }
+      &.custom-mobile{
+        display: none;
+        @media #{media("<", m)} {
+          display: block;
         }
       }
     }
@@ -1438,11 +1441,12 @@ line-height: 160%;
         @media #{media("<", m)} {
           display: none;
         }
-        &.custom-mobile{
-          display: none;
-          @media #{media("<", m)} {
-            display: block;
-          }
+        
+      }
+      &.custom-mobile{
+        display: none;
+        @media #{media("<", m)} {
+          display: block;
         }
       }
     }
@@ -1461,6 +1465,7 @@ line-height: 160%;
   border: 1px solid color(light-green);
 
   @media #{media("<", m)} {
+    margin-bottom: 0px;
     margin-top: rem(40px);
     display: block;
   }

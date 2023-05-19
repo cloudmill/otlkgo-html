@@ -117,7 +117,7 @@
       img{
         object-fit: cover;
         @media #{media("<", m)} {
-          object-fit: fill;
+          object-fit: contain;
         }
       }
     }
