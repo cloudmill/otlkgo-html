@@ -117,13 +117,21 @@
       img{
         object-fit: cover;
         @media #{media("<", m)} {
-          object-fit: fill;
+          object-fit: contain;
         }
       }
     }
 
     &.alt-margin{
       margin-left: -37px;
+    }
+
+    &.hero-4{
+      height: 646px;
+
+      img{
+        object-fit: contain;
+      }
     }
   }
 
@@ -154,6 +162,11 @@
     line-height: 150%;
     color: color(alt-grey);
 
+    &.alt-200{
+      position: relative;
+      width: 209px;
+      z-index: 3;
+    }
     @media #{media("<", m)} {
       margin-left: 20px; 
     }

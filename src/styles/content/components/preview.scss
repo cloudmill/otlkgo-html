@@ -282,6 +282,19 @@
       margin-top: rem(19px);
     }
   }
+
+  &__text{
+    &-normal{
+      margin-bottom: 40px;
+
+      width: 540px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      color: #2A2E2B;
+    }
+  }
 }
 
 
@@ -363,6 +376,17 @@
 
     &__job {
       text-align: left;
+    }
+
+    &__img{
+
+      &.no-pos{
+
+        img{
+
+          object-position: center;
+        }
+      }
     }
   }
 
