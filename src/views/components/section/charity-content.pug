@@ -1,0 +1,125 @@
+mixin charity-content 
+  section.charity 
+    .container-content 
+      .charity__inner 
+        p.charity__title.description Наша цель — системно помогать детям и детским учреждениям, ветеранам и пенсионерам, людям с инвалидностью и тем, кто оказался в сложной ситуации.
+        .row 
+          .charity__item 
+            .row 
+              .col 
+                p.charity__number 327
+              .col 
+                p.charity__grey млн рублей
+            .row 
+              p.charity__subtext Сумма, потраченная компанией на помощь детям и поддержку ветеранов отрасли в 2022 году реализуемых в Казахстане и России в 2022 году 
+          .charity__elem 
+            .row 
+              p.charity__text_green Из них по 109 млн рублей
+              p.charity__subtext.charity__subtext_m
+            .row 
+              p.charity__text.text Помимо этого, у акционеров компании и ее сотрудников есть осознанное желание приносить пользу обществу через программы поддержки культуры, науки, образования и спорта.
+        .row 
+          p.charity__description.description Мы поддерживаем различные социальные инициативы как напрямую, так и через сотрудничество с постоянными партнерами – благотворительными фондами России, Беларуси и Казахстана.
+  section.charity-cards 
+    .container-content 
+      .charity-cards__inner
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .col 
+            h3.charity-cards__title Россия
+            p.charity-cards__description.description Помощь детям
+            ul.list.charity-cards__list
+              each item in ['Помогли детям, страдающим тяжелыми заболеваниями','Развивали вместе детско-юношеский спорт',]
+                li.charity-cards__item.list__item
+                  +mark-text-svg.charity-cards-svg.list-svg
+                  p.text.list__text.charity-cards__text=item 
+          .col 
+            p.charity-cards__number 109 млн ₽
+            p.charity-cards__description.description Поддержка ветеранов отрасли
+            ul.charity-cards__list.list
+              each item in ['Организовали Международный фестиваль спорта и здорового образа жизни для пенсионеров ОАО «РЖД» и пенсионеров-железнодорожников Беларуси и Казахстана.','Реализовали благотворительную программу «Книга благих дел». Она заключается в поддержке незащищенных, малообеспеченных слоев населения, а также помощи в сфере профилактики и охраны здоровья граждан.',]
+                li.charity-cards__item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text=item 
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .col 
+            h3.charity-cards__title Беларусь
+            p.charity-cards__description.description Помощь детям
+            ul.charity-cards__list.list
+              each item in ['Профинансировали строительство ангара для хранения подвижного состава на Детской железной дороге, а также ремонт корпусов и работы по благоустройству территории детского оздоровительного лагеря.',]
+                li.charity-cards__item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text=item 
+          .col 
+            p.charity-cards__number 109 млн ₽
+            p.charity-cards__description.description Поддержка ветеранов отрасли
+            ul.charity-cards__list.list
+              each item in ['Оказали материальную помощь и поддержку неработающих пенсионеров ОВ Белорусский железной дороги; закупили канцтовары для организации.','Приобрели медицинские товары, оргтехнику, программное обеспечение.']
+                li.charity-cards__item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text=item 
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .col 
+            h3.charity-cards__title Казахстан
+            p.charity-cards__description.description Помощь детям
+            ul.charity-cards__list.list
+              each item in ['Содействовали развитию детско-юношеского спорта в регионах Казахстана: профинансировали строительство мини-футбольного поля и универсальной площадки для баскетбола и волейбола; приобрели тренажеры и спортивный инвентарь; организовали спортивные секции для детей сотрудников компании и региональные спортивные турниры ОТЛК ЕРА.','Организовали и провели акцию «Соберем детей в школу» для многодетных семей сотрудников АО «НК «КТЖ»; купили подарки участникам художественного конкурса «Балауса болашақ» для детей сотрудников АО «НК «КТЖ»; организовали спортивное мероприятие «Папа, мама, я — спортивная семья», а также турнир по мини-футболу среди детей сотрудников обеих организаций. ']
+                li.charity-cards__item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text=item 
+          .col 
+            p.charity-cards__number 109 млн ₽
+            p.charity-cards__description.description Поддержка ветеранов отрасли
+            ul.charity-cards__list.list
+              each item in ['Приобрели уголь в отопительном сезоне для пенсионеров и ветеранов железнодорожного транспорта Казахстана; закупили 150 продуктовых корзин для одиноких ветеранов отрасли и домов престарелых в честь празднования Дня победы, Дня работников транспорта и Дня пожилого человека; организовали спортивное мероприятие «Юбилейные старты», и марафон среди ветеранов, сотрудников с детьми обеих организаций; приобрели 18 информационных стендов для региональных советов ветеранов АО «НК «КТЖ», а также сувенирную продукцию в честь юбилеев членов Совета ветеранов АО «НК «КТЖ».']
+                li.charity-cards__item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text=item 
+  section.charity-utlc 
+    .container 
+      .charity-utlc__inner 
+        h2.charity-utlc__title Объединение людей и стран: UTLC Cup 2022
+        .row 
+          p.charity-utlc__text.text Вместе с футбольным клубом наша компания воплотила в жизнь социальный проект, объединяющий страны Евразийского континента — международный футбольный турнир UTLC Cup 2022.Официальным партнером проекта выступило ОАО «РЖД». 
+        .charity-utlc__bottom 
+          .row 
+            p.charity-utlc__description.description В 2022 году турнир состоялся уже в четвертый раз — не помешала даже непростая геополитическая обстановка.
+            p.charity-utlc__text.text На UTLC Cup в Москву приехали 8 команд из России, Беларуси, Казахстана, Турции, Сербии. В течение 5 дней на «Сапсан Арене» было разыграно 16 матчей, забито 55 голов.
+          .row 
+            .charity-utlc__item   
+              .row 
+                .col 
+                  p.charity-utlc__number 18
+                .col 
+                  p.charity-utlc__grey млн рублей
+              .row 
+                p.charity-utlc__subtext Объем спонсорской помощи ОТЛК ЕРА турниру UTLC Cup 2022
+          .charity-utlc__box 
+            .charity-utlc__img 
+              +picture('charity-utlc1.jpg')
+            .charity-utlc__img
+              +picture('charity-utlc2.jpg')
+            .charity-utlc__img 
+              +picture('charity-utlc3.jpg')
+            .charity-utlc__img    
+              +picture('charity-utlc4.jpg')
+  section.charity-grom 
+    .conainer-content 
+      .charity-grom__inner 
+        .col 
+          .charity-grom__img
+            +picture('ecology-grom.png')
+        .col 
+          .col 
+            +appeal-svg.ecology-grom__elem_1
+          .col
+            .row 
+              p.charity-grom__text.text В глазах ребят читается мотивация к дальнейшему развитию карьеры. Многие из них в первый раз в жизни приняли участие в таком большом международном турнире, и для них это огромные впечатления. Большая радость видеть эти эмоции.
+            .row 
+              .col 
+                p.charity-grom__name Алексей Гром
+                p.charity-grom__job Генеральный директор
+              .col 
+                +appeal2-svg.charity-grom__elem_2

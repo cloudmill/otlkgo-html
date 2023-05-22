@@ -1,0 +1,163 @@
+.security {
+  margin-top: 100px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+
+  }
+}
+
+.security-conditions {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #6BD895;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+  &__list {
+    margin-top: 24px;
+  }
+
+  &__row {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+  }
+
+}
+
+.security-training {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #6BD895;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__text {
+    max-width: 760px;
+  }
+
+}
+
+.security-work {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #6BD895;
+  }
+
+  &__row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px
+  }
+
+  &__description {
+    max-width: 360px;
+  }
+
+  &__col {
+    &:nth-child(1) {
+      flex-shrink: 0;
+    }
+  }
+
+}
+
+.security-covid {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #6BD895;
+  }
+
+  &__row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px
+  }
+
+  &__description {
+    max-width: 360px;
+  }
+
+  &__col {
+    &:nth-child(1) {
+      flex-shrink: 0;
+    }
+  }
+
+}
+
+.security-fire {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #6BD895;
+  }
+
+  &__row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px
+  }
+
+  &__description {
+    max-width: 360px;
+  }
+
+  &__col {
+    &:nth-child(1) {
+      flex-shrink: 0;
+    }
+  }
+
+}

@@ -301,12 +301,56 @@ mixin ecology-preview
           h2.preview__title Экологичность <br/> как конкурентное <br/> преимущество
           .row
             .preview__img.transit-preview__img.mobile-t
-              +picture('korobov-mobile.png')
+              +picture('xmelnitskaya.png')
             p.preview__name Хмельницкая <br/> Анна Александровна
             p.preview__job Начальник отдела маркетинговых коммуникаций
         .preview__col-right
           .preview__img.transit-preview__img.desktop-t
             +picture('xmelnitskaya.png')
+
+mixin charity-preview
+  section.preview.charity-preview
+    .container 
+      .preview__inner
+        .preview__line
+        .preview__col-left
+          h2.preview__title Люди прежде всего: <br/> благотворительность
+          .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('baruzdina.png')
+            p.preview__name Баруздина <br/> Ольга Александровна
+            p.preview__job Директор по организационному развитию
+        .preview__col-right
+          .preview__img.transit-preview__img.desktop-t
+            +picture('baruzdina.png')
+
+mixin energy-preview
+  section.preview.charity-preview
+    .container 
+      .preview__inner
+        .preview__line
+        .preview__col-left
+          h2.preview__title Использование  <br/> энергетических ресурсов
+          table.prebiew__table
+            thead 
+              tr   
+                each i in ['Показатель за 2022 год','Расход','Сумма, руб']
+                  th=i
+            tbody
+              tr 
+                td.td-row Энергоснабжение, кВт
+                td 218 122,14
+                td 1 415 662,45
+          .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('porochay.png')
+            p.preview__name Порощай <br/> Алина Юрьевна
+            p.preview__job Директор административно-хозяйственного департамента
+        .preview__col-right
+          .preview__img.transit-preview__img.desktop-t
+            +picture('porochay.png')
+
+
 
 mixin human-capital-preview
   section.preview

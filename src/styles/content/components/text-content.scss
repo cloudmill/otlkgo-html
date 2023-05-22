@@ -71,3 +71,26 @@ h5 {
     color: color(alt-grey)
   }
 }
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  li {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.description {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: color(dark);
+}
