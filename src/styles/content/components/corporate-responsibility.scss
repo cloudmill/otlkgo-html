@@ -1,0 +1,174 @@
+.corporate-responsibility{
+  margin-top: 100px;
+
+  &__row{
+    display: flex;
+    gap: 76px;
+  }
+
+  &__subtitle{
+    width: 324px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #2A2E2B;
+  }
+
+  &__text{
+    width: 760px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #2A2E2B;
+  }
+
+  &__principles{
+    margin-top: 100px;
+
+    &-title{
+      margin-bottom: 40px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #2A2E2B;
+    }
+
+    &-list{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0px;
+    }
+
+    &-item{
+      position: relative;
+      padding: 20px;
+
+      height: 190px;
+
+      border: 1px solid #EDEDED;
+      border-top: 2px solid #69DA91;
+
+      &:nth-child(2){
+        border-top: 2px solid #045C25;
+      }
+      &:nth-child(4){
+        border-top: 2px solid #045C25;
+      }
+      &:nth-child(5){
+        border-top: 2px solid #045C25;
+      }
+      &:nth-child(7){
+        border-top: 2px solid #045C25;
+      }
+
+      .principes-text {
+        width: 204px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2A2E2B;
+        
+      }
+      .principes-img{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        width: 132px;
+        height: 133px;
+      }
+
+      .principes-icon{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        svg{
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  &__key{
+    margin-top: 100px;
+    &-title{
+      margin-bottom: 40px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #2A2E2B;
+    }
+
+    &-subtext{
+      margin-left: 400px;
+
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #2A2E2B;
+
+      &.top{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__care{
+    margin-top: 100px;
+    padding-top: 20px;
+    border-top: 1px solid #69DA91;
+    
+    &-title{
+      margin-bottom: 40px;
+
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #2A2E2B;
+    }
+
+    &-row{
+      display: flex;
+      gap: 40px;
+    }
+
+    &-subtitle{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: #2A2E2B;
+    }
+
+    &-subtext{
+      margin-bottom: 24px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: #2A2E2B;
+    }
+
+    &-text{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #2A2E2B;
+
+      &.top{
+        margin-top: 40px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+}
