@@ -186,24 +186,38 @@ mixin case-preview
         .preview__col-right
           .preview__img 
             +picture('case-preview.png')
+//- mixin econimics-preview
+//-   section.preview.preview-margin
+//-     .container 
+//-       .preview__inner
+//-         .preview__line
+//-         .preview__col-left.left.alt
+//-           h2.preview__title Глобальная экономика<br/> и логистический рынок <br/>в 2022 году
+//-           .row
+//-             p.preview__name Иванов <br/>Артемий Павлович
+//-             p.preview__job Начальник отдела маркетинговых исследований
+//-         .preview__col-right.right
+//-           +column-svg.preview__elem_1
+//-           +column-small-svg.preview__elem_2
+//-           +double-column-svg.preview__elem_3
+//-           .preview__img.transit-preview__img.desktop
+//-             +picture('ivanov-prev.png')
+//-           .preview__img.transit-preview__img.mobile.no-pos
+//-             +picture('ivanov-mobile.png')
 mixin econimics-preview
-  section.preview.preview-margin
+  section.preview.ecology-preview
     .container 
       .preview__inner
         .preview__line
-        .preview__col-left.left.alt
-          h2.preview__title Глобальная экономика<br/> и логистический рынок <br/>в 2022 году
+        .preview__col-left
+          h2.preview__title Пиксель перфект <br/> как конкурентное <br/> преимущество
           .row
-            p.preview__name Иванов <br/>Артемий Павлович
-            p.preview__job Начальник отдела маркетинговых исследований
-        .preview__col-right.right
-          +column-svg.preview__elem_1
-          +column-small-svg.preview__elem_2
-          +double-column-svg.preview__elem_3
-          .preview__img.transit-preview__img.desktop
-            +picture('ivanov-prev.png')
-          .preview__img.transit-preview__img.mobile.no-pos
-            +picture('ivanov-mobile.png')
+            .preview__img.transit-preview__img.mobile-t
+              +picture('spartak.jpg')
+            p.preview__name Спартак <br/> Клоудмилович
+            p.preview__job Ведущий дизайнер АО "Cloudmill"
+        .preview__col-right
+          .preview__img.transit-preview__img.desktop-t
 
 mixin share-provinces-preview
   section.preview.alt-margin
@@ -292,7 +306,7 @@ mixin security-preview
         .preview__col-right
           .preview__img.transit-preview__img.desktop-t
             +picture('tarasova.png')
-mixin security-preview
+mixin ecology-preview
   section.preview.ecology-preview
     .container 
       .preview__inner
@@ -307,6 +321,7 @@ mixin security-preview
         .preview__col-right
           .preview__img.transit-preview__img.desktop-t
             +picture('xmelnitskaya.png')
+
 mixin human-capital-preview
   section.preview
     .container 
