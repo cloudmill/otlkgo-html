@@ -9,9 +9,12 @@
   &__box {
     margin-top: 40px;
     display: flex;
+    gap: 26px;
 
     .col {
-      &:nth-child(1) {}
+      &:nth-child(1) {
+        flex-shrink: 0;
+      }
     }
   }
 
@@ -380,6 +383,7 @@
     }
 
     &__text {
+
       // width: auto;
       &:nth-child(1) {
         width: auto;
