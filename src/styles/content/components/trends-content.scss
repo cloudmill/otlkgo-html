@@ -65,7 +65,7 @@
   }
 
   &__sub {
-    // font-family: 'Manrope';
+    max-width: 320px;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
@@ -106,14 +106,21 @@
 
   .row {
     margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
+    @media #{media('<',t)} {
+      grid-column-gap: 20px;
+    }
   }
 
   &__text {
     &:nth-child(1) {
       width: 460px;
+
+      @media #{media('<',t)} {
+        width: auto;
+      }
     }
 
     &:nth-child(2) {
@@ -339,6 +346,7 @@
     }
 
     &__sub {
+      max-width: 100%;
       font-size: 12px;
     }
   }
@@ -362,9 +370,11 @@
     }
 
     &__svg {
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 20px;
       overflow-x: scroll;
       @include scrollbar-hidden();
-      width: calc(100% + 20px);
     }
 
     &-img {
@@ -378,6 +388,7 @@
 
     .row {
       margin-top: 20px;
+      display: flex;
       flex-direction: column;
       gap: 12px;
     }

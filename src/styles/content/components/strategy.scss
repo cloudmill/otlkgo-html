@@ -134,10 +134,6 @@
     gap: 40px;
   }
 
-  .col {
-    width: 50%;
-  }
-
   .row {
     margin-top: 40px;
     display: flex;
@@ -162,6 +158,8 @@
   }
 
   &__subtitile {
+    width: 460px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
@@ -270,6 +268,7 @@
 
   &__box {
     display: flex;
+    gap: 20px;
   }
 
   &__text {
@@ -429,6 +428,7 @@
     }
 
     &__subtitle {
+      width: auto;
       font-size: 14px;
     }
 

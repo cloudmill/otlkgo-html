@@ -34,6 +34,28 @@
   }
 }
 
+.flex-t {
+  display: none !important;
+
+  @media #{media('<',t)} {
+    display: flex !important;
+  }
+}
+
+.br {
+  @media #{media('<',m)} {
+    display: none;
+  }
+}
+
+.br-xs {
+  display: none !important;
+
+  @media #{media('<',xs)} {
+    display: block !important;
+  }
+}
+
 //colors
 .green-bg {
   background: #045C25;

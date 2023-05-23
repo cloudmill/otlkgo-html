@@ -62,6 +62,18 @@
     position: relative;
   }
 
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   &__inner {
     padding-top: 12px;
 
@@ -82,14 +94,13 @@
 
   &__row {
     margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    align-items: baseline;
   }
 
   &__link {
-    position: absolute;
-    top: 43%;
-
     font-size: 12px;
     line-height: 150%;
     color: #727A75;
@@ -103,8 +114,6 @@
     padding-top: 4px;
     display: flex;
     flex-direction: column;
-
-    width: 360px;
 
     border-top: 1px solid color(light-green);
   }
@@ -283,7 +292,7 @@
   &__row {
     margin-top: 100px;
     display: flex;
-    gap: 142px
+    justify-content: space-between;
   }
 
   &__description {
@@ -328,7 +337,7 @@
   }
 
   &__text {
-    width: 660px;
+    width: 521px;
   }
 }
 
@@ -471,9 +480,11 @@
     }
 
     &__svg-bottom {
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 20px;
       margin-top: 16px;
       overflow-x: scroll;
-      width: calc(100% + 20px);
 
       @include scrollbar-hidden()
     }
@@ -504,7 +515,9 @@
 
     &__svg {
       margin-top: 20px;
-
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 20px;
       overflow-x: scroll;
       @include scrollbar-hidden();
 
@@ -520,8 +533,11 @@
 
     &__row {
       margin-top: 20px;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      gap: 20px;
+
+
     }
 
     &__item {
@@ -560,8 +576,14 @@
     }
 
     &__img {
-      width: calc(100% + 20px);
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 20px;
       overflow-x: scroll;
+
+      img {
+        object-fit: contain;
+      }
     }
 
     &__items {
@@ -632,7 +654,6 @@
 
     &__row {
       margin-top: 40px;
-      display: flex;
       flex-direction: column;
       gap: 12px
     }
@@ -661,6 +682,9 @@
     }
 
     &__img {
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 20px;
       margin-top: -24px;
       overflow-x: scroll;
       @include scrollbar-hidden();
@@ -672,7 +696,7 @@
     }
 
     &__text {
-      width: 660px;
+      width: auto;
     }
   }
 
@@ -684,9 +708,11 @@
     }
 
     &__svg {
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 20px;
       margin-top: 12px;
       overflow-x: scroll;
-      width: calc(100% + 20px);
       @include scrollbar-hidden();
 
       svg {

@@ -24,10 +24,12 @@ mixin transit-content
     .container-content
       .transit-volume__inner 
         .row 
-          h4.transit-volume__title Объем транзита Китай-Европа-Китай в сервисах ОТЛК ЕРА, 2021–2022 гг., ДФЭ
-          a.transit-volume__link <span>Источник: </span>АО «ОТЛК ЕРА»
+          .transit-volume__row_top
+            h4.transit-volume__title Объем транзита Китай-Европа-Китай в сервисах ОТЛК ЕРА, 2021–2022 гг., ДФЭ
+            a.transit-volume__link.desktop-t <span>Источник: </span>АО «ОТЛК ЕРА»
           .transit-volume__svg 
             +transit-volume-svg.transit-volume-svg
+          a.transit-volume__link.flex-t <span>Источник: </span>АО «ОТЛК ЕРА»
           h4.transit-volume__subtitle Объемы перевозок через основные конкурентные коридоры также показали снижение в годовом выражении:
           .transit-volume__row 
             .transit-volume__item 
@@ -113,7 +115,7 @@ mixin transit-content
   section.transit-value 
     .container-content 
       .transit-value__inner 
-        h4.transit-value__title Объем импортных контейнерных перевозок Китай-Россия в сервисах «АО ОТЛК ЕРА», <br/> ДФЭ и число импортных маршрутов, 2021–2022 гг.
+        h4.transit-value__title Объем импортных контейнерных перевозок Китай-Россия в сервисах «АО ОТЛК ЕРА», <br /> ДФЭ и число импортных маршрутов, <br class='br-xs'/>2021–2022 гг.
         .links.transit-value__links.desktop
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') АО "ОТЛК ЕРА"

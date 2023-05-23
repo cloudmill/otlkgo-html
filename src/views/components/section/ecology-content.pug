@@ -95,52 +95,62 @@ mixin ecology-content
               | 2 439,5 тыс. тонн, авиаперевозками — 14 471s,6 тыс. тонн.
             p.eclology-dynamic__text.text Если рассматривать суммарный объем прямых выбросов ОТЛК ЕРА и косвенных выбросов, которые не являются следствием деятельности компании, то по итогам 2022 года углеродный след составил 1 214 тыс. тонн СО <sup>2</sup>, а при перевозке аналогичного объема груза авто- и авиатранспортом выбросы достигли бы 2 883,1 тыс. тонн и 17 688,4 тыс. тонн СО<sup>2</sup> соответственно.
   section.ecology-CO 
-    .container 
-      .ecoglogy-CO__inner 
-        h6.ecology-CO__title Прямые выбросы СО2 по видам транспорта в сравнении с показателями ОТЛК ЕРА
+    .container-content
+      .ecology-CO__inner 
+        h6.ecology-CO__title 
+          | Прямые выбросы СО
+          sup 2
+          |&nbsp; по видам транспорта в сравнении
+          br.br 
+          | с показателями ОТЛК ЕРА
         .ecology-CO__row 
           .col 
             .ecology-description
-              .ecology-description__item.ecology-description__item_1
-                span 
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_1
                 p.ecology-description__text АО «ОТЛК ЕРА»
-              .ecology-description__item.ecology-description__item_2
-                span 
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_2 
                 p.ecology-description__text Морские перевозки
-              .ecology-description__item.ecology-description__item_3
-                span 
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_3
                 p.ecology-description__text Автоперевозки
-              .ecology-description__item.ecology-description__item_4
-                span 
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_4
                 p.ecology-description__text Авиаперевозки
           .col 
             .ecology-CO__img 
               +picture('ecology-CO-1.png').ecology-CO__img
   section.ecology-CO2
-    .container 
-      .ecoglogy-CO2__inner
-        .row 
-          h6.ecology-CO2__title Прямые и косвенные выбросы СО2 по видам транспорта в сравнении с показателями ОТЛК ЕРА
+    .container-content
+      .ecology-CO2__inner
+        .ecology-CO2__top
+          h6.ecology-CO2__title 
+            | Прямые и косвенные выбросы СО
+            sup 2
+            |&nbsp; по видам  
+            br.br 
+            | транспорта в сравнении с показателями ОТЛК ЕРА
           .ecology-CO2__row 
             .col 
               .ecology-description
-                .ecology-description__item.ecology-description__item_1
-                  span 
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_1
                   p.ecology-description__text АО «ОТЛК ЕРА»
-                .ecology-description__item.ecology-description__item_2
-                  span 
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_2 
                   p.ecology-description__text Морские перевозки
-                .ecology-description__item.ecology-description__item_3
-                  span 
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_3
                   p.ecology-description__text Автоперевозки
-                .ecology-description__item.ecology-description__item_4
-                  span 
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_4
                   p.ecology-description__text Авиаперевозки
             .col 
               .ecology-CO2__img 
                 +picture('ecology-CO-2.png').ecology-CO2__img
-        .row  
-          h6.eclology-CO2__subtitle  Межправительственный совет ЕАЭС в августе 2021 года утвердил план первоочередных мероприятий по цифровизации грузовых железнодорожных перевозок.
+        .ecology-CO2__bottom
+          h6.ecology-CO2__subtitle  Межправительственный совет ЕАЭС в августе 2021 года утвердил план первоочередных мероприятий по цифровизации грузовых железнодорожных перевозок.
           .row 
             .col 
               p.ecology-CO2__text.text Это, наряду с подписанием железными дорогами России, Казахстана и Белоруссии декларации о намерениях поддерживать эффективные контейнерные å между Европой и Китаем, дало решающий импульс декарбонизации евразийского железнодорожного коридора. 
@@ -148,27 +158,28 @@ mixin ecology-content
             .col 
               p.ecology-CO2__text.text В соответствии с договоренностью сторон, в сервисах оператора ОТЛК ЕРА в ближайшее время будут апробированы пилотные проекты по внедрению на евразийском пространстве технологических инноваций с учетом принципов перехода к безуглеродной железнодорожной логистике. Начало положено: в 2022 году на пространстве 1520 уже протестирована единая электронная накладная. С учетом того, что доля железнодорожных контейнерных перевозок в общем объеме евразийского транзита в 2021 году уже приблизилась к 5% (для сравнения в 2015 году она составляла всего 1%), вклад в сокращение выбросов углекислого газа и негативного влияния на окружающую среду в будущем будет все более очевиден.
   section.ecology-grom 
-    .conainer-content 
+    .container-content 
       .ecology-grom__inner 
         .col 
           .ecology-grom__img
             +picture('ecology-grom.png')
-        .col 
-          .row 
+        .ecology-grom__right
+          .col 
             +appeal-svg.ecology-grom__elem_1
-          .row 
-            p.ecology-grom__text.text Экологическая ценность железнодорожных перевозок становится настоящей философией построения социально ответственного бизнеса на нашем континенте. Железная дорога вполне могла бы стать символом Конференции по изменению климата в Глазго, поскольку можно с уверенностью сказать, что перемещение все большего количества грузов на рельсы — это важнейшая предпосылка как для достижения европейской «зеленой сделки», так и для и содействия декарбонизации евразийской логистики.
-            p.ecology-grom__name Алексей Гром
-            p.ecology-grom__job Генеральный директор
-          .row 
-            +appeal2-svg.ecology-grom__elem_2
+          .col
+            .row 
+              p.ecology-grom__text.text Экологическая ценность железнодорожных перевозок становится настоящей философией построения социально ответственного бизнеса на нашем континенте. Железная дорога вполне могла бы стать символом Конференции по изменению климата в Глазго, поскольку можно с уверенностью сказать, что перемещение все большего количества грузов на рельсы — это важнейшая предпосылка как для достижения европейской «зеленой сделки», так и для и содействия декарбонизации евразийской логистики.
+              p.ecology-grom__name Алексей Гром
+              p.ecology-grom__job Генеральный директор
+            .row 
+              +appeal2-svg.ecology-grom__elem_2
   section.ecology-environment
     .container-content 
-      .ecology-envoronment 
+      .ecology-environment__inner
         h3.ecology-envoronment Охрана окружающей среды
         .ecology-environment__row
           .col 
-            p.ecology-envoronment__description.description Деятельность ОТЛК ЕРА не наносит прямого значительного ущерба окружающей среде.
+            p.ecology-environment__description.description Деятельность ОТЛК ЕРА не наносит прямого значительного ущерба окружающей среде.
           .col 
             p.ecology-environment__text.text Компания работает в соответствии с природоохранным законодательством стран присутствия и руководствуется принципом разумной предосторожности, который подразумевает учет экологических рисков в бизнес-стратегии и отказ от любых потенциально опасных для природы проектов на стадии решения.
         .ecology-environment__elem
@@ -179,35 +190,36 @@ mixin ecology-content
             .decor_4
           p.ecology-environment__elem-text #KeenOnGreen — экологические инициативы ОТЛК ЕРА
         .ecology-environment__bottom 
-          .col 
-            .ecology__item 
-              .row 
-                .col 
-                  p.ecology__item-number 3
-                .col 
-                  p.ecology__item-grey млн рублей
-              .row 
-                p.ecology__item-subtext Объем финансирования проектов ОТЛК ЕРА, реализуемых в Казахстане и России в 2022 году 
-          .col 
-            p.ecology-environment__text.text Начиная с 2020 года мы активно участвуем в популяризации и реализации экологических проектов. Инициатива #KeenOnGreen направлена на то, чтобы, с одной стороны, рассказывать о железных дорогах как о наиболее экологичном виде транспорта, а с другой — поддерживать экологические проекты в природных зонах стран, по территориям которых проходят маршруты контейнерных поездов ОТЛК ЕРА. В рамках инициативы в 2021 году компания поддержала проект по восстановлению в Казахстане популяции тугайных оленей, занесенных в Красную книгу.
-  section.ecology__cards 
+          .number-item 
+            .number-item__inner
+              .number-item__row 
+                .number-item__col
+                  p.number-item__number 3
+                .number-item__col 
+                  p.number-item__grey млн рублей
+              .number-item__row 
+                p.number-item__subtext Объем финансирования проектов ОТЛК ЕРА, реализуемых в Казахстане и России в 2022 году 
+          p.ecology-environment__text.text Начиная с 2020 года мы активно участвуем в популяризации и реализации экологических проектов. Инициатива #KeenOnGreen направлена на то, чтобы, с одной стороны, рассказывать о железных дорогах как о наиболее экологичном виде транспорта, а с другой — поддерживать экологические проекты в природных зонах стран, по территориям которых проходят маршруты контейнерных поездов ОТЛК ЕРА. В рамках инициативы в 2021 году компания поддержала проект по восстановлению в Казахстане популяции тугайных оленей, занесенных в Красную книгу.
+  section.ecology-cards 
     .container-content  
       .ecology-cards__inner
         .ecology-cards__top
           +column-top-svg.ecology-cards__decor
-          p.ecology-cards__descripiton В Казахстане 
+          p.ecology-cards__description В Казахстане 
           .row 
             .col 
               p.ecology-cards__text.text Тугайные леса Казахстана тянутся вдоль русел рек, притоков и озер, создавая среду обитания для многих видов околоводных животных. К сожалению, изменения климата, гидрологического режима, сокращение стока реки Иле, пожары и чрезмерное хозяйственное использование поставили тугайные леса на грань исчезновения!
             .col 
               p.ecology-cards__text.text Специалисты резервата «Иле-Балхаш» при поддержке ОТЛК ЕРА реализуют проект по восстановлению тугайного леса, благодаря которому к концу 2022 года уже более 12 тысяч новых саженцев туранги, лоха и ивы появилось в этих местах. Выделенные средства также помогли организовать современную систему капельного орошения и разработать меры противопожарной безопасности.
         .ecology-cards__bottom
-          +column-top-svg.ecology-cards__decor
-          .col 
-            p.ecology-cards__descripiton В России
-            p.ecology-cards__text.text В самом сердце Карачаево-Черкесии находится Кизгинское ущелье — охраняемая природная территория. Здесь в 1990-х годах советские ученые начали восстанавливать популяцию зубра — единственного дикого быка, оставшегося в Европе, который считается важной частью экосистемы широколиственных лесов Кавказа. К сожалению, этот вид исчез из естественной среды обитания из-за деятельности человека — последний зубр на Кавказе был убит в 1927 году. 
-          .col 
-            .row
-              p.ecology-cards__number.ecology-cards__number_light +28%
+          +column-top-svg.ecology-cards__decor 
+          .ecology-cards__bottom-row
+            p.ecology-cards__description В России
+            .ecology-cards__elem
+              p.ecology-cards__number +28%
               p.ecology-cards__subtext рост популяции зубров в Турмонском заказнике
-            p.ecology-cards__text.text Специалисты резервата «Иле-Балхаш» при поддержке ОТЛК ЕРА реализуют проект по восстановлению тугайного леса, благодаря которому к концу 2022 года уже более 12 тысяч новых саженцев туранги, лоха и ивы появилось в этих местах. Выделенные средства также помогли организовать современную систему капельного орошения и разработать меры противопожарной безопасности.
+          .row
+            .col 
+              p.ecology-cards__text.text В самом сердце Карачаево-Черкесии находится Кизгинское ущелье — охраняемая природная территория. Здесь в 1990-х годах советские ученые начали восстанавливать популяцию зубра — единственного дикого быка, оставшегося в Европе, который считается важной частью экосистемы широколиственных лесов Кавказа. К сожалению, этот вид исчез из естественной среды обитания из-за деятельности человека — последний зубр на Кавказе был убит в 1927 году. 
+            .col 
+              p.ecology-cards__text.text Специалисты резервата «Иле-Балхаш» при поддержке ОТЛК ЕРА реализуют проект по восстановлению тугайного леса, благодаря которому к концу 2022 года уже более 12 тысяч новых саженцев туранги, лоха и ивы появилось в этих местах. Выделенные средства также помогли организовать современную систему капельного орошения и разработать меры противопожарной безопасности.
