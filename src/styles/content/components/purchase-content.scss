@@ -27,7 +27,142 @@
 
   &__inner {
     padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
 
-    border-top: 1px solid color(green)
+    border-top: 1px solid color(green);
+
   }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
+  &__list {
+    margin-top: 24px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.purchase-principles {
+  margin-top: 100px;
+
+  &__box {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 20px;
+
+    height: 260px;
+
+    border: 1px solid #EDEDED;
+
+    &:nth-child(odd) {
+      border-top: 2px solid #69DA91;
+    }
+
+    &:nth-child(even) {
+      border-top: 2px solid #045C25;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 128px;
+    height: 128px;
+  }
+
+  &__bottom {
+    margin-top: 100px;
+    display: flex;
+    gap: 40px;
+
+    .col {
+      &:nth-child(1) {
+        max-width: 307px;
+
+      }
+
+      &:nth-child(2) {
+        max-width: 700px;
+
+        p {
+          &:nth-child(2) {
+            margin-top: 15px;
+          }
+
+          &:nth-child(3) {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &__description {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.purchase-value,
+.purchase-saving {
+  margin-top: 100px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #045C25;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: color(dark);
+  }
+
+}
+
+.purchase-value__row,
+.purchase-saving__row {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 24px;
+
+  background: #F4F4F4;
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  color: #2A2E2B;
+
+  svg {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+}
+
+.purchase-sving {
+  margin-top: 60px;
 }
