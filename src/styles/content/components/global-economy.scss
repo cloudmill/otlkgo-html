@@ -1186,7 +1186,6 @@ line-height: 160%;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
-      width: 320px;
       @media #{media("<", m)} {
         width: rem(335px);
         font-size: rem(12px);

@@ -16,11 +16,166 @@ mixin human-capital
                 .ge-card__text-grey Рост штата компании в 2022 году
 
 mixin organization-structure
-  section.organization-structure.container-content
-    .organization-structure__title Организационная структура ОТЛК ЕРА на 31 декабря 2022 года
-    .organization-structure__img-table 
-      +picture('organization-structure-img.png')
-    .organization-structure__number
-      .organization-structure__number-title Численность персонала компании
-      .organization-structure__number-table
-        +picture('structure-number-table.png')
+  .container-content
+    section.organization-structure
+      .organization-structure__title Организационная структура ОТЛК ЕРА на 31 декабря 2022 года
+      .organization-structure__img-table 
+        +picture('organization-structure-img.png')
+      .organization-structure__number
+        .organization-structure__number-title Численность персонала компании
+        .organization-structure__number-table
+          +picture('structure-number-table.png')
+      .organization-structure__personal.first  
+        .organization-structure__personal-col 
+          .organization-structure__personal-title Структура персонала по категориям, человек
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text Руководители
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text Специалисты
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text Служащие
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text Рабочие
+        .organization-structure__personal-col 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-1.png')
+      .organization-structure__personal
+        .organization-structure__personal-col 
+          .organization-structure__personal-title Структура персонала по образованию, человек
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text Средне-специальное
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text Основное общее
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text Высшее
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text Ученая степень/ученое звание
+        .organization-structure__personal-col 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-2.png')
+      .organization-structure__personal 
+        .organization-structure__personal-col 
+          .organization-structure__personal-title Структура персонала по возрасту, человек
+          .organization-structure__personal-cubes.no-wrap  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text 21–30
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text 31–40
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text 41–50
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text Старше 50
+          .organization-structure__personal-text Средний возраст сотрудников компании в 2022 году составил 39 лет, это отражает сбалансированность штата. Специалисты со стажем передают свой опыт молодым, а те, в свою очередь, содействуют дальнейшему развитию компании, внедряя инновации.
+        .organization-structure__personal-col 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-3.png')
+      .organization-structure__personal 
+        .organization-structure__personal-col 
+          .organization-structure__personal-title Структура персонала по возрасту, человек
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text Мужчин
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text Женщин
+        .organization-structure__personal-col 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-4.png')
+      .organization-structure__subrow 
+        .organization-structure__subcol 
+          .organization-structure__subcol-title В течение 2022 года в ряд локально-нормативных актов ОТЛК ЕРА вносились дополнения, были актуализированы и утверждены следующие документы:
+        .organization-structure__subcol 
+          .organization-structure__subcol-item Правила внутреннего трудового распорядка – регламентируют внутренний трудовой распорядок компании
+          .organization-structure__subcol-item Положение о премировании сотрудников, групп персонала «Руководство» – устанавливает принципы и условия премирования
+          .organization-structure__subcol-item Положение о премировании сотрудников, групп персонала «Производственно-коммерческий персонал» и «Сопровождение бизнеса» – устанавливает принципы и условия премирования 
+          .organization-structure__subcol-item  Положение об адаптации персонала — определяет единые требования и порядок организации адаптации персонала в компании. Дополнено Приложение № 6 к положению об адаптации персонала ОТЛК ЕРА
+      .container-content 
+        section.recruitment-processes
+          .recruitment-processes__title Процессы найма
+          .recruitment-processes__text При подборе персонала мы принимаем во внимание два основополагающих принципа, закрепленных в законодательстве РФ: объективность и отсутствие любых форм дискриминации. Все остальные критерии определяются стратегическими и тактическими приоритетами, системой управления персоналом и видом деятельности компании.
+          .recruitment-processes__hr 
+            .recruitment-processes__hr-title В HR-процессах ОТЛК ЕРА учитывает
+            .recruitment-processes__hr-row 
+              .recruitment-processes__hr-col
+                each item in ['Мотивацию соискателя, его совместимость с корпоративной культурой и сотрудниками', 'Уровень профессиональных знаний и опыта', 'Оценку скрытых резервов, сильных сторон соискателя, прогнозы его будущего роста', 'Общие положительные поведенческие реакции', 'Адаптивность: как быстро сотрудник сможет войти в курс дела и начать налаживать связи с коллегами, поставщиками, клиентами, руководителями']
+                  .recruitment-processes__hr-mark=item
+                .recruitment-processes__hr-text Оптимально выстроенный процесс найма предусматривает поэтапный отбор, цель которого – оценить соискателей и выявить их соответствие требованиям должности.
+              .recruitment-processes__hr-col 
+                .recruitment-processes__hr-subtitle Процессы подбора, адаптации и развития персонала в компании регламентируют
+                each item in ['Положение о подборе и адаптации персонала', 'Кодекс корпоративной этики', 'Модель корпоративных компетенций', 'Положение об обучении и развитии персонала']
+                  .recruitment-processes__hr-mark=item
+                .recruitment-processes__hr-subtitle.second Этапы отбора
+                .recruitment-processes__hr-num  
+                  .hr-num__number 1
+                  .hr-num__text Поиск и обработка резюме при просмотре всех заявок на вакансию и фильтрация по ключевым параметрам на HeadHunter
+                .recruitment-processes__hr-num  
+                  .hr-num__number 2
+                  .hr-num__text Телефонное интервью, в ходе которого компания стремится получить информацию об опыте и образовании кандидата, больше узнать о мотивах поиска нового места работы
+                .recruitment-processes__hr-num  
+                  .hr-num__number 3
+                  .hr-num__text Личное собеседование, когда компания оценивает соответствие кандидата требованиям вакантной должности, его профессиональные и личностные качества, мотивацию и совместимость с корпоративной культурой
+                .recruitment-processes__hr-num  
+                  .hr-num__number 4
+                  .hr-num__text Проверка рекомендаций у предыдущего работодателя, если остаются сомнения
+                .recruitment-processes__hr-num  
+                  .hr-num__number 5
+                  .hr-num__text Интервью с отделом безопасности компании
+                .recruitment-processes__hr-num  
+                  .hr-num__number 6
+                  .hr-num__text Медицинский осмотр при приеме на работу
+  .container-content 
+    section.corporate-culture
+      .corporate-culture__title Корпоративная культура
+      .corporate-culture__text У нас есть Кодекс корпоративной этики, который определяет основные нормы и правила индивидуального и коллективного поведения сотрудников. Кодекс содержит значимые для компании ценности.
+      .corporate-culture__list 
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +mountain-lider-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Лидерство
+            .corporate-culture__item-text Мы стремимся быть лидерами в сферах своей деятельности. Найти лучшие пути решения — вот наша основная задача. Нам присущ «бойцовский дух»: мы уверены в своих силах и можем решить любую задачу быстро и эффективно.
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +effective-svg 
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Результативность
+            .corporate-culture__item-text Мы стремимся к оптимальному использованию ресурсов, грамотному управлению, оперативности и точности исполнения поставленных задач, высокой производительности труда, к достижению максимально возможных результатов. Мы умеем мобилизоваться и выполнить задачу в кратчайшие сроки.
+        .corporate-culture__item
+          .corporate-culture__item-icon 
+            +professional-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Профессионализм
+            .corporate-culture__item-text Отношения внутри компании строятся на основе прямой заинтересованности сотрудников в результате работы, что позволяет нам стать профессионалами в различных областях. Принять оптимальное решение, дать грамотную консультацию в пределах своей компетенции — дело чести каждого сотрудника. Все решения в компании принимаются с точки зрения компетентности и целесообразности, а не в угоду чьим-то амбициям или лоббированию.
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +lamp-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Новаторство и инновационность
+            .corporate-culture__item-text Инновационность касается любого аспекта бизнеса: маркетинга, финансовой деятельности, кадровой политики, ИТ-технологий и т. д. Мы поощряем инициативы сотрудников, так как уверены, что живые идеи не только способствуют большему вовлечению в рабочий процесс, но и влияют на мотивацию и активность коллег, позволяют компании развиваться в новых интересных направлениях.
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +people-man-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Клиентоориентированность
+            .corporate-culture__item-text В нашем понимании это развитие партнерских отношений с внешними и внутренними клиентами (сотрудниками), внимание к их интересам и потребностям, а также эффективное и оперативное решение их трудностей. 
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +scales-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Справедливость и честность
+            .corporate-culture__item-text Это принципы, на которых мы строим взаимоотношения как с внутренними, так и с внешними клиентами. Мы не даем пустых обещаний и четко выполняем свои обязательства. Мы гарантируем лишь то, что в состоянии выполнить. Поэтому мы ожидаем соблюдения этих принципов от каждого клиента, делового партнера, но в первую очередь от каждого сотрудника.
