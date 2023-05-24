@@ -194,10 +194,14 @@
     max-width: 360px;
   }
 
-
-
   sup {
     font-size: 10px;
+  }
+
+  &__title {
+    sup {
+      font-size: 28px;
+    }
   }
 }
 

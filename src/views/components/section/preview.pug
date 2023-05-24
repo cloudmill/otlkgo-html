@@ -332,16 +332,24 @@ mixin energy-preview
         .preview__line
         .preview__col-left
           h2.preview__title Использование  <br/> энергетических ресурсов
-          table.prebiew__table
-            thead 
-              tr   
+          table.preview-table
+            thead.preview-table__top  
+              tr.preview-table__row
                 each i in ['Показатель за 2022 год','Расход','Сумма, руб']
-                  th=i
-            tbody
-              tr 
-                td.td-row Энергоснабжение, кВт
-                td 218 122,14
-                td 1 415 662,45
+                  th.preview-table__name=i
+            tbody.preview-table__bottom
+              tr.preview-table__row
+                td.preview-table__item Энергоснабжение, кВт
+                td.preview-table__item.preview-table__item_bold 218 122,14
+                td.preview-table__item.preview-table__item_bold  1 415 662,45
+              tr.preview-table__row
+                td.preview-table__item Водоснабжение, куб.м
+                td.preview-table__item.preview-table__item_bold 1540,44
+                td.preview-table__item.preview-table__item_bold  112 002,63
+              tr.preview-table__row
+                td.preview-table__item Теплопотребление, Гкал/ куб. м
+                td.preview-table__item.preview-table__item_bold 369,16
+                td.preview-table__item.preview-table__item_bold  766 022,07
           .row
             .preview__img.transit-preview__img.mobile-t
               +picture('porochay.png')

@@ -73,7 +73,7 @@ mixin ecology-content
                   +mark-text-svg.ecology-algorithm-svg
                   p.text.eclology-algorithm__text=item 
           .col 
-            p.ecology-algorithm__description.description Прямые выбросы (TTW) для перевозки 6 636 ДФЭ составят
+            p.ecology-algorithm__description.description Прямые и косвенные выбросы (WTW) для перевозки 6 636 ДФЭ составят
             ul.ecology-algorithm__list.list
               each item in ['Для 44 поездов – 19 618 237 кг CO2','1 контейнерного судна – 2 318 405 кг CO2','3 318 грузовиков с загрузкой до 26 тонн – 46 590 965 кг CO2','1 106 грузовых самолетов – 285 847 854 кг CO2',]
                 li.ecology-algorithm__item
@@ -84,7 +84,10 @@ mixin ecology-content
   section.ecology-dynamic 
     .container-content 
       .ecology-dynamic__inner 
-        h2.ecology-dynamic__title Динамика выбросов СО2 ОТЛК ЕРА
+        h2.ecology-dynamic__title 
+          | Динамика выбросов СО
+          sup 2
+          |&nbsp; ОТЛК ЕРА
         .ecology-dynamic__row 
           .col 
             p.ecology-dynamic__description.description Устойчивое развитие, а в перспективе и достижение углеродной нейтральности нераздельно связаны со стремлением ОТЛК ЕРА создать конкурентоспособную альтернативу морскому, автомобильному и авиационному грузовому транспорту, которые используются в трансъевразийских перевозках. 

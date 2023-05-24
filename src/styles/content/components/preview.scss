@@ -512,3 +512,37 @@
     }
   }
 }
+
+.preview-table {
+  max-width: 540px;
+
+  &__top {
+    text-align: left;
+  }
+
+  &__bottom {
+    border-top: 1px solid #045C25;
+  }
+
+  &__row {}
+
+  &__name {
+    padding-bottom: 12px;
+
+    font-size: 12px;
+    line-height: 150%;
+    color: #727A75;
+  }
+
+  &__item {
+    padding-top: 12px;
+
+    font-weight: 500;
+    line-height: 150%;
+    color: color(dark);
+
+    &_bold {
+      font-weight: 700;
+    }
+  }
+}
