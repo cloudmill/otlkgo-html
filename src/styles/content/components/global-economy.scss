@@ -13,6 +13,10 @@
       margin-bottom: rem(20px);
       width: rem(335px);
     }
+
+    @media (min-width: 768px) and (max-width: 1280px) {
+
+    }
   }
 
   &-subtitle{
@@ -121,19 +125,20 @@
   }
 
   &-grafics{
-    padding: 0px 50px 100px;
     display: flex;
     gap: 140px;
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      gap: rem(30px);
+    }
     @media #{media('<',m)} {
       width: 100%;
       padding: 0px;
       display: block;
     }
     &__col{
-      width: 460px;
+      max-width: 460px;
       flex-shrink: 0;
-
+      
       @media #{media('<',m)} {
         width: 100%;
         padding: 0px;
@@ -241,6 +246,7 @@
 //CHINESE-ECONOMY
 
 .chinese-economy{
+  margin-top: 100px;
   padding-top: 20px;
 
   border-top: 1px solid color(light-green);
@@ -259,7 +265,8 @@
   &__hero{
     &-row{
       display: flex;
-      gap: 140px;
+      justify-content: space-between;
+      gap: 20px;
       @media #{media('<',m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -302,6 +309,9 @@
 
     &-grafic{
       width: 560px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 500px;
+      }
       @media #{media('<',m)} {
         width: 100%;
       }
@@ -323,12 +333,19 @@
       margin-top: 40px;
 
       display: flex;
-      gap: 240px;
+      justify-content: space-between;
+      gap: 20px;
 
       @media #{media('<',m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: rem(40px);
+      }
+    }
+
+    &-col{
+      &:nth-child(2){
+        max-width: 560px;
       }
     }
 
@@ -340,7 +357,11 @@
     }
 
     &-container{
-      @media #{media('<',m)} {
+      @include scrollbar-hidden();
+      @media (max-width: 1025px) {
+        overflow-x: scroll;
+      }
+      @media #{media('<', m)} {
         width: rem(375px);
         padding-left: 20px;
         margin-left: -20px;
@@ -359,7 +380,7 @@
             object-fit: fill;
           }
         }
-
+        
         @media #{media('<',m)} {
           overflow-x: scroll;
         }
@@ -507,7 +528,8 @@
 
   &__row{
     display: flex;
-    gap: 140px;
+    justify-content: space-between;
+    gap: 20px;
 
     @media #{media('<',m)} {
       display: grid;
@@ -518,6 +540,9 @@
 
 
   &__col{
+    &:nth-child(1){
+      max-width: 460px;
+    }
     @media #{media('<',m)} {
       width: rem(335px);
     }
@@ -617,7 +642,9 @@
 
   &__row{
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 20px;
+
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -628,13 +655,16 @@
   &__col{
     flex-shrink: 0;
     &:nth-child(1){
-      width: 360px;
+      max-width: 360px;
       @media #{media("<", m)} {
         width: 100%;
       }
     }
     &:nth-child(2){
-      width: 760px;
+      max-width: 760px;
+      @media (max-width: 1025px) {
+        max-width: 600px;
+      }
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -723,6 +753,7 @@
 
   &__vector{
     margin-top: 40px;
+    @include scrollbar-hidden();
     @media #{media("<", m)} {
       width: rem(742px);
       margin-top: rem(23px);
@@ -730,6 +761,7 @@
     }
 
     &-container{
+      @include scrollbar-hidden();
       @media #{media("<", m)} {
         padding-left: rem(20px);
         margin-left: rem(-20px);
@@ -784,8 +816,11 @@
 
   &__row{
     display: flex;
-    gap: 140px;
+    gap: 20px;
+    &.top{
+      justify-content: space-between;
 
+    }
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -793,6 +828,10 @@
     }
     &.bot{
       margin-top: 39px;
+      gap: 140px;
+      @media (max-width: 1025px) {
+        gap: 20px;
+      }
       @media #{media("<", m)} {
         margin-top: rem(20px);
       }
@@ -804,12 +843,16 @@
 
     &:nth-child(1){
       width: 460px;
+      
       @media #{media("<", m)} {
         width: 100%;
       }
     }
     &:nth-child(2){
-      width: 560px;
+      max-width: 560px;
+      @media (max-width: 1025px) {
+        max-width: 500px;
+      }
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -860,6 +903,7 @@ line-height: 160%;
     }
 
     &-container{
+      @include scrollbar-hidden();
       @media #{media("<", m)} {
         width: rem(375px);
         padding-left: rem(20px);
@@ -868,6 +912,7 @@ line-height: 160%;
       }
     }
     &-vector{
+      @include scrollbar-hidden();
       @media #{media("<", m)} {
         width: rem(677px);
       }
@@ -985,8 +1030,9 @@ line-height: 160%;
   &__dinamic2{
     margin-top: 40px;
     display: flex;
-    gap: 40px;
-
+    justify-content: space-between;
+    gap: 20px;
+    
     @media #{media("<", m)} {
       margin-top: rem(20px);
       display: grid;
@@ -997,14 +1043,20 @@ line-height: 160%;
       padding-top: 12px;
       border-top: 2px solid color(borders);
       &:nth-child(1){
-        width: 560px;
+        max-width: 560px;
+        @media (max-width: 1025px) {
+          max-width: 460px;
+        }
         @media #{media("<", m)} {
           padding-top: rem(5px);
           width: 100%;
         }
       }
       &:nth-child(2){
-        width: 559px;
+        max-width: 559px;
+        @media (max-width: 1025px) {
+          max-width: 470px;
+        }
         @media #{media("<", m)} {
           padding-top: rem(5px);
           width: 100%;
@@ -1048,7 +1100,10 @@ line-height: 160%;
         }
       }
       &.right{
-        width: 559px;
+        max-width: 559px;
+        @media (max-width: 1025px) {
+          max-width: 470px;
+        }
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -1099,6 +1154,9 @@ line-height: 160%;
       }
       &:nth-child(2){
         width: 760px;
+        @media (max-width: 1025px) {
+          max-width: 570px;
+        }
         @media #{media("<", m)} {
           width: rem(335px);
         }
