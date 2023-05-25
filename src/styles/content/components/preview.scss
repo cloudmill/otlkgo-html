@@ -41,8 +41,8 @@
   }
 
   &__vector {
-    width: 530px;
-    height: 260px;
+    max-width: 530px;
+    max-height: 260px;
     margin-top: 40px;
 
     picture {
@@ -92,9 +92,10 @@
     z-index: $index-1;
 
     &.safari-debug{
-      @media (min-width: 1390px) and (max-width: 1445px){
+      @media (min-width: 1390px) and (max-width: 2599px){
         max-width: 650px;
       }
+      
     }
   }
 
@@ -185,7 +186,7 @@
     padding-left: 53.5px;
     position: relative;
     overflow: hidden;
-
+    width: 50%;
     @media #{media('<',t)} {
       padding-left: 20px;
     }
