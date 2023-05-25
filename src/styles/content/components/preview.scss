@@ -77,9 +77,10 @@
   &__inner {
     display: flex;
     height: 640px;
+    gap: 20px;
+
     background: color(grey);
 
-    gap: 20px;
 
     @media #{media('<',t)} {
       gap: 0;
@@ -91,11 +92,8 @@
     height: 640px;
     z-index: $index-1;
 
-    &.safari-debug{
-      @media (min-width: 1390px) and (max-width: 1445px){
-        max-width: 650px;
-      }
-    }
+    max-width: 650px;
+
   }
 
   &__list {
@@ -108,8 +106,6 @@
   &__item {
     display: flex;
     gap: 8px;
-
-    &-text {}
   }
 
   &__line {
@@ -185,6 +181,8 @@
     padding-left: 53.5px;
     position: relative;
     overflow: hidden;
+
+    max-width: 50%;
 
     @media #{media('<',t)} {
       padding-left: 20px;
@@ -274,7 +272,8 @@
       height: 100%;
       width: 100%;
     }
-    &.pahomov{
+
+    &.pahomov {
       left: 0px;
     }
   }
@@ -374,6 +373,8 @@
 
     &__col-right {
       padding-left: 0;
+      max-width: 100%;
+
     }
 
     img {
@@ -459,6 +460,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: auto;
+      gap: 0
     }
 
     &__img {
@@ -484,6 +486,7 @@
     &__col-right {
       padding-left: 0;
       height: auto;
+      // max-width: 100%;
     }
 
     &__img {
