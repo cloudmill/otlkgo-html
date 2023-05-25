@@ -117,6 +117,10 @@
         @media #{media("<", m)} {
             display: none;
         }
+        @media (max-width: 1025px) {
+            margin-left: 35px;
+            padding-top: 26px;
+        }
     }
 
     &-text {
@@ -130,6 +134,9 @@
 
         @media #{media(">", ll)} {
             margin-left: 330px;
+        }
+        @media (max-width: 1025px) {
+            margin-left: 35px;
         }
 
         &__top {
