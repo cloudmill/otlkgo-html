@@ -43,6 +43,12 @@
         width: 460px;
       }
     }
+
+    &-third{
+      .ge-card{
+        width: 360px;
+      }
+    }
   }
 
   &__subtitle{
@@ -91,6 +97,7 @@
 
     &.top{
       margin-bottom: 16px;
+      margin-top: 40px;
     }
   }
 
@@ -210,6 +217,12 @@
       font-size: 15px;
       line-height: 160%;
       color: #2A2E2B;
+    }
+  }
+
+  &__mini{
+    &-heading{
+      margin-bottom: 24px;
     }
   }
 }

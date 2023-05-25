@@ -406,13 +406,13 @@
 .ge-card{
   padding-top: 12px;
 
-  width: 360px;
+  max-width: 360px;
 
   @media #{media('<',m)} {
     width: rem(335px);
   }
   &.large{
-    width: 560px;
+    max-width: 560px;
   }
   &.green{
     border-top: 1px solid color(green);
@@ -431,6 +431,7 @@
   &__num{
     margin-bottom: 20px;
 
+    font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 60px;
     line-height: 80%;
@@ -454,6 +455,7 @@
   }
 
   &__text{
+    font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
@@ -470,7 +472,7 @@
     }
 
     &-grey{
-      width: 320px;
+      max-width: 320px;
 
       font-weight: 400;
       font-size: 15px;
@@ -480,6 +482,13 @@
         width: rem(335px);
         font-size: rem(12px);
         line-height: 160%;
+      }
+
+      &.large{
+        max-width: 560px;
+      }
+      &.large-360{
+        max-width: 360px;
       }
     }
   }
@@ -1184,6 +1193,19 @@ line-height: 160%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: rem(20px);
+      }
+    }
+
+    &-subcol{
+      .ge-card{
+        @media (max-width: 1025px) {
+          max-width: 270px;
+        }
+        .ge-card__text-grey{
+          @media (max-width: 1025px) {
+            max-width: 270px;
+          }
+        }
       }
     }
   }
