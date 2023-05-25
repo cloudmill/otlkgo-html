@@ -52,38 +52,6 @@
   }
 }
 
-.preservation-revenue {
-  margin-top: 100px;
-  padding-bottom: 279px;
-  overflow: hidden;
-
-  &__inner {
-    padding-top: 20px;
-
-    border-top: 1px solid #69DA91;
-  }
-
-  &__row {
-    margin-top: 40px;
-    display: flex;
-
-  }
-
-  .col {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    width: 560px;
-  }
-
-  &__img {
-    position: absolute;
-    right: -102px;
-    top: -72px;
-  }
-}
 
 .preservation-sales {
 
@@ -103,6 +71,10 @@
   &__inner {
     border-top: 1px solid #69DA91;
     padding-top: 20px;
+  }
+
+  &__img {
+    max-width: 460px;
   }
 
   &__row {
@@ -163,42 +135,8 @@
 }
 
 .preservation-profit {
-  margin-top: 100px;
-  padding-bottom: 315px;
-  overflow: hidden;
-
-  .col {
-    position: relative;
-
-    &:nth-child(2) {
-      border-top: 1px solid #E8E8E8;
-      padding-top: 20px;
-    }
-  }
-
-  &__inner {
-    padding-top: 20px;
-    border-top: 1px solid #69DA91;
-  }
-
-  &__row {
-    display: flex;
-    margin-top: 40px;
-  }
-
-  &__description {
-    position: relative;
-    z-index: $index-1;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 130%;
-    color: color(dark);
-  }
-
-  &__img {
-    position: absolute;
-    top: -60px;
-    right: -67px;
+  .text {
+    margin-top: 24px;
   }
 }
 

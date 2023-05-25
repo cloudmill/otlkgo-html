@@ -15,17 +15,21 @@ mixin preservation-content
         h6.preservation-dynamic__title Динамика основных финансовых показателей за 2020–2022 годы, млн руб
         .preservation-dynamic__img
           +picture('preservation-dynamic.png')
-  section.preservation-revenue 
+
+  section.block-diagram.mt-section.preservation-revenue
     .container-content 
-      .preservation-revenue__inner 
-        h3.preservation-revenue__title Выручка
-        .preservation-revenue__row 
-          .col 
-            p.text.preservation-revenue__text По результатам работы нашей компании за 2022 год валовая выручка составила 55 577 млн руб, что на 9 274 млн руб или 14% ниже показателя прошлого года. Выручка 2022 года полностью представлена доходами за оказание транспортно-экспедиционных услуг, преимущественно номинированными в долларах США. 
-            p.text.preservation-revenue__text Сокращение выручки прежде всего связано со снижением среднегодового курса доллара США 2022 года по сравнению с 2021 годом на 7% (2022 — 68,58 руб., 2021 — 73,66 руб.), в связи с тем, что выручка номинирована в долларах, а также в связи с перераспределением объемов в сторону увеличения доли перевозок, ставка по которым ниже.
-          .col 
-            .preservation-revenue__img  
-              +picture('preservation-revenue.png')
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title Выручка
+        .block-diagram__row 
+          .block-diagram__col 
+            p.block-diagram__text.text По результатам работы нашей компании за 2022 год валовая выручка составила 55 577 млн руб, что на 9 274 млн руб или 14% ниже показателя прошлого года. Выручка 2022 года полностью представлена доходами за оказание транспортно-экспедиционных услуг, преимущественно номинированными в долларах США. 
+            p.block-diagram__text.text Сокращение выручки прежде всего связано со снижением среднегодового курса доллара США 2022 года по сравнению с 2021 годом на 7% (2022 — 68,58 руб., 2021 — 73,66 руб.), в связи с тем, что выручка номинирована в долларах, а также в связи с перераспределением объемов в сторону увеличения доли перевозок, ставка по которым ниже.
+          .block-diagram__col 
+            p.block-diagram__description Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
+            .block-diagram__video
+              +picture('video.png')
+
   seciton.preservation-sales 
     .container-content 
       .preservation-sales__inner 
@@ -50,13 +54,15 @@ mixin preservation-content
           .col 
             p.text.preservation-structure__text Иные существенные расходы с долей 10% в составе себестоимости — расходы на парк фитинговых ж/д платформ в управлении, в том числе расходы на их эксплуатацию и амортизацию актива право пользования (платформ в финансовом лизинге). Начиная с середины 2019 года компания увеличивала парк в управлении за счет арендованных и полученных в лизинг платформ. На конец 2022 года арендованный парк составлял 33%, а парк в лизинге — 31% рабочего парка компании.
             p.text.preservation-structure__text За счет увеличения доли парка, привлеченного на условиях финансовой и операционной аренды, а также начала применения ФСБУ 25/2018 «Бухгалтерский учет аренды» начиная с 01.01.2022 года Обществу удалось в 2022 году дополнительно оптимизировать расходы на привлечение парка фитинговых платформ в структуре себестоимости.
-  section.preservation-profit 
+
+  section.preservation-profit.block-diagram.mt-section
     .container-content 
-      .preservation-profit__inner 
-        h3.preservation-profit__title Валовая прибыль
-        .preservation-profit__row 
-          .col 
-            .item.preservation-profit__item
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title Валовая прибыль
+        .block-diagram__row 
+          .block-diagram__col 
+            .item
               .item__row 
                 .item__col 
                   p.item__number 7 812
@@ -64,12 +70,13 @@ mixin preservation-content
                   p.item__grey млн руб
               .item__row 
                 p.item__subtext Показатель валовой прибыли ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 2%
-              .item__row 
-                p.text.item__text Валовая прибыль по итогам 2022 года составила 7 812 млн руб, что на 149 млн руб или 2% ниже аналогичного периода прошлого года. При этом в 2022 году растет рентабельность по валовой прибыли за счет опережающего снижения себестоимости благодаря мерам по оптимизации себестоимости, снижению среднегодового курса доллара США и начала применения ФСБУ 25/2018. 
-          .col 
-            p.preservation-profit__description Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
-            .preservation-profit__img
-              +picture('preservation-profit.png')
+            p.preservation-profit__text.block-diagram__text.text Валовая прибыль по итогам 2022 года составила 7 812 млн руб, что на 149 млн руб или 2% ниже аналогичного периода прошлого года. При этом в 2022 году растет рентабельность по валовой прибыли за счет опережающего снижения себестоимости благодаря мерам по оптимизации себестоимости, снижению среднегодового курса доллара США и начала применения ФСБУ 25/2018. 
+          .block-diagram__col 
+            p.block-diagram__description Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
+            .block-diagram__video
+              +picture('video.png')
+
+
   section.preservation-expenses 
     .container-content 
       .preservation-expenses__inner 

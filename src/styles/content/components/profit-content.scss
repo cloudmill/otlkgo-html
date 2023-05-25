@@ -1,33 +1,6 @@
 .profit {
-  margin-top: 100px;
-  position: relative;
-  padding-bottom: 380px;
-
-  overflow: hidden;
-
-  .col {
-    &:nth-child(2) {
-      width: 100%;
-      position: relative;
-    }
-  }
-
-  &__inner {
-    display: flex;
-  }
-
-  &__item {
-    width: 460px;
-  }
-
-  &__img {
-    position: absolute;
-    top: -84px;
-    right: -52px;
-
-    width: 695px;
-    height: 695px;
-
+  .block-diagram__inner {
+    border-top: none;
   }
 }
 
@@ -85,88 +58,12 @@
 }
 
 .ebitda {
-  margin-top: 100px;
-
-  overflow: hidden;
-  padding-bottom: 380px;
-  position: relative;
-
-
-  .col {
-
-    &:nth-child(2) {
-      width: 100%;
-      position: relative;
-    }
-  }
-
-  &__inner {
-    padding-top: 20px;
-
-    border-top: 1px solid #69DA91;
-  }
-
-  &__row {
-    padding-top: 40px;
-    display: flex;
-  }
-
-  &__item {
-    width: 460px;
-  }
-
-  &__img {
-    position: absolute;
-    top: -63px;
-    width: 647px;
-    height: 701px;
-    right: 0;
-
-  }
-}
-
-.profit-net {
-  overflow: hidden;
-  padding-bottom: 380px;
-  position: relative;
-
-
-  .col {
-
-    &:nth-child(2) {
-      width: 100%;
-      position: relative;
-    }
-  }
-
-  &__inner {
-    padding-top: 20px;
-
-    border-top: 1px solid #69DA91;
-  }
-
-  &__row {
-    padding-top: 40px;
-    display: flex;
-  }
-
-  &__item {
-    width: 460px;
-  }
-
-  &__img {
-    position: absolute;
-    top: -61px;
-    right: -82px;
-
-    width: 725px;
-    height: 725px;
+  .text {
+    margin-top: 24px;
   }
 }
 
 .profit-reporting {
-  margin-top: 100px;
-
   .col {
     width: 360px;
     flex-shrink: 0;

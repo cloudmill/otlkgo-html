@@ -30,6 +30,7 @@
   }
 
   &__number {
+    font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 60px;
     line-height: 80%;
@@ -38,6 +39,7 @@
   }
 
   &__grey {
+    font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 16px;
     letter-spacing: -0.06em;
@@ -52,5 +54,51 @@
     font-size: 15px;
     line-height: 160%;
     color: #727A75;
+  }
+}
+
+
+.block-diagram {
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91
+  }
+
+  &__row {
+    &:nth-child(2) {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 40px;
+    }
+  }
+
+  &__col {
+    &:nth-child(2) {
+      padding-top: 20px;
+
+      border-top: 1px solid #E8E8E8;
+    }
+  }
+
+  &__video {
+    max-width: 489px;
+    max-height: 560px;
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
+  &__text {
+    max-width: 460px;
+
+    &:nth-child(2) {
+      margin-top: 20px;
+    }
   }
 }

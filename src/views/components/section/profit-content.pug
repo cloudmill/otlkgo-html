@@ -1,75 +1,80 @@
 mixin profit-content 
-  section.profit
+  section.block-diagram.mt-section.profit
     .container-content 
-      .profit__inner 
-        .col 
-          .item.profit__item
-            .item__row 
-              .item__col 
-                p.item__number 6 461
-              .item__col 
-                p.item__grey млн руб
-            .item__row 
-              p.item__subtext Показатель прибыли от  продаж ОТЛК  ЕРА за  2022 год, что ниже уровня 2021  года на  5%
-            .item__row 
-              p.text.item__text Снижение прибыли от продаж обусловлено снижением валовой <br/> прибыли и ростом управленческих расходов. 
-        .col  
-          .profit__img 
-            +picture('profit-content.png')
-  section.percente 
-    .container-content 
-      .percente__inner 
-        h2.precente__title Проценты полученные/уплаченные
-        .percente__row
-          p.percente__text.text В  связи с  началом применения ФСБУ 25/2018  в отчете о  финансовых результатах<br/>отражены проценты по  лизингу в  сумме 256  млн руб
-        .percente__img
-          +picture('percente.png').percente-img
-  section.profit-statistics 
-    .container-content 
-      .profit-statistics__inner 
-        h2.profit-statistics__title Прочие доходы и расходы
-        p.profit-statistics__description Состав прочих доходов и расходов, млн руб
-        .profit-statistics__img 
-          +picture('profit-statistics.png')
-        p.profit-statistics__text.text По  итогам 2022 года сложилось отрицательное сальдо прочих доходов и  расходов в  размере 408 млн руб. Существенное снижение отрицательного сальдо вызвано положительным результатом от  курсовых разниц и  операций с  валютой в  2022  году, тогда как по  итогам 2021 года результат от  курсовых разниц и  операций с  валютой был отрицательным. 
-  section.ebitda 
-    .container-content 
-      .ebitda__inner 
-        h2.ebtida__title EBITDA
-        .ebitda__row 
-          .col 
-            .item 
+      .block-diagram__inner 
+        .block-diagram__row 
+        .block-diagram__row 
+          .block-diagram__col 
+            .item
               .item__row 
                 .item__col 
-                  p.item__number 6 123
+                  p.item__number 6 461
                 .item__col 
                   p.item__grey млн руб
               .item__row 
-                p.item__subtext Показатель EBITDA ОТЛК  ЕРА за  2022 год, что  на  761  млн  руб или 11% ниже  уровня 2022 года
-              .item__row 
-                p.text.item__text Показатель EBITDA рассчитывается на  основании формы 2  финансовой отчетности по  РСБУ как прибыль до  вычета амортизации, процентов и  курсовых разниц в  составе прочих доходов и  расходов. 
-          .col 
-            .ebitda__img 
-              +picture('ebitda.png')
-  section.profit-net 
+                p.item__subtext Показатель прибыли от продаж ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 5%
+            p.block-diagram__text.text Снижение прибыли от продаж обусловлено снижением валовой прибыли и ростом управленческих расходов.
+          .block-diagram__col 
+            p.block-diagram__description Прибыль от продаж ОТЛК ЕРА за 2020–2022 годы с указанием рентабельности, млн руб
+            .block-diagram__video
+              +picture('video.png')
+
+  //- section.percente 
+  //-   .container-content 
+  //-     .percente__inner 
+  //-       h2.precente__title Проценты полученные/уплаченные
+  //-       .percente__row
+  //-         p.percente__text.text В  связи с  началом применения ФСБУ 25/2018  в отчете о  финансовых результатах<br/>отражены проценты по  лизингу в  сумме 256  млн руб
+  //-       .percente__img
+  //-         +picture('percente.png').percente-img
+  //- section.profit-statistics 
+  //-   .container-content 
+  //-     .profit-statistics__inner 
+  //-       h2.profit-statistics__title Прочие доходы и расходы
+  //-       p.profit-statistics__description Состав прочих доходов и расходов, млн руб
+  //-       .profit-statistics__img 
+  //-         +picture('profit-statistics.png')
+  //-       p.profit-statistics__text.text По  итогам 2022 года сложилось отрицательное сальдо прочих доходов и  расходов в  размере 408 млн руб. Существенное снижение отрицательного сальдо вызвано положительным результатом от  курсовых разниц и  операций с  валютой в  2022  году, тогда как по  итогам 2021 года результат от  курсовых разниц и  операций с  валютой был отрицательным. 
+
+  section.block-diagram.ebitda
     .container-content 
-      .profit-net__inner 
-        h2.profit-net__title Чистая прибыль  
-        .profit-net__row 
-          .col 
-            .item 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title EBITDA
+        .block-diagram__row 
+          .block-diagram__col 
+            .item
               .item__row 
                 .item__col 
-                  p.item__number 6  123
+                  p.item__number 6 123
                 .item__col 
                   p.item__grey млн руб
               .item__row 
-                p.item__subtext Показатель EBITDA ОТЛК  ЕРА за  2022 год, что  на  761  млн  руб или 11% ниже  уровня 2022 года
+                p.item__subtext Показатель EBITDA ОТЛК ЕРА за 2022 год, что на 761 млн руб или 11% ниже уровня 2022 года
+            p.block-diagram__text.text Показатель EBITDA рассчитывается на основании формы 2 финансовой отчетности по РСБУ как прибыль до вычета амортизации, процентов и курсовых разниц в составе прочих доходов и расходов. 
+          .block-diagram__col 
+            p.block-diagram__description EBITDA с указанием рентабельности, млн руб
+            .block-diagram__video
+              +picture('video.png')
+  section.block-diagram.profit-net
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title Чистая прибыль
+        .block-diagram__row 
+          .block-diagram__col 
+            .item
               .item__row 
-                p.text.item__text Показатель EBITDA рассчитывается на  основании формы 2  финансовой отчетности по  РСБУ как прибыль до  вычета амортизации, процентов и  курсовых разниц в  составе прочих доходов и  расходов. 
-          .col
-            .profit-net__img
-              +picture('profit-net.png')
+                .item__col 
+                  p.item__number 4 815
+                .item__col 
+                  p.item__grey млн руб
+              .item__row 
+                p.item__subtext Чистая прибыль ОТЛК ЕРА за 2022 год, что на 160,6 млн. руб. или 3% выше уровня 2021 года
+          .block-diagram__col 
+            p.block-diagram__description Чистая прибыль с указанием рентабельности, млн руб
+            .block-diagram__video
+              +picture('video.png')
   section.profit-reporting 
     .container-content 
       .profit-reporting__inner 

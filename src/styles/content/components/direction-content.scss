@@ -1,6 +1,12 @@
 .direction-automation {
   margin-top: 100px;
 
+  .col {
+    &:nth-child(2) {
+      max-width: 760px;
+    }
+  }
+
   &__inner {
     padding-top: 20px;
     border-top: 1px solid #69DA91;
@@ -9,6 +15,7 @@
   &__row {
     margin-top: 40px;
     display: flex;
+    justify-content: space-between;
   }
 
   &__description {
@@ -52,7 +59,7 @@
   &__text {
     margin-top: 40px;
 
-    width: 654px;
+    max-width: 760px;
 
     font-size: 18px;
     line-height: 160%;
