@@ -1,0 +1,76 @@
+.custom-card{
+  padding-top: 12px;
+  border-top: 1px solid #87EBAA;
+
+  width: 560px;
+
+  &__title{
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #2A2E2B;
+  }
+
+  &__row{
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 8px;
+  }
+  &__num{
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80%;
+    text-align: center;
+    letter-spacing: -0.08em;
+    color: #69DA91;
+  }
+
+  &__texts{
+
+    &-title{
+      margin-bottom: 12px;
+
+      font-family: 'Halvar Breitschrift';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      color: #727A75;
+    }
+    &-subtext{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #727A75;
+    }
+  }
+
+  &__subtitle{
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #2A2E2B;
+
+  }
+
+  .recruitment-processes__hr-mark{
+    margin-bottom: 12px;
+  }
+
+  &__text{
+    margin-top: 20px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #2A2E2B;
+  }
+
+}
