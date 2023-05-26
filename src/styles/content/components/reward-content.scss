@@ -1,0 +1,174 @@
+.reward {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .row {
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  &__text {
+    &_top {
+      max-width: 760px;
+
+      font-size: 18px;
+      line-height: 160%;
+      color: color(dark);
+    }
+  }
+
+  &__bottom {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+.reward__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.reward-rule {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .row {
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  &__text {
+    &_big {
+      max-width: 760px;
+
+      font-size: 18px;
+      line-height: 160%;
+      color: color(dark);
+    }
+  }
+
+  &__bottom {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+
+.reward-table {
+  margin-top: 60px;
+
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #6BD895;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: color(dark);
+  }
+
+  &__message {
+    margin-top: 40px;
+  }
+}
+
+.table {
+  margin-top: 40px;
+
+  border: 1px solid #EDEDED;
+  font-size: 12px;
+  line-height: 150%;
+  color: color(dark);
+
+  &__first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #727A75;
+  }
+
+  &__row {
+    &-first {
+      padding: 18px 35px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #727A75;
+      background: #F4F4F4;
+      border-top: 1px solid #EDEDED;
+    }
+
+    &-item {
+      padding: 20px;
+
+      border-top: 1px solid #EDEDED;
+      border-left: 1px solid #EDEDED;
+    }
+
+    &-description {
+      width: 266px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+      color: color(dark);
+    }
+
+    &-last {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 447px;
+    }
+  }
+
+  &__title {
+    padding: 17px 20px;
+    border-left: 1px solid #EDEDED;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #727A75;
+    background: #F4F4F4;
+    text-align: left;
+  }
+
+}

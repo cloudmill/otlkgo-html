@@ -1,90 +1,91 @@
-.human-capital{
+.human-capital {
   margin-top: 100px;
 
-  &__title{
+  &__title {
     margin-bottom: 40px;
   }
 
-  &__subtitle{
+  &__subtitle {
     margin-bottom: 40px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
 
   }
 
-  &__hero{
+  &__hero {
 
-    &-row{
+    &-row {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
     }
 
-    &-col{
-      &:nth-child(1){
+    &-col {
+      &:nth-child(1) {
         width: 360px;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 760px;
       }
 
-      .human{
+      .human {
         margin-top: 40px;
       }
     }
 
-    &-text{
+    &-text {
 
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
 
-      &.bold{
+      &.bold {
         font-weight: 700;
         font-size: 20px;
         line-height: 150%;
-        color: #2A2E2B;
+        color: color(dark);
       }
 
-      &.top{
+      &.top {
         margin-bottom: 16px;
       }
     }
   }
 }
 
-.organization-structure{
+.organization-structure {
   margin-top: 100px;
   padding-top: 20px;
   border-top: 1px solid #045C25;
 
-  &__title{
+  &__title {
     margin-bottom: 60px;
 
     font-weight: 700;
     font-size: 24px;
     line-height: 130%;
-    color: #2A2E2B;
+    color: color(dark);
   }
 
-  &__number{
+  &__number {
     margin-top: 100px;
     padding-top: 20px;
     border-top: 1px solid #045C25;
 
-    &-title{
+    &-title {
       margin-bottom: 40px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: color(dark);
     }
   }
 
 
-  &__personal{
+  &__personal {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #045C25;
@@ -92,103 +93,108 @@
     display: flex;
     gap: 27px;
 
-    &.first{
+    &.first {
       margin-top: 100px;
     }
-    &-col{
-      &:nth-child(1){
+
+    &-col {
+      &:nth-child(1) {
         width: 571px;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 562px;
       }
     }
 
-    &-title{
+    &-title {
       margin-bottom: 32px;
 
       font-weight: 700;
       font-size: 24px;
       line-height: 150%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-cubes{
+    &-cubes {
       display: flex;
       flex-wrap: wrap;
       gap: 23px;
 
       width: 355px;
 
-      &.no-wrap{
+      &.no-wrap {
         flex-wrap: nowrap;
       }
     }
 
-    &-text{
+    &-text {
       margin-top: 174px;
       width: 460px;
 
       font-weight: 400;
       font-size: 18px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
     }
   }
 
-  &__cube{
+  &__cube {
     display: flex;
     align-items: center;
     gap: 13px;
     width: auto;
 
-    &-rect{
+    &-rect {
       width: 18px;
       height: 18px;
 
       border-radius: 4px;
 
-      &.green{
-      background: color(green);
+      &.green {
+        background: color(green);
       }
-      &.light-green{
+
+      &.light-green {
         background: color(light-green);
       }
-      &.dark-grey{
+
+      &.dark-grey {
         background: #96BCA4;
       }
-      &.grey{
+
+      &.grey {
         background: #C4DACC;
-        }
+      }
     }
 
-    &-text{
+    &-text {
       font-weight: 500;
       font-size: 14px;
       line-height: 120%;
-      color: #2A2E2B;
+      color: color(dark);
       white-space: nowrap;
     }
   }
 
-  &__subrow{
+  &__subrow {
     margin-top: 100px;
 
     display: flex;
     gap: 40px;
   }
 
-  &__subcol{
+  &__subcol {
     width: 560px;
-    
-    &-title{
+
+    &-title {
       font-weight: 700;
       font-size: 20px;
       line-height: 150%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-item{
+    &-item {
       display: flex;
       align-items: start;
       gap: 8px;
@@ -200,9 +206,9 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
 
-      &::before{
+      &::before {
         display: block;
         flex-shrink: 0;
         content: "";
@@ -216,57 +222,58 @@
   }
 }
 
-.recruitment-processes{
+.recruitment-processes {
   margin-top: 100px;
   padding-top: 20px;
   border-top: 1px solid #045C25;
 
-  &__title{
+  &__title {
     margin-bottom: 40px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 120%;
     letter-spacing: -0.02em;
-    color: #2A2E2B;
+    color: color(dark);
   }
 
-  &__text{
+  &__text {
     margin-left: 400px;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-    color: #2A2E2B;
+    color: color(dark);
   }
 
-  &__hr{
+  &__hr {
     margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid #045C25;
 
-    &-title{
+    &-title {
       margin-bottom: 40px;
 
       font-weight: 700;
       font-size: 24px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-row{
+    &-row {
       display: flex;
       gap: 40px;
     }
 
-    &-col{
+    &-col {
       width: 560px;
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 566px;
       }
     }
 
-    &-mark{
+    &-mark {
       display: flex;
       align-items: start;
       gap: 8px;
@@ -275,9 +282,9 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
 
-      &::before{
+      &::before {
         display: block;
         flex-shrink: 0;
         content: "";
@@ -289,16 +296,16 @@
       }
     }
 
-    &-text{
+    &-text {
       margin-top: 40px;
 
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-subtitle{
+    &-subtitle {
       margin-bottom: 24px;
 
       width: 459px;
@@ -306,68 +313,69 @@
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: color(dark);
 
-      &.second{
+      &.second {
         margin-top: 40px;
       }
     }
 
-    &-num{
+    &-num {
       display: flex;
       gap: 13px;
       margin-bottom: 16px;
 
-      .hr-num{
-        &__number{
+      .hr-num {
+        &__number {
           font-weight: 700;
           font-size: 15px;
           line-height: 150%;
           color: #045C25;
         }
 
-        &__text{
+        &__text {
           font-weight: 400;
           font-size: 15px;
           line-height: 160%;
-          color: #2A2E2B;
+          color: color(dark);
         }
       }
     }
   }
 }
 
-.corporate-culture{
+.corporate-culture {
   margin-top: 100px;
   padding-top: 20px;
   border-top: 1px solid #69DA91;
 
-  &__title{
+  &__title {
     margin-bottom: 40px;
 
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
     letter-spacing: -0.02em;
-    color: #2A2E2B;
+    color: color(dark);
   }
-  &__text{
+
+  &__text {
     width: 660px;
     margin-bottom: 40px;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-    color: #2A2E2B;
+    color: color(dark);
   }
 
-  &__list{
+  &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 
-  &__item{
+  &__item {
     display: flex;
     gap: 40px;
     padding: 20px 40px;
@@ -376,32 +384,34 @@
     border: 1px solid #EDEDED;
     border-left: 1px solid #69DA91;
 
-    &:nth-child(2){
-      border-left: 1px solid #045C25;
-    }
-    &:nth-child(3){
-      border-left: 1px solid #045C25;
-    }
-    &:nth-child(6){
+    &:nth-child(2) {
       border-left: 1px solid #045C25;
     }
 
-    &-title{
+    &:nth-child(3) {
+      border-left: 1px solid #045C25;
+    }
+
+    &:nth-child(6) {
+      border-left: 1px solid #045C25;
+    }
+
+    &-title {
       margin-bottom: 6px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-text{
+    &-text {
       width: 394px;
-      
+
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
     }
   }
 }

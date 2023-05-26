@@ -1,57 +1,60 @@
-.formation-park{
+.formation-park {
   margin-top: 100px;
 
-  &__picture{
+  &__picture {
     margin-top: 20px;
   }
 
-  &__row{
+  &__row {
     display: flex;
 
-    &.first{
+    &.first {
       gap: 140px;
     }
 
-    &.second{
+    &.second {
       margin-top: 60px;
       gap: 40px;
     }
-    &.third{
+
+    &.third {
       margin-top: 60px;
       gap: 240px;
     }
   }
 
-  &__col{
-    &-first{
-      &:nth-child(1){
+  &__col {
+    &-first {
+      &:nth-child(1) {
         width: 460px;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 559px;
       }
     }
 
-    &-second{
-      
-      &:nth-child(1){
+    &-second {
+
+      &:nth-child(1) {
         width: 560px;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         border-top: 1px solid #E8E8E8;
         padding-top: 12px;
         width: 460px;
       }
     }
 
-    &-third{
-      .ge-card{
+    &-third {
+      .ge-card {
         width: 360px;
       }
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -60,9 +63,10 @@
     color: color(dark);
   }
 
-  &__list{
+  &__list {
     margin-bottom: 40px;
-    &-item{
+
+    &-item {
       display: flex;
       align-items: center;
       gap: 8px;
@@ -74,11 +78,11 @@
       line-height: 160%;
       color: color(dark);
 
-      &:last-child{
+      &:last-child {
         margin-bottom: 0px;
       }
 
-      &::before{
+      &::before {
         width: 24px;
         height: 24px;
         display: block;
@@ -89,21 +93,22 @@
     }
   }
 
-  &__text{
+  &__text {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: color(dark);
 
-    &.top{
+    &.top {
       margin-bottom: 16px;
       margin-top: 40px;
     }
   }
 
-  &__possession{
+  &__possession {
     margin-top: 60px;
-    &-title{
+
+    &-title {
       margin-bottom: 32px;
 
       font-weight: 700;
@@ -112,42 +117,44 @@
       color: colo(dark);
     }
 
-    &-item{
+    &-item {
       border: 1px solid color(borders);
       padding: 20px 20px 0px 20px;
 
       height: 145px;
 
-      &:nth-child(1){
+      &:nth-child(1) {
         border-top: 2px solid color(light-green);
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         border-top: 2px solid color(green);
       }
-      &:nth-child(3){
+
+      &:nth-child(3) {
         border-top: 2px solid color(light-green);
       }
     }
 
-    &-subtitle{
+    &-subtitle {
       font-weight: 700;
       font-size: 15px;
       line-height: 150%;
       color: color(dark);
     }
 
-    &-text{
+    &-text {
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-row{
+    &-row {
       display: flex;
 
-      &.plugs{
+      &.plugs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
@@ -155,45 +162,47 @@
     }
   }
 
-  &__structure{
-    
-    &-row{
+  &__structure {
+
+    &-row {
       margin-top: 60px;
       display: flex;
       gap: 140px;
 
     }
-    &-col{
-      &:nth-child(1){
+
+    &-col {
+      &:nth-child(1) {
         padding-top: 12px;
-        
+
         width: 460px;
 
         border-top: 1px solid #E8E8E8;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 560px;
       }
     }
 
-    &-title{
+    &-title {
       margin-bottom: 24px;
 
       width: 460px;
       font-weight: 700;
       font-size: 20px;
       line-height: 150%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-subtitle{
+    &-subtitle {
       font-weight: 700;
       font-size: 15px;
       line-height: 150%;
-      color: #2A2E2B;
+      color: color(dark);
     }
 
-    &-plug{
+    &-plug {
       margin-bottom: 24px;
       position: relative;
       padding: 24px 10px 24px 24px;
@@ -201,27 +210,27 @@
       background: #F4F4F4;
       border-radius: 16px;
 
-      &.paperless{
+      &.paperless {
         width: 560px;
       }
     }
 
-    &-icon{
+    &-icon {
       position: absolute;
       left: -10px;
       top: -10px;
     }
 
-    &-text{
+    &-text {
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
     }
   }
 
-  &__mini{
-    &-heading{
+  &__mini {
+    &-heading {
       margin-bottom: 24px;
     }
   }

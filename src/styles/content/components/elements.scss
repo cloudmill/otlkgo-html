@@ -102,3 +102,30 @@
     }
   }
 }
+
+.message-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+
+  background: #F4F4F4;
+  border-radius: 16px;
+
+  &__svg {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    width: 28px;
+    height: 28px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 150%;
+    color: color(dark);
+
+  }
+}

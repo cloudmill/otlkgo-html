@@ -141,28 +141,6 @@
 
 }
 
-.purchase-value__row,
-.purchase-saving__row {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 24px;
-
-  background: #F4F4F4;
-  border-radius: 16px;
-
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 150%;
-  color: #2A2E2B;
-
-  svg {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-  }
-}
-
 .purchase-sving {
   margin-top: 60px;
 }

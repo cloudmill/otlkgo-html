@@ -93,5 +93,20 @@ h5 {
   font-size: 16px;
   line-height: 140%;
   color: color(dark);
+
+  &_20 {
+    font-weight: 700;
+    line-height: 150%;
+    color: color(dark);
+    font-size: 20px;
+  }
 }
 
+//title
+
+.title-24 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #2A2E2B;
+}

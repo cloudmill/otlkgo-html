@@ -1,4 +1,4 @@
-.macroeconomics{
+.macroeconomics {
   padding-top: 20px;
 
 
@@ -7,50 +7,52 @@
   @media #{media('<',m)} {
     padding-top: rem(8px);
   }
-  &-title{
+
+  &-title {
     margin-bottom: 40px;
+
     @media #{media('<',m)} {
       margin-bottom: rem(20px);
       width: rem(335px);
     }
 
-    @media (min-width: 768px) and (max-width: 1280px) {
-
-    }
+    @media (min-width: 768px) and (max-width: 1280px) {}
   }
 
-  &-subtitle{
+  &-subtitle {
     @media #{media('<',m)} {
       margin-bottom: rem(16px);
     }
   }
 
-  &-row{
+  &-row {
     margin-bottom: 100px;
 
     display: flex;
     gap: 40px;
+
     @media #{media('<',m)} {
       margin-bottom: 20px;
       display: block;
     }
   }
 
-  &-col{
-    &:nth-child(1){
+  &-col {
+    &:nth-child(1) {
       width: 360px;
       flex-shrink: 0;
     }
   }
 
-  &-text{
+  &-text {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: color(dark);
 
-    &.top{
+    &.top {
       margin-bottom: 16px;
+
       @media #{media('<',m)} {
         margin-bottom: rem(8px);
       }
@@ -62,7 +64,7 @@
     }
   }
 
-  &-subrow{
+  &-subrow {
     margin-top: 40px;
     display: flex;
     gap: 40px;
@@ -75,26 +77,28 @@
     }
   }
 
-  &-subcol{
+  &-subcol {
     width: 50%;
     padding-top: 12px;
 
     @media #{media('<',m)} {
       width: 100%;
     }
-    &.green{
+
+    &.green {
       border-top: 1px solid color(green);
     }
-    &.light-green{
+
+    &.light-green {
       border-top: 1px solid color(light-green);
     }
 
-    &__top{
+    &__top {
       display: flex;
       gap: 8px;
     }
 
-    &__num{
+    &__num {
       margin-bottom: 20px;
       font-weight: 700;
       font-size: 60px;
@@ -102,12 +106,12 @@
       letter-spacing: -0.08em;
       color: color(green);
 
-      &.light{
+      &.light {
         color: color(light-green);
       }
     }
 
-    &__text{
+    &__text {
       font-weight: 700;
       font-size: 16px;
       line-height: 100%;
@@ -116,7 +120,7 @@
       color: #727A75;
     }
 
-    &__text-grey{
+    &__text-grey {
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
@@ -124,116 +128,133 @@
     }
   }
 
-  &-grafics{
+  &-grafics {
     display: flex;
     gap: 140px;
+
     @media (min-width: 768px) and (max-width: 1024px) {
       gap: rem(30px);
     }
+
     @media #{media('<',m)} {
       width: 100%;
       padding: 0px;
       display: block;
     }
-    &__col{
+
+    &__col {
       max-width: 460px;
       flex-shrink: 0;
-      
+
       @media #{media('<',m)} {
         width: 100%;
         padding: 0px;
         display: block;
 
-        &:nth-child(2){
+        &:nth-child(2) {
           margin-top: 20px;
         }
       }
-      &-title{
+
+      &-title {
         padding-top: 12px;
         margin-bottom: 60px;
         border-top: 1px solid #E8E8E8;
 
-        @media #{media('<',m)}{
+        @media #{media('<',m)} {
           margin-bottom: rem(28px);
         }
-        &.second{
+
+        &.second {
           margin-bottom: 88px;
-          @media #{media('<',m)}{
+
+          @media #{media('<',m)} {
             margin-bottom: rem(28px);
           }
         }
       }
 
-      &-img{
+      &-img {
         width: 100%;
       }
 
-      &-links{
+      &-links {
         margin-top: 20px;
         display: flex;
         gap: 2px;
 
-        &.second{
+        &.second {
           display: none;
         }
+
         @media #{media('<',m)} {
-          &.first{
+          &.first {
             display: none;
           }
-          &.second{
+
+          &.second {
             display: flex;
           }
         }
-        &.chinese{
+
+        &.chinese {
           margin-top: 40px;
         }
-        &.quarter{
+
+        &.quarter {
           margin-top: 11px;
         }
 
-        &.forecast{
+        &.forecast {
           margin-top: 19px;
         }
-        &.shares{
+
+        &.shares {
           margin-top: 40px;
         }
       }
 
-      &-text{
+      &-text {
         font-weight: 500;
         font-size: 10px;
         line-height: 150%;
-        color: #2A2E2B;
+        color: color(dark);
 
-        &.big-12{
+        &.big-12 {
           font-size: 12px;
+
           @media #{media("<", m)} {
             font-size: rem(10px);
           }
         }
-        &.big-14{
+
+        &.big-14 {
           font-size: 14px;
+
           @media #{media("<", m)} {
             font-size: rem(10px);
           }
         }
       }
 
-      &-link{
+      &-link {
         font-weight: 500;
         font-size: 10px;
         line-height: 150%;
         color: #727A75;
         text-decoration: none;
 
-        &.big-12{
+        &.big-12 {
           font-size: 12px;
+
           @media #{media("<", m)} {
             font-size: rem(10px);
           }
         }
-        &.big-14{
+
+        &.big-14 {
           font-size: 14px;
+
           @media #{media("<", m)} {
             font-size: rem(10px);
           }
@@ -245,7 +266,7 @@
 
 //CHINESE-ECONOMY
 
-.chinese-economy{
+.chinese-economy {
   margin-top: 100px;
   padding-top: 20px;
 
@@ -255,18 +276,21 @@
     padding-top: 12px;
     margin-top: 40px;
   }
-  &__title{
+
+  &__title {
     margin-bottom: 40px;
+
     @media #{media('<',m)} {
       margin-bottom: 20px;
     }
   }
 
-  &__hero{
-    &-row{
+  &__hero {
+    &-row {
       display: flex;
       justify-content: space-between;
       gap: 20px;
+
       @media #{media('<',m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -275,11 +299,12 @@
       }
     }
 
-    &-col{
+    &-col {
       flex-shrink: 0;
 
-      &:nth-child(1){
+      &:nth-child(1) {
         width: 460px;
+
         @media #{media('<',m)} {
           width: 100%;
           width: rem(335px);
@@ -287,7 +312,7 @@
       }
     }
 
-    &-text{
+    &-text {
       font-weight: 400;
       font-size: 18px;
       line-height: 160%;
@@ -300,25 +325,28 @@
       }
     }
 
-    &-subtitle{
+    &-subtitle {
       margin-bottom: 60px;
+
       @media #{media('<',m)} {
         margin-bottom: rem(25px);
       }
     }
 
-    &-grafic{
+    &-grafic {
       width: 560px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 500px;
       }
+
       @media #{media('<',m)} {
         width: 100%;
       }
     }
   }
 
-  &__quarter{
+  &__quarter {
     margin-top: 100px;
     padding-top: 12px;
 
@@ -329,7 +357,8 @@
       padding-top: rem(5px);
       margin-top: rem(40px);
     }
-    &-row{
+
+    &-row {
       margin-top: 40px;
 
       display: flex;
@@ -343,24 +372,27 @@
       }
     }
 
-    &-col{
-      &:nth-child(2){
+    &-col {
+      &:nth-child(2) {
         max-width: 560px;
       }
     }
 
-    &-title{
+    &-title {
       margin-bottom: 56px;
+
       @media #{media('<',m)} {
         margin-bottom: rem(15px);
       }
     }
 
-    &-container{
+    &-container {
       @include scrollbar-hidden();
+
       @media (max-width: 1025px) {
         overflow-x: scroll;
       }
+
       @media #{media('<', m)} {
         width: rem(375px);
         padding-left: 20px;
@@ -369,29 +401,30 @@
       }
     }
 
-    &-vector{
-      
-        display: block;
-        width: 1160px;
-        height: 375px;
-      
-        picture{
-          img{
-            object-fit: fill;
-          }
+    &-vector {
+
+      display: block;
+      width: 1160px;
+      height: 375px;
+
+      picture {
+        img {
+          object-fit: fill;
         }
-        
-        @media #{media('<',m)} {
-          overflow-x: scroll;
-        }
+      }
+
+      @media #{media('<',m)} {
+        overflow-x: scroll;
+      }
     }
 
-    &-text{
+    &-text {
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
       color: color(dark);
-      &.top{
+
+      &.top {
         margin-bottom: 12px;
       }
 
@@ -403,7 +436,7 @@
   }
 }
 
-.ge-card{
+.ge-card {
   padding-top: 12px;
 
   max-width: 360px;
@@ -411,24 +444,28 @@
   @media #{media('<',m)} {
     width: rem(335px);
   }
-  &.large{
+
+  &.large {
     max-width: 560px;
   }
-  &.green{
+
+  &.green {
     border-top: 1px solid color(green);
   }
-  &.light-green{
+
+  &.light-green {
     border-top: 1px solid color(light-green);
   }
-  &.upper{
+
+  &.upper {
     margin-bottom: 32px;
   }
 
-  &.no-border{
+  &.no-border {
     border: none;
   }
 
-  &__num{
+  &__num {
     margin-bottom: 20px;
 
     font-family: 'Halvar Breitschrift';
@@ -437,24 +474,25 @@
     line-height: 80%;
     letter-spacing: -0.08em;
 
-    &.green{
+    &.green {
       color: color(green);
     }
-    &.light{
+
+    &.light {
       color: color(light-green);
     }
 
-    &.large{
+    &.large {
       width: 360px;
     }
   }
 
-  &__top{
+  &__top {
     display: flex;
     gap: 8px;
   }
 
-  &__text{
+  &__text {
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 16px;
@@ -467,27 +505,30 @@
       font-size: rem(14px);
       line-height: 100%;
     }
-    &.top{
+
+    &.top {
       color: color(green);
     }
 
-    &-grey{
+    &-grey {
       max-width: 320px;
 
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
       color: #727A75;
+
       @media #{media('<',m)} {
         width: rem(335px);
         font-size: rem(12px);
         line-height: 160%;
       }
 
-      &.large{
+      &.large {
         max-width: 560px;
       }
-      &.large-360{
+
+      &.large-360 {
         max-width: 360px;
       }
     }
@@ -497,7 +538,7 @@
 
 //CHINESE-FORECAST
 
-.chinese-forecast{
+.chinese-forecast {
   margin-top: 100px;
   padding-top: 20px;
 
@@ -508,7 +549,8 @@
     margin-top: rem(40px);
     padding-top: rem(8px);
   }
-  &__title{
+
+  &__title {
     margin-bottom: 40px;
 
     @media #{media('<',m)} {
@@ -517,17 +559,21 @@
       font-size: rem(20px);
       line-height: 120%;
     }
-    &-small{
+
+    &-small {
       font-weight: 700;
       font-size: 16px;
       line-height: 150%;
-      color: #2A2E2B;
-      &.vector-1{
+      color: color(dark);
+
+      &.vector-1 {
         margin-bottom: 23px;
+
         @media #{media("<", m)} {
           margin-bottom: rem(18px);
         }
       }
+
       @media #{media("<", m)} {
         font-size: rem(12px);
         line-height: 150%;
@@ -535,7 +581,7 @@
     }
   }
 
-  &__row{
+  &__row {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -548,30 +594,33 @@
   }
 
 
-  &__col{
-    &:nth-child(1){
+  &__col {
+    &:nth-child(1) {
       max-width: 460px;
     }
+
     @media #{media('<',m)} {
       width: rem(335px);
     }
   }
-  &__subtitle{
+
+  &__subtitle {
     margin-bottom: 20px;
 
     @media #{media('<',m)} {
       margin-bottom: rem(8px);
     }
-    &.mg-top{
+
+    &.mg-top {
       margin-top: 40px;
     }
 
-    &-small{
+    &-small {
       width: 460px;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
-      color: #2A2E2B;
+      color: color(dark);
 
       @media #{media("<", m)} {
         margin-bottom: rem(30px);
@@ -579,50 +628,55 @@
         font-size: rem(12px);
         line-height: 150%;
       }
-      &.mg-big{
+
+      &.mg-big {
         margin-bottom: 70px;
       }
     }
   }
 
-  &__text{
+  &__text {
     width: 460px;
 
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: #2A2E2B;
+    color: color(dark);
 
     @media #{media('<',m)} {
       width: 100%;
       font-size: rem(12px);
       line-height: 160%;
     }
-    &.line{
+
+    &.line {
       margin-bottom: 12px;
       padding-bottom: 20px;
 
       border-bottom: 1px solid color(borders);
+
       @media #{media('<',m)} {
         margin-bottom: rem(5px);
-        
+
       }
     }
 
-    &.margin-small{
+    &.margin-small {
       margin-bottom: 16px;
     }
 
-    &.margin{
+    &.margin {
       margin-bottom: 63px;
+
       @media #{media('<',m)} {
         margin-bottom: rem(20px);
       }
     }
   }
 
-  &__grafic{
+  &__grafic {
     width: 460px;
+
     @media #{media("<", m)} {
       width: 100%;
     }
@@ -631,7 +685,7 @@
 
 //EUROPE-ECONOMY
 
-.europe-economy{
+.europe-economy {
   margin-top: 100px;
   padding-top: 20px;
 
@@ -642,14 +696,16 @@
     margin-top: rem(40px);
     padding-top: rem(8px);
   }
-  &__title{
+
+  &__title {
     margin-bottom: 40px;
+
     @media #{media("<", m)} {
       margin-bottom: rem(20px);
     }
   }
 
-  &__row{
+  &__row {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -661,45 +717,52 @@
     }
   }
 
-  &__col{
+  &__col {
     flex-shrink: 0;
-    &:nth-child(1){
+
+    &:nth-child(1) {
       max-width: 360px;
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       max-width: 760px;
+
       @media (max-width: 1025px) {
         max-width: 600px;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
   }
 
-  &__text{
+  &__text {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: color(dark);
 
-    &:nth-child(1){
+    &:nth-child(1) {
       margin-bottom: 16px;
+
       @media #{media("<", m)} {
         margin-bottom: rem(8px);
       }
     }
+
     @media #{media("<", m)} {
       font-size: rem(12px);
       line-height: 160%;
     }
   }
 
-  &__subtitle{
-    &-custom{
+  &__subtitle {
+    &-custom {
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
@@ -712,7 +775,7 @@
     }
   }
 
-  &__subsection{
+  &__subsection {
     margin-top: 100px;
     padding-top: 12px;
 
@@ -724,34 +787,36 @@
     }
   }
 
-  &__cubes{
+  &__cubes {
     margin-top: 20px;
     display: flex;
     gap: 16px;
 
-    &-item{
+    &-item {
       display: flex;
       align-items: center;
       gap: 6px;
     }
-    &-cube{
+
+    &-cube {
       width: 10px;
       height: 10px;
       border-radius: rem(2px);
 
-      &.green{
+      &.green {
         background: color(green);
       }
-      &.light-green{
+
+      &.light-green {
         background: color(light-green);
       }
     }
 
-    &-text{
+    &-text {
       font-weight: 400;
       font-size: 12px;
       line-height: 150%;
-      color: #2A2E2B;
+      color: color(dark);
 
       @media #{media("<", m)} {
         font-size: rem(10px);
@@ -760,17 +825,19 @@
     }
   }
 
-  &__vector{
+  &__vector {
     margin-top: 40px;
     @include scrollbar-hidden();
+
     @media #{media("<", m)} {
       width: rem(742px);
       margin-top: rem(23px);
       overflow-x: scroll;
     }
 
-    &-container{
+    &-container {
       @include scrollbar-hidden();
+
       @media #{media("<", m)} {
         padding-left: rem(20px);
         margin-left: rem(-20px);
@@ -783,9 +850,9 @@
 
 //KEY-FORECAST
 
-.key-forecast{
+.key-forecast {
   margin-top: 100px;
-  
+
   padding-top: 20px;
   border-top: 1px solid #69DA91;
 
@@ -793,14 +860,16 @@
     margin-top: rem(40px);
     padding-top: rem(8px);
   }
-  &__title{
+
+  &__title {
     margin-bottom: 40px;
+
     @media #{media("<", m)} {
       margin-bottom: rem(20px);
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     width: 386px;
     margin-bottom: 20px;
 
@@ -808,7 +877,8 @@
       width: 100%;
       margin-bottom: rem(8px);
     }
-    &-small{
+
+    &-small {
       margin-bottom: 24px;
 
       font-weight: 700;
@@ -823,72 +893,82 @@
     }
   }
 
-  &__row{
+  &__row {
     display: flex;
     gap: 20px;
-    &.top{
+
+    &.top {
       justify-content: space-between;
 
     }
+
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: rem(20px);
     }
-    &.bot{
+
+    &.bot {
       margin-top: 39px;
       gap: 140px;
+
       @media (max-width: 1025px) {
         gap: 20px;
       }
+
       @media #{media("<", m)} {
         margin-top: rem(20px);
       }
     }
   }
 
-  &__col{
+  &__col {
     flex-shrink: 0;
 
-    &:nth-child(1){
+    &:nth-child(1) {
       width: 460px;
-      
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       max-width: 560px;
+
       @media (max-width: 1025px) {
         max-width: 500px;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
 
-    &.col{
+    &.col {
       width: 460px;
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
   }
 
-  &__text{
+  &__text {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: #2A2E2B;
+    color: color(dark);
+
     @media #{media("<", m)} {
       font-size: rem(12px);
-line-height: 160%;
+      line-height: 160%;
     }
   }
 
-  &__subsection{
+  &__subsection {
     margin-top: 40px;
-  
+
     padding-top: 20px;
     border-top: 1px solid color(green);
 
@@ -896,7 +976,8 @@ line-height: 160%;
       margin-top: rem(20px);
       padding-top: rem(5px);
     }
-    &-title{
+
+    &-title {
       margin-bottom: 22px;
 
       font-weight: 700;
@@ -911,8 +992,9 @@ line-height: 160%;
       }
     }
 
-    &-container{
+    &-container {
       @include scrollbar-hidden();
+
       @media #{media("<", m)} {
         width: rem(375px);
         padding-left: rem(20px);
@@ -920,15 +1002,17 @@ line-height: 160%;
         overflow-x: scroll;
       }
     }
-    &-vector{
+
+    &-vector {
       @include scrollbar-hidden();
+
       @media #{media("<", m)} {
         width: rem(677px);
       }
     }
   }
 
-  &__stability{
+  &__stability {
     margin-top: 40px;
     display: flex;
     gap: 140px;
@@ -939,17 +1023,21 @@ line-height: 160%;
       grid-template-columns: repeat(1, 1fr);
       gap: rem(20px);
     }
-    &-col{
-      &:nth-child(1){
+
+    &-col {
+      &:nth-child(1) {
         width: 460px;
+
         @media #{media("<", m)} {
           width: 100%;
         }
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 560px;
         padding-top: 8px;
         border-top: 1px solid color(borders);
+
         @media #{media("<", m)} {
           padding-top: rem(5px);
           width: 100%;
@@ -957,12 +1045,13 @@ line-height: 160%;
       }
     }
 
-    &-title{
+    &-title {
       margin-bottom: 20px;
-      
+
 
     }
-    &-text{
+
+    &-text {
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
@@ -974,7 +1063,7 @@ line-height: 160%;
       }
     }
 
-    &-subtitle{
+    &-subtitle {
       margin-bottom: 17px;
 
       font-weight: 700;
@@ -990,7 +1079,7 @@ line-height: 160%;
     }
   }
 
-  &__dinamic{
+  &__dinamic {
     margin-top: 40px;
     display: flex;
     gap: 44px;
@@ -1001,29 +1090,34 @@ line-height: 160%;
       grid-template-columns: repeat(1, 1fr);
       gap: rem(20px);
     }
-    &-col{
-      &:nth-child(1){
+
+    &-col {
+      &:nth-child(1) {
         width: 556px;
+
         @media #{media("<", m)} {
           width: 100%;
         }
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 560px;
+
         @media #{media("<", m)} {
           width: 100%;
         }
       }
     }
 
-    &-title{
+    &-title {
       margin-bottom: 20px;
+
       @media #{media("<", m)} {
         margin-bottom: rem(8px);
       }
     }
 
-    &-text{
+    &-text {
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
@@ -1036,36 +1130,43 @@ line-height: 160%;
     }
   }
 
-  &__dinamic2{
+  &__dinamic2 {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    
+
     @media #{media("<", m)} {
       margin-top: rem(20px);
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: rem(20px);
     }
-    &-col{
+
+    &-col {
       padding-top: 12px;
       border-top: 2px solid color(borders);
-      &:nth-child(1){
+
+      &:nth-child(1) {
         max-width: 560px;
+
         @media (max-width: 1025px) {
           max-width: 460px;
         }
+
         @media #{media("<", m)} {
           padding-top: rem(5px);
           width: 100%;
         }
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         max-width: 559px;
+
         @media (max-width: 1025px) {
           max-width: 470px;
         }
+
         @media #{media("<", m)} {
           padding-top: rem(5px);
           width: 100%;
@@ -1073,7 +1174,7 @@ line-height: 160%;
       }
     }
 
-    &-lefttitle{
+    &-lefttitle {
       margin-bottom: 130px;
       font-weight: 700;
       font-size: 16px;
@@ -1087,7 +1188,7 @@ line-height: 160%;
       }
     }
 
-    &-righttitle{
+    &-righttitle {
       margin-bottom: 22px;
       font-weight: 700;
       font-size: 18px;
@@ -1101,18 +1202,22 @@ line-height: 160%;
       }
     }
 
-    &-vector{
-      &.left{
+    &-vector {
+      &.left {
         width: 460px;
+
         @media #{media("<", m)} {
           width: 100%;
         }
       }
-      &.right{
+
+      &.right {
         max-width: 559px;
+
         @media (max-width: 1025px) {
           max-width: 470px;
         }
+
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -1123,9 +1228,9 @@ line-height: 160%;
 
 //MUTAL-TRADE
 
-.mutal-trade{
+.mutal-trade {
   margin-top: 100px;
-  
+
   padding-top: 20px;
   border-top: 1px solid #69DA91;
 
@@ -1134,8 +1239,10 @@ line-height: 160%;
     margin-top: rem(40px);
     padding-top: rem(8px);
   }
-  &__title{
+
+  &__title {
     margin-bottom: 40px;
+
     @media #{media("<", m)} {
       width: rem(315px);
       margin-bottom: rem(24px);
@@ -1144,7 +1251,7 @@ line-height: 160%;
     }
   }
 
-  &__hero{
+  &__hero {
     display: flex;
     gap: 40px;
 
@@ -1153,42 +1260,50 @@ line-height: 160%;
       grid-template-columns: repeat(1, 1fr);
       gap: rem(20px);
     }
-    &-col{
+
+    &-col {
       flex-shrink: 0;
-      &:nth-child(1){
+
+      &:nth-child(1) {
         width: 360px;
+
         @media #{media("<", m)} {
           width: rem(335px);
         }
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         width: 760px;
+
         @media (max-width: 1025px) {
           max-width: 570px;
         }
+
         @media #{media("<", m)} {
           width: rem(335px);
         }
       }
     }
 
-    &-text{
+    &-text {
       margin-bottom: 40px;
 
       font-weight: 400;
       font-size: 18px;
       line-height: 160%;
       color: color(dark);
+
       @media #{media("<", m)} {
-        &.desktop{
+        &.desktop {
           display: none;
         }
       }
     }
 
-    &-row{
+    &-row {
       display: flex;
       gap: 40px;
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1196,12 +1311,13 @@ line-height: 160%;
       }
     }
 
-    &-subcol{
-      .ge-card{
+    &-subcol {
+      .ge-card {
         @media (max-width: 1025px) {
           max-width: 270px;
         }
-        .ge-card__text-grey{
+
+        .ge-card__text-grey {
           @media (max-width: 1025px) {
             max-width: 270px;
           }
@@ -1210,7 +1326,7 @@ line-height: 160%;
     }
   }
 
-  &__subsection{
+  &__subsection {
     margin-top: 40px;
     display: flex;
     gap: 40px;
@@ -1221,18 +1337,20 @@ line-height: 160%;
       gap: rem(20px);
     }
 
-    &-text{
+    &-text {
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
       color: color(dark);
 
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-bottom: 20px;
+
         @media #{media("<", m)} {
           margin-bottom: rem(12px);
         }
       }
+
       @media #{media("<", m)} {
         font-size: rem(12px);
         line-height: 160%;
@@ -1240,32 +1358,36 @@ line-height: 160%;
     }
   }
 
-  &__balance{
+  &__balance {
     margin-top: 100px;
-  
+
     padding-top: 12px;
     border-top: 1px solid color(green);
+
     @media #{media("<", m)} {
       width: rem(307px);
       margin-top: rem(20px);
       padding-top: rem(5px);
     }
-    &-top{
+
+    &-top {
       margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    &-copy{
+    &-copy {
       display: flex;
       align-items: start;
     }
-    &-title{
+
+    &-title {
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
       @media #{media("<", m)} {
         width: rem(335px);
         font-size: rem(12px);
@@ -1273,36 +1395,40 @@ line-height: 160%;
       }
     }
 
-    &-container{
+    &-container {
       @media #{media("<", m)} {
         width: rem(375px);
         padding-left: rem(20px);
         margin-left: rem(-20px);
         overflow-x: scroll;
       }
-      
+
     }
-    &-vector{
+
+    &-vector {
       @media #{media("<", m)} {
         width: rem(674px);
         overflow-x: scroll;
       }
-      
+
     }
   }
 
-  &__shares{
+  &__shares {
     margin-top: 100px;
-  
+
     padding-top: 12px;
     border-top: 1px solid color(light-green);
-    &.desktop{
+
+    &.desktop {
       @media #{media("<", m)} {
         display: none;
       }
     }
-    &.mobile{
+
+    &.mobile {
       display: none;
+
       @media #{media("<", m)} {
         padding-top: 0px;
         border: none;
@@ -1311,26 +1437,29 @@ line-height: 160%;
       }
     }
 
-    &-title{
+    &-title {
       padding-top: rem(5px);
       margin-bottom: rem(23px);
 
       font-weight: 700;
       font-size: rem(14px);
       line-height: 150%;
-      color: #2A2E2B;
+      color: color(dark);
       border-top: 1px solid color(light-green);
     }
-    .macroeconomics-grafics__col-links{
+
+    .macroeconomics-grafics__col-links {
       margin-bottom: rem(20px);
+
       @media #{media("<", m)} {
         margin-top: rem(16px);
       }
     }
   }
-  &__shares2{
+
+  &__shares2 {
     margin-top: 100px;
-  
+
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
@@ -1338,7 +1467,8 @@ line-height: 160%;
       margin-top: rem(40px);
       padding-top: rem(5px);
     }
-    &-top{
+
+    &-top {
       margin-bottom: 40px;
       display: flex;
       align-items: center;
@@ -1348,18 +1478,20 @@ line-height: 160%;
         margin-bottom: rem(16px);
         display: block;
       }
-      .mutal-trade__shares2-copy{
+
+      .mutal-trade__shares2-copy {
         display: flex;
         align-items: start;
       }
     }
 
-    &-title{
+    &-title {
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
       width: 320px;
+
       @media #{media("<", m)} {
         font-size: rem(14px);
         line-height: 150%;
@@ -1367,7 +1499,7 @@ line-height: 160%;
       }
     }
 
-    &-container{
+    &-container {
       @media #{media("<", m)} {
         width: rem(375px);
         overflow-x: scroll;
@@ -1375,35 +1507,38 @@ line-height: 160%;
         margin-left: rem(-20px);
         padding-right: rem(20px);
       }
-      
+
     }
 
-    &-vector{
-      &.desktop{
+    &-vector {
+      &.desktop {
         @media #{media("<", m)} {
           display: none;
         }
       }
-      &.mobile{
+
+      &.mobile {
         display: none;
+
         @media #{media("<", m)} {
           display: block;
           overflow-x: scroll;
         }
       }
 
-      &.vector-1{
+      &.vector-1 {
         width: rem(710px);
       }
-      &.vector-2{
+
+      &.vector-2 {
         width: rem(936px);
       }
     }
   }
 
-  &__shares3{
+  &__shares3 {
     margin-top: 100px;
-  
+
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
@@ -1411,40 +1546,47 @@ line-height: 160%;
       margin-top: rem(40px);
       padding-top: rem(5px);
     }
-    &-top{
+
+    &-top {
       margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       @media #{media("<", m)} {
         margin-bottom: rem(16px);
         display: block;
       }
-      .mutal-trade__shares2-copy{
+
+      .mutal-trade__shares2-copy {
         display: flex;
         align-items: start;
       }
     }
 
-    &-title{
+    &-title {
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
       @media #{media("<", m)} {
         font-size: rem(14px);
         line-height: 150%;
         width: 100%;
       }
     }
-    &-vector{
-      &.desktop{
+
+    &-vector {
+      &.desktop {
         @media #{media("<", m)} {
           display: none;
         }
       }
-      &.mobile{
+
+      &.mobile {
         display: none;
+
         @media #{media("<", m)} {
           display: block;
         }
@@ -1452,9 +1594,9 @@ line-height: 160%;
     }
   }
 
-  &__export{
+  &__export {
     margin-top: 100px;
-  
+
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
@@ -1462,13 +1604,15 @@ line-height: 160%;
       margin-top: rem(20px);
       padding-top: rem(5px);
     }
-    &-title{
+
+    &-title {
       margin-bottom: 20px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
       @media #{media("<", m)} {
         margin-bottom: rem(12px);
         font-size: rem(14px);
@@ -1476,15 +1620,17 @@ line-height: 160%;
       }
     }
 
-    &-vector{
-      &.custom-desktop{
+    &-vector {
+      &.custom-desktop {
         @media #{media("<", m)} {
           display: none;
         }
-        
+
       }
-      &.custom-mobile{
+
+      &.custom-mobile {
         display: none;
+
         @media #{media("<", m)} {
           display: block;
         }
@@ -1492,9 +1638,9 @@ line-height: 160%;
     }
   }
 
-  &__export2{
+  &__export2 {
     margin-top: 100px;
-  
+
     padding-top: 12px;
     border-top: 1px solid color(light-green);
 
@@ -1502,28 +1648,33 @@ line-height: 160%;
       margin-top: rem(20px);
       padding-top: rem(5px);
     }
-    &-title{
+
+    &-title {
       margin-bottom: 20px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
       @media #{media("<", m)} {
         margin-bottom: rem(12px);
         font-size: rem(14px);
         line-height: 150%;
       }
     }
-    &-vector{
-      &.custom-desktop{
+
+    &-vector {
+      &.custom-desktop {
         @media #{media("<", m)} {
           display: none;
         }
-        
+
       }
-      &.custom-mobile{
+
+      &.custom-mobile {
         display: none;
+
         @media #{media("<", m)} {
           display: block;
         }
@@ -1534,7 +1685,7 @@ line-height: 160%;
 
 //results
 
-.ge-results{
+.ge-results {
   position: relative;
   margin-top: 44px;
   margin-bottom: 140px;
@@ -1548,20 +1699,22 @@ line-height: 160%;
     margin-top: rem(40px);
     display: block;
   }
-  &__rect{
+
+  &__rect {
     position: absolute;
     z-index: 1;
     top: 0px;
     left: 0px;
+
     @media #{media("<", m)} {
-      svg{
+      svg {
         width: rem(115px);
         height: rem(93px);
       }
     }
   }
 
-  &__title{
+  &__title {
     position: relative;
     z-index: 2;
     margin-top: 30px;
@@ -1580,34 +1733,38 @@ line-height: 160%;
     }
   }
 
-  &__main{
+  &__main {
     padding: 40px 100px 40px 0px;
+
     @media #{media("<", m)} {
       padding: 0px rem(15px) rem(25px) rem(20px);
       width: 100%;
       position: relative;
       z-index: 2;
     }
-    &-title{
+
+    &-title {
       margin-bottom: 16px;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
       color: color(dark);
+
       @media #{media("<", m)} {
         font-size: rem(14px);
         line-height: 140%;
       }
     }
 
-    &-text{
+    &-text {
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
       color: color(dark);
 
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-bottom: 16px;
+
         @media #{media("<", m)} {
           margin-bottom: rem(12px);
         }

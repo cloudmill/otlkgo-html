@@ -1,6 +1,4 @@
 .charity {
-  margin-top: 100px;
-
   &__inner {
     padding-top: 8px;
 
@@ -40,10 +38,6 @@
     font-size: 12px;
     line-height: 150%;
     color: #727A75;
-  }
-
-  &__bottom {
-    margin-top: 100px;
   }
 
   &__description_bottom {
@@ -116,8 +110,6 @@
 }
 
 .charity-utlc {
-  margin-top: 10px;
-
   &__inner {
     padding-top: 20px;
     border-top: 1px solid color(green);

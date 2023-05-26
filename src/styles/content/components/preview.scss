@@ -59,7 +59,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
-    color: #2A2E2B;
+    color: color(dark);
   }
 
   &.preview-margin {
@@ -302,7 +302,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 160%;
-      color: #2A2E2B;
+      color: color(dark);
     }
   }
 }
