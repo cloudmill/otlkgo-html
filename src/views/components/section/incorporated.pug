@@ -10,15 +10,46 @@ mixin incorporated
             .incorporated-plugs__item-text=item
       .incorporated__title По итогам реорганизации в ОТЛК ЕРА закрепилось паритетное участие администраций трех железных дорог
       .incorporated-cards  
-        .incorporated-cards__item 
+        .incorporated-cards__item.light 
           .incorporated-cards__item-title ОАО «РЖД»
           .incorporated-cards__item-num 33,333333%
-          .incorporated-cards__item-text Открытое акционерное общество «Российские железные дороги», ОГРН 1037739877295,107174, г. Москва, вн. тер. г. муниципальный округ Басманный, ул. Новая Басманная, д. 2/1, стр. 1. 
-        .incorporated-cards__item 
+          .incorporated-cards__item-text Открытое акционерное общество «Российские железные дороги», ОГРН 1037739877295,107174, г. Москва, вн. тер. г. муниципальный округ Басманный,<br> ул. Новая Басманная, д. 2/1, стр. 1. 
+        .incorporated-cards__item.green 
           .incorporated-cards__item-title АО «НК «КТЖ»
           .incorporated-cards__item-num 33,333333%
-          .incorporated-cards-item-text Акционерное общество «Национальная компания «Казахстан темир жолы», зарегистрированное за номером 11867-1901-АО, Республика Казахстан, 010000, г. Астана, ул. Д. Кунаева, 6.
-        .incorporated-cards__item 
+          .incorporated-cards-item-text Акционерное общество «Национальная компания «Казахстан темир жолы», зарегистрированное за номером 11867-1901-АО, Республика Казахстан, 010000, г. Астана, <br>ул. Д. Кунаева, 6.
+        .incorporated-cards__item.light 
           .incorporated-cards__item-title Белорусская железная дорога
           .incorporated-cards__item-num 33,333333%
-          .incorporated-cards__item-text Государственное объединение «Белорусская железная дорога», УНП 100088574, ОКПО 00047792, Республика Беларусь, 220030, г. Минск, ул. Ленина, 17.
+          .incorporated-cards__item-text Государственное объединение «Белорусская железная дорога», УНП 100088574, ОКПО 00047792, Республика Беларусь, 220030, г. Минск,<br> ул. Ленина, 17.
+      .incorporated-capital
+        .incorporated-capital__texts 
+          .incorporated-capital__texts-title Размер уставного капитала АО «ОТЛК ЕРА» составляет 98 127 000 рублей
+          .incorporated-capital__texts-text Уставный капитал Общества состоит из 98 127 обыкновенных именных бездокументарных акций номинальной стоимостью 1 000 (одна тысяча) рублей каждая. Каждому из трех участников принадлежит по 32 709 акций. 
+        .incorporated-capital__img 
+          +picture('incorporated-capital.png')
+      .incorporated-dividends
+        .incorporated-dividends__title Дивидендная политика
+        .incorporated-dividends__text Годовое общее собрание акционеров утвердило положение о дивидендной политике ОТЛК ЕРА 30 июня 2021 года (протокол от 30.06.2021 № 14). Дивидендная политика распространяет сове действие с даты исполнения Обществом обязательств по выплате дивидендов за отчетный 2020 год.  
+      .incorporated-dividends__principes
+        .incorporated-dividends__principes-title Три главных принципа
+        .incorporated-dividends__cards 
+          .incorporated-dividends__card
+            .incorporated-dividends__card-title Законность
+            .incorporated-dividends__card-text Соблюдаем права акционеров в соответствие с законодательством РФ и современной мировой практикой в области корпоративного управления
+          .incorporated-dividends__card
+            .incorporated-dividends__card-title Сбалансированность целей
+            .incorporated-dividends__card-text Соблюдаем права акционеров в соответствие с законодательством РФ и современной мировой практикой в области корпоративного управления
+          .incorporated-dividends__card
+            .incorporated-dividends__card-title Открытость
+            .incorporated-dividends__card-text Повышаем прозрачность механизма определения размера дивидендов и их выплаты, облегчаем доступ к информации, консультируем акционеров
+        .incorporated-dividends__principes-subtext Решения о выплате дивидендов принимает общее собрание акционеров только по результатам полугодия и отчетного года, следуя рекомендациям совета директоров ОТЛК ЕРА. При этом соблюдается периодичность — по результатам полугодия и отчетного года.
+      .incorporated-conditions
+        .incorporated-conditions__title Условия решения <br> об объявлении <br>и выплате дивидендов
+        .incorporated-conditions__list 
+          each item in ['Чистая прибыль определяется по данным бухгалтерской (финансовой) отчетности ОТЛК ЕРА, составленной в соответствии с требованиями РСБУ', 'Распределению подлежит не менее 50% чистой прибыли ОТЛК ЕРА за отчетный период (фиксированный размер)', 'Решение не нарушает какие-либо обязательства Общества и российское законодательство', 'При определении общего размера дивидендов учитываются финансовое состояние компании и прогнозная потребность в оборотном капитале']
+            .recruitment-processes__hr-mark=item
+      .incorporated-accrued
+        .incorporated-accrued__title Начисленные и выплаченные дивиденды в 2022 году
+        .incorporated-accrued__img 
+          +picture('incorporated-dividends-table.png')
