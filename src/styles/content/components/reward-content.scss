@@ -33,6 +33,12 @@
   flex-direction: column;
   gap: 20px;
 
+  @media #{media('<',t)} {
+    &:nth-child(3) {
+      grid-column: span 2;
+    }
+  }
+
   &-top {
     display: flex;
     flex-direction: column;

@@ -52,7 +52,6 @@
   }
 }
 
-
 .preservation-sales {
 
   .col {
@@ -165,5 +164,23 @@
 
   &__text {
     width: 560px;
+  }
+}
+
+@media #{media('<',t)} {
+  .preservation-finance {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__description {
+      width: auto;
+    }
+  }
+
+  .preservation-sales {
+    &__row {
+      flex-direction: column;
+    }
   }
 }

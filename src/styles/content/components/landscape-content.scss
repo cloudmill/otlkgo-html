@@ -162,10 +162,11 @@
 
   &__text {
     width: 780px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 160%;
-    color: color(dark);
+
+    @media #{media('<',d)} {
+      margin-top: 20px;
+      grid-column: span 2;
+    }
   }
 
   &__row {
