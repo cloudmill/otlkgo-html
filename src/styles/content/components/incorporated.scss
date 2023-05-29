@@ -95,7 +95,7 @@
       &-title{
         margin-bottom: 20px;
 
-        width: 343px;
+        max-width: 460px;
 
         font-weight: 700;
         font-size: 24px;
@@ -384,6 +384,285 @@
           margin-bottom: 20px;
         }
       }
+    }
+
+    &__chairman{
+      margin-top: 60px;
+      padding-top: 12px;
+      border-top: 1px solid color(light-green);
+
+      &-title{
+        margin-bottom: 40px;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        color: #2A2E2B;
+
+      }
+      &-row{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      &-col{
+        max-width: 560px;
+      }
+      &-subtitle{
+        margin-bottom: 16px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #2A2E2B;
+      }
+      &-text{
+        margin-bottom: 16px;
+      }
+    }
+    &__insurance{
+      margin-top: 60px;
+      padding-top: 12px;
+      border-top: 1px solid color(light-green);
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      &-title{
+        width: 371px;
+      }
+      &-text{
+        max-width: 560px;
+      }
+    }
+  }
+
+  &-corporative{
+    margin-top: 100px;
+    padding-top: 20px;
+    border-top: 1px solid color(light-green);
+
+    &__title{
+      margin-bottom: 40px;
+    }
+    &__subtitle{
+      max-width: 560px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: #2A2E2B;
+    }
+    &__desk{
+      max-width: 560px;
+    }
+    &__text{
+      margin-bottom: 12px;
+    }
+
+    &__row{
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  }
+
+  &-governing{
+    margin-top: 176px;
+    padding-top: 20px;
+    border-top: 1px solid color(light-green);
+
+    &__title{
+      margin-bottom: 40px;
+    }
+
+    &__row{
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    &__subtitle{
+      max-width: 560px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: #2A2E2B;
+    }
+    &__desk{
+      max-width: 560px;
+    }
+
+    &__text{
+      margin-bottom: 12px;
+    }
+  }
+
+  &-general{
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid color(light-green);
+    &__title{
+      margin-bottom: 40px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #2A2E2B;
+
+    }
+    &__row{
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    &__col{
+      max-width: 560px;
+    }
+    &__text{
+      margin-bottom: 12px;
+    }
+    &__subtitle{
+      margin-bottom: 20px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: #2A2E2B;
+    }
+
+    &__grey{
+      margin-top: 20px;
+      
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #727A75;
+    }
+  }
+}
+
+.alt-preview{
+  margin-top: 60px;
+  padding-left: 34px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  max-width: 1284px;
+  &__img{
+    max-width: 566px;
+    max-height: 511px;
+  }
+
+  &__content{
+    max-width: 578px;
+  }
+
+  &__title{
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #2A2E2B;
+  }
+
+  &__job{
+    margin-bottom: 40px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #727A75;
+  }
+
+  &__dates{
+    display: flex;
+    gap: 42px;
+    margin-bottom: 20px;
+    &-col{
+      &.bulgakov{
+        &-left{
+          width: 258px;
+        }
+        &-right{
+          width: 278px;
+        }
+      }
+    }
+    &-top{
+      margin-bottom: 4px;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 140%;
+      color: #2A2E2B;
+
+    }
+    &-bot{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #2A2E2B;
+    }
+  }
+
+  &__knowledge{
+    display: flex;
+    gap: 42px;
+    &-title{
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 140%;
+      color: #2A2E2B;
+    }
+    &-col{
+      .knowledge-mark{
+        display: flex;
+        gap: 11px;
+        margin-bottom: 12px;
+
+        &__icon{
+          display: flex;
+          justify-content: center;
+
+          svg{
+            width: 20px;
+            height: 20px;
+          }
+        }
+        &__title{
+          margin-bottom: 4px;
+
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 150%;
+          color: #727A75;
+        }
+        &__text{
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 150%;
+          color: #2A2E2B;
+        }
+
+        &__desk{
+          max-width: 230px;
+        }
+      }
+    }
+    &-shares{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #727A75;
+    }
+
+    &-bot{
+      margin-top: 39px;
     }
   }
 }
