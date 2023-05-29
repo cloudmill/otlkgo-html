@@ -1,6 +1,4 @@
 .case {
-  margin-top: 100px;
-
   &__inner {
     display: flex;
     justify-content: flex-end;
@@ -14,12 +12,14 @@
     font-size: 18px;
     line-height: 160%;
     color: color(black);
+
+    @media #{media('<',t)} {
+      width: auto;
+    }
   }
 }
 
 .case-direction {
-  margin-top: 100px;
-
   .row {
     margin-top: 40px;
   }

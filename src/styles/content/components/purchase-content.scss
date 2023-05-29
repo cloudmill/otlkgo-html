@@ -61,6 +61,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
+
+    @media #{media('<',t)} {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
@@ -78,6 +82,12 @@
     &:nth-child(even) {
       border-top: 2px solid #045C25;
     }
+
+    @media #{media('<',t)} {
+      &:nth-child(3) {
+        grid-column: span 2;
+      }
+    }
   }
 
   &__img {
@@ -87,6 +97,11 @@
 
     width: 128px;
     height: 128px;
+  }
+
+  &__text {
+    position: relative;
+    z-index: $index-1;
   }
 
   &__bottom {

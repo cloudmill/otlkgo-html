@@ -229,11 +229,17 @@
   &__img {
     margin-top: -100px;
     max-width: 662px;
+
+    @media #{media('<',t)} {
+      margin-top: 0;
+    }
   }
 
 }
 
 .ecology-CO2 {
+  margin-top: 40px;
+
   &__bottom {
     .row {
       margin-top: 40px;
@@ -302,17 +308,35 @@
     gap: 20px;
     border-top: 1px solid #045C25;
 
+
+    @media #{media('<',t)} {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
   }
 
   &__img {
     width: 360px;
     height: 363px;
+
+    @media #{media('<',t)} {
+      grid-column: span 1;
+
+      width: auto;
+      height: auto;
+    }
   }
 
   &__right {
     position: relative;
     display: flex;
     gap: 40px;
+
+    @media #{media('<',t)} {
+      grid-column: span 2;
+      gap: 20px
+    }
 
     .col {
       max-width: 560px;
