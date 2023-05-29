@@ -193,26 +193,23 @@ mixin case-preview
         .preview__col-right
           .preview__img.transit-preview__img.desktop-t
             +picture('case-preview.png')
-            
+
 mixin econimics-preview
-  section.preview.preview-margin
+  section.preview.trends-preview.preview-margin
     .container 
       .preview__inner
         .preview__line
-        .preview__col-left.left.alt
-          h2.preview__title Глобальная экономика<br/> и логистический рынок <br/>в 2022 году
+        .preview__col-left
+          h2.preview__title Глобальная экономика <br/> и логистический рынок <br/>в 2022 году
           .row
-            .preview__img.transit-preview__img.mobile.no-pos
+            .preview__img.transit-preview__img.mobile-t
               +picture('ivanov-mobile.png')
             p.preview__name Иванов <br/>Артемий Павлович
             p.preview__job Начальник отдела маркетинговых исследований
-        .preview__col-right.right
-          +column-svg.preview__elem_1
-          +column-small-svg.preview__elem_2
-          +double-column-svg.preview__elem_3
-          .preview__img.transit-preview__img.desktop.safari-debug
+        .preview__col-right
+          .preview__img.transit-preview__img.desktop-t.safari-debug
             +picture('ivanov-prev.png')
-          
+
 
 mixin share-provinces-preview
   section.preview.alt-margin
@@ -228,9 +225,6 @@ mixin share-provinces-preview
             p.preview__name Пахомов <br/>Евгений Владимирович 
             p.preview__job.alt Заместитель директора департамента по контролю расчетов <br>и производственного анализа коммерческой дирекции
         .preview__col-right
-          +column-svg.preview__elem_1
-          +column-small-svg.preview__elem_2
-          +double-column-svg.preview__elem_3.alt.pahomov
           .preview__img.safari-debug 
             +picture('pahomov.png')
 
@@ -247,9 +241,6 @@ mixin formation-park-preview
             p.preview__name Андросова <br/>Елена Владимировна 
             p.preview__job.alt Начальник отдела по организации расчетов коммерческой дирекции
         .preview__col-right
-          +column-svg.preview__elem_1
-          +column-small-svg.preview__elem_2
-          +double-column-svg.preview__elem_3.alt
           .preview__img.safari-debug 
             +picture('androsova.png')
 
@@ -279,11 +270,8 @@ mixin client-portfolio-preview
             p.preview__name Костикова <br/>Юлия Игоревна 
             p.preview__job.alt Заместитель начальника отдела клиентского сервиса коммерческой дирекции
         .preview__col-right.pt-14
-          +column-svg.preview__elem_1
-          +column-small-svg.preview__elem_2
-          +double-column-svg.preview__elem_3.alt
           .preview__img.safari-debug 
-            +picture('kosticova.png')
+            +picture('kosticova-final.png')
 
 //page-4
 mixin security-preview
@@ -411,10 +399,12 @@ mixin corporate-responsibility-preview
           .preview__img.safari-debug 
             +picture('shmidt.png')
 
+
+
 //page-5
 
-mixin reward-preview
-  section.preview.reward
+mixin incorporated-preview
+  section.preview.trends-preview
     .container 
       .preview__inner
         .preview__line

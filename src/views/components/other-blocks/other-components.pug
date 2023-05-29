@@ -1,3 +1,22 @@
 mixin share-provinces-subtext 
   .container 
     .share-provinces__subtext Объем экспедирования контейнерных грузов в сервисах ОТЛК ЕРА за 12 месяцев 2022 года составил 681 197 ДФЭ, снижение к 2021 году — 2%, или 11 333 ДФЭ. Главным генератором транзитного грузопотока по-прежнему остается Китай.
+
+mixin custom-number-card 
+  .custom-card 
+    .custom-card__title
+    .custom-card__row
+      .custom-card__num
+      .custom-card__texts 
+        .custom-card__texts-title  
+        .custom-card__texts-subtext 
+        .custom-card__texts-subtext 
+    .custom-card__subtitle 
+    each item in ['', '', '', '']
+      .recruitment-processes__hr-mark=item
+    .custom-card__text 
+
+mixin mark-text-items 
+  .mark-test__items 
+    each item in ['', '', '', '']
+      .recruitment-processes__hr-mark=item

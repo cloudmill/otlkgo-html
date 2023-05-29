@@ -41,8 +41,8 @@
   }
 
   &__vector {
-    width: 530px;
-    height: 260px;
+    max-width: 530px;
+    max-height: 260px;
     margin-top: 40px;
 
     picture {
@@ -60,6 +60,14 @@
     font-size: 16px;
     line-height: 140%;
     color: color(dark);
+    color: #2A2E2B;
+
+    &.grey{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #2A2E2B;
+    }
   }
 
   &.preview-margin {
@@ -94,6 +102,12 @@
 
     max-width: 650px;
 
+    &.safari-debug{
+      @media (min-width: 1390px) and (max-width: 2599px){
+        max-width: 650px;
+      }
+      
+    }
   }
 
   &__list {
@@ -184,6 +198,7 @@
 
     max-width: 50%;
 
+    // width: 50%;
     @media #{media('<',t)} {
       padding-left: 20px;
     }

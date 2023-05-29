@@ -58,3 +58,25 @@ mixin report-hero-4
           each item in ['Человеческий капитал. Управление персоналом', 'Охрана труда и пожарная безопасность', 'Воздействие на климат', 'Охрана окружающей среды', 'Люди прежде всего: благотворительность', 'Во благо общества. Социальные инициативы', 'Объединение людей и стран', 'Закупочная деятельность', 'Использование энергетических ресурсов']
             a.report-hero__list-item(href="#" target='blank')=item
         .report-hero__number 4
+
+mixin report-hero-5 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row 
+      .report-hero__col
+        .report-hero__portrait.hero-5
+          +picture('report-hero-5.png')
+        .report-hero__portrait.mobile
+          +picture('report-hero2-1-mobile.png')
+        .report-hero__name Сапронова <br> Елена Александровна 
+        .report-hero__job-title.alt-200 Директор правового департамента
+      +double-column-svg.preview__elem_3.hero-elem.alt-hero-elem
+      .report-hero__col
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title Корпоративное управление
+        .report-hero__list
+          each item in ['Структура корпоративного управления', 'Акционерный капитал', 'Дивидендная политика', 'Общее собрание акционеров', 'Совет директоров', 'Корпоративный секретарь и секретарь комитетов', 'Правление, генеральный директор (председатель правления)', 'Система вознаграждения', 'Система контроля', 'Управление рисками', 'Итоги 2022 года']
+            a.report-hero__list-item(href="#" target='blank')=item
+        .report-hero__number 5

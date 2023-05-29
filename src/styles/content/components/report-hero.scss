@@ -167,6 +167,11 @@
         left: 30px;
       }
     }
+
+    &.hero-5{
+      max-height: 700px;
+      top: rem(70px);
+    }
   }
 
   &__name{
@@ -186,6 +191,10 @@
     @media #{media(">", ll)} {
       font-size: rem(20px);
       line-height: 110%;
+    }
+
+    @media (max-width: 1025px) {
+      font-size: 15px;
     }
     
   }
@@ -227,7 +236,7 @@
     }
     @media (max-width: 1025px) {
       padding: 30px 30px 30px 60px;
-      font-size: 48px;
+      font-size: 40px;
     }
     @media #{media("<", m)} {
       padding: 40px 20px 0px 20px;
@@ -244,6 +253,7 @@
         width: rem(810px);
       }
     }
+
   }
 
   &__list{
@@ -275,16 +285,25 @@
         font-size: куь(16px);
         line-height: 130%;
       }
+
+      @media (max-width: 1025px) {
+        font-size: 13px;
+      }
     }
     @media #{media("<", m)} {
       display: none;
+    }
+
+    @media (max-width: 1025px) {
+      max-width: 400px;
+      margin-left: 70px;
     }
   }
 
   &__number{
     position: absolute;
     right: 30px;
-    bottom: 30px;
+    bottom: 20px;
 
     font-family: 'Halvar Breitschrift';
     font-weight: 700;

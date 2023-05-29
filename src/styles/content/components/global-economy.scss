@@ -473,6 +473,7 @@
     font-size: 60px;
     line-height: 80%;
     letter-spacing: -0.08em;
+    white-space: nowrap;
 
     &.green {
       color: color(green);
@@ -482,8 +483,8 @@
       color: color(light-green);
     }
 
-    &.large {
-      width: 360px;
+    @media (max-width: 1025px) {
+      font-size: 50px;
     }
   }
 
@@ -492,7 +493,8 @@
     gap: 8px;
   }
 
-  &__text {
+  &__text{
+    white-space: nowrap;
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 16px;
@@ -506,7 +508,10 @@
       line-height: 100%;
     }
 
-    &.top {
+    @media (max-width: 1025px) {
+      font-size: 16px;
+    }
+    &.top{
       color: color(green);
     }
 
