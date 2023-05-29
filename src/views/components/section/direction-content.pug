@@ -5,22 +5,24 @@ mixin direction-content
         h3.direction-automation__title Автоматизация внутренних бизнес-процессов
         .direction-automation__row 
           .col 
-            p.direction-automation__description В 2022 году компания развивала функционал внутренней информационно-расчетной системы, в том числе:
+            p.direction-automation__description.description_big В 2022 году компания развивала функционал внутренней информационно-расчетной<br class='br-m'> системы,в том числе:
           .col 
             ul.direction-automation__list 
               each item in ['Разработала и ввела в опытную эксплуатацию функционал сверки взаиморасчетов с соисполнителями','Автоматизировала процессы бизнес-подразделений компании, доработала и оптимизировала различные алгоритмы работы системы, в т.ч. формирование актов, интеграцию со смежными системами, создание заявок на перевозки и выставление счетов и т.д.','Разработала и ввела в промышленную эксплуатацию функционал расчета и учета системы ставок для клиентов компании','Оптимизировала механизм учета отцепок вагонов в пути следования  для корректного расчета расходных услуг оплаты тарифа на транзитные контейнерные поезда',]
                 li.direction-automation__item 
                   +mark-text-svg.direction-automation-svg
                   p.text.direction-automation__text=item
-  section.direction-site 
+  section.direction-site.mt-section
     .container-content 
       .direction-site__inner 
         h3.direction-site__title Сайт компании
         .row
-          p.text.direction-site__text Мы подготовили к запуску обновленный сайт компании с новым полнофункциональным личным кабинетом для клиентов ОТЛК ЕРА, который включает расчет стоимости перевозок, подачу и учет заявок на перевозки, слежение и контроль за процессом перевозки, взаиморасчеты.
-        .direction-site__img 
+          p.direction-site__text.text_big Мы подготовили к запуску обновленный сайт компании с новым полнофункциональным личным кабинетом для клиентов ОТЛК ЕРА, который включает расчет стоимости перевозок, подачу и учет заявок на перевозки, слежение и контроль за процессом перевозки, взаиморасчеты.
+        .direction-site__img.desktop-m
           +picture('direction-site.jpg')
-  section.direction-documents.mt-section 
+        .direction-site__img.mobile-m
+          +picture('direction-site.jpg')
+  section.direction-documents.mt-section
     .container-content 
       .direction-documents__inner 
         h3.direction-documents__title Электронная накладная

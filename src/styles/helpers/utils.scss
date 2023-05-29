@@ -10,6 +10,12 @@
   }
 }
 
+.desktop-m {
+  @media #{media('<',m)} {
+    display: none !important;
+  }
+}
+
 .mobile {
   display: none !important;
 
@@ -26,6 +32,14 @@
   }
 }
 
+.mobile-m {
+  display: none !important;
+
+  @media #{media('<',m)} {
+    display: block !important;
+  }
+}
+
 .flex-t {
   display: none !important;
 
@@ -37,6 +51,14 @@
 .br {
   @media #{media('<',m)} {
     display: none;
+  }
+}
+
+.br-m {
+  display: none;
+
+  @media #{media('<',m)} {
+    display: block;
   }
 }
 

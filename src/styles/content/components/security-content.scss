@@ -69,6 +69,10 @@
 
   &__text {
     max-width: 760px;
+
+    @media #{media('<',t)} {
+      max-width: 100%;
+    }
   }
 
 }

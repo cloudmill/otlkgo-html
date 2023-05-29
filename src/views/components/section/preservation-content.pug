@@ -1,21 +1,22 @@
 mixin preservation-content 
-  section.preservation-finance 
+  section.preservation-finance.mt-section
     .container-content 
       .preservation-finance__inner 
         h2.preservation-finance__title Финансовый обзор
         .preservation-finance__row 
           .col 
-            p.preservation-finance__description Несмотря на существенное осложнение геополитической и макроэкономической обстановки в 2022 году, вызвавшее общее снижение экономической активности и объемов грузоперевозок, а также продолжающиеся в начале года эпидемиологические ограничения в Китае, ОТЛК ЕРА удалось сохранить объемные показатели по основным маршрутам на уровне 2021 года. 
+            p.preservation-finance__description.description_big Несмотря на существенное осложнение геополитической и макроэкономической обстановки в 2022 году, вызвавшее общее снижение экономической активности и объемов грузоперевозок, а также продолжающиеся в начале года эпидемиологические ограничения в Китае, ОТЛК ЕРА удалось сохранить объемные показатели по основным маршрутам на уровне 2021 года. 
           .col 
             p.text.preservation-finance__text Это стало возможным благодаря расширению круга дополнительных маршрутов, сохранению ставки клиентам на базовых маршрутах на уровне 2021 года и другим действиям компании по привлечения грузопотока и снижению себестоимости перевозок. Все это позволило повысить рентабельность деятельности Общества по итогам 2022 года. 
             p.text.preservation-finance__text Ускоренное восстановление объемов перевозок после снижения во 2 квартале 2022 года позволило провести корректировку бюджета по итогам 1 полугодия 2022 года с учетом увеличения всех основных производственно-финансовых показателей по сравнению с корректировкой бюджета, проведенной по итогам 1 квартала 2022 года. Скорректированный бюджет ОТЛК ЕРА был перевыполнен по показателю «валовая прибыль» на 6,0%, по показателю «чистая прибыль» на 15,5%. 
-  section.preservation-dynamic 
+  section.preservation-dynamic.mt-section
     .container-content 
       .preservation-dynamic__inner 
         h6.preservation-dynamic__title Динамика основных финансовых показателей за 2020–2022 годы, млн руб
-        .preservation-dynamic__img
+        .preservation-dynamic__img.desktop-m
           +picture('preservation-dynamic.png')
-
+        .preservation-dynamic__img.mobile-m
+          +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
   section.block-diagram.mt-section.preservation-revenue
     .container-content 
       .block-diagram__inner 
@@ -26,10 +27,9 @@ mixin preservation-content
             p.block-diagram__text.text По результатам работы нашей компании за 2022 год валовая выручка составила 55 577 млн руб, что на 9 274 млн руб или 14% ниже показателя прошлого года. Выручка 2022 года полностью представлена доходами за оказание транспортно-экспедиционных услуг, преимущественно номинированными в долларах США. 
             p.block-diagram__text.text Сокращение выручки прежде всего связано со снижением среднегодового курса доллара США 2022 года по сравнению с 2021 годом на 7% (2022 — 68,58 руб., 2021 — 73,66 руб.), в связи с тем, что выручка номинирована в долларах, а также в связи с перераспределением объемов в сторону увеличения доли перевозок, ставка по которым ниже.
           .block-diagram__col 
-            p.block-diagram__description Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
+            p.block-diagram__description.description_big Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
             .block-diagram__video
               +picture('video.png')
-
   section.preservation-sales.mt-section
     .container-content 
       .preservation-sales__inner 
@@ -42,7 +42,7 @@ mixin preservation-content
             p.preservation-sales__description Себестоимость продаж ОТЛК ЕРА за 2020–2022 годы, млн руб
             .preservation-sales__img
               +picture('preservation-sale.png')
-  setction.preservation-structure 
+  setction.preservation-structure.mt-section 
     .container-content 
       .preservation-structure__inner 
         h6.preservation-structure__title Структура себестоимости продаж в 2022 году, %
