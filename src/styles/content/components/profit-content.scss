@@ -90,6 +90,12 @@
         border-top: none;
       }
     }
+
+    @media(max-width:1170px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+
   }
 
   &__description {

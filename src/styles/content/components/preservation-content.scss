@@ -125,13 +125,11 @@
   }
 
   &__row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 
-  &__text {
-    width: 560px;
-  }
 }
 
 .preservation-profit {
