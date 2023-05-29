@@ -232,6 +232,10 @@
       font-size: rem(80px);
       line-height: 90%;
     }
+    @media (min-width: 1026px) and (max-width: 1281px) {
+      padding: 30px 30px 30px 60px;
+      font-size: 40px;
+    }
     @media (max-width: 1025px) {
       padding: 30px 30px 30px 60px;
       font-size: 40px;
