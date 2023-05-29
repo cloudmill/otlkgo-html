@@ -108,7 +108,6 @@ mixin landscape-preview
         .preview__col-right
           .preview__img.landscape-preview__img.desktop-t.safari-debug
             +picture('seleznev.png')
-          
 
 mixin strategy-preview
   section.preview.strategy-preview
@@ -126,21 +125,21 @@ mixin strategy-preview
           .preview__img.desktop-t.safari-debug
             +picture('kovaleva.png')
 
-
 ////Page-3
-
 mixin direction-preview
-  section.preview.direction-preview
+  section.preview.security-preview
     .container 
       .preview__inner
         .preview__line
         .preview__col-left
-          h2.preview__title Главные направления <br/>цифрового развития
+          h2.preview__title Главные направления <br/> цифрового развития
           .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('korobov-mobile.png')
             p.preview__name Анпилов <br/>Кирилл Андреевич
             p.preview__job Начальник отдела сопровождения информационных систем
         .preview__col-right
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t
             +picture('direction-preview.png')
 
 mixin preservation-preview
@@ -154,7 +153,7 @@ mixin preservation-preview
             p.preview__name Лазутова <br/>Елена Михайловна
             p.preview__job Директор финансово-экономического департамента
         .preview__col-right
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t 
             +picture('preservation-preview.png')
 
 mixin profit-preview
@@ -165,10 +164,12 @@ mixin profit-preview
         .preview__col-left
           h2.preview__title Прибыль от продаж 
           .row
+            .preview__img.transit-preview__img.mobile-t
+              //- +picture('korobov-mobile.png')
             p.preview__name Соловьева <br/>Екатерина Михайловна
             p.preview__job Заместитель главного бухгалтера —директора департамента
         .preview__col-right
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t
             +picture('profit-preview.png')
 
 mixin case-preview
@@ -178,14 +179,17 @@ mixin case-preview
         .preview__line
         .preview__col-left
           .row
+            .preview__img.transit-preview__img.mobile-t
+              //- +picture('korobov-mobile.png')
             h2.preview__title С заботой о деловом <br/> климате
             p.preview__description Мы работаем над формированием благоприятных правовых <br/>  условий, которые способствуют предоставлению высокого уровня <br/>  сервиса.
           .row
             p.preview__name Липатова <br/>Марина Александровна
             p.preview__job Заместитель начальника управления делами
         .preview__col-right
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t
             +picture('case-preview.png')
+            
 mixin econimics-preview
   section.preview.preview-margin
     .container 

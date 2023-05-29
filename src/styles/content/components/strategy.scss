@@ -12,6 +12,10 @@
   border: 2px solid #69DA91;
   overflow: hidden;
 
+  @media #{media('<',t)} {
+    height: auto;
+  }
+
   &__title {
     z-index: $index-1;
     font-family: 'Manrope';
@@ -132,6 +136,10 @@
     display: flex;
     margin-top: 40px;
     gap: 40px;
+
+    @media #{media('<',t)} {
+      flex-direction: column;
+    }
   }
 
   .row {
@@ -164,6 +172,10 @@
     font-size: 20px;
     line-height: 150%;
     color: color(dark);
+
+    @media #{media('<',t)} {
+      width: auto;
+    }
   }
 
   &__list {
@@ -213,15 +225,23 @@
 
   &__box {
     margin-top: 40px;
-    display: flex;
-  }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
 
-  .col {
-    width: 50%;
+    @media #{media('<', t)} {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
   }
 
   &__text {
     max-width: 561px;
+
+    @media #{media('<', t)} {
+      max-width: 100%;
+
+    }
   }
 }
 
@@ -327,17 +347,18 @@
     height: auto;
     padding-bottom: 45px;
 
-
-    // &:last-child,
-    // &:nth-child(4) {
-    //   border-right: 1.10476px solid #E8E8E8;
-    // }
-
-    // &:not(:last-child) {
-    //   border-bottom: none;
-    // }
-
   }
+
+  .strategy-principles {
+    &__box {
+      flex-direction: column;
+    }
+
+    &__subtitile {
+      width: auto;
+    }
+  }
+
 }
 
 @media #{media('<',m)} {
@@ -467,12 +488,6 @@
 
     &__box {
       margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .col {
-      width: auto;
     }
 
     &__text {

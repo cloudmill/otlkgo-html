@@ -1,10 +1,10 @@
-mixin next-page4
+mixin next-page(text,number)
   section.next 
     .container 
       .next__inner 
         p.next__text Следующий раздел
-        p.next__title Корпоративное управление
-        p.next__number 5
+        p.next__title=text
+        p.next__number=number
         +column-svg.next-svg
         +button
         

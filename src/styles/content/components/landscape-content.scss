@@ -156,11 +156,16 @@
 
   &__row-top {
     margin-top: 40px;
+    display: flex;
+    justify-content: end;
+  }
 
-    p {
-      padding-left: 400px;
-      font-size: 18px;
-    }
+  &__text {
+    width: 780px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: color(dark);
   }
 
   &__row {
@@ -253,7 +258,6 @@
 }
 
 .landscape-strategy {
-  margin-top: 100px;
 
   .col {
     display: flex;
@@ -306,13 +310,25 @@
     }
   }
 
+  &__text {
+    width: 760px;
+
+    @media #{media('<',t)} {
+      width: auto
+    }
+  }
+
+  &__row {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 16px;
+  }
+
   &__inner {
     padding-top: 20px;
     border-top: 1px solid color(green);
-  }
-
-  &__text {
-    padding-left: 400px;
   }
 
   svg {
@@ -347,6 +363,10 @@
       &-bottom {
         grid-template-columns: repeat(2, 1fr);
       }
+    }
+
+    &__text {
+      width: auto;
     }
   }
 }
@@ -453,11 +473,11 @@
 
     &__row-top {
       margin-top: 20px;
+    }
 
-      p {
-        padding-left: 0;
-        font-size: 14px;
-      }
+    &__text {
+      font-size: 14px;
+      line-height: 160%;
     }
 
     &__row {
@@ -465,7 +485,8 @@
       padding-top: 12px;
 
     }
-    &__img{
+
+    &__img {
       margin-top: 20px;
     }
 

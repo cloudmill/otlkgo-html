@@ -451,6 +451,26 @@
       width: auto;
     }
   }
+
+  .transit-level {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__description {
+      width: auto;
+    }
+  }
+
+  .transit-adaptation {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__description {
+      width: auto;
+    }
+  }
 }
 
 @media #{media('<',m)} {
