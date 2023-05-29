@@ -69,9 +69,20 @@
 }
 
 .direction-documents {
-  .row {
+  &__inner {
+    padding-top: 20px;
+
+    border-top: 1px solid #69DA91;
+  }
+
+  &__row {
+    margin-top: 40px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
+  }
+
+  &__text {
+    max-width: 760px;
   }
 }
 
