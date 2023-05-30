@@ -249,17 +249,21 @@ mixin formation-park-preview
           .preview__img.transit-preview__img.desktop-t.safari-debug
             +picture('androsova.png')
 
-
 mixin client-portfolio-preview
-  section.preview
+  section.preview.trends-preview
     .container 
       .preview__inner
         .preview__line
-        .preview__col-left.alt
-          .preview-left__top 
-            h2.preview__title Клиентский портфель
-            .preview__text Ряд факторов обеспечил активный рост клиентского портфеля ОТЛК ЕРА в 2022 году.  Среди них – высокая степень надежности, уровень сервисного обслуживания и поддержки клиентов. 
-            .preview__cards 
+        .preview__col-left
+          h2.preview__title Клиентский портфель
+          .preview__text.desktop Ряд факторов обеспечил активный рост клиентского портфеля ОТЛК ЕРА в 2022 году.  Среди них – высокая степень надежности, уровень сервисного обслуживания и поддержки клиентов. 
+          .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('kosticova-mobile.png')
+            p.preview__name Костикова <br/>Юлия Игоревна  
+            p.preview__job Начальник отдела по организации расчетов коммерческой дирекции
+            .preview__text.mobile.preview__text_subtitle Ряд факторов обеспечил активный рост клиентского портфеля ОТЛК ЕРА в 2022 году.  Среди них – высокая степень надежности, уровень сервисного обслуживания и поддержки клиентов. 
+            .preview__cards.mobile 
               .ge-card.green
                 .ge-card__top
                   .ge-card__num.green 65
@@ -272,12 +276,9 @@ mixin client-portfolio-preview
                   .ge-card__text из них 
                 .ge-card__bot
                   .ge-card__text-grey Новые клиенты по прямому договору
-          .row
-            p.preview__name Костикова <br/>Юлия Игоревна 
-            p.preview__job.alt Заместитель начальника отдела клиентского сервиса коммерческой дирекции
-        .preview__col-right.pt-14
-          .preview__img.safari-debug 
-            +picture('kosticova-final.png')
+        .preview__col-right
+          .preview__img.transit-preview__img.desktop-t.safari-debug
+            +picture('androsova.png')
 
 //page-4
 mixin security-preview
