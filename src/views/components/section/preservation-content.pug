@@ -45,9 +45,11 @@ mixin preservation-content
   section.preservation-structure.mt-section 
     .container-content 
       .preservation-structure__inner 
-        h6.preservation-structure__title Структура себестоимости продаж в 2022 году, %
-        .preservation-structure__img 
+        p.preservation-structure__descrition.description_big Структура себестоимости продаж в 2022 году, %
+        .preservation-structure__img.desktop-m
           +picture('preservation-structure.png')
+        .preservation-structure__img.mogile-m
+          +picture('preservation-structure-mobile.png')
         .preservation-structure__row  
           .col 
             p.text.preservation-structure__text Оплата услуг владельцев инфраструктуры в 2022 году в составе себестоимости оказания услуг составила 81%, или 38 459 млн руб. По факту 2022 года суммарный объем инфраструктурных платежей снизился на 15,5% по отношению к факту 2021 года, что сопоставимо с общим снижением себестоимости, вызванным проведенными мерами по оптимизации расходов, а также снижением курсов основных валют расходов по сравнению с 2021 годом.
@@ -72,7 +74,7 @@ mixin preservation-content
                 p.item__subtext Показатель валовой прибыли ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 2%
             p.preservation-profit__text.block-diagram__text.text Валовая прибыль по итогам 2022 года составила 7 812 млн руб, что на 149 млн руб или 2% ниже аналогичного периода прошлого года. При этом в 2022 году растет рентабельность по валовой прибыли за счет опережающего снижения себестоимости благодаря мерам по оптимизации себестоимости, снижению среднегодового курса доллара США и начала применения ФСБУ 25/2018. 
           .block-diagram__col 
-            p.block-diagram__description Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
+            p.block-diagram__description.description_big Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
             .block-diagram__video
               +picture('video.png')
 
@@ -81,11 +83,15 @@ mixin preservation-content
     .container-content 
       .preservation-expenses__inner 
         h2.preservation-expenses__title Управленческие расходы
-        p.preservation-expenses__description Управленческие расходы ОТЛК ЕРА за 2022 год составили 1 351 млн руб, что на 16% выше уровня 2021 года. 
+        p.preservation-expenses__description.description_big Управленческие расходы ОТЛК ЕРА за 2022 год составили 1 351 млн руб, что на 16% выше уровня 2021 года. 
   section.preservation-statistics 
     .container-content 
+      
       .preservation-statistics__inner 
-        .preservation-statistics__img
+        p.preservation-structure__descrition.description_big Структура управленческих расходов в 2022 году
+        .preservation-statistics__img.desktop-m
           +picture('preservation-statistics.png')
+        .preservation-statistics__img.mobile-m
+          +picture('preservation-statistics-mobile.png')
 
         

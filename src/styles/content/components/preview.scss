@@ -322,7 +322,6 @@
   }
 }
 
-
 .corruption-preview {
   margin-top: 20px;
 }
@@ -601,5 +600,9 @@
   &__row {
     background: white;
     padding-left: 10px;
+
+    @media #{media('<',m)} {
+      padding-left: 0;
+    }
   }
 }

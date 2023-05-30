@@ -98,13 +98,6 @@
 
   }
 
-  &__description {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    color: color(dark);
-  }
-
   &__subtext {
     margin-top: 10px;
 
@@ -165,5 +158,84 @@
     font-size: 15px;
     line-height: 160%;
     color: #727A75;
+  }
+}
+
+@media #{media('<',m)} {
+  .profit {
+    .block-diagram__row:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+
+  .profit-reporting {
+    .col {
+      width: auto
+    }
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      gap: 20px;
+
+      &_bottom {
+        margin-top: 20px;
+        flex-direction: column;
+      }
+
+
+    }
+
+    &__text {
+      width: auto;
+      margin-top: 20px;
+    }
+
+    &__subtext {
+      margin-top: 10px;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #727A75;
+    }
+
+
+    &__column {
+      .row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+      }
+
+
+
+      .item {
+        width: auto;
+
+        &__col {
+          display: flex;
+          flex-direction: column;
+
+          gap: 16px;
+        }
+
+        &__row {
+          &:nth-child(2) {
+            display: flex;
+            gap: 8px
+          }
+        }
+
+        &__row_top {
+          display: flex;
+          gap: 4px;
+        }
+      }
+    }
   }
 }
