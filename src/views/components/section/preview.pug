@@ -209,39 +209,45 @@ mixin econimics-preview
           .preview__img.transit-preview__img.desktop-t.safari-debug
             +picture('ivanov-prev.png')
 
-
 mixin share-provinces-preview
-  section.preview.alt-margin
+  section.preview.trends-preview
     .container 
       .preview__inner
         .preview__line
-        .preview__col-left.alt
-          .preview-left__top 
+        .preview__col-left
+          .preview-left__top.preview-left__desktop 
             .preview__title.small-title Доля провинций в 2022 году
-            .preview__vector 
-              +picture('share-provinces-page3.png')
+              .preview__vector 
+                +picture('share-provinces-page3.png')
           .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('pahomov-mobile.png')
             p.preview__name Пахомов <br/>Евгений Владимирович 
-            p.preview__job.alt Заместитель директора департамента по контролю расчетов <br>и производственного анализа коммерческой дирекции
+            p.preview__job.desktop Заместитель директора департамента по контролю расчетов <br>и производственного анализа коммерческой дирекции
+            p.preview__job.mobile.mobile-custom Заместитель директора департамента по контролю расчетов и производственного анализа коммерческой дирекции
         .preview__col-right
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t.safari-debug
             +picture('pahomov.png')
 
+
 mixin formation-park-preview
-  section.preview
+  section.preview.trends-preview
     .container 
       .preview__inner
         .preview__line
-        .preview__col-left.alt
-          .preview-left__top 
-            h2.preview__title Формирование парка: <br>оптимизация
-            .preview__text Ключевой фактор роста перевозок — наличие у компании необходимого количества подвижного состава для крупнотоннажных контейнеров. В 2019–2022 годах на волне спроса мы серьезно увеличили парк. 
+        .preview__col-left
+          h2.preview__title Формирование парка:  <br/>оптимизация
+          .preview__text.desktop Ключевой фактор роста перевозок — наличие у компании необходимого количества подвижного состава для крупнотоннажных контейнеров. В 2019–2022 годах на волне спроса мы серьезно увеличили парк. 
           .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('androsova-mobile.png')
             p.preview__name Андросова <br/>Елена Владимировна 
-            p.preview__job.alt Начальник отдела по организации расчетов коммерческой дирекции
+            p.preview__job Начальник отдела по организации расчетов коммерческой дирекции
+            .preview__text.mobile.preview__text_subtitle Ключевой фактор роста перевозок — наличие у компании необходимого количества подвижного состава для крупнотоннажных контейнеров. В 2019–2022 годах на волне спроса мы серьезно увеличили парк. 
         .preview__col-right
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t.safari-debug
             +picture('androsova.png')
+
 
 mixin client-portfolio-preview
   section.preview

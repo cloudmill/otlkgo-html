@@ -533,12 +533,46 @@
 
     &__grey{
       margin-top: 20px;
-      
+
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
       color: #727A75;
     }
+  }
+  &-direction{
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid color(light-green);
+    &__title{
+      margin-bottom: 40px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #2A2E2B;
+    }
+    &__row{
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    &__col{
+      max-width: 560px;
+    }
+    &__text{
+      margin-bottom: 20px;
+    }
+    &__subtitle{
+      margin-bottom: 20px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: #2A2E2B;
+    }
+
   }
 }
 
@@ -663,6 +697,10 @@
 
     &-bot{
       margin-top: 39px;
+
+      &.grom{
+        margin-top: 160px;
+      }
     }
   }
 }

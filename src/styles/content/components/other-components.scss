@@ -7,4 +7,24 @@
   font-size: 18px;
   line-height: 160%;
   color: color(dark);
+
+  @media #{media("<", m)} {
+    margin-top: 20px;
+    margin-left: 0px;
+    
+    width: 100%;
+    font-size: rem(14px);
+    line-height: 160%;
+  }
+}
+
+.custom-mobile__container{
+  margin-top: 20px;
+  .preview__title{
+    padding-left: 0px;
+
+    padding-top: 5px;
+
+    border-top: 1px solid color(borders);
+  }
 }

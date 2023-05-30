@@ -4,7 +4,7 @@ mixin marshrute-speed
       h3.marshrute-speed__title Маршрутная скорость и формирование поездов
       .marshrute-speed__row 
         .marshrute-speed__col
-          .marshrute-speed__text В 2022 году маршрутная скорость следования транзитных поездов по колее 1520 составила 816 км/сутки. Общее время хода по итогу 2022 года составило 6,69 суток (по АО «НК «КТЖ» — 2,99 суток, по ОАО «РЖД» — 2,82 суток и по Белорусской железной дороге — 0,88 суток).
+          .marshrute-speed__text.text В 2022 году маршрутная скорость следования транзитных поездов по колее 1520 составила 816 км/сутки. Общее время хода по итогу 2022 года составило 6,69 суток (по ТОО «КТЖ - ГП» — 2,99 суток, по ОАО «РЖД» — 2,82 суток и по Белорусской железной дороге — 0,88 суток).
         .marshrute-speed__col 
           .ge-card.green
               .ge-card__top
@@ -15,20 +15,27 @@ mixin marshrute-speed
       .marshrute-speed__subsection 
         .marshrute-speed__subsection-col 
           .marshrute-speed__subsection-title Изменение маршрутной скорости следования транзитных поездов в сервисе ОТЛК ЕРА <br classs="br"> в 2021–2022 годах
-          .marshrute-speed__subsection-text.top Основной фактор, влияющий на продолжительность рейса вагона, — транзитное время проследования контейнерного поезда. За последние три года время хода поезда увеличивалось.
-          .marshrute-speed__subsection-text Задержки поездов из-за шквалистых ветров фиксировались в первом и четвертом кварталах каждого года. Ситуацию осложнила установка ограничений со стороны Китая по передаче КП в связи с мероприятиями по профилактике  <br classs="br"> COVID-19. По мере урегулирования передачи КП в направлении Европа-Китай, наша компания также столкнулась с инфраструктурными ограничениями.
+          .marshrute-speed__subsection-text.top.text Основной фактор, влияющий на продолжительность рейса вагона, — транзитное время проследования контейнерного поезда. За последние три года время хода поезда увеличивалось.
+          .marshrute-speed__subsection-text.text Задержки поездов из-за шквалистых ветров фиксировались в первом и четвертом кварталах каждого года. Ситуацию осложнила установка ограничений со стороны Китая по передаче КП в связи с мероприятиями по профилактике   COVID-19. По мере урегулирования передачи КП в направлении Европа-Китай, наша компания также столкнулась с инфраструктурными ограничениями.
         .marshrute-speed__subsection-col 
-          .marshrute-speed__subsection-vector 
-            +picture('change-speed-vector.png')
+          .marshrute-speed__subsection-vector.alt-vector.desktop 
+            +picture('change-speed-vector.jpg')
+          .marshrute-speed__subsection-vector.alt-vector.mobile 
+            +picture('change-speed-vector-mobile.png')
       .marshrute-speed__subsection 
         .marshrute-speed__subsection-col 
           .marshrute-speed__subsection-title Изменение маршрутной скорости следования транзитных поездов в сервисе ОТЛК ЕРА <br classs="br"> в 2019–2022 годах
-          .marshrute-speed__subsection-text.top В 2022 году среднесуточное количество поездов в пути составило 14 единиц. Рост средней загрузки поезда до среднегодового значения 117 ДФЭ можно рассматривать как технологический фактор оптимизации расходов и привлечения большего объема грузов.
+          .marshrute-speed__subsection-text.top.text В 2022 году среднесуточное количество поездов в пути составило 14 единиц. Рост средней загрузки поезда до среднегодового значения 117 ДФЭ можно рассматривать как технологический фактор оптимизации расходов и привлечения большего объема грузов.
         .marshrute-speed__subsection-col 
-          .marshrute-speed__subsection-vector 
+          .marshrute-speed__subsection-vector.alt-vector.desktop  
             +picture('change-speed-vector-2-fin.png')
+          .marshrute-speed__subsection-vector.alt-vector.mobile  
+            +picture('change-speed-vector-mobile2.png')
       .marshrute-speed__footer 
-        .marshrute-speed__footer-title Динамика применения технологии XL-поездов
-        .marshrute-speed__footer-vector
+        h6.marshrute-speed__footer-title Динамика применения технологии XL-поездов
+        .marshrute-speed__footer-vector.desktop
           +picture('change-speed-vector3.png')
-        .marshrute-speed__footer-text Для совершенствования технологии контейнерных перевозок наша компания запустила проект «XL-поезда», в рамках которого в 2022 году было организовано 2 279 длинносоставных поездов. Эта технология позволяет повысить эффективность использования пропускной способности инфраструктуры и сократить издержки при организации перевозок.
+        .marshrute-speed__footer-container 
+          .marshrute-speed__footer-vector.mobile
+            +picture('change-speed-vector3-mobile.png')
+        .marshrute-speed__footer-text.text Для совершенствования технологии контейнерных перевозок наша компания запустила проект «XL-поезда», в рамках которого в 2022 году было организовано 2 279 длинносоставных поездов. Эта технология позволяет повысить эффективность использования пропускной способности инфраструктуры и сократить издержки при организации перевозок.

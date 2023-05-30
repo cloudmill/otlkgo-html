@@ -30,7 +30,9 @@
 
     display: flex;
     gap: 40px;
-
+    @media (min-width: 768px) and (max-width: 1025px) {
+      flex-direction: column;
+    }
     @media #{media('<',m)} {
       margin-bottom: 20px;
       display: block;
@@ -41,6 +43,9 @@
     &:nth-child(1) {
       width: 360px;
       flex-shrink: 0;
+      @media (min-width: 768px) and (max-width: 1025px) {
+        width: 100%;
+      }
     }
   }
 
@@ -134,6 +139,7 @@
 
     @media (min-width: 768px) and (max-width: 1024px) {
       gap: rem(30px);
+      flex-direction: column;
     }
 
     @media #{media('<',m)} {
@@ -145,7 +151,9 @@
     &__col {
       max-width: 460px;
       flex-shrink: 0;
-
+      @media (min-width: 768px) and (max-width: 1025px) {
+        max-width: 100%;
+      }
       @media #{media('<',m)} {
         width: 100%;
         padding: 0px;
@@ -284,13 +292,15 @@
       margin-bottom: 20px;
     }
   }
-
+  
   &__hero {
     &-row {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-
+      @media (min-width: 768px) and (max-width: 1024px) {
+        flex-direction: column;
+      }
       @media #{media('<',m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -304,7 +314,9 @@
 
       &:nth-child(1) {
         width: 460px;
-
+        @media (min-width: 768px) and (max-width: 1024px) {
+          width: 100%;
+        }
         @media #{media('<',m)} {
           width: 100%;
           width: rem(335px);
@@ -337,7 +349,8 @@
       width: 560px;
 
       @media (min-width: 768px) and (max-width: 1024px) {
-        max-width: 500px;
+        max-width: 100%;
+        width: 100%;
       }
 
       @media #{media('<',m)} {
@@ -392,7 +405,9 @@
       @media (max-width: 1025px) {
         overflow-x: scroll;
       }
-
+      @media (min-width: 768px) and (max-width: 1024px) {
+        overflow-x: scroll;
+      }
       @media #{media('<', m)} {
         width: rem(375px);
         padding-left: 20px;
@@ -412,7 +427,9 @@
           object-fit: fill;
         }
       }
-
+      @media (min-width: 768px) and (max-width: 1024px) {
+        overflow-x: scroll;
+      }
       @media #{media('<',m)} {
         overflow-x: scroll;
       }
@@ -590,7 +607,9 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
     @media #{media('<',m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -602,6 +621,9 @@
   &__col {
     &:nth-child(1) {
       max-width: 460px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 100%;
+      }
     }
 
     @media #{media('<',m)} {
@@ -648,6 +670,9 @@
     line-height: 160%;
     color: color(dark);
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+    }
     @media #{media('<',m)} {
       width: 100%;
       font-size: rem(12px);
@@ -681,7 +706,9 @@
 
   &__grafic {
     width: 460px;
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+    }
     @media #{media("<", m)} {
       width: 100%;
     }
@@ -715,6 +742,9 @@
     justify-content: space-between;
     gap: 20px;
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -727,7 +757,9 @@
 
     &:nth-child(1) {
       max-width: 360px;
-
+      @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 100%;
+      }
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -735,10 +767,10 @@
 
     &:nth-child(2) {
       max-width: 760px;
-
-      @media (max-width: 1025px) {
-        max-width: 600px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 100%;
       }
+      
 
       @media #{media("<", m)} {
         width: 100%;
@@ -901,10 +933,14 @@
   &__row {
     display: flex;
     gap: 20px;
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
     &.top {
       justify-content: space-between;
-
+      @media (min-width: 768px) and (max-width: 1024px) {
+        flex-direction: column;
+      }
     }
 
     @media #{media("<", m)} {
@@ -932,7 +968,9 @@
 
     &:nth-child(1) {
       width: 460px;
-
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+      }
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -940,10 +978,10 @@
 
     &:nth-child(2) {
       max-width: 560px;
-
-      @media (max-width: 1025px) {
-        max-width: 500px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 100%;
       }
+      
 
       @media #{media("<", m)} {
         width: 100%;
@@ -952,7 +990,9 @@
 
     &.col {
       width: 460px;
-
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+      }
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -1022,6 +1062,10 @@
     display: flex;
     gap: 140px;
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+      gap: 40px;
+    }
     @media #{media("<", m)} {
       margin-top: rem(20px);
       display: grid;
@@ -1032,7 +1076,9 @@
     &-col {
       &:nth-child(1) {
         width: 460px;
-
+        @media (min-width: 768px) and (max-width: 1024px) {
+          width: 100%;
+        }
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -1042,7 +1088,9 @@
         width: 560px;
         padding-top: 8px;
         border-top: 1px solid color(borders);
-
+        @media (min-width: 768px) and (max-width: 1024px) {
+          width: 100%;
+        }
         @media #{media("<", m)} {
           padding-top: rem(5px);
           width: 100%;
@@ -1141,6 +1189,9 @@
     justify-content: space-between;
     gap: 20px;
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
     @media #{media("<", m)} {
       margin-top: rem(20px);
       display: grid;
@@ -1154,9 +1205,9 @@
 
       &:nth-child(1) {
         max-width: 560px;
-
-        @media (max-width: 1025px) {
-          max-width: 460px;
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+          max-width: 100%;
         }
 
         @media #{media("<", m)} {
@@ -1168,8 +1219,8 @@
       &:nth-child(2) {
         max-width: 559px;
 
-        @media (max-width: 1025px) {
-          max-width: 470px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          max-width: 100%;
         }
 
         @media #{media("<", m)} {
@@ -1210,7 +1261,9 @@
     &-vector {
       &.left {
         width: 460px;
-
+        @media (min-width: 768px) and (max-width: 1024px) {
+          width: 100%;
+        }
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -1219,8 +1272,8 @@
       &.right {
         max-width: 559px;
 
-        @media (max-width: 1025px) {
-          max-width: 470px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          max-width: 100%;
         }
 
         @media #{media("<", m)} {
@@ -1259,7 +1312,9 @@
   &__hero {
     display: flex;
     gap: 40px;
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -1271,7 +1326,9 @@
 
       &:nth-child(1) {
         width: 360px;
-
+        @media (min-width: 768px) and (max-width: 1024px) {
+          width: 100%;
+        }
         @media #{media("<", m)} {
           width: rem(335px);
         }
@@ -1280,8 +1337,8 @@
       &:nth-child(2) {
         width: 760px;
 
-        @media (max-width: 1025px) {
-          max-width: 570px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          width: 100%;
         }
 
         @media #{media("<", m)} {
@@ -1698,7 +1755,10 @@
   align-items: start;
   gap: 244px;
   border: 1px solid color(light-green);
-
+  @media (min-width: 768px) and (max-width: 1024px) {
+    gap: 120px;
+    justify-content: space-between;
+  }
   @media #{media("<", m)} {
     margin-bottom: 0px;
     margin-top: rem(40px);
@@ -1740,7 +1800,9 @@
 
   &__main {
     padding: 40px 100px 40px 0px;
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: 40px 40px 40px 0px;
+    }
     @media #{media("<", m)} {
       padding: 0px rem(15px) rem(25px) rem(20px);
       width: 100%;
