@@ -4,23 +4,42 @@
 
   border-top: 1px solid color(green);
 
+  @media #{media("<", m)} {
+    margin-top: 40px;
+    padding-top: 8px;
+  }
   &__title{
     margin-bottom: 40px;
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+    }
   }
 
   &__row{
     display: flex;
     gap: 240px;
+
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
   }
 
   &__col{
     &:nth-child(1){
       width: 559px;
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
     &:nth-child(2){
       width: 360px;
       .ge-card__text-grey{
-        width: 340px;
+        max-width: 340px;
+        @media #{media("<", m)} {
+          max-width: 320px;
+        }
       }
     }
   }
@@ -39,6 +58,13 @@
     padding-top: 20px;
   
     border-top: 1px solid color(green);
+
+    @media #{media('<',m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      margin-top: 60px;
+    }
     &-title{
       margin-bottom: 40px;
 
@@ -47,14 +73,27 @@
       line-height: 130%;
       color: color(dark);
 
+      @media #{media('<',m)} {
+        margin-bottom: 20px;
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
+
     }
 
     &-col{
       &:nth-child(1){
         width: 559px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
       &:nth-child(2){
         width: 562px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
 
@@ -71,11 +110,27 @@
       &.top{
         margin-bottom: 16px;
       }
+
+      @media #{media('<',m)} {
+        margin-left: 0px;
+        width: rem(335px);
+      }
     }
 
     &-vector{
       width: 562px;
       height: 578px;
+      @media #{media("<", m)} {
+        width: rem(335px);
+        height: rem(603px);
+      }
+      &.alt-vector{
+        picture{
+          img{
+            object-fit: contain;
+          }
+        }
+      }
     }
   }
 
@@ -87,27 +142,46 @@
   
     border-top: 1px solid color(green);
 
+    @media #{media('<',m)} {
+      margin-top: 41px;
+      padding-top: 5px;
+    }
     &-title{
       margin-bottom: 38px;
 
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 130%;
-      color: color(dark);
+      @media #{media('<',m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &-vector{
       margin-bottom: 40px;
+
+      @media #{media("<", m)} {
+        width: rem(798px);
+        height: rem(235px);
+        margin-bottom: 0px;
+      }
     }
 
     &-text{
       margin-left: 600px;
       width: 560px;
       
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
+      @media #{media('<',m)} {
+        margin-top: 20px;
+        margin-left: 0px;
+
+        width: rem(335px);
+      }
+    }
+
+    &-container{
+      width: calc(rem(375px) + 20px);
+      margin-left: -20px;
+      padding-left: 20px;
+      overflow-x: scroll;
+      @include scrollbar-hidden();
     }
   }
 }
