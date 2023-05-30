@@ -1,25 +1,3 @@
-// $files: (
-//   ("Manrope-Light", 300),
-//   ("Manrope-Regular", 400),
-//   ("Manrope-Medium", 500),
-//   ("Manrope-SemiBold", 600),
-//   ("Manrope-Bold", 700),
-// );
-
-// $files-2: (
-//   ("Halvar Breitschrift", 700),
-// );
-
-// @each $filename,
-// $font-weight in $files {
-//   @font-face {
-//     src: font-url($filename);
-
-//     font-family: $ff-primary;
-//     font-weight: $font-weight;
-//   }
-// }
-
 @font-face {
   font-family: 'Manrope';
   src: url(/assets/fonts/Manrope-Light.woff);
