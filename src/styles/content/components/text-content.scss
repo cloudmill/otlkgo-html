@@ -93,6 +93,11 @@ h5 {
 
   svg {
     flex-shrink: 0;
+
+    @media #{media('<',m)} {
+      width: 12px;
+      height: 19px;
+    }
   }
 
   li {
@@ -101,11 +106,17 @@ h5 {
   }
 }
 
+
+
 .description {
   font-weight: 700;
   font-size: 16px;
   line-height: 140%;
   color: color(dark);
+
+  @media #{media('<',m)} {
+    font-size: 14px;
+  }
 
   &_big {
     font-weight: 700;

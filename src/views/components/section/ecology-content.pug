@@ -13,14 +13,14 @@ mixin ecology-content
       .ecology-statistics__inner 
         .col 
           p.ecology-statistics__text.text Популяризация именно железнодорожного сообщения как наиболее экологичного в грузоперевозках на дальние расстояния – это ключевой шаг в сокращении выбросов парниковых газов транспортным сегментом во всем мире.
-          .ecology-statistics__elem 
-            .row 
-              .col 
-                p.ecology-statistics__grey до
-              .col 
-                p.ecology-statistics__number 20% 
-            .row 
-              p.ecology-statistics__subtext Всех выбросов углекислого газа в атмосферу производит сфера транспорта 
+          .item
+            .item__row 
+              .item__col 
+                p.item__grey до
+              .item__col 
+                p.item__number 20%
+            .item__row 
+              p.item__subtext Всех выбросов углекислого газа в атмосферу производит сфера транспорта 
           .row 
             p.ecology-statistics__text.text Мы работаем в области железнодорожных перевозок — важнейшего компонента международной торговли, поэтому с уверенностью можем сказать, что перевозки в сервисах компании имеют целый ряд преимуществ перед другими модальностями. Железная дорога — один из самых ресурсосберегающих и экологически чистых видов транспорта.
             p.ecology-statistics__text.text ОТЛК ЕРА, как крупнейший евразийский оператор железнодорожных контейнерных перевозок, отвечающий за перевозку основного объема грузов по маршруту Китай — Европа — Китай, разработал онлайн-счетчик выбросов CO2 в атмосферу. На его странице можно также увидеть сравнение углеродного следа при перевозке одного и того же объема грузов разными видами транспорта.
@@ -53,7 +53,7 @@ mixin ecology-content
     .container-content 
       .ecology-algorithm__inner 
         h6.ecology-algorithm__title Алгоритм корректного сравнения объемов выбросов по видам транспорта
-        .ecology-algorithm__row
+        .ecology-algorithm__row.ecology-algorithm__row_top
           ul.ecology-algorithm__list.list
             each item in ['Для всех видов транспорта берется одинаковая длина маршрута, а именно длина маршрута Брест — Достык, 5 454 км']
               li.ecology-algorithm__item
@@ -64,7 +64,7 @@ mixin ecology-content
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
                 p.text.eclology-algorithm__text=item 
-        .ecology-algorithm__row 
+        .ecology-algorithm__row
           .col 
             p.ecology-algorithm__description.description Прямые выбросы (TTW) для перевозки 6 636 ДФЭ составят
             ul.ecology-algorithm__list.list
@@ -100,9 +100,9 @@ mixin ecology-content
   section.ecology-CO.mt-section 
     .container-content
       .ecology-CO__inner 
-        h6.ecology-CO__title 
+        p.ecology-CO__description.description_big
           | Прямые выбросы СО
-          sup 2
+          sup.sup-description 2
           |&nbsp; по видам транспорта в сравнении
           br.br 
           | с показателями ОТЛК ЕРА
@@ -128,9 +128,9 @@ mixin ecology-content
     .container-content
       .ecology-CO2__inner
         .ecology-CO2__top
-          h6.ecology-CO2__title 
+          p.ecology-CO2__description.description_big
             | Прямые и косвенные выбросы СО
-            sup 2
+            sup.sup-description 2
             |&nbsp; по видам  
             br.br 
             | транспорта в сравнении с показателями ОТЛК ЕРА
@@ -174,7 +174,7 @@ mixin ecology-content
               p.ecology-grom__text.text Экологическая ценность железнодорожных перевозок становится настоящей философией построения социально ответственного бизнеса на нашем континенте. Железная дорога вполне могла бы стать символом Конференции по изменению климата в Глазго, поскольку можно с уверенностью сказать, что перемещение все большего количества грузов на рельсы — это важнейшая предпосылка как для достижения европейской «зеленой сделки», так и для и содействия декарбонизации евразийской логистики.
               p.ecology-grom__name Алексей Гром
               p.ecology-grom__job Генеральный директор
-            .row 
+            .row.ecology-grom__decor-bottom 
               +appeal2-svg.ecology-grom__elem_2
   section.ecology-environment.mt-section
     .container-content 
@@ -191,17 +191,16 @@ mixin ecology-content
             .decor_2
             .decor_3
             .decor_4
-          p.ecology-environment__elem-text #KeenOnGreen — экологические инициативы ОТЛК ЕРА
+          p.ecology-environment__elem-text #KeenOnGreen — экологические инициативы ОТЛК&nbsp;ЕРА
         .ecology-environment__bottom 
-          .number-item 
-            .number-item__inner
-              .number-item__row 
-                .number-item__col
-                  p.number-item__number 3
-                .number-item__col 
-                  p.number-item__grey млн рублей
-              .number-item__row 
-                p.number-item__subtext Объем финансирования проектов ОТЛК ЕРА, реализуемых в Казахстане и России в 2022 году 
+          .item
+            .item__row 
+              .item__col 
+                p.item__number 3
+              .item__col 
+                p.item__grey млн рублей
+            .item__row 
+              p.item__subtext Объем финансирования проектов ОТЛК ЕРА, реализуемых в Казахстане и России в 2022 году 
           p.ecology-environment__text.text Начиная с 2020 года мы активно участвуем в популяризации и реализации экологических проектов. Инициатива #KeenOnGreen направлена на то, чтобы, с одной стороны, рассказывать о железных дорогах как о наиболее экологичном виде транспорта, а с другой — поддерживать экологические проекты в природных зонах стран, по территориям которых проходят маршруты контейнерных поездов ОТЛК ЕРА. В рамках инициативы в 2021 году компания поддержала проект по восстановлению в Казахстане популяции тугайных оленей, занесенных в Красную книгу.
   section.ecology-cards.mt-section 
     .container-content  
@@ -218,11 +217,14 @@ mixin ecology-content
           +column-top-svg.ecology-cards__decor 
           .ecology-cards__bottom-row
             p.ecology-cards__description В России
-            .ecology-cards__elem
+            .ecology-cards__elem.desktop-m
               p.ecology-cards__number +28%
               p.ecology-cards__subtext рост популяции зубров в Турмонском заказнике
           .row
             .col 
               p.ecology-cards__text.text В самом сердце Карачаево-Черкесии находится Кизгинское ущелье — охраняемая природная территория. Здесь в 1990-х годах советские ученые начали восстанавливать популяцию зубра — единственного дикого быка, оставшегося в Европе, который считается важной частью экосистемы широколиственных лесов Кавказа. К сожалению, этот вид исчез из естественной среды обитания из-за деятельности человека — последний зубр на Кавказе был убит в 1927 году. 
+            .ecology-cards__elem.mobile-m
+              p.ecology-cards__number +28%
+              p.ecology-cards__subtext рост популяции зубров в Турмонском заказнике
             .col 
               p.ecology-cards__text.text Специалисты резервата «Иле-Балхаш» при поддержке ОТЛК ЕРА реализуют проект по восстановлению тугайного леса, благодаря которому к концу 2022 года уже более 12 тысяч новых саженцев туранги, лоха и ивы появилось в этих местах. Выделенные средства также помогли организовать современную систему капельного орошения и разработать меры противопожарной безопасности.

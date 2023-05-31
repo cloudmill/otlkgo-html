@@ -53,7 +53,7 @@
     &:nth-child(2) {
       padding-top: 20px;
 
-      border-top: 1px solid color(green);
+      border-top: 1px solid #E8E8E8;
     }
   }
 
@@ -107,6 +107,11 @@
 
   &__img {
     transform: translateX(8px);
+    height: 580px;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   &__row {
@@ -144,6 +149,14 @@
 
   &__text {
     width: 560px;
+  }
+
+  &__img {
+    height: 700px;
+
+    img {
+      object-fit: contain;
+    }
   }
 }
 
@@ -253,6 +266,7 @@
     }
 
     &__img {
+      height: auto;
       transform: translateX(0);
     }
 
@@ -287,6 +301,10 @@
     &__row {
       display: flex;
       gap: 40px;
+    }
+
+    &__img {
+      height: auto;
     }
 
     &__text {

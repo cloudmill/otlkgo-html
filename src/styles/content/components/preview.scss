@@ -198,7 +198,6 @@
 
     max-width: 50%;
 
-    // width: 50%;
     @media #{media('<',t)} {
       padding-left: 20px;
     }
@@ -206,6 +205,11 @@
     &.pt-14 {
       padding-top: 14px;
     }
+  }
+
+  &__table {
+    position: relative;
+    z-index: $index-2;
   }
 
   &__name {
@@ -322,6 +326,8 @@
   }
 }
 
+
+
 .corruption-preview {
   margin-top: 20px;
 }
@@ -366,6 +372,12 @@
   }
 }
 
+.preservation-preview {
+  margin-top: 0;
+
+
+}
+
 @media #{media('<',d)} {
   .preview {
     &__col-left {
@@ -376,6 +388,12 @@
 
     &__col-right {
       padding-left: 0;
+    }
+  }
+
+  .charity-preview {
+    img {
+      object-position: -40px;
     }
   }
 }
@@ -402,6 +420,8 @@
       max-width: 100%;
 
     }
+
+
 
     img {
       object-position: left;
@@ -453,12 +473,19 @@
       }
     }
   }
+
+
+
 }
 
 @media #{media('<',m)} {
   .preview {
     overflow: visible;
     margin-top: 40px;
+
+    &__img {
+      margin-top: 65px;
+    }
 
     .desktop {
       display: none;
@@ -480,6 +507,15 @@
 
     &__cards {
       margin-top: 32px;
+    }
+
+    &__table {
+      position: relative;
+      width: calc(100% + 40px);
+      padding-left: 20px;
+      margin-left: -20px;
+      overflow-x: scroll;
+      @include scrollbar-hidden
     }
 
     &__inner {
@@ -512,7 +548,6 @@
     &__col-right {
       padding-left: 0;
       height: auto;
-      // max-width: 100%;
     }
 
     &__img {
@@ -525,9 +560,26 @@
     }
 
     &__job {
+      padding-top: 4px;
       font-size: 12px;
       text-align: left;
+    }
 
+  }
+
+  .preservation-preview {
+    &__img {
+      height: 410px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .charity-preview {
+    img {
+      object-position: center;
     }
   }
 }
@@ -549,18 +601,13 @@
   }
 }
 
+
 .preview-table {
-  max-width: 540px;
+  width: 540px;
 
   &__top {
     text-align: left;
   }
-
-  &__bottom {
-    border-top: 1px solid #045C25;
-  }
-
-  &__row {}
 
   &__name {
     padding-bottom: 12px;
@@ -568,6 +615,11 @@
     font-size: 12px;
     line-height: 150%;
     color: #727A75;
+  }
+
+  &__bottom {
+    border-top: 1px solid #045C25;
+
   }
 
   &__item {
@@ -581,8 +633,22 @@
       font-weight: 700;
     }
   }
+
+  @media #{media('<',m)} {
+    background: white;
+
+    &__item {
+      font-size: 14px;
+    }
+  }
 }
 
+.charity-preview {
+  &__job {
+    padding-bottom: 40px;
+  }
+
+}
 
 .case-preview {
   &__title {
