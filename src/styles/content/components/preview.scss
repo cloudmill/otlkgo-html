@@ -69,7 +69,7 @@
       color: #2A2E2B;
     }
 
-    &_subtitle{
+    &_subtitle {
       font-weight: 700;
       font-size: rem(13px);
       line-height: 160%;
@@ -168,7 +168,7 @@
       background: linear-gradient(270deg, color(green) 0%, rgba(255, 255, 255, 0) 79.69%);
     }
 
-    &.desktop{
+    &.desktop {
       @media #{media("<", m)} {
         display: none;
       }
@@ -343,8 +343,8 @@
     }
   }
 
-  &-left{
-    &__desktop{
+  &-left {
+    &__desktop {
       @media #{media("<", m)} {
         display: none;
       }
@@ -447,11 +447,9 @@
 
     }
 
-
-
     img {
+      object-fit: contain;
       object-position: left;
-      object-fit: cover;
     }
 
     &__name {
@@ -530,7 +528,8 @@
       margin-top: 0;
       padding-top: 20px;
       max-width: 100%;
-      &-custom{
+
+      &-custom {
         max-width: calc(100% + 10px);
       }
     }
@@ -581,7 +580,7 @@
     }
 
     &__img {
-      height: 385px;
+      height: 400px;
     }
 
     &__name {
@@ -602,7 +601,8 @@
       height: 410px;
 
       img {
-        object-fit: cover;
+        // object-fit: cover;
+        object-fit: contain;
       }
     }
   }
