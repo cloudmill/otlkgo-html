@@ -27,6 +27,13 @@
         margin-top: 40px;
         display: flex;
         gap: 40px;
+
+        @media (min-width:768px) and (max-width: 1025px) {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+        }
+
         @media #{media('<',m)} {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
@@ -38,6 +45,13 @@
         margin-top: 98px;
         display: flex;
         gap: 41px;
+
+        @media (min-width:768px) and (max-width: 1025px) {
+          margin-top: 30px;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+        }
 
         @media #{media('<',m)} {
           margin-top: 20px;
@@ -53,6 +67,11 @@
       &.mid {
         &:nth-child(1) {
           width: 359px;
+
+          @media (min-width:768px) and (max-width: 1025px) {
+            width: 100%;
+          }
+
           @media #{media('<',m)} {
             width: rem(335px);
           }
@@ -64,6 +83,10 @@
           width: 760px;
           @media #{media('<',m)} {
             width: rem(335px);
+
+            .transportation-development__heading{
+              width: rem(335px);
+            }
           }
         }
       }
@@ -76,6 +99,10 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
+      @media (min-width:768px) and (max-width: 1025px) {
+        width: 100%;
+      }
 
       @media #{media('<',m)} {
         width: rem(335px);
@@ -140,6 +167,11 @@
         letter-spacing: -0.06em;
         text-transform: uppercase;
         color: #727A75;
+
+        @media (min-width:768px) and (max-width: 1025px) {
+          width: auto;
+          max-width: 360px;
+        }
 
         @media #{media('<',m)} {
           width: rem(335px);
@@ -245,6 +277,12 @@
         padding-top: 20px;
         border-top: 1px solid #69DA91;
 
+        @media (min-width:768px) and (max-width: 1025px) {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+        }
+
         @media #{media('<',m)} {
           padding-top: 8px;
           flex-wrap: wrap;
@@ -256,13 +294,17 @@
         &:nth-child(1) {
           width: 359px;
 
+          @media (min-width:768px) and (max-width: 1025px) {
+            width: 100%;
+          }
+
           @media #{media('<',m)} {
             width: rem(335px);
           }
         }
 
         &:nth-child(2) {
-          width: 760px;
+          max-width: 760px;
           @media #{media('<',m)} {
             width: rem(335px);
             order: -1;

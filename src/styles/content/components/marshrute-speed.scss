@@ -18,7 +18,10 @@
   &__row{
     display: flex;
     gap: 240px;
-
+    @media (min-width:768px) and (max-width: 1025px) {
+      gap: 20px;
+      justify-content: space-between;
+    }
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -28,7 +31,8 @@
 
   &__col{
     &:nth-child(1){
-      width: 559px;
+      max-width: 559px;
+      
       @media #{media("<", m)} {
         width: rem(335px);
       }
@@ -59,6 +63,11 @@
   
     border-top: 1px solid color(green);
 
+    @media (min-width:768px) and (max-width: 1025px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
     @media #{media('<',m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -85,12 +94,18 @@
     &-col{
       &:nth-child(1){
         width: 559px;
+        @media (min-width:768px) and (max-width: 1025px) {
+          width: 100%;
+        }
         @media #{media("<", m)} {
           width: rem(335px);
         }
       }
       &:nth-child(2){
         width: 562px;
+        @media (min-width:768px) and (max-width: 1025px) {
+          width: 100%;
+        }
         @media #{media("<", m)} {
           width: rem(335px);
         }
@@ -110,7 +125,10 @@
       &.top{
         margin-bottom: 16px;
       }
-
+      @media (min-width:768px) and (max-width: 1025px) {
+        margin-left: 0px;
+        width: 100%;
+      }
       @media #{media('<',m)} {
         margin-left: 0px;
         width: rem(335px);
@@ -120,6 +138,12 @@
     &-vector{
       width: 562px;
       height: 578px;
+
+      @media (min-width:768px) and (max-width: 1025px) {
+        width: auto;
+        height: auto;
+      }
+
       @media #{media("<", m)} {
         width: rem(335px);
         height: rem(603px);
@@ -168,6 +192,11 @@
       margin-left: 600px;
       width: 560px;
       
+      @media (min-width:768px) and (max-width: 1025px) {
+        width: 100%;
+        margin-left: 0px;
+      }
+
       @media #{media('<',m)} {
         margin-top: 20px;
         margin-left: 0px;
@@ -180,6 +209,7 @@
       width: calc(rem(375px) + 20px);
       margin-left: -20px;
       padding-left: 20px;
+      padding-right: 40px;
       overflow-x: scroll;
       @include scrollbar-hidden();
     }

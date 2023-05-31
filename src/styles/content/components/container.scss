@@ -6,6 +6,12 @@
   @media #{media("<", t)} {
     width: auto;
   }
+
+  &.custom-oparations {
+    @media #{media(">", ll)} {
+      max-width: 100%;
+    }
+  }
 }
 
 .container-content {
