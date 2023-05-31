@@ -1,15 +1,29 @@
 .human-capital {
   margin-top: 100px;
 
+  @media #{media("<", m)} {
+    margin-top: 40px;
+  }
   &__title {
     margin-bottom: 40px;
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+    }
   }
 
   &__subtitle {
+    width: 360px;
     margin-bottom: 40px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
 
+    
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+      padding-top: 8px;
+      font-size: rem(20px);
+      line-height: 120%;
+    }
   }
 
   &__hero {
@@ -18,34 +32,50 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
+
+      @media #{media("<", m)} {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      }
     }
 
     &-col {
       &:nth-child(1) {
         width: 360px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
 
       &:nth-child(2) {
         width: 760px;
+
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
 
       .human {
         margin-top: 40px;
+
+        @media #{media("<", m)} {
+          margin-top: 20px;
+        }
       }
     }
 
     &-text {
-
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
-
       &.bold {
         font-weight: 700;
         font-size: 20px;
         line-height: 150%;
         color: color(dark);
+
+        @media #{media("<", m)} {
+          font-size: rem(14px);
+          line-height: 150%;
+        }
       }
 
       &.top {
@@ -60,6 +90,10 @@
   padding-top: 20px;
   border-top: 1px solid #045C25;
 
+  @media #{media("<", m)} {
+    margin-top: 40px;
+    padding-top: 8px;
+  }
   &__title {
     margin-bottom: 60px;
 
@@ -67,6 +101,38 @@
     font-size: 24px;
     line-height: 130%;
     color: color(dark);
+
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+      font-size: rem(18px);
+      line-height: 130%;
+    }
+  }
+
+  &__img{
+    &-container{
+      position: relative;
+      @media #{media("<", m)} {
+        width: calc(rem(375px) + 20px);
+        padding: 0px 40px 20px 20px;
+        margin-left: -20px;
+        overflow-x: scroll;
+        @include scrollbar-hidden();
+      }
+
+      .ge-card{
+        position: absolute;
+        width: 360px;
+        right: 0px;
+        bottom: 0px;
+      }
+    }
+    &-table{
+      @media #{media("<", m)} {
+        width: rem(781px);
+        height: rem(1067px);
+      }
+    }
   }
 
   &__number {
@@ -74,6 +140,10 @@
     padding-top: 20px;
     border-top: 1px solid #045C25;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 5px;
+    }
     &-title {
       margin-bottom: 40px;
 
@@ -81,6 +151,12 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -93,6 +169,14 @@
     display: flex;
     gap: 27px;
 
+    @media #{media("<", m)} {
+      border-top: 1px solid color(borders);
+      margin-top: 40px;
+      padding-top: 5px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
     &.first {
       margin-top: 100px;
     }
@@ -100,10 +184,16 @@
     &-col {
       &:nth-child(1) {
         width: 571px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
 
       &:nth-child(2) {
         width: 562px;
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
     }
 
@@ -114,6 +204,12 @@
       font-size: 24px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: 17px;
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
     &-cubes {
@@ -122,9 +218,13 @@
       gap: 23px;
 
       width: 355px;
-
+      
       &.no-wrap {
         flex-wrap: nowrap;
+      }
+
+      @media #{media("<", m)} {
+        width: 100%;
       }
     }
 
@@ -136,6 +236,12 @@
       font-size: 18px;
       line-height: 160%;
       color: color(dark);
+    }
+
+    &.second{
+      @media #{media("<", m)} {
+        margin-top: 75px;
+      }
     }
   }
 
@@ -166,6 +272,11 @@
       &.grey {
         background: #C4DACC;
       }
+
+      @media #{media("<", m)} {
+        width: rem(15px);
+        height: rem(15px);
+      }
     }
 
     &-text {
@@ -174,6 +285,11 @@
       line-height: 120%;
       color: color(dark);
       white-space: nowrap;
+
+      @media #{media("<", m)} {
+        font-size: rem(10px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -182,16 +298,31 @@
 
     display: flex;
     gap: 40px;
+
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(1, fr);
+      gap: 20px;
+    }
   }
 
   &__subcol {
     width: 560px;
 
+    @media #{media("<", m)} {
+      width: 100%;
+    }
     &-title {
       font-weight: 700;
       font-size: 20px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
     &-item {
@@ -217,6 +348,18 @@
 
         width: 20px;
         height: 20px;
+
+        @media #{media("<", m)} {
+          background-size: cover;
+
+          width: rem(12px);
+          height: rem(12px);
+        }
+      }
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
       }
     }
   }
@@ -227,6 +370,10 @@
   padding-top: 20px;
   border-top: 1px solid #045C25;
 
+  @media #{media("<", m)} {
+    margin-top: 40px;
+    padding-top: 8px;
+  }
   &__title {
     margin-bottom: 40px;
 
@@ -235,6 +382,11 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     color: color(dark);
+
+    @media #{media("<", m)} {
+      font-size: rem(20px);
+      line-height: 120%;
+    }
   }
 
   &__text {
@@ -244,6 +396,13 @@
     font-size: 18px;
     line-height: 160%;
     color: color(dark);
+
+    @media #{media("<", m)} {
+      margin-left: 0px;
+
+      font-size: rem(14px);
+      line-height: 160%;
+    }
   }
 
   &__hr {
@@ -251,6 +410,10 @@
     padding-top: 20px;
     border-top: 1px solid #045C25;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &-title {
       margin-bottom: 40px;
 
@@ -258,18 +421,36 @@
       font-size: 24px;
       line-height: 130%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+        font-size: rem(18px);
+        line-height: 130%;
+      }
     }
 
     &-row {
       display: flex;
       gap: 40px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     &-col {
       width: 560px;
 
+      @media #{media("<", m)} {
+        width: 100%;
+      }
       &:nth-child(2) {
         width: 566px;
+
+        @media #{media("<", m)} {
+          width: 100%;
+        }
       }
     }
 
@@ -293,16 +474,27 @@
 
         width: 20px;
         height: 20px;
+
+        @media #{media("<", m)} {
+          background-size: cover;
+
+          width: rem(12px);
+          height: rem(12px);
+        }
+      }
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
       }
     }
 
     &-text {
       margin-top: 40px;
 
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
+      @media #{media("<", m)} {
+        margin-top: 20px;
+      }
     }
 
     &-subtitle {
@@ -317,6 +509,15 @@
 
       &.second {
         margin-top: 40px;
+
+        
+      }
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+        width: rem(335px);
+        font-size: rem(14px);
+        line-height: 150%;
       }
     }
 
@@ -338,7 +539,16 @@
           font-size: 15px;
           line-height: 160%;
           color: color(dark);
+
+          @media #{media("<", m)} {
+            font-size: rem(12px);
+            line-height: 160%;
+          }
         }
+      }
+
+      @media #{media("<", m)} {
+        margin-bottom: 12px;
       }
     }
   }
@@ -351,12 +561,6 @@
 
   &__title {
     margin-bottom: 40px;
-
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    color: color(dark);
   }
 
   &__text {
@@ -367,12 +571,25 @@
     font-size: 18px;
     line-height: 160%;
     color: color(dark);
+
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+      width: rem(335px);
+
+      font-size: rem(14px);
+      line-height: 160%;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+
+    @media #{media("<", m)} {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 8px;
+    }
   }
 
   &__item {
@@ -386,14 +603,23 @@
 
     &:nth-child(2) {
       border-left: 1px solid #045C25;
+      @media #{media("<", m)} {
+        border-left: 1px solid #69DA91;
+      }
     }
 
     &:nth-child(3) {
       border-left: 1px solid #045C25;
+      @media #{media("<", m)} {
+        border-left: 1px solid #69DA91;
+      }
     }
 
     &:nth-child(6) {
       border-left: 1px solid #045C25;
+      @media #{media("<", m)} {
+        border-left: 1px solid #69DA91;
+      }
     }
 
     &-title {
@@ -403,6 +629,11 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
     &-text {
@@ -412,6 +643,31 @@
       font-size: 15px;
       line-height: 160%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        width: rem(246px);
+
+        font-size: rem(12px);
+        line-height: 160%;
+      }
+    }
+
+
+    &-icon{
+      @media #{media("<", m)} {
+        svg{
+          width: rem(35px);
+          height: rem(31px);
+        }
+      }
+    }
+
+    @media #{media("<", m)} {
+      gap: 14px;
+      padding: rem(20px);
+
+      width: rem(335px);
+      height: auto;
     }
   }
 }

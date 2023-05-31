@@ -7,8 +7,8 @@ mixin human-capital
         .human-capital__hero-col
           .human-capital__hero-text.bold К концу 2022 года в ОТЛК ЕРА фактически работали 160 человек (штатная численность — 170). Из них 69 человек занимают руководящие должности.<br> Также у нас 88 специалистов и 6 служащих. 
         .human-capital__hero-col
-          .human-capital__hero-text.top В 2022 году объемы контейнерных перевозок росли, география их расширялась, увеличивался парк фитинговых платформ. ОТЛК ЕРА внедрила систему управления рисками. Сильно изменились и процессы закупочной деятельности. 
-          .human-capital__hero-text Все это повлекло за собой изменения в организационной структуре компании и штатном расписании для того, чтобы и дальше развивать клиентский сервис, поддерживать высокое качество услуг, управлять собственным парком фитинговых платформ, проводить мониторинг и комплексный анализ рыночной конъюнктуры.
+          .human-capital__hero-text.top.text В 2022 году объемы контейнерных перевозок росли, география их расширялась, увеличивался парк фитинговых платформ. ОТЛК ЕРА внедрила систему управления рисками. Сильно изменились и процессы закупочной деятельности. 
+          .human-capital__hero-text.text Все это повлекло за собой изменения в организационной структуре компании и штатном расписании для того, чтобы и дальше развивать клиентский сервис, поддерживать высокое качество услуг, управлять собственным парком фитинговых платформ, проводить мониторинг и комплексный анализ рыночной конъюнктуры.
           .ge-card.green.human
               .ge-card__top
                 .ge-card__num.green +12%
@@ -19,12 +19,27 @@ mixin organization-structure
   .container-content
     section.organization-structure
       .organization-structure__title Организационная структура ОТЛК ЕРА на 31 декабря 2022 года
-      .organization-structure__img-table 
-        +picture('organization-structure-img.png')
+      .organization-structure__img-container
+        .organization-structure__img-table 
+          +picture('organization-structure-img.png')
+        .ge-card.green.desktop 
+          .ge-card__top
+            .ge-card__num.green 170
+            .ge-card__text единиц 
+          .ge-card__bot
+            .ge-card__text-grey.custom-cuchurina Штатная численность
+      .ge-card.green.mobile
+        .ge-card__top
+          .ge-card__num.green 170
+          .ge-card__text единиц 
+        .ge-card__bot
+          .ge-card__text-grey.custom-cuchurina Штатная численность
       .organization-structure__number
         .organization-structure__number-title Численность персонала компании
-        .organization-structure__number-table
+        .organization-structure__number-table.desktop
           +picture('structure-number-table.png')
+        .organization-structure__number-table.mobile
+          +picture('structure-number-table-mobile.png')
       .organization-structure__personal.first  
         .organization-structure__personal-col 
           .organization-structure__personal-title Структура персонала по категориям, человек
@@ -44,7 +59,7 @@ mixin organization-structure
         .organization-structure__personal-col 
           .organization-structure__personal-grafic 
             +picture('structure-personale-1.png')
-      .organization-structure__personal
+      .organization-structure__personal.second
         .organization-structure__personal-col 
           .organization-structure__personal-title Структура персонала по образованию, человек
           .organization-structure__personal-cubes.category  
@@ -79,13 +94,13 @@ mixin organization-structure
             .organization-structure__cube 
               .organization-structure__cube-rect.grey 
               .organization-structure__cube-text Старше 50
-          .organization-structure__personal-text Средний возраст сотрудников компании в 2022 году составил 39 лет, это отражает сбалансированность штата. Специалисты со стажем передают свой опыт молодым, а те, в свою очередь, содействуют дальнейшему развитию компании, внедряя инновации.
+          .organization-structure__personal-text.desktop Средний возраст сотрудников компании в 2022 году составил 39 лет, это отражает сбалансированность штата. Специалисты со стажем передают свой опыт молодым, а те, в свою очередь, содействуют дальнейшему развитию компании, внедряя инновации.
         .organization-structure__personal-col 
           .organization-structure__personal-grafic 
             +picture('structure-personale-3.png')
       .organization-structure__personal 
         .organization-structure__personal-col 
-          .organization-structure__personal-title Структура персонала по возрасту, человек
+          .organization-structure__personal-title Структура персонала по полу, человек
           .organization-structure__personal-cubes.category  
             .organization-structure__cube 
               .organization-structure__cube-rect.green 
@@ -104,43 +119,42 @@ mixin organization-structure
           .organization-structure__subcol-item Положение о премировании сотрудников, групп персонала «Руководство» – устанавливает принципы и условия премирования
           .organization-structure__subcol-item Положение о премировании сотрудников, групп персонала «Производственно-коммерческий персонал» и «Сопровождение бизнеса» – устанавливает принципы и условия премирования 
           .organization-structure__subcol-item  Положение об адаптации персонала — определяет единые требования и порядок организации адаптации персонала в компании. Дополнено Приложение № 6 к положению об адаптации персонала ОТЛК ЕРА
-      .container-content 
-        section.recruitment-processes
-          .recruitment-processes__title Процессы найма
-          .recruitment-processes__text При подборе персонала мы принимаем во внимание два основополагающих принципа, закрепленных в законодательстве РФ: объективность и отсутствие любых форм дискриминации. Все остальные критерии определяются стратегическими и тактическими приоритетами, системой управления персоналом и видом деятельности компании.
-          .recruitment-processes__hr 
-            .recruitment-processes__hr-title В HR-процессах ОТЛК ЕРА учитывает
-            .recruitment-processes__hr-row 
-              .recruitment-processes__hr-col
-                each item in ['Мотивацию соискателя, его совместимость с корпоративной культурой и сотрудниками', 'Уровень профессиональных знаний и опыта', 'Оценку скрытых резервов, сильных сторон соискателя, прогнозы его будущего роста', 'Общие положительные поведенческие реакции', 'Адаптивность: как быстро сотрудник сможет войти в курс дела и начать налаживать связи с коллегами, поставщиками, клиентами, руководителями']
-                  .recruitment-processes__hr-mark=item
-                .recruitment-processes__hr-text Оптимально выстроенный процесс найма предусматривает поэтапный отбор, цель которого – оценить соискателей и выявить их соответствие требованиям должности.
-              .recruitment-processes__hr-col 
-                .recruitment-processes__hr-subtitle Процессы подбора, адаптации и развития персонала в компании регламентируют
-                each item in ['Положение о подборе и адаптации персонала', 'Кодекс корпоративной этики', 'Модель корпоративных компетенций', 'Положение об обучении и развитии персонала']
-                  .recruitment-processes__hr-mark=item
-                .recruitment-processes__hr-subtitle.second Этапы отбора
-                .recruitment-processes__hr-num  
-                  .hr-num__number 1
-                  .hr-num__text Поиск и обработка резюме при просмотре всех заявок на вакансию и фильтрация по ключевым параметрам на HeadHunter
-                .recruitment-processes__hr-num  
-                  .hr-num__number 2
-                  .hr-num__text Телефонное интервью, в ходе которого компания стремится получить информацию об опыте и образовании кандидата, больше узнать о мотивах поиска нового места работы
-                .recruitment-processes__hr-num  
-                  .hr-num__number 3
-                  .hr-num__text Личное собеседование, когда компания оценивает соответствие кандидата требованиям вакантной должности, его профессиональные и личностные качества, мотивацию и совместимость с корпоративной культурой
-                .recruitment-processes__hr-num  
-                  .hr-num__number 4
-                  .hr-num__text Проверка рекомендаций у предыдущего работодателя, если остаются сомнения
-                .recruitment-processes__hr-num  
-                  .hr-num__number 5
-                  .hr-num__text Интервью с отделом безопасности компании
-                .recruitment-processes__hr-num  
-                  .hr-num__number 6
-                  .hr-num__text Медицинский осмотр при приеме на работу
+      section.recruitment-processes
+        .recruitment-processes__title Процессы найма
+        .recruitment-processes__text При подборе персонала мы принимаем во внимание два основополагающих принципа, закрепленных в законодательстве РФ: объективность и отсутствие любых форм дискриминации. Все остальные критерии определяются стратегическими и тактическими приоритетами, системой управления персоналом и видом деятельности компании.
+        .recruitment-processes__hr 
+          .recruitment-processes__hr-title В HR-процессах ОТЛК ЕРА учитывает
+          .recruitment-processes__hr-row 
+            .recruitment-processes__hr-col
+              each item in ['Мотивацию соискателя, его совместимость с корпоративной культурой и сотрудниками', 'Уровень профессиональных знаний и опыта', 'Оценку скрытых резервов, сильных сторон соискателя, прогнозы его будущего роста', 'Общие положительные поведенческие реакции', 'Адаптивность: как быстро сотрудник сможет войти в курс дела и начать налаживать связи с коллегами, поставщиками, клиентами, руководителями']
+                .recruitment-processes__hr-mark=item
+              .recruitment-processes__hr-text.text Оптимально выстроенный процесс найма предусматривает поэтапный отбор, цель которого – оценить соискателей и выявить их соответствие требованиям должности.
+            .recruitment-processes__hr-col 
+              .recruitment-processes__hr-subtitle Процессы подбора, адаптации и развития персонала в компании регламентируют
+              each item in ['Положение о подборе и адаптации персонала', 'Кодекс корпоративной этики', 'Модель корпоративных компетенций', 'Положение об обучении и развитии персонала']
+                .recruitment-processes__hr-mark=item
+              .recruitment-processes__hr-subtitle.second Этапы отбора
+              .recruitment-processes__hr-num  
+                .hr-num__number 1
+                .hr-num__text Поиск и обработка резюме при просмотре всех заявок на вакансию и фильтрация по ключевым параметрам на HeadHunter
+              .recruitment-processes__hr-num  
+                .hr-num__number 2
+                .hr-num__text Телефонное интервью, в ходе которого компания стремится получить информацию об опыте и образовании кандидата, больше узнать о мотивах поиска нового места работы
+              .recruitment-processes__hr-num  
+                .hr-num__number 3
+                .hr-num__text Личное собеседование, когда компания оценивает соответствие кандидата требованиям вакантной должности, его профессиональные и личностные качества, мотивацию и совместимость с корпоративной культурой
+              .recruitment-processes__hr-num  
+                .hr-num__number 4
+                .hr-num__text Проверка рекомендаций у предыдущего работодателя, если остаются сомнения
+              .recruitment-processes__hr-num  
+                .hr-num__number 5
+                .hr-num__text Интервью с отделом безопасности компании
+              .recruitment-processes__hr-num  
+                .hr-num__number 6
+                .hr-num__text Медицинский осмотр при приеме на работу
   .container-content 
     section.corporate-culture
-      .corporate-culture__title Корпоративная культура
+      h2.corporate-culture__title Корпоративная культура
       .corporate-culture__text У нас есть Кодекс корпоративной этики, который определяет основные нормы и правила индивидуального и коллективного поведения сотрудников. Кодекс содержит значимые для компании ценности.
       .corporate-culture__list 
         .corporate-culture__item
