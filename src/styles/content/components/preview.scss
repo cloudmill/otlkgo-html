@@ -422,6 +422,12 @@
       object-position: -40px;
     }
   }
+
+  .ecology-preview {
+    img {
+      object-position: -40px;
+    }
+  }
 }
 
 @media #{media('<',t)} {
@@ -449,7 +455,10 @@
 
     img {
       object-fit: contain;
-      object-position: left;
+
+      @media #{media('<',t)} {
+        object-position: left;
+      }
     }
 
     &__name {
@@ -498,9 +507,6 @@
       }
     }
   }
-
-
-
 }
 
 @media #{media('<',m)} {
@@ -509,7 +515,7 @@
     margin-top: 40px;
 
     &__img {
-      margin-top: 65px;
+      margin-top: 32px;
     }
 
     .desktop {
@@ -601,7 +607,6 @@
       height: 410px;
 
       img {
-        // object-fit: cover;
         object-fit: contain;
       }
     }
