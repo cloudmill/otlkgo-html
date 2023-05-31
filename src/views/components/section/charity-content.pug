@@ -7,15 +7,14 @@ mixin charity-content
           br.br
           | с инвалидностью и тем, кто оказался в сложной ситуации.
         .charity__row
-          .number-item 
-            .number-item__inner
-              .number-item__row 
-                .number-item__col
-                  p.number-item__number 327
-                .number-item__col 
-                  p.number-item__grey млн рублей
-              .number-item__row 
-                p.number-item__subtext Сумма, потраченная компанией на помощь детям и поддержку ветеранов отрасли в 2022 году реализуемых в Казахстане и России в 2022 году 
+          .item
+            .item__row 
+              .item__col 
+                p.item__number 327
+              .item__col 
+                p.item__grey млн руб
+            .item__row 
+              p.item__subtext Сумма, потраченная компанией на помощь детям и поддержку ветеранов отрасли в 2022 году, реализуемых в Казахстане и России в 2022 году 
           .charity__elem 
             .row 
               p.charity__text_green Из них по 109 млн рублей
@@ -23,7 +22,7 @@ mixin charity-content
             .row 
               p.charity__text.text Помимо этого, у акционеров компании и ее сотрудников есть осознанное желание приносить пользу обществу через программы поддержки культуры, науки, образования и спорта.
         .charity__bottom.mt-section
-          p.charity__description_bottom Мы поддерживаем различные социальные инициативы как напрямую, так и через сотрудничество с постоянными партнерами – благотворительными фондами России, Беларуси и Казахстана.
+          p.charity__description.description_big Мы поддерживаем различные социальные инициативы как напрямую, так и через сотрудничество с постоянными партнерами – благотворительными фондами России, Беларуси и Казахстана.
   section.charity-cards
     .container-content 
       .charity-cards__inner
@@ -32,19 +31,21 @@ mixin charity-content
           .charity-cards__row
             .col 
               h3.charity-cards__title Россия
-            .col
+            .col.desktop-m
               p.charity-cards__number 109 млн ₽
           .charity-cards__row
             .col 
-              p.charity-cards__description.description Помощь детям
-              ul.list.charity-cards__list
+              p.charity-cards__description.description_big.mt-0-m Помощь детям
+              ul.list.charity-cards__list.charity-cards__list
                 each item in ['Помогли детям, страдающим тяжелыми заболеваниями','Развивали вместе детско-юношеский спорт',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
                     p.text.list__text.charity-cards__text=item 
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109 млн ₽
             .col 
-              p.charity-cards__description.description Поддержка ветеранов отрасли
-              ul.charity-cards__list.list
+              p.charity-cards__description.description_big Поддержка ветеранов отрасли
+              ul.charity-cards__list.list.charity-cards__list
                 each item in ['Организовали Международный фестиваль спорта и здорового образа жизни для пенсионеров ОАО «РЖД» и пенсионеров-железнодорожников Беларуси и Казахстана.','Реализовали благотворительную программу «Книга благих дел». Она заключается в поддержке незащищенных, малообеспеченных слоев населения, а также помощи в сфере профилактики и охраны здоровья граждан.',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
@@ -54,19 +55,21 @@ mixin charity-content
           .charity-cards__row
             .col 
               h3.charity-cards__title Беларусь
-            .col
+            .col.desktop-m
               p.charity-cards__number 109 млн ₽
           .charity-cards__row
             .col 
-              p.charity-cards__description.description Помощь детям
-              ul.list.charity-cards__list
+              p.charity-cards__description.description_big.mt-0-m Помощь детям
+              ul.list.charity-cards__list.charity-cards__list
                 each item in ['Профинансировали строительство ангара для хранения подвижного состава на Детской железной дороге, а также ремонт корпусов и работы по благоустройству территории детского оздоровительного лагеря.',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
                     p.text.list__text.charity-cards__text=item 
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109 млн ₽
             .col 
               p.charity-cards__description.description Поддержка ветеранов отрасли
-              ul.charity-cards__list.list
+              ul.charity-cards__list.list.charity-cards__list
                 each item in ['Оказали материальную помощь и поддержку неработающих пенсионеров ОВ Белорусский железной дороги; закупили канцтовары для организации.','Приобрели медицинские товары, оргтехнику, программное обеспечение.']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
@@ -77,18 +80,20 @@ mixin charity-content
             .col 
               h3.charity-cards__title Казахстан
             .col
-              p.charity-cards__number 109 млн ₽
+              p.charity-cards__number.desktop-m 109 млн ₽
           .charity-cards__row
             .col 
-              p.charity-cards__description.description Помощь детям
+              p.charity-cards__description.description.mt-0-m Помощь детям
               ul.list.charity-cards__list
                 each item in ['Содействовали развитию детско-юношеского спорта в регионах Казахстана: профинансировали строительство мини-футбольного поля и универсальной площадки для баскетбола и волейбола; приобрели тренажеры и спортивный инвентарь; организовали спортивные секции для детей сотрудников компании и региональные спортивные турниры ОТЛК ЕРА.','Организовали и провели акцию «Соберем детей в школу» для многодетных семей сотрудников АО «НК «КТЖ»; купили подарки участникам художественного конкурса «Балауса болашақ» для детей сотрудников АО «НК «КТЖ»; организовали спортивное мероприятие «Папа, мама, я — спортивная семья», а также турнир по мини-футболу среди детей сотрудников обеих организаций. ']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
                     p.text.list__text.charity-cards__text=item 
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109 млн ₽
             .col 
               p.charity-cards__description.description Поддержка ветеранов отрасли
-              ul.charity-cards__list.list
+              ul.charity-cards__list.list.charity-cards__list
                 each item in ['Приобрели уголь в отопительном сезоне для пенсионеров и ветеранов железнодорожного транспорта Казахстана; закупили 150 продуктовых корзин для одиноких ветеранов отрасли и домов престарелых в честь празднования Дня победы, Дня работников транспорта и Дня пожилого человека; организовали спортивное мероприятие «Юбилейные старты», и марафон среди ветеранов, сотрудников с детьми обеих организаций; приобрели 18 информационных стендов для региональных советов ветеранов АО «НК «КТЖ», а также сувенирную продукцию в честь юбилеев членов Совета ветеранов АО «НК «КТЖ».']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
@@ -102,17 +107,18 @@ mixin charity-content
         .charity-utlc__bottom 
           .row 
             p.charity-utlc__description.description В 2022 году турнир состоялся уже в четвертый раз — не помешала даже непростая геополитическая обстановка.
-            p.charity-utlc__text.text На UTLC Cup в Москву приехали 8 команд из России, Беларуси, Казахстана, Турции, Сербии. В течение 5 дней на «Сапсан Арене» было разыграно 16 матчей, забито 55 голов.
+            p.charity-utlc__text.text.desktop-m На UTLC Cup в Москву приехали 8 команд из России, Беларуси, Казахстана, Турции, Сербии. В течение 5 дней на «Сапсан Арене» было разыграно 16 матчей, забито 55 голов.
           .row 
-            .number-item 
-              .number-item__inner
-                .number-item__row 
-                  .number-item__col
-                    p.number-item__number 18
-                  .number-item__col 
-                    p.number-item__grey млн рублей
-                .number-item__row 
-                  p.number-item__subtext Объем спонсорской помощи ОТЛК ЕРА турниру UTLC Cup 2022
+            .item
+              .item__row 
+                .item__col 
+                  p.item__number 18
+                .item__col 
+                  p.item__grey млн рублей
+              .item__row 
+                p.item__subtext Объем спонсорской помощи ОТЛК ЕРА турниру UTLC Cup 2022
+              .item__row.mobile-m
+                p.text.item__text  На UTLC Cup в Москву приехали 8 команд из России, Беларуси, Казахстана, Турции, Сербии. В течение 5 дней на «Сапсан Арене» было разыграно 16 матчей, забито 55 голов.
           .charity-utlc__box 
             .charity-utlc__img 
               +picture('charity-utlc1.jpg')

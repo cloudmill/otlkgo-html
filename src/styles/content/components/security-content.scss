@@ -34,13 +34,6 @@
     color: color(dark);
   }
 
-  &__description {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    color: color(dark);
-  }
-
   &__list {
     margin-top: 24px;
   }
@@ -153,4 +146,103 @@
     }
   }
 
+}
+
+@media #{media('<',m)} {
+  .security {
+    &__inner {
+      gap: 20px
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__row {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 12px;
+
+    }
+  }
+
+  .security-conditions {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__list {
+      margin-top: 20px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px
+    }
+
+  }
+
+  .security-training {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      justify-content: end;
+    }
+
+  }
+
+  .security-work {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 20px
+    }
+
+    &__description {
+      max-width: 100%
+    }
+  }
+
+  .security-covid {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 20px
+    }
+
+    &__description {
+      max-width: 100%
+    }
+  }
+
+  .security-fire {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 20px
+    }
+
+    &__description {
+      max-width: 100%
+    }
+  }
 }

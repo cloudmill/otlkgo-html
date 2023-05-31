@@ -7,7 +7,7 @@ mixin direction-content
           .col 
             p.direction-automation__description.description_big В 2022 году компания развивала функционал внутренней информационно-расчетной<br class='br-m'> системы,в том числе:
           .col 
-            ul.direction-automation__list 
+            ul.direction-automation__list.list 
               each item in ['Разработала и ввела в опытную эксплуатацию функционал сверки взаиморасчетов с соисполнителями','Автоматизировала процессы бизнес-подразделений компании, доработала и оптимизировала различные алгоритмы работы системы, в т.ч. формирование актов, интеграцию со смежными системами, создание заявок на перевозки и выставление счетов и т.д.','Разработала и ввела в промышленную эксплуатацию функционал расчета и учета системы ставок для клиентов компании','Оптимизировала механизм учета отцепок вагонов в пути следования  для корректного расчета расходных услуг оплаты тарифа на транзитные контейнерные поезда',]
                 li.direction-automation__item 
                   +mark-text-svg.direction-automation-svg
@@ -21,7 +21,7 @@ mixin direction-content
         .direction-site__img.desktop-m
           +picture('direction-site.jpg')
         .direction-site__img.mobile-m
-          +picture('direction-site.jpg')
+          +picture('direction-site-mobile.jpg')
   section.direction-documents.mt-section
     .container-content 
       .direction-documents__inner 

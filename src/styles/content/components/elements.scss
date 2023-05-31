@@ -17,6 +17,8 @@
     &:nth-child(3) {
       margin-top: 24px;
       width: 560px;
+
+
     }
   }
 
@@ -79,6 +81,12 @@
 
     &__row:nth-child(3) {
       width: auto;
+      margin-top: 12px;
+
+    }
+
+    &__row {
+      margin-top: 12px;
     }
 
     &__title {
@@ -137,6 +145,12 @@
   }
 }
 
+.ebitda {
+  .block-diagram__text {
+    max-width: 560px;
+  }
+}
+
 @media #{media('<',m)} {
   .block-diagram {
     &__inner {
@@ -186,6 +200,14 @@
     font-size: 15px;
     line-height: 150%;
     color: color(dark);
+  }
 
+  @media #{media('<',m)} {
+    padding: 26px;
+    padding-left: 35px;
+
+    &__text {
+      font-size: 12px;
+    }
   }
 }

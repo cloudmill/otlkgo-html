@@ -61,10 +61,6 @@
   &__item {
     display: flex;
     gap: 8px;
-
-    &:last-child {
-      transform: translateY(-40px);
-    }
   }
 
   &-svg {
