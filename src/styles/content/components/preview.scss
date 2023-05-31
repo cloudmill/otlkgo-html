@@ -39,7 +39,7 @@
       color: color(dark);
     }
 
-    &.shmidt{
+    &.shmidt {
       @media #{media("<", m)} {
         width: rem(203px);
       }
@@ -110,7 +110,7 @@
 
   &__img {
     position: relative;
-    // height: 640px;
+    height: 100%;
     z-index: $index-1;
 
     max-width: 650px;
