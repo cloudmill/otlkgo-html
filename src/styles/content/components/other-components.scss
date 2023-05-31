@@ -7,7 +7,13 @@
   font-size: 18px;
   line-height: 160%;
   color: color(dark);
-
+  @media (min-width:1026px) and (max-width: 1300px) {
+    margin-left: 670px;
+  }
+  @media (min-width:768px) and (max-width: 1025px) {
+    width: 100%;
+    margin-left: 0px;
+  }
   @media #{media("<", m)} {
     margin-top: 20px;
     margin-left: 0px;

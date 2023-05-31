@@ -2,11 +2,19 @@
   position: relative;
   padding: 81px 30px 47px;
   display: flex;
-  gap: 40px;
+  gap: 150px;
   margin-top: 20px;
 
   background: #F4F4F4;
 
+  @media #{media(">", ll)} {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  @media (min-width:768px) and (max-width: 1025px) {
+    gap: 40px;
+  }
   @media #{media("<", m)} {
     padding: 0px;
     margin-top: 24px;
@@ -26,7 +34,22 @@
       }
     }
     &:nth-child(2){
-      width: 560px;
+      max-width: 560px;
+      
+      @media #{media(">", ll)} {
+        max-width: 870px;
+      }
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
+    }
+    &:nth-child(3){
+      max-width: 560px;
+      
+      @media #{media(">", ll)} {
+        max-width: 870px;
+      }
       @media #{media("<", m)} {
         width: rem(335px);
       }
@@ -37,16 +60,23 @@
   &__title{
     margin-bottom: 32px;
     width: 359px;
+
+    @media #{media(">", ll)} {
+      width: 670px;
+    }
   }
 
   &__text{
-    width: 540px;
+    max-width: 540px;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
     color: color(dark);
 
+    @media (min-width:768px) and (max-width: 1025px) {
+      max-width: 400px;
+    }
     @media #{media("<", m)} {
       width: 311px;
 
@@ -69,7 +99,5 @@
     }
   }
 
-  .preview__line{
-    width: 1340px;
-  }
+  
 }

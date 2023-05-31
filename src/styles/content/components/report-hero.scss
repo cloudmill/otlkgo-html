@@ -270,7 +270,11 @@
         width: rem(810px);
       }
     }
-
+    &.grom{
+      @media (max-width: 1025px) {
+        font-size: 35px;
+      }
+    }
   }
 
   &__list{
@@ -352,6 +356,10 @@
       bottom: 10px;
       right: 13px;
     }
-
+    &.grom{
+      @media (min-width: 768px) and (max-width: 1025px) {
+        font-size: 200px;
+      }
+    }
   }
 }

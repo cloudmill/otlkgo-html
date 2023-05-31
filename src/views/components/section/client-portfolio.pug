@@ -7,12 +7,12 @@ mixin client-portfolio
           .transportation-development__col 
             .transportation-development__subtitle В 2022 году наметилась тенденция к увеличению объемов перевозок грузов по маршруту Китай–РФ в сервисах ОТЛК ЕРА
           .transportation-development__col
-            .transportation-development__text.top Запрос на альтернативные логистические цепочки, а также механизмы оплаты — например, расчеты в китайском юане — способствовали увеличению спроса со стороны клиентов Общества на перевозки в этом направлении.
+            .transportation-development__text.top.text Запрос на альтернативные логистические цепочки, а также механизмы оплаты — например, расчеты в китайском юане — способствовали увеличению спроса со стороны клиентов Общества на перевозки в этом направлении.
             .transportation-development__cards 
               .ge-card.green
                 .ge-card__top
                   .ge-card__num.green 12
-                  .ge-card__text договоров в юанях 
+                  .ge-card__text.mobile-mini договоров в юанях 
                 .ge-card__bot
                   .ge-card__text-grey Было заключено в 2022 году
               .ge-card.green
@@ -23,16 +23,18 @@ mixin client-portfolio
                   .ge-card__text-grey Объемы перевозок по таким договорам
         .transportation-development__row.mid
           .transportation-development__col.mid
-            .transportation-development__text Всего в 2022 году были задействованы 26 различных станций назначения ОАО «РЖД» — в два раза больше предыдущих показателей. Основной рост объемов перевозок пришелся на станции Московского ж/д узла, показатели 2022 года достигли значения в 130 564 ДФЭ, а сервисом на данном направлении воспользовались 42 клиента ОТЛК ЕРА.
+            .transportation-development__text.text Всего в 2022 году были задействованы 26 различных станций назначения ОАО «РЖД» — в два раза больше предыдущих показателей. Основной рост объемов перевозок пришелся на станции Московского ж/д узла, показатели 2022 года достигли значения в 130 564 ДФЭ, а сервисом на данном направлении воспользовались 42 клиента ОТЛК ЕРА.
           .transportation-development__col.mid
             h4.transportation-development__heading Рост суммарного объема перевозок Китай–РФ к 2021 году
-            .transportation-development__vector 
+            .transportation-development__vector.desktop 
               +picture('transportation-development.png')
+            .transportation-development__vector.mobile 
+              +picture('transportation-development-mobile.png')
         .transportation-development__case
           .transportation-development__case-top
             .transportation-development__case-name Кейс
             .transportation-development__case-texts 
-              .transportation-development__case-title Рефрижераторные перевозки
+              h3.transportation-development__case-title Рефрижераторные перевозки
               .transportation-development__case-subtitle ОТЛК ЕРА совместно с компанией АО «РЖД Логистика» открыли сервис по отправке полносоставных рефрижераторных поездов из Китая в Россию через казахстанско-китайскую границу. 
           .transportation-development__case-bot
             .transportation-development__case-card
@@ -43,8 +45,8 @@ mixin client-portfolio
                 .ge-card__bot
                   .ge-card__text-grey Отправлено с соблюдением специальных температурных режимов 
             .transportation-development__case-desk 
-              .transportation-development__case-text.top К перевозке быстрозамороженной продукции (тунец, треска, масляная рыба, минтай, коктейль из морепродуктов и т.д.) и замороженных фруктов и овощей (манго, абрикосы, персики, клубника, черная смородина и т.д.) предъявляются особые требования. Такие грузы требуют применения технологии перегруза по прямому варианту для минимизации сроков нахождения состава на пограничных пунктах пропуска, а также безотлагательного принятия решений при возникновении каких-либо проблем с рефрижераторным оборудованием в пути следования. Решения могут быть связаны, например, с допуском ремонтных бригад для осмотра на предмет мелкого ремонта или подключения к сети электропитания. 
-              .transportation-development__case-text В этой связи стоит отметить слаженную работу совместно с компанией АО «РЖД Логистика», которая помогла максимально сократить время пребывания груза на пограничных переходах. В итоге мы добились хороших показателей общего транзитного времени, так важного для скоропортящихся грузов. Среднее транзитное время по рефрижераторным перевозкам составило 15 суток, а минимальные значения доходили до 10 суток при перевозке по маршруту Вэньдэн — Достык — Селятино. 
+              .transportation-development__case-text.top.text К перевозке быстрозамороженной продукции (тунец, треска, масляная рыба, минтай, коктейль из морепродуктов и т.д.) и замороженных фруктов и овощей (манго, абрикосы, персики, клубника, черная смородина и т.д.) предъявляются особые требования. Такие грузы требуют применения технологии перегруза по прямому варианту для минимизации сроков нахождения состава на пограничных пунктах пропуска, а также безотлагательного принятия решений при возникновении каких-либо проблем с рефрижераторным оборудованием в пути следования. Решения могут быть связаны, например, с допуском ремонтных бригад для осмотра на предмет мелкого ремонта или подключения к сети электропитания. 
+              .transportation-development__case-text.text В этой связи стоит отметить слаженную работу совместно с компанией АО «РЖД Логистика», которая помогла максимально сократить время пребывания груза на пограничных переходах. В итоге мы добились хороших показателей общего транзитного времени, так важного для скоропортящихся грузов. Среднее транзитное время по рефрижераторным перевозкам составило 15 суток, а минимальные значения доходили до 10 суток при перевозке по маршруту Вэньдэн — Достык — Селятино. 
           .transportation-development__case-vector 
             +picture('transportation-development-case.png') 
         .transportation-development__paperless
@@ -52,7 +54,7 @@ mixin client-portfolio
           .transportation-development__paperless-text Мы — интеграционная компания на пространстве 1520 мм, которая активно работает над подготовкой и внедрением цифровых технологий на своих маршрутах. Осознавая, что именно цифровые технологии станут в 2023-2024 годах основным конкурентным преимуществом логистических компаний, ОТЛК ЕРА продолжает работу по поиску оптимального решения.
           .transportation-development__paperless-project 
             .transportation-development__paperless-col 
-              .transportation-development__paperless-grey Проект
+              .transportation-development__paperless-grey.desktop Проект
               .transportation-development__paperless-minititle Идея
               .transportation-development__paperless-minitext Цифровое сопровождение перевозок на колее 1 520 мм.
               .transportation-development__paperless-minititle Подход
@@ -62,6 +64,7 @@ mixin client-portfolio
               .transportation-development__paperless-minititle Ожидаемый результат
               .transportation-development__paperless-minitext Проект позволит полностью оцифровать в ЕАЭС как перевозки, так и государственный контроль на внешних границах.
             .transportation-development__paperless-col
+              .transportation-development__paperless-grey.mobile Проект
               .transportation-development__paperless-subtitle Цифровой экспедитор
               .transportation-development__paperless-text В возможной перспективе реализация проекта продемонстрирует партнерам в Европе и Китае готовность евразийской цифровой инфраструктуры к переходу на современные технологии и повысит привлекательность евразийских железнодорожных коридоров.
               .formation-park__structure-plug.paperless 

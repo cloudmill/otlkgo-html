@@ -16,11 +16,11 @@ mixin report-hero-3
       .report-hero__col
         .report-hero__col-background.mobile 
           +picture('report-hero2-mobile.png')
-        .report-hero__title Результаты <br>деятельности<br>в 2022 году
+        .report-hero__title.grom Результаты <br>деятельности<br>в 2022 году
         .report-hero__list
           each item in ['Операционные результаты', 'Формирование парка: оптимизация', 'Клиентский портфель', 'Безбумажные перевозки: инновационное развитие', 'Главные направления цифрового развития', 'Сохранить достигнутое. Финансовый обзор', 'С заботой о деловом климате']
             a.report-hero__list-item(href="#" target='blank')=item
-        .report-hero__number 3
+        .report-hero__number.grom 3
 
 mixin report-hero-about 
   section.report-hero

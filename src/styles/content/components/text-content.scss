@@ -5,6 +5,10 @@ h2 {
   letter-spacing: -0.03em;
   color: color(black);
 
+  @media (min-width:768px) and (max-width: 1025px) {
+    font-size: 40px;
+  }
+
   @media #{media('<',m)} {
     font-size: 24px;
   }

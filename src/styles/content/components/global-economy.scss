@@ -500,8 +500,20 @@
       color: color(light-green);
     }
 
+    &.large {
+      @media #{media('<',m)} {
+        font-size: 44px;
+      }
+      
+    }
     @media (max-width: 1025px) {
       font-size: 50px;
+    }
+
+    @media #{media('<',m)} {
+      margin-bottom: 12px;
+
+      font-size: 60px;
     }
   }
 
