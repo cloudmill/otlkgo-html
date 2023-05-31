@@ -565,6 +565,12 @@
       &.large-360 {
         max-width: 360px;
       }
+
+      &.custom-cuchurina{
+        @media #{media('<',m)} {
+          width: rem(268px);
+        }
+      }
     }
   }
 }
