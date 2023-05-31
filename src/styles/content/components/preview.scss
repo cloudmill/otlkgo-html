@@ -104,7 +104,7 @@
 
   &__img {
     position: relative;
-    height: 640px;
+    // height: 640px;
     z-index: $index-1;
 
     max-width: 650px;
@@ -585,9 +585,6 @@
       height: auto;
     }
 
-    &__img {
-      height: 400px;
-    }
 
     &__name {
       font-size: 14px;
