@@ -395,17 +395,33 @@
     border-top: 1px solid color(green);
     padding-top: 20px;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 12px;
+    }
     &-title {
       margin-bottom: 40px;
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &-row {
       display: flex;
       gap: 40px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
     }
 
     &-col {
       width: 560px;
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
 
     &-text {
@@ -418,6 +434,9 @@
 
       &.custom-1 {
         max-width: 543px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
 
@@ -428,6 +447,13 @@
       font-size: 20px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -436,13 +462,28 @@
     border-top: 1px solid color(green);
     padding-top: 20px;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 12px;
+    }
     &-title {
       margin-bottom: 40px;
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        width: rem(187px);
+      }
     }
 
     &-row {
       display: flex;
       gap: 40px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
     }
 
     &-subtitle {
@@ -452,19 +493,25 @@
       font-size: 20px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
     &-text {
       width: 760px;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
 
     &-text {
       margin-bottom: 12px;
-
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
     }
   }
 }
@@ -834,23 +881,35 @@
       @media #{media("<", m)} {
         margin-bottom: 20px;
 
-        font-size: rem(24px);
-        line-height: 120%;
+        font-size: rem(14px);
+        line-height: 150%;
       }
     }
 
     &-row {
       display: flex;
       gap: 0px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 9px;
+      }
     }
 
     &-col {
       &:nth-child(1) {
         width: 598px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
 
       &:nth-child(2) {
         width: 562px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
 
@@ -898,31 +957,42 @@
 
       &.top {
         margin-bottom: 40px;
+        @media #{media("<", m)} {
+          margin-bottom: 20px;
+        }
+      }
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
       }
     }
 
     &-col {
       width: 560px;
-
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
       .ge-card {
         .long {
           width: 360px;
+          @media #{media("<", m)} {
+            width: rem(335px);
+          }
         }
       }
     }
 
     &-text {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
-
       &.custom-1 {
         margin-bottom: 12px;
       }
 
       &.custom-3 {
         margin-top: 40px;
+        @media #{media("<", m)} {
+          margin-top: 20px;
+        }
       }
     }
 
@@ -931,6 +1001,11 @@
       font-size: 20px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
   }
 }

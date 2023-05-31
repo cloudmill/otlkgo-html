@@ -179,6 +179,9 @@
     }
     &.first {
       margin-top: 100px;
+      @media #{media("<", m)} {
+        margin-top: 40px;
+      }
     }
 
     &-col {
