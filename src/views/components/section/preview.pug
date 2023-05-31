@@ -376,47 +376,50 @@ mixin energy-preview
             +picture('porochay.png')
 
 
-
+////
 mixin human-capital-preview
-  section.preview
+  section.preview.trends-preview
     .container 
       .preview__inner
         .preview__line
-        .preview__col-left.alt
-          .preview-left__top 
-            .preview__text-normal В течение 2022 года в компанию было принято 27 человек — на 4 человека, или на 12,5%, больше, чем в 2021 году. Уволено 9 человек.
-            .ge-card.green
-                .ge-card__top
-                  .ge-card__num.green 5,88%
-                .ge-card__bot
-                  .ge-card__text-grey Коэффициент текучести кадров в 2022 году при норме в 5-7% 
+        .preview__col-left
+          .preview__text-normal.desktop В течение 2022 года в компанию было принято 27 человек — на 4 человека, или на 12,5%, больше, чем в 2021 году. Уволено 9 человек.
+          .ge-card.green.desktop
+            .ge-card__top
+              .ge-card__num.green 5,88%
+            .ge-card__bot
+              .ge-card__text-grey Коэффициент текучести кадров в 2022 году при норме в 5-7% 
           .row
+            .preview__img.transit-preview__img.mobile-t
+              +picture('cuchurina-preview-mobile.png')
             p.preview__name Кучурина <br/>Ирина Владимировна 
-            p.preview__job.alt Главный специалист по кадровому администрированию
+            p.preview__job Главный специалист по кадровому администрированию
+            .preview__text-normal.mobile В течение 2022 года в компанию было принято 27 человек — на 4 человека, или на 12,5%, больше, чем в 2021 году. Уволено 9 человек.
+            .ge-card.green.mobile
+              .ge-card__top
+                .ge-card__num.green 5,88%
+              .ge-card__bot
+                .ge-card__text-grey.custom-cuchurina Коэффициент текучести кадров в 2022 году при норме в 5-7% 
         .preview__col-right
-          +column-svg.preview__elem_1
-          +column-small-svg.preview__elem_2
-          +double-column-svg.preview__elem_3.alt
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t.safari-debug
             +picture('cuchurina-preview.png')
 
 
 mixin corporate-responsibility-preview
-  section.preview
+  section.preview.trends-preview
     .container 
       .preview__inner
         .preview__line
-        .preview__col-left.alt
-          .preview-left__top 
-            h2.preview__title Корпоративная социальная <br>ответственность
+        .preview__col-left
+          h2.preview__title.shmidt Корпоративная социальная <br/>ответственность
+          .preview__text.desktop Ключевой фактор роста перевозок — наличие у компании необходимого количества подвижного состава для крупнотоннажных контейнеров. В 2019–2022 годах на волне спроса мы серьезно увеличили парк. 
           .row
-            p.preview__name Шмидт <br/>Елена Вячеславовна  
-            p.preview__job.alt Главный специалист по внутренним коммуникациям
+            .preview__img.transit-preview__img.mobile-t
+              +picture('shmidt-mobile.png')
+            p.preview__name Шмидт <br/>Елена Вячеславовна 
+            p.preview__job Главный специалист по внутренним коммуникациям
         .preview__col-right
-          +column-svg.preview__elem_1
-          +column-small-svg.preview__elem_2
-          +double-column-svg.preview__elem_3.alt
-          .preview__img.safari-debug 
+          .preview__img.transit-preview__img.desktop-t.safari-debug
             +picture('shmidt.png')
 
 
