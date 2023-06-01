@@ -127,9 +127,17 @@
       width: 740px;
 
       background: #69DA91;
+
+      @media #{media(">", ll)} {
+        width: 51.5%;
+      }
     }
     &.main-right{
       width: 700px;
+
+      @media #{media(">", ll)} {
+        width: 48.5%;
+      }
     }
   }
 
