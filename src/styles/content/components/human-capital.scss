@@ -179,6 +179,9 @@
     }
     &.first {
       margin-top: 100px;
+      @media #{media("<", m)} {
+        margin-top: 40px;
+      }
     }
 
     &-col {
@@ -384,6 +387,8 @@
     color: color(dark);
 
     @media #{media("<", m)} {
+      margin-bottom: 20px;
+      
       font-size: rem(20px);
       line-height: 120%;
     }
@@ -559,8 +564,15 @@
   padding-top: 20px;
   border-top: 1px solid #69DA91;
 
+  @media #{media("<", m)} {
+    margin-top: 40px;
+    padding-top: 8px;
+  }
   &__title {
     margin-bottom: 40px;
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
