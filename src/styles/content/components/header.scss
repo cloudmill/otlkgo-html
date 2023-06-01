@@ -368,6 +368,17 @@
                     color: color(green);
                 }
             }
+            &.active{
+                border-bottom: 1px solid color(green);
+                
+                &>.header-menu__item-text {
+                    color: color(green);
+                }
+
+                &>.header-menu__item-num {
+                    color: color(green);
+                }
+            }
         }
 
         &__code {
