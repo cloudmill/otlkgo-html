@@ -365,8 +365,6 @@
   }
 }
 
-
-
 .corruption-preview {
   margin-top: 20px;
 }
@@ -506,26 +504,14 @@
       }
     }
   }
-
-  .transit-preview,
-  .case-preview {
-
-    .row {
-      &:nth-child(1) {
-        top: 20px;
-      }
-
-      &:nth-child(2) {
-        bottom: 100px;
-      }
-    }
-  }
 }
 
 @media #{media('<',m)} {
   .preview {
     overflow: visible;
     margin-top: 40px;
+
+    max-height: 500px;
 
     &__img {
       margin-top: 32px;
@@ -567,7 +553,11 @@
       padding-left: 20px;
       margin-left: -20px;
       overflow-x: scroll;
-      @include scrollbar-hidden
+      @include scrollbar-hidden;
+
+      @media #{media('<',t)} {
+        background: white;
+      }
     }
 
     &__inner {
@@ -683,8 +673,8 @@
     }
   }
 
+
   @media #{media('<',m)} {
-    background: white;
 
     &__item {
       font-size: 14px;
@@ -698,6 +688,9 @@
   }
 
 }
+
+
+
 
 .case-preview {
   &__title {
