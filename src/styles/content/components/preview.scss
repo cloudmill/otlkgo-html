@@ -288,7 +288,9 @@
 
     &.hero-elem {
       z-index: 4;
-
+      @media (max-width:1025px) {
+        display: none;
+      }
       @media #{media("<", m)} {
         display: none;
       }

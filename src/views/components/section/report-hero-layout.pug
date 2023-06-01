@@ -23,7 +23,7 @@ mixin report-hero-3
         .report-hero__number.grom 3
 
 mixin report-hero-about 
-  section.report-hero
+  section.report-hero.report-hero_about
     .report-hero__background
       +picture('hero.png')
     .report-hero__row.about-row 
@@ -82,3 +82,18 @@ mixin report-hero-5
           each item in ['Структура корпоративного управления', 'Акционерный капитал', 'Дивидендная политика', 'Общее собрание акционеров', 'Совет директоров', 'Корпоративный секретарь и секретарь комитетов', 'Правление, генеральный директор (председатель правления)', 'Система вознаграждения', 'Система контроля', 'Управление рисками', 'Итоги 2022 года']
             a.report-hero__list-item(href="#" target='blank')=item
         .report-hero__number 5
+
+mixin report-hero-main 
+  section.report-hero
+    .report-hero__row 
+      .report-hero__col.main-left
+        .report-hero__main-logo 
+          +big-main-logo
+        .report-hero__main-title Человек 
+          <span> как главная ценность </span>
+        .report-hero__main-bot 
+          .report-hero__main-text Годовой отчет
+          .report-hero__main-number 2022
+      .report-hero__col.main-right
+        .report-hero__main-img 
+          +picture('report-hero-main.png')

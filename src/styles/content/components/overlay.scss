@@ -15,7 +15,7 @@
   &.active{
     transform: translateX(0%);
   }
-  @media #{media("<", m)} {
+  @media #{media("<", t)} {
     top: rem(56px);
 }
 }
