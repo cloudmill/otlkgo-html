@@ -529,6 +529,10 @@
 
     &__img {
       margin-top: 32px;
+
+      img {
+        object-position: top;
+      }
     }
 
     .desktop {
