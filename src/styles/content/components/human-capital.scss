@@ -33,17 +33,22 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
 
+      @media (min-width:768px) and (max-width: 1025px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+
       @media #{media("<", m)} {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
+        gap: 20px;
       }
     }
 
     &-col {
       &:nth-child(1) {
         width: 360px;
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
           width: 100%;
         }
       }
@@ -51,7 +56,7 @@
       &:nth-child(2) {
         width: 760px;
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
           width: 100%;
         }
       }
@@ -112,6 +117,11 @@
   &__img{
     &-container{
       position: relative;
+
+      @media (min-width:768px) and (max-width: 1025px) {
+        overflow-x: scroll;
+      }
+
       @media #{media("<", m)} {
         width: calc(rem(375px) + 20px);
         padding: 0px 40px 20px 20px;
@@ -402,6 +412,11 @@
     line-height: 160%;
     color: color(dark);
 
+    @media (max-width:1025px) {
+      margin-left: 0px;
+      width: 100%;
+    }
+
     @media #{media("<", m)} {
       margin-left: 0px;
 
@@ -598,6 +613,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 
+    @media (min-width:768px) and (max-width: 1025px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     @media #{media("<", m)} {
       grid-template-columns: repeat(1, 1fr);
       gap: 8px;
@@ -655,6 +674,10 @@
       font-size: 15px;
       line-height: 160%;
       color: color(dark);
+
+      @media (min-width:768px) and (max-width: 1025px) {
+        width: 100%;
+      }
 
       @media #{media("<", m)} {
         width: rem(246px);
