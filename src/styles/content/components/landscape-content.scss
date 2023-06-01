@@ -501,8 +501,9 @@
 
     &__row-bottom {
       margin-top: 20px;
-      grid-template-columns: repeat(1, 1fr);
-      row-gap: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px
     }
 
     &__img {
