@@ -10,7 +10,8 @@
     background: color(white);
     z-index: 4;
 
-    @media #{media("<", m)} {
+    
+    @media #{media("<", t)} {
         height: rem(56px);
     }
 
@@ -44,7 +45,7 @@
         cursor: pointer;
         transition: 0.3s;
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
             width: rem(56px);
             height: rem(56px);
         }
@@ -62,7 +63,7 @@
 
                 background-color: color(white);
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     width: rem(19.5px);
                 }
 
@@ -88,13 +89,13 @@
             width: 119px;
             height: 44px;
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
                 width: rem(86.5px);
                 height: rem(32px);
             }
         }
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
             margin-left: 12px;
             width: rem(86.5px);
         }
@@ -114,7 +115,7 @@
             color: color(green);
         }
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
             display: none;
         }
         @media (max-width: 1025px) {
@@ -149,7 +150,7 @@
             color: color(green);
         }
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
             display: none;
         }
     }
@@ -172,7 +173,7 @@
             &:nth-child(2) {
                 width: 84px;
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     width: rem(57px);
                     height: rem(57px);
                 }
@@ -181,12 +182,12 @@
             &:nth-child(3) {
                 width: 100px;
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     display: none;
                 }
             }
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
                 width: rem(57px);
                 height: rem(57px);
             }
@@ -198,7 +199,7 @@
                 &:nth-child(1) {
                     gap: 12px;
 
-                    @media #{media("<", m)} {
+                    @media #{media("<", t)} {
                         gap: rem(6px);
                     }
                 }
@@ -238,7 +239,7 @@
                 text-align: center;
                 color: color(black);
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     font-size: rem(14px);
                     line-height: 130%;
                 }
@@ -268,7 +269,7 @@
         border-right: 1px solid color(borders);
         z-index: 4;
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -292,7 +293,7 @@
             text-transform: uppercase;
             color: color(alt-grey);
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
                 margin-bottom: rem(24px);
                 font-size: rem(12px);
                 line-height: 100%;
@@ -317,7 +318,7 @@
             cursor: pointer;
             transition: 0.3s;
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
 
                 padding-bottom: rem(12px);
             }
@@ -333,7 +334,7 @@
                 color: color(dark);
                 transition: 0.3s;
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     width: rem(268px);
                     font-size: rem(16px);
                     line-height: 110%;
@@ -350,7 +351,7 @@
                 color: #E1E7E3;
                 transition: 0.3s;
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     font-size: rem(16px);
                     line-height: 100%;
                 }
@@ -377,7 +378,7 @@
                 height: 83px;
             }
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
                 display: none;
             }
         }
@@ -385,7 +386,7 @@
         &__download {
             display: none;
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -433,7 +434,7 @@
         z-index: 3;
         overflow-y: scroll;
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
             top: rem(56px);
             width: rem(355px);
             height: calc(100vh - rem(56px));
@@ -442,7 +443,7 @@
         &.active {
             transform: translateX(100%);
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
                 transform: translateX(0%);
                 z-index: 5;
             }
@@ -456,7 +457,7 @@
 
             height: 100%;
 
-            @media #{media("<", m)} {
+            @media #{media("<", t)} {
                 padding: rem(24px) rem(20px) rem(22px);
                 gap: rem(20px);
             }
@@ -487,7 +488,7 @@
                     background-repeat: no-repeat;
                 }
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     font-size: rem(16px);
                     line-height: 130%;
                 }
@@ -505,7 +506,7 @@
                 border-bottom: 1px solid color(borders);
                 cursor: pointer;
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     margin-top: rem(12px);
                     font-size: rem(14px);
                 }
@@ -516,7 +517,7 @@
             &-item {
                 display: none;
 
-                @media #{media("<", m)} {
+                @media #{media("<", t)} {
                     margin-top: rem(24px);
                     margin-left: rem(20px);
                     display: block;

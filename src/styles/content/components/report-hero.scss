@@ -16,8 +16,13 @@
     width: 100%;
     height: 628px;
   }
-  @media (max-width: 1025px) {
-    height: 558px;
+  
+  @media (max-width: 1024px) {
+    margin-top: rem(56px);
+    height: rem(475px);
+  }
+  @media (min-width:1024px) and (max-width: 1025px) {
+    height: 600px;
   }
   @media #{media("<", m)} {
     margin-top: 56px;
@@ -29,6 +34,7 @@
     top: 0px;
     left: 0px;
     height: 100%;
+    width: 100%;
     @media #{media(">", ll)} {
       width: 100%;
     }
@@ -151,10 +157,10 @@
     }
 
     &.hero-4{
-      top: 60px;
+      top: rem(75px);
 
       @media #{media("<", l)} {
-        height: 588px;
+        top: rem(95px);
       }
       img{
         object-fit: contain;
@@ -163,13 +169,21 @@
 
     &.page-2{
       @media (max-width: 1025px) {
-        left: 30px;
+        top: rem(105px);
       }
     }
 
     &.hero-5{
-      max-height: 700px;
-      top: rem(70px);
+      top: 130px;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        top: rem(150px);
+      }
+      picture{
+        img{
+          object-fit: contain;
+        }
+      }
     }
 
     &.grom{
@@ -257,8 +271,8 @@
       font-size: 40px;
     }
     @media (max-width: 1025px) {
-      padding: 30px 30px 30px 60px;
-      font-size: 40px;
+      padding: 30px 30px 30px 37px;
+      font-size: 32px;
     }
     @media #{media("<", m)} {
       padding: 40px 20px 0px 20px;
@@ -284,6 +298,10 @@
 
   &__list{
     margin-left: 100px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: none;
+    }
     &-item{
       display: flex;
       align-items: center;
@@ -316,14 +334,11 @@
         font-size: 13px;
       }
     }
-    @media #{media("<", m)} {
+    @media #{media("<", t)} {
       display: none;
     }
 
-    @media (max-width: 1025px) {
-      max-width: 400px;
-      margin-left: 70px;
-    }
+    
   }
 
   &__number{
@@ -365,6 +380,15 @@
       @media (min-width: 768px) and (max-width: 1025px) {
         font-size: 200px;
       }
+    }
+  }
+
+  &_about{
+    @media (min-width: 1024px) and (max-width: 1025px) {
+      height: rem(502px);
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      height: rem(380px);
     }
   }
 }
