@@ -3,12 +3,11 @@ $fs: 16px;
 
 $ff-primary: 'Manrope';
 
-
 // breakpoints, media
 $breakpoints: (
   xxl: 1920px,
   xl: 1680px,
-  ll: 1441px,
+  ll: 1440px,
   l: 1366px,
   d: 1280px,
   t: 1025px,
@@ -22,43 +21,32 @@ $breakpoints: (
   @return map.get($breakpoints, $variant);
 }
 
-@function media($direction: ">", $variant: d) {
-  @if $direction ==">" {
-    @return "(min-width: #{breakpoint($variant)})";
-  }
-
-  @else if $direction =="<" {
-    @return "(max-width: #{breakpoint($variant) - 1px})";
-  }
-
-  @else if $direction =="<=" {
-    @return "(max-width: #{breakpoint($variant)})";
-  }
-
-  @else if $direction =="mt" {
-    @return "(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(t) - 1px})";
-  }
-
-  @else if $direction =="td" {
-    @return "(min-width: #{breakpoint(t)}) and (max-width: #{breakpoint(d) - 1px})";
-  }
-
-  @else if $direction =="md" {
-    @return "(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(d) - 1px})";
+@function media($direction: '>', $variant: d) {
+  @if $direction == '>' {
+    @return '(min-width: #{breakpoint($variant)})';
+  } @else if $direction == '<' {
+    @return '(max-width: #{breakpoint($variant) - 1px})';
+  } @else if $direction == '<=' {
+    @return '(max-width: #{breakpoint($variant)})';
+  } @else if $direction == 'mt' {
+    @return '(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(t) - 1px})';
+  } @else if $direction == 'td' {
+    @return '(min-width: #{breakpoint(t)}) and (max-width: #{breakpoint(d) - 1px})';
+  } @else if $direction == 'md' {
+    @return '(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(d) - 1px})';
   }
 }
 
 // colors
 $colors: (
-  dark: #2A2E2B,
+  dark: #2a2e2b,
   white: #fff,
-  black: #181D1D,
-  grey: #F4F4F4,
-  alt-grey: #727A75,
-  green: #045C25,
-  light-green: #69DA91,
-  borders: #E8E8E8,
-
+  black: #181d1d,
+  grey: #f4f4f4,
+  alt-grey: #727a75,
+  green: #045c25,
+  light-green: #69da91,
+  borders: #e8e8e8,
 );
 
 @function color($variant: black) {
@@ -85,20 +73,17 @@ $col-part-t: '(#{$col-width-t} + #{$col-gap-m})';
 $col-part-d: '(#{$col-width-d} + #{$col-gap-d})';
 
 $transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
-$transition-duration: .5s;
+$transition-duration: 0.5s;
 $transition: $transition-duration $transition-timing-function;
 
-
-
 // transitions
-$transition: .3s;
+$transition: 0.3s;
 
-
-//z-index 
-$index-1: 1; //Для наподзающих элементов в общем потоке 
-$index-2: 2; //Для наподзающих элементов в общем потоке 
-$index-3: 3; //Для наползающих элементов вне потока 
-$index-4: 4; //Для масок 
-$index-5: 5; //Для оверлея 
-$index-6: 6; //Для сайдбаров 
+//z-index
+$index-1: 1; //Для наподзающих элементов в общем потоке
+$index-2: 2; //Для наподзающих элементов в общем потоке
+$index-3: 3; //Для наползающих элементов вне потока
+$index-4: 4; //Для масок
+$index-5: 5; //Для оверлея
+$index-6: 6; //Для сайдбаров
 $index-7: 7; //Для элементов, перекрывающих все

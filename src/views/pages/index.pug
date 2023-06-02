@@ -10,9 +10,13 @@ block grid-test
 
 
 block content
-  //- ul.index-list
-  //-   each route in data.routes
-  //-     li
-  //-       a(href=route.href)= route.title
-  +preview-2('Глобальная экономика<br>и логистический рынок<br>в 2022 году', 'имя', 'фамилия', 'Начальник отдела маркетинговых исследований', 'androsova.png')
-    p Дополнительные блоки
+  ul.index-list
+    each route in data.routes
+      li
+        a(href=route.href)= route.title
+
+  +preview-2('','Пахомов', 'Евгений Владимирович', 'Заместитель директора департамента по контролю расчетов <br>и производственного анализа коммерческой дирекции', 'pahomov.png')
+    .preview-pahomov
+      p.description Доля провинций в 2022 году
+        .preview-pahomov__img
+          +picture('share-provinces-page3.png')
