@@ -31,6 +31,10 @@
       height: 290px;
 
       background: #F4F4F4;
+
+      @media #{media(">", ll)} {
+        height: rem(360px);
+      }
     }
     &-number{
       position: relative;
