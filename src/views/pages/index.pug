@@ -10,7 +10,9 @@ block grid-test
 
 
 block content
-  ul.index-list
-    each route in data.routes
-      li
-        a(href=route.href)= route.title
+  //- ul.index-list
+  //-   each route in data.routes
+  //-     li
+  //-       a(href=route.href)= route.title
+  +preview-2('Глобальная экономика<br>и логистический рынок<br>в 2022 году', 'имя', 'фамилия', 'Начальник отдела маркетинговых исследований', 'pahomov.png')
+    p test test

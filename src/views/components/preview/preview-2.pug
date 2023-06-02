@@ -1,0 +1,22 @@
+mixin preview-2(title, name, surname, job, picture)
+  - var mobilePicture = picture.split('.').slice(0, -1).join('.') + '-mobile.' + picture.split('.').pop()
+
+  .preview
+    .preview__inner
+      .preview__line
+      .preview__left
+        .preview__row-top
+          .preview__block-top
+            h6.preview__title!= title
+            .preview__img.mobile-m
+              +picture(mobilePicture)
+        .preview__block
+          block
+        .preview__row-bottom
+          p.preview__name= name
+          p.preview__surname= surname
+          p.preview__job!= job
+      .preview__right.desktop-m
+        .preview__img
+          +picture(picture)
+
