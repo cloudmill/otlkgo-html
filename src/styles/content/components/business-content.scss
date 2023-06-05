@@ -1,6 +1,4 @@
 .business {
-  margin-top: 100px;
-
   &__inner {
     padding-top: 20px;
 
@@ -9,11 +7,6 @@
 
   &__description {
     max-width: 560px;
-
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    color: color(dark);
   }
 
   &__row {
@@ -23,61 +16,20 @@
     grid-column-gap: 40px;
   }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  &__item {
-    display: flex;
-    gap: 8px;
-  }
-
-  &-svg {
-    flex-shrink: 0;
-  }
-
   &__elem {
     margin-top: 40px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-
-
-    background: #F4F4F4;
-    border-radius: 16px;
-
-    &-text {
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 150%;
-      color: color(dark);
-    }
-
-    &-svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(-50%, -50%);
-      width: 28px;
-      height: 28px;
-
-    }
   }
-
 }
 
 .business-info {
-  margin-top: 100px;
-
 
   &__inner {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
+
+    border-top: 1px solid #045C25;
   }
 
   &__left {
@@ -86,27 +38,38 @@
     gap: 12px;
   }
 
-  &__description {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 130%;
-    color: color(dark);
-  }
-
   &__list {
     margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  }
+}
+
+@media #{media('<',m)} {
+  .business {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
+    }
   }
 
-  &__item {
-    display: flex;
-    gap: 8px
-  }
+  .business-info {
 
-  &-svg {
-    flex-shrink: 0;
-  }
+    &__inner {
+      padding-top: 8px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
+    }
 
+    &__left {
+      gap: 20px;
+    }
+
+    &__list {
+      margin-top: 20px;
+    }
+  }
 }

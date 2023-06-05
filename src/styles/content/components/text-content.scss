@@ -46,7 +46,7 @@ h5 {
   color: color(black)
 }
 
-h6{
+h6 {
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;
@@ -64,6 +64,12 @@ h6{
   font-size: 15px;
   line-height: 160%;
   color: color(black);
+
+  &-t {
+    @media #{media('<',t)} {
+      font-size: 12px;
+    }
+  }
 
   @media #{media('<',m)} {
     font-size: 12px;

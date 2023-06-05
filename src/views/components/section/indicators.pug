@@ -1,14 +1,15 @@
 mixin indicators 
-  section.indicators 
+  section.indicators.mt-section 
     .indicators__inner
       .indicators__top
-        .container-content 
-          h2.indicators__title Ключевые показатели
-          .indicators__row 
-            .col 
-              p.indicators__number 89%
-            .col 
-              p.indicators__description Доля ОТЛК ЕРА в транзитных контейнерных перевозках КНР-ЕС-КНР
+        .container-content
+          .indicators__mobile
+            h2.indicators__title Ключевые показатели
+            .indicators__row 
+              .col 
+                p.indicators__number.indicators__number_big 89%
+              .col 
+                p.indicators__description.description Доля ОТЛК ЕРА в транзитных контейнерных перевозках КНР-ЕС-КНР
           .indicators__box 
             .indicators__item 
               .row 
@@ -70,11 +71,13 @@ mixin indicators
                   p.indicators__item-number 99,997%
                 .row
                   p.indicators__item-text.text Сохранность грузов
-  section.indicators-finance 
+  section.indicators-finance.mt-section
     .container-content 
       .indicators-finance__inner 
         h6.indicators-finance__title Финансовые показатели 2020-2022 годов
-        .indicators-finance__img 
-          +picture('indicators-finance.png')
+        .indicators-finance__img.desktop
+          +picture('indicators-finance.png').indicators-finance-img
+        .indicators-finance__img.mobile
+          +picture('indicators-finance-mobile.png')
         
 
