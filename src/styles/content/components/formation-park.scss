@@ -6,6 +6,9 @@
   }
   &__picture {
     margin-top: 20px;
+    @media #{media(">", xl)} {
+      height: 100%;
+    }
   }
 
   &__row {

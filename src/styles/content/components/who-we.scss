@@ -846,6 +846,14 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 0px;
 
+        @media #{media("<", d)} {
+          padding: 0px 20px;
+          display: flex;
+          gap: 0px;
+        }
+        @media (min-width:768px) and (max-width: 1025px) {
+          padding: 0px;
+        }
         @media #{media("<", m)} {
           grid-template-columns: repeat(1, 1fr);
           gap: 24px;
@@ -860,7 +868,17 @@
           overflow: hidden;
 
           background: #F4F4F4;
-
+          @media #{media("<", d)} {
+            width: 521px;
+            height: 714px;
+          }
+          @media (min-width:768px) and (max-width: 1025px) {
+            width: 365px;
+            height: 480px;
+            flex-shrink: 0;
+            overflow: visible;
+          }
+          
           @media #{media("<", m)} {
             width: rem(335px);
 
@@ -876,7 +894,12 @@
           height: 1326px;
 
           border: 1px solid color(borders);
-
+          @media (min-width:768px) and (max-width: 1025px) {
+            padding: 84px 20px;
+            height: auto;
+            width: 356px;
+            flex-shrink: 0;
+          }
           @media #{media("<", m)} {
             padding: 84px 20px;
 
@@ -887,10 +910,18 @@
       }
 
       &-img {
-        margin-left: 15px;
-        width: 686px;
-        height: 889px;
+        width: 720px;
+        height: 780px;
 
+        
+        @media #{media("<", d)} {
+          width: 521px;
+          height: 559px;
+        }
+        @media (min-width:768px) and (max-width: 1025px) {
+          width: 365px;
+          height: 413px;
+        }
         @media #{media("<", m)} {
           margin-left: 0px;
 
@@ -955,7 +986,13 @@
             1.5s;
           background: linear-gradient(270deg, color(green) 0%, rgba(255, 255, 255, 0) 79.69%);
         }
-
+        
+        @media #{media("<", d)} {
+          width: 90%;
+        }
+        @media (min-width:768px) and (max-width: 1025px) {
+          top: 12px;
+        }
         @media #{media("<", m)} {
           top: 12px;
           width: 90%;
@@ -965,7 +1002,10 @@
       &-title {
         margin-top: 61px;
         margin-left: 40px;
-
+        @media (min-width:768px) and (max-width: 1025px) {
+          margin-top: 20px;
+          margin-left: 12px;
+        }
         @media #{media("<", m)} {
           margin-bottom: 15px;
           margin-top: 20px;
@@ -986,6 +1026,8 @@
           letter-spacing: -0.03em;
           text-transform: uppercase;
           color: color(dark);
+
+          
         }
 
         &__job {
@@ -995,6 +1037,9 @@
           color: #727A75;
         }
 
+        @media #{media("<", d)} {
+          margin-left: 335px;
+        }
         @media #{media("<", m)} {
           padding-top: 12px;
           position: relative;
@@ -1002,6 +1047,19 @@
           margin-left: 0px;
 
           background: white;
+        }
+
+        &.desktop{
+          @media (min-width:768px) and (max-width: 1025px) {
+            display: none;
+          }
+        }
+        &.devices{
+          display: none;
+          @media (min-width:768px) and (max-width: 1025px) {
+            display: block;
+            margin-left: 0px;
+          }
         }
       }
 
@@ -1013,6 +1071,10 @@
         line-height: 130%;
         color: color(dark);
 
+        @media #{media("<", t)} {
+          font-size: 20px;
+          letter-spacing: -0.02em;
+        }
         @media #{media("<", m)} {
           font-size: rem(20px);
         }
@@ -1020,7 +1082,10 @@
 
       &-text {
         margin-bottom: 12px;
-
+        @media (min-width:768px) and (max-width: 1025px) {
+          font-size: rem(12px);
+          line-height: 160%;
+        }
       }
 
       &-subtext {
@@ -1031,7 +1096,8 @@
         line-height: 150%;
         color: color(dark);
 
-        @media #{media("<", m)} {
+
+        @media #{media("<", t)} {
           margin-bottom: 8px;
 
           font-size: rem(14px);
@@ -1047,7 +1113,7 @@
         line-height: 160%;
         color: #727A75;
 
-        @media #{media("<", m)} {
+        @media #{media("<", t)} {
           font-size: rem(12px);
           line-height: 160%;
         }
@@ -1060,7 +1126,7 @@
           top: 40px;
           left: 60px;
 
-          @media #{media("<", m)} {
+          @media #{media("<", t)} {
             top: 20px;
             left: 20px;
             
@@ -1074,6 +1140,14 @@
         &.green {
           right: 60px;
           bottom: 30px;
+          @media (min-width:768px) and (max-width: 1025px) {
+            right: 264px;
+            bottom: 20px;
+            svg{
+              width: rem(72px);
+              height: rem(44px);
+            }
+          }
           @media #{media("<", m)} {
             bottom: 20px;
             right: 20px;
