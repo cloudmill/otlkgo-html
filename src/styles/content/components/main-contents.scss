@@ -98,6 +98,19 @@
       letter-spacing: -0.06em;
       text-transform: uppercase;
       color: #2A2E2B;
+
+      &.absolute{
+        
+      }
     }
+  }
+
+  &__code{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+    width: 107px;
+    height: 107px;
   }
 }
