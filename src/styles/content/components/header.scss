@@ -114,7 +114,12 @@
         &__green {
             color: color(green);
         }
-
+        @media (max-width: 1279px) {
+            display: none;
+        }
+        @media #{media(">", xl)} {
+            margin-left: 137px;
+        }
         @media #{media("<", t)} {
             display: none;
         }
@@ -149,7 +154,9 @@
         &__bot {
             color: color(green);
         }
-
+        @media (max-width: 1279px) {
+            display: none;
+        }
         @media #{media("<", t)} {
             display: none;
         }
