@@ -4,6 +4,9 @@
 
   width: 560px;
 
+  @media #{media("<", m)} {
+    width: rem(335px);
+  }
   &__title{
     margin-bottom: 20px;
 
@@ -11,6 +14,15 @@
     font-size: 20px;
     line-height: 130%;
     color: #2A2E2B;
+
+    @media #{media("<", m)} {
+      margin-bottom: 12px;
+
+      width: rem(335px);
+
+      font-size: rem(14px);
+      line-height: 150%;
+    }
   }
 
   &__row{
@@ -18,6 +30,9 @@
 
     display: flex;
     gap: 8px;
+    @media #{media("<", m)} {
+      margin-bottom: 12px;
+    }
   }
   &__num{
     font-family: 'Halvar Breitschrift';
@@ -27,6 +42,11 @@
     text-align: center;
     letter-spacing: -0.08em;
     color: #69DA91;
+
+    @media #{media("<", m)} {
+      font-size: rem(60px);
+      line-height: 80%;
+    }
   }
 
   &__texts{
@@ -47,6 +67,11 @@
       font-size: 15px;
       line-height: 160%;
       color: #727A75;
+
+      @media #{media("<", m)} {
+        font-size: rem(12px);
+        line-height: 160%;
+      }
     }
   }
 
@@ -58,6 +83,13 @@
     line-height: 140%;
     color: #2A2E2B;
 
+    @media #{media("<", m)} {
+      margin-top: 12px;
+      margin-bottom: 20px;
+
+      font-size: rem(14px);
+      line-height: 150%;
+    }
   }
 
   .recruitment-processes__hr-mark{
@@ -71,6 +103,13 @@
     font-size: 15px;
     line-height: 160%;
     color: #2A2E2B;
+
+    @media #{media("<", m)} {
+      margin-top: 12px;
+
+      font-size: rem(12px);
+      line-height: 160%;
+    }
   }
 
 }

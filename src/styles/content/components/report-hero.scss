@@ -200,6 +200,12 @@
         display: block;
         top: rem(85px);
         left: 0px;
+
+        picture{
+          img{
+            object-fit: fill;
+          }
+        }
       }
     }
 
