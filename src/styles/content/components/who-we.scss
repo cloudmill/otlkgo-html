@@ -1,12 +1,18 @@
 .who-we {
   margin-top: 100px;
 
+  @media #{media("<", m)} {
+    margin-top: 40px;
+  }
   &__hero {
     padding-top: 20px;
     padding-bottom: 40px;
     position: relative;
 
     border-bottom: 1px solid color(green);
+    @media #{media("<", m)} {
+      padding-top: 8px;
+    }
 
     &-line {
       position: absolute;
@@ -50,11 +56,9 @@
 
     &-title {
 
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 110%;
-      letter-spacing: -0.03em;
-      color: color(dark);
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &-subtitle {
@@ -66,6 +70,16 @@
       font-size: 14px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-top: 0px;
+        margin-bottom: 20px;
+
+        width: rem(335px);
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
     &-text {
@@ -73,10 +87,11 @@
 
       width: 560px;
 
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
+      @media #{media("<", m)} {
+        margin-left: 0px;
+
+        width: rem(335px);
+      }
     }
   }
 
@@ -95,17 +110,37 @@
           object-fit: contain;
         }
       }
+
+      @media #{media("<", m)} {
+        position: relative;
+        top: 0px;
+        width: calc(rem(375px) + 20px);
+        margin-left: rem(-20px);
+      }
     }
 
     &-top {
       display: flex;
       gap: 17px;
       margin-top: 20px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
     }
 
     &-bot {
       margin-top: 478px;
       margin-left: 600px;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+        
+        margin-top: 0px;
+        margin-left: 0px;
+      }
     }
 
     &-number {
@@ -114,6 +149,13 @@
       line-height: 80%;
       letter-spacing: -0.08em;
       color: #045C25;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+
+        font-size: rem(60px);
+        line-height: 80%;
+      }
     }
 
     &-title {
@@ -133,6 +175,14 @@
           max-width: 100%;
         }
       }
+
+      @media #{media("<", m)} {
+        gap: 20px;
+      }
+    }
+
+    @media #{media("<", m)} {
+      height: auto;
     }
 
   }
@@ -143,12 +193,15 @@
     padding-top: 20px;
     border-top: 1px solid #045C25;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &__title {
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 120%;
-      letter-spacing: -0.02em;
-      color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &__text {
@@ -159,6 +212,16 @@
       font-size: 18px;
       line-height: 160%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-left: 0px;
+        margin-top: 0px;
+
+        width: rem(335px);
+
+        font-size: rem(14px);
+        line-height: 160%;
+      }
     }
   }
 
@@ -167,8 +230,16 @@
     border-top: 1px solid #69DA91;
     padding-top: 20px;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &-title {
       margin-bottom: 40px;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &-subtitle {
@@ -180,20 +251,34 @@
       font-size: 20px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        width: rem(335px);
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
     &-row {
       display: flex;
       gap: 40px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
     }
 
     &-text {
       width: 560px;
 
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
 
     &-subrow {
@@ -205,18 +290,35 @@
         margin-top: 100px;
         border-top: 1px solid #045C25;
         padding-top: 20px;
+
+        @media #{media("<", m)} {
+          margin-top: 40px;
+          padding-top: 8px;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
 
       &.custom-second {
         margin-top: 40px;
+
+        @media #{media("<", m)} {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+        }
       }
 
       &__col {
         width: 560px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
 
       &__card {
         &-number {
+          font-family: 'Halvar Breitschrift';
           font-weight: 700;
           font-size: 100px;
           line-height: 80%;
@@ -229,9 +331,15 @@
           &.light-green {
             color: color(light-green);
           }
+
+          @media #{media("<", m)} {
+            font-size: rem(60px);
+            line-height: 80%;
+          }
         }
 
         &-text {
+          font-family: 'Halvar Breitschrift';
           font-weight: 700;
           font-size: 16px;
           line-height: 100%;
@@ -247,6 +355,13 @@
           font-size: 15px;
           line-height: 160%;
           color: #727A75;
+
+          @media #{media("<", m)} {
+            margin-top: 12px;
+
+            font-size: rem(12px);
+            line-height: 160%;
+          }
         }
 
         &-top {
@@ -266,6 +381,11 @@
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           align-items: left;
+
+          @media #{media("<", m)} {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+          }
         }
       }
 
@@ -285,6 +405,20 @@
           .reference-subrow__item-text {
             margin-top: 34px;
             width: 112px;
+
+            @media #{media("<", m)} {
+              margin-top: 10px;
+
+              width: rem(160px);
+
+              font-size: rem(10px);
+              line-height: 150%;
+            }
+          }
+
+          @media #{media("<", m)} {
+            order: -4;
+            margin-right: 0px;
           }
         }
 
@@ -302,6 +436,19 @@
           .reference-subrow__item-text {
             margin-top: 20px;
             width: 88px;
+
+            @media #{media("<", m)} {
+              margin-top: 10px;
+
+              width: rem(160px);
+
+              font-size: rem(10px);
+              line-height: 150%;
+            }
+          }
+
+          @media #{media("<", m)} {
+            order: -3;
           }
         }
 
@@ -318,8 +465,19 @@
           .reference-subrow__item-text {
             margin-top: 32px;
             width: 45px;
-          }
 
+            @media #{media("<", m)} {
+              margin-top: 10px;
+
+              width: rem(160px);
+
+              font-size: rem(10px);
+              line-height: 150%;
+            }
+          }
+          @media #{media("<", m)} {
+            order: -1;
+          }
         }
 
         &:nth-child(4) {
@@ -333,6 +491,19 @@
           .reference-subrow__item-text {
             margin-top: 31px;
             width: 143px;
+
+            @media #{media("<", m)} {
+              margin-top: 10px;
+
+              width: rem(160px);
+
+              font-size: rem(10px);
+              line-height: 150%;
+            }
+          }
+
+          @media #{media("<", m)} {
+            order: -2;
           }
         }
 
@@ -355,16 +526,18 @@
     &-mission {
       margin-top: 100px;
 
+      @media #{media("<", m)} {
+        margin-top: 40px;
+      }
       &__title {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 120%;
-        letter-spacing: -0.02em;
-        color: color(dark);
+        @media #{media("<", m)} {
+          margin-bottom: 10px;
+          text-align: center;
+        }
       }
 
       &__block {
@@ -372,6 +545,9 @@
         padding: 33px 0px 34px;
         margin-top: 20px;
 
+        @media #{media("<", m)} {
+          padding: rem(26px) rem(16px);
+        }
         &-text {
           margin: 0 auto;
 
@@ -382,6 +558,12 @@
           line-height: 150%;
           text-align: center;
           color: #727A75;
+
+          @media #{media("<", m)} {
+            margin: 0px;
+
+            width: rem(303px);
+          }
         }
 
         &-arrow {
@@ -416,20 +598,28 @@
     border-top: 1px solid #69DA91;
     padding-top: 20px;
 
+
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &-title {
       margin-bottom: 40px;
 
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 120%;
-      letter-spacing: -0.02em;
-      color: color(dark);
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+
+      @media #{media("<", m)} {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+      }
     }
 
     &-item {
@@ -440,19 +630,25 @@
 
       border: 1px solid color(borders);
 
-
-
-
       &:nth-child(7) {
         height: 245px;
+        @media #{media("<", m)} {
+          height: auto;
+        }
       }
 
       &:nth-child(8) {
         height: 245px;
+        @media #{media("<", m)} {
+          height: auto;
+        }
       }
 
       &:nth-child(9) {
         height: 245px;
+        @media #{media("<", m)} {
+          height: auto;
+        }
       }
 
       &.light-green {
@@ -462,6 +658,12 @@
       &.green {
         border-top: 2px solid #045C25;
       }
+
+      @media #{media("<", m)} {
+        padding: 20px;
+        height: auto;
+        min-height: rem(93px);
+      }
     }
 
     &-text {
@@ -469,6 +671,10 @@
       font-size: 14px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        width: rem(257px);
+      }
     }
 
     &-img {
@@ -479,6 +685,11 @@
       width: 120px;
       height: 120px;
       z-index: -1;
+
+      @media #{media("<", m)} {
+        width: rem(71px);
+        height: rem(72px);
+      }
     }
   }
 
@@ -488,14 +699,16 @@
 
     border-top: 1px solid #69DA91;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &-title {
       margin-bottom: 40px;
 
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 120%;
-      letter-spacing: -0.02em;
-      color: color(dark);
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &-subtitle {
@@ -505,6 +718,15 @@
       font-size: 20px;
       line-height: 150%;
       color: color(dark);
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        width: rem(247px);
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
     .report {
@@ -514,10 +736,19 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+
+        @media #{media("<", m)} {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+        }
       }
 
       &-col {
         width: 560px;
+
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
 
       &__text {
@@ -527,10 +758,21 @@
         line-height: 160%;
         color: color(dark);
 
+        @media #{media("<", m)} {
+          font-size: rem(12px);
+          line-height: 160%;
+        }
         &_big {
           margin-bottom: 32px;
 
           font-size: 18px;
+
+          @media #{media("<", m)} {
+            margin-bottom: 20px;
+
+            font-size: rem(14px);
+            line-height: 160%;
+          }
         }
 
         &_mark {
@@ -553,15 +795,24 @@
 
           span {
             font-weight: 700;
+            @media #{media("<", m)} {
+              font-weight: 600;
+            }
           }
         }
 
         &.top {
           margin-bottom: 20px;
+          @media #{media("<", m)} {
+            margin-bottom: 12px;
+          }
         }
 
         &.right {
           margin-bottom: 32px;
+          @media #{media("<", m)} {
+            width: rem(315px);
+          }
         }
       }
 
@@ -581,21 +832,32 @@
       }
     }
 
-
-
-
   }
 
 
   &__appeal {
     margin-top: 100px;
-
-
+    @media #{media("<", m)} {
+      margin-top: 40px;
+    }
     .appeal {
       &-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0px;
+
+        @media #{media("<", d)} {
+          padding: 0px 20px;
+          display: flex;
+          gap: 0px;
+        }
+        @media (min-width:768px) and (max-width: 1025px) {
+          padding: 0px;
+        }
+        @media #{media("<", m)} {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 24px;
+        }
       }
 
       &-col {
@@ -606,6 +868,22 @@
           overflow: hidden;
 
           background: #F4F4F4;
+          @media #{media("<", d)} {
+            width: 521px;
+            height: 714px;
+          }
+          @media (min-width:768px) and (max-width: 1025px) {
+            width: 365px;
+            height: 480px;
+            flex-shrink: 0;
+            overflow: visible;
+          }
+          
+          @media #{media("<", m)} {
+            width: rem(335px);
+
+            height: auto;
+          }
         }
 
         &:nth-child(2) {
@@ -616,14 +894,40 @@
           height: 1326px;
 
           border: 1px solid color(borders);
+          @media (min-width:768px) and (max-width: 1025px) {
+            padding: 84px 20px;
+            height: auto;
+            width: 356px;
+            flex-shrink: 0;
+          }
+          @media #{media("<", m)} {
+            padding: 84px 20px;
+
+            width: rem(335px);
+            height: auto;
+          }
         }
       }
 
       &-img {
-        margin-left: 15px;
-        width: 686px;
-        height: 889px;
+        width: 720px;
+        height: 780px;
 
+        
+        @media #{media("<", d)} {
+          width: 521px;
+          height: 559px;
+        }
+        @media (min-width:768px) and (max-width: 1025px) {
+          width: 365px;
+          height: 413px;
+        }
+        @media #{media("<", m)} {
+          margin-left: 0px;
+
+          width: rem(335px);
+          height: rem(413px);
+        }
         picture {
           img {
             object-fit: contain;
@@ -682,17 +986,31 @@
             1.5s;
           background: linear-gradient(270deg, color(green) 0%, rgba(255, 255, 255, 0) 79.69%);
         }
+        
+        @media #{media("<", d)} {
+          width: 90%;
+        }
+        @media (min-width:768px) and (max-width: 1025px) {
+          top: 12px;
+        }
+        @media #{media("<", m)} {
+          top: 12px;
+          width: 90%;
+        }
       }
 
       &-title {
         margin-top: 61px;
         margin-left: 40px;
-
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 120%;
-        letter-spacing: -0.02em;
-        color: color(dark);
+        @media (min-width:768px) and (max-width: 1025px) {
+          margin-top: 20px;
+          margin-left: 12px;
+        }
+        @media #{media("<", m)} {
+          margin-bottom: 15px;
+          margin-top: 20px;
+          margin-left: 12px;
+        }
       }
 
       &-name {
@@ -701,12 +1019,15 @@
         &__surname {
           margin-bottom: 4px;
 
+          font-family: 'Halvar Breitschrift';
           font-weight: 700;
           font-size: 16px;
           line-height: 110%;
           letter-spacing: -0.03em;
           text-transform: uppercase;
           color: color(dark);
+
+          
         }
 
         &__job {
@@ -714,6 +1035,31 @@
           font-size: 14px;
           line-height: 150%;
           color: #727A75;
+        }
+
+        @media #{media("<", d)} {
+          margin-left: 335px;
+        }
+        @media #{media("<", m)} {
+          padding-top: 12px;
+          position: relative;
+          z-index: 2;
+          margin-left: 0px;
+
+          background: white;
+        }
+
+        &.desktop{
+          @media (min-width:768px) and (max-width: 1025px) {
+            display: none;
+          }
+        }
+        &.devices{
+          display: none;
+          @media (min-width:768px) and (max-width: 1025px) {
+            display: block;
+            margin-left: 0px;
+          }
         }
       }
 
@@ -724,15 +1070,22 @@
         font-size: 22px;
         line-height: 130%;
         color: color(dark);
+
+        @media #{media("<", t)} {
+          font-size: 20px;
+          letter-spacing: -0.02em;
+        }
+        @media #{media("<", m)} {
+          font-size: rem(20px);
+        }
       }
 
       &-text {
         margin-bottom: 12px;
-
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        color: color(dark);
+        @media (min-width:768px) and (max-width: 1025px) {
+          font-size: rem(12px);
+          line-height: 160%;
+        }
       }
 
       &-subtext {
@@ -742,6 +1095,14 @@
         font-size: 20px;
         line-height: 150%;
         color: color(dark);
+
+
+        @media #{media("<", t)} {
+          margin-bottom: 8px;
+
+          font-size: rem(14px);
+          line-height: 150%;
+        }
       }
 
       &-signature {
@@ -751,6 +1112,11 @@
         font-size: 15px;
         line-height: 160%;
         color: #727A75;
+
+        @media #{media("<", t)} {
+          font-size: rem(12px);
+          line-height: 160%;
+        }
       }
 
       &-svg {
@@ -759,11 +1125,38 @@
         &.grey {
           top: 40px;
           left: 60px;
+
+          @media #{media("<", t)} {
+            top: 20px;
+            left: 20px;
+            
+            svg{
+              width: rem(72px);
+              height: rem(44px);
+            }
+          }
         }
 
         &.green {
           right: 60px;
           bottom: 30px;
+          @media (min-width:768px) and (max-width: 1025px) {
+            right: 264px;
+            bottom: 20px;
+            svg{
+              width: rem(72px);
+              height: rem(44px);
+            }
+          }
+          @media #{media("<", m)} {
+            bottom: 20px;
+            right: 20px;
+            
+            svg{
+              width: rem(72px);
+              height: rem(44px);
+            }
+          }
         }
       }
     }

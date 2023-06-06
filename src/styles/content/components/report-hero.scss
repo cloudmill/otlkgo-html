@@ -108,11 +108,18 @@
         @media #{media(">", ll)} {
           width: 51.5%;
         }
+        @media #{media("<", m)} {
+          height: rem(359px);
+        }
       }
       &-right{
         width: 700px;
         @media #{media(">", ll)} {
           width: 48.5%;
+        }
+        @media #{media("<", m)} {
+          order: -1;
+          height: rem(260px);
         }
       }
     }
@@ -424,6 +431,9 @@
     }
     @media (min-width: 768px) and (max-width: 1023px) {
       height: rem(380px);
+    }
+    @media #{media("<", m)} {
+      height: rem(619px);
     }
   }
 
