@@ -3,6 +3,10 @@
   &__container{
     width: 100%;
     padding: 0px 40px;
+
+    @media #{media('<', m)} {
+      padding: 0px 20px;
+    }
   }
 
   &__title{
@@ -13,12 +17,24 @@
     line-height: 120%;
     letter-spacing: -0.01em;
     color: #045C25;
+
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+    }
   }
 
   &__list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 26px;
+
+    @media #{media('<', d)} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media #{media('<', m)} {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
   }
 
   &__card{
@@ -34,6 +50,10 @@
 
       @media #{media(">", ll)} {
         height: rem(360px);
+      }
+      @media #{media('<', m)} {
+        height: rem(223px);
+        width: rem(335px);
       }
     }
     &-number{
@@ -51,6 +71,11 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media #{media('<', m)} {
+        font-size: rem(60px);
+        line-height: 80%;
+      }
     }
 
     &-img{
@@ -74,6 +99,11 @@
       height: 40px;
 
       background: #045C25;
+
+      @media #{media('<', m)} {
+        width: rem(32px);
+        height: rem(32px);
+      }
     }
 
     &-arrow{
@@ -85,6 +115,10 @@
         display: block;
         width: 12.5px;
         height: 12.5px;
+        @media #{media('<', m)} {
+          width: rem(10px);
+          height: rem(10px);
+        }
       }
     }
 
@@ -100,7 +134,15 @@
       color: #2A2E2B;
 
       &.absolute{
-        
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      @media #{media('<', m)} {
+        margin-top: 12px;
+        font-size: rem(16px);
+        line-height: 120%;
       }
     }
   }
