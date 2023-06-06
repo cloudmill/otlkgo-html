@@ -5,7 +5,7 @@ mixin geography
         .geography__top
           .geography__top-left
             h2.geography__title География деятельности
-            p.geography__text.text На сегодня ОТЛК&nbsp;ЕРА осуществляет перевозки <br/>на 660 маршрутах между более чем 230 локациями в Европе,<br/> Китае и ЕАЭС
+            p.geography__text.text_big На сегодня ОТЛК ЕРА осуществляет перевозки <br class='br'/>на 660 маршрутах между более чем 230 локациями в&nbsp;Европе,<br class='br'/> Китае и ЕАЭС
           .geography__top-right
             p.geography__number 660
             p.geography__text.text Общее количество маршрутов на конец 2022 года
@@ -18,6 +18,8 @@ mixin geography
                 | U-West,
                 span 10
                 | U-East
+        .geography__middle.mobile 
+          +picture('geography-img-mobile.jpg')
         .geography__bottom
           .col 
             p.geography__number 238
@@ -27,7 +29,7 @@ mixin geography
                 span +32
                 | за 2022 год
           .col 
-            p.geography__description Прирост по кварталам 2022 года
+            p.geography__description.description_big Прирост по кварталам 2022 года
             .geography__img 
               +picture('geography-statistic.png').geography-img
 

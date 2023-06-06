@@ -1,9 +1,4 @@
 .indicators {
-
-  &__inner {
-    padding: 100px 14px;
-  }
-
   &__row {
     margin-top: 60px;
     display: flex;
@@ -13,11 +8,14 @@
   &__number {
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
-    font-size: 160px;
+    font-size: 100px;
     line-height: 80%;
     letter-spacing: -0.08em;
     color: color(green);
 
+    &-big {
+      font-size: 160px;
+    }
   }
 
   &__top {
@@ -40,14 +38,6 @@
     }
   }
 
-  &__description {
-    max-width: 463px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    color: color(dark);
-  }
-
   &__box {
     margin-top: 100px;
     display: grid;
@@ -55,11 +45,19 @@
     grid-column-gap: 40px;
     grid-row-gap: 100px;
 
+    @media #{media('<',t)} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     &_bottom {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 40px;
       grid-row-gap: 40px;
+
+      @media #{media('<',t)} {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 
@@ -105,8 +103,6 @@
 }
 
 .indicators-finance {
-  margin-top: 100px;
-
   &__inner {
     padding-top: 20px;
 
@@ -122,5 +118,106 @@
 
   &__img {
     margin-top: 40px;
+  }
+}
+
+@media #{media('<',m)} {
+  .indicators {
+    &__inner {
+      padding: 0;
+    }
+
+    &__row {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__mobile {
+      padding: 40px;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 40px;
+      background: url('../assets/images/indicators-bg.png'), center/cover, no-repeat;
+    }
+
+    &__number {
+      font-size: 60px;
+
+      &_big {
+        font-size: 60px;
+      }
+    }
+
+    &__top {
+      padding: 0;
+      background: transparent;
+    }
+
+    &__description {
+      padding-bottom: 12px;
+
+      border-bottom: 1px solid #045C25;
+    }
+
+    &__bottom {
+      margin-top: 20px;
+    }
+
+    &__box {
+      margin-top: 40px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
+
+      &_bottom {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-top: 12px;
+
+      .row {
+        display: flex;
+        gap: 8px;
+
+      }
+
+      &-number {
+        font-size: 60px;
+      }
+    }
+
+  }
+
+  .indicators-finance {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__img {
+      margin-top: 20px;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding-left: 20px;
+      overflow-x: scroll;
+      @include scrollbar-hidden;
+
+
+    }
+
+    picture {
+      width: 507px;
+      height: 177px;
+    }
   }
 }

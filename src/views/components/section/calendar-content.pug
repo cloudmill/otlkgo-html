@@ -1,5 +1,5 @@
 mixin calendar-content
-  section.calendar 
+  section.calendar.mt-section
     .container-content 
       .calendar__inner 
         h2.calendar__title Календарь событий 2022
@@ -10,7 +10,7 @@ mixin calendar-content
                 .calendar__col-month 
                   p.calendar__month Январь
                 .calendar__col-list
-                  ul.calendar__list
+                  ul.list
                     li.calendar__item
                       +mark-text-svg.calendar-svg
                       p.text.calendar__text Участие в разработке нового порядка оформления таможенного транзита через Калининградскую область
@@ -18,24 +18,28 @@ mixin calendar-content
                 .calendar__col-month 
                   p.calendar__month Март
                 .calendar__col-list 
-                  ul.calendar__list
+                  ul.list
                     each item in ['Участие в международном экономическом форуме государств-участников СНГ','Разработка и согласование технологии «контейнеризации» для поставок в КНР','Закрепление договорённостей с   владельцами контейнерного парка КНР о   попутной загрузке в   РБ и   РФ порожних контейнеров, следующих из   ЕС   «без ограничений»']
                       li.calendar__item
                         +mark-text-svg.calendar-svg
                         p.text.calendar__text=item
             .calendar__col-right
-              p.calendar__description В 1 квартале
-              p.calendar__number +4
-              p.calendar__subtext локации
-              p.calendar__number +44
-              p.calendar__subtext маршрута
+              .row
+                p.calendar__description В 1 квартале
+              .row
+                .calendar__item-number
+                  p.calendar__number +4
+                  p.calendar__subtext локации
+                .calendar__item-number
+                  p.calendar__number +44
+                  p.calendar__subtext маршрута
           .calendar__block
             .calendar__col-left
               .calendar__row
                 .calendar__col-month 
                   p.calendar__month Апрель
                 .calendar__col-list
-                  ul.calendar__list
+                  ul.list
                     each item in ['Заключение первого контракта с оплатой за услуги Общества в китайских юанях','Участие в выставке и в деловой программе ТрансРоссия 2022','Первая отправка полносоставного рефрижераторного поезда из КНР в Россию']
                       li.calendar__item
                         +mark-text-svg.calendar-svg
@@ -44,7 +48,7 @@ mixin calendar-content
                 .calendar__col-month 
                   p.calendar__month Май
                 .calendar__col-list 
-                  ul.calendar__list
+                  ul.list
                     each item in ['Заседание Рабочей группы КСТП «Китай-Европа-Китай» под председательством Генерального директора Общества А. Н. Грома']
                       li.calendar__item
                         +mark-text-svg.calendar-svg
@@ -53,24 +57,28 @@ mixin calendar-content
                 .calendar__col-month 
                   p.calendar__month Июнь
                 .calendar__col-list 
-                  ul.calendar__list
-                    each item in ['Исполнение контракта на поставку 1000 вагонов','Участие в Санкт-Петербургском экономическом форуме','Участие в пилотной отправке контейнерного поезда по восточной ветке МТК «Север-Юг» в качестве 2PL оператора перевозки','Открытие в Нур-Султане выставки «Новый Шелковый путь: #время, #пространство и #бытие» (при поддержке ОТЛК&nbsp;ЕРА)','Старт проекта по восстановлению тугайного леса в Казахстане на территории государственного природного резервата «Иле-Балхаш» (при поддержке ОТЛК&nbsp;ЕРА)',]
+                  ul.list
+                    each item in ['Исполнение контракта на поставку 1000 вагонов','Участие в Санкт-Петербургском экономическом форуме','Участие в пилотной отправке контейнерного поезда по восточной ветке МТК «Север-Юг» в качестве 2PL оператора перевозки','Открытие в Нур-Султане выставки «Новый Шелковый путь: #время, #пространство и #бытие» (при поддержке ОТЛК ЕРА)','Старт проекта по восстановлению тугайного леса в Казахстане на территории государственного природного резервата «Иле-Балхаш» (при поддержке ОТЛК ЕРА)',]
                       li.calendar__item
                         +mark-text-svg.calendar-svg
                         p.text.calendar__text=item
             .calendar__col-right
-              p.calendar__description Во 2 квартале
-              p.calendar__number.calendar__number_light +12
-              p.calendar__subtext локации
-              p.calendar__number.calendar__number_light +60
-              p.calendar__subtext маршрутов
+              .row
+                p.calendar__description Во 2 квартале
+              .row
+                .calendar__item-number-number
+                  p.calendar__number.calendar__number_light +12
+                  p.calendar__subtext локации
+                .calendar__item-number-number
+                  p.calendar__number.calendar__number_light +60
+                  p.calendar__subtext маршрутов
           .calendar__block
             .calendar__col-left
               .calendar__row
                 .calendar__col-month 
                   p.calendar__month Июль
                 .calendar__col-list
-                  ul.calendar__list
+                  ul.list
                     each item in ['Обсуждение транспортной отрасли и ситуации по транзиту на встрече премьер-министров РФ и РК в Екатеринбурге', 'Возобновление перевозок автомобилей из Нидерландов в KHP']
                       li.calendar__item
                         +mark-text-svg.calendar-svg
@@ -79,25 +87,29 @@ mixin calendar-content
                 .calendar__col-month 
                   p.calendar__month Сентябрь
                 .calendar__col-list 
-                  ul.calendar__list
-                    each item in ['Генеральный директор ОТЛК&nbsp;ЕРА вошел в список 250 лучших топ-менеджеров (высших руководителей) России (по версии ИД «Коммерсант»)','Участие в выставке и деловой программе TransLogistic Kazakhstan','Выступление в деловой программе конференции The 2th Belt and Road Land-Sea Intermodal Transport Corridor Cooperation Forum and China-Europe Railway Express and Multimodal Transport Summit (Китай)']
+                  ul.list
+                    each item in ['Генеральный директор ОТЛК ЕРА вошел в список 250 лучших топ-менеджеров (высших руководителей) России (по версии ИД «Коммерсант»)','Участие в выставке и деловой программе TransLogistic Kazakhstan','Выступление в деловой программе конференции The 2th Belt and Road Land-Sea Intermodal Transport Corridor Cooperation Forum and China-Europe Railway Express and Multimodal Transport Summit (Китай)']
                       li.calendar__item
                         +mark-text-svg.calendar-svg
                         p.text.calendar__text=item
             .calendar__col-right
-              p.calendar__description В 3 квартале
-              p.calendar__number +6
-              p.calendar__subtext локации
-              p.calendar__number +51
-              p.calendar__subtext маршрут
+              .row
+                p.calendar__description В 3 квартале
+              .row 
+                .calendar__item-number
+                  p.calendar__number +6
+                  p.calendar__subtext локации
+                .calendar__item-number 
+                  p.calendar__number +51
+                  p.calendar__subtext маршрут
           .calendar__block
             .calendar__col-left
               .calendar__row
                 .calendar__col-month 
                   p.calendar__month Октябрь
                 .calendar__col-list
-                  ul.calendar__list
-                    each item in ['Участие в деловом форуме «Интеграция» и форуме «Сделано в России»', 'ОТЛК&nbsp;ЕРА подтвердила свой статус крупнейшей компании в РФ (по версии ЭКСПЕРТ РА) и поднялась в рейтинге на 305 позицию (в 2021 году компания занимала 323 место)']
+                  ul.list
+                    each item in ['Участие в деловом форуме «Интеграция» и форуме «Сделано в России»', 'ОТЛК ЕРА подтвердила свой статус крупнейшей компании в РФ (по версии ЭКСПЕРТ РА) и поднялась в рейтинге на 305 позицию (в 2021 году компания занимала 323 место)']
                       li.calendar__item
                         +mark-text-svg.calendar-svg
                         p.text.calendar__text=item
@@ -105,8 +117,8 @@ mixin calendar-content
                 .calendar__col-month 
                   p.calendar__month Ноябрь
                 .calendar__col-list 
-                  ul.calendar__list
-                    each item in ['Участие в деловой программе «Транспортной недели 2022»','Номинация совместного проекта ОТЛК&nbsp;ЕРА и партнера на соискание премии «Формула движения» в номинации «Лучшее решение в области грузовой логистики» (проект вошел в список финалистов)',]
+                  ul.list
+                    each item in ['Участие в деловой программе «Транспортной недели 2022»','Номинация совместного проекта ОТЛК ЕРА и партнера на соискание премии «Формула движения» в номинации «Лучшее решение в области грузовой логистики» (проект вошел в список финалистов)',]
                       li.calendar__item
                         +mark-text-svg.calendar-svg
                         p.text.calendar__text=item
@@ -114,14 +126,18 @@ mixin calendar-content
                 .calendar__col-month 
                   p.calendar__month Декабрь
                 .calendar__col-list 
-                  ul.calendar__list
+                  ul.list
                     each item in ['География локаций зарождения/поглощения грузов расширяется за счет грузов из Вьетнама, Малайзии, Индонезии и других стран Азии','Расширение номенклатуры перевозимых грузов за счет поставок новых грузов в рамках эко-повестки: впервые в сервисе Общества по маршруту Чэнду — Малашевиче был отправлен полносоставный поезд из 50-ти 40-футовых контейнеров с электромобилями','Участие в деловой программе форума TransTec 2022','Участие в заседании Транспортного бизнес-диалога Содружества Независимых Государств','Участие в закрытом круглом столе ИД «Гудок» «PRO//Движение. 1520 — ИТОГИ 2022»',]
                       li.calendar__item
                         +mark-text-svg.calendar-svg
                         p.text.calendar__text=item
             .calendar__col-right
-              p.calendar__description В 4 квартале
-              p.calendar__number.calendar__number_light +10
-              p.calendar__subtext локаций
-              p.calendar__number.calendar__number_light +78
-              p.calendar__subtext маршрутов
+              .row
+                p.calendar__description В 4 квартале
+              .row 
+                .calendar__item-number
+                  p.calendar__number.calendar__number_light +10
+                  p.calendar__subtext локаций
+                .calendar__item-number
+                  p.calendar__number.calendar__number_light +78
+                  p.calendar__subtext маршрутов

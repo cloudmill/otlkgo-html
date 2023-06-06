@@ -1,6 +1,4 @@
 .corruption {
-  margin-top: 100px;
-
   .col {
     &:nth-child(1) {
       max-width: 560px;
@@ -35,26 +33,9 @@
       gap: 40px
     }
   }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  &__item {
-    display: flex;
-    gap: 8px;
-  }
-
-  &-svg {
-    flex-shrink: 0;
-  }
 }
 
 .corruption-principles {
-  margin-top: 100px;
-
   .col {
     &:nth-child(1) {
       display: flex;
@@ -88,50 +69,9 @@
       gap: 40px;
     }
   }
-
-  &__elem {
-    position: relative;
-    padding: 24px;
-
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 150%;
-    color: color(dark);
-    background: #F4F4F4;
-    border-radius: 16px;
-  }
-
-  &-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-
-    width: 28px;
-    height: 28px;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  &__item {
-    display: flex;
-    gap: 8px;
-
-    svg {
-      flex-shrink: 0;
-    }
-
-
-  }
 }
 
 .corruption-examenation {
-  margin-top: 100px;
-  margin-bottom: 100px;
 
   &__inner {
     padding-top: 20px;
@@ -148,8 +88,6 @@
 }
 
 .corruption-counterparty {
-  margin-top: 100px;
-
   &__row {
     margin-top: 40px;
     display: flex;
@@ -202,6 +140,76 @@
         color: #69DA91;
 
       }
+    }
+  }
+}
+
+@media #{media('<',m)} {
+  .corruption {
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      gap: 20px
+    }
+  }
+
+  .corruption-principles {
+    .col {
+      &:nth-child(1) {
+        width: auto;
+
+        gap: 24px;
+      }
+
+      &:nth-child(2) {
+        gap: 24px;
+
+        width: auto;
+      }
+    }
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .corruption-examenation {
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 24px;
+    }
+  }
+
+  .corruption-counterparty {
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__row {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__item {
+      width: auto;
+      height: 150px;
     }
   }
 }
