@@ -9,7 +9,7 @@ $breakpoints: (
   xl: 1680px,
   ll: 1440px,
   l: 1366px,
-  d: 1281px,
+  d: 1280px,
   t: 1025px,
   m: 768px,
   s: 576px,
@@ -22,17 +22,27 @@ $breakpoints: (
 }
 
 @function media($direction: '>', $variant: d) {
-  @if $direction == '>' {
+  @if $direction =='>' {
     @return '(min-width: #{breakpoint($variant)})';
-  } @else if $direction == '<' {
+  }
+
+  @else if $direction =='<' {
     @return '(max-width: #{breakpoint($variant) - 1px})';
-  } @else if $direction == '<=' {
+  }
+
+  @else if $direction =='<=' {
     @return '(max-width: #{breakpoint($variant)})';
-  } @else if $direction == 'mt' {
+  }
+
+  @else if $direction =='mt' {
     @return '(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(t) - 1px})';
-  } @else if $direction == 'td' {
+  }
+
+  @else if $direction =='td' {
     @return '(min-width: #{breakpoint(t)}) and (max-width: #{breakpoint(d) - 1px})';
-  } @else if $direction == 'md' {
+  }
+
+  @else if $direction =='md' {
     @return '(min-width: #{breakpoint(m)}) and (max-width: #{breakpoint(d) - 1px})';
   }
 }
