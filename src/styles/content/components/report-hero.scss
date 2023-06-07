@@ -7,7 +7,7 @@
   width: 100%;
   height: 707px;
 
-  @media #{media(">", ll)} {
+  @media #{media(">", xl)} {
     width: 100%;
     height: 936px;
   }
@@ -55,6 +55,11 @@
 
     &.about-row{
       gap: 0px;
+    }
+    &.main-page{
+      @media #{media("<", m)} {
+        height: rem(760px);
+      }
     }
   }
 
@@ -105,8 +110,12 @@
     &.about{
       &-left{
         width: 740px;
+        
         @media #{media(">", ll)} {
           width: 51.5%;
+        }
+        @media #{media(">", xl)} {
+          width: 987px;
         }
         @media #{media("<", m)} {
           height: rem(359px);
@@ -116,6 +125,9 @@
         width: 700px;
         @media #{media(">", ll)} {
           width: 48.5%;
+        }
+        @media #{media(">", xl)} {
+          width: 933px;
         }
         @media #{media("<", m)} {
           order: -1;
@@ -142,6 +154,11 @@
       @media #{media(">", ll)} {
         width: 51.5%;
       }
+      @media #{media('<', m)} {
+        width: 100%;
+        height: rem(380px);
+        padding: 20px;
+      }
     }
     &.main-right{
 
@@ -152,6 +169,10 @@
       }
       @media #{media(">", ll)} {
         width: 48.5%;
+      }
+      @media #{media('<', m)} {
+        width: 100%;
+        height: rem(380px);
       }
     }
   }
@@ -168,7 +189,7 @@
     &.mobile{
       display: none;
     }
-    @media #{media(">", ll)} {
+    @media #{media(">", xl)} {
       width: 980px;
     }
     @media #{media("<", m)} {
@@ -179,6 +200,12 @@
         display: block;
         top: rem(85px);
         left: 0px;
+
+        picture{
+          img{
+            object-fit: fill;
+          }
+        }
       }
     }
 
@@ -405,11 +432,15 @@
     -webkit-text-fill-color: transparent;
 
     
-    @media #{media(">", ll)} {
+    @media #{media(">", xl)} {
       font-size: 450px;
       line-height: 80%;
     }
-    @media (max-width: 1025px) {
+    @media #{media(">", xl)} {
+      font-size: 450px;
+      line-height: 80%;
+    }
+    @media (max-width: 1200px) {
       font-size: 240px;
     }
 
@@ -455,6 +486,15 @@
       position: absolute;
       bottom:0px;
       right: 0px;
+
+      @media #{media('<', m)} {
+        top: 117px;
+
+        svg{
+          height: 263px;
+          width: 180px;
+        }
+      }
     }
 
     &-title{
@@ -472,6 +512,13 @@
         display: block;
         color: color(dark);
       }
+
+      @media #{media('<', d)} {
+        font-size: 60px;
+      }
+      @media #{media("<", m)} {
+        font-size: rem(48px);
+      }
     }
 
     &-text{
@@ -484,6 +531,13 @@
       line-height: 80%;
       letter-spacing: -0.01em;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-bottom: 12px;
+
+        font-size: rem(20px);
+        line-height: 80%;
+      }
     }
 
     &-number{
@@ -496,7 +550,43 @@
       line-height: 80%;
       letter-spacing: -0.06em;
       color: #2A2E2B;
+
+      @media #{media('<', d)} {
+        font-size: 65px;
+      }
+      @media #{media("<", m)} {
+        font-size: rem(48px);
+        line-height: 80%;
+      }
+    }
+  }
+  &.custom-main{
+    @media #{media("<", m)} {
+      height: rem(760px);
     }
   }
 
+  &_about{
+    height: 709px;
+    @media #{media(">", xl)} {
+      height: 937px;
+    }
+    @media #{media("<", l)} {
+      height: 628px;
+    }
+    
+    @media #{media("<", t)} {
+      height: rem(375px);
+    }
+    @media (min-width:1024px) and (max-width:1024px) {
+      height: 503px;
+    }
+    .report-hero__img-about{
+      picture{
+        img{
+          object-fit: fill;
+        }
+      }
+    }
+  }
 }

@@ -504,6 +504,8 @@
       }
 
       @media #{media("<", m)} {
+        margin-bottom: 12px;
+        
         font-size: rem(12px);
         line-height: 160%;
       }

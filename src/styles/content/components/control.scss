@@ -14,14 +14,28 @@
     @media (min-width: 1025px) and (max-width: 1280px) {
     width: 100%;
     }
-    
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+    }
+    @media #{media("<", d)} {
+      height: rem(635px);
+    }
+    @media #{media("<", t)} {
+      height: rem(535px);
+    }
+    @media #{media("<", m)} {
+      width: rem(335px);
+      height: rem(290px);
+    }
     &__img{
       position: absolute;
       top: 0px;
       left: 0px;
 
       max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 100%;
+
     }
     &__title{
       position: absolute;
@@ -45,6 +59,22 @@
       @media (min-width: 1025px) and (max-width: 1280px) {
         left: 40px;
       }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        left: 10%;
+        top: 75%;
+        width: 80%;
+
+        font-size: 30px;
+
+      }
+      @media #{media("<", m)} {
+        left: rem(20px);
+        top: rem(175px);
+        width: rem(290px);
+
+        font-size: rem(24px);
+        line-height: 120%;
+      }
     }
   }
 
@@ -53,6 +83,10 @@
     padding-top: 12px;
     border-top: 1px solid #87EBAA;
 
+    @media #{media("<", m)} {
+      margin-top: 20px;
+      padding-top: 8px;
+    }
     &__title{
       margin-top: 40px;
       margin-bottom: 40px;
@@ -61,16 +95,37 @@
       font-size: 20px;
       line-height: 150%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
     &__row{
       display: flex;
       justify-content: space-between;
       gap: 20px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &.listing{
+        @media #{media("<", m)} {
+          gap: 0px;
+        }
+      }
     }
 
     &__col{
       &.list-subhero{
         max-width: 560px;
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
 
@@ -81,20 +136,30 @@
       font-size: 16px;
       line-height: 140%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        max-width: rem(335px);
+
+        font-size: rem(13px);
+        line-height: 160%;
+      }
     }
 
     &__text{
       max-width: 760px;
 
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: #2A2E2B;
+      @media #{media("<", m)} {
+        max-width: rem(335px);
+      }
     }
   }
 
   &-meetings{
     margin-top: 120px;
+
+    @media #{media("<", m)} {
+      margin-top: 40px;
+    }
     &__title{
       margin-bottom: 60px;
 
@@ -103,6 +168,13 @@
       line-height: 120%;
       letter-spacing: -0.02em;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-bottom: 31px;
+
+        font-size: rem(20px);
+        line-height: 120%;
+      }
     }
 
     &__row{
@@ -112,15 +184,42 @@
 
       &:nth-child(2){
         margin-bottom: 48px;
+
+        @media #{media("<", m)} {
+          margin-bottom: 20px;
+        }
       }
       &:nth-child(3){
         margin-bottom: 42px;
+
+        @media #{media("<", m)} {
+          margin-bottom: 20px;
+        }
+      }
+
+      @media #{media("<", t)} {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      @media (max-width: 850px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
       }
     }
 
     &__col{
       .custom-card{
         margin-bottom: 20px;
+        @media #{media("<", m)} {
+          margin-bottom: 0px;
+        }
       }
     }
   }
@@ -130,6 +229,10 @@
     padding-top: 20px;
     border-top: 1px solid #045C25;
 
+    @media #{media("<", m)} {
+      margin-top: 44px;
+      padding-top: 8px;
+    }
     &__title{
     margin-bottom: 60px;
 
@@ -138,6 +241,40 @@
     line-height: 120%;
     letter-spacing: -0.01em;
     color: #2A2E2B;
+
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+
+      font-size: rem(20px);
+      line-height: 120%;
+    }
+    }
+
+    &__img{
+      @media #{media("<", m)} {
+        padding-right: rem(30px);
+
+        width: rem(571px);
+        height: rem(375px);
+        picture{
+          img{
+            object-fit: fill;
+          }
+        }
+      }
+
+      &-container{
+        @media #{media("<", m)} {
+          padding-left: rem(20px);
+          padding-right: rem(20px);
+          margin-left: rem(-20px);
+
+          width: calc(rem(375px) + 20px);
+          overflow-x: scroll;
+
+          @include scrollbar-hidden();
+        }
+      }
     }
   }
 }

@@ -1,5 +1,8 @@
 .incorporated{
   margin-top: 100px;
+  @media #{media("<", m)} {
+    margin-top: 40px;
+  }
   &__title{
     margin-bottom: 40px;
 
@@ -7,6 +10,13 @@
     font-size: 20px;
     line-height: 130%;
     color: #2A2E2B;
+
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+
+      font-size: rem(14px);
+      line-height: 150%;
+    }
   }
 
   &-plugs{
@@ -15,6 +25,15 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 
+    @media #{media("<", t)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media #{media("<", m)} {
+      margin-bottom: 40px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
     &__item{
       position: relative;
       display: flex;
@@ -25,11 +44,26 @@
       height: 82px;
 
       background: #E0EBE4;
+
+      @media #{media("<", t)} {
+        width: 100%;
+      }
+      @media #{media("<", m)} {
+        width: rem(335px);
+        height: rem(60px);
+      }
       &-background{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media #{media("<", m)} {
+          svg{
+            width: rem(85px);
+            height: rem(52px);
+          }
+        }
       }
       &-text{
         position: relative;
@@ -40,6 +74,8 @@
         font-size: 15px;
         line-height: 160%;
         color: #2A2E2B;
+
+        
       } 
     }
   }
@@ -49,11 +85,23 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    @media #{media("<", t)} {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    @media #{media("<", m)} {
+      margin-top: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
     &__item{
       padding: 50px;
 
       border: 1px solid #EDEDED;
 
+      @media #{media("<", m)} {
+        padding: 20px;
+      }
       &.light{  
           border-top: 3px solid #69DA91;
       }
@@ -67,6 +115,11 @@
         font-size: 20px;
         line-height: 130%;
         color: #2A2E2B;
+
+        @media #{media("<", m)} {
+          font-size: rem(14px);
+          line-height: 150%;
+        }
       }
       &-num{
         margin-bottom: 10px;
@@ -75,12 +128,18 @@
         font-size: 16px;
         line-height: 140%;
         color: #727A75;
+
+        @media #{media("<", m)} {
+          font-size: rem(13px);
+          line-height: 160%;
+        }
       }
       &-text{
         font-weight: 400;
         font-size: 12px;
         line-height: 150%;
         color: #2A2E2B;
+
       }
     }
   }
@@ -91,6 +150,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media #{media("<", t)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 18px;
+    }
+    @media #{media("<", m)} {
+      padding-top: 8px;
+      margin-top: 40px;
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 18px;
+    }
     &__texts{
       &-title{
         margin-bottom: 20px;
@@ -101,14 +173,29 @@
         font-size: 24px;
         line-height: 130%;
         color: #2A2E2B;
+
+        @media #{media("<", t)} {
+          max-width: 100%;
+          width: 100%;
+        }
+        @media #{media("<", m)} {
+          margin-bottom: 12px;
+
+          width: rem(335px);
+
+          font-size: rem(14px);
+          line-height: 150%;
+        }
       }
       &-text{
         width: 460px;
 
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        color: #2A2E2B;
+        @media #{media("<", t)} {
+          width: 100%;
+        }
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
 
@@ -117,6 +204,17 @@
 
       width: 617px;
       height: 560px;
+
+      @media #{media("<", t)} {
+        width: 100%;
+        height: auto;
+      }
+      @media #{media("<", m)} {
+        margin-top: 0px;
+
+        width: rem(311px);
+        height: rem(236px);
+      }
     }
   }
 
@@ -126,23 +224,25 @@
     margin-top: 100px;
     border-top: 1px solid #045C25;
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
 
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 120%;
-      letter-spacing: -0.02em;
-      color: #2A2E2B;
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
     &__text{
       max-width: 760px;
       margin-left: 400px;
 
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: #2A2E2B;
+      @media #{media("<", m)} {
+        width: rem(335px);
+        margin-left: 0px;
+      }
     }
 
     &__principes{
@@ -150,6 +250,9 @@
       margin-top: 40px;
       border-top: 1px solid #045C25;
 
+      @media #{media("<", m)} {
+        padding-top: 8px;
+      }
       &-title{
         margin-bottom: 40px;
 
@@ -158,6 +261,13 @@
         line-height: 120%;
         letter-spacing: -0.02em;
         color: #2A2E2B;
+
+        @media #{media("<", m)} {
+          margin-bottom: 20px;
+
+          font-size: rem(20px);
+          line-height: 120%;
+        }
       }
 
       &-subtext{
@@ -170,6 +280,21 @@
         font-size: 18px;
         line-height: 160%;
         color: #2A2E2B;
+
+        @media #{media("<", t)} {
+          margin-left: 0px;
+
+          width: 100%;
+        }
+        @media #{media("<", m)} {
+          margin-left: 0px;
+          margin-top: 20px;
+
+          width: rem(335px);
+
+          font-size: rem(14px);
+          line-height: 160%;
+        }
       }
     }
 
@@ -177,6 +302,14 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+
+      @media #{media("<", t)} {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @media #{media("<", m)} {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
     }
     &__card{
       padding: 40px 40px 35px;
@@ -184,6 +317,13 @@
       height: 211px;
 
       background: linear-gradient(180deg, #BEF0D7 0%, rgba(190, 240, 215, 0) 100%);
+      @media #{media("<", t)} {
+        height: auto;
+      }
+      @media #{media("<", m)} {
+        padding: 20px;
+        height: auto;
+      }
       &-title{
         margin-bottom: 12px;
 
@@ -191,9 +331,15 @@
         font-size: 20px;
         line-height: 130%;
         color: #2A2E2B;
+
+        @media #{media("<", m)} {
+          margin-bottom: 10px;
+
+          font-size: rem(18px);
+          line-height: 130%;
+        }
       }
       &-text{
-        
         font-weight: 400;
         font-size: 12px;
         line-height: 150%;
@@ -210,12 +356,30 @@
     margin-top: 60px;
 
     border-top: 1px solid #045C25;
+
+    
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
     &__title{
 
       font-weight: 700;
       font-size: 24px;
       line-height: 130%;
       color: #2A2E2B;
+
+      @media #{media("<", t)} {
+        width: 100%;
+      }
+      @media #{media("<", m)} {
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
     &__list{
       max-width: 560px;
@@ -230,6 +394,10 @@
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #87EBAA;
+
+    @media #{media("<", m)} {
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
 
@@ -237,8 +405,41 @@
       font-size: 24px;
       line-height: 130%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
 
+
+    &__img{
+      @media #{media("<", m)} {
+        padding-right: 20px;
+        width: rem(523px);
+        height: rem(265px);
+
+        picture{
+          img{
+            object-fit: fill;
+          }
+        }
+      }
+      &-container{
+        @media #{media("<", m)} {
+          padding-left: rem(20px);
+          padding-right: rem(20px);
+          margin-left: rem(-20px);
+
+          width: calc(rem(375px) + 20px);
+
+          overflow-x: scroll;
+          @include scrollbar-hidden();
+        }
+      }
+    }
   }
 
   &-shareholders{
@@ -246,14 +447,28 @@
     padding-top: 20px;
     border-top: 1px solid color(green);
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
     &__hero{
       &-row{
         display: flex;
         gap: 20px;
         justify-content: space-between;
+
+        @media #{media("<", m)} {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 12px;
+        }
       }
       &-subtitle{
         max-width: 560px;
@@ -262,16 +477,22 @@
         font-size: 20px;
         line-height: 150%;
         color: #2A2E2B;
+
+        @media #{media("<", m)} {
+          width: rem(335px);
+
+          font-size: rem(14px);
+          line-height: 150%;
+        }
       }
       
       &-text{
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        color: #2A2E2B;
-
         &.top{
           margin-bottom: 16px;
+
+          @media #{media("<", m)} {
+            margin-bottom: 12px;
+          }
         }
       }
     }
@@ -282,8 +503,18 @@
     padding-top: 20px;
     border-top: 1px solid color(green);
 
+    @media #{media("<", m)} {
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        font-size: rem(20px);
+        line-height: 120%;
+      }
     }
 
     &__subtitle{
@@ -296,9 +527,22 @@
 
       &.second{
         margin-top: 40px;
+        @media #{media("<", m)} {
+          margin-top: 20px;
+        }
       }
       &.third{
         margin-top: 28px;
+        @media #{media("<", m)} {
+          margin-top: 20px;
+        }
+      }
+      @media #{media("<", m)} {
+        padding-top: 8px;
+
+        font-size: rem(13px);
+        line-height: 160%;
+        border-top: 1px solid #6BD895;
       }
     }
 
@@ -306,6 +550,15 @@
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", t)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     &__col{
@@ -313,6 +566,21 @@
 
       .recruitment-processes__hr-mark{
         margin-bottom: 12px;
+
+        &.custom{
+          width: 476px;
+          @media #{media("<", m)} {
+            width: 100%;
+          }
+        }
+      }
+
+      @media #{media("<", t)} {
+        width: 100%;
+        max-width: 100%;
+      }
+      @media #{media("<", m)} {
+        width: rem(335px);
       }
     }
   }
@@ -321,13 +589,33 @@
     margin-top: 100px;
     padding-top: 20px;
     border-top: 1px solid color(green);
+
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
     &__row{
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", t)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+      }
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+      }
     }
 
     &__subtitle{
@@ -338,21 +626,40 @@
       &.col{
         width: 560px;
         flex-shrink: 0;
+
+        @media #{media("<", t)} {
+          width: 100%;
+        }
+        @media #{media("<", m)} {
+          width: rem(335px);
+
+          font-size: rem(14px);
+          line-height: 150%;
+        }
       }
     }
 
     &__text{
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 160%;
-      color: #2A2E2B;
+
       &.mb-16{
         margin-bottom: 16px;
+
+        @media #{media("<", m)} {
+          margin-bottom: 12px;
+        }
       }
 
       &.col{
         max-width: 560px;
         flex-shrink: 0;
+
+        @media #{media("<", t)} {
+          width: 100%;
+          max-width: 100%;
+        }
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
     &__subsection{
@@ -362,6 +669,16 @@
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", t)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @media #{media("<", m)} {
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
       &-subtitle{
         width: 500px;
 
@@ -369,19 +686,35 @@
         font-size: 16px;
         line-height: 150%;
         color: #2A2E2B;
+
+        @media #{media("<", t)} {
+          width: 100%;
+        }
+        @media #{media("<", m)} {
+          width: rem(335px);
+
+          font-size: rem(12px);
+          line-height: 150%;
+        }
       } 
       &-col{
         width: 560px;
+
+        @media #{media("<", t)} {
+          width: 100%;
+        }
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
       &-text{
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        color: #2A2E2B;
-
         &.mb-20{
           margin-top: 20px;
           margin-bottom: 20px;
+
+          @media #{media("<", m)} {
+            margin: 12px 0px 12px;
+          }
         }
       }
     }
@@ -391,6 +724,10 @@
       padding-top: 12px;
       border-top: 1px solid color(light-green);
 
+      @media #{media("<", m)} {
+        margin-top: 40px;
+        padding-top: 8px;
+      }
       &-title{
         margin-bottom: 40px;
 
@@ -399,14 +736,30 @@
         line-height: 130%;
         color: #2A2E2B;
 
-      }
+        @media #{media("<", m)} {
+          margin-bottom: 20px;
+
+          font-size: rem(18px);
+          line-height: 130%;
+        }
+      } 
       &-row{
         display: flex;
         gap: 20px;
         justify-content: space-between;
+
+        @media #{media("<", m)} {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 0px;
+        }
       }
       &-col{
         max-width: 560px;
+
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
       &-subtitle{
         margin-bottom: 16px;
@@ -415,9 +768,20 @@
         font-size: 16px;
         line-height: 150%;
         color: #2A2E2B;
+
+        @media #{media("<", m)} {
+          margin-bottom: 12px;
+
+          font-size: rem(12px);
+          line-height: 150%;
+        }
       }
       &-text{
         margin-bottom: 16px;
+
+        @media #{media("<", m)} {
+          margin-bottom: 12px;
+        }
       }
     }
     &__insurance{
@@ -427,11 +791,31 @@
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", m)} {
+        margin-top: 28px;
+        padding-top: 8px;
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+      }
       &-title{
         width: 371px;
+
+        @media #{media("<", m)} {
+          width: rem(335px);
+
+          font-size: rem(18px);
+          line-height: 130%;
+        }
       }
       &-text{
         max-width: 560px;
+
+        @media #{media("<", m)} {
+          width: rem(335px);
+        }
       }
     }
   }
@@ -441,8 +825,16 @@
     padding-top: 20px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
     &__subtitle{
       max-width: 560px;
@@ -451,9 +843,26 @@
       font-size: 20px;
       line-height: 130%;
       color: #2A2E2B;
+
+      @media #{media("<", t)} {
+        max-width: 100%;
+      }
+      @media #{media("<", m)} {
+        width: rem(335px);
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
     &__desk{
       max-width: 560px;
+
+      @media #{media("<", t)} {
+        max-width: 100%;
+      }
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
     &__text{
       margin-bottom: 12px;
@@ -463,6 +872,17 @@
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", t)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+      }
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+      }
     }
   }
 
@@ -471,14 +891,28 @@
     padding-top: 20px;
     border-top: 1px solid color(light-green);
 
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+      }
     }
 
     &__row{
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+      }
     }
     &__subtitle{
       max-width: 560px;
@@ -487,9 +921,20 @@
       font-size: 20px;
       line-height: 130%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+
+        font-size: rem(14px);
+        line-height: 150%;
+      }
     }
     &__desk{
       max-width: 560px;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
 
     &__text{
@@ -501,6 +946,11 @@
     margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
+
+    @media #{media("<", m)} {
+      margin-top: 28px;
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
 
@@ -510,14 +960,30 @@
       letter-spacing: -0.02em;
       color: #2A2E2B;
 
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        font-size: rem(20px);
+        line-height: 120%;
+      }
     }
     &__row{
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+      }
     }
     &__col{
       max-width: 560px;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
     &__text{
       margin-bottom: 12px;
@@ -529,6 +995,15 @@
       font-size: 20px;
       line-height: 130%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-bottom: 12px;
+
+        width: rem(335px);
+
+        font-size: rem(13px);
+        line-height: 160%;
+      }
     }
 
     &__grey{
@@ -538,12 +1013,26 @@
       font-size: 15px;
       line-height: 160%;
       color: #727A75;
+
+      @media #{media("<", m)} {
+        margin-top: 12px;
+
+        width: rem(335px);
+
+        font-size: rem(12px);
+        line-height: 160%;
+      }
     }
   }
   &-direction{
     margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
+
+    @media #{media("<", m)} {
+      margin-top: 40px;
+      padding-top: 8px;
+    }
     &__title{
       margin-bottom: 40px;
 
@@ -552,17 +1041,38 @@
       line-height: 120%;
       letter-spacing: -0.02em;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        font-size: rem(20px);
+        line-height: 120%;
+      }
     }
     &__row{
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+      }
     }
     &__col{
       max-width: 560px;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
     }
     &__text{
       margin-bottom: 20px;
+
+      @media #{media("<", m)} {
+        margin-bottom: 12px;
+      }
     }
     &__subtitle{
       margin-bottom: 20px;
@@ -571,6 +1081,15 @@
       font-size: 20px;
       line-height: 130%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-bottom: 12px;
+
+        width: rem(335px);
+
+        font-size: rem(13px);
+        line-height: 160%;
+      }
     }
 
   }
@@ -585,6 +1104,24 @@
 
   max-width: 1284px;
 
+  @media #{media("<", t)} {
+    padding: 0px 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+
+    width: 100%;
+  }
+  @media #{media("<", m)} {
+    padding: 0px 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+
+    width: rem(335px);
+  }
   @media #{media(">", xl)} {
     padding-left: 274px;
     gap: 140px;
@@ -593,14 +1130,33 @@
     max-width: 1184px;
   }
   &__img{
+    position: relative;
     max-width: 566px;
     max-height: 511px;
     flex-shrink: 0;
     
+    @media #{media("<", t)} {
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+    @media #{media("<", m)} {
+      width: rem(335px);
+      height: rem(400px);
+
+      background: #F4F4F4;
+    }
   }
 
   &__content{
     max-width: 578px;
+
+    @media #{media("<", t)} {
+      max-width: 100%;
+    }
+    @media #{media("<", m)} {
+      width: rem(335px);
+    }
   }
 
   &__title{
@@ -611,6 +1167,11 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     color: #2A2E2B;
+
+    @media #{media("<", m)} {
+      font-size: rem(20px);
+      line-height: 120%;
+    }
   }
 
   &__job{
@@ -620,19 +1181,51 @@
     font-size: 14px;
     line-height: 150%;
     color: #727A75;
+
+    @media #{media("<", m)} {
+      margin-bottom: 20px;
+
+      font-size: rem(14px);
+      line-height: 150%;
+    }
   }
 
   &__dates{
     display: flex;
     gap: 42px;
     margin-bottom: 20px;
+
+    @media #{media("<", t)} {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
     &-col{
       &.bulgakov{
         &-left{
           width: 258px;
+
+          @media #{media("<", t)} {
+            width: 100%;
+          }
+          @media #{media("<", m)} {
+            width: rem(335px);
+          }
         }
         &-right{
           width: 278px;
+
+          @media #{media("<", t)} {
+            width: 100%;
+          }
+          @media #{media("<", m)} {
+            width: rem(335px);
+          }
         }
       }
     }
@@ -644,24 +1237,56 @@
       line-height: 140%;
       color: #2A2E2B;
 
+      @media #{media("<", m)} {
+        width: rem(335px);
+
+        font-size: rem(13px);
+        line-height: 160%;
+      }
+
     }
     &-bot{
       font-weight: 400;
       font-size: 12px;
       line-height: 150%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+
+        font-size: rem(12px);
+        line-height: 160%;
+      }
     }
   }
 
   &__knowledge{
     display: flex;
     gap: 42px;
+
+    @media #{media("<", t)} {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @media #{media("<", m)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
     &-title{
       margin-bottom: 16px;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
       color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+
+        font-size: rem(13px);
+        line-height: 160%;
+      }
     }
     &-col{
       .knowledge-mark{
@@ -669,6 +1294,9 @@
         gap: 11px;
         margin-bottom: 12px;
 
+        @media #{media("<", m)} {
+          gap: 8px;
+        }
         &__icon{
           display: flex;
           justify-content: center;
@@ -676,6 +1304,11 @@
           svg{
             width: 20px;
             height: 20px;
+
+            @media #{media("<", m)} {
+              width: rem(12px);
+              height: rem(12px);
+            }
           }
         }
         &__title{
@@ -685,6 +1318,10 @@
           font-size: 12px;
           line-height: 150%;
           color: #727A75;
+
+          @media #{media("<", m)} {
+            font-size: rem(10px);
+          }
         }
         &__text{
           font-weight: 400;
@@ -695,6 +1332,11 @@
 
         &__desk{
           max-width: 230px;
+
+          @media #{media("<", m)} {
+            max-width: rem(315px);
+            width: rem(315px);
+          }
         }
       }
     }
@@ -703,13 +1345,25 @@
       font-size: 12px;
       line-height: 150%;
       color: #727A75;
+
+      @media #{media("<", m)} {
+        margin-left: 20px;
+        font-size: rem(10px);
+      }
     }
 
     &-bot{
       margin-top: 39px;
 
+      @media #{media("<", m)} {
+        margin-top: 20px;
+      }
       &.grom{
         margin-top: 160px;
+
+        @media #{media("<", m)} {
+          margin-top: 20px;
+        }
       }
     }
   }
