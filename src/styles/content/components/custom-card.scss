@@ -4,6 +4,9 @@
 
   width: 560px;
 
+  @media #{media("<", t)} {
+    width: 100%;
+  }
   @media #{media("<", m)} {
     width: rem(335px);
   }

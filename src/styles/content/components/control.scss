@@ -14,6 +14,15 @@
     @media (min-width: 1025px) and (max-width: 1280px) {
     width: 100%;
     }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+    }
+    @media #{media("<", d)} {
+      height: rem(635px);
+    }
+    @media #{media("<", t)} {
+      height: rem(535px);
+    }
     @media #{media("<", m)} {
       width: rem(335px);
       height: rem(290px);
@@ -24,12 +33,9 @@
       left: 0px;
 
       max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 100%;
 
-      @media #{media("<", m)} {
-        width: 100%;
-        height: 100%;
-      }
     }
     &__title{
       position: absolute;
@@ -52,6 +58,14 @@
       }
       @media (min-width: 1025px) and (max-width: 1280px) {
         left: 40px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        left: 10%;
+        top: 75%;
+        width: 80%;
+
+        font-size: 30px;
+
       }
       @media #{media("<", m)} {
         left: rem(20px);
@@ -183,6 +197,16 @@
         }
       }
 
+      @media #{media("<", t)} {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      @media (max-width: 850px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -242,7 +266,7 @@
       &-container{
         @media #{media("<", m)} {
           padding-left: rem(20px);
-          padding-right: rem(60px);
+          padding-right: rem(20px);
           margin-left: rem(-20px);
 
           width: calc(rem(375px) + 20px);
