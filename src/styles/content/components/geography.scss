@@ -1,9 +1,12 @@
 .geography {
-  padding: 40px 0;
+  padding: 0 20px;
 
-  background: url('../assets/images/geography-bg.jpg') center/contain no-repeat;
-  background-color: #F8F8F8;
-  background-size: cover;
+  &__wrapper {
+    padding: 40px 0;
+    background: url('../assets/images/geography-bg.jpg') center/contain no-repeat;
+    background-color: #F8F8F8;
+    background-size: cover;
+  }
 
   &__inner {
     display: flex;
@@ -101,8 +104,13 @@
 @media #{media('<',m)} {
   .geography {
     padding: 0;
-    background: none;
-    background-color: white;
+
+
+    &__wrapper {
+      padding: 0;
+      background: none;
+      background-color: white;
+    }
 
     &__inner {
       justify-content: flex-start;

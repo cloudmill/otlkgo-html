@@ -32,13 +32,6 @@
     }
   }
 
-  &__description {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 160%;
-    color: color(dark);
-  }
-
   &__right {
     display: flex;
     flex-direction: column;
@@ -100,13 +93,6 @@
       }
     }
 
-    &__description {
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 160%;
-      color: color(dark);
-    }
-
     &__right {
       display: flex;
       flex-direction: column;
@@ -116,26 +102,15 @@
 
   .controls-auditor {
     &__inner {
-      padding-top: 20px;
-
-      border-top: 1px solid #6BD895;
+      padding-top: 8px;
     }
 
     &__row {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 40px;
-      margin-top: 40px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 12px;
+      margin-top: 20px;
 
       .col {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .row {
-        display: flex;
-        flex-direction: column;
         gap: 12px;
       }
     }

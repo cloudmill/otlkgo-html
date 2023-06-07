@@ -164,6 +164,10 @@
   &__title {
     sup {
       font-size: 28px;
+
+      @media #{media('<',d)} {
+        font-size: 19px;
+      }
     }
   }
 }
