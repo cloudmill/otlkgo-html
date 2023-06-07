@@ -138,7 +138,7 @@
         line-height: 100%;
         text-transform: uppercase;
 
-        @media #{media(">", ll)} {
+        @media #{media(">", xl)} {
             margin-left: 330px;
         }
         @media (max-width: 1025px) {
