@@ -54,6 +54,12 @@
   }
 }
 
+.br-t {
+  @media #{media('<',t)} {
+    display: none;
+  }
+}
+
 .br-m {
   display: none;
 

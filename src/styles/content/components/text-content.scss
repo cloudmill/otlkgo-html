@@ -9,9 +9,7 @@ h2 {
     font-size: 32px;
     line-height: 120%;
   }
-  @media (min-width:768px) and (max-width: 1025px) {
-    font-size: 24px;
-  }
+
 
   @media #{media('<',m)} {
     font-size: 24px;
@@ -168,8 +166,7 @@ h6 {
   color: #2A2E2B;
 
   @media #{media('<',m)} {
-    font-size: rem(18px);
-    line-height: 130%;
+    font-size: 14px;
   }
 }
 

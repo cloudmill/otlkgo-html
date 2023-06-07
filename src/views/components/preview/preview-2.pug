@@ -1,22 +1,23 @@
-mixin preview-2(title, name, surname, job, picture)
+mixin preview(title, name, surname, job, picture)
   - var mobilePicture = picture.split('.').slice(0, -1).join('.') + '-mobile.' + picture.split('.').pop()
 
-  .preview-2
-    .preview-2__inner
-      .preview-2__line
-      .preview-2__left
-        .preview-2__row-top
-          .preview-2__block-top
-            h6.preview-2__title!= title
-            .preview-2__img-mobile.mobile
-              +picture(mobilePicture)
-        .preview-2__block
-          block
-        .preview-2__row-bottom
-          p.preview-2__name= name
-          p.preview-2__surname= surname
-          p.preview-2__job!= job
-      .preview-2__right.desktop-m
-        .preview-2__img
-          +picture(picture)
+  section.preview&attributes(attributes)
+    .preview__container
+      .preview__inner
+        .preview__line
+        .preview__left
+          .preview__row-top
+            .preview__block-top
+              h6.preview__title!= title
+              .preview__img-mobile.mobile
+                +picture(mobilePicture)
+          .preview__block
+            block
+          .preview__row-bottom
+            p.preview__name= name
+            p.preview__surname= surname
+            p.preview__job!= job
+        .preview__right.desktop-m
+          .preview__img
+            +picture(picture)
 

@@ -8,17 +8,46 @@ include ../components/section/charity-content
 block content
   +report-hero-4
   +human-capital 
-  +human-capital-preview
+  +preview('','Кучурина','Ирина Владимировна ','Главный специалист по кадровому администрированию','cuchurina-preview.png')
+    .cuchurina 
+      p.cuchurina__text.text_big В течение 2022 года в компанию было принято 27 человек — на 4 человека, или на 12,5%, больше, чем в 2021 году. Уволено 9 человек.
+      .item
+        .item__row 
+          .item__col 
+            p.item__number 5,88%
+          .item__col 
+            p.item__grey 
+        .item__row 
+          p.item__subtext Коэффициент текучести кадров в 2022 году <br>  при норме в&nbsp;5-7% 
   +organization-structure
-  +corporate-responsibility-preview
+  +preview('Корпоративная социальная ответственность','Шмидт','Елена Вячеславовна ','Главный специалист по внутренним коммуникациям','shmidt.png')
   +corporate-responsibility
-  
-  +security-preview
+  +preview('Охрана труда и пожарная <br/> безопасность','Тарасова','Галина Александровна','Заместитель директора административно-хозяйственного департамента','tarasova.png')
   +security-content
-  +ecology-preview
+  +preview('Экологичность <br/> как конкурентное <br/> преимущество','Хмельницкая','Анна Александровна','Начальник отдела маркетинговых коммуникаций','xm.png')
   +ecology-content
-  +charity-preview
+  +preview('Люди прежде всего: <br/> благотворительность','Баруздина','Ольга Александровна','Директор по организационному развитию','baruzdina.png')
   +charity-content
   +purchase-content
-  +energy-preview
+  +preview('Использование  <br/> энергетических ресурсов','Порощай','Алина Юрьевна','Директор административно-хозяйственного департамента','porochay.png').porochay
+    .porochay__table
+      .preview__table
+        table.preview-table
+          thead.preview-table__top  
+            tr.preview-table__row
+              each i in ['Показатель за 2022 год','Расход','Сумма, руб']
+                th.preview-table__name=i
+          tbody.preview-table__bottom
+            tr.preview-table__row
+              td.preview-table__item Энергоснабжение, кВт
+              td.preview-table__item.preview-table__item_bold 218 122,14
+              td.preview-table__item.preview-table__item_bold  1 415 662,45
+            tr.preview-table__row
+              td.preview-table__item Водоснабжение, куб.м
+              td.preview-table__item.preview-table__item_bold 1540,44
+              td.preview-table__item.preview-table__item_bold  112 002,63
+            tr.preview-table__row
+              td.preview-table__item Теплопотребление, Гкал/ куб.&nbsp;м
+              td.preview-table__item.preview-table__item_bold 369,16
+              td.preview-table__item.preview-table__item_bold  766 022,07
   +next-page('Корпоративное управление',5)

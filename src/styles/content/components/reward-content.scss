@@ -88,7 +88,6 @@
   }
 }
 
-
 .reward-table {
   margin-top: 60px;
 
@@ -108,10 +107,18 @@
   &__message {
     margin-top: 40px;
   }
+
+  &__table {
+    margin-top: 40px;
+  }
+
+  &__img {
+    margin-top: 40px;
+  }
 }
 
 .table {
-  margin-top: 40px;
+
 
   border: 1px solid #EDEDED;
   font-size: 12px;
@@ -177,4 +184,88 @@
     text-align: left;
   }
 
+}
+
+
+@media #{media('<',m)} {
+  .reward {
+    &__top {
+      gap: 20px;
+    }
+
+    &__text {
+      &_top {
+        max-width: 100%;
+      }
+    }
+
+    &__bottom {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .reward__item {
+    @media #{media('<',t)} {
+      &:nth-child(3) {
+        grid-column: span 1;
+      }
+    }
+  }
+
+  .reward-rule {
+    &__top {
+      gap: 20px;
+    }
+
+    &__text {
+      &_big {
+        max-width: 100%;
+      }
+    }
+
+    &__bottom {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .reward-table {
+    margin-top: 40px;
+
+    &__inner {
+      padding-top: 8px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__message {
+      margin-top: 20px;
+    }
+
+    &__table {
+      margin-top: 20px;
+    }
+
+    &__img {
+      margin-left: -20px;
+      padding-left: 20px;
+
+      width: calc(100% + 40px);
+      overflow-x: auto;
+
+      @include scrollbar-hidden;
+
+      picture {
+        width: 846px;
+      }
+    }
+
+  }
 }
