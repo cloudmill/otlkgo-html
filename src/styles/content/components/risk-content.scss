@@ -386,6 +386,14 @@
     &__item {
       padding-top: 8px;
     }
+
+    &__img {
+      height: 346px;
+
+      img {
+        object-fit: contain;
+      }
+    }
   }
 
   .results {
