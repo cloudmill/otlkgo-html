@@ -252,7 +252,6 @@
 
     &__img{
       @media #{media("<", m)} {
-        padding-right: rem(30px);
 
         width: rem(571px);
         height: rem(375px);
@@ -266,10 +265,9 @@
       &-container{
         @media #{media("<", m)} {
           padding-left: rem(20px);
-          padding-right: rem(20px);
           margin-left: rem(-20px);
 
-          width: calc(rem(375px) + 20px);
+          width: calc(100% + 20px);
           overflow-x: scroll;
 
           @include scrollbar-hidden();

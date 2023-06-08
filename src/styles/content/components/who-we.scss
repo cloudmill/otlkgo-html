@@ -125,7 +125,7 @@
       @media #{media("<", m)} {
         position: relative;
         top: 0px;
-        width: calc(rem(375px) + 20px);
+        width: calc(100% + 40px);
         margin-left: rem(-20px);
       }
     }
@@ -450,7 +450,10 @@
         &:nth-child(2) {
           margin-top: -15px;
           margin-right: 64px;
-
+          @media #{media("<", m)} {
+            margin-right: 0px;
+            max-width: 50%;
+          }
           .reference-subrow__item-icon {
             svg {
               width: 72px;
@@ -502,6 +505,7 @@
           }
           @media #{media("<", m)} {
             order: -1;
+            margin-right: 0px;
           }
         }
 
@@ -681,6 +685,9 @@
       &:nth-child(10) {
         @media #{media("<", t)} {
           height: 245px;
+        }
+        @media #{media("<", m)} {
+          height: auto;
         }
       }
 
