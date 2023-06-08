@@ -1,3 +1,18 @@
+export function removeActive (){
+  $('.header-menu__item.active').removeClass('active')
+  $('.header-sub.active').removeClass('active')
+}
+
+export function removeBurger(){
+  $('[data-header-menu]').removeClass('active')
+  $('[data-header-burger]').removeClass('active')
+}
+
+export function removeOverlay(){
+  $('.overlay-header').removeClass('active')
+  $('.body').removeClass('overlay')
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   $('[data-header-burger]').on('click', () => {
     if (!$('[data-header-burger]').hasClass('active')){
@@ -25,20 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   })
 
-  function removeActive (){
-    $('.header-menu__item.active').removeClass('active')
-    $('.header-sub.active').removeClass('active')
-  }
-
-  function removeBurger(){
-    $('[data-header-menu]').removeClass('active')
-    $('[data-header-burger]').removeClass('active')
-  }
-
   function addOverlay(){
     $('.overlay-header').addClass('active')
     $('.body').addClass('overlay')
   }
+
   function removeOverlay(){
     $('.overlay-header').removeClass('active')
     $('.body').removeClass('overlay')
@@ -54,4 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
   $('[data-sub-back]').on('click', function(){
     removeActive()
   })
+
+  
 })

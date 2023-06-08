@@ -1,14 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
+import { removeBurger, removeActive, removeOverlay } from "scripts/header-menu.js"
 
-  $(function() {
-    var hash = document.location.hash;
-    if (hash.length>1 && $(hash).length){ 
-      console.log($(hash).offset().top)
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top-100
-        }, 0);
-    }
-  });
+$(function() {
+  var hash = document.location.hash;
+  if (hash.length>1 && $(hash).length){ 
+    console.log($(hash).offset().top)
+      $('html, body').animate({
+          scrollTop: $(hash).offset().top-100
+      }, 100);
+  }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  
   
   const allLinks = document.querySelectorAll('a')
   
@@ -23,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 0);
         }
       });
+      removeBurger()
+      removeActive()
+      removeOverlay()
     })
   })
 })
