@@ -1,0 +1,148 @@
+.risks {
+  margin-top: 40px;
+
+  &__inner {
+    padding-right: 28px;
+  }
+
+  &__row {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+
+    border-top: 1px dashed #69DA91;
+    border-left: 1px solid #EDEDED;
+
+    &_gray {
+      border-top: 1px dashed #727A75;
+    }
+
+    &_1 {
+      padding-bottom: 89px;
+    }
+
+    &_3 {
+      border-left: none;
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 203px;
+
+        width: 1px;
+        height: 100%;
+
+        background: #E0EBE4;
+      }
+
+      &::after {
+        left: 203px;
+
+        @media #{media('<',t)} {
+          left: 141px;
+        }
+      }
+
+      &::before {
+        left: -28px;
+      }
+    }
+
+    &_5 {
+      border-left: none;
+    }
+  }
+
+  &__col {
+    width: 360px;
+    flex-shrink: 0;
+
+    @media #{media('<',t)} {
+      width: 254px;
+    }
+  }
+
+  &__col-right {
+    flex-basis: 642px;
+    padding-top: 20px;
+  }
+
+  &-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 0;
+    position: relative;
+    z-index: $index-1;
+    margin-left: -28px;
+    margin-top: -1px;
+
+    width: 232px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #2A2E2B;
+    background: #69DA91;
+
+    @media #{media('<',t)} {
+      width: 170px;
+    }
+  }
+
+  &-gray {
+    padding-left: 69px;
+    position: relative;
+    margin-top: -1px;
+
+    background: white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      width: 69px;
+      height: 1px;
+
+      background: #E0EBE4;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 23px 0;
+      text-align: center;
+
+      width: 292px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+      color: #2A2E2B;
+      background: #E0EBE4;
+
+    }
+
+    @media #{media('<',t)} {
+      padding-left: 40px;
+
+      &__inner {
+        padding: 23px 0px;
+
+        width: 212px;
+      }
+    }
+  }
+
+  @media #{media('<',m)} {
+    display: none;
+  }
+}
