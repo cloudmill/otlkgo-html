@@ -239,6 +239,11 @@
       max-width: 760px;
       margin-left: 400px;
 
+      @media #{media('<', t)} {
+        width: rem(335px);
+
+        margin-left: 0px;
+      }
       @media #{media("<", m)} {
         width: rem(335px);
         margin-left: 0px;
@@ -464,9 +469,11 @@
         gap: 20px;
         justify-content: space-between;
 
-        @media #{media("<", m)} {
+        @media #{media('<', t)} {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
+        }
+        @media #{media("<", m)} {
           gap: 12px;
         }
       }
@@ -478,6 +485,9 @@
         line-height: 150%;
         color: #2A2E2B;
 
+        @media #{media('<', t)} {
+          max-width: 100%;
+        }
         @media #{media("<", m)} {
           width: rem(335px);
 
@@ -972,6 +982,10 @@
       gap: 20px;
       justify-content: space-between;
 
+      @media #{media('<', t)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -981,6 +995,9 @@
     &__col{
       max-width: 560px;
 
+      @media #{media('<', t)} {
+        max-width: 100%;
+      }
       @media #{media("<", m)} {
         width: rem(335px);
       }
@@ -1054,6 +1071,10 @@
       gap: 20px;
       justify-content: space-between;
 
+      @media #{media('<', t)} {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1063,6 +1084,9 @@
     &__col{
       max-width: 560px;
 
+      @media #{media('<', t)} {
+        max-width: 100%;
+      }
       @media #{media("<", m)} {
         width: rem(335px);
       }

@@ -40,21 +40,19 @@ mixin header
             .header-menu__item(data-header-item="strategy")
               .header-menu__item-text Стратегический отчет
               .header-menu__item-num 2
-            .header-menu__item
+            .header-menu__item(data-header-item="results")
               .header-menu__item-text Результаты деятельности
               .header-menu__item-num 3
-            .header-menu__item
+            .header-menu__item(data-header-item="growth")
               .header-menu__item-text Устойчивое развитие
               .header-menu__item-num 4
-            .header-menu__item
+            .header-menu__item(data-header-item="corporate")
               .header-menu__item-text Корпоративное управление
               .header-menu__item-num 5
             .header-menu__item
               .header-menu__item-text Приложения
               .header-menu__item-num 6
         .header-menu__bot-container
-          //- .header-menu__code 
-          //-   +header-qr-svg
           a.header-menu__download(href="#")  
             .header-menu__download-icon 
               +header-download-svg
@@ -91,33 +89,135 @@ mixin header
             .header-sub__item-subsection Принципы безопасности
             .header-sub__item-subsection Система проверки контрагентов
       .header-sub(data-header-sub="strategy") 
+        .header-sub__back-item.mobile-custom(data-sub-back='')
+          .header-sub__back-text Стратегический отчет
         .header-sub__list 
           .header-sub__item 
-            .header-sub__item-title ОТЛК&nbsp;ЕРА. Кто мы?
-            .header-sub__item-subsection Новые горизонты
+            .header-sub__item-title Глобальная экономика <br> и логистический рынок в 2022 году
+            .header-sub__item-subsection Макроэкономическая ситуация
+            .header-sub__item-subsection Экономика Китая
+            .header-sub__item-subsection Ключевые прогнозы по Китаю
+            .header-sub__item-subsection Экономика Европы
+            .header-sub__item-subsection Ключевые прогнозы по ЕС
+            .header-sub__item-subsection Взаимная торговля Китая и Европы
           .header-sub__item 
-            .header-sub__item-title Справка о Компании
-            .header-sub__item-subsection Наша миссия
+            .header-sub__item-title Тренды логистической отрасли: <br>время альтернатив
+            .header-sub__item-subsection Рынок морских контейнерных перевозок
+            .header-sub__item-subsection Прогноз: рынок покупателя
+            .header-sub__item-subsection Прогноз: осторожный оптимизм
           .header-sub__item 
-            .header-sub__item-title Десять достижений 2022 года
+            .header-sub__item-title Рынок ж/д транзита Китай–Европа–Китай
+            .header-sub__item-subsection Адаптация как свидетельство гибкости
           .header-sub__item 
-            .header-sub__item-title Об отчете
+            .header-sub__item-title Стратегия технологического <br>лидера 
+            .header-sub__item-subsection Основные стейкхолдеры
+            .header-sub__item-subsection Базовые принципы стратегии
+            .header-sub__item-subsection Формат «высокотехнологичный интегратор»
+            .header-sub__item-subsection Партнерские сети
+      .header-sub(data-header-sub="results") 
+        .header-sub__back-item.mobile-custom(data-sub-back='')
+          .header-sub__back-text Результаты <br> деятельности
+        .header-sub__list 
           .header-sub__item 
-            .header-sub__item-title Обращение Генерального <br>директора
+            .header-sub__item-title Операционные результаты
+            .header-sub__item-subsection Маршрутная скорость и формирование <br>поездов
           .header-sub__item 
-            .header-sub__item-title Обращение председателя <br>Совета Директоров
+            .header-sub__item-title Формирование парка: оптимизация
           .header-sub__item 
-            .header-sub__item-title Календарь событий 2022
+            .header-sub__item-title Клиентский портфель
+            .header-sub__item-subsection Развитие перевозок Китай–РФ
+            .header-sub__item-subsection Кейс: рефрижераторные перевозки
+            .header-sub__item-subsection Безбумажные перевозки: инновационное <br>развитие
           .header-sub__item 
-            .header-sub__item-title Ключевые показатели
+            .header-sub__item-title Главные направления цифрового развития
+            .header-sub__item-subsection Автоматизация внутренних бизнес-процессов
+            .header-sub__item-subsection Сайт компании
+            .header-sub__item-subsection Электронная накладная
           .header-sub__item 
-            .header-sub__item-title Бизнес–модель
+            .header-sub__item-title Сохранить достигнутое
+            .header-sub__item-subsection Финансовый обзор
+            .header-sub__item-subsection Выручка
+            .header-sub__item-subsection Себестоимость продаж
+            .header-sub__item-subsection Валовая прибыль
+            .header-sub__item-subsection Управленческие расходы
+            .header-sub__item-subsection Прибыль от продаж 
+            .header-sub__item-subsection EBITDA
+            .header-sub__item-subsection Чистая прибыль 
+            .header-sub__item-subsection Финансовая отчетность по МСФО
           .header-sub__item 
-            .header-sub__item-title География деятельности
+            .header-sub__item-title С заботой о деловом климате
+      .header-sub(data-header-sub="growth") 
+        .header-sub__back-item.mobile-custom(data-sub-back='')
+          .header-sub__back-text Устойчивое развитие
+        .header-sub__list 
           .header-sub__item 
-            .header-sub__item-title Противодействие коррупции
-            .header-sub__item-subsection Задачи антикоррупционной политики
-            .header-sub__item-subsection Принципы безопасности
-            .header-sub__item-subsection Система проверки контрагентов
+            .header-sub__item-title Человеческий капитал
+            .header-sub__item-subsection Организационная структура ОТЛК ЕРА <br>на 31 декабря 2022 года
+            .header-sub__item-subsection Структура персонала
+            .header-sub__item-subsection Процессы найма
+            .header-sub__item-subsection Корпоративная культура
+          .header-sub__item 
+            .header-sub__item-title Корпоративная социальная <br>ответственность
+            .header-sub__item-subsection Забота о людях
+            .header-sub__item-subsection Корпоративные мероприятия
+            .header-sub__item-subsection Здоровье и медицинское обеспечение
+            .header-sub__item-subsection Материальная и иная помощь
+            .header-sub__item-subsection Поддержка образования
+            .header-sub__item-subsection Обучение и развитие
+            .header-sub__item-subsection Тренинги и конференции
+            .header-sub__item-subsection ИТ-ресурсы для сотрудников
+          .header-sub__item 
+            .header-sub__item-title Охрана труда и пожарная<br> безопасность
+            .header-sub__item-subsection Обучение
+            .header-sub__item-subsection Оценка условий труда
+            .header-sub__item-subsection Антиковидные меры
+            .header-sub__item-subsection Пожарная и электробезопасность
+          .header-sub__item 
+            .header-sub__item-title Экологичность как конкурентное <br>преимущество
+            .header-sub__item-subsection Воздействие на климат
+            .header-sub__item-subsection Динамика выбросов СО<sub>2</sub> ОТЛК ЕРА
+            .header-sub__item-subsection Охрана окружающей среды
+          .header-sub__item 
+            .header-sub__item-title Люди прежде всего: <br>благотворительность
+          .header-sub__item 
+            .header-sub__item-title Объединение людей и стран
+          .header-sub__item 
+            .header-sub__item-title Закупочная деятельность
+          .header-sub__item 
+            .header-sub__item-title Использование энергетических<br> ресурсов
+      .header-sub(data-header-sub="corporate") 
+        .header-sub__back-item.mobile-custom(data-sub-back='')
+          .header-sub__back-text Корпоративное <br>управление
+        .header-sub__list 
+          .header-sub__item 
+            .header-sub__item-title Структура корпоративного <br>управления
+          .header-sub__item 
+            .header-sub__item-title Акционерный капитал
+          .header-sub__item 
+            .header-sub__item-title Дивидендная политика
+          .header-sub__item 
+            .header-sub__item-title Общее собрание акционеров
+          .header-sub__item 
+            .header-sub__item-title Совет директоров
+          .header-sub__item 
+            .header-sub__item-title Корпоративный секретарь и <br>секретарь комитетов
+          .header-sub__item 
+            .header-sub__item-title Правление, генеральный директор <br>(председатель правления)
+          .header-sub__item 
+            .header-sub__item-title Система вознаграждения
+            .header-sub__item-subsection Генеральный директор 
+            .header-sub__item-subsection Члены правления
+          .header-sub__item 
+            .header-sub__item-title Система контроля
+            .header-sub__item-subsection Ревизионная комиссия
+            .header-sub__item-subsection Аудитор
+          .header-sub__item 
+            .header-sub__item-title Управление рисками
+            .header-sub__item-subsection SWOT-анализ
+            .header-sub__item-subsection Ключевые задачи управления рисками
+            .header-sub__item-subsection Модель управления рисками
+            .header-sub__item-subsection Процесс управления рисками
+          .header-sub__item 
+            .header-sub__item-title Итоги 2022 года
 
 
