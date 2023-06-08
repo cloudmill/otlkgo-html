@@ -138,7 +138,7 @@
         line-height: 100%;
         text-transform: uppercase;
 
-        @media #{media(">", ll)} {
+        @media #{media(">", xl)} {
             margin-left: 330px;
         }
         @media (max-width: 1025px) {
@@ -474,6 +474,7 @@
             gap: 32px;
 
             height: 100%;
+            height: auto;
 
             @media #{media("<", t)} {
                 padding: rem(24px) rem(20px) rem(22px);
