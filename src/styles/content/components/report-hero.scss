@@ -116,9 +116,7 @@
         @media #{media(">", ll)} {
           width: 51.5%;
         }
-        @media #{media(">", xl)} {
-          width: 987px;
-        }
+        
         @media #{media("<", m)} {
           height: rem(359px);
         }
@@ -128,9 +126,7 @@
         @media #{media(">", ll)} {
           width: 48.5%;
         }
-        @media #{media(">", xl)} {
-          width: 933px;
-        }
+        
         @media #{media("<", m)} {
           order: -1;
           height: rem(260px);
@@ -581,10 +577,12 @@
     @media #{media(">", xl)} {
       height: 937px;
     }
+    @media (min-width:2500px) {
+      height: 1260px;
+    }
     @media #{media("<", l)} {
       height: 628px;
     }
-    
     @media #{media("<", t)} {
       height: rem(375px);
     }
