@@ -1,5 +1,5 @@
 mixin direction-content
-  section.direction-automation.mt-section
+  section.direction-automation.mt-section(id="direction-automation") 
     .container-content 
       .direction-automation__inner 
         h3.direction-automation__title Автоматизация внутренних бизнес-процессов
@@ -12,7 +12,7 @@ mixin direction-content
                 li.direction-automation__item 
                   +mark-text-svg.direction-automation-svg
                   p.text.direction-automation__text=item
-  section.direction-site.mt-section
+  section.direction-site.mt-section(id="direction-site") 
     .container-content 
       .direction-site__inner 
         h3.direction-site__title Сайт компании
@@ -22,7 +22,7 @@ mixin direction-content
           +picture('direction-site.jpg')
         .direction-site__img.mobile-m
           +picture('direction-site-mobile.jpg')
-  section.direction-documents.mt-section
+  section.direction-documents.mt-section(id="direction-documents")
     .container-content 
       .direction-documents__inner 
         h3.direction-documents__title Электронная накладная

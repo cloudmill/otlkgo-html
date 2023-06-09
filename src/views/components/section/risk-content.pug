@@ -10,7 +10,7 @@ mixin risk-content
               li
                 +mark-text-svg.list-svg
                 p.text.list__text=item 
-  section.risk-analysis.mt-section
+  section.risk-analysis.mt-section(id="risk-analysis")
     .container-content 
       .risk-analysis__inner 
         h2.risk-analysis__title SWOT-анализ
@@ -52,7 +52,7 @@ mixin risk-content
                   li
                     +mark-text-svg.list-svg
                     p.text.list__text!=item 
-  section.risk-task.mt-section
+  section.risk-task.mt-section(id="risk-task")
     .container-content 
       .risk-task__inner
         .risk-task__row
@@ -120,14 +120,14 @@ mixin risk-content
                         li
                           +mark-text-svg.list-svg
                           p.text.list__text!=item 
-  section.risk-model.mt-section
+  section.risk-model.mt-section(id="risk-model")
     .container-content 
       .risk-model__inner 
         h3.risk-model__title Модель управления рисками
         .risk-model__img.desktop
           +picture('risk-table.png')
         +model
-  section.risk-process.mt-section 
+  section.risk-process.mt-section(id="risk-process") 
     .container-content 
       .risk-process__inner
         .row
@@ -155,7 +155,7 @@ mixin risk-content
           .risk-process__item
             p.risk-process__item-description.description_big Документирование
             p.risk-process__text.text  Документирование результатов этапов управления рисками нацелено на повышение уровня осведомленности и ответственности за управление рисками.
-  section.results.mt-section
+  section.results.mt-section(id="risk-results") 
     .container-content 
       .results__inner 
         h2.results__title Итоги 2022 года

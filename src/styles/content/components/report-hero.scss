@@ -579,7 +579,7 @@
   &_about{
     height: 709px;
     @media #{media(">", xl)} {
-      height: 937px;
+      height: auto;
     }
     @media (min-width:2500px) {
       height: 1260px;

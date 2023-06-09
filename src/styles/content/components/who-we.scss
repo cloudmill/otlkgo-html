@@ -102,6 +102,13 @@
     }
   }
 
+  &__horizonts{
+    
+    @media #{media(">", xxl)} {
+      margin-top: 250px;
+    }
+  }
+
   &__trains {
     height: 998px;
     position: relative;
@@ -146,6 +153,11 @@
       margin-top: 478px;
       margin-left: 600px;
 
+      
+    @media #{media(">", xxl)} {
+      margin-top: 730px;
+      margin-left: 650px;
+    }
       @media #{media("<", t)} {
         margin-top: 400px;
         margin-left: 40%;
