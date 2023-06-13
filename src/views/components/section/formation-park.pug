@@ -1,9 +1,15 @@
 mixin formation-park 
-  .container.container_formation-park  
-    .formation-park__picture.desktop 
-      +picture('number-train.png')
-    .formation-park__picture.mobile 
-      +picture('number-train-mobile.png')
+  section.formation-train 
+    .container-content
+      .formation-train__inner 
+        .formation-train__block 
+          p.formation-train__number 9 663
+          .formation-train__row   
+            .col 
+            .col 
+              p.formation-train__text 
+                span Вагона
+                | парк в управлении ОТЛК ЕРА <br> на конец 2022 года
   section.formation-park
     .container-content
       .formation-park__row.first

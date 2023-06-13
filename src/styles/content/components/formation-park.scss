@@ -4,8 +4,10 @@
   @media #{media('<',m)} {
     margin-top: 20px;
   }
+
   &__picture {
     margin-top: 20px;
+
     @media #{media(">", xl)} {
       height: 100%;
     }
@@ -45,15 +47,17 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
 
-        .ge-card{
-          .ge-card__top{
+        .ge-card {
+          .ge-card__top {
             flex-wrap: wrap;
             gap: 12px;
           }
-          .ge-card__num{
+
+          .ge-card__num {
             margin-bottom: 0px;
           }
-          .ge-card__text{
+
+          .ge-card__text {
             margin-bottom: 12px;
           }
         }
@@ -83,6 +87,7 @@
     &-first {
       &:nth-child(1) {
         width: 460px;
+
         @media #{media('<',m)} {
           width: rem(335px);
         }
@@ -90,6 +95,7 @@
 
       &:nth-child(2) {
         width: 559px;
+
         @media #{media('<',m)} {
           width: rem(335px);
         }
@@ -129,10 +135,12 @@
     &-third {
       .ge-card {
         width: 360px;
+
         @media #{media('<',m)} {
           width: rem(335px);
         }
       }
+
       &:nth-child(2) {
         @media #{media('<',m)} {
           order: -1;
@@ -179,6 +187,7 @@
         font-size: rem(12px);
         line-height: 160%;
       }
+
       &:last-child {
         margin-bottom: 0px;
       }
@@ -222,6 +231,7 @@
     @media #{media('<',m)} {
       margin-bottom: 40px;
     }
+
     &-title {
       margin-bottom: 32px;
 
@@ -229,6 +239,7 @@
       font-size: 24px;
       line-height: 130%;
       color: #2A2E2B;
+
       @media #{media('<',m)} {
         margin-bottom: 20px;
         max-width: 321px;
@@ -250,6 +261,7 @@
 
       &:nth-child(2) {
         border-top: 2px solid color(green);
+
         @media #{media('<', m)} {
           height: 112px;
         }
@@ -405,9 +417,10 @@
 
       &.paperless {
         width: 560px;
+
         @media #{media('<',m)} {
           margin-bottom: 0px;
-          
+
           width: rem(335px);
         }
       }
@@ -430,6 +443,97 @@
   &__mini {
     &-heading {
       margin-bottom: 24px;
+    }
+  }
+}
+
+.formation-train {
+  margin-top: 20px;
+  padding-top: 300px;
+  padding-bottom: 40px;
+
+  background: url('../assets/images/formation-train.png') center/cover no-repeat;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 24px;
+
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__number {
+    font-family: 'Halvar Breitschrift';
+    font-weight: 700;
+    font-size: 240px;
+    line-height: 80%;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #045C25;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    font-size: 15px;
+    line-height: 160%;
+    color: #727A75;
+
+    span {
+      font-family: 'Halvar Breitschrift';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      color: #727A75;
+
+    }
+  }
+
+  @media #{media('<',t)} {
+    padding-top: 450px;
+    background: url('../assets/images/formation-train-mobile.png') center/cover no-repeat;
+
+    &__number {
+      font-size: 150px;
+    }
+  }
+
+  @media #{media('<',m)} {
+    margin-top: 40px;
+    padding-top: 360px;
+    padding-bottom: 20px;
+
+    &__block {
+      gap: 12px;
+    }
+
+    &__row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    &__number {
+      font-size: 60px;
+    }
+
+    &__text {
+      gap: 12px;
+
+      font-size: 12px;
+
+      span {
+        font-size: 14px;
+      }
     }
   }
 }

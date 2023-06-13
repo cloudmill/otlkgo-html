@@ -1,4 +1,10 @@
 .reward {
+
+  &__inner {
+    padding-top: 20px;
+    border-top: 1px solid #6BD895
+  }
+
   &__top {
     display: flex;
     flex-direction: column;
@@ -189,6 +195,10 @@
 
 @media #{media('<',m)} {
   .reward {
+    &__inner {
+      padding-top: 8px;
+    }
+
     &__top {
       gap: 20px;
     }

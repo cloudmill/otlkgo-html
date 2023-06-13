@@ -136,17 +136,19 @@
   &__surname {
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
-    font-size: 14px;
     line-height: 110%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #2a2e2b;
     text-align: end;
+    font-size: 20px;
 
     @media #{media('<',t)} {
       font-size: 14px;
     }
   }
+
+
 
   &__job {
     margin-top: 4px;
