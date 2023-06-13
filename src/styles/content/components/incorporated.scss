@@ -1118,8 +1118,8 @@
 }
 
 .alt-preview{
+  margin: 0 auto;
   margin-top: 60px;
-  padding-left: 34px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -1145,7 +1145,6 @@
     width: rem(335px);
   }
   @media #{media(">", xl)} {
-    padding-left: 274px;
     gap: 140px;
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
@@ -1217,6 +1216,9 @@
     gap: 42px;
     margin-bottom: 20px;
 
+    @media #{media("<", l)} {
+      gap: 20px;
+    }
     @media #{media("<", t)} {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -1286,6 +1288,9 @@
     display: flex;
     gap: 42px;
 
+    @media #{media("<", l)} {
+      gap: 20px;
+    }
     @media #{media("<", t)} {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

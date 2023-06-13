@@ -17,14 +17,16 @@ mixin header
           .header-text__bot стратегический отчет
       .header-col
         .header-actions
-          .header-actions__item 
+          .header-actions__item(data-header-search='') 
             .header-actions__item-icon 
               +search-normal-svg.search
           .header-actions__item
-            .header-actions__item-row
-              .header-actions__item-text EN
-              .header-actions__item-icon
-                +header-arrow-svg.arrow
+            .select-wrapper 
+              .select
+                select.select__select(width='100%')
+                  each item in ['EN', 'RU', 'CH']
+                    option(value=item)
+                      |#{item}
           .header-actions__item
             .header-actions__item-row
               .header-actions__item-icon
@@ -220,5 +222,10 @@ mixin header
             a.header-sub__item-subsection(href="page-5#risk-process") Процесс управления рисками
           .header-sub__item 
             a.header-sub__item-title(href="page-5#risk-results") Итоги 2022 года
+    .header-search(data-search-container='')  
+      form.header-search__form.header-form 
+        input.header-form__input(type="text" placeholder="Поиск по Годовому отчету") 
+        button.header-form__button(type="submit")
+          +search-normal-svg
 
 

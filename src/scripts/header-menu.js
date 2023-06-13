@@ -14,6 +14,9 @@ export function removeOverlay(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const headerSearchBtn = document.querySelector('[data-header-search]')
+  const headerSearchContainer = document.querySelector('[data-search-container]')
+
   $('[data-header-burger]').on('click', () => {
     if (!$('[data-header-burger]').hasClass('active')){
       $('[data-header-menu]').addClass('active')
@@ -23,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
       removeBurger()
       removeActive()
       removeOverlay()
+    }
+    if ($(headerSearchBtn).hasClass('active')){
+      toggleSearchActive()
     }
   })
 
@@ -48,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function removeOverlay(){
     $('.overlay-header').removeClass('active')
     $('.body').removeClass('overlay')
+    toggleSearchActive()
   }
 
   $('.overlay-header').on('click', function(){
@@ -62,4 +69,22 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   
+
+  $(headerSearchBtn).on('click', function() {
+    if (!headerSearchBtn.classList.contains('active')){
+      toggleSearchActive()
+      addOverlay()
+      removeActive()
+      removeBurger()
+    } else {
+      toggleSearchActive()
+      removeOverlay()
+    }
+  })
+
+  function toggleSearchActive(){
+    $(headerSearchBtn).toggleClass('active')
+    $(headerSearchContainer).toggleClass('active')
+  }
+
 })
