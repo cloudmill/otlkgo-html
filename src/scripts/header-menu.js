@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function removeOverlay(){
     $('.overlay-header').removeClass('active')
     $('.body').removeClass('overlay')
-    toggleSearchActive()
+    removeSearchActive()
   }
 
   $('.overlay-header').on('click', function(){
@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function toggleSearchActive(){
     $(headerSearchBtn).toggleClass('active')
     $(headerSearchContainer).toggleClass('active')
+  }
+  function removeSearchActive(){
+    $(headerSearchBtn).removeClass('active')
+    $(headerSearchContainer).removeClass('active')
   }
 
 })

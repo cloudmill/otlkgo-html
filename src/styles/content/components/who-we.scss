@@ -70,7 +70,7 @@
       font-size: 14px;
       line-height: 150%;
       color: color(dark);
-      @media #{media("<", t)} {
+      @media #{media("<", d)} {
         width: 100%;
       }
       @media #{media("<", m)} {
@@ -88,7 +88,7 @@
       margin-left: 600px;
 
       width: 560px;
-      @media #{media("<", t)} {
+      @media #{media("<", d)} {
         margin-top: 20px;
         margin-left: 0px;
 
@@ -112,8 +112,16 @@
   &__trains {
     height: 998px;
     position: relative;
+
+    @media (min-width: 1100px) and (max-width: 1160px) {
+      height: 850px;
+    }
+
     @media #{media("<", t)} {
-      height: 840px;
+      height: 950px;
+    }
+    @media (max-width: 850px) {
+      height: 850px;
     }
     &-img {
       position: absolute;
@@ -158,10 +166,21 @@
       margin-top: 730px;
       margin-left: 650px;
     }
-      @media #{media("<", t)} {
-        margin-top: 400px;
-        margin-left: 40%;
-      }
+    @media (max-width: 1160px) {
+      margin-top: 400px;
+      margin-left: 50%;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 540px;
+      margin-left: 40%;
+    }
+    @media (min-width: 850px) and (max-width: 1024px) {
+      margin-top: 540px;
+    }
+    @media (max-width: 850px) {
+      margin-top: 400px;
+    }
+      
       @media #{media("<", m)} {
         width: rem(335px);
         
@@ -802,7 +821,7 @@
       &-col {
         width: 560px;
 
-        @media #{media("<", t)} {
+        @media #{media("<", d)} {
           width: 100%;
         }
         @media #{media("<", m)} {
@@ -914,6 +933,8 @@
           padding: 0px;
         }
         @media #{media("<", m)} {
+          padding: 0px;
+          display: grid;
           grid-template-columns: repeat(1, 1fr);
           gap: 24px;
         }
@@ -928,7 +949,7 @@
 
           background: #F4F4F4;
           @media #{media("<", d)} {
-            width: 521px;
+            max-width: 521px;
             height: 714px;
           }
           @media (min-width:768px) and (max-width: 1025px) {
@@ -953,8 +974,8 @@
           height: 1326px;
 
           border: 1px solid color(borders);
-          @media (min-width:768px) and (max-width: 1025px) {
-            padding: 84px 20px;
+          @media (min-width:768px) and (max-width: 1280px) {
+            padding: 110px 20px 84px 20px;
             height: auto;
             width: 50%;
             flex-shrink: 0;
@@ -1185,7 +1206,12 @@
 
         &.grey {
           top: 40px;
-          left: 60px;
+          left: 60px; 
+
+          @media #{media("<", d)} {
+            top: 20px;
+            left: 20px;
+          }
 
           @media #{media("<", t)} {
             top: 20px;
@@ -1201,6 +1227,7 @@
         &.green {
           right: 60px;
           bottom: 30px;
+          
           @media (min-width:768px) and (max-width: 1025px) {
             right: 264px;
             bottom: 20px;
