@@ -1,27 +1,58 @@
 .geography {
   padding: 0 20px;
-
-  &__wrapper {
-    padding: 40px 0;
-    background: url('../assets/images/geography-bg.jpg') center/contain no-repeat;
-    background-color: #F8F8F8;
-    background-size: cover;
-  }
+  position: relative;
 
   &__inner {
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 482px;
+
+    background: url('../assets/images/geography-bg.jpg') center/cover no-repeat;
+
+    @media #{media('<',d)} {
+      background: none;
+      gap: 40px;
+    }
+
+  }
+
+  &__bg-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__box {
+    display: none;
+    position: relative;
+    background: url('../assets/images/geography-bg.jpg') top/contain no-repeat;
+    height: 1060px;
+    background-color: #F8F8F8;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    @include scrollbar-hidden;
+
+    picture {
+      width: 874px;
+    }
+
+    @media #{media('<',d)} {
+      display: block;
+    }
+
+    @media #{media('<',t)} {
+      height: 414px;
+      background-size: cover;
+    }
   }
 
   &__top {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 40px;
 
-    border-top: 1px solid #045C25;
 
     @media #{media('<',t)} {
       grid-template-columns: repeat(1, 1fr);
@@ -38,6 +69,23 @@
       display: flex;
       flex-direction: column;
       gap: 8px
+    }
+  }
+
+  &__top-inner {
+    position: relative;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    z-index: $index-1;
+
+    border-top: 1px solid #045C25;
+
+
+    @media #{media('<',t)} {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
     }
   }
 
@@ -81,24 +129,38 @@
   }
 
   &__bottom {
-    display: flex;
-    gap: 40px;
-    padding-top: 20px;
-
-    max-width: 660px;
-
-    border-top: 1px solid color(green);
-
     .col {
       &:nth-child(2) {
         width: 361px;
       }
+    }
+
+    @media #{media('<',d)} {
+      margin-top: -400px;
+    }
+
+    @media #{media('<',t)} {
+      margin-top: 24px;
     }
   }
 
   &__img {
     margin-top: 20px;
   }
+
+  &__bottom-inner {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    z-index: $index-1;
+    padding-top: 20px;
+
+    max-width: 660px;
+
+    border-top: 1px solid color(green);
+  }
+
+
 }
 
 @media #{media('<',m)} {
@@ -115,6 +177,14 @@
     &__inner {
       justify-content: flex-start;
       gap: 0
+    }
+
+    &__box {
+      margin-top: 24px;
+
+      height: 497px;
+
+      background: none;
     }
 
     &__top {

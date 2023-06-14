@@ -10,6 +10,12 @@
   }
 }
 
+.desktop-d {
+  @media #{media('<',d)} {
+    display: none !important;
+  }
+}
+
 .desktop-m {
   @media #{media('<',m)} {
     display: none !important;
@@ -20,6 +26,14 @@
   display: none !important;
 
   @media #{media('<',m)} {
+    display: block !important;
+  }
+}
+
+.mobile-d {
+  display: none !important;
+
+  @media #{media('<',d)} {
     display: block !important;
   }
 }

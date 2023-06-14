@@ -8,23 +8,49 @@
   &__number {
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
-    font-size: 100px;
+    font-size: 160px;
     line-height: 80%;
     letter-spacing: -0.08em;
     color: color(green);
 
-    &-big {
-      font-size: 160px;
+    @media #{media('<',m)} {
+      font-size: 60px;
+    }
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2A2E2B;
+
+    @media #{media('<',m)} {
+      font-size: 12px;
     }
   }
 
   &__top {
     padding: 100px 0;
     background: url('../assets/images/indicators-bg.png'), center/cover, no-repeat;
+
+
+  }
+
+  &__row {
+    &-top {
+      @media #{media('<',m)} {
+        padding: 40px 0;
+        background: url('../assets/images/indicators-bg-mobile.png'), center/cover, no-repeat;
+      }
+    }
   }
 
   &__bottom {
     margin-top: 100px;
+
+    @media #{media('<',t)} {
+      margin-top: 40px;
+    }
 
     .indicators__item {
 
