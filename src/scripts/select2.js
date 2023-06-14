@@ -65,7 +65,7 @@ import 'select2';
               selectWrapper.css('z-index', '');
 
               clearTimeout(timeout2);
-            }, 300);
+            }, 0);
           });
           clearTimeout(timeout);
         }, 0);

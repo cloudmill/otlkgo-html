@@ -19,7 +19,7 @@ mixin profit-content
             .block-diagram__video
               +picture('video.png')
 
-  section.block-diagram.ebitda
+  section.block-diagram.ebitda(id="profit-ebitda")
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
@@ -39,7 +39,7 @@ mixin profit-content
             p.block-diagram__description EBITDA с указанием рентабельности, млн руб
             .block-diagram__video
               +picture('video.png')
-  section.block-diagram.profit-net
+  section.block-diagram.profit-net(id="profit-clean")
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
@@ -58,7 +58,7 @@ mixin profit-content
             p.block-diagram__description Чистая прибыль с указанием рентабельности, млн руб
             .block-diagram__video
               +picture('video.png')
-  section.profit-reporting 
+  section.profit-reporting(id="profit-reporting") 
     .container-content 
       .profit-reporting__inner 
         h2.profit-reporting__title Финансовая отчетность по МСФО

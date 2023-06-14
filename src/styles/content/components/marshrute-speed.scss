@@ -185,6 +185,12 @@
         width: rem(798px);
         height: rem(235px);
         margin-bottom: 0px;
+        padding-right: 20px;
+        picture{
+          img{
+            object-fit: fill;
+          }
+        }
       }
     }
 
@@ -206,10 +212,9 @@
     }
 
     &-container{
-      width: calc(rem(375px) + 20px);
+      width: calc(100% + 40px);
       margin-left: -20px;
       padding-left: 20px;
-      padding-right: 40px;
       overflow-x: scroll;
       @include scrollbar-hidden();
     }

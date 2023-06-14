@@ -1,6 +1,6 @@
 mixin preservation-content 
   section.preservation-finance.mt-section
-    .container-content 
+    .container-content(id="preservation-finance")  
       .preservation-finance__inner 
         h2.preservation-finance__title Финансовый обзор
         .preservation-finance__row 
@@ -17,7 +17,7 @@ mixin preservation-content
           +picture('preservation-dynamic.png')
         .preservation-dynamic__img.mobile-m
           +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
-  section.block-diagram.mt-section.preservation-revenue
+  section.block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
@@ -30,7 +30,7 @@ mixin preservation-content
             p.block-diagram__description.description_big Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
             .block-diagram__video
               +picture('video.png')
-  section.preservation-sales
+  section.preservation-sales(id="preservation-sales") 
     .container-content 
       .preservation-sales__inner 
         h3.preservation-sales__title Себестоимость продаж
@@ -57,7 +57,7 @@ mixin preservation-content
             p.text.preservation-structure__text Иные существенные расходы с долей 10% в составе себестоимости — расходы на парк фитинговых ж/д платформ в управлении, в том числе расходы на их эксплуатацию и амортизацию актива право пользования (платформ в финансовом лизинге). Начиная с середины 2019 года компания увеличивала парк в управлении за счет арендованных и полученных в лизинг платформ. На конец 2022 года арендованный парк составлял 33%, а парк в лизинге — 31% рабочего парка компании.
             p.text.preservation-structure__text За счет увеличения доли парка, привлеченного на условиях финансовой и операционной аренды, а также начала применения ФСБУ 25/2018 «Бухгалтерский учет аренды» начиная с 01.01.2022 года Обществу удалось в 2022 году дополнительно оптимизировать расходы на привлечение парка фитинговых платформ в структуре себестоимости.
 
-  section.preservation-profit.block-diagram.mt-section
+  section.preservation-profit.block-diagram.mt-section(id="preservation-diagram") 
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
@@ -79,7 +79,7 @@ mixin preservation-content
               +picture('video.png')
 
 
-  section.preservation-expenses 
+  section.preservation-expenses(id="preservation-expenses")  
     .container-content 
       .preservation-expenses__inner 
         h2.preservation-expenses__title Управленческие расходы

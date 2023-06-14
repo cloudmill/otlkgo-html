@@ -422,7 +422,6 @@
 
     &__img{
       @media #{media("<", m)} {
-        padding-right: 20px;
         width: rem(523px);
         height: rem(265px);
 
@@ -435,10 +434,9 @@
       &-container{
         @media #{media("<", m)} {
           padding-left: rem(20px);
-          padding-right: rem(20px);
           margin-left: rem(-20px);
 
-          width: calc(rem(375px) + 20px);
+          width: calc(100% + 20px);
 
           overflow-x: scroll;
           @include scrollbar-hidden();
@@ -1120,8 +1118,8 @@
 }
 
 .alt-preview{
+  margin: 0 auto;
   margin-top: 60px;
-  padding-left: 34px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -1138,7 +1136,7 @@
     width: 100%;
   }
   @media #{media("<", m)} {
-    padding: 0px 20px;
+    padding: 0px;
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1147,7 +1145,6 @@
     width: rem(335px);
   }
   @media #{media(">", xl)} {
-    padding-left: 274px;
     gap: 140px;
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
@@ -1219,6 +1216,9 @@
     gap: 42px;
     margin-bottom: 20px;
 
+    @media #{media("<", l)} {
+      gap: 20px;
+    }
     @media #{media("<", t)} {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -1288,6 +1288,9 @@
     display: flex;
     gap: 42px;
 
+    @media #{media("<", l)} {
+      gap: 20px;
+    }
     @media #{media("<", t)} {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

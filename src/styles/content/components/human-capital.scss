@@ -123,8 +123,8 @@
       }
 
       @media #{media("<", m)} {
-        width: calc(rem(375px) + 20px);
-        padding: 0px 40px 20px 20px;
+        width: calc(100% + 20px);
+        padding: 0px 0px 20px 20px;
         margin-left: -20px;
         overflow-x: scroll;
         @include scrollbar-hidden();
@@ -141,6 +141,12 @@
       @media #{media("<", m)} {
         width: rem(781px);
         height: rem(1067px);
+
+        picture{
+          img{
+            object-fit: fill;
+          }
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 mixin global-economy
   .container-content
-    section.macroeconomics
+    section.macroeconomics(id="section-ge-macroeconomics")
       h2.macroeconomics-title Макроэкономическая ситуация
       .macroeconomics-row 
         .macroeconomics-col 
@@ -45,7 +45,7 @@ mixin global-economy
                 a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report,
                 a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/" target="blank") S&P Global,
                 a.macroeconomics-grafics__col-link(href="https://www.pwc.com/" target="blank") PwC
-    section.chinese-economy
+    section.chinese-economy(id="section-ge-chinese")
       h2.chinese-economy__title Экономика Китая
       .chinese-economy__hero-row 
         .chinese-economy__hero-col 
@@ -89,7 +89,7 @@ mixin global-economy
           .chinese-economy__quarter-col 
             .chinese-economy__quarter-text.top В течение всего 2022 года в экономическом ландшафте Китая также прослеживались и другие сложности. К примеру, турбулентность в секторе недвижимости так и не была разрешена. Китайское правительство принимало меры для помощи застройщикам, одним из ключевых стало решение по смягчению ограничений по финансированию и кредитованию. Тем не менее, некоторые девелоперы все еще имеют серьезные финансовые проблемы. Вероятно, что правительству Китая придется утверждать новые меры поддержки сектора, хотя в стране отрицают критичность ситуации. Крах девелоперов Китая способен привести к полноценному мировому экономическому кризису, в результате чего дальнейшее развитие данной проблемы крайне важно.
             .chinese-economy__quarter-text Важнейшим событием в конце 2022 года стала отмена политики «нулевой терпимости» к COVID, что одновременно создало сложные условия для экономики в моменте, но и позволило с оптимизмом смотреть в 2023 год. Считается, что правительство Китая утвердит цель роста ВВП не менее 4,7%. 
-    section.chinese-forecast
+    section.chinese-forecast(id="section-ge-forecast")
       h2.chinese-forecast__title Ключевые прогнозы по Китаю
       .chinese-forecast__row 
         .chinese-forecast__col
@@ -125,7 +125,7 @@ mixin global-economy
             .macroeconomics-grafics__col-text.big-14 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-14(href="http://www.stats.gov.cn/" target="blank") Национальное статистическое бюро Китая
-    section.europe-economy
+    section.europe-economy(id="section-ge-europe")
       h2.europe-economy__title Экономика Европы
       .europe-economy__row 
         .europe-economy__col
@@ -149,7 +149,7 @@ mixin global-economy
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-    section.key-forecast 
+    section.key-forecast(id="section-ge-key") 
       h2.key-forecast__title Ключевые прогнозы по ЕС
       .key-forecast__row.top
         .key-forecast__col 
@@ -212,7 +212,7 @@ mixin global-economy
           .key-forecast__dinamic2-righttitle Динамика промышленного производства в годовом выражении, 2022 г.
           .key-forecast__dinamic2-vector.right
             +picture('dinamic-vector-right.png')
-    section.mutal-trade 
+    section.mutal-trade(id="section-ge-mutal")  
       h2.mutal-trade__title Взаимная торговля Китая и Европы
       .mutal-trade__hero 
         .mutal-trade__hero-col 
