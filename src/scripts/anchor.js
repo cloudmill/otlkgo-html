@@ -1,10 +1,10 @@
-import { removeBurger, removeActive, removeOverlay } from "scripts/header-menu.js"
+import { removeBurger, removeActive, removeOverlay } from "scripts/header-menu.js";
 
 
 let offsetScroll = 100;
 
 if (window.screen.width < 768){
-  offsetScroll = 70
+  offsetScroll = 70;
 }
 
 $(function() {
@@ -18,7 +18,7 @@ $(function() {
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  const allLinks = document.querySelectorAll('a')
+  const allLinks = document.querySelectorAll('a');
   
   allLinks.forEach(btn  => {
     btn.addEventListener('click', () => {
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 500);
         }
       });
-      removeBurger()
-      removeActive()
-      removeOverlay()
-    })
-  })
-})
+      removeBurger();
+      removeActive();
+      removeOverlay();
+    });
+  });
+});
 
