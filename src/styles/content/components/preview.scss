@@ -49,7 +49,7 @@
     transform: translateX(-50%);
 
     height: 2px;
-    width: calc(100% - 40px);
+    width: calc(95%);
 
     overflow: hidden;
 
@@ -82,13 +82,8 @@
           rgba(255, 255, 255, 0) 79.69%);
     }
 
-    @media #{media('>',xl)} {
-      width: calc(100% - 40px);
-    }
-
     @media #{media('<',t)} {
       top: 12px;
-      width: 95%;
     }
   }
 
