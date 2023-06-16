@@ -9,7 +9,6 @@ const globImporter = require("node-sass-glob-importer");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlBeautifyPlugin = require("beautify-html-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-
 // Files
 const utils = require("./utils");
 

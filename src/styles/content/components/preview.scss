@@ -423,6 +423,10 @@
   margin-top: 32px;
   width: 540px;
 
+  @media #{media('<',d)} {
+    width: auto;
+  }
+
   &__top {
     text-align: left;
   }
@@ -514,7 +518,17 @@
 }
 
 .porochay {
+  .preview__inner {
+    @media #{media('<',d)} {
+      gap: 20px;
+    }
+  }
+
   img {
+    @media #{media('<',d)} {
+      object-position: -47px;
+    }
+
     @media #{media('<',t)} {
       object-position: -30px;
     }
@@ -522,6 +536,12 @@
     @media #{media('<',m)} {
       object-position: 0
     }
+  }
+}
+
+.baruzdina {
+  img {
+    object-position: -68px;
   }
 }
 
