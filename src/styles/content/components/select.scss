@@ -27,7 +27,7 @@
                 color: color(black);
               }
 
-              @media #{media("<", t)} {
+              @media #{media("<", m)} {
                 font-size: 14px;
                 line-height: 130%;
             }

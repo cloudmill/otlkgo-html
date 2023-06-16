@@ -57,7 +57,7 @@
         cursor: pointer;
         transition: 0.3s;
 
-        @media #{media("<", t)} {
+        @media #{media("<", m)} {
             width: rem(56px);
             height: rem(56px);
         }
@@ -75,7 +75,7 @@
 
                 background-color: color(white);
 
-                @media #{media("<", t)} {
+                @media #{media("<", m)} {
                     width: rem(19.5px);
                 }
 
@@ -101,7 +101,7 @@
             width: 119px;
             height: 44px;
 
-            @media #{media("<", t)} {
+            @media #{media("<", m)} {
                 width: rem(86.5px);
                 height: rem(32px);
             }
@@ -192,7 +192,7 @@
             &:nth-child(2) {
                 width: 84px;
 
-                @media #{media("<", t)} {
+                @media #{media("<", m)} {
                     width: rem(57px);
                     height: rem(56px);
                 }
@@ -231,7 +231,7 @@
                                         text-align: center;
                                         color: #181D1D;
 
-                                        @media #{media("<", t)} {
+                                        @media #{media("<", m)} {
                                             font-size: 14px;
                                             line-height: 130%;
                                         }
@@ -256,7 +256,7 @@
                                         background-size: contain;
                                         transition: 0.3s;
 
-                                        @media #{media("<", t)} {
+                                        @media #{media("<", m)} {
                                             right: 10px;
                                         }
                                     }
@@ -304,7 +304,7 @@
                 }
             }
 
-            @media #{media("<", t)} {
+            @media #{media("<", m)} {
                 width: rem(57px);
                 height: rem(56px);
             }
@@ -392,9 +392,12 @@
             justify-content: space-between;
 
             padding: rem(24px) rem(20px) rem(20px) rem(20px);
-            height: calc(100vh - rem(56px));
+            height: calc(100vh - 84px);
             width: rem(355px);
+        }
+        @media #{media("<", m)} {
             top: rem(56px);
+            height: calc(100vh - rem(56px));
         }
 
         &.active {
@@ -563,8 +566,11 @@
         overflow-y: scroll;
 
         @media #{media("<", t)} {
-            top: rem(56px);
             width: rem(355px);
+            height: calc(100vh - 84px);
+        }
+        @media #{media("<", m)} {
+            top: rem(56px);
             height: calc(100vh - rem(56px));
         }
 
@@ -711,7 +717,7 @@
             transform: translateY(100%);
         }
 
-        @media #{media("<", t)} {
+        @media #{media("<", m)} {
             padding: 18px 18px 18px 20px;
             height: rem(56px);
         }
