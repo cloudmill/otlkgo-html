@@ -8,11 +8,11 @@
 
     border-bottom: 1px solid color(borders);
     background: color(white);
-    z-index: 4;
+    z-index: 7;
 
     
     @media #{media("<", t)} {
-        height: rem(56px);
+        height: 56px;
     }
 
     &-container {
@@ -24,13 +24,13 @@
 
         border-bottom: 1px solid color(borders);
         @media #{media("<", m)} {
-            height: rem(56px);
+            height: 56px;
         }
     }
 
     &-container {
         position: relative;
-        z-index: 4;
+        z-index: 7;
         background: white;
     }
 
@@ -58,8 +58,8 @@
         transition: 0.3s;
 
         @media #{media("<", m)} {
-            width: rem(56px);
-            height: rem(56px);
+            width: 56px;
+            height: 56px;
         }
 
         &.active {
@@ -193,8 +193,8 @@
                 width: 84px;
 
                 @media #{media("<", m)} {
-                    width: rem(57px);
-                    height: rem(56px);
+                    width: 57px;
+                    height: 56px;
                 }
 
                 .select-wrapper{
@@ -305,8 +305,8 @@
             }
 
             @media #{media("<", m)} {
-                width: rem(57px);
-                height: rem(56px);
+                width: 57px;
+                height: 56px;
             }
 
             &-row {
@@ -369,36 +369,32 @@
     }
 
     &-menu {
-        position: relative;
-        padding: 40px 60px 60px 60px;
+        padding: 124px 60px 60px 60px;
         position: absolute;
         transform: translateX(-100%);
 
-        top: 84px;
+        top: 0px;
         left: 0px;
 
         width: 465px;
-        height: 938px;
-        height: calc(100vh - 84px);
+        height: 100vh;
 
         background: color(white);
         transition: 0.3s;
         border-right: 1px solid color(borders);
-        z-index: 4;
+        z-index: 6;
 
         @media #{media("<", t)} {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
-            padding: rem(24px) rem(20px) rem(20px) rem(20px);
-            height: calc(100vh - 84px);
+            padding: 80px 20px 20px 20px;
             width: rem(355px);
+
+            z-index: 5;
         }
-        @media #{media("<", m)} {
-            top: rem(56px);
-            height: calc(100vh - rem(56px));
-        }
+        
 
         &.active {
             transform: translateX(0%);
@@ -427,7 +423,7 @@
         }
 
         &__item {
-            padding-bottom: 24px;
+            padding-bottom: 16px;
             display: flex;
             align-items: start;
             justify-content: space-between;
@@ -446,6 +442,7 @@
             &-text {
                 width: 309px;
 
+                font-family: 'Halvar Breitschrift';
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 100%;
@@ -462,6 +459,7 @@
             }
 
             &-num {
+                font-family: 'Halvar Breitschrift';
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 100%;
@@ -551,28 +549,29 @@
 
     &-sub {
         position: absolute;
-        top: 84px;
+        top: 0px;
         left: 0px;
+        padding-top: 84px;
 
         width: 465px;
-        height: calc(100vh - 84px);
+        height: 100vh;
 
         transform: translateX(-100%);
         background: color(white);
         transition: 0.3s;
         border-left: 1px solid color(borders);
         border-right: 1px solid color(borders);
-        z-index: 3;
+        z-index: 5;
         overflow-y: scroll;
 
         @media #{media("<", t)} {
+            padding-top: 56px;
+
             width: rem(355px);
-            height: calc(100vh - 84px);
+
+            z-index: 6;
         }
-        @media #{media("<", m)} {
-            top: rem(56px);
-            height: calc(100vh - rem(56px));
-        }
+        
 
         &.active {
             transform: translateX(100%);
@@ -584,7 +583,7 @@
         }
 
         &__list {
-            padding: 90px 49px 23px 60px;
+            padding: 40px 49px 23px 60px;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 32px;
@@ -593,7 +592,7 @@
             height: auto;
 
             @media #{media("<", t)} {
-                padding: rem(24px) rem(20px) rem(22px);
+                padding: 24px 20px 22px;
                 gap: rem(20px);
             }
         }
@@ -667,6 +666,7 @@
                 align-items: center;
                 gap: rem(8px);
 
+                font-family: 'Halvar Breitschrift';
                 font-weight: 700;
                 font-size: rem(20px);
                 line-height: 110%;
@@ -713,13 +713,13 @@
 
         &.active{
             visibility: visible;
-            z-index: 3;
+            z-index: 5;
             transform: translateY(100%);
         }
 
         @media #{media("<", m)} {
             padding: 18px 18px 18px 20px;
-            height: rem(56px);
+            height: 56px;
         }
     }
 

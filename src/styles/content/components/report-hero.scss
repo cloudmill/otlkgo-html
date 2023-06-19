@@ -6,13 +6,21 @@
   width: 100%;
   height: 707px;
 
-  @media #{media(">", t)} {
+  
+  @media (min-width: 1025px) {
     margin-top: 84px;
     width: 100%;
     height: calc(100vh - 84px);
   }
+  @media (max-width: 1024px) {
+    height: 600px;
+  }
+  @media (max-width: 820px) {
+    height: 500px;
+  }
+  
   @media #{media("<", m)} {
-    margin-top: rem(56px);
+    margin-top: 56px;
     width: 100%;
     height: 735px;
     height: auto;
@@ -23,6 +31,12 @@
     left: 0px;
     height: 100%;
     width: 100%;
+
+    picture{
+      img{
+        object-fit: fill;
+      }
+    }
     @media #{media(">", ll)} {
       width: 100%;
     }
@@ -46,7 +60,7 @@
     }
     &.main-page{
       @media #{media("<", m)} {
-        height: rem(760px);
+        // height: rem(760px);
       }
     }
   }
@@ -91,6 +105,8 @@
       top: 0px;
       left: 0px;
       display: none;
+
+      
       @media #{media("<", m)} {
         z-index: -1;
         display: block;
@@ -115,42 +131,34 @@
 
       padding: 40px;
       position: relative;
-      // width: 740px;
+      
 
       background: #69DA91;
 
-      // @media #{media("<", l)} {
-      //   width: 51.5%;
-      // }
-      // @media #{media(">", ll)} {
-      //   width: 51.5%;
-      // }
+      
       @media #{media('<', m)} {
         width: 100%;
-        // height: rem(380px);
+        height: rem(380px);
         padding: 20px;
       }
     }
     &.main-right{
 
-      // width: 700px;
       flex-shrink: 0;
-      // @media #{media("<", l)} {
-      //   width: 48.5%;
-      // }
-      // @media #{media(">", ll)} {
-      //   width: 48.5%;
-      // }
+      
       @media #{media('<', m)} {
         width: 100%;
-        // height: rem(380px);
+        height: rem(380px);
         order: 1;
+      }
+      @media (min-width:550px) and (max-width:768px) {
+        height: auto;
       }
     }
   }
 
   &__portrait{
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     z-index: 2;
@@ -196,8 +204,19 @@
       margin-left: -37px;
     }
 
+    &.hero-4{
+      position: relative;
+      margin-top: auto;
+    }
   }
 
+  &__texts{
+    position: absolute;
+
+    @media #{media("<", m)} {
+      position: relative;
+    }
+  }
   &__name{
     margin: 40px 0px 10px 40px;
 
@@ -212,7 +231,7 @@
       margin: 20px 0px 4px 20px;
       
     }
-    @media #{media(">", ll)} {
+    @media #{media(">", xl)} {
       font-size: rem(20px);
       line-height: 110%;
     }
@@ -267,7 +286,7 @@
       font-size: 40px;
     }
     @media (max-width: 1025px) {
-      padding: 30px 30px 30px 37px;
+      padding: 30px 50px 30px 37px;
       font-size: 32px;
     }
     @media #{media("<", m)} {
@@ -397,6 +416,15 @@
 
   &__main{
 
+    &-bg{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+
+      width: 100%;
+      height: 100%;
+    }
+
     &-img{
       width: 100%;
       height: 100%;
@@ -445,6 +473,7 @@
       }
       @media #{media("<", m)} {
         font-size: rem(48px);
+        width: rem(273px);
       }
     }
 
