@@ -17,6 +17,12 @@
 
     @media #{media('<',m)} {
       flex-direction: column;
+
+      background: color(white);
+    }
+
+    .preview__line{
+      // width: 100%;
     }
   }
 
