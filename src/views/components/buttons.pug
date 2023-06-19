@@ -1,5 +1,8 @@
 //в подвале кнопка
 
 mixin button
-  a.button(href="#") 
-    +arrow-right.button-svg
+  .button(class=attributes.class)
+    a.button__item(href="#") 
+      span.button__span 
+        span.button__hover
+          +arrow-right.button__svg

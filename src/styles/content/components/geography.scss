@@ -29,16 +29,10 @@
   &__box {
     display: none;
     position: relative;
-    // background: url('../assets/images/geography-bg.jpg') top/contain no-repeat;
-
-
-    background-image: url('../assets/images/geography-bg.webp');
-    background-image: -webkit-image-set(url('../assets/images/geography-bg.webp') format('webp'), url('../assets/images/geography-bg.jpg') format('jpeg'));
-    background-image: image-set(url('../assets/images/geography-bg.webp') format('webp'), url('../assets/images/geography-bg.jpg') format('jpeg'));
-
-
 
     height: 100vh;
+
+    background: url('../assets/images/geography-bg.jpg') top/contain no-repeat;
     background-color: #F8F8F8;
     overflow-x: scroll;
     overflow-y: hidden;

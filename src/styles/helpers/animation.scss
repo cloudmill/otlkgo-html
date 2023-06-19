@@ -7,3 +7,25 @@
     left: 100%;
   }
 }
+
+
+
+@keyframes MoveUpInitial {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -105%, 0);
+  }
+}
+
+@keyframes MoveUpEnd {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
