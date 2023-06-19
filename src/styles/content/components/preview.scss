@@ -294,6 +294,8 @@
   line-height: 140%;
   color: #2A2E2B;
 
+
+
   @media #{media('<',t)} {
     max-width: 100%;
     font-size: 14px;
@@ -306,9 +308,37 @@
   }
 }
 
+.preview__kadyrov {
+  @media #{media('<',d)} {
+    img {
+      object-position: -70px;
+    }
+  }
+
+  @media #{media('<',m)} {
+    img {
+      object-position: top;
+    }
+  }
+}
+
 .pahomov-preview,
 .ivanov-preview {
   margin-top: 20px;
+}
+
+.xmelnitskaya {
+  @media #{media('<',d)} {
+    img {
+      object-position: -50px;
+    }
+  }
+
+  @media #{media('<',m)} {
+    img {
+      object-position: 0;
+    }
+  }
 }
 
 .pahomov {
@@ -354,9 +384,9 @@
 }
 
 .lazutova {
-  @media #{media('<',t)} {
+  @media #{media('<',d)} {
     img {
-      object-position: -50px;
+      object-position: -60px;
     }
   }
 
@@ -380,6 +410,26 @@
     &__description {
       font-size: 13px !important;
     }
+  }
+}
+
+@media #{media('<',m)} {
+
+  .porochay__table {
+    position: relative;
+    width: calc(100% + 40px);
+    padding-left: 20px;
+    margin-left: -20px;
+    overflow-x: scroll;
+    @include scrollbar-hidden;
+
+    @media #{media('<',t)} {
+      background: white;
+    }
+  }
+
+  .preview-table {
+    width: 540px;
   }
 }
 
@@ -470,26 +520,6 @@
   }
 }
 
-@media #{media('<',m)} {
-
-  .porochay__table {
-    position: relative;
-    width: calc(100% + 40px);
-    padding-left: 20px;
-    margin-left: -20px;
-    overflow-x: scroll;
-    @include scrollbar-hidden;
-
-    @media #{media('<',t)} {
-      background: white;
-    }
-  }
-
-  .preview-table {
-    width: 540px;
-  }
-}
-
 .cuchurina {
   display: flex;
   flex-direction: column;
@@ -540,9 +570,24 @@
 }
 
 .baruzdina {
-  img {
-    object-position: -68px;
+  @media #{media('<',d)} {
+    img {
+      object-position: -60px;
+    }
   }
+
+  @media #{media('<',t)} {
+    img {
+      object-position: -44px;
+    }
+  }
+
+  @media #{media('<',m)} {
+    img {
+      object-position: 0;
+    }
+  }
+
 }
 
 .pavlova {

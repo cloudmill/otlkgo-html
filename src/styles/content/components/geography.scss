@@ -160,7 +160,19 @@
     border-top: 1px solid color(green);
   }
 
+  &__table {
 
+    &__th {
+      background: #D4E3DA;
+      border: 1px solid #EDEDED;
+    }
+
+    &_transparent {
+      background: transparent;
+      border: none;
+    }
+
+  }
 }
 
 @media #{media('<',m)} {
@@ -185,6 +197,10 @@
       height: 497px;
 
       background: none;
+
+      img {
+        object-fit: contain;
+      }
     }
 
     &__top {
