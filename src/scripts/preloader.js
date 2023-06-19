@@ -3,23 +3,24 @@ import * as parallax from './parallax'
 
 document.body.classList.add("body--hidden");
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   document.body.classList.remove("body--notransition");
   const preloader = document.querySelector(".preloader")
 
   if (preloader) {
     // const video = document.querySelector('[data-main-video]')
     const DELAY = 1800
+      
     preloader.classList.add('preloader--hidden')
 
-    // setTimeout(() => {
-    //   document.body.classList.remove("body--hidden");
-    //   window.scrollTo(0, 0);
+    setTimeout(() => {
+      document.body.classList.remove("body--hidden");
+      window.scrollTo(0, 0);
     //   video.setAttribute("autoplay", "");
     //   video.load();
 
     //   video.addEventListener('canplaythrough', () => {
-    //     preloader.classList.add('preloader--hide')
+        preloader.classList.add('preloader--hide')
     //     AOS.init({
     //       once: true,
     //       offset: 100,
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     ecologyVideo.setAttribute("autoplay", "");
     //     ecologyVideo.load()
     //   })
-    // }, DELAY);
+    }, DELAY);
   } else {
     document.body.classList.remove("body--hidden");
 
