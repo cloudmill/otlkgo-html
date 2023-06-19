@@ -21,13 +21,15 @@ mixin report-hero-3
 
 mixin report-hero-about 
   section.report-hero.report-hero_about
-    .report-hero__background
-      +picture('hero.png')
+    //- .report-hero__background
+    //-   +picture('hero.png')
     .report-hero__row.about-row 
       .report-hero__col.about-left
         .report-hero__img-about 
           +picture('report-hero-about.png')
       .report-hero__col.about-right
+        .report-hero__col-background.about-desktop
+          +picture('right-col-about.png')
         .report-hero__col-background.mobile 
           +picture('report-hero2-mobile.png')
         .report-hero__title о компании

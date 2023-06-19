@@ -3,7 +3,6 @@
   margin-top: 84px;
   margin-bottom: 20px;
 
-  width: 1440px;
   width: 100%;
   height: 707px;
 
@@ -96,32 +95,17 @@
         z-index: -1;
         display: block;
       }
+
+      &.about-desktop{
+        display: block;
+        z-index: -1;
+        @media #{media("<", m)} {
+          display: none;
+        }
+      }
     }
 
-    &.about{
-      &-left{
-        width: 740px;
-        
-        @media #{media(">", ll)} {
-          width: 51.5%;
-        }
-        
-        @media #{media("<", m)} {
-          height: rem(359px);
-        }
-      }
-      &-right{
-        width: 700px;
-        @media #{media(">", ll)} {
-          width: 48.5%;
-        }
-        
-        @media #{media("<", m)} {
-          order: -1;
-          height: rem(260px);
-        }
-      }
-    }
+    
 
     &.main-left{
       display: flex;
@@ -131,35 +115,35 @@
 
       padding: 40px;
       position: relative;
-      width: 740px;
+      // width: 740px;
 
       background: #69DA91;
 
-      @media #{media("<", l)} {
-        width: 51.5%;
-      }
-      @media #{media(">", ll)} {
-        width: 51.5%;
-      }
+      // @media #{media("<", l)} {
+      //   width: 51.5%;
+      // }
+      // @media #{media(">", ll)} {
+      //   width: 51.5%;
+      // }
       @media #{media('<', m)} {
         width: 100%;
-        height: rem(380px);
+        // height: rem(380px);
         padding: 20px;
       }
     }
     &.main-right{
 
-      width: 700px;
+      // width: 700px;
       flex-shrink: 0;
-      @media #{media("<", l)} {
-        width: 48.5%;
-      }
-      @media #{media(">", ll)} {
-        width: 48.5%;
-      }
+      // @media #{media("<", l)} {
+      //   width: 48.5%;
+      // }
+      // @media #{media(">", ll)} {
+      //   width: 48.5%;
+      // }
       @media #{media('<', m)} {
         width: 100%;
-        height: rem(380px);
+        // height: rem(380px);
         order: 1;
       }
     }
@@ -511,7 +495,12 @@
 
   &_about{
     height: auto;
-    @media #{media(">", m)} {
+    @media #{media(">", xl)} {
+      // height: calc(100vh - 84px);
+
+      .report-hero__background{
+        background-position: top 0px left -100px;
+      }
     }
     @media #{media("<", m)} {
       height: auto;
@@ -520,14 +509,23 @@
     .report-hero__img-about{
       width: 100%;
       height: auto;
+
+      // @media #{media(">", xl)} {
+      //   height: calc(100vh - 84px);
+      // }
       picture{
         img{
           object-position: top;
           object-fit: cover;
+          @media #{media(">", l)} {
+            object-fit: fill;
+          }
         }
       }
-
-      
     }
+  }
+
+  &.custom-main{
+    height: auto;
   }
 }
