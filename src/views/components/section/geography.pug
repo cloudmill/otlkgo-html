@@ -33,17 +33,32 @@ mixin geography
                       | за 2022 год
                 .col 
                   p.geography__description.description_big Прирост по кварталам 2022 года
-                  .geography__img 
-                    +picture('geography-statistic.png').geography-img
-                  //- table.geography-table 
-                  //-   thead 
-                  //-     tr
-                  //-       th.geography-table_transparent
-                  //-       th.geography-table__th Локации
-                  //-       th.geography-table__th Маршруты
-                  //-   tbody 
-                  //-     tr  
-                  //-       th 1 квартал
-                  //-       td 4
+                  table.geography-table 
+                    thead 
+                      tr.geography-table__thead
+                        th.geography-table_transparent
+                        th.geography-table__th Локации
+                        th.geography-table__th Маршруты
+                    tbody 
+                      tr  
+                        th.geography-table__th.geography-table__th_row 1 квартал
+                        td.geography-table__td 4
+                        td.geography-table__td 44
+                      tr  
+                        th.geography-table__th.geography-table__th_row 2 квартал
+                        td.geography-table__td 12
+                        td.geography-table__td 60
+                      tr  
+                        th.geography-table__th.geography-table__th_row 3 квартал
+                        td.geography-table__td 6
+                        td.geography-table__td 51
+                      tr  
+                        th.geography-table__th.geography-table__th_row 4 квартал
+                        td.geography-table__td 10
+                        td.geography-table__td 78
+                      tr  
+                        th.geography-table__green Итого
+                        td.geography-table__td 32
+                        td.geography-table__td 233
                   
 
