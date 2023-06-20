@@ -1,14 +1,14 @@
 mixin profit-content 
-  section.block-diagram.mt-section.profit
+  section(data-aos="fade-up").block-diagram.mt-section.profit
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
         .block-diagram__row 
           .block-diagram__col 
-            .item
+            .item.item_size-4
               .item__row 
                 .item__col 
-                  p.item__number 6 461
+                  p.item__number(data-countup='6461')
                 .item__col 
                   p.item__grey млн руб
               .item__row 
@@ -19,17 +19,17 @@ mixin profit-content
             .block-diagram__video
               +picture('video.png')
 
-  section.block-diagram.ebitda(id="profit-ebitda")
+  section(data-aos="fade-up").block-diagram.ebitda(id="profit-ebitda")
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
           h2.block-diagram__title EBITDA
         .block-diagram__row 
           .block-diagram__col 
-            .item
+            .item.item_size-4
               .item__row 
                 .item__col 
-                  p.item__number 6 123
+                  p.item__number(data-countup='6123') 
                 .item__col 
                   p.item__grey млн руб
               .item__row 
@@ -39,17 +39,17 @@ mixin profit-content
             p.block-diagram__description EBITDA с указанием рентабельности, млн руб
             .block-diagram__video
               +picture('video.png')
-  section.block-diagram.profit-net(id="profit-clean")
+  section(data-aos="fade-up").block-diagram.profit-net(id="profit-clean")
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
           h2.block-diagram__title Чистая прибыль
         .block-diagram__row 
           .block-diagram__col 
-            .item
+            .item.item_size-4
               .item__row 
                 .item__col 
-                  p.item__number 4 815
+                  p.item__number(data-countup='4815')
                 .item__col 
                   p.item__grey млн руб
               .item__row 
@@ -58,7 +58,7 @@ mixin profit-content
             p.block-diagram__description Чистая прибыль с указанием рентабельности, млн руб
             .block-diagram__video
               +picture('video.png')
-  section.profit-reporting(id="profit-reporting") 
+  section(data-aos="fade-up").profit-reporting(id="profit-reporting") 
     .container-content 
       .profit-reporting__inner 
         h2.profit-reporting__title Финансовая отчетность по МСФО
@@ -68,12 +68,12 @@ mixin profit-content
             p.profit-reporting__subtext * Относительно 2021 г.
           .profit-reporting__column   
             .row
-              .item 
+              .item.item_size-5 
                 .item__row 
                   h6.item__title Доходы
                 .item__row 
                   .item__col 
-                    p.item__number 55 375
+                    p.item__number(data-countup='55375') 
                   .item__col 
                     p.item__grey млн руб
                     .item__row_top 
@@ -81,12 +81,12 @@ mixin profit-content
                       p.item__grey_bottom -15%
                 .item__row 
                   p.item__subtext Доходы ОТЛК&nbsp;ЕРА по  итогам 2022 года уменьшились на  15% к  уровню 2021 года до  55  375 млн руб, или на  9  470 млн руб
-              .item 
+              .item.item_size-4 
                 .item__row 
                   h6.item__title Валовая прибыль
                 .item__row 
                   .item__col 
-                    p.item__number 7 682
+                    p.item__number(data-countup='7682')
                   .item__col 
                     p.item__grey млн руб
                     .item__row_top 
@@ -94,12 +94,12 @@ mixin profit-content
                       p.item__grey_bottom -11%
                 .item__row 
                   p.item__subtext Валовая прибыль компании составила 7 682 млн руб, что на 11%, или 970 млн руб, ниже показателя 2021 года
-              .item 
+              .item.item_size-4 
                 .item__row 
                   h6.item__title Операционная прибыль
                 .item__row 
                   .item__col 
-                    p.item__number 6 327
+                    p.item__number(data-countup='6327')
                   .item__col 
                     p.item__grey млн руб
                     .item__row_top 
@@ -107,12 +107,12 @@ mixin profit-content
                       p.item__grey_bottom -6%
                 .item__row 
                   p.item__subtext Операционная прибыль составила 6  327 млн руб, что на  6%, или 407 млн руб, ниже аналогичного показателя 2021 года
-              .item 
+              .item.item_size-4 
                 .item__row 
                   h6.item__title Чистая прибыль
                 .item__row 
                   .item__col 
-                    p.item__number 4 761
+                    p.item__number(data-countup='4761')
                   .item__col 
                     p.item__grey млн руб
                     .item__row_top 
@@ -121,12 +121,12 @@ mixin profit-content
                 .item__row 
                   p.item__subtext Чистая прибыль достигла 4  761 млн руб, что на  4%, или 208 млн руб, ниже аналогичного показателя прошлого года
             .profit-reporting__row_bottom 
-              .item 
+              .item.item_size-4 
                 .item__row 
                   h6.item__title Чистый долг
                 .item__row 
                   .item__col 
-                    p.item__number 2 742
+                    p.item__number(data-countup='2742')
                   .item__col 
                     p.item__grey млн руб
                     .item__row_top 
