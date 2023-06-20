@@ -8,3 +8,4 @@ import "./scripts/anchor";
 import "./scripts/preloader";
 import "./scripts/mediaQueries";
 import "./scripts/intersection";
+import "./scripts/aos";

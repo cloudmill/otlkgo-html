@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const videos = document.querySelectorAll('#my-video');
+  const videos = document.querySelectorAll('#video-play');
 
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
