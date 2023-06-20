@@ -1,6 +1,5 @@
 import { CountUp } from 'countup.js';
 
-// Функция, которая будет проверять, находится ли элемент в области видимости при прокрутке страницы
 function isElementInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
@@ -13,7 +12,6 @@ function isElementInViewport(element) {
 let options = {
   separator: ' ',
 }
-// Функция, которая будет запускать счетчики CountUp.js для элементов в области видимости
 function startCountUpOnScroll() {
   const countUpElements = document.querySelectorAll('[data-countup]');
 
@@ -36,6 +34,5 @@ function startCountUpOnScroll() {
   });
 }
 
-// Запуск счетчиков при загрузке страницы и при прокрутке
 window.addEventListener('DOMContentLoaded', startCountUpOnScroll);
 window.addEventListener('scroll', startCountUpOnScroll);

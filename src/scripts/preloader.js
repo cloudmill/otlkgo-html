@@ -1,5 +1,5 @@
 import AOS from 'aos';
-import * as parallax from './parallax'
+// import * as parallax from './parallax'
 
 document.body.classList.add("body--hidden");
 
