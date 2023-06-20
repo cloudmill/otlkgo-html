@@ -206,7 +206,7 @@ mixin header
           .header-text__bot стратегический отчет
       .header-col
         .header-actions
-          .header-actions__item(data-header-search='') 
+          .header-actions__item.header-actions_search.header-actions_before(data-header-search='') 
             .header-actions__item-icon 
               +search-normal-svg.search
           .header-actions__item
@@ -216,7 +216,7 @@ mixin header
                   each item in ['EN', 'RU', 'CH']
                     option(value=item)
                       |#{item}
-          .header-actions__item
+          .header-actions__item.header-actions_before
             .header-actions__item-row
               .header-actions__item-icon
                 +header-download-svg.download
