@@ -67,8 +67,8 @@ mixin global-economy
       .chinese-economy__quarter
         h4.chinese-economy__quarter-title Поквартальная динамика ВВП Китая, 2020–2022 гг.
         .chinese-economy__quarter-container
-          .chinese-economy__quarter-vector 
-            +picture('quarter-vector.png')
+        .chinese-economy__quarter-vector 
+          +picture('quarter-vector.png')
         .macroeconomics-grafics__col-links.quarter
             .macroeconomics-grafics__col-text Источники: 
               span.macroeconomics-grafics__col-list 
@@ -133,7 +133,7 @@ mixin global-economy
         .europe-economy__col
           .europe-economy__text Регион оказался под сильным давлением после реализации геополитических рисков в первом квартале года. Волатильность в цепочках поставок усилилась, физическая доступность отдельных товаров, производимых в России и Украине, встала под вопрос. Логистические цепи стали изламываться, а процессы, связанные с таможенной деятельностью и денежными операциями — усложняться.
           .europe-economy__text Произошел всплеск цен на энергоносители и другое сырье, что привело к разгону инфляции практически по всему миру и заставило всерьез рассматривать риск «стагфляции» в Европе. Все эти события привели к ужесточению денежно-кредитной политики со стороны ЕЦБ и росту стоимости капитала, а также ослаблению покупательского спроса в регионе. Однако в течение года некоторые сложности в экономике удалось разрешить, что отразилось на росте ВВП в 2022 году.
-      .europe-economy__subsection(data-aos="fade-up"). 
+      .europe-economy__subsection(data-aos="fade-up") 
         h4.europe-economy__subtitle Поквартальная динамика роста ВВП ЕС и еврозоны, 2020–2022 гг.
         .europe-economy__cubes 
           .europe-economy__cubes-item
@@ -175,16 +175,16 @@ mixin global-economy
         .key-forecast__col.col
           h4.key-forecast__subtitle Дальнейшее охлаждение инфляции
           .key-forecast__text В 2021 году инфляции в еврозоне стабильно росла, а по итогам октября 2022 года этот показатель достиг пика в размере 10,6%, что в разы выше целевого значения ЕЦБ. Тем не менее, в декабре показатель опустился, и тренд на снижение, вероятно, продолжится. Охлаждению инфляции способствуют меры ЕЦБ: ключевая ставка в январе составляет уже 2,5%, и в марте 2023 года ожидается очередное повышение на 50 б.п. Резкий спад стоимости энергоносителей в четвертом квартале также заметно снизил инфляционное давление.
-      .key-forecast__subsection(data-aos="fade-up"). 
-        .key-forecast__subsection(data-aos="fade-up").-title Динамика годового изменения инфляции в еврозоне, 2021–2022 гг.
-        .key-forecast__subsection(data-aos="fade-up").-container
-          .key-forecast__subsection(data-aos="fade-up").-vector
+      .key-forecast__subsection(data-aos="fade-up") 
+        .key-forecast__subsection-title Динамика годового изменения инфляции в еврозоне, 2021–2022 гг.
+        .key-forecast__subsection-container
+          .key-forecast__subsection-vector
             +picture('key-forecast2.png')
         .macroeconomics-grafics__col-links.forecast
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-      .key-forecast__stability 
+      .key-forecast__stability(data-aos="fade-up") 
         .key-forecast__stability-col 
           h4.key-forecast__stability-title Стабильный уровень безработицы
           .key-forecast__stability-text Уровень безработицы в еврозоне закрепился на уровне 6,6% в декабре 2022 (в декабре 2021 — 7%). По различным прогнозам, показатель безработицы может составить 7% по итогам 2023 года. Меры ЕЦБ по сдерживанию инфляции способны негативно повлиять на занятость, так как продолжительное ужесточение монетарной политики, как правило, ведет к сокращению найма.
@@ -235,8 +235,8 @@ mixin global-economy
                     .ge-card__text млрд евро
                 .ge-card__bot
                   .ge-card__text-grey Рост экспорта Китая в Европу в 2022 году
-      .mutal-trade__subsection(data-aos="fade-up"). 
-        .mutal-trade__subsection(data-aos="fade-up").-col 
+      .mutal-trade__subsection(data-aos="fade-up") 
+        .mutal-trade__subsection-col(data-aos="fade-up") 
           .ge-card.green
               .ge-card__top
                 .ge-card__num.green +3,2%
@@ -244,9 +244,9 @@ mixin global-economy
                   .ge-card__text млрд евро 
               .ge-card__bot
                 .ge-card__text-grey Рост экспорта ЕС в Китай в 2022 году
-        .mutal-trade__subsection(data-aos="fade-up").-col 
-          .mutal-trade__subsection(data-aos="fade-up").-text Резкий рост китайского экспорта произошел за счет увеличения отправок продуктов органической химии и прочих химических продуктов, различных электрических устройств, бытовых товаров. Нормализация цепочек поставок также поспособствовала росту торговли. Тем не менее, важно отметить сокращение в объеме натуральной торговли: суммарный объем снизился на 3,7%, экспорт Европы сократился на 25,6%, но экспорт Китая вырос на 13,9%.
-          .mutal-trade__subsection(data-aos="fade-up").-text Характерно, что тенденция к росту дефицита Европы в торговле с Китаем наблюдается с 2019 года, и динамика постоянно ускоряется. Так, в 2022 году, согласно доступным данным, экспорт Китая почти в 2,5 превзошел импорт. Ухудшение баланса грузопотоков неизбежным образом создает вызовы для индустрии перевозок в части поиска и борьбы за грузы для обратных отправок.
+        .mutal-trade__subsection-col(data-aos="fade-up") 
+          .mutal-trade__subsection-text(data-aos="fade-up") Резкий рост китайского экспорта произошел за счет увеличения отправок продуктов органической химии и прочих химических продуктов, различных электрических устройств, бытовых товаров. Нормализация цепочек поставок также поспособствовала росту торговли. Тем не менее, важно отметить сокращение в объеме натуральной торговли: суммарный объем снизился на 3,7%, экспорт Европы сократился на 25,6%, но экспорт Китая вырос на 13,9%.
+          .mutal-trade__subsection-text(data-aos="fade-up") Характерно, что тенденция к росту дефицита Европы в торговле с Китаем наблюдается с 2019 года, и динамика постоянно ускоряется. Так, в 2022 году, согласно доступным данным, экспорт Китая почти в 2,5 превзошел импорт. Ухудшение баланса грузопотоков неизбежным образом создает вызовы для индустрии перевозок в части поиска и борьбы за грузы для обратных отправок.
       .mutal-trade__balance 
         .mutal-trade__balance-top 
           .mutal-trade__balance-title Взаимная торговля Китая и Европы, 2021–2022 гг., млрд евро
