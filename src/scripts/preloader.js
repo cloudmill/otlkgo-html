@@ -6,7 +6,7 @@ document.body.classList.add("body--hidden");
 window.addEventListener('load', () => {
   const preloader = document.querySelector(".preloader")
   document.body.classList.remove("body--notransition");
-
+  document.body.style.opacity = 1
   if (preloader) {
     const DELAY = 1800
 

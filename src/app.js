@@ -10,3 +10,8 @@ import "./scripts/mediaQueries";
 import "./scripts/intersection";
 import "./scripts/aos";
 import "./scripts/countup";
+// import "./scripts/odometr";
+import "./scripts/test";
+
+
+

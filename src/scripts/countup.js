@@ -36,3 +36,4 @@ function startCountUpOnScroll() {
 
 window.addEventListener('DOMContentLoaded', startCountUpOnScroll);
 window.addEventListener('scroll', startCountUpOnScroll);
+
