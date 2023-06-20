@@ -7,9 +7,23 @@
     width: auto;
   }
 
-  &.custom-oparations {
+  &.custom-operations {
+    background: #F4F4F4;
+
     @media #{media(">", ll)} {
       max-width: 100%;
+    }
+
+    @media #{media("<", m)} {
+      background: color(white);
+
+      .container-content{
+        padding: 0px;
+      }
+    }
+
+    .container-content{
+      max-width: 1400px;
     }
   }
 
