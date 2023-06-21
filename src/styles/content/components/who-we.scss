@@ -103,47 +103,15 @@
   }
 
   &__horizonts{
+    margin-top: 100px;
     
-    @media #{media(">", xxl)} {
-      margin-top: 250px;
+    @media #{media("<", m)} {
+      margin-top: 40px;
     }
   }
 
   &__trains {
-    height: 998px;
     position: relative;
-
-    @media (min-width: 1100px) and (max-width: 1160px) {
-      height: 850px;
-    }
-
-    @media #{media("<", t)} {
-      height: 950px;
-    }
-    @media (max-width: 850px) {
-      height: 850px;
-    }
-    &-img {
-      position: absolute;
-      top: -243px;
-      left: 0px;
-      z-index: -1;
-
-      picture {
-        img {
-          object-fit: contain;
-        }
-      }
-      @media #{media("<", t)} {
-        top: 0px;
-      }
-      @media #{media("<", m)} {
-        position: relative;
-        top: 0px;
-        width: calc(100% + 40px);
-        margin-left: rem(-20px);
-      }
-    }
 
     &-top {
       display: flex;
@@ -158,29 +126,11 @@
     }
 
     &-bot {
+      display: flex;
+      justify-content: end;
+      margin-right: 200px;
       margin-top: 478px;
-      margin-left: 600px;
 
-      
-    @media #{media(">", xxl)} {
-      margin-top: 730px;
-      margin-left: 650px;
-    }
-    @media (max-width: 1160px) {
-      margin-top: 400px;
-      margin-left: 50%;
-    }
-    @media (max-width: 1024px) {
-      margin-top: 540px;
-      margin-left: 40%;
-    }
-    @media (min-width: 850px) and (max-width: 1024px) {
-      margin-top: 540px;
-    }
-    @media (max-width: 850px) {
-      margin-top: 400px;
-    }
-      
       @media #{media("<", m)} {
         width: rem(335px);
         
@@ -190,6 +140,7 @@
     }
 
     &-number {
+      font-family: 'Halvar Breitschrift';
       font-weight: 700;
       font-size: 160px;
       line-height: 80%;

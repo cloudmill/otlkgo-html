@@ -7,15 +7,12 @@ mixin who-we
           h2.who-we__hero-title ОТЛК&nbsp;ЕРА. Кто мы?
           .who-we__hero-subtitle АО «ОТЛК&nbsp;ЕРА» (далее в Отчете — ОТЛК&nbsp;ЕРА) — крупнейший оператор транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по территории России, Казахстана и Беларуси.
           .who-we__hero-text.text Несмотря на события 2022 года, мы активно развивались во многих направлениях: расширяли карту перевозок, наращивали долю импортных сервисов, инвестировали в человеческий капитал и экологические инициативы.
-      .who-we__trains 
-        .who-we__trains-img.desktop 
-          +picture('about-hero-img.png')
+      .who-we__trains(data-aos="fade-up") 
+        .appeal-row  
         .container-content
           .who-we__trains-top
             .who-we__trains-number +770%
             .who-we__trains-title Общий рост импортных перевозок
-          .who-we__trains-img.mobile 
-            +picture('about-hero-img-mobile.png')
           .who-we__trains-bot 
             .who-we__trains-cards 
               .ge-card.green
