@@ -184,6 +184,14 @@
 
   }
 
+
+  &__parallax-img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
   //NEW-HORIZONTS
 
   .new-horizonts {
