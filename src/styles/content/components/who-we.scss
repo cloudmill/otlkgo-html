@@ -194,6 +194,7 @@
     position: absolute;
     bottom: 0px;
     z-index: -1;
+    transition: bottom 0.3s cubic-bezier(0.33, 1, 0.68, 1);
     picture{
       img{
         object-position: center;
@@ -201,6 +202,15 @@
       }
     }
     
+    @media #{media("<", m)} {
+      position: relative;
+      margin-left: -20px;
+
+      width: 100vw;
+      height: 410px;
+      
+      z-index: 1;
+    }
   }
 
   //NEW-HORIZONTS

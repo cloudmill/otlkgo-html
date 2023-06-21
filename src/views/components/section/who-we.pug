@@ -7,23 +7,25 @@ mixin who-we
           h2.who-we__hero-title ОТЛК&nbsp;ЕРА. Кто мы?
           .who-we__hero-subtitle АО «ОТЛК&nbsp;ЕРА» (далее в Отчете — ОТЛК&nbsp;ЕРА) — крупнейший оператор транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по территории России, Казахстана и Беларуси.
           .who-we__hero-text.text Несмотря на события 2022 года, мы активно развивались во многих направлениях: расширяли карту перевозок, наращивали долю импортных сервисов, инвестировали в человеческий капитал и экологические инициативы.
-      .who-we__trains(data-parallax-container='') 
-        .who-we__parallax-img(data-parallax-img='') 
+      .who-we__trains(data-parallax-container='')(data-aos="fade-up")  
+        .who-we__parallax-img.desktop(data-parallax-img='') 
           +picture('parallax-trains-about-big.png')
         .container-content
           .who-we__trains-top
-            .who-we__trains-number +770%
+            .who-we__trains-number(data-countup='+770%' data-countup-prefix data-countup-suffix)
             .who-we__trains-title Общий рост импортных перевозок
+          .who-we__parallax-img.mobile 
+            +picture('parallax-trains-about-big.png')
           .who-we__trains-bot 
             .who-we__trains-cards 
               .ge-card.green
                 .ge-card__top
-                  .ge-card__num.green +156%
+                  .ge-card__num.green(data-countup='156' data-countup-prefix data-countup-suffix)
                 .ge-card__bot
                   .ge-card__text-grey Общий рост экспортных перевозок
               .ge-card.green
                 .ge-card__top
-                  .ge-card__num.green 89%
+                  .ge-card__num.green(data-countup='89' data-countup-suffix) 89%
                 .ge-card__bot
                   .ge-card__text-grey Доля ОТЛК&nbsp;ЕРА в транзитных контейнерных перевозках Китай–Европа–Китай в 2022 году
     section.who-we__horizonts.container-content(id="section-new-horizonts")(data-aos="fade-up") 
@@ -37,7 +39,7 @@ mixin who-we
         .reference-row  
           .reference-text.text Созданная в 2018 году в результате реорганизации АО «ОТЛК», ОТЛК&nbsp;ЕРА выступает оператором транзитных контейнерных сервисов и транспортирует грузы в сообщении Китай — Европа — Китай в составе регулярных контейнерных поездов через территорию России, Казахстана и Беларуси.
           .reference-text.text Трое учредителей владеют паритетными долями акций в уставном капитале: «Российские железные дороги» (ОАО «РЖД»), Государственное объединение «Белорусская железная дорога» (Белорусская железная дорога) и Акционерное общество «Национальная компания «Қазақстан темiр жолы» (АО «НК «КТЖ»).
-        .reference-subrow.custom-first 
+        .reference-subrow.custom-first(data-aos="fade-up")  
           .reference-subrow__col
             .reference-subrow__card 
               .reference-subrow__card-top
@@ -62,7 +64,7 @@ mixin who-we
               .reference-subrow__item-icon
                 +engine-svg
               .reference-subrow__item-text Автотехника и запчасти (*наибольшие доли в деньгах)
-        .reference-subrow.custom-second
+        .reference-subrow.custom-second(data-aos="fade-up") 
           .reference-subrow__col
             .reference-subrow__card.custom-lightgreen 
               .reference-subrow__card-top
