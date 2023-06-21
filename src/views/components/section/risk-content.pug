@@ -1,5 +1,5 @@
 mixin risk-content  
-  section.risk.mt-section
+  section(data-aos="fade-up").risk.mt-section
     .container-content 
       .risk__inner 
         .risk__left
@@ -10,7 +10,7 @@ mixin risk-content
               li
                 +mark-text-svg.list-svg
                 p.text.list__text=item 
-  section.risk-analysis.mt-section(id="risk-analysis")
+  section(data-aos="fade-up").risk-analysis.mt-section(id="risk-analysis")
     .container-content 
       .risk-analysis__inner 
         h2.risk-analysis__title SWOT-анализ
@@ -53,7 +53,7 @@ mixin risk-content
                   li
                     +mark-text-svg.list-svg
                     p.text.list__text!=item 
-  section.risk-task.mt-section(id="risk-task")
+  section(data-aos="fade-up").risk-task.mt-section(id="risk-task")
     .container-content 
       .risk-task__inner
         .risk-task__row
@@ -121,13 +121,13 @@ mixin risk-content
                         li
                           +mark-text-svg.list-svg
                           p.text.list__text!=item 
-  section.risk-model.mt-section(id="risk-model")
+  section(data-aos="fade-up").risk-model.mt-section(id="risk-model")
     .container-content 
       .risk-model__inner 
         h3.risk-model__title Модель управления рисками
         +risks
         +model
-  section.risk-process.mt-section(id="risk-process") 
+  section(data-aos="fade-up").risk-process.mt-section(id="risk-process") 
     .container-content 
       .risk-process__inner
         .row
@@ -155,7 +155,7 @@ mixin risk-content
           .risk-process__item
             p.risk-process__item-description.description_big Документирование
             p.risk-process__text.text  Документирование результатов этапов управления рисками нацелено на повышение уровня осведомленности и ответственности за управление рисками.
-  section.results.mt-section(id="risk-results") 
+  section(data-aos="fade-up").results.mt-section(id="risk-results") 
     .container-content 
       .results__inner 
         h2.results__title Итоги 2022 года
@@ -165,7 +165,7 @@ mixin risk-content
           .col 
             .results__img 
               +picture('results.png')
-  section.results-bottom.mt-section
+  section(data-aos="fade-up").results-bottom.mt-section
     .container-content 
       .results-bottom__inner 
         .results-bottom__row

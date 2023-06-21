@@ -1,0 +1,17 @@
+mixin preloader 
+  .preloader 
+    .preloader__container 
+      .decor.decor--green
+        .decor__elem
+        .decor__elem
+        .decor__elem
+        .decor__elem
+      .preloader__logo 
+        +logo-svg.preloader__logo-svg 
+      .preloader__wrapper 
+        .preloader__line
+          - for (i = 0; i < 10; i++) 
+            .preloader__item 
+              +railway-svg.preloader__svg
+          .preloader__item 
+            +train-svg.preloader__train

@@ -1,5 +1,38 @@
 .item {
+
+  &_size-1 {
+    .item__col:nth-child(2) {
+      left: 56px;
+    }
+  }
+
+  &_size-2 {
+    .item__col:nth-child(2) {
+      left: 100px;
+    }
+  }
+
+  &_size-3 {
+    .item__col:nth-child(2) {
+      left: 140px;
+    }
+  }
+
+  &_size-4 {
+    .item__col:nth-child(2) {
+      left: 200px;
+    }
+  }
+
+  &_size-5 {
+    .item__col:nth-child(2) {
+      left: 244px;
+    }
+  }
+
   &__row {
+    position: relative;
+
     &:nth-child(1) {
       display: flex;
       padding-top: 12px;
@@ -17,9 +50,12 @@
     &:nth-child(3) {
       margin-top: 24px;
       width: 560px;
-
-
     }
+  }
+
+  &__col:nth-child(2) {
+    position: absolute;
+    top: 12px;
   }
 
   &__title {
@@ -32,6 +68,8 @@
   }
 
   &__number {
+
+    // width: 200px;
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 60px;

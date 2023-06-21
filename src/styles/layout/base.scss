@@ -39,6 +39,7 @@ button::-moz-focus-inner {
 
 html {
   font-size: $fs;
+
   @media (min-width: 320px) {
     font-size: getVw($fs, 340px / 100);
   }
@@ -71,10 +72,39 @@ body {
   color: color(black);
   @include fsl(16px, 130%);
   background: color(white);
-  
-  &.overlay{
+
+  &.overlay {
     overflow: hidden;
   }
+
+  &.fancybox-active {
+    overflow: hidden;
+  }
+
+  &.fade-out {
+    .header {
+      transform: translateY(-100%);
+    }
+
+    .main,
+    .footer {
+      transition: $transition;
+      opacity: 0;
+    }
+  }
+
+  &--hidden {
+    overflow: hidden;
+  }
+
+  &--notransition {
+    opacity: 0;
+
+    * {
+      transition: none !important;
+    }
+  }
+
 }
 
 img {
@@ -130,8 +160,8 @@ button {
 }
 
 
-br{
-  &.desktop{
+br {
+  &.desktop {
     @media (min-width: 768px) and (max-width: 1024px) {
       display: none;
     }

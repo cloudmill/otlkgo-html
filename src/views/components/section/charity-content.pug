@@ -1,5 +1,5 @@
 mixin charity-content 
-  section.charity.mt-section
+  section(data-aos="fade-up").charity.mt-section
     .container-content 
       .charity__inner 
         p.charity__title.description 
@@ -7,10 +7,10 @@ mixin charity-content
           br.br
           | с инвалидностью и тем, кто оказался в сложной ситуации.
         .charity__row
-          .item
+          .item.item_size-3
             .item__row 
               .item__col 
-                p.item__number 327
+                p.item__number(data-countup='327') 
               .item__col 
                 p.item__grey млн руб
             .item__row 
@@ -23,7 +23,7 @@ mixin charity-content
               p.charity__text.text Помимо этого, у акционеров компании и ее сотрудников есть осознанное желание приносить пользу обществу через программы поддержки культуры, науки, образования и спорта.
         .charity__bottom.mt-section
           p.charity__description.description_big Мы поддерживаем различные социальные инициативы как напрямую, так и через сотрудничество с постоянными партнерами – благотворительными фондами России, Беларуси и Казахстана.
-  section.charity-cards
+  section(data-aos="fade-up").charity-cards
     .container-content 
       .charity-cards__inner
         .charity-cards__item 
@@ -98,7 +98,7 @@ mixin charity-content
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
                     p.text.charity-cards__text=item 
-  section.charity-utlc.mt-section(id="charity-utlc")  
+  section(data-aos="fade-up").charity-utlc.mt-section(id="charity-utlc")  
     .container-content
       .charity-utlc__inner 
         h2.charity-utlc__title Объединение людей и стран: UTLC Cup 2022
@@ -109,10 +109,10 @@ mixin charity-content
             p.charity-utlc__description.description В 2022 году турнир состоялся уже в четвертый раз — не помешала даже непростая геополитическая обстановка.
             p.charity-utlc__text.text.desktop-m На UTLC Cup в Москву приехали 8 команд из России, Беларуси, Казахстана, Турции, Сербии. В течение 5 дней на «Сапсан Арене» было разыграно 16 матчей, забито 55 голов.
           .row 
-            .item
+            .item.item_size-2
               .item__row 
                 .item__col 
-                  p.item__number 18
+                  p.item__number(data-countup='18') 
                 .item__col 
                   p.item__grey млн рублей
               .item__row 
@@ -128,7 +128,7 @@ mixin charity-content
               +picture('charity-utlc3.jpg')
             .charity-utlc__img    
               +picture('charity-utlc4.jpg')
-  section.ecology-grom.charity-grom
+  section(data-aos="fade-up").ecology-grom.charity-grom
     .container-content 
       .ecology-grom__inner 
         .col 

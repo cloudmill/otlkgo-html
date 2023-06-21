@@ -40,6 +40,7 @@ include ./components/other-blocks/other-components
 
 // elements
 include ./components/buttons
+include ./components/preloader
 include ./components/bloks-ui/message-block
 include ./components/bloks-ui/next-page
 include ./components/bloks-ui/risks
@@ -54,7 +55,9 @@ html(lang='ru')
     title= data.title
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
   
-  body.body
+  body.body.body--notransition(style={
+opacity:0
+  })
 
     .wrapper
 

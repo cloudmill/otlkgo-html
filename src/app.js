@@ -5,3 +5,13 @@ import "./scripts/select2";
 
 import "./scripts/header-menu";
 import "./scripts/anchor";
+import "./scripts/preloader";
+import "./scripts/mediaQueries";
+import "./scripts/intersection";
+import "./scripts/aos";
+import "./scripts/countup";
+// import "./scripts/odometr";
+import "./scripts/test";
+
+
+

@@ -103,3 +103,37 @@
   transition: transform $transition-duration $transition-timing-function;
   transform: translateY(110%);
 }
+
+@mixin beforeDecorLine($top: true, $green: false, $size: 455px) {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  @if $top {
+    top: -1px;
+  }
+
+  @else {
+    bottom: -1px;
+  }
+
+  z-index: 1;
+
+  width: rem($size);
+  height: 1px;
+
+  @media #{media("<")} {
+    width: rem(118px);
+    display: none;
+  }
+
+  transition: opacity $transition;
+
+  @if $green {
+    background: linear-gradient(270deg, #006525 0%, rgba(0, 101, 37, 0) 79.69%);
+  }
+
+  @else {
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 79.69%);
+  }
+}

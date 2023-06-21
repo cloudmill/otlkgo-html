@@ -1,6 +1,6 @@
 mixin global-economy
   .container-content
-    section.macroeconomics(id="section-ge-macroeconomics")
+    section(data-aos="fade-up").macroeconomics(id="section-ge-macroeconomics")
       h2.macroeconomics-title Макроэкономическая ситуация
       .macroeconomics-row 
         .macroeconomics-col 
@@ -45,7 +45,7 @@ mixin global-economy
                 a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report,
                 a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/" target="blank") S&P Global,
                 a.macroeconomics-grafics__col-link(href="https://www.pwc.com/" target="blank") PwC
-    section.chinese-economy(id="section-ge-chinese")
+    section(data-aos="fade-up").chinese-economy(id="section-ge-chinese")
       h2.chinese-economy__title Экономика Китая
       .chinese-economy__hero-row 
         .chinese-economy__hero-col 
@@ -67,8 +67,8 @@ mixin global-economy
       .chinese-economy__quarter
         h4.chinese-economy__quarter-title Поквартальная динамика ВВП Китая, 2020–2022 гг.
         .chinese-economy__quarter-container
-          .chinese-economy__quarter-vector 
-            +picture('quarter-vector.png')
+        .chinese-economy__quarter-vector 
+          +picture('quarter-vector.png')
         .macroeconomics-grafics__col-links.quarter
             .macroeconomics-grafics__col-text Источники: 
               span.macroeconomics-grafics__col-list 
@@ -89,7 +89,7 @@ mixin global-economy
           .chinese-economy__quarter-col 
             .chinese-economy__quarter-text.top В течение всего 2022 года в экономическом ландшафте Китая также прослеживались и другие сложности. К примеру, турбулентность в секторе недвижимости так и не была разрешена. Китайское правительство принимало меры для помощи застройщикам, одним из ключевых стало решение по смягчению ограничений по финансированию и кредитованию. Тем не менее, некоторые девелоперы все еще имеют серьезные финансовые проблемы. Вероятно, что правительству Китая придется утверждать новые меры поддержки сектора, хотя в стране отрицают критичность ситуации. Крах девелоперов Китая способен привести к полноценному мировому экономическому кризису, в результате чего дальнейшее развитие данной проблемы крайне важно.
             .chinese-economy__quarter-text Важнейшим событием в конце 2022 года стала отмена политики «нулевой терпимости» к COVID, что одновременно создало сложные условия для экономики в моменте, но и позволило с оптимизмом смотреть в 2023 год. Считается, что правительство Китая утвердит цель роста ВВП не менее 4,7%. 
-    section.chinese-forecast(id="section-ge-forecast")
+    section(data-aos="fade-up").chinese-forecast(id="section-ge-forecast")
       h2.chinese-forecast__title Ключевые прогнозы по Китаю
       .chinese-forecast__row 
         .chinese-forecast__col
@@ -125,7 +125,7 @@ mixin global-economy
             .macroeconomics-grafics__col-text.big-14 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-14(href="http://www.stats.gov.cn/" target="blank") Национальное статистическое бюро Китая
-    section.europe-economy(id="section-ge-europe")
+    section(data-aos="fade-up").europe-economy(id="section-ge-europe")
       h2.europe-economy__title Экономика Европы
       .europe-economy__row 
         .europe-economy__col
@@ -133,7 +133,7 @@ mixin global-economy
         .europe-economy__col
           .europe-economy__text Регион оказался под сильным давлением после реализации геополитических рисков в первом квартале года. Волатильность в цепочках поставок усилилась, физическая доступность отдельных товаров, производимых в России и Украине, встала под вопрос. Логистические цепи стали изламываться, а процессы, связанные с таможенной деятельностью и денежными операциями — усложняться.
           .europe-economy__text Произошел всплеск цен на энергоносители и другое сырье, что привело к разгону инфляции практически по всему миру и заставило всерьез рассматривать риск «стагфляции» в Европе. Все эти события привели к ужесточению денежно-кредитной политики со стороны ЕЦБ и росту стоимости капитала, а также ослаблению покупательского спроса в регионе. Однако в течение года некоторые сложности в экономике удалось разрешить, что отразилось на росте ВВП в 2022 году.
-      .europe-economy__subsection 
+      .europe-economy__subsection(data-aos="fade-up") 
         h4.europe-economy__subtitle Поквартальная динамика роста ВВП ЕС и еврозоны, 2020–2022 гг.
         .europe-economy__cubes 
           .europe-economy__cubes-item
@@ -149,7 +149,7 @@ mixin global-economy
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-    section.key-forecast(id="section-ge-key") 
+    section(data-aos="fade-up").key-forecast(id="section-ge-key") 
       h2.key-forecast__title Ключевые прогнозы по ЕС
       .key-forecast__row.top
         .key-forecast__col 
@@ -175,7 +175,7 @@ mixin global-economy
         .key-forecast__col.col
           h4.key-forecast__subtitle Дальнейшее охлаждение инфляции
           .key-forecast__text В 2021 году инфляции в еврозоне стабильно росла, а по итогам октября 2022 года этот показатель достиг пика в размере 10,6%, что в разы выше целевого значения ЕЦБ. Тем не менее, в декабре показатель опустился, и тренд на снижение, вероятно, продолжится. Охлаждению инфляции способствуют меры ЕЦБ: ключевая ставка в январе составляет уже 2,5%, и в марте 2023 года ожидается очередное повышение на 50 б.п. Резкий спад стоимости энергоносителей в четвертом квартале также заметно снизил инфляционное давление.
-      .key-forecast__subsection 
+      .key-forecast__subsection(data-aos="fade-up") 
         .key-forecast__subsection-title Динамика годового изменения инфляции в еврозоне, 2021–2022 гг.
         .key-forecast__subsection-container
           .key-forecast__subsection-vector
@@ -184,7 +184,7 @@ mixin global-economy
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-      .key-forecast__stability 
+      .key-forecast__stability(data-aos="fade-up") 
         .key-forecast__stability-col 
           h4.key-forecast__stability-title Стабильный уровень безработицы
           .key-forecast__stability-text Уровень безработицы в еврозоне закрепился на уровне 6,6% в декабре 2022 (в декабре 2021 — 7%). По различным прогнозам, показатель безработицы может составить 7% по итогам 2023 года. Меры ЕЦБ по сдерживанию инфляции способны негативно повлиять на занятость, так как продолжительное ужесточение монетарной политики, как правило, ведет к сокращению найма.
@@ -212,7 +212,7 @@ mixin global-economy
           .key-forecast__dinamic2-righttitle Динамика промышленного производства в годовом выражении, 2022 г.
           .key-forecast__dinamic2-vector.right
             +picture('dinamic-vector-right.png')
-    section.mutal-trade(id="section-ge-mutal")  
+    section(data-aos="fade-up").mutal-trade(id="section-ge-mutal")  
       h2.mutal-trade__title Взаимная торговля Китая и Европы
       .mutal-trade__hero 
         .mutal-trade__hero-col 
@@ -235,8 +235,8 @@ mixin global-economy
                     .ge-card__text млрд евро
                 .ge-card__bot
                   .ge-card__text-grey Рост экспорта Китая в Европу в 2022 году
-      .mutal-trade__subsection 
-        .mutal-trade__subsection-col 
+      .mutal-trade__subsection(data-aos="fade-up") 
+        .mutal-trade__subsection-col(data-aos="fade-up") 
           .ge-card.green
               .ge-card__top
                 .ge-card__num.green +3,2%
@@ -244,9 +244,9 @@ mixin global-economy
                   .ge-card__text млрд евро 
               .ge-card__bot
                 .ge-card__text-grey Рост экспорта ЕС в Китай в 2022 году
-        .mutal-trade__subsection-col 
-          .mutal-trade__subsection-text Резкий рост китайского экспорта произошел за счет увеличения отправок продуктов органической химии и прочих химических продуктов, различных электрических устройств, бытовых товаров. Нормализация цепочек поставок также поспособствовала росту торговли. Тем не менее, важно отметить сокращение в объеме натуральной торговли: суммарный объем снизился на 3,7%, экспорт Европы сократился на 25,6%, но экспорт Китая вырос на 13,9%.
-          .mutal-trade__subsection-text Характерно, что тенденция к росту дефицита Европы в торговле с Китаем наблюдается с 2019 года, и динамика постоянно ускоряется. Так, в 2022 году, согласно доступным данным, экспорт Китая почти в 2,5 превзошел импорт. Ухудшение баланса грузопотоков неизбежным образом создает вызовы для индустрии перевозок в части поиска и борьбы за грузы для обратных отправок.
+        .mutal-trade__subsection-col(data-aos="fade-up") 
+          .mutal-trade__subsection-text(data-aos="fade-up") Резкий рост китайского экспорта произошел за счет увеличения отправок продуктов органической химии и прочих химических продуктов, различных электрических устройств, бытовых товаров. Нормализация цепочек поставок также поспособствовала росту торговли. Тем не менее, важно отметить сокращение в объеме натуральной торговли: суммарный объем снизился на 3,7%, экспорт Европы сократился на 25,6%, но экспорт Китая вырос на 13,9%.
+          .mutal-trade__subsection-text(data-aos="fade-up") Характерно, что тенденция к росту дефицита Европы в торговле с Китаем наблюдается с 2019 года, и динамика постоянно ускоряется. Так, в 2022 году, согласно доступным данным, экспорт Китая почти в 2,5 превзошел импорт. Ухудшение баланса грузопотоков неизбежным образом создает вызовы для индустрии перевозок в части поиска и борьбы за грузы для обратных отправок.
       .mutal-trade__balance 
         .mutal-trade__balance-top 
           .mutal-trade__balance-title Взаимная торговля Китая и Европы, 2021–2022 гг., млрд евро
@@ -330,7 +330,7 @@ mixin global-economy
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-    section.ge-results 
+    section(data-aos="fade-up").ge-results 
       .ge-results__rect 
         +result-plug-svg
       .ge-results__title Вывод

@@ -1,5 +1,5 @@
 mixin preservation-content 
-  section.preservation-finance.mt-section
+  section(data-aos="fade-up").preservation-finance.mt-section
     .container-content(id="preservation-finance")  
       .preservation-finance__inner 
         h2.preservation-finance__title Финансовый обзор
@@ -9,7 +9,7 @@ mixin preservation-content
           .col 
             p.text.preservation-finance__text Это стало возможным благодаря расширению круга дополнительных маршрутов, сохранению ставки клиентам на базовых маршрутах на уровне 2021 года и другим действиям компании по привлечения грузопотока и снижению себестоимости перевозок. Все это позволило повысить рентабельность деятельности Общества по итогам 2022 года. 
             p.text.preservation-finance__text Ускоренное восстановление объемов перевозок после снижения во 2 квартале 2022 года позволило провести корректировку бюджета по итогам 1 полугодия 2022 года с учетом увеличения всех основных производственно-финансовых показателей по сравнению с корректировкой бюджета, проведенной по итогам 1 квартала 2022 года. Скорректированный бюджет ОТЛК&nbsp;ЕРА был перевыполнен по показателю «валовая прибыль» на 6,0%, по показателю «чистая прибыль» на 15,5%. 
-  section.preservation-dynamic.mt-section
+  section(data-aos="fade-up").preservation-dynamic.mt-section
     .container-content 
       .preservation-dynamic__inner 
         h6.preservation-dynamic__title Динамика основных финансовых показателей за 2020–2022 годы, млн руб
@@ -17,7 +17,7 @@ mixin preservation-content
           +picture('preservation-dynamic.png')
         .preservation-dynamic__img.mobile-m
           +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
-  section.block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
+  section(data-aos="fade-up").block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
@@ -29,8 +29,12 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
             .block-diagram__video
-              +picture('video.png')
-  section.preservation-sales(id="preservation-sales") 
+              video( muted id='video-play' )
+                source(src="./assets/videos/test-2.mp4" type="video/mp4")
+                //- source(src="./assets/videos/pribil.webm" type="video/webm")
+              .test
+                +test
+  section(data-aos="fade-up").preservation-sales(id="preservation-sales") 
     .container-content 
       .preservation-sales__inner 
         h3.preservation-sales__title Себестоимость продаж
@@ -42,7 +46,7 @@ mixin preservation-content
             p.preservation-sales__description.description_big Себестоимость продаж ОТЛК ЕРА за 2020–2022 годы, млн руб
             .preservation-sales__img
               +picture('preservation-sale.png')
-  section.preservation-structure.mt-section 
+  section(data-aos="fade-up").preservation-structure.mt-section
     .container-content 
       .preservation-structure__inner 
         p.preservation-structure__descrition.description_big Структура себестоимости продаж в 2022 году, %
@@ -57,17 +61,17 @@ mixin preservation-content
             p.text.preservation-structure__text Иные существенные расходы с долей 10% в составе себестоимости — расходы на парк фитинговых ж/д платформ в управлении, в том числе расходы на их эксплуатацию и амортизацию актива право пользования (платформ в финансовом лизинге). Начиная с середины 2019 года компания увеличивала парк в управлении за счет арендованных и полученных в лизинг платформ. На конец 2022 года арендованный парк составлял 33%, а парк в лизинге — 31% рабочего парка компании.
             p.text.preservation-structure__text За счет увеличения доли парка, привлеченного на условиях финансовой и операционной аренды, а также начала применения ФСБУ 25/2018 «Бухгалтерский учет аренды» начиная с 01.01.2022 года Обществу удалось в 2022 году дополнительно оптимизировать расходы на привлечение парка фитинговых платформ в структуре себестоимости.
 
-  section.preservation-profit.block-diagram.mt-section(id="preservation-diagram") 
+  section(data-aos="fade-up").preservation-profit.block-diagram.mt-section(id="preservation-diagram" ) 
     .container-content 
       .block-diagram__inner 
         .block-diagram__row 
           h3.block-diagram__title Валовая прибыль
         .block-diagram__row 
           .block-diagram__col 
-            .item
+            .item.item_size-4
               .item__row 
                 .item__col 
-                  p.item__number 7 812
+                  p.item__number(data-countup='7812') 
                 .item__col 
                   p.item__grey млн руб
               .item__row 
@@ -76,17 +80,16 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
             .block-diagram__video
-              +picture('video.png')
-
-
-  section.preservation-expenses(id="preservation-expenses")  
+              video( muted id='video-play' )
+                source(src="./assets/videos/pribil.mp4" type="video/mp4")
+                source(src="./assets/videos/pribil.webm" type="video/webm")
+  section(data-aos="fade-up").preservation-expenses(id="preservation-expenses")  
     .container-content 
       .preservation-expenses__inner 
         h2.preservation-expenses__title Управленческие расходы
         p.preservation-expenses__description.description_big Управленческие расходы ОТЛК ЕРА за 2022 год составили 1 351 млн руб, что на 16% выше уровня 2021 года. 
-  section.preservation-statistics 
+  section(data-aos="fade-up").preservation-statistics
     .container-content 
-      
       .preservation-statistics__inner 
         p.preservation-structure__descrition.description_big Структура управленческих расходов в 2022 году
         .preservation-statistics__img.desktop-m

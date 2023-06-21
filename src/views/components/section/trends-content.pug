@@ -1,5 +1,5 @@
 mixin trends-content 
-  section.trends-market(id="trends-market") 
+  section(data-aos="fade-up").trends-market(id="trends-market") 
     .container-content 
       .trends-market__inner 
         h3.trends-market__title Рынок морских контейнерных перевозок
@@ -11,12 +11,12 @@ mixin trends-content
             .item.trends-market__item 
               .item__row 
                 .item__col 
-                  p.item__number 173,7
+                  p.item__number(data-countup='173,7') 
                 .item__col 
                   p.item__grey млн ДФЭ
               .item__row 
                 p.item__subtext Объем мировой контейнерной торговли по морю в 2022 году 
-  section.trends-volume 
+  section(data-aos="fade-up").trends-volume 
     .container-content 
       .trends-volume__inner 
         h6.trends-volume__title Объем мировой торговли посредством морского транспорта, 2021 – 2022 гг., млн ДФЭ
@@ -30,7 +30,7 @@ mixin trends-content
             p.text.trends-volume__text Ставки морского фрахта, достигнув рекордных отметок в конце 2021 года, в 2022 году начали корректироваться на фоне ослабления спроса, ценовой конкуренции между перевозчиками за объемы перевозок и некоторых улучшений в части работы ключевых портов в Азии и Европе.
           .col 
             p.text.trends-volume__text Таким образом, по итогам декабря 2022 года композитный WCI скорректировался относительно пика 2021 года на 79,6% и составил 2 120 $/СФЭ. Для отдельных трейдов динамика была схожей — ставка Шанхай-Роттердам снизилась на 88,5% относительно максимумов и достигла 1 706 $/СФЭ. Для обратного направления, Роттердам-Шанхай, ставка скорректировалась на 54,8% до 789 $/СФЭ.
-  section.trends-dynamic
+  section(data-aos="fade-up").trends-dynamic
     .container-content 
       .trends-dynamic__inner 
         .row
@@ -50,7 +50,7 @@ mixin trends-content
               | Дополнительно следует провести сравнение между значениями ставок морского фрахта WCI &nbsp; 
               br.br 
               | и железнодорожных ставок, измеряемых ERAI. Так, рассмотрение значений по направлениям показывает возврат рынка к ситуации до начала пандемии. 
-  section.trends-rates 
+  section(data-aos="fade-up").trends-rates 
     .container-content 
       .trends-rates__inner 
         .row
@@ -63,7 +63,7 @@ mixin trends-content
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
-  section.trends-demand 
+  section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
         .row
@@ -77,7 +77,7 @@ mixin trends-content
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
           +picture('trends-demand.png').desktop
-  section.trends-forecast(id="trends-forecast")  
+  section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
       .trends-forecast__inner 
         h3.trends-forecast__title Прогноз: рынок покупателя
@@ -91,7 +91,7 @@ mixin trends-content
             p.text.trends-forecast__text Так, еще в пресс-релизе за декабрь Maersk прогнозировали сниженный спрос в течение всего 2023 года из-за относительной слабости мировой экономики и высоких запасов нереализованной продукции &nbsp; <br class='br'> у ритейлеров. В январском выпуске компания уже заявила о причинах для оптимизма, отметив возможность значительного подъема торговли и спроса со второго полугодия на фоне отказа Китая &nbsp; <br class='br'> от жестких антиковидных мер. Тем не менее, вероятность того, что на рынке образуется переизбыток мощностей, все еще высока.
             p.text.trends-forecast__text Текущие прогнозы по спросу и предложению приводят к выводу, что в 2023 году наиболее вероятен «рынок покупателя». Тем не менее, морские перевозчики могут начать принимать меры для усиленного контроля предложения и обеспечения роста ставок. По информации Drewry, рентабельность сервисов Азия-Северная Европа уже снизилась практически до нуля, соответственно, компаниям придется применять все доступные рычаги для избежания финансовых потерь.
             p.text.trends-forecast__text Помимо стандартного инструмента в виде отмены рейсов, перевозчики могут улучшить экономику перевозок за счет применения практики «slow steaming» (подразумевает намеренное снижение скорости судов, что позволяет снизить издержки за счет уменьшения расхода топлива, сокращения выбросов СО2) и направления судов через Мыс Доброй Надежды (для избежания сборов &nbsp; <br class='br'> за проследование через Суэцкий канал, вывода части предложения с рынка за счет роста транзитного времени на 10-12 суток). Безусловно, эффективность действий перевозчиков будет зависеть &nbsp; <br class='br'> от множества фундаментальных факторов, влияющих на индустрию. Внезапные скачки спроса, заторы &nbsp; <br class='br'> в портах, природные катаклизмы и многие другие причины могут значительно изменить ситуацию &nbsp; <br class='br'> на рынке.
-  section.trends-forecast2(id="trends-forecast2")   
+  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
     .container-content 
       .trends-forecast2__inner 
         h3.trends-forecast2__title Прогноз: осторожный оптимизм
