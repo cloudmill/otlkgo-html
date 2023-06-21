@@ -9,3 +9,20 @@
 @import "./layout/index.scss";
 @import "./libs/index.scss";
 @import "./content/index.scss";
+
+
+.test-video {
+  position: absolute;
+  top: 22px;
+  left: 2px;
+  height: 98%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: $transition;
+
+}
+
+.fade-up {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -29,11 +29,10 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
             .block-diagram__video
-              video( muted id='video-play' )
+              video( muted id='video-play' data-svg='123' )
                 source(src="./assets/videos/test-2.mp4" type="video/mp4")
                 //- source(src="./assets/videos/pribil.webm" type="video/webm")
-              .test
-                +test
+              +test.test-video.test-video-play-123
   section(data-aos="fade-up").preservation-sales(id="preservation-sales") 
     .container-content 
       .preservation-sales__inner 

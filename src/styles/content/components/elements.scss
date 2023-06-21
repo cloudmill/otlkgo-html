@@ -159,9 +159,12 @@
   }
 
   &__video {
+    position: relative;
     max-width: 489px;
     max-height: 560px;
   }
+
+
 
   &__description {
     font-weight: 700;

@@ -1,5 +1,6 @@
 .indicators {
   &__row {
+    position: relative;
     margin-top: 60px;
     display: flex;
     gap: 20px;
@@ -16,6 +17,15 @@
     @media #{media('<',m)} {
       font-size: 60px;
     }
+  }
+
+  &__suffix {
+    position: absolute;
+    right: 0;
+  }
+
+  .col {
+    position: relative;
   }
 
   &__description {
@@ -53,6 +63,7 @@
     }
 
     .indicators__item {
+      position: relative;
 
       &:nth-child(even) {
         border-top: 1px solid #045C25;
@@ -102,6 +113,9 @@
     }
 
     &-number {
+      position: relative;
+      display: flex;
+
       font-family: 'Halvar Breitschrift';
       font-weight: 700;
       font-size: 100px;
@@ -246,4 +260,10 @@
       height: 177px;
     }
   }
+}
+
+.number-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: $transition;
 }

@@ -1,76 +1,91 @@
 mixin indicators 
-  section(data-aos="fade-up").indicators.mt-section(id="section-indicators") 
+  section.indicators.mt-section(id="section-indicators") 
     .indicators__inner
-      .indicators__top
+      .indicators__top(data-aos="fade-up")
         .indicators__row-top 
           .container-content 
             h2.indicators__title Ключевые показатели
             .indicators__row 
-              .col 
-                p.indicators__number 89%
+              .col
+                .indicators__number.w-400
+                  span(data-countup='89')
+                  span.indicators__suffix %
               .col 
                 p.indicators__description Доля ОТЛК ЕРА в транзитных контейнерных перевозках КНР-ЕС-КНР
         .indicators__row-bottom
           .container-content 
             .indicators__box 
               .indicators__item 
-                .row 
-                  p.indicators__item-number 7 092
-                  p.indicators__item-grey шт
+                .row
+                  p.indicators__item-number(data-countup=7092 ) 
+                  p.indicators__item-grey.number-animate-7092.number-animate шт
                 .row
                   p.indicators__item-text.text Количество контейнерных поездов
               .indicators__item 
                 .row 
-                  p.indicators__item-number +156%
+                  .indicators__item-number.w-355
+                    span(data-countup='156' data-countup-prefix='+')
+                    span.indicators__suffix %
                 .row
                   p.indicators__item-text.text Общий рост экспортных перевозок 
               .indicators__item 
-                .row 
-                  p.indicators__item-number 681 197
-                  p.indicators__item-grey ДФЭ
+                .row
+                  p.indicators__item-number(data-countup='681197') 
+                  p.indicators__item-grey.number-animate-681197.number-animate ДФЭ
                 .row
                   p.indicators__item-text.text Объем перевозок
               .indicators__item 
                 .row 
-                  p.indicators__item-number 52 284
-                  p.indicators__item-grey ДФЭ
+                  p.indicators__item-number(data-countup='52284')
+                  p.indicators__item-grey.number-animate-52284.number-animate ДФЭ
                 .row
                   p.indicators__item-text.text Объем экспортных перевозок калийных удобрений (нового для ОТЛК&nbsp;ЕРА груза)
-      .indicators__bottom
+      .indicators__bottom(data-aos="fade-up")
         .container-content 
           .indicators__box_bottom 
             .indicators__item 
               .row 
-                p.indicators__item-number.indicators__item-number_light 7,7
-                p.indicators__item-grey РАЗ
+                .indicators__item-number.indicators__item-number_light
+                  span(data-countup='7') 
+                  span , 
+                  span(data-countup='7') 
+                p.indicators__item-grey.number-animate-7.number-animate РАЗ
               .row
                 p.indicators__item-text.text Общий рост импортных перевозок
             .indicators__item 
               .row 
-                p.indicators__item-number 9 300
+                p.indicators__item-number(data-countup='9300')
               .row
                 p.indicators__item-text.text Рабочий парк на конец 2022 года (среднесуточный показатель за декабрь)
             .indicators__item 
               .row 
-                p.indicators__item-number.indicators__item-number_light $30
-                p.indicators__item-grey МЛРД
+                p.indicators__item-number.indicators__item-number_light(data-countup='30' data-countup-prefix='$')
+                p.indicators__item-grey.number-animate-30.number-animate МЛРД
               .row
                 p.indicators__item-text.text Стоимость перевезенных грузов в сервисах ОТЛК&nbsp;ЕРА
             .indicators__item 
               .row 
-                p.indicators__item-number 816
-                p.indicators__item-grey км/сутки
+                p.indicators__item-number(data-countup='816') 
+                p.indicators__item-grey.number-animate-816.number-animate км/сутки
               .row
                 p.indicators__item-text.text Средняя скорость
             .indicators__item
               .row 
-                p.indicators__item-number.indicators__item-number_light 6,7
-                p.indicators__item-grey суток
+                .indicators__item-number.indicators__item-number_light
+                  span(data-countup='6')
+                  span ,
+                  span(data-countup='7')
+                p.indicators__item-grey.number-animate-6.number-animate суток
               .row
                 p.indicators__item-text.text Транзитное время
             .indicators__item 
                 .row 
-                  p.indicators__item-number 99,997%
+                  p.indicators__item-number.suffix-6
+                    span(data-countup='99')
+                    span ,
+                    span(data-countup='997')
+                    //- span.number-animate-997.number-animate %
+                    span.indicators__item-suffix %
                 .row
                   p.indicators__item-text.text Сохранность грузов
   section(data-aos="fade-up").indicators-finance.mt-section

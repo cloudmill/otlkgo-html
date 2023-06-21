@@ -17,13 +17,24 @@ function startCountUpOnScroll() {
 
   countUpElements.forEach(element => {
     if (!element.hasAttribute('data-countup-started') && isElementInViewport(element)) {
+
       const countupValue = element.getAttribute('data-countup');
       const endValue = parseFloat(countupValue);
       const suffix = element.hasAttribute('data-countup-suffix') ? '%' : '';
-      const prefix = element.hasAttribute('data-countup-prefix') ? '+' : '';
+      const prefix = !element.hasAttribute('data-countup-prefix') ? '' : element.getAttribute('data-countup-prefix');
 
       const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
 
+      const targetElement = document.querySelector(`.number-animate-${countupValue}`);
+
+
+      if (targetElement) {
+
+        setTimeout(() => {
+          targetElement.classList.add('fade-up')
+        }, 2000)
+
+      }
       if (!countUp.error) {
         countUp.start();
         element.setAttribute('data-countup-started', 'true');

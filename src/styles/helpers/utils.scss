@@ -131,3 +131,43 @@
 .green-light-bg {
   background: #69DA91;
 }
+
+.w-400 {
+  width: 400px;
+  flex-shrink: 0;
+
+  @media #{media('<',m)} {
+    width: 150px;
+  }
+}
+
+.w-355 {
+  width: 355px;
+  flex-shrink: 0;
+
+  @media #{media('<',m)} {
+    width: 215px;
+  }
+}
+
+.w-suffix-4 {
+  width: 340px;
+  flex-shrink: 0;
+
+  @media #{media('<',m)} {
+    width: 205px;
+  }
+}
+
+.w-suffix-6 {
+  width: 486px;
+  flex-shrink: 0;
+
+  @media #{media('<',m)} {
+    width: 300px;
+  }
+}
+
+.gap-0 {
+  gap: 0 !important;
+}
