@@ -21,8 +21,10 @@ function startCountUpOnScroll() {
       const endValue = parseFloat(countupValue);
       const suffix = element.hasAttribute('data-countup-suffix') ? '%' : '';
       const prefix = element.hasAttribute('data-countup-prefix') ? '+' : '';
+      const mines = element.hasAttribute('data-countup-mines') ? '-' : '';
+      const dollar = element.hasAttribute('data-countup-prefdollar') ? '$' : '';
 
-      const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
+      const countUp = new CountUp(element, endValue, { ...options, suffix, mines, dollar, prefix });
 
       if (!countUp.error) {
         countUp.start();

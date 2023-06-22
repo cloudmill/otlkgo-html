@@ -201,7 +201,9 @@
         object-fit: cover;
       }
     }
-    
+    @media #{media(">", l)} {
+      height: auto;
+    }
     @media #{media("<", m)} {
       position: relative;
       margin-left: -20px;

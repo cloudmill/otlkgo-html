@@ -11,13 +11,13 @@ mixin global-economy
           .macroeconomics-subrow 
             .macroeconomics-subcol.green
               .macroeconomics-subcol__top
-                .macroeconomics-subcol__num 3,1%
+                .macroeconomics-subcol__num(data-countup='3,1' data-countup-prefix)
                 .macroeconomics-subcol__text к мировому ВВП
               .macroeconomics-subcol_bot
                 .macroeconomics-subcol__text-grey Средняя оценка по итогам 2022 года
             .macroeconomics-subcol.light-green
               .macroeconomics-subcol__top
-                .macroeconomics-subcol__num.light 2,1%
+                .macroeconomics-subcol__num.light(data-countup='2,1' data-countup-prefix)
               .macroeconomics-subcol_bot
                 .macroeconomics-subcol__text-grey Прогноз роста мирового ВВП на 2023 год
       .macroeconomics-grafics(data-aos="fade-up") 
@@ -77,12 +77,12 @@ mixin global-economy
           .chinese-economy__quarter-col 
             .ge-card.green.upper
               .ge-card__top
-                .ge-card__num.green -27%
+                .ge-card__num.green(data-countup='27' data-countup-mines data-countup-suffix)
               .ge-card__bot
                 .ge-card__text-grey Падение спроса на недвижимость в Китае по итогам 2022 года
             .ge-card.light-green
                 .ge-card__top
-                  .ge-card__num.light 25%
+                  .ge-card__num.light(data-countup='25'  data-countup-suffix)
                   .ge-card__text ВВП страны
                 .ge-card__bot
                   .ge-card__text-grey Приходится на сектор недвижимости
@@ -223,14 +223,14 @@ mixin global-economy
             .mutal-trade__hero-subcol
               .ge-card.light-green
                 .ge-card__top
-                  .ge-card__num.light 851,9
+                  .ge-card__num.light(data-countup='851,9')
                   .ge-card__text млрд евро
                 .ge-card__bot
                   .ge-card__text-grey Общий объем торговли между партнерами в рамках основных товарных позиций в 2022 году
             .mutal-trade__hero-subcol
               .ge-card.green
                 .ge-card__top
-                  .ge-card__num.green +32%
+                  .ge-card__num.green(data-countup='32'  data-countup-prefix data-countup-suffix)
                   .ge-card__text.top до 624,3 
                     .ge-card__text млрд евро
                 .ge-card__bot
@@ -239,7 +239,7 @@ mixin global-economy
         .mutal-trade__subsection-col(data-aos="fade-up") 
           .ge-card.green
               .ge-card__top
-                .ge-card__num.green +3,2%
+                .ge-card__num.green(data-countup='3,2'  data-countup-prefix data-countup-suffix)
                 .ge-card__text.top до 227,6
                   .ge-card__text млрд евро 
               .ge-card__bot
