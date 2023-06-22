@@ -1,5 +1,5 @@
 mixin formation-park 
-  section.formation-train 
+  section.formation-train(data-aos="fade-up") 
     .container-content
       .formation-train__inner 
         .formation-train__block 
@@ -10,9 +10,9 @@ mixin formation-park
               p.formation-train__text 
                 span Вагона
                 | парк в управлении ОТЛК ЕРА <br> на конец 2022 года
-  section.formation-park
+  section.formation-park(data-aos="fade-up")
     .container-content
-      .formation-park__row.first
+      .formation-park__row.first(data-aos="fade-up")
         .formation-park__col-first 
           h4.formation-park__title Важно не допускать ни дефицита, ни профицита, и в этом помогает регулярная оценка потребностей.
         .formation-park__col-first 
@@ -21,7 +21,7 @@ mixin formation-park
             each item in ['Прогнозный объем перевозок', 'Оборот вагона', 'Дисбаланс грузопотока Китай–Европа и Европа–Китай', 'Доля объединенных XL-поездов', 'Объем перевозок на оптимизационных направлениях']
               li.formation-park__list-item=item
           .formation-park__text.text Учитывая постоянно растущий объем перевозок, с 2017 года мы применяем эффективный способ оптимизации использования парка – технологию формирования удлиненных контейнерных поездов (XL-поезда), актуальность которой с каждым годом возрастает. Компания регулярно проводит развернутый анализ оборота вагона, выявляет слабые звенья перевозочного процесса и принимает соответствующие меры.
-      .formation-park__row.second
+      .formation-park__row.second(data-aos="fade-up")
         .formation-park__col-second 
           .ge-card.light-green.large
               .ge-card__top
@@ -35,7 +35,7 @@ mixin formation-park
           h4.formation-park__mini-heading Динамика количества XL-поездов, шт
           .formation-park__vector-right 
             +picture('formation-park-right-vector.png')
-      .formation-park__row.third
+      .formation-park__row.third(data-aos="fade-up")
         .formation-park__col-third
           .formation-park__text.text В итоге компания сформировала наиболее комфортную структуру парка вагонов по видам привлечения. К концу 2022 года доля арендованных и лизинговых платформ составила 62%, что позволило с наименьшими рисками и наиболее эффективно, но при этом максимально гибко использовать перевозочный ресурс. Арендованный и лизинговый парк — гарантированный парк для обеспечения объемов перевозок подвижным составом, а в случае изменения объемов компания прибегает к «спотовому» привлечению/возврату парка в рамках договоров привлечения на рейс.
         .formation-park__col-third 
@@ -45,9 +45,9 @@ mixin formation-park
                 .ge-card__text фитинговых <br>платформ 
               .ge-card__bot
                 .ge-card__text-grey.large-360 Получены в лизинг в первой половине 2022 года
-      .formation-park__possession
+      .formation-park__possession(data-aos="fade-up")
       h3.formation-park__possession-title Кроме того, владение вагонами на правах лизинга и аренды позволяет
-      .formation-park__possession-row.plugs
+      .formation-park__possession-row.plugs(data-aos="fade-up")
         .formation-park__possession-item 
           .formation-park__possession-subtitle Контролировать своевременное техническое обслуживание парка
         .formation-park__possession-item
@@ -56,12 +56,12 @@ mixin formation-park
         .formation-park__possession-item
           .formation-park__possession-subtitle Оперативно принимать решение 
           .formation-park__possession-text по использованию подвижного состава без согласования с собственником вагона
-      .formation-park__structure-row
-        .formation-park__structure-col
+      .formation-park__structure-row(data-aos="fade-up")
+        .formation-park__structure-col(data-aos="fade-up")
           .formation-park__structure-title Структура среднесуточного рабочего парка в управлении, %
           .formation-park__structure-vector
             +picture('formation-park-structure.png')
-        .formation-park__structure-col
+        .formation-park__structure-col(data-aos="fade-up")
           .formation-park__structure-plug 
             .formation-park__structure-subtitle При этом среднесуточная ставка привлечения вагона с учетом расходов на эксплуатацию в течение 2022 года снизилась на 8% по отношению к 2021 году.
             .formation-park__structure-icon

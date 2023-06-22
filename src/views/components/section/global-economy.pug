@@ -109,7 +109,7 @@ mixin global-economy
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html" target="blank") ECB
           h4.chinese-forecast__subtitle.mg-top Рост розничной торговли
           .chinese-forecast__text.line В 2023 году ожидается рост объема розничной торговли до порядка 2,5-3% после снижения в 2022 году на 0,2%. Вспышки COVID влияли на потребление в заключительном квартале 2022 года, однако их эффект был не настолько сильным, как в самом начале пандемии. 
-          .chinese-forecast__subtitle-small Динамика объема розничной торговли в годовом выражении, 2020–2022 гг.
+          .chinese-forecast__subtitle-small.mg-bot30 Динамика объема розничной торговли в годовом выражении, 2020–2022 гг.
           .chinese-forecast__grafic-left 
             +picture('chinese-forecast-vector2.png')
         .chinese-forecast__col(data-aos="fade-up")
@@ -188,7 +188,7 @@ mixin global-economy
         .key-forecast__stability-col 
           h4.key-forecast__stability-title Стабильный уровень безработицы
           .key-forecast__stability-text Уровень безработицы в еврозоне закрепился на уровне 6,6% в декабре 2022 (в декабре 2021 — 7%). По различным прогнозам, показатель безработицы может составить 7% по итогам 2023 года. Меры ЕЦБ по сдерживанию инфляции способны негативно повлиять на занятость, так как продолжительное ужесточение монетарной политики, как правило, ведет к сокращению найма.
-        .key-forecast__stability-col
+        .key-forecast__stability-col(data-aos="fade-up")
           .key-forecast__stability-subtitle Уровень безработицы населения за 2022 г.
           .key-forecast__stability-vector 
             +picture('stability-forecast-vector.png')
@@ -196,19 +196,19 @@ mixin global-economy
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-      .key-forecast__dinamic 
-        .key-forecast__dinamic-col 
+      .key-forecast__dinamic(data-aos="fade-up") 
+        .key-forecast__dinamic-col(data-aos="fade-up") 
           h4.key-forecast__dinamic-title Динамика торговли постепенно улучшится
           .key-forecast__dinamic-text Европейские потребители сокращали траты в течение 2022 года в результате растущей инфляции, ужесточения монетарной политики в регионе. Однако, положительные прогнозы по росту ВВП еврозоны в 2023 году отчасти опираются на потенциальное улучшение в потребительском аппетите. Считается, что динамика объема розничной торговли будет постепенно увеличиваться в грядущем году. Вероятно, это поможет решить текущую проблему рекордных запасов нереализованной продукции у ритейлеров, достигших 91,2 млрд евро в третьем квартале 2022 года.
-        .key-forecast__dinamic-col 
+        .key-forecast__dinamic-col(data-aos="fade-up") 
           h4.key-forecast__dinamic-title Невыполненные заказы поддержат объемы производства
           .key-forecast__dinamic-text В течение 2022 года объемы производства колебались на уровне предыдущего года. Некоторые индустрии, например, химическая промышленность, были крайне негативно затронуты высокими ценами на энергоносители, в результате чего Европе пришлось удовлетворять потребности в отдельных химических номенклатурах за счет импорта. Как и отмечалось ранее, объемы новых заказов для производств стабильно снижаются, но высокое число невыполненных заказов позволит поддерживать объемы производства в ближайшие месяцы.
-      .key-forecast__dinamic2
-        .key-forecast__dinamic2-col 
+      .key-forecast__dinamic2(data-aos="fade-up")
+        .key-forecast__dinamic2-col(data-aos="fade-up") 
           .key-forecast__dinamic2-lefttitle Динамика объема розничной торговли, 2020–2022 гг.
           .key-forecast__dinamic2-vector.left
             +picture('dinamic-vector-left.png')
-        .key-forecast__dinamic2-col
+        .key-forecast__dinamic2-col(data-aos="fade-up")
           .key-forecast__dinamic2-righttitle Динамика промышленного производства в годовом выражении, 2022 г.
           .key-forecast__dinamic2-vector.right
             +picture('dinamic-vector-right.png')

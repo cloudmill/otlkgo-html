@@ -1,12 +1,12 @@
 mixin human-capital 
-  section.human-capital(id="human-capital") 
-    .container-content 
+  section.human-capital(id="human-capital")(data-aos="fade-up") 
+    .container-content(data-aos="fade-up") 
       h2.human-capital__title Человеческий капитал
       h3.human-capital__subtitle Сколько нас?
-      .human-capital__hero-row 
-        .human-capital__hero-col
+      .human-capital__hero-row(data-aos="fade-up") 
+        .human-capital__hero-col(data-aos="fade-up")
           .human-capital__hero-text.bold К концу 2022 года в ОТЛК&nbsp;ЕРА фактически работали 160 человек (штатная численность — 170). Из них 69 человек занимают руководящие должности.<br> Также у нас 88 специалистов и 6 служащих. 
-        .human-capital__hero-col
+        .human-capital__hero-col(data-aos="fade-up")
           .human-capital__hero-text.top.text В 2022 году объемы контейнерных перевозок росли, география их расширялась, увеличивался парк фитинговых платформ. ОТЛК&nbsp;ЕРА внедрила систему управления рисками. Сильно изменились и процессы закупочной деятельности. 
           .human-capital__hero-text.text Все это повлекло за собой изменения в организационной структуре компании и штатном расписании для того, чтобы и дальше развивать клиентский сервис, поддерживать высокое качество услуг, управлять собственным парком фитинговых платформ, проводить мониторинг и комплексный анализ рыночной конъюнктуры.
           .ge-card.green.human
@@ -16,13 +16,13 @@ mixin human-capital
                 .ge-card__text-grey Рост штата компании в 2022 году
 
 mixin organization-structure
-  .container-content
-    section.organization-structure(id="organization-structure") 
+  .container-content(data-aos="fade-up")
+    section.organization-structure(id="organization-structure")(data-aos="fade-up") 
       .organization-structure__title Организационная структура ОТЛК&nbsp;ЕРА на 31 декабря 2022 года
-      .organization-structure__img-container
-        .organization-structure__img-table 
+      .organization-structure__img-container(data-aos="fade-up")
+        .organization-structure__img-table(data-aos="fade-up") 
           +picture('organization-structure-img.png')
-        .ge-card.green.desktop 
+        .ge-card.green.desktop(data-aos="fade-up") 
           .ge-card__top
             .ge-card__num.green 170
             .ge-card__text единиц 
@@ -34,14 +34,14 @@ mixin organization-structure
           .ge-card__text единиц 
         .ge-card__bot
           .ge-card__text-grey.custom-cuchurina Штатная численность
-      .organization-structure__number(id="organization-number") 
+      .organization-structure__number(id="organization-number")(data-aos="fade-up") 
         .organization-structure__number-title Численность персонала компании
-        .organization-structure__number-table.desktop
+        .organization-structure__number-table.desktop(data-aos="fade-up")
           +picture('structure-number-table.png')
-        .organization-structure__number-table.mobile
+        .organization-structure__number-table.mobile(data-aos="fade-up")
           +picture('structure-number-table-mobile.png')
-      .organization-structure__personal.first  
-        .organization-structure__personal-col 
+      .organization-structure__personal.first(data-aos="fade-up")  
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по категориям, человек
           .organization-structure__personal-cubes.category  
             .organization-structure__cube 
@@ -56,11 +56,11 @@ mixin organization-structure
             .organization-structure__cube 
               .organization-structure__cube-rect.grey 
               .organization-structure__cube-text Рабочие
-        .organization-structure__personal-col 
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-1.png')
-      .organization-structure__personal.second
-        .organization-structure__personal-col 
+      .organization-structure__personal.second(data-aos="fade-up")
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по образованию, человек
           .organization-structure__personal-cubes.category  
             .organization-structure__cube 
@@ -75,11 +75,11 @@ mixin organization-structure
             .organization-structure__cube 
               .organization-structure__cube-rect.grey 
               .organization-structure__cube-text Ученая степень/ученое звание
-        .organization-structure__personal-col 
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-2.png')
-      .organization-structure__personal 
-        .organization-structure__personal-col 
+      .organization-structure__personal(data-aos="fade-up") 
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по возрасту, человек
           .organization-structure__personal-cubes.no-wrap  
             .organization-structure__cube 
@@ -95,11 +95,11 @@ mixin organization-structure
               .organization-structure__cube-rect.grey 
               .organization-structure__cube-text Старше 50
           .organization-structure__personal-text.desktop Средний возраст сотрудников компании в 2022 году составил 39 лет, это отражает сбалансированность штата. Специалисты со стажем передают свой опыт молодым, а те, в свою очередь, содействуют дальнейшему развитию компании, внедряя инновации.
-        .organization-structure__personal-col 
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-3.png')
-      .organization-structure__personal 
-        .organization-structure__personal-col 
+      .organization-structure__personal(data-aos="fade-up") 
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по полу, человек
           .organization-structure__personal-cubes.category  
             .organization-structure__cube 
@@ -108,28 +108,28 @@ mixin organization-structure
             .organization-structure__cube 
               .organization-structure__cube-rect.light-green 
               .organization-structure__cube-text Женщин
-        .organization-structure__personal-col 
+        .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-4.png')
-      .organization-structure__subrow 
-        .organization-structure__subcol 
+      .organization-structure__subrow(data-aos="fade-up") 
+        .organization-structure__subcol(data-aos="fade-up") 
           .organization-structure__subcol-title В течение 2022 года в ряд локально-нормативных актов ОТЛК&nbsp;ЕРА вносились дополнения, были актуализированы и утверждены следующие документы:
-        .organization-structure__subcol 
+        .organization-structure__subcol(data-aos="fade-up") 
           .organization-structure__subcol-item Правила внутреннего трудового распорядка – регламентируют внутренний трудовой распорядок компании
           .organization-structure__subcol-item Положение о премировании сотрудников, групп персонала «Руководство» – устанавливает принципы и условия премирования
           .organization-structure__subcol-item Положение о премировании сотрудников, групп персонала «Производственно-коммерческий персонал» и «Сопровождение бизнеса» – устанавливает принципы и условия премирования 
           .organization-structure__subcol-item  Положение об адаптации персонала — определяет единые требования и порядок организации адаптации персонала в компании. Дополнено Приложение № 6 к положению об адаптации персонала ОТЛК&nbsp;ЕРА
-      section.recruitment-processes(id="recruitment-processes") 
+      section.recruitment-processes(id="recruitment-processes")(data-aos="fade-up") 
         .recruitment-processes__title Процессы найма
         .recruitment-processes__text При подборе персонала мы принимаем во внимание два основополагающих принципа, закрепленных в законодательстве РФ: объективность и отсутствие любых форм дискриминации. Все остальные критерии определяются стратегическими и тактическими приоритетами, системой управления персоналом и видом деятельности компании.
-        .recruitment-processes__hr 
+        .recruitment-processes__hr(data-aos="fade-up") 
           .recruitment-processes__hr-title В HR-процессах ОТЛК&nbsp;ЕРА учитывает
-          .recruitment-processes__hr-row 
-            .recruitment-processes__hr-col
+          .recruitment-processes__hr-row(data-aos="fade-up") 
+            .recruitment-processes__hr-col(data-aos="fade-up")
               each item in ['Мотивацию соискателя, его совместимость с корпоративной культурой и сотрудниками', 'Уровень профессиональных знаний и опыта', 'Оценку скрытых резервов, сильных сторон соискателя, прогнозы его будущего роста', 'Общие положительные поведенческие реакции', 'Адаптивность: как быстро сотрудник сможет войти в курс дела и начать налаживать связи с коллегами, поставщиками, клиентами, руководителями']
                 .recruitment-processes__hr-mark=item
               .recruitment-processes__hr-text.text Оптимально выстроенный процесс найма предусматривает поэтапный отбор, цель которого – оценить соискателей и выявить их соответствие требованиям должности.
-            .recruitment-processes__hr-col 
+            .recruitment-processes__hr-col(data-aos="fade-up") 
               .recruitment-processes__hr-subtitle Процессы подбора, адаптации и развития персонала в компании регламентируют
               each item in ['Положение о подборе и адаптации персонала', 'Кодекс корпоративной этики', 'Модель корпоративных компетенций', 'Положение об обучении и развитии персонала']
                 .recruitment-processes__hr-mark=item
@@ -152,11 +152,11 @@ mixin organization-structure
               .recruitment-processes__hr-num  
                 .hr-num__number 6
                 .hr-num__text Медицинский осмотр при приеме на работу
-  .container-content 
+  .container-content(data-aos="fade-up") 
     section.corporate-culture(id="corporate-culture") 
       h2.corporate-culture__title Корпоративная культура
       .corporate-culture__text У нас есть Кодекс корпоративной этики, который определяет основные нормы и правила индивидуального и коллективного поведения сотрудников. Кодекс содержит значимые для компании ценности.
-      .corporate-culture__list 
+      .corporate-culture__list(data-aos="fade-up") 
         .corporate-culture__item
           .corporate-culture__item-icon
             +mountain-lider-svg
