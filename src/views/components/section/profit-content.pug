@@ -38,7 +38,11 @@ mixin profit-content
           .block-diagram__col 
             p.block-diagram__description EBITDA с указанием рентабельности, млн руб
             .block-diagram__video
-              +picture('video.png')
+              video( muted id='video-play' playsinline  data-svg='rev4' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              .block-diagram__decor
+              +ebitda.for-video.for-video_4.video-play-rev4
   section(data-aos="fade-up").block-diagram.profit-net(id="profit-clean")
     .container-content 
       .block-diagram__inner 

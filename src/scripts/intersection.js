@@ -8,10 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
         entry.target.dataset.played = true;
 
         const dataValue = entry.target.getAttribute('data-svg');
-        const targetSvg = document.querySelector(`.video-play-${dataValue}`);
-
+        const targetSvg = document.querySelectorAll(`.video-play-${dataValue}`);
         setTimeout(() => {
-          targetSvg.classList.add('fade-up');
+
+          targetSvg.forEach(e => {
+            e.classList.add('fade-up')
+          })
+
         }, 1300);
       }
     });

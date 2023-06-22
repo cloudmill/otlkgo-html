@@ -29,10 +29,11 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
             .block-diagram__video
-              video( muted id='video-play' playsinline  data-svg='rev1' )
+              video( muted id='video-play' playsinline  data-svg='rev3' )
                 source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
                 source(src="./assets/videos/block-diagram.webm" type="video/webm")
-              +revenue-svg.for-video.video-play-rev1
+              .block-diagram__decor
+              +profit-f.for-video.for-video_3.video-play-rev3
   section(data-aos="fade-up").preservation-sales(id="preservation-sales") 
     .container-content 
       .preservation-sales__inner 
@@ -79,12 +80,10 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
             .block-diagram__video
-              video( muted id='video-play' playsinline  data-svg='rev2' )
+              video( muted id='video-play' playsinline  data-svg='rev1' )
                 source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
                 source(src="./assets/videos/block-diagram.webm" type="video/webm")
-              .test 
-                +test.for-video.for-video_2.video-play-rev2
-              //- +ebitda-svg.for-video.for-video_2.video-play-rev2
+              +revenue-svg.for-video.video-play-rev1
   section(data-aos="fade-up").preservation-expenses(id="preservation-expenses")  
     .container-content 
       .preservation-expenses__inner 
