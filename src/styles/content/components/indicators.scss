@@ -262,8 +262,17 @@
   }
 }
 
+.colo {
+  color: var(--unnamed, #045C25);
+  font-size: 64px;
+  font-family: Halvar Breitschrift;
+  font-weight: 700;
+  line-height: 80%;
+  letter-spacing: -5.12px;
+}
+
 .number-animate {
   opacity: 0;
   transform: translateY(30px);
-  transition: $transition;
+  transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
 }

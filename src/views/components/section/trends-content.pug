@@ -11,9 +11,12 @@ mixin trends-content
             .item.trends-market__item 
               .item__row 
                 .item__col 
-                  p.item__number(data-countup='173,7') 
+                  p.item__number.flex
+                    span(data-countup='173')
+                    span , 
+                    span(data-countup='7')
                 .item__col 
-                  p.item__grey млн ДФЭ
+                  p.item__grey.number-animate-173.number-animate  млн ДФЭ
               .item__row 
                 p.item__subtext Объем мировой контейнерной торговли по морю в 2022 году 
   section(data-aos="fade-up").trends-volume 

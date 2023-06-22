@@ -7,18 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
         entry.target.play();
         entry.target.dataset.played = true;
 
-        const dataValue = entry.target.getAttribute('data-svg')
-        const targetSvg = document.querySelector(`.test-video-play-${dataValue}`)
+        const dataValue = entry.target.getAttribute('data-svg');
+        const targetSvg = document.querySelector(`.video-play-${dataValue}`);
 
         setTimeout(() => {
-          targetSvg.classList.add('fade-up')
-        }, 1300)
+          targetSvg.classList.add('fade-up');
+        }, 1300);
       }
-
     });
   }, { threshold: [0.8] });
 
   for (const item of videos) {
-    observer.observe(item);
+    if (!item.dataset.played) {
+      observer.observe(item);
+    }
   }
 });

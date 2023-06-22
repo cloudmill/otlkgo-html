@@ -29,10 +29,10 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
             .block-diagram__video
-              video( muted id='video-play' data-svg='123' )
-                source(src="./assets/videos/test-2.mp4" type="video/mp4")
-                //- source(src="./assets/videos/pribil.webm" type="video/webm")
-              +test.test-video.test-video-play-123
+              video( muted id='video-play' playsinline  data-svg='rev1' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              +revenue-svg.for-video.video-play-rev1
   section(data-aos="fade-up").preservation-sales(id="preservation-sales") 
     .container-content 
       .preservation-sales__inner 
@@ -72,16 +72,19 @@ mixin preservation-content
                 .item__col 
                   p.item__number(data-countup='7812') 
                 .item__col 
-                  p.item__grey млн руб
+                  p.item__grey.number-animate-7812.number-animate  млн руб
               .item__row 
                 p.item__subtext Показатель валовой прибыли ОТЛК ЕРА за 2022 год, что ниже уровня 2021 года на 2%
             p.preservation-profit__text.block-diagram__text.text Валовая прибыль по итогам 2022 года составила 7 812 млн руб, что на 149 млн руб или 2% ниже аналогичного периода прошлого года. При этом в 2022 году растет рентабельность по валовой прибыли за счет опережающего снижения себестоимости благодаря мерам по оптимизации себестоимости, снижению среднегодового курса доллара США и начала применения ФСБУ 25/2018. 
           .block-diagram__col 
             p.block-diagram__description.description_big Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
             .block-diagram__video
-              video( muted id='video-play' )
-                source(src="./assets/videos/pribil.mp4" type="video/mp4")
-                source(src="./assets/videos/pribil.webm" type="video/webm")
+              video( muted id='video-play' playsinline  data-svg='rev2' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              .test 
+                +test.for-video.for-video_2.video-play-rev2
+              //- +ebitda-svg.for-video.for-video_2.video-play-rev2
   section(data-aos="fade-up").preservation-expenses(id="preservation-expenses")  
     .container-content 
       .preservation-expenses__inner 

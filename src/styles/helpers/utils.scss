@@ -150,7 +150,26 @@
   }
 }
 
+.w-suffix-2 {
+  position: relative;
+  width: 147px;
+  flex-shrink: 0;
+
+}
+
+.w-suffix-3 {
+  position: relative;
+  width: 210px;
+  flex-shrink: 0;
+
+  @media #{media('<',m)} {
+    width: 205px;
+  }
+}
+
 .w-suffix-4 {
+  position: relative;
+
   width: 340px;
   flex-shrink: 0;
 
@@ -160,6 +179,8 @@
 }
 
 .w-suffix-6 {
+  position: relative;
+
   width: 486px;
   flex-shrink: 0;
 
@@ -170,4 +191,12 @@
 
 .gap-0 {
   gap: 0 !important;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
 }
