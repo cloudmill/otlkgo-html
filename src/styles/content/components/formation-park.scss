@@ -448,11 +448,30 @@
 }
 
 .formation-train {
+  position: relative;
+  overflow: hidden;
   margin-top: 20px;
   padding-top: 300px;
   padding-bottom: 40px;
 
-  background: url('../assets/images/formation-train.png') center/cover no-repeat;
+  height: 640px;
+
+  // background: url('../assets/images/formation-train.png') center/cover no-repeat;
+  background-color: #F4F4F4;
+
+  &__parallax{
+    position: absolute;
+    top: -300px;
+    left: 0px;
+    z-index: 1;
+
+
+  }
+
+  &__inner{
+    position: relative;
+    z-index: 2;
+  }
 
   &__block {
     display: flex;
@@ -534,6 +553,15 @@
       span {
         font-size: 14px;
       }
+    }
+  }
+
+
+  @media #{media('>', xl)} {
+    padding-top: 496px;
+    height: 830px;
+
+    .thumbnail{
     }
   }
 }

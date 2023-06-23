@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let parallaxScroll = ((windowScroll - parallaxStart))/2 * parallaxScale + 'px';
 
         if (windowSize < 1540){
+          
         }
-        
         parallaxImg.style.bottom = parallaxScroll;
       }
     })
