@@ -466,6 +466,10 @@
     z-index: 1;
 
     transition: top .35s 0s cubic-bezier(0.33, 1, 0.68, 1);
+    
+    @media #{media('<', t)} {
+      display: none;
+    }
   }
 
   &__inner{
@@ -522,11 +526,16 @@
     background: url('../assets/images/formation-train-mobile.png') center/cover no-repeat;
 
     &__number {
-      font-size: 150px;
+      font-size: 60px;
+    }
+    &__row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
   @media #{media('<',m)} {
+    height: 502px;
     margin-top: 40px;
     padding-top: 360px;
     padding-bottom: 20px;
@@ -538,7 +547,6 @@
     &__row {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-
     }
 
     &__number {

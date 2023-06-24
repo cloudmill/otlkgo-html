@@ -11,21 +11,25 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const parallaxContainer = document.querySelector('.formation-train')
-
   const parallaxOffset = parallaxContainer.offsetTop;
   const parallaxImg = document.querySelector('.formation-train__parallax')
-
-  console.log(parallaxOffset)
   const windowHeight = window.screen.height;
 
-  window.addEventListener('scroll', () => {
-    let windowScroll = window.scrollY;
+  if (parallaxContainer && window.screen.width > 1024){
+    window.addEventListener('scroll', () => {
+      let windowScroll = window.scrollY;
+  
+      if (windowScroll > (parallaxOffset - windowHeight)){
+        let sumScroll = windowScroll - parallaxOffset + 'px'
+        parallaxImg.style.transform = `translateY(${sumScroll})`
+        
+        if (window.screen.width > 1660){
+          parallaxImg.style.top = ((windowScroll - parallaxOffset)/10 - 300 + 'px')
+        } else {
+          parallaxImg.style.top = ((windowScroll - parallaxOffset)/20 - 300 + 'px')
+        }
+      }
+    })
+  }
 
-    if (windowScroll > (parallaxOffset - windowHeight)){
-      let sumScroll = windowScroll - parallaxOffset + 'px'
-      parallaxImg.style.transform = `translateY(${sumScroll})`
-      parallaxImg.style.top = ((windowScroll - parallaxOffset)/10 - 300 + 'px')
-    }
-    
-  })
 })
