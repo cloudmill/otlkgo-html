@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (windowScroll > (parallaxOffset - windowHeight)){
       let sumScroll = windowScroll - parallaxOffset + 'px'
-      console.log(sumScroll)
-      parallaxImg.style.transofrm = `translate-y(${sumScroll})`
+      parallaxImg.style.transform = `translateY(${sumScroll})`
+      parallaxImg.style.top = ((windowScroll - parallaxOffset)/10 - 300 + 'px')
     }
     
   })

@@ -465,7 +465,7 @@
     left: 0px;
     z-index: 1;
 
-
+    transition: top .35s 0s cubic-bezier(0.33, 1, 0.68, 1);
   }
 
   &__inner{
