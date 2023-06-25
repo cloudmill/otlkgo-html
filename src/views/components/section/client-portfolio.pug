@@ -26,8 +26,12 @@ mixin client-portfolio
             .transportation-development__text.text Всего в 2022 году были задействованы 26 различных станций назначения ОАО «РЖД» — в два раза больше предыдущих показателей. Основной рост объемов перевозок пришелся на станции Московского ж/д узла, показатели 2022 года достигли значения в 130 564 ДФЭ, а сервисом на данном направлении воспользовались 42 клиента ОТЛК&nbsp;ЕРА.
           .transportation-development__col.mid
             h4.transportation-development__heading Рост суммарного объема перевозок Китай–РФ к 2021 году
-            .transportation-development__vector.desktop 
-              +picture('transportation-development.png')
+            .transportation-development__video 
+              video( muted id='video-play')
+                source(src="./assets/videos/rost_summy.mp4" type="video/mp4")
+                source(src="./assets/videos/rost_summy.webm" type="video/webm")
+            //- .transportation-development__vector.desktop 
+            //-   +picture('transportation-development.png')
             .transportation-development__vector.mobile 
               +picture('transportation-development-mobile.png')
         .transportation-development__case(id="client-development__case")(data-aos="fade-up")
