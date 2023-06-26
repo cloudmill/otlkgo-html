@@ -120,6 +120,23 @@
     gap: 40px;
   }
 
+
+  &__video {
+    height: 625px;
+
+    video {
+      height: 98%;
+    }
+
+    @media #{media('<',d)} {
+      height: 530px;
+    }
+
+    @media #{media('<',t)} {
+      height: 392px;
+    }
+  }
+
 }
 
 .preservation-profit {
@@ -160,8 +177,28 @@
   }
 
   &__video {
-    h40%
+    height: 680px;
+
+    @media #{media('<',d)} {
+      height: 574px;
+    }
+
+    @media #{media('<',t)} {
+      height: 434px;
+    }
+
+    @media #{media('<',m)} {
+      video {
+        transform: translate(18px, -64px);
+        width: 87%;
+        height: 100%;
+      }
+
+    }
+
+
   }
+
 }
 
 @media #{media('<',t)} {

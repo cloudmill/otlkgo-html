@@ -87,6 +87,14 @@
   &__list {
     position: relative;
     z-index: $index-1;
+
+    li {
+      max-width: 440px;
+
+      @media #{media('<',t)} {
+        max-width: 100%;
+      }
+    }
   }
 }
 

@@ -8,6 +8,7 @@
   &__item {
     position: relative;
     z-index: 0;
+    flex-shrink: 0;
 
     width: 64px;
     height: 64px;
@@ -19,6 +20,12 @@
     background-color: color(green);
     transition: $transition;
     overflow: hidden;
+
+    @media #{media("<",m)} {
+
+      width: 42px;
+      height: 42px;
+    }
 
     &::before {
       content: "";

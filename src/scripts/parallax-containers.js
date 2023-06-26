@@ -46,13 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         })
       }
-<<<<<<< HEAD
-=======
-
->>>>>>> gleb
     }
+  }
 
-
-
-
-  })
+})

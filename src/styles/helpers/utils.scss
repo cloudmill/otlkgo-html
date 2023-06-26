@@ -157,6 +157,13 @@
 
 }
 
+.w-suffix-2_small {
+  position: relative;
+  width: 125px;
+  flex-shrink: 0;
+
+}
+
 .w-suffix-2_big {
   position: relative;
   width: 400px;
@@ -213,4 +220,13 @@
 
 .nowrap {
   white-space: nowrap
+}
+
+
+.fz-10 {
+  font-size: 10px;
+}
+
+.fz-8 {
+  font-size: 8px;
 }
