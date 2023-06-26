@@ -24,9 +24,9 @@ function startCountUpOnScroll() {
       const prefix = !element.hasAttribute('data-countup-prefix') ? '' : element.getAttribute('data-countup-prefix');
 
       const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
-      console.log(countupValue)
+      // console.log(countupValue)
       const targetElement = document.querySelector(`.number-animate-${countupValue}`);
-      console.log(targetElement)
+      // console.log(targetElement)
 
       if (targetElement) {
 

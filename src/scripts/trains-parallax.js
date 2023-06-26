@@ -18,12 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
       const parallaxStart = parallaxContainer.offsetTop;
   
-      if(windowScroll > parallaxStart - 900){
-        let parallaxScroll = ((windowScroll - parallaxStart))/2 * parallaxScale + 'px';
+      if(windowScroll > parallaxStart - 1300){
+        let parallaxScroll = ((windowScroll - parallaxStart))/3 * parallaxScale + 'px';
 
-        if (windowSize < 1540){
-          
-        }
+        
         parallaxImg.style.bottom = parallaxScroll;
       }
     })

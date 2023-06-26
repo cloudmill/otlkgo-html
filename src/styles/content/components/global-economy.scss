@@ -101,10 +101,11 @@
 
     &__top {
       display: flex;
-      gap: 8px;
+      // gap: 8px;
     }
 
     &__num {
+      font-family: Halvar Breitschrift; 
       margin-bottom: 20px;
       font-weight: 700;
       font-size: 60px;
@@ -118,6 +119,7 @@
     }
 
     &__text {
+      font-family: Halvar Breitschrift; 
       font-weight: 700;
       font-size: 16px;
       line-height: 100%;
@@ -184,6 +186,7 @@
       }
 
       &-img {
+        display: flex;
         width: 100%;
       }
 
@@ -243,6 +246,11 @@
           @media #{media("<", m)} {
             font-size: rem(10px);
           }
+        }
+
+        &.chinese{
+          width: 100%;
+          
         }
       }
 
@@ -347,6 +355,7 @@
     }
 
     &-grafic {
+      display: flex;
       width: 560px;
 
       @media (min-width: 768px) and (max-width: 1024px) {
@@ -520,10 +529,11 @@
 
   &__top {
     display: flex;
-    gap: 8px;
+    // gap: 8px;
   }
 
   &__text{
+
     white-space: nowrap;
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
@@ -543,6 +553,9 @@
     }
     &.top{
       color: color(green);
+    }
+    &.mg-left{
+      margin-left: 7px;
     }
 
     &-grey {
@@ -730,12 +743,17 @@
   }
 
   &__grafic {
+    display: flex;
     width: 460px;
     @media (min-width: 768px) and (max-width: 1024px) {
       width: 100%;
     }
     @media #{media("<", m)} {
       width: 100%;
+    }
+
+    &-left{
+      display: flex;
     }
   }
 }
@@ -888,6 +906,7 @@
   }
 
   &__vector {
+    display: flex;
     margin-top: 40px;
     @include scrollbar-hidden();
 
@@ -921,6 +940,10 @@
   @media #{media("<", m)} {
     margin-top: rem(40px);
     padding-top: rem(8px);
+  }
+
+  &__vector{
+    display: flex;
   }
 
   &__title {
@@ -1074,6 +1097,7 @@
     }
 
     &-vector {
+      display: flex;
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
@@ -1126,7 +1150,10 @@
     &-title {
       margin-bottom: 20px;
 
+    }
 
+    &-vector{
+      display: flex;
     }
 
     &-text {
@@ -1285,6 +1312,7 @@
 
     &-vector {
       &.left {
+        display: flex;
         width: 460px;
         @media (min-width: 768px) and (max-width: 1024px) {
           width: 100%;
@@ -1295,6 +1323,7 @@
       }
 
       &.right {
+        display: flex;
         max-width: 559px;
 
         @media (min-width: 768px) and (max-width: 1024px) {
@@ -1464,6 +1493,12 @@
       align-items: center;
     }
 
+    &-vector{
+      display: flex;
+    } 
+
+    
+
     &-copy {
       display: flex;
       align-items: start;
@@ -1522,6 +1557,10 @@
         margin-top: rem(20px);
         display: block;
       }
+    }
+
+    &-vector {
+      display: flex;
     }
 
     &-title {
@@ -1598,6 +1637,7 @@
     }
 
     &-vector {
+      display: flex;
       &.desktop {
         @media #{media("<", m)} {
           display: none;
@@ -1708,6 +1748,7 @@
     }
 
     &-vector {
+      display: flex;
       &.custom-desktop {
         @media #{media("<", m)} {
           display: none;
@@ -1752,6 +1793,7 @@
     }
 
     &-vector {
+      display: flex;
       &.custom-desktop {
         @media #{media("<", m)} {
           display: none;

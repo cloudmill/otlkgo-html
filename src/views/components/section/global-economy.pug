@@ -11,13 +11,17 @@ mixin global-economy
           .macroeconomics-subrow 
             .macroeconomics-subcol.green
               .macroeconomics-subcol__top
-                .macroeconomics-subcol__num(data-countup='3,1' data-countup-prefix)
-                .macroeconomics-subcol__text к мировому ВВП
+                span.macroeconomics-subcol__num(data-countup='3')
+                span.macroeconomics-subcol__num ,
+                span.macroeconomics-subcol__num(data-countup='1' data-countup-suffix)
+                .macroeconomics-subcol__text.number-animate-3.number-animate.mg-left к мировому ВВП
               .macroeconomics-subcol_bot
                 .macroeconomics-subcol__text-grey Средняя оценка по итогам 2022 года
             .macroeconomics-subcol.light-green
               .macroeconomics-subcol__top
-                .macroeconomics-subcol__num.light(data-countup='2,1' data-countup-prefix)
+                span.macroeconomics-subcol__num.light(data-countup='2')
+                span.macroeconomics-subcol__num.light ,
+                span.macroeconomics-subcol__num.light(data-countup='1' data-countup-suffix)
               .macroeconomics-subcol_bot
                 .macroeconomics-subcol__text-grey Прогноз роста мирового ВВП на 2023 год
       .macroeconomics-grafics(data-aos="fade-up") 
@@ -55,7 +59,7 @@ mixin global-economy
           .chinese-economy__hero-grafic 
             +picture('chinese-eco-grafic1.png')
           .macroeconomics-grafics__col-links.chinese
-            .macroeconomics-grafics__col-text Источники: 
+            .macroeconomics-grafics__col-text.chinese Источники: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link(href="https://www.reuters.com/" target="blank") Reuters,
                 a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home" target="blank") World Bank,
@@ -77,13 +81,13 @@ mixin global-economy
           .chinese-economy__quarter-col 
             .ge-card.green.upper
               .ge-card__top
-                .ge-card__num.green(data-countup='27' data-countup-mines data-countup-suffix)
+                .ge-card__num.green(data-countup='27' data-countup-prefix='-' data-countup-suffix)
               .ge-card__bot
                 .ge-card__text-grey Падение спроса на недвижимость в Китае по итогам 2022 года
             .ge-card.light-green
                 .ge-card__top
                   .ge-card__num.light(data-countup='25'  data-countup-suffix)
-                  .ge-card__text ВВП страны
+                  .ge-card__text.number-animate-25.number-animate.mg-left ВВП страны
                 .ge-card__bot
                   .ge-card__text-grey Приходится на сектор недвижимости
           .chinese-economy__quarter-col 
@@ -223,15 +227,17 @@ mixin global-economy
             .mutal-trade__hero-subcol
               .ge-card.light-green
                 .ge-card__top
-                  .ge-card__num.light(data-countup='851,9')
-                  .ge-card__text млрд евро
+                  span.ge-card__num.light(data-countup='851')
+                  span.ge-card__num.light ,
+                  span.ge-card__num.light(data-countup='9')
+                  .ge-card__text.number-animate-851.number-animate.mg-left млрд евро
                 .ge-card__bot
                   .ge-card__text-grey Общий объем торговли между партнерами в рамках основных товарных позиций в 2022 году
             .mutal-trade__hero-subcol
               .ge-card.green
                 .ge-card__top
-                  .ge-card__num.green(data-countup='32'  data-countup-prefix data-countup-suffix)
-                  .ge-card__text.top до 624,3 
+                  .ge-card__num.green(data-countup='32'  data-countup-prefix='+' data-countup-suffix)
+                  .ge-card__text.top.number-animate-32.number-animate.mg-left до 624,3 
                     .ge-card__text млрд евро
                 .ge-card__bot
                   .ge-card__text-grey Рост экспорта Китая в Европу в 2022 году
@@ -239,8 +245,10 @@ mixin global-economy
         .mutal-trade__subsection-col(data-aos="fade-up") 
           .ge-card.green
               .ge-card__top
-                .ge-card__num.green(data-countup='3,2'  data-countup-prefix data-countup-suffix)
-                .ge-card__text.top до 227,6
+                span.ge-card__num.green(data-countup='3'  data-countup-prefix='+')
+                span.ge-card__num.green ,
+                span.ge-card__num.green(data-countup='2' data-countup-suffix)
+                .ge-card__text.top.number-animate-2.number-animate.mg-left до 227,6
                   .ge-card__text млрд евро 
               .ge-card__bot
                 .ge-card__text-grey Рост экспорта ЕС в Китай в 2022 году

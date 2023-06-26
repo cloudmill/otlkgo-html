@@ -7,25 +7,29 @@ mixin who-we
           h2.who-we__hero-title ОТЛК&nbsp;ЕРА. Кто мы?
           .who-we__hero-subtitle АО «ОТЛК&nbsp;ЕРА» (далее в Отчете — ОТЛК&nbsp;ЕРА) — крупнейший оператор транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по территории России, Казахстана и Беларуси.
           .who-we__hero-text.text Несмотря на события 2022 года, мы активно развивались во многих направлениях: расширяли карту перевозок, наращивали долю импортных сервисов, инвестировали в человеческий капитал и экологические инициативы.
-      .who-we__trains(data-parallax-container='')(data-aos="fade-up")  
+      .who-we__trains(data-parallax-container='')
         .who-we__parallax-img.desktop(data-parallax-img='') 
           +picture('parallax-trains-about-big.png')
         .container-content
           .who-we__trains-top
-            .who-we__trains-number(data-countup='+770%' data-countup-prefix data-countup-suffix)
+            .who-we__trains-boxes.number-countup__box.number-countup__box_trains
+              .who-we__trains-number(data-countup='770' data-countup-prefix='+')
+              .who-we__trains_percent.number-countup__percent.number-countup__percent_trains %
             .who-we__trains-title Общий рост импортных перевозок
           .who-we__parallax-img.mobile 
             +picture('parallax-trains-about-big.png')
           .who-we__trains-bot 
             .who-we__trains-cards 
               .ge-card.green
-                .ge-card__top
-                  .ge-card__num.green(data-countup='156' data-countup-prefix data-countup-suffix)
+                .ge-card__top.number-countup__box.number-countup__box_trains-3
+                  .ge-card__num.green(data-countup='156' data-countup-prefix='+')
+                  .number-countup__percent.number-countup__percent_trains-3 %
                 .ge-card__bot
                   .ge-card__text-grey Общий рост экспортных перевозок
               .ge-card.green
-                .ge-card__top
-                  .ge-card__num.green(data-countup='89' data-countup-suffix) 89%
+                .ge-card__top.number-countup__box.number-countup__box_trains-2
+                  .ge-card__num.green(data-countup='89')
+                  .number-countup__percent.number-countup__percent_trains-3 %
                 .ge-card__bot
                   .ge-card__text-grey Доля ОТЛК&nbsp;ЕРА в транзитных контейнерных перевозках Китай–Европа–Китай в 2022 году
     section.who-we__horizonts.container-content(id="section-new-horizonts")(data-aos="fade-up") 
@@ -43,8 +47,10 @@ mixin who-we
           .reference-subrow__col
             .reference-subrow__card 
               .reference-subrow__card-top
-                .reference-subrow__card-number.green $29,6
-                .reference-subrow__card-text млрд
+                span.reference-subrow__card-number.green(data-countup='29' data-countup-prefix='$')
+                span.reference-subrow__card-number.green ,
+                span.reference-subrow__card-number.green(data-countup='6') 
+                .reference-subrow__card-text.number-animate-29.number-animate млрд
               .reference-subrow__card-bot 
                 .reference-subrow__card-textgrey Cтоимость грузов, перевезенных транзитом в 2022 году
           .reference-subrow__col.icons
@@ -68,15 +74,19 @@ mixin who-we
           .reference-subrow__col
             .reference-subrow__card.custom-lightgreen 
               .reference-subrow__card-top
-                .reference-subrow__card-number.light-green 681,2
-                .reference-subrow__card-text тыс ДФЭ
+                span.reference-subrow__card-number.light-green(data-countup='681') 
+                span.reference-subrow__card-number.light-green ,
+                span.reference-subrow__card-number.light-green(data-countup='2') 
+                .reference-subrow__card-text.number-animate-681.number-animate тыс ДФЭ
               .reference-subrow__card-bot 
                 .reference-subrow__card-textgrey Перевезено ОТЛК&nbsp;ЕРА за 2022 год во всех сервисах
           .reference-subrow__col
             .reference-subrow__card.custom-lightgreen 
-              .reference-subrow__card-top
-                .reference-subrow__card-number.light-green 3,2% 
-                .reference-subrow__card-text 
+              .reference-subrow__card-top.number-countup__box.number-countup__box_reference
+                span.reference-subrow__card-number.light-green(data-countup='3') 
+                span.reference-subrow__card-number.light-green ,
+                span.reference-subrow__card-number.light-green(data-countup='2')
+                .number-countup__percent.number-countup__percent_reference %
               .reference-subrow__card-bot 
                 .reference-subrow__card-textgrey Доля от общей стоимостной торговли между Китаем и ЕС  2022 году
         .reference-mission(id="section-who-we-mission")(data-aos="fade-up") 

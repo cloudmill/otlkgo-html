@@ -523,7 +523,9 @@
   }
 
   &_about{
+    display: flex;
     height: auto;
+    // max-height: 707px;
     @media #{media(">", xl)} {
       // height: calc(100vh - 84px);
 
@@ -532,7 +534,7 @@
       }
     }
     @media #{media("<", m)} {
-      height: auto;
+      // height: 620px;
     }
     
     .report-hero__img-about{
