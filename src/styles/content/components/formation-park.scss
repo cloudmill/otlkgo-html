@@ -448,11 +448,34 @@
 }
 
 .formation-train {
+  position: relative;
+  overflow: hidden;
   margin-top: 20px;
   padding-top: 300px;
   padding-bottom: 40px;
 
-  background: url('../assets/images/formation-train.png') center/cover no-repeat;
+  height: 640px;
+
+  // background: url('../assets/images/formation-train.png') center/cover no-repeat;
+  background-color: #F4F4F4;
+
+  &__parallax{
+    position: absolute;
+    top: -300px;
+    left: 0px;
+    z-index: 1;
+
+    transition: top .35s 0s cubic-bezier(0.33, 1, 0.68, 1);
+    
+    @media #{media('<', t)} {
+      display: none;
+    }
+  }
+
+  &__inner{
+    position: relative;
+    z-index: 2;
+  }
 
   &__block {
     display: flex;
@@ -503,11 +526,16 @@
     background: url('../assets/images/formation-train-mobile.png') center/cover no-repeat;
 
     &__number {
-      font-size: 150px;
+      font-size: 60px;
+    }
+    &__row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
   @media #{media('<',m)} {
+    height: 502px;
     margin-top: 40px;
     padding-top: 360px;
     padding-bottom: 20px;
@@ -519,7 +547,6 @@
     &__row {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-
     }
 
     &__number {
@@ -534,6 +561,15 @@
       span {
         font-size: 14px;
       }
+    }
+  }
+
+
+  @media #{media('>', xl)} {
+    padding-top: 496px;
+    height: 830px;
+
+    .thumbnail{
     }
   }
 }

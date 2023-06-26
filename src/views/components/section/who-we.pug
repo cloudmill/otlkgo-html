@@ -1,5 +1,5 @@
 mixin who-we 
-  .who-we 
+  .who-we(data-aos="fade-up") 
     section.who-we__section(id="section-who-we")
       .container-content  
         .who-we__hero.hero 
@@ -7,39 +7,39 @@ mixin who-we
           h2.who-we__hero-title ОТЛК&nbsp;ЕРА. Кто мы?
           .who-we__hero-subtitle АО «ОТЛК&nbsp;ЕРА» (далее в Отчете — ОТЛК&nbsp;ЕРА) — крупнейший оператор транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по территории России, Казахстана и Беларуси.
           .who-we__hero-text.text Несмотря на события 2022 года, мы активно развивались во многих направлениях: расширяли карту перевозок, наращивали долю импортных сервисов, инвестировали в человеческий капитал и экологические инициативы.
-      .who-we__trains 
-        .who-we__trains-img.desktop 
-          +picture('about-hero-img.png')
+      .who-we__trains(data-parallax-container='')(data-aos="fade-up")  
+        .who-we__parallax-img.desktop(data-parallax-img='') 
+          +picture('parallax-trains-about-big.png')
         .container-content
           .who-we__trains-top
-            .who-we__trains-number +770%
+            .who-we__trains-number(data-countup='+770%' data-countup-prefix data-countup-suffix)
             .who-we__trains-title Общий рост импортных перевозок
-          .who-we__trains-img.mobile 
-            +picture('about-hero-img-mobile.png')
+          .who-we__parallax-img.mobile 
+            +picture('parallax-trains-about-big.png')
           .who-we__trains-bot 
             .who-we__trains-cards 
               .ge-card.green
                 .ge-card__top
-                  .ge-card__num.green +156%
+                  .ge-card__num.green(data-countup='156' data-countup-prefix data-countup-suffix)
                 .ge-card__bot
                   .ge-card__text-grey Общий рост экспортных перевозок
               .ge-card.green
                 .ge-card__top
-                  .ge-card__num.green 89%
+                  .ge-card__num.green(data-countup='89' data-countup-suffix) 89%
                 .ge-card__bot
                   .ge-card__text-grey Доля ОТЛК&nbsp;ЕРА в транзитных контейнерных перевозках Китай–Европа–Китай в 2022 году
-    section.who-we__horizonts.container-content(id="section-new-horizonts")
+    section.who-we__horizonts.container-content(id="section-new-horizonts")(data-aos="fade-up") 
       .new-horizonts
         h2.new-horizonts__title Новые горизонты
         .new-horizonts__text Главный фокус ОТЛК&nbsp;ЕРА – транзитные перевозки Китай-Европа-Китай, востребованность которых остается на высоком уровне. Однако в 2022 году добавились новые ориентиры: активное развитие экспортных перевозок из Беларуси и России в Китай, а также импортные перевозки из Китая в Россию. 
-    section.who-we__reference.container-content(id="section-who-we-reference")
+    section.who-we__reference.container-content(id="section-who-we-reference")(data-aos="fade-up") 
       .reference
         h2.reference-title Справка о Компании
         h3.reference-subtitle Акционерное общество «Объединенная транспортно-логистическая компания — Евразийский железнодорожный альянс» (ОТЛК&nbsp;ЕРА) — первый и единственный интеграционный проект в области логистики на территории Евразийского экономического союза (ЕАЭС). Он объединяет ресурсы и возможности трех стран — России, Казахстана и Беларуси, благодаря чему достигается синергия интересов и прирост дохода каждой из экономик стран-участниц проекта. 
         .reference-row  
           .reference-text.text Созданная в 2018 году в результате реорганизации АО «ОТЛК», ОТЛК&nbsp;ЕРА выступает оператором транзитных контейнерных сервисов и транспортирует грузы в сообщении Китай — Европа — Китай в составе регулярных контейнерных поездов через территорию России, Казахстана и Беларуси.
           .reference-text.text Трое учредителей владеют паритетными долями акций в уставном капитале: «Российские железные дороги» (ОАО «РЖД»), Государственное объединение «Белорусская железная дорога» (Белорусская железная дорога) и Акционерное общество «Национальная компания «Қазақстан темiр жолы» (АО «НК «КТЖ»).
-        .reference-subrow.custom-first 
+        .reference-subrow.custom-first(data-aos="fade-up")  
           .reference-subrow__col
             .reference-subrow__card 
               .reference-subrow__card-top
@@ -64,7 +64,7 @@ mixin who-we
               .reference-subrow__item-icon
                 +engine-svg
               .reference-subrow__item-text Автотехника и запчасти (*наибольшие доли в деньгах)
-        .reference-subrow.custom-second
+        .reference-subrow.custom-second(data-aos="fade-up") 
           .reference-subrow__col
             .reference-subrow__card.custom-lightgreen 
               .reference-subrow__card-top
@@ -79,7 +79,7 @@ mixin who-we
                 .reference-subrow__card-text 
               .reference-subrow__card-bot 
                 .reference-subrow__card-textgrey Доля от общей стоимостной торговли между Китаем и ЕС  2022 году
-        .reference-mission(id="section-who-we-mission")
+        .reference-mission(id="section-who-we-mission")(data-aos="fade-up") 
           h2.reference-mission__title.desktop Наша миссия
           .reference-mission__block 
             h2.reference-mission__title.mobile Наша миссия
@@ -93,7 +93,7 @@ mixin who-we
             .reference-mission__block-arrow.rd 
               +arrow-rd-svg
     .container-content
-      section.who-we__achievement(id="section-who-we-achievement")
+      section.who-we__achievement(id="section-who-we-achievement")(data-aos="fade-up") 
         h2.who-we__achievement-title Десять достижений 2022 года
         .who-we__achievement-list 
           .who-we__achievement-item.light-green
@@ -137,7 +137,7 @@ mixin who-we
             .who-we__achievement-img 
               +picture('achievement-number-10.png')
     .container-content
-      section.who-we__report(id="section-who-we-report")
+      section.who-we__report(id="section-who-we-report")(data-aos="fade-up") 
         h2.who-we__report-title Об Отчете
         .who-we__report-subtitle Годовой отчет раскрывает данные о деятельности ОТЛК&nbsp;ЕРА.
         .report-row 
@@ -153,7 +153,7 @@ mixin who-we
               .report__protocol-item Утвержден годовым общим собранием акционеров ОТЛК&nbsp;ЕРА <br>(протокол ГОСА от 30.06.2023 №22)
               .report__protocol-item Достоверность данных, содержащихся в Годовом отчете, подтверждена ревизионной комиссией ОТЛК&nbsp;ЕРА.
     .container 
-      section.who-we__appeal(id="section-who-we-appeal")
+      section.who-we__appeal(id="section-who-we-appeal")(data-aos="fade-up") 
         .appeal-row 
           .appeal-col 
             .appeal-line 

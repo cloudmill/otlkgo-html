@@ -23,7 +23,7 @@ function startCountUpOnScroll() {
       const suffix = element.hasAttribute('data-countup-suffix') ? '%' : '';
       const prefix = !element.hasAttribute('data-countup-prefix') ? '' : element.getAttribute('data-countup-prefix');
 
-      const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
+      const countUp = new CountUp(element, endValue, { ...options, suffix, mines, dollar, prefix });
 
       const targetElement = document.querySelector(`.number-animate-${countupValue}`);
       console.log('asdfadsfaf')

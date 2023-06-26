@@ -668,6 +668,14 @@
       line-height: 140%;
       color: color(dark);
 
+      &.mg-big {
+        margin-bottom: 70px;
+      }
+
+      &.mg-bot30{
+        margin-bottom: 30px;
+      }
+      
       @media #{media("<", m)} {
         margin-bottom: rem(30px);
         width: rem(335px);
@@ -675,9 +683,7 @@
         line-height: 150%;
       }
 
-      &.mg-big {
-        margin-bottom: 70px;
-      }
+      
     }
   }
 

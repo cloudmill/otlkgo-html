@@ -1,18 +1,18 @@
 mixin control-sections 
-  .container.container_control-hero 
+  .container.container_control-hero(data-aos="fade-up") 
     section.control-hero(id="control-hero")
       .control-hero__img.desktop 
         +picture('page-5-hero.png')
       .control-hero__img.mobile 
         +picture('page-5-hero-mobile.png')
       .control-hero__title Структура корпоративного управления
-  .container-content
+  .container-content(data-aos="fade-up")
     section.control-subhero
-      .control-subhero__row
+      .control-subhero__row(data-aos="fade-up")
         p.control-subhero__subtitle Эффективная система корпоративного управления — важный фактор устойчивого развития ОТЛК&nbsp;ЕРА.
         p.control-subhero__text.text В нашей компании функционирует современная система корпоративного управления, которая строится на основе требований законодательства Российской Федерации и лучших корпоративных практик.
       .control-subhero__title В соответствии с рекомендациями кодекса корпоративного управления Банка России, мы руководствуемся следующими основными принципами построения системы корпоративного управления:
-      .control-subhero__row.listing 
+      .control-subhero__row.listing(data-aos="fade-up") 
         .control-subhero__col.list-subhero 
           each item in ['Равное отношение к правам и интересам акционеров', 'Уважение и защита прав акционеров', 'Последовательность и коллегиальность в принятии решений', 'Активность и профессионализм членов совета директоров и правления', 'Стабильная и прозрачная дивидендная политика']
             .recruitment-processes__hr-mark=item
@@ -20,10 +20,10 @@ mixin control-sections
           each item in ['Информационная открытость и прозрачность', 'Неприятие коррупции в любых ее проявлениях', 'Последовательность и коллегиальность в принятии решений', 'Соблюдение этических норм поведения', 'Корпоративная социальная ответственность']
             .recruitment-processes__hr-mark=item
   .container-content  
-    section.control-meetings
+    section.control-meetings(data-aos="fade-up")
       h3.control-meetings__title Количество общих собраний акционеров/заседаний совета директоров и его комитетов, правления в 2022 году
-      .control-meetings__row 
-        .control-meetings__col
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
           //card
           .custom-card 
             .custom-card__title Общее собрания акционеров
@@ -33,7 +33,7 @@ mixin control-sections
                 .custom-card__texts-title заседания
                 .custom-card__texts-subtext.desktop 2 собрания в форме совместного присутствия (с возможностью предварительного направления бюллетеней), 2 собрания в форме заочного голосования (путем направления бюллетеней)            
             .custom-card__texts-subtext.mobile 2 собрания в форме совместного присутствия (с возможностью предварительного направления бюллетеней), 2 собрания в форме заочного голосования (путем направления бюллетеней)
-        .control-meetings__col 
+        .control-meetings__col(data-aos="fade-up") 
           //card
           .custom-card 
             .custom-card__title Совет директоров
@@ -47,8 +47,8 @@ mixin control-sections
             each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги']
               .recruitment-processes__hr-mark=item
             .custom-card__text Независимые директора не входили в состав совета директоров.
-      .control-meetings__row 
-        .control-meetings__col
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
           //card
           .custom-card 
             .custom-card__title Комитет по стратегии совета директоров
@@ -61,7 +61,7 @@ mixin control-sections
             .custom-card__subtitle В составе комитета по стратегии совета директоров:
             each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
               .recruitment-processes__hr-mark=item
-        .control-meetings__col
+        .control-meetings__col(data-aos="fade-up")
           //card
           .custom-card 
             .custom-card__title Комитет по аудиту совета директоров
@@ -74,8 +74,8 @@ mixin control-sections
             .custom-card__subtitle В составе комитета по аудиту совета директоров:
             each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
               .recruitment-processes__hr-mark=item
-      .control-meetings__row 
-        .control-meetings__col
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
           //card
           .custom-card 
             .custom-card__title Комитет по кадрам, вознаграждениям <br>и корпоративному управлению совета директоров
@@ -88,7 +88,7 @@ mixin control-sections
             .custom-card__subtitle В составе комитета по кадрам, вознаграждениям и корпоративному управлению совета директоров:
             each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
               .recruitment-processes__hr-mark=item
-        .control-meetings__col 
+        .control-meetings__col(data-aos="fade-up") 
           //card
           .custom-card 
             .custom-card__title Правление
@@ -101,10 +101,10 @@ mixin control-sections
             .custom-card__subtitle В составе комитета по аудиту совета директоров:
             .custom-card__text В составе – шесть представителей ОТЛК&nbsp;ЕРА
   .container-content  
-    section.control-structure
+    section.control-structure(data-aos="fade-up")
       .control-structure__title Структура корпоративного управления
-      .control-structure__img.desktop 
+      .control-structure__img.desktop(data-aos="fade-up") 
         +picture('control-structure-vector.png')
-      .control-structure__img-container.mobile
+      .control-structure__img-container.mobile(data-aos="fade-up")
         .control-structure__img 
           +picture('control-structure-vector.png')
