@@ -7,11 +7,14 @@ mixin indicators
             h2.indicators__title Ключевые показатели
             .indicators__row 
               .col
-                .indicators__number.w-400
+                .indicators__number.w-suffix-2_big
                   span(data-countup='89')
                   span.indicators__suffix %
               .col 
-                p.indicators__description Доля ОТЛК ЕРА в транзитных контейнерных перевозках КНР-ЕС-КНР
+                p.indicators__description
+                  |Доля ОТЛК ЕРА в транзитных контейнерных перевозках&nbsp;
+                  br.br
+                  span.nowrap КНР-ЕС-КНР
         .indicators__row-bottom
           .container-content 
             .indicators__box 
@@ -84,7 +87,6 @@ mixin indicators
                     span(data-countup='99')
                     span ,
                     span(data-countup='997')
-                    //- span.number-animate-997.number-animate %
                     span.indicators__suffix %
                 .row
                   p.indicators__item-text.text Сохранность грузов

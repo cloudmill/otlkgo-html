@@ -97,19 +97,18 @@
     }
   }
 
-  &__text {
+  .col {
     &:nth-child(1) {
-      width: 460px;
+      p {
+        width: 460px;
 
-      @media #{media('<',t)} {
-        width: auto;
+        @media #{media('<',t)} {
+          width: auto;
+        }
       }
     }
-
-    &:nth-child(2) {
-      width: 560px;
-    }
   }
+
 }
 
 .trends-dynamic {
@@ -349,8 +348,6 @@
 
     &__svg {
       margin-top: 20px;
-
-      height: 232px;
     }
 
     &__svg {
@@ -362,7 +359,7 @@
     }
 
     &-img {
-      width: 679px;
+      width: 750px;
     }
 
     &__links {

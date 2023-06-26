@@ -157,6 +157,16 @@
 
 }
 
+.w-suffix-2_big {
+  position: relative;
+  width: 400px;
+  flex-shrink: 0;
+
+  @media #{media('<',m)} {
+    width: 147px;
+  }
+}
+
 .w-suffix-3 {
   position: relative;
   width: 210px;
@@ -199,4 +209,8 @@
 
 .flex {
   display: flex;
+}
+
+.nowrap {
+  white-space: nowrap
 }

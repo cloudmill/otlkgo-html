@@ -1,0 +1,34 @@
+.number-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.for-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: $transition;
+
+}
+
+.fade-up {
+  transform: translateY(0);
+  opacity: 1;
+  transition: $transition;
+}
+
+
+.block-diagram__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+}

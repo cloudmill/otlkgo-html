@@ -50,7 +50,10 @@
     &-top {
       @media #{media('<',m)} {
         padding: 40px 0;
-        background: url('../assets/images/indicators-bg-mobile.png'), center/cover, no-repeat;
+        background: url('../assets/images/indicators-bg-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -269,10 +272,4 @@
   font-weight: 700;
   line-height: 80%;
   letter-spacing: -5.12px;
-}
-
-.number-animate {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
 }

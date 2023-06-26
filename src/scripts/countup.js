@@ -26,7 +26,7 @@ function startCountUpOnScroll() {
       const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
 
       const targetElement = document.querySelector(`.number-animate-${countupValue}`);
-
+      console.log('asdfadsfaf')
 
       if (targetElement) {
 
