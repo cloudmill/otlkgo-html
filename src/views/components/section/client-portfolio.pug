@@ -27,11 +27,9 @@ mixin client-portfolio
           .transportation-development__col.mid
             h4.transportation-development__heading Рост суммарного объема перевозок Китай–РФ к 2021 году
             .transportation-development__video 
-              video( muted id='video-play')
+              video( muted class='video-play')
                 source(src="./assets/videos/rost_summy.mp4" type="video/mp4")
                 source(src="./assets/videos/rost_summy.webm" type="video/webm")
-            //- .transportation-development__vector.desktop 
-            //-   +picture('transportation-development.png')
             .transportation-development__vector.mobile 
               +picture('transportation-development-mobile.png')
         .transportation-development__case(id="client-development__case")(data-aos="fade-up")

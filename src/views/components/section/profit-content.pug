@@ -17,7 +17,7 @@ mixin profit-content
           .block-diagram__col 
             p.block-diagram__description Прибыль от продаж ОТЛК&nbsp;ЕРА за 2020–2022 годы с указанием рентабельности, млн руб
             .block-diagram__video
-              video( muted id='video-play' playsinline  data-svg='rev8' )
+              video( muted class='video-play' playsinline  data-svg='rev8' )
                 source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
                 source(src="./assets/videos/block-diagram.webm" type="video/webm")
               +profit-sales.for-video.video-play-rev8
@@ -41,7 +41,7 @@ mixin profit-content
           .block-diagram__col 
             p.block-diagram__description EBITDA с указанием рентабельности, млн руб
             .block-diagram__video
-              video( muted id='video-play' playsinline  data-svg='rev4' )
+              video( muted class='video-play' playsinline  data-svg='rev4' )
                 source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
                 source(src="./assets/videos/block-diagram.webm" type="video/webm")
               +ebitda.for-video.for-video_4.video-play-rev4
@@ -63,7 +63,7 @@ mixin profit-content
           .block-diagram__col 
             p.block-diagram__description Чистая прибыль с указанием рентабельности, млн руб
             .block-diagram__video
-              video( muted id='video-play' playsinline  data-svg='rev7' )
+              video( muted class='video-play' playsinline  data-svg='rev7' )
                 source(src="./assets/videos/net-profit.mp4" type="video/mp4")
                 source(src="./assets/videos/net-profit.webm" type="video/webm")
               +net-profit.for-video.video-play-rev7

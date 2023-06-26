@@ -29,7 +29,7 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Выручка ОТЛК ЕРА за 2020–2022 годы, млн руб
             .block-diagram__video
-              video( muted id='video-play' playsinline  data-svg='rev3' )
+              video( muted class='video-play' playsinline  data-svg='rev3' )
                 source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
                 source(src="./assets/videos/block-diagram.webm" type="video/webm")
               .block-diagram__decor
@@ -80,7 +80,7 @@ mixin preservation-content
           .block-diagram__col 
             p.block-diagram__description.description_big Валовая прибыль ОТЛК ЕРА за 2020–2022 годы, с указанием рентабельности, млн руб
             .block-diagram__video
-              video( muted id='video-play' playsinline  data-svg='rev1' )
+              video( muted class='video-play' playsinline  data-svg='rev1' )
                 source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
                 source(src="./assets/videos/block-diagram.webm" type="video/webm")
               +valovaya.for-video.video-play-rev1
@@ -93,9 +93,14 @@ mixin preservation-content
     .container-content 
       .preservation-statistics__inner 
         p.preservation-structure__descrition.description_big Структура управленческих расходов в 2022 году
-        .preservation-statistics__img.desktop-m
-          +picture('preservation-statistics.png')
-        .preservation-statistics__img.mobile-m
-          +picture('preservation-statistics-mobile.png')
+          .block-diagram__video.preservation-statistics__video
+            video( muted class='video-play' playsinline  data-svg='rev9' )
+              source(src="./assets/videos/strukt_rashodov.mp4" type="video/mp4")
+              source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
+            +expenses.for-video.video-play-rev9
+        //- .preservation-statistics__img.desktop-m
+        //-   +picture('preservation-statistics.png')
+        //- .preservation-statistics__img.mobile-m
+        //-   +picture('preservation-statistics-mobile.png')
 
         

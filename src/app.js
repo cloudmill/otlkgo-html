@@ -13,7 +13,6 @@ import "./scripts/countup";
 import "./scripts/trains-parallax";
 import "./scripts/parallax-containers";
 // import "./scripts/odometr";
-import "./scripts/test";
 
 
 

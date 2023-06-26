@@ -158,6 +158,10 @@
       object-fit: contain;
     }
   }
+
+  &__video {
+    h40%
+  }
 }
 
 @media #{media('<',t)} {
