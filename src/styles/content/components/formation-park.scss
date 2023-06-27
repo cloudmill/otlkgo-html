@@ -438,11 +438,21 @@
       top: -10px;
     }
 
+    &-vector{
+      display: flex;
+    }
+
   }
 
   &__mini {
     &-heading {
       margin-bottom: 24px;
+    }
+  }
+
+  &__vector{
+    &-right{
+      display: flex;
     }
   }
 }

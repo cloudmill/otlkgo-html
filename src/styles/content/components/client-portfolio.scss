@@ -16,6 +16,7 @@
       }
     }
     &__vector {
+      display: flex;
       height: 605px;
       @media #{media('<',m)} {
         height: auto;
@@ -78,6 +79,7 @@
         }
 
         &:nth-child(2) {
+          overflow: hidden;
           border-top: 1px solid color(green);
           padding-top: 20px;
           width: 760px;
@@ -143,7 +145,10 @@
       padding-top: 20px;
       border-top: 1px solid #69DA91;
 
-
+      &-vector{
+        display: flex;
+      }
+      
       &-top {
         margin-bottom: 40px;
         display: flex;

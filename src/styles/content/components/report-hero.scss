@@ -1,4 +1,5 @@
 .report-hero{
+  display: flex;
   position: relative;
   margin-top: 84px;
   margin-bottom: 20px;
@@ -158,6 +159,7 @@
   }
 
   &__portrait{
+    display: flex;
     position: relative;
     top: 0px;
     left: 0px;
@@ -166,7 +168,7 @@
     height: 100%;
 
     &.mobile{
-      display: none;
+      display: flex !important;
     }
     @media #{media(">", t)} {
     }

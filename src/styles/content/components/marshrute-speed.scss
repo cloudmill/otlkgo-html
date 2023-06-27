@@ -179,6 +179,7 @@
     }
 
     &-vector{
+      display: flex;
       margin-bottom: 40px;
 
       @media #{media("<", m)} {
