@@ -9,51 +9,51 @@
 
 // })
 
-document.addEventListener('DOMContentLoaded', () => {
-  const parallaxContainer = document.querySelector('.formation-train')
-  if (parallaxContainer) {
-    const parallaxOffset = parallaxContainer.offsetTop;
-    const parallaxImg = document.querySelector('.formation-train__parallax')
-    const windowHeight = window.screen.height;
+// document.addEventListener('DOMContentLoaded', () => {
+//   const parallaxContainer = document.querySelector('.formation-train')
+//   if (parallaxContainer) {
+//     const parallaxOffset = parallaxContainer.offsetTop;
+//     const parallaxImg = document.querySelector('.formation-train__parallax')
+//     const windowHeight = window.screen.height;
 
-    if (parallaxContainer && window.screen.width > 1024) {
-      window.addEventListener('scroll', () => {
-        let windowScroll = window.scrollY;
+//     if (parallaxContainer && window.screen.width > 1024) {
+//       window.addEventListener('scroll', () => {
+//         let windowScroll = window.scrollY;
 
-        if (windowScroll > (parallaxOffset - windowHeight)) {
-          let sumScroll = windowScroll - parallaxOffset + 'px'
-          parallaxImg.style.transform = `translateY(${sumScroll})`
+//         if (windowScroll > (parallaxOffset - windowHeight)) {
+//           let sumScroll = windowScroll - parallaxOffset + 'px'
+//           parallaxImg.style.transform = `translateY(${sumScroll})`
 
-          if (window.screen.width > 1660) {
-            parallaxImg.style.top = ((windowScroll - parallaxOffset) / 10 - 300 + 'px')
-          } else {
-            parallaxImg.style.top = ((windowScroll - parallaxOffset) / 20 - 300 + 'px')
-          }
-        }
-      })
-    }
-    // if (parallaxContainer) {
+//           if (window.screen.width > 1660) {
+//             parallaxImg.style.top = ((windowScroll - parallaxOffset) / 10 - 300 + 'px')
+//           } else {
+//             parallaxImg.style.top = ((windowScroll - parallaxOffset) / 20 - 300 + 'px')
+//           }
+//         }
+//       })
+//     }
+//     // if (parallaxContainer) {
 
-    //   if (parallaxContainer && window.screen.width > 1024) {
-    //     window.addEventListener('scroll', () => {
-    //       let windowScroll = window.scrollY;
+//     //   if (parallaxContainer && window.screen.width > 1024) {
+//     //     window.addEventListener('scroll', () => {
+//     //       let windowScroll = window.scrollY;
 
-    //       if (windowScroll > (parallaxOffset - windowHeight)) {
-    //         let sumScroll = windowScroll - parallaxOffset + 'px'
-    //         parallaxImg.style.transform = `translateY(${sumScroll})`
+//     //       if (windowScroll > (parallaxOffset - windowHeight)) {
+//     //         let sumScroll = windowScroll - parallaxOffset + 'px'
+//     //         parallaxImg.style.transform = `translateY(${sumScroll})`
 
-    //         if (window.screen.width > 1660) {
-    //           parallaxImg.style.top = ((windowScroll - parallaxOffset) / 10 - 300 + 'px')
-    //         } else {
-    //           parallaxImg.style.top = ((windowScroll - parallaxOffset) / 20 - 300 + 'px')
-    //         }
-    //       }
-    //     })
-    //   }
-    // }
-
-
+//     //         if (window.screen.width > 1660) {
+//     //           parallaxImg.style.top = ((windowScroll - parallaxOffset) / 10 - 300 + 'px')
+//     //         } else {
+//     //           parallaxImg.style.top = ((windowScroll - parallaxOffset) / 20 - 300 + 'px')
+//     //         }
+//     //       }
+//     //     })
+//     //   }
+//     // }
 
 
-  }
-})
+
+
+//   }
+// })

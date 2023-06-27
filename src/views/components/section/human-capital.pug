@@ -2,7 +2,7 @@ mixin human-capital
   section.human-capital(id="human-capital")(data-aos="fade-up") 
     .container-content(data-aos="fade-up") 
       h2.human-capital__title Человеческий капитал
-      h3.human-capital__subtitle Сколько нас?
+      h3.human-capital__subtitle.w-100 Сколько нас?
       .human-capital__hero-row(data-aos="fade-up") 
         .human-capital__hero-col(data-aos="fade-up")
           .human-capital__hero-text.bold К концу 2022 года в ОТЛК&nbsp;ЕРА фактически работали 160 человек (штатная численность — 170). Из них 69 человек занимают руководящие должности.<br> Также у нас 88 специалистов и 6 служащих. 
@@ -11,7 +11,7 @@ mixin human-capital
           .human-capital__hero-text.text Все это повлекло за собой изменения в организационной структуре компании и штатном расписании для того, чтобы и дальше развивать клиентский сервис, поддерживать высокое качество услуг, управлять собственным парком фитинговых платформ, проводить мониторинг и комплексный анализ рыночной конъюнктуры.
           .ge-card.green.human
               .ge-card__top
-                .ge-card__num.green +12%
+                .ge-card__num.green(data-countup='12' data-countup-prefix='+' data-countup-suffix)
               .ge-card__bot
                 .ge-card__text-grey Рост штата компании в 2022 году
 
@@ -23,15 +23,15 @@ mixin organization-structure
         .organization-structure__img-table(data-aos="fade-up") 
           +picture('organization-structure-img.png')
         .ge-card.green.desktop(data-aos="fade-up") 
-          .ge-card__top
-            .ge-card__num.green 170
-            .ge-card__text единиц 
+          .ge-card__top.gap-8
+            .ge-card__num.green(data-countup='170')
+            .ge-card__text.number-animate-170.number-animate единиц 
           .ge-card__bot
             .ge-card__text-grey.custom-cuchurina Штатная численность
       .ge-card.green.mobile
-        .ge-card__top
-          .ge-card__num.green 170
-          .ge-card__text единиц 
+        .ge-card__top.gap-8
+          .ge-card__num.green(data-countup='170')
+          .ge-card__text.number-animate-170.number-animate  единиц 
         .ge-card__bot
           .ge-card__text-grey.custom-cuchurina Штатная численность
       .organization-structure__number(id="organization-number")(data-aos="fade-up") 

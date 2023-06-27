@@ -466,6 +466,7 @@
 .ge-card {
   padding-top: 12px;
 
+  width: 100%;
   max-width: 360px;
 
   @media #{media('<',m)} {
@@ -1910,4 +1911,9 @@
       }
     }
   }
+}
+
+
+.ge-card__nums-container{
+  display: flex;
 }

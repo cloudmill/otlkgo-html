@@ -1,11 +1,14 @@
 mixin formation-park 
   section.formation-train
-    .formation-train__parallax 
-      +picture('formation-park-parallax.jpg')
+    //- .formation-train__parallax 
+    //-   +picture('formation-park-parallax.jpg')
     .container-content
       .formation-train__inner 
-        .formation-train__block 
-          p.formation-train__number 9 663
+        .formation-train__block
+          .formation-top
+            span.formation-train__number(data-countup='9') 9
+            span.opacity-0.formation-train__number  
+            span.formation-train__number(data-countup='663') 663
           .formation-train__row   
             .col 
             .col 
@@ -26,9 +29,12 @@ mixin formation-park
       .formation-park__row.second(data-aos="fade-up")
         .formation-park__col-second 
           .ge-card.light-green.large
-              .ge-card__top
-                .ge-card__num.light.large 2000-3000
-                .ge-card__text платформ/мес 
+              .ge-card__top.gap-8
+                .ge-card__nums-container
+                  span.ge-card__num.light.large(data-countup='2000') 2000
+                  span.ge-card__num.light.large -
+                  span.ge-card__num.light.large(data-countup='3000') 3000
+                .ge-card__text.number-animate-3000.number-animate платформ/мес 
               .ge-card__bot
                 .ge-card__text-grey.large Оценка оптимизации парка за счет XL-поездов
           .formation-park__text.top.text До 2019 года компания обеспечивала парк фитинговых платформ в основном за счет привлечения подвижного состава на рейс. Переход к использованию аренды и финансового лизинга был вызван существенным ростом объемов перевозок и, как следствие, необходимостью максимально оперативно увеличить парк (в 1,5 раза в первом полугодии 2020 года). Среди других факторов — сильный дефицит фитинговых платформ на рынке в конце 2018 — начале 2019 года, риск вывода основными контрагентами парка из привлечения на рейс, значительный рост ставок на привлечение платформ. 
@@ -42,9 +48,9 @@ mixin formation-park
           .formation-park__text.text В итоге компания сформировала наиболее комфортную структуру парка вагонов по видам привлечения. К концу 2022 года доля арендованных и лизинговых платформ составила 62%, что позволило с наименьшими рисками и наиболее эффективно, но при этом максимально гибко использовать перевозочный ресурс. Арендованный и лизинговый парк — гарантированный парк для обеспечения объемов перевозок подвижным составом, а в случае изменения объемов компания прибегает к «спотовому» привлечению/возврату парка в рамках договоров привлечения на рейс.
         .formation-park__col-third 
           .ge-card.green
-              .ge-card__top
-                .ge-card__num.green 600
-                .ge-card__text фитинговых <br>платформ 
+              .ge-card__top.gap-8
+                .ge-card__num.green(data-countup='600')  600
+                .ge-card__text.number-animate-600.number-animate  фитинговых <br>платформ 
               .ge-card__bot
                 .ge-card__text-grey.large-360 Получены в лизинг в первой половине 2022 года
       .formation-park__possession(data-aos="fade-up")

@@ -50,6 +50,14 @@
       font-size: rem(60px);
       line-height: 80%;
     }
+    @media #{media(">", m)} {
+      &.w-1{
+        min-width: 60px;
+      }
+      &.w-2{
+        min-width: 74px;
+      }
+    }
   }
 
   &__texts{

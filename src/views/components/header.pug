@@ -203,7 +203,7 @@ mixin header
           span.header-title__green главная ценность
         .header-text 
           .header-text__top годовой отчет 2022
-          .header-text__bot стратегический отчет
+          .header-text__bot 0
       .header-col
         .header-actions
           .header-actions__item.header-actions_search.header-actions_before(data-header-search='') 
@@ -223,7 +223,7 @@ mixin header
               .header-actions__item-text.dark PDF
     .header-search(data-search-container='')  
       form.header-search__form.header-form 
-        input.header-form__input(type="text" placeholder="Поиск по Годовому отчету") 
+        input.header-form__input(type="text" placeholder="Поиск по Годовому отчету" data-search-input) 
         button.header-form__button(type="submit")
           +search-normal-svg
 

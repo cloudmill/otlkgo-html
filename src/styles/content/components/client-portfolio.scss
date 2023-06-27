@@ -85,9 +85,11 @@
           width: 760px;
           @media #{media('<',m)} {
             width: rem(335px);
+            width: 100%;
 
             .transportation-development__heading{
               width: rem(335px);
+              width: 100%;
             }
           }
         }
@@ -225,6 +227,15 @@
           margin-bottom: 16px;
         }
 
+      }
+
+      &-card{
+        width: 360px;
+        flex-shrink: 0;
+
+        @media #{media('<',m)} {
+          width: 100%;
+        }
       }
     }
 
@@ -365,5 +376,17 @@
       }
     }
 
+    &__video{
+      position: relative;
+
+      max-height: 594px;
+    }
+
+  }
+}
+
+.transportation-development__case-card{
+  @media #{media('>', m)} {
+    min-width: 280px;
   }
 }

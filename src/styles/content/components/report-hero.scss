@@ -177,16 +177,16 @@
 
       &.mobile{
         height: 390px;
+        height: auto;
         display: block;
         top: rem(85px);
         left: 0px;
-        height: auto;
         position: relative;
         top: 0px;
 
         picture{
           img{
-            object-fit: fill;
+            object-fit: cover;
           }
         }
       }
@@ -307,8 +307,12 @@
       }
     }
     &.grom{
+      width: 600px;
       @media (max-width: 1025px) {
         font-size: 35px;
+      }
+      @media #{media("<", m)} {
+        width: 335px;
       }
     }
   }
