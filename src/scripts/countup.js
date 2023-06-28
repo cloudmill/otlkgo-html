@@ -20,20 +20,16 @@ function startCountUpOnScroll() {
 
       const countupValue = element.getAttribute('data-countup');
       const endValue = parseFloat(countupValue);
-      const suffix = element.hasAttribute('data-countup-suffix') ? '%' : '';
+      const suffix = element.hasAttribute('data-countup-suffix') ? element.getAttribute('data-countup-suffix') : '';
       const prefix = !element.hasAttribute('data-countup-prefix') ? '' : element.getAttribute('data-countup-prefix');
 
       const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
-      console.log(countupValue)
       const targetElement = document.querySelector(`.number-animate-${countupValue}`);
-      console.log(targetElement)
 
       if (targetElement) {
-
         setTimeout(() => {
           targetElement.classList.add('fade-up')
         }, 2000)
-
       }
       if (!countUp.error) {
         countUp.start();

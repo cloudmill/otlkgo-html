@@ -74,6 +74,12 @@
   }
 }
 
+.br-d {
+  @media #{media('<',d)} {
+    display: none;
+  }
+}
+
 .br-m {
   display: none;
 

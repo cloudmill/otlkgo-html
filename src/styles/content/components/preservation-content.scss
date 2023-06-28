@@ -176,8 +176,22 @@
     }
   }
 
+  &__svg {
+    transform: translateX(-90px);
+
+    @media (max-width:420px) {
+      width: 335px;
+      transform: none;
+    }
+  }
+
   &__video {
     height: 680px;
+
+    video {
+      width: 101%;
+      height: 99%;
+    }
 
     @media #{media('<',d)} {
       height: 574px;
@@ -188,15 +202,28 @@
     }
 
     @media #{media('<',m)} {
+      margin-top: 40px;
+      width: 576px;
+
       video {
-        transform: translate(18px, -64px);
-        width: 87%;
-        height: 100%;
+        width: 370px;
+        transform: translate(16px, -53px);
+
       }
 
     }
 
+    @media (max-width:420px) {
+      margin-top: 0;
+      width: 320px;
 
+      video {
+        width: 311px;
+        transform: translate(13px, -47px);
+      }
+
+
+    }
   }
 
 }

@@ -18,9 +18,7 @@ mixin ecology-content
               .item__col 
                 p.item__grey до
               .item__col 
-                p.item__number.w-suffix-2
-                  span(data-countup='20')
-                  span.indicators__suffix % 
+                p.item__number(data-countup='20' data-countup-suffix='%')
             .item__row 
               p.item__subtext Всех выбросов углекислого газа в атмосферу производит сфера транспорта 
           .row 
@@ -218,9 +216,7 @@ mixin ecology-content
           .ecology-cards__bottom-row
             p.ecology-cards__description В России
             .ecology-cards__elem.desktop-m
-              p.ecology-cards__number.w-suffix-2_small
-                span(data-countup='28' data-countup-prefix='+')
-                span.indicators__suffix %
+              p.ecology-cards__number(data-countup='28' data-countup-prefix='+' data-countup-suffix='%')
               p.ecology-cards__subtext рост популяции зубров в Турмонском заказнике
           .row
             .col 

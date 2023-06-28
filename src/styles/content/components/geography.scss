@@ -3,13 +3,15 @@
   position: relative;
 
   &__inner {
-    padding: 40px 0;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 83px);
+    // height: calc(100vh - 83px);
+    height: 100vh;
 
     background: url('../assets/images/geography-bg.jpg') center/cover no-repeat;
+    // background-position: -20px;
 
     @media #{media('<',d)} {
       height: auto;
@@ -32,7 +34,8 @@
 
     height: 100vh;
 
-    background: url('../assets/images/geography-bg.jpg') top/contain no-repeat;
+    background: url('../assets/images/geography-bg.jpg') center/cover no-repeat;
+    // background: url('../assets/images/geography-bg.jpg') top/contain no-repeat;
     background-color: #F8F8F8;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -102,19 +105,30 @@
     color: color(green);
   }
 
+  &__text {
+    margin-top: 12px;
+  }
+
   &__row {
-    margin-top: 20px;
+    // margin-top: 20px;
     display: flex;
     gap: 8px;
+
+    @media #{media('<',t)} {
+      flex-direction: column;
+    }
   }
 
   &__items {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 
     font-size: 18px;
     line-height: 160%;
     color: color(dark);
+
+
 
     span {
       padding-right: 8px;
@@ -125,6 +139,10 @@
       letter-spacing: -0.06em;
       text-transform: uppercase;
       color: color(dark);
+    }
+
+    @media #{media('<',m)} {
+      margin-top: 0;
     }
   }
 
@@ -137,7 +155,7 @@
     }
 
     @media #{media('<',d)} {
-      margin-top: -400px;
+      // margin-top: -400px;
     }
 
     @media #{media('<',t)} {
