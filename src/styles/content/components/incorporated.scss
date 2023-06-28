@@ -40,7 +40,7 @@
       align-items: center;
       justify-content: center;
       
-      width: 360px;
+      max-width: 360px;
       height: 82px;
 
       background: #E0EBE4;
@@ -205,6 +205,11 @@
       width: 617px;
       height: 560px;
 
+      @media #{media("<", d)} {
+        max-width: 500px;
+        height: auto;
+      }
+
       @media #{media("<", t)} {
         width: 100%;
         height: auto;
@@ -286,11 +291,12 @@
         line-height: 160%;
         color: #2A2E2B;
 
-        @media #{media("<", t)} {
+        @media #{media("<", d)} {
           margin-left: 0px;
 
           width: 100%;
         }
+
         @media #{media("<", m)} {
           margin-left: 0px;
           margin-top: 20px;
@@ -1126,6 +1132,17 @@
 
   max-width: 1284px;
 
+  @media #{media("<", d)} {
+    padding: 0px 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    width: 100%;
+  }
+
+
   @media #{media("<", t)} {
     padding: 0px 20px;
     margin-top: 40px;
@@ -1156,6 +1173,11 @@
     max-height: 511px;
     flex-shrink: 0;
     
+    @media #{media("<", d)} {
+      width: 100%;
+      height: 400px;
+    }
+
     @media #{media("<", t)} {
       max-width: 100%;
       height: auto;
