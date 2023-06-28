@@ -135,6 +135,8 @@
 }
 
 .block-diagram {
+  overflow: hidden;
+
   &__inner {
     padding-top: 20px;
 
@@ -162,7 +164,9 @@
     position: relative;
   }
 
-
+  & video {
+    height: auto;
+  }
 
   &__description {
     font-weight: 700;
