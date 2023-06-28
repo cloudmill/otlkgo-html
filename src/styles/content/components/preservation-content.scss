@@ -124,19 +124,53 @@
   &__video {
     height: 625px;
 
-    video {
-      height: 98%;
+    &__svg {
+      @media #{media('<',xs)} {
+        transform: translate(-27px, 10px);
+        width: 345px;
+      }
     }
 
     @media #{media('<',d)} {
-      height: 530px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
     }
 
-    @media #{media('<',t)} {
-      height: 392px;
+    // @media #{media('<',m)} {
+    //   height: auto;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+
+    // }
+
+    video {
+      height: 99%;
+
+      @media #{media('<',d)} {
+        height: 530px;
+      }
+
+      @media #{media('<',t)} {
+        height: 392px;
+      }
+
+      @media #{media('<',m)} {
+        width: 58%;
+        transform: translate(23px, 16px);
+        margin: 0 auto;
+      }
+
+      @media #{media('<',s)} {
+        width: 60%;
+        transform: translate(18px, 10px);
+        margin: 0 auto;
+      }
     }
   }
-
 }
 
 .preservation-profit {
@@ -148,7 +182,6 @@
 .preservation-expenses {
   &__inner {
     padding-top: 20px;
-    // margin-top: 4px;
     border-top: 1px solid #69DA91;
   }
 
@@ -158,7 +191,6 @@
 }
 
 .preservation-statistics {
-
   &__row {
     display: flex;
     gap: 40px;
@@ -208,9 +240,7 @@
       video {
         width: 370px;
         transform: translate(16px, -53px);
-
       }
-
     }
 
     @media (max-width:420px) {
@@ -221,7 +251,6 @@
         width: 311px;
         transform: translate(13px, -47px);
       }
-
 
     }
   }
@@ -342,6 +371,10 @@
       margin-top: 40px;
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
+
+      @media #{media('<',m)} {
+        margin-top: -20px;
+      }
     }
 
   }
