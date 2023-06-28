@@ -139,7 +139,10 @@
       }
     }
 
+    
+
     &-number {
+      position: relative;
       font-family: 'Halvar Breitschrift';
       font-weight: 700;
       font-size: 160px;
@@ -153,6 +156,10 @@
         font-size: rem(60px);
         line-height: 80%;
       }
+    }
+
+    &_percent{
+      
     }
 
     &-title {
@@ -209,7 +216,7 @@
       margin-left: -20px;
 
       width: 100vw;
-      height: 410px;
+      height: 270px;
       
       z-index: 1;
     }
@@ -360,7 +367,7 @@
           font-weight: 700;
           font-size: 100px;
           line-height: 80%;
-          letter-spacing: -0.08em;
+          letter-spacing: -4.8px; 
 
           &.green {
             color: color(green);
@@ -404,7 +411,6 @@
 
         &-top {
           display: flex;
-          gap: 8px;
         }
 
         &.custom-lightgreen {

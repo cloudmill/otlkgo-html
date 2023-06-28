@@ -17,14 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
       let windowScroll = window.scrollY;
   
       const parallaxStart = parallaxContainer.offsetTop;
-  
-      if(windowScroll > parallaxStart - 900){
-        let parallaxScroll = ((windowScroll - parallaxStart))/2 * parallaxScale + 'px';
 
-        if (windowSize < 1540){
-          
+      if (window.screen.width > 2000){
+        if(windowScroll > parallaxStart - 1800){
+          let parallaxScroll = ((windowScroll - parallaxStart))/5 - 50 * parallaxScale + 'px';
+          parallaxImg.style.bottom = parallaxScroll;
         }
-        parallaxImg.style.bottom = parallaxScroll;
+      } else if (window.screen.width < 1500){
+        if(windowScroll > parallaxStart - 1300){
+          let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 75 + 'px';
+          parallaxImg.style.bottom = parallaxScroll;
+        }
+      } else {
+        if(windowScroll > parallaxStart - 1300){
+          let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 'px';
+          parallaxImg.style.bottom = parallaxScroll;
+        }
       }
     })
   }

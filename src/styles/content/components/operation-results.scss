@@ -1,6 +1,8 @@
 .operation-results {
   margin-top: 20px;
 
+  width: 100%;
+
   background: #F4F4F4;
 
   &__inner {
@@ -16,6 +18,7 @@
     }
 
     @media #{media('<',m)} {
+      padding-left: 0px;
       flex-direction: column;
 
       background: color(white);
@@ -59,14 +62,29 @@
       }
     }
 
+    &.left{
+      width: 640px;
+      flex-shrink: 0;
+
+      @media #{media("<", m)} {
+        width: rem(335px);
+      }
+    }
+
+    &.right{
+      margin-right: 120px;
+      width: 560px;
+      flex-shrink: 0;
+
+      @media #{media("<", m)} {
+        margin-right: 0px;
+        width: 100%;
+      }
+    }
   }
 
   &__title {
     width: 359px;
-
-    @media #{media(">", ll)} {
-      width: 670px;
-    }
   }
 
   &__text {
@@ -105,4 +123,15 @@
   }
 
 
+  &__vector{
+    display: flex;
+  }
+
+  &__inner{
+    padding-left: 40px;
+
+    @media #{media("<", m)} {
+      padding: 0px;
+    }
+  }
 }

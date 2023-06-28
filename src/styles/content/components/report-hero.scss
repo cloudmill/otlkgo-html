@@ -1,4 +1,5 @@
 .report-hero{
+  display: flex;
   position: relative;
   margin-top: 84px;
   margin-bottom: 20px;
@@ -158,6 +159,7 @@
   }
 
   &__portrait{
+    display: flex;
     position: relative;
     top: 0px;
     left: 0px;
@@ -166,7 +168,7 @@
     height: 100%;
 
     &.mobile{
-      display: none;
+      display: flex !important;
     }
     @media #{media(">", t)} {
     }
@@ -175,16 +177,16 @@
 
       &.mobile{
         height: 390px;
+        height: auto;
         display: block;
         top: rem(85px);
         left: 0px;
-        height: auto;
         position: relative;
         top: 0px;
 
         picture{
           img{
-            object-fit: fill;
+            object-fit: cover;
           }
         }
       }
@@ -305,8 +307,12 @@
       }
     }
     &.grom{
+      width: 600px;
       @media (max-width: 1025px) {
         font-size: 35px;
+      }
+      @media #{media("<", m)} {
+        width: 335px;
       }
     }
   }
@@ -523,7 +529,9 @@
   }
 
   &_about{
+    display: flex;
     height: auto;
+    // max-height: 707px;
     @media #{media(">", xl)} {
       // height: calc(100vh - 84px);
 
@@ -532,7 +540,7 @@
       }
     }
     @media #{media("<", m)} {
-      height: auto;
+      // height: 620px;
     }
     
     .report-hero__img-about{

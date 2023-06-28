@@ -1,0 +1,73 @@
+.number-countup{
+  
+  &__box{
+    position: relative;
+
+    &_trains{
+      width: 583px;
+      @media #{media("<", m)} {
+        width: 219px;
+      }
+    }
+
+    &_trains-3{
+      width: 212px;
+    }
+
+    &_trains-2{
+      width: 147px;
+    }
+
+    &_reference{
+      width: 260px;
+
+      @media #{media("<", m)} {
+        width: 154px;
+      }
+    }
+  }
+
+  &__percent{
+    position: absolute;
+      right: 0px;
+      top: 0px;
+
+      font-family: 'Halvar Breitschrift';
+      font-weight: 700;
+      
+      &_trains{
+        top: 50%;
+        transform: translateY(-50%);
+
+        font-size: 160px;
+        line-height: 80%;
+        letter-spacing: -0.08em;
+        color: #045C25;
+
+        @media #{media("<", m)} {
+          font-size: rem(60px);
+          line-height: 80%;
+        }
+      }
+
+      &_trains-3{
+        font-size: 60px;
+        font-family: Halvar Breitschrift;
+        font-weight: 700;
+        line-height: 80%;
+        letter-spacing: -4.8px; 
+        color: #045C25;
+      }
+
+      &_reference{
+        color: color(light-green);
+        font-size: 100px;
+        line-height: 80%;
+        letter-spacing: -8px; 
+
+        @media #{media("<", m)} {
+          font-size: 60px; 
+        }
+      }
+  }
+}

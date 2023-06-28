@@ -438,11 +438,21 @@
       top: -10px;
     }
 
+    &-vector{
+      display: flex;
+    }
+
   }
 
   &__mini {
     &-heading {
       margin-bottom: 24px;
+    }
+  }
+
+  &__vector{
+    &-right{
+      display: flex;
     }
   }
 }
@@ -456,7 +466,7 @@
 
   height: 640px;
 
-  // background: url('../assets/images/formation-train.png') center/cover no-repeat;
+  background: url('../assets/images/formation-train.png') center/cover no-repeat;
   background-color: #F4F4F4;
 
   &__parallax{

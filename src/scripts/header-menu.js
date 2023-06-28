@@ -16,6 +16,8 @@ export function removeOverlay(){
 document.addEventListener('DOMContentLoaded', () => {
   const headerSearchBtn = document.querySelector('[data-header-search]')
   const headerSearchContainer = document.querySelector('[data-search-container]')
+  const searchInput = document.querySelector('.header-form__input')
+
 
   $('[data-header-burger]').on('click', () => {
     if (!$('[data-header-burger]').hasClass('active')){
@@ -85,10 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
   function toggleSearchActive(){
     $(headerSearchBtn).toggleClass('active')
     $(headerSearchContainer).toggleClass('active')
+    setTimeout(() => {
+      searchInput.focus()
+    }, 100)
   }
   function removeSearchActive(){
     $(headerSearchBtn).removeClass('active')
     $(headerSearchContainer).removeClass('active')
   }
+
+  const currentTitle = document.querySelector('.report-hero__title ')
+  const headerTextBot = document.querySelector('.header-text__bot ')
+  const headerTextTop = document.querySelector('.header-text__top')
+
+  if(currentTitle){
+    const titleText = currentTitle.textContent
+    headerTextBot.textContent = titleText
+  } else {
+    headerTextBot.remove()
+    headerTextTop.remove()
+  }
+
 
 })

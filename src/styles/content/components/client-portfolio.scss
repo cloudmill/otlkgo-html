@@ -16,6 +16,7 @@
       }
     }
     &__vector {
+      display: flex;
       height: 605px;
       @media #{media('<',m)} {
         height: auto;
@@ -78,14 +79,17 @@
         }
 
         &:nth-child(2) {
+          overflow: hidden;
           border-top: 1px solid color(green);
           padding-top: 20px;
           width: 760px;
           @media #{media('<',m)} {
             width: rem(335px);
+            width: 100%;
 
             .transportation-development__heading{
               width: rem(335px);
+              width: 100%;
             }
           }
         }
@@ -143,7 +147,10 @@
       padding-top: 20px;
       border-top: 1px solid #69DA91;
 
-
+      &-vector{
+        display: flex;
+      }
+      
       &-top {
         margin-bottom: 40px;
         display: flex;
@@ -220,6 +227,15 @@
           margin-bottom: 16px;
         }
 
+      }
+
+      &-card{
+        width: 360px;
+        flex-shrink: 0;
+
+        @media #{media('<',m)} {
+          width: 100%;
+        }
       }
     }
 
@@ -360,5 +376,17 @@
       }
     }
 
+    &__video{
+      position: relative;
+
+      max-height: 594px;
+    }
+
+  }
+}
+
+.transportation-development__case-card{
+  @media #{media('>', m)} {
+    min-width: 280px;
   }
 }

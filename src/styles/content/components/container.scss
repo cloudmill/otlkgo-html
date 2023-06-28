@@ -8,6 +8,7 @@
   }
 
   &.custom-operations {
+
     background: #F4F4F4;
 
     @media #{media(">", ll)} {
@@ -23,6 +24,7 @@
     }
 
     .container-content{
+      padding: 0px;
       max-width: 1400px;
     }
   }
