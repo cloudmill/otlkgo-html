@@ -127,6 +127,14 @@
     &-container{
       position: relative;
 
+      @media #{media(">", m)} {
+      height: 1587px;
+        picture{
+          img{
+            object-fit: contain;
+          }
+        }
+      }
       @media (min-width:768px) and (max-width: 1025px) {
         overflow-x: scroll;
       }
@@ -294,6 +302,14 @@
     &.second{
       @media #{media("<", m)} {
         margin-top: 75px;
+      }
+    }
+
+    &-grafic{
+      picture{
+        img{
+          object-fit: contain;
+        }
       }
     }
   }
