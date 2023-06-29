@@ -416,7 +416,6 @@
       @media #{media('<', m)} {
         width: calc(100% + 40px);
         padding-left: 20px;
-        padding-right: 20px;
         margin-left: -20px;
         overflow-x: scroll;
       }
@@ -439,6 +438,10 @@
         width: 512px;
         height: 170px;
       }
+      &.desktop{
+        display: flex;
+      }
+
     }
 
     &-text {
@@ -584,6 +587,10 @@
       }
     }
   }
+
+  picture{
+    height: auto;
+  }
 }
 
 
@@ -600,7 +607,9 @@
     margin-top: rem(40px);
     padding-top: rem(8px);
   }
-
+  picture{
+    height: auto;
+  }
   &__title {
     margin-bottom: 40px;
 
@@ -769,6 +778,10 @@
     padding-top: rem(8px);
   }
 
+  picture{
+    height: auto;
+  }
+
   &__title {
     margin-bottom: 40px;
 
@@ -917,7 +930,7 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
-        padding: 0px 20px 0px 20px;
+        padding: 0px 0px 0px 20px;
         margin-left: -20px;
 
         width: calc(100% + 40px);
@@ -938,6 +951,10 @@
   @media #{media("<", m)} {
     margin-top: rem(40px);
     padding-top: rem(8px);
+  }
+
+  picture{
+    height: auto;
   }
 
   &__vector{
@@ -1087,7 +1104,7 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
-        padding: 0px 20px;
+        padding-left: 20px;
         margin-left: -20px;
 
         width: calc(100% + 40px);
@@ -1351,6 +1368,10 @@
     padding-top: rem(8px);
   }
 
+  picture{
+    height: auto;
+  }
+
   &__title {
     margin-bottom: 40px;
 
@@ -1431,10 +1452,17 @@
         @media (max-width: 1025px) {
           max-width: 270px;
         }
+        @media #{media("<", m)} {
+          max-width: 100%;
+        }
 
         .ge-card__text-grey {
           @media (max-width: 1025px) {
             max-width: 270px;
+          }
+
+          @media #{media("<", m)} {
+            max-width: 100%;
           }
         }
       }
@@ -1519,7 +1547,7 @@
     &-container {
       @include scrollbar-hidden();
       @media #{media("<", m)} {
-        padding: 0px 20px;
+        padding-left: 20px;
         margin-left: -20px;
 
         width: calc(100% + 40px);
@@ -1629,9 +1657,8 @@
       @media #{media("<", m)} {
         width: rem(375px);
         overflow-x: scroll;
-        padding-left: rem(20px);
-        margin-left: rem(-20px);
-        padding-right: rem(20px);
+        padding-left: 20px;
+        margin-left: -20px;
       }
 
     }
@@ -1806,6 +1833,127 @@
 
         @media #{media("<", m)} {
           display: block;
+        }
+      }
+    }
+  }
+
+  &__numbers{
+    &-block{ 
+      margin-top: 25px;
+
+      @media #{media("<", m)} {
+        margin-left: -20px;
+        padding-left: 20px;
+
+        width: calc(100% + 40px);
+
+        overflow-x: scroll;
+
+        @include scrollbar-hidden();
+      }
+    }
+
+    &-rows{
+      position: relative;
+    }
+
+    &-row{
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 35px;
+      align-items: first baseline;
+
+      border-bottom: 1px solid color(borders);
+
+      &:last-child{
+        border: none;
+      }
+
+      @media #{media("<", m)} { 
+        padding-bottom: 12px;
+        margin-bottom: 19px;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 16px;
+
+        width: 750px;
+
+        &.second-section{
+          width: 800px;
+        }
+      }
+    }
+    &-item{
+      max-width: 264px;
+
+      @media #{media("<", m)} {
+        max-width: 87px;
+        width: 87px;
+      }
+      .numbers-item{
+        &__number{
+          margin-bottom: 16px;
+          display: flex;
+          flex-wrap: nowrap;
+
+          @media #{media("<", m)} {
+            margin-bottom: 13px;
+          }
+        }
+        &__number-num{
+          color: #727A75;
+          font-size: 36px;
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 80%; 
+
+          &.big-light{
+            color: #69DA91;
+            font-size: 88px; 
+
+            @media #{media("<", m)} {
+              font-size: 24px; 
+              line-height: 100%; 
+            }
+          }
+          &.big-green{
+            color: color(green);
+            font-size: 64px; 
+
+            @media #{media("<", m)} {
+              font-size: 20px; 
+              line-height: 100%; 
+            }
+          }
+          &.big-grey{
+            font-size: 42px; 
+
+            @media #{media("<", m)} {
+              font-size: 18px; 
+              line-height: 100%; 
+            }
+          }
+
+          @media #{media("<", m)} {
+            font-size: 16px;
+            line-height: 100%; 
+          }
+        }
+
+        &__text{
+          font-size: 12px;
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; 
+          color: color(black);
+
+          @media #{media("<", m)} {
+            font-size: 10px; 
+          }
         }
       }
     }
