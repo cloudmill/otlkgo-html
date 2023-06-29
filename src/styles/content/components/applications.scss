@@ -79,7 +79,6 @@
 
 .applications-bottom {
 
-
   &__inner {
     display: flex;
     flex-direction: column;
@@ -135,6 +134,11 @@
 
   &__img {
     margin-top: 76px;
+
+    picture {
+      height: auto;
+    }
+
   }
 }
 
