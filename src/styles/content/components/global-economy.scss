@@ -382,13 +382,14 @@
     }
 
     &-row {
-      margin-top: 40px;
+      margin-top: 68px;
 
       display: flex;
       justify-content: space-between;
       gap: 20px;
 
       @media #{media('<',m)} {
+        margin-top: 40px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: rem(40px);
@@ -402,7 +403,7 @@
     }
 
     &-title {
-      margin-bottom: 56px;
+      margin-bottom: 20px;
 
       @media #{media('<',m)} {
         margin-bottom: rem(15px);
@@ -412,15 +413,10 @@
     &-container {
       @include scrollbar-hidden();
 
-      @media (max-width: 1025px) {
-        overflow-x: scroll;
-      }
-      @media (min-width: 768px) and (max-width: 1024px) {
-        overflow-x: scroll;
-      }
       @media #{media('<', m)} {
-        width: rem(375px);
+        width: calc(100% + 40px);
         padding-left: 20px;
+        padding-right: 20px;
         margin-left: -20px;
         overflow-x: scroll;
       }
@@ -429,19 +425,19 @@
     &-vector {
 
       display: block;
-      width: 1160px;
-      height: 375px;
+      width: 100%;
+      height: auto;
 
       picture {
         img {
           object-fit: fill;
         }
       }
-      @media (min-width: 768px) and (max-width: 1024px) {
-        overflow-x: scroll;
-      }
       @media #{media('<',m)} {
         overflow-x: scroll;
+
+        width: 512px;
+        height: 170px;
       }
     }
 
@@ -921,9 +917,10 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
-        padding-left: rem(20px);
-        margin-left: rem(-20px);
-        width: rem(375px);
+        padding: 0px 20px 0px 20px;
+        margin-left: -20px;
+
+        width: calc(100% + 40px);
         overflow-x: scroll;
       }
     }
@@ -1090,9 +1087,10 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
-        width: rem(375px);
-        padding-left: rem(20px);
-        margin-left: rem(-20px);
+        padding: 0px 20px;
+        margin-left: -20px;
+
+        width: calc(100% + 40px);
         overflow-x: scroll;
       }
     }
@@ -1482,7 +1480,7 @@
     border-top: 1px solid color(green);
 
     @media #{media("<", m)} {
-      width: rem(307px);
+      width: 100%;
       margin-top: rem(20px);
       padding-top: rem(5px);
     }
@@ -1519,10 +1517,12 @@
     }
 
     &-container {
+      @include scrollbar-hidden();
       @media #{media("<", m)} {
-        width: rem(375px);
-        padding-left: rem(20px);
-        margin-left: rem(-20px);
+        padding: 0px 20px;
+        margin-left: -20px;
+
+        width: calc(100% + 40px);
         overflow-x: scroll;
       }
 
@@ -1617,7 +1617,6 @@
       font-size: 20px;
       line-height: 130%;
       color: color(dark);
-      width: 320px;
 
       @media #{media("<", m)} {
         font-size: rem(14px);

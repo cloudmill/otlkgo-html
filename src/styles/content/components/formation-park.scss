@@ -242,7 +242,7 @@
 
       @media #{media('<',m)} {
         margin-bottom: 20px;
-        max-width: 321px;
+        width: 95%;
 
         font-size: rem(20px);
         line-height: 120%;
@@ -263,7 +263,8 @@
         border-top: 2px solid color(green);
 
         @media #{media('<', m)} {
-          height: 112px;
+          // height: 112px;
+          height: auto;
         }
       }
 
@@ -272,7 +273,9 @@
       }
 
       @media #{media('<', m)} {
+        padding: 20px;
         height: 96px;
+        height: auto;
       }
     }
 

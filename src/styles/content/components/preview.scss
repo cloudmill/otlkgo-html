@@ -221,6 +221,13 @@
       }
     }
   }
+
+  &__block{
+    &-top{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 .selutin {

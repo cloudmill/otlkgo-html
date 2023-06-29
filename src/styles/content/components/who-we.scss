@@ -718,6 +718,11 @@
         border-top: 2px solid #045C25;
       }
 
+
+      @media #{media("<", d)} {
+        height: 210px;
+      }
+
       @media #{media("<", m)} {
         padding: 20px;
         height: auto;
