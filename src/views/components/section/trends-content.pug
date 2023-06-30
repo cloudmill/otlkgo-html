@@ -104,3 +104,210 @@ mixin trends-content
           .col 
             p.text.trends-forecast2__text Осторожный оптимизм преимущественно связан с перспективой резкого подъема экономической активности в Китае. Тем не менее, неопределенность относительно будущих перспектив высока, как минимум из-за высоких запасов нереализованной продукции у ритейлеров в Европе, но также и из-за растущей конкуренции со стороны морских сервисов. Если работа в портах и соблюдение сроков доставки продолжат показывать улучшения, то это может привести еще к большему оттоку грузов &nbsp; <br class='br'> в пользу морских перевозчиков. Также необходимо учитывать фактор транзитного времени. При текущих высоких запасах инвентаря в Европе у ритейлеров нет необходимости в быстром восполнении продукции, то есть ключевое преимущество авиаперевозок — скорость — не имеет сильной востребованности.
             p.text.trends-forecast2__text Сокращение ставок авиа-сервисов, в свою очередь, может изменить ситуацию. Уровень предложения, вероятнее всего, продолжит восстанавливаться, что вкупе со слабыми ожиданиями по росту объемов перевозок может привести к снижению ставок в ближайшие кварталы. Таким образом, вероятно улучшение конкурентоспособности ставок на авиагрузоперевозки относительно железнодорожных &nbsp; <br class='br'> за указанный период.
+mixin trends-content-CN
+  section(data-aos="fade-up").trends-market(id="trends-market") 
+    .container-content 
+      .trends-market__inner 
+        h3.trends-market__title 海运集装箱运输市场
+        .row.trends-market__box
+          .col 
+            p.trends-market__description 2022年全球集装箱实物贸易量下降3.6%。
+          .col 
+            p.text.trends-market__text 在中国-北欧方向，根据Journal of Commerce （JOC）和Container Trade Statistics （CTS）的数据，2022年11个月的运输量下降幅度更大 — 约10-11%。
+            .item.trends-market__item 
+              .item__row 
+                .item__col 
+                  p.item__number.flex
+                    span(data-countup='173')
+                    span , 
+                    span(data-countup='7')
+                .item__col 
+                  p.item__grey.number-animate-173.number-animate  万TEU
+              .item__row 
+                p.item__subtext 2022年全球海运集装箱贸易量 
+  section(data-aos="fade-up").trends-volume 
+    .container-content 
+      .trends-volume__inner 
+        h6.trends-volume__title 2021-2022年通过海上运输的全球贸易量，百万TEU
+        .trends-volume__svg
+          +picture('trends-volume.png').trends-volume-img
+        .links.trends-volume__links
+          p.links__text.trends-volume__links-text 资料来源:&nbsp;
+          a(href="https://www.containerstatistics.com/" target='blank').links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
+        .row 
+          .col 
+            p.text.trends-volume__text 海运运价在2021年底达到创纪录水平，但在需求减弱、承运人之间对运量的价格竞争，以及亚洲和欧洲关键港口运营的一些改善的背景下，海运运价在2022年开始调整。
+          .col 
+            p.text.trends-volume__text 因此，截至2022年12月末，复合WCI比2021年的峰值相对调整了79.6%，达到2 120美元/SFE。对于某些交易，动态相似 — 上海-鹿特丹费率相对高点下降了88.5%，达到1 706美元/SFE。对于相反的方向，鹿特丹-上海，费率调整了54.8%，达789美元/SFE。
+  section(data-aos="fade-up").trends-dynamic
+    .container-content 
+      .trends-dynamic__inner 
+        .row
+          h6.trends-dynamic__title 2021-2022年WCI费率值的动态，$/SFE
+          .trends-dynamic__svg.mobile
+            +picture('trends-dynamic-mobile.png')
+          .links.trends-dynamic__links
+            p.links__text.trends-dynamic__links-text 资料来源: &nbsp;
+          
+            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+        .trends-dynamic__svg.desktop
+          +picture('trends-dynamic.png')
+        .row 
+          .col 
+          .col 
+            p.text.trends-dynamic__text 此外，还应在WCI海运费率和ERAI测量的铁路费率之间进行比较。因此，对方向值的考虑表明市场已恢复到疫情开始前的状况。
+  section(data-aos="fade-up").trends-rates 
+    .container-content 
+      .trends-rates__inner 
+        .row
+          h6.trends-rates__title 2020-2022年按目的地分列的WCI与ERA费率比
+          .trends-rates__svg 
+            +picture('trends-rates-mobile.png').mobile
+          .links.trends-rates__links
+            p.links__text.trends-rates__links-text 资料来源:&nbsp;
+            a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
+            a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        .trends-rates__svg 
+          +picture('trends-rates.png').desktop
+  section(data-aos="fade-up").trends-demand 
+    .container-content 
+      .trends-demand__inner 
+        .row
+          .col
+            h6.trends-demand__title 全球海运集装箱运输需求，2020-2022年事实，2023-2026年预测，百万TEU和%
+          .col 
+            .trends-demand__svg 
+              +picture('trends-demand-mobile.png').mobile
+            .links.trends-demand__links 
+              p.links__text.trends-demand__links-text 资料来源:&nbsp;
+              a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+        .trends-demand__svg 
+          +picture('trends-demand.png').desktop
+  section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
+    .container-content 
+      .trends-forecast__inner 
+        h3.trends-forecast__title 预测：买方市场
+
+        .row  
+          .col 
+            p.trends-forecast__description 中欧经济增长前景近期明显好转，因此，承运人对2023年非常乐观。
+            .trends-forecast__item 
+              p.trends-forecast__number +7–11%
+              p.trends-forecast__sub 2023年预计净增产能
+          .col 
+            p.text.trends-forecast__text 目前对供需的预测得出的结论是，2023年最有可能出现“买方市场”的局面。不过，海运承运人可能会开始采取措施，加强对供应的控制，确保费率上涨。据Drewry称，亚洲-北欧服务的盈利能力已经下降到几乎为零，因此，公司将不得不使用所有可用的杠杆，以避免财务损失。
+            p.text.trends-forecast__text 除了取消航班的标准工具外，承运人还可以通过“slow steaming（慢速航行）”（意为故意降低船舶速度，从而通过减少燃料消耗、减少二氧化碳排放）和通过好望角派遣船只（以避免通过苏伊士运河的费用，通过增加10-12天的过境时间从市场上撤出部分供应）来提高运输的经济性。当然，承运人行动的有效性将取决于影响该行业的许多基本因素。突然的需求激增、港口拥堵、自然灾害和许多其他原因可能会极大地改变市场状况。
+  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
+    .container-content 
+      .trends-forecast2__inner 
+        h3.trends-forecast2__title 预测：谨慎乐观
+        .row
+          .col 
+            p.trends-forecast2__description 据市场人士分析，未来几个月航空货运需求可能会下降，但从2023年上半年开始可能会有所增长。谨慎的乐观情绪主要与中国经济活动大幅复苏的前景有关。未来前景的不确定性很高，至少是因为欧洲零售商的未销售产品库存很高，但也因为来自海运服务的竞争日益激烈。如果港口和交货时间继续有所改善，这可能导致更多的货物流向海运承运人。同时需要考虑过境时间的因素。在欧洲目前库存高企的情况下，零售商并不需要快速补充产品，也就是说，空运的关键优势 —— 速度 —— 没有强大的需求空间。
+          .col 
+            p.text.trends-forecast2__text 反之，降低航空服务费率可以改变这种情况。供应水平可能会继续复苏，加上对交通量增长的预期疲软，可能会导致未来几个季度的费率下降。因此，在特定时期内，航空货运费率相对于铁路货运费率的竞争力有可能提高。
+mixin trends-content-EN
+  section(data-aos="fade-up").trends-market(id="trends-market") 
+    .container-content 
+      .trends-market__inner 
+        h3.trends-market__title Sea Container Traffic Market
+
+        .row.trends-market__box
+          .col 
+            p.trends-market__description The global container trade volume in physical terms reduced by 3.6% in 2022. 
+          .col 
+            p.text.trends-market__text According to Journal of Commerce (JOC) and Container Trade Statistics (CTS), the traffic volumes on the China – North Europe route plummeted even more during 11 months of 2022 (approximately by 10 to 11%).
+            .item.trends-market__item 
+              .item__row 
+                .item__col 
+                  p.item__number.flex
+                    span(data-countup='173')
+                    span , 
+                    span(data-countup='7')
+                .item__col 
+                  p.item__grey.number-animate-173.number-animate   million TEUs
+              .item__row 
+                p.item__subtext global sea container trade volume in 2022 
+  section(data-aos="fade-up").trends-volume 
+    .container-content 
+      .trends-volume__inner 
+        h6.trends-volume__title Global Sea Transport Trade Volume, 2021 to 2022 (million TEUs)
+
+        .trends-volume__svg
+          +picture('trends-volume.png').trends-volume-img
+        .links.trends-volume__links
+          p.links__text.trends-volume__links-text Source:&nbsp;
+          a(href="https://www.containerstatistics.com/" target='blank').links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
+        .row 
+          .col 
+            p.text.trends-volume__text The sea freight rates reached the record high values in late 2021 with their subsequent adjustment starting from 2022 against the declining demand, the price competition between carriers for traffic volumes and certain improvements in operation of key ports in Asia and Europe.
+          .col 
+            p.text.trends-volume__text Thus, as of December 2022, the composite WCI was adjusted by 79.6% against the peak value in 2021 and amounted to $2,120/FEU. Specific trades demonstrated a similar trend, with the Shanghai–Rotterdam rate decreasing by 88.5% against its maximum values and reaching $1,706/FEU. The rate for the reversed Rotterdam–Shanghai route was adjusted by 54.8% down to $789/FEU.
+  section(data-aos="fade-up").trends-dynamic
+    .container-content 
+      .trends-dynamic__inner 
+        .row
+          h6.trends-dynamic__title WCI Rate Profile, 2021 to 2022, $/FEU
+          .trends-dynamic__svg.mobile
+            +picture('trends-dynamic-mobile.png')
+          .links.trends-dynamic__links
+            p.links__text.trends-dynamic__links-text Source:&nbsp;
+          
+            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+        .trends-dynamic__svg.desktop
+          +picture('trends-dynamic.png')
+        .row 
+          .col 
+          .col 
+            p.text.trends-dynamic__text The WCI sea freight rates and the railway rates measured by ERAI should be additionally benchmarked. Specifically, the review of the rates by routes shows that the market is back to its pre-pandemic state. 
+  section(data-aos="fade-up").trends-rates 
+    .container-content 
+      .trends-rates__inner 
+        .row
+          h6.trends-rates__title Benchmarked WCI and ERAI Rates by Routes, 2020 to 2022
+          .trends-rates__svg 
+            +picture('trends-rates-mobile.png').mobile
+          .links.trends-rates__links
+            p.links__text.trends-rates__links-text Источники:&nbsp;
+            a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
+            a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        .trends-rates__svg 
+          +picture('trends-rates.png').desktop
+  section(data-aos="fade-up").trends-demand 
+    .container-content 
+      .trends-demand__inner 
+        .row
+          .col
+            h6.trends-demand__title Global Sea Container Traffic Demand, 2020 to 2022 (actual), 2023 to 2026 (forecast), million TEUs and %
+          .col 
+            .trends-demand__svg 
+              +picture('trends-demand-mobile.png').mobile
+            .links.trends-demand__links 
+              p.links__text.trends-demand__links-text Source:&nbsp;
+              a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+        .trends-demand__svg 
+          +picture('trends-demand.png').desktop
+  section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
+    .container-content 
+      .trends-forecast__inner 
+        h3.trends-forecast__title Forecast: Buyer’s Market
+        .row  
+          .col 
+            p.trends-forecast__description The Chinese and European economic growth prospects have significantly improved as of late, enabling the carriers to make more optimistic predictions for 2023. 
+            .trends-forecast__item 
+              p.trends-forecast__number +7–11%
+              p.trends-forecast__sub expected net capacity growth in 2023
+          .col 
+            p.text.trends-forecast__text The current supply and demand predictions show that the “buyer’s market” is the most probable option in 2023. Nevertheless, sea carriers may take action to strengthen the supply controls and to boost the rate growth. According to Drewry, the cost effectiveness of the Asia – North Europe services has already decreased almost to zero, thus the companies will have to leverage all available tools to avoid financial loss. 
+            p.text.trends-forecast__text Apart from the standard voyage cancellation tool, carriers may improve the traffic economics by adopting the “slow streaming” practice (i.e. intentionally slowing down the vessel speed in order to cut the costs by reducing fuel consumption and CO2 emissions) and re-routing the vessels via the Cape of Good Hope (to avoid the fees to cross the Suez Canal and to partially withdraw the supply from the market by extending the time in transit by 10 to 12 days). The efficiency of the actions taken by carriers will definitely depend on multiple fundamental drivers affecting the industry. 
+            p.text.trends-forecast__text The rapid swings in demand, port congestion, natural disasters and many more reasons may significantly change the market situation.
+  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
+    .container-content 
+      .trends-forecast2__inner 
+        h3.trends-forecast2__title Forecast: Cautious Optimism
+
+        .row
+          .col 
+            p.trends-forecast2__description According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023. The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
+          .col 
+            p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period

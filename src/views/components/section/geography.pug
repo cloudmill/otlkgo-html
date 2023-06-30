@@ -60,5 +60,131 @@ mixin geography
                         th.geography-table__green Итого
                         td.geography-table__td 32
                         td.geography-table__td 233
+mixin geography-CN
+  section(data-aos="fade-up").geography.mt-section 
+        .geography__inner 
+          .geography__top
+            .container-content
+              .geography__top-inner
+                .geography__top-left
+                  h2.geography__title UTLC ERA 2022活动地理分布
+                  p.geography__text.text_big На сегодня ОТЛК ЕРА осуществляет перевозки <br class='br'/>на 660 маршрутах между более чем 230 локациями в&nbsp;Европе,<br class='br-d'/> Китае и ЕАЭС
+                .geography__top-right
+                  p.geography__number(data-countup='660') 
+                  p.geography__text.text 2022年底航线总数
+                  .geography__row 
+                    p.geography__items 
+                      |年
+                      span +233:
+                    p.geography__items 
+                      span +223
+                      | U-West,
+                      span 10
+                      | U-East
+          .geography__box
+            +picture('geography-img-mobile.jpg').mobile
+          .geography__bottom
+            .container-content
+              .geography__bottom-inner
+                .col 
+                  p.geography__number(data-countup='238')
+                  p.geography__text.text 2022年底地点总数
+                  .geography__item
+                    p.geography__items 
+                      | 2022年
+                      span +32
+                .col 
+                  p.geography__description.description_big 2022年季度增长
+                  table.geography-table 
+                    thead 
+                      tr.geography-table__thead
+                        th.geography-table_transparent
+                        th.geography-table__th 地点
+                        th.geography-table__th 路线
+                    tbody 
+                      tr  
+                        th.geography-table__th.geography-table__th_row 第一季度
+                        td.geography-table__td 4
+                        td.geography-table__td 44
+                      tr  
+                        th.geography-table__th.geography-table__th_row 第二季度
+                        td.geography-table__td 12
+                        td.geography-table__td 60
+                      tr  
+                        th.geography-table__th.geography-table__th_row 第三季度
+                        td.geography-table__td 6
+                        td.geography-table__td 51
+                      tr  
+                        th.geography-table__th.geography-table__th_row 第四季度
+                        td.geography-table__td 10
+                        td.geography-table__td 78
+                      tr  
+                        th.geography-table__green 累计
+                        td.geography-table__td 32
+                        td.geography-table__td 233
+                  
+
+mixin geography-EN
+  section(data-aos="fade-up").geography.mt-section 
+        .geography__inner 
+          .geography__top
+            .container-content
+              .geography__top-inner
+                .geography__top-left
+                  h2.geography__title UTLC ERA operating geography 2022
+                  p.geography__text.text_big На сегодня ОТЛК ЕРА осуществляет перевозки <br class='br'/>на 660 маршрутах между более чем 230 локациями в&nbsp;Европе,<br class='br-d'/> Китае и ЕАЭС
+                .geography__top-right
+                  p.geography__number(data-countup='660') 
+                  p.geography__text.text total number of routes as of the end of 2022
+                  .geography__row 
+                    p.geography__items 
+                      span +233
+                      | for 2022:
+                    p.geography__items 
+                      span +223
+                      | U-West,
+                      span 10
+                      | U-East
+          .geography__box
+            +picture('geography-img-mobile.jpg').mobile
+          .geography__bottom
+            .container-content
+              .geography__bottom-inner
+                .col 
+                  p.geography__number(data-countup='238')
+                  p.geography__text.text Оtotal number of locations as of the end of 2022
+                  .geography__item
+                    p.geography__items 
+                      span +32
+                      | for 2022
+                .col 
+                  p.geography__description.description_big Incremental Growth by Quarter in 2022
+                  table.geography-table 
+                    thead 
+                      tr.geography-table__thead
+                        th.geography-table_transparent
+                        th.geography-table__th Locations
+                        th.geography-table__th Routes
+                    tbody 
+                      tr  
+                        th.geography-table__th.geography-table__th_row Q1
+                        td.geography-table__td 4
+                        td.geography-table__td 44
+                      tr  
+                        th.geography-table__th.geography-table__th_row Q2
+                        td.geography-table__td 12
+                        td.geography-table__td 60
+                      tr  
+                        th.geography-table__th.geography-table__th_row Q3
+                        td.geography-table__td 6
+                        td.geography-table__td 51
+                      tr  
+                        th.geography-table__th.geography-table__th_row Q4
+                        td.geography-table__td 10
+                        td.geography-table__td 78
+                      tr  
+                        th.geography-table__green TOTAL
+                        td.geography-table__td 32
+                        td.geography-table__td 233
                   
 

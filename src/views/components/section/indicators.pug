@@ -94,4 +94,191 @@ mixin indicators
         .indicators-finance__img.mobile
           +picture('indicators-finance-mobile.png')
         
+mixin indicators-CN 
+  section.indicators.mt-section(id="section-indicators") 
+    .indicators__inner
+      .indicators__top(data-aos="fade-up")
+        .indicators__row-top 
+          .container-content 
+            h2.indicators__title 主要指标 
+            .indicators__row 
+              .col
+                .indicators__number(data-countup='89' data-countup-prefix='+' data-countup-suffix='%')
+              .col 
+                p.indicators__description UTLC ERA在中国-欧盟-中国过境集装箱运输中的份额
+        .indicators__row-bottom
+          .container-content 
+            .indicators__box 
+              .indicators__item 
+                .row
+                  p.indicators__item-number(data-countup=7092 ) 
+                  p.indicators__item-grey.number-animate-7092.number-animate 件
+                .row
+                  p.indicators__item-text.text 集装箱列车数量 
+              .indicators__item 
+                .row 
+                  .indicators__item-number(data-countup='156' data-countup-prefix='+' data-countup-suffix='%')
+                .row
+                  p.indicators__item-text.text 出口运输总体增长 
+              .indicators__item 
+                .row
+                  p.indicators__item-number(data-countup='681197') 
+                  p.indicators__item-grey.number-animate-681197.number-animate TEU
+                .row
+                  p.indicators__item-text.text 运输量
+              .indicators__item 
+                .row 
+                  p.indicators__item-number(data-countup='52284')
+                  p.indicators__item-grey.number-animate-52284.number-animate TEU
+                .row
+                  p.indicators__item-text.text 钾肥出口运输量（UTLC ERA的新货物）
+      .indicators__bottom(data-aos="fade-up")
+        .container-content 
+          .indicators__box_bottom 
+            .indicators__item 
+              .row 
+                .indicators__item-number.indicators__item-number_light
+                  span(data-countup='7') 
+                  span , 
+                  span(data-countup='7') 
+                p.indicators__item-grey.number-animate-7.number-animate 倍
+              .row
+                p.indicators__item-text.text 进口运输总体增长 
+            .indicators__item 
+              .row 
+                p.indicators__item-number(data-countup='9300')
+              .row
+                p.indicators__item-text.text 2022年底工作车队（12月日均指标）
+            .indicators__item 
+              .row 
+                p.indicators__item-number.indicators__item-number_light(data-countup='30' data-countup-prefix='$')
+                p.indicators__item-grey.number-animate-30.number-animate 亿美元 
+              .row
+                p.indicators__item-text.text UTLC ERA服务中运输货物价值 
+            .indicators__item 
+              .row 
+                p.indicators__item-number(data-countup='816') 
+                p.indicators__item-grey.number-animate-816.number-animate 公里/天
+              .row
+                p.indicators__item-text.text 平均速度 
+            .indicators__item
+              .row 
+                .indicators__item-number.indicators__item-number_light
+                  span(data-countup='6')
+                  span ,
+                  span(data-countup='7')
+                p.indicators__item-grey.number-animate-6.number-animate 天
+              .row
+                p.indicators__item-text.text 中转时间
+            .indicators__item 
+                .row 
+                  p.indicators__item-number
+                    span(data-countup='99')
+                    span ,
+                    span(data-countup='997' data-countup-suffix='%')
+                .row
+                  p.indicators__item-text.text 货物完好性 
+  section(data-aos="fade-up").indicators-finance.mt-section
+    .container-content 
+      .indicators-finance__inner 
+        h6.indicators-finance__title 2020-2022年財務指標
+        .indicators-finance__img.desktop
+          +picture('indicators-finance.png').indicators-finance-img
+        .indicators-finance__img.mobile
+          +picture('indicators-finance-mobile.png')
+        
+
+mixin indicators-EN
+  section.indicators.mt-section(id="section-indicators") 
+    .indicators__inner
+      .indicators__top(data-aos="fade-up")
+        .indicators__row-top 
+          .container-content 
+            h2.indicators__title Key Performance Indicators 
+            .indicators__row 
+              .col
+                .indicators__number(data-countup='89' data-countup-prefix='+' data-countup-suffix='%')
+              .col 
+                p.indicators__description UTLC ERA's share in China–EU–China transit container traffic
+        .indicators__row-bottom
+          .container-content 
+            .indicators__box 
+              .indicators__item 
+                .row
+                  p.indicators__item-number(data-countup=7092 ) 
+                  p.indicators__item-grey.number-animate-7092.number-animate trains
+                .row
+                  p.indicators__item-text.text number of container unit trains 
+              .indicators__item 
+                .row 
+                  .indicators__item-number(data-countup='156' data-countup-prefix='+' data-countup-suffix='%')
+                .row
+                  p.indicators__item-text.text total export traffic growth 
+              .indicators__item 
+                .row
+                  p.indicators__item-number(data-countup='681197') 
+                  p.indicators__item-grey.number-animate-681197.number-animate TEUs 
+                .row
+                  p.indicators__item-text.text traffic volume
+              .indicators__item 
+                .row 
+                  p.indicators__item-number(data-countup='52284')
+                  p.indicators__item-grey.number-animate-52284.number-animate TEUs 
+                .row
+                  p.indicators__item-text.text export traffic volume of potassium fertilizers (a new cargo for UTLC ERA)
+      .indicators__bottom(data-aos="fade-up")
+        .container-content 
+          .indicators__box_bottom 
+            .indicators__item 
+              .row 
+                .indicators__item-number.indicators__item-number_light
+                  span(data-countup='7') 
+                  span , 
+                  span(data-countup='7') 
+                p.indicators__item-grey.number-animate-7.number-animate 7.7-fold
+              .row
+                p.indicators__item-text.text total import traffic growth 
+            .indicators__item 
+              .row 
+                p.indicators__item-number(data-countup='9300')
+              .row
+                p.indicators__item-text.text operating fleet as of the end of 2022 (average daily as of December)
+            .indicators__item 
+              .row 
+                p.indicators__item-number.indicators__item-number_light(data-countup='30' data-countup-prefix='$')
+                p.indicators__item-grey.number-animate-30.number-animate billion
+              .row
+                p.indicators__item-text.text value of cargoes transported in UTLC ERA’s services 
+            .indicators__item 
+              .row 
+                p.indicators__item-number(data-countup='816') 
+                p.indicators__item-grey.number-animate-816.number-animate km/day
+              .row
+                p.indicators__item-text.text average speed 
+            .indicators__item
+              .row 
+                .indicators__item-number.indicators__item-number_light
+                  span(data-countup='6')
+                  span ,
+                  span(data-countup='7')
+                p.indicators__item-grey.number-animate-6.number-animate days
+              .row
+                p.indicators__item-text.text time in transit
+            .indicators__item 
+                .row 
+                  p.indicators__item-number
+                    span(data-countup='99')
+                    span ,
+                    span(data-countup='997' data-countup-suffix='%')
+                .row
+                  p.indicators__item-text.text cargo security 
+  section(data-aos="fade-up").indicators-finance.mt-section
+    .container-content 
+      .indicators-finance__inner 
+        h6.indicators-finance__title Financial indicators 2020-2022
+        .indicators-finance__img.desktop
+          +picture('indicators-finance.png').indicators-finance-img
+        .indicators-finance__img.mobile
+          +picture('indicators-finance-mobile.png')
+        
 

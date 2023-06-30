@@ -61,4 +61,140 @@ mixin corruption-content
         +column-svg.next-svg
         +button
         
+mixin corruption-content-CN 
+  section(data-aos="fade-up").corruption.mt-section(id="section-corruption") 
+    .container-content 
+      .corruption__inner 
+        h3.corruption__title 反腐败政策的任务：
+        .corruption__row 
+          .col 
+            ul.list
+              each item in ['向公司员工澄清负责人关于拒绝任何形式和表现的腐败行为的立场；','向管理人员和员工通报俄罗斯立法的要求，以及股东在反腐败和腐败犯罪责任领域通过的文件；','总结并解释UTLC ERA在反腐败领域所采取的措施；','树立公司领导和员工的反腐倡廉意识；','最大限度地减少公司活动中的腐败风险。',]
+                li.corruption__item
+                  +mark-text-svg.corruption-svg
+                  p.corruption__text.text=item
+          .col 
+            p.corruption__text.text 我们的管理人员和员工有义务严格按照反腐败政策的原则和目标组织工作。如果发生有腐败迹象的事件（例如，员工和协作单位玩忽职守或滥用职权），每个人都有义务向现有的反腐败热线报告。 
+  section(data-aos="fade-up").corruption-principles.mt-section(id="section-principles") 
+    .container-content 
+      .corruption-principles__inner   
+        h3.corruption-principles__title 安全原则 
+        .corruption-principles__row 
+          .col 
+            p.corruption-principles__text.text 为防止财产损失，公司与执法机构合作，及时预防UTLC ERA列车路线上的犯罪和违法行为。 
+
+            .corruption-principles__elem
+              +message-block('UTLC ERA的重点优先事项之一是确保货物运输安全和建立信息安全系统。')
+          .col 
+            p.corruption-principles__text.text 2021年，公司进行了全面审计，以查找IT基础设施漏洞。2022年，为构建信息安全体系，关闭IB风险，我们采取了一系列重要举措：
+            ul.list
+              each item in ['制定了一项政策，以确保UTLC ERA的信息安全；','实施行了DLP系统；','加强了CheckPoint计划的信息安全措施；','实施了密码控制系统；','实施了风险管理系统。',]
+                li.corruption-principles__item
+                  +mark-text-svg
+                  p.corruption-principles__text.text=item
+            p.corruption-principles__text.text 所有使用的方案都是国内自行开发。  一系列措施和创建的信息安全系统符合联邦技术出口监督局和联邦安全局的要求。
+  section(data-aos="fade-up").corruption-examenation.mt-section(id="section-examenation") 
+    .container-content 
+      .corruption-examenation__inner 
+        h3.corruption-examenation__title 协作单位审查制度
+        .corruption-examenation__row 
+          .col 
+            p.corruption-examenation__text.text 为了对承包商的活动进行质量控制，并将经济风险降至最低，UTLC ERA对协作单位进行全面检查。这包括在订立合同之前对协作单位进行公开和专门数据库的初步审查，如果合同关系是长期的，则定期审查。  
+          .col  
+            p.corruption-examenation__text.text 在这两种情况下，我们都需要分析协作单位的一系列关键业绩指标，以及司法和行政做法。在与协作单位续签合同和签订补充协议时，公司会进行第二次审查。
+  section(data-aos="fade-up").corruption-counterparty.mt-section(id="section-counterparty") 
+    .container-content 
+      .corruption-counterparty__row 
+        .corruption-counterparty__item 
+          p.corruption-counterparty__item-title 个法人
+          p.corruption-counterparty__item-number.corruption-counterparty__item-number_light(data-countup='298')
+        .corruption-counterparty__item 
+          p.corruption-counterparty__item-title 个私人企业主
+          p.corruption-counterparty__item-number(data-countup='31') 
+        .corruption-counterparty__item 
+          p.corruption-counterparty__item-title 个自然人
+          p.corruption-counterparty__item-number.corruption-counterparty__item-number_light(data-countup='17')
+  section(data-aos="fade-up").next 
+    .container 
+      .next__inner 
+        p.next__text Следующий раздел
+        p.next__title Стратегический отчет
+        p.next__number 2
+        +column-svg.next-svg
+        +button
+          
+mixin corruption-content-EN
+  section(data-aos="fade-up").corruption.mt-section(id="section-corruption") 
+    .container-content 
+      .corruption__inner 
+        h3.corruption__title The objectives of the Anti-Corruption Policy are as follows:
+        .corruption__row 
+          .col 
+            ul.list
+              li.corruption__item
+                +mark-text-svg.corruption-svg
+                p.corruption__text.text To clarify UTLC ERA management’s  position to personnel regarding zero tolerance to any types and forms of corruption
+              li.corruption__item
+                +mark-text-svg.corruption-svg
+                p.corruption__text.text To advise the company's managers and employees on the requirements of the Russian laws and the documents adopted by the shareholders regarding anti-corruption activities and liability for corruption offenses
+              li.corruption__item
+                +mark-text-svg.corruption-svg
+                p.corruption__text.text To summarize and clarify the anti-corruption actions taken by UTLC ERA
+              li.corruption__item
+                +mark-text-svg.corruption-svg
+                p.corruption__text.text To shape the anti-corruption mindset among the company’s managers and employees
+              li.corruption__item
+                +mark-text-svg.corruption-svg
+                p.corruption__text.text To minimize the corruption risks associated with the company's operation.
+          .col 
+            p.corruption__text.text Our managers and personnel are obliged to manage their work in strict compliance with the principles and goals specified in the Anti-Corruption Policy. In case of incidents with any signs of corruption (e.g. failure to fulfill the job duties or abuse of authority by employees and contractors), everyone shall report them to the operating anti-corruption hot line. 
+  section(data-aos="fade-up").corruption-principles.mt-section(id="section-principles") 
+    .container-content 
+      .corruption-principles__inner   
+        h3.corruption-principles__title Security Philosophy 
+        .corruption-principles__row 
+          .col 
+            p.corruption-principles__text.text To avoid any damage to property, the company takes timely actions to prevent crimes and offenses along UTLC ERA’s railway routes by cooperating with the local law enforcement authorities. 
+            .corruption-principles__elem
+              +message-block('One of UTLC ERA’s top priorities is to ensure security of cargoes in transit and to build the information security system.')
+          .col 
+            p.corruption-principles__text.text In 2021, the company conducted an integrated audit to search for any IT infrastructure vulnerabilities. In 2022, we took a number of critical actions to build the information security system and to close out IB-risks:
+            ul.list
+              each item in ['','We implemented the DLP system.','We enhanced the information security efforts under the Checkpoint program.','We adopted the system to monitor password compliance.','We introduced the risk management system.']
+                li.corruption-principles__item
+                  +mark-text-svg
+                  p.corruption-principles__text.text=item
+            p.corruption-principles__text.text All adopted programs are developed by local companies. The action plan and the established information security system comply with the requirements of the Federal Service for Technical and Export Control and the Federal Security Service.
+  section(data-aos="fade-up").corruption-examenation.mt-section(id="section-examenation") 
+    .container-content 
+      .corruption-examenation__inner 
+        h3.corruption-examenation__title Contractor Review System
+        .corruption-examenation__row 
+          .col 
+            p.corruption-examenation__text.text In order to efficiently monitor the contractor operations and mitigate the economic risks, UTLC ERA has adopted the integrated contractor review system. This system includes an initial review of a contractor using publicly available and special data bases before awarding the contract and a periodic review in case of long-term contractual relations. 
+          .col  
+            p.corruption-examenation__text.text In both cases, a set of the contractor’s key business indicators is subject to review along with the judicial and administrative practices. The company carries out repeated reviews before extending contracts or entering into supplementary agreements.
+  section(data-aos="fade-up").corruption-counterparty.mt-section(id="section-counterparty") 
+    .container-content 
+      .corruption-counterparty__inner 
+        h2.corruption-counterparty__title Approved in 2022 using the contractor review system
+        .corruption-counterparty__row 
+          .corruption-counterparty__item 
+            p.corruption-counterparty__item-title legal entities
+            p.corruption-counterparty__item-number.corruption-counterparty__item-number_light(data-countup='298')
+          .corruption-counterparty__item 
+            p.corruption-counterparty__item-title individual entrepreneurs
+            p.corruption-counterparty__item-number(data-countup='31') 
+          .corruption-counterparty__item 
+            p.corruption-counterparty__item-title individuals
+            p.corruption-counterparty__item-number.corruption-counterparty__item-number_light(data-countup='17')
+  section(data-aos="fade-up").next 
+    .container 
+      .next__inner 
+        p.next__text Следующий раздел
+        p.next__title Стратегический отчет
+        p.next__number 2
+        +column-svg.next-svg
+        +button
+        
           
