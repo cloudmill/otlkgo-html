@@ -3,8 +3,8 @@ mixin main-contents
     .main-contents__container
       .main-contents__title Содержание
       .main-contents__list(data-aos="fade-up") 
-        a.main-contents__card(href="#" target="blank")  
-          .main-contents__card-content 
+        .main-contents__card
+          a.main-contents__card-content(href="about" target="blank")   
             .main-contents__card-number 1
             .main-contents__card-img
               +picture('main-card-hero-1.png')
@@ -12,17 +12,17 @@ mixin main-contents
               .main-contents__card-arrow 
                 +arrow-right 
           .main-contents__card-subtext О компании
-        a.main-contents__card(href="#" target="blank")  
-          .main-contents__card-content 
+        .main-contents__card
+          a.main-contents__card-content(href="page-2" target="blank")   
             .main-contents__card-number 2
             .main-contents__card-img
               +picture('main-card-hero-2.png')
             .main-contents__card-btn 
-              .main-contents__card-arrow 
+              .main-contents__card-arrow
                 +arrow-right 
           .main-contents__card-subtext Стратегический отчет
-        a.main-contents__card(href="#" target="blank")  
-          .main-contents__card-content 
+        .main-contents__card(href="#" target="blank")  
+          a.main-contents__card-content(href="page-3" target="blank")   
             .main-contents__card-number 3
             .main-contents__card-img
               +picture('main-card-hero-3.png')
@@ -30,8 +30,8 @@ mixin main-contents
               .main-contents__card-arrow 
                 +arrow-right 
           .main-contents__card-subtext Результаты деятельности <br>в 2022 году
-        a.main-contents__card(href="#" target="blank")  
-          .main-contents__card-content 
+        .main-contents__card(href="#" target="blank")  
+          a.main-contents__card-content(href="page-4" target="blank")   
             .main-contents__card-number 4
             .main-contents__card-img
               +picture('main-card-hero-4.png')
@@ -39,8 +39,8 @@ mixin main-contents
               .main-contents__card-arrow 
                 +arrow-right 
           .main-contents__card-subtext Устойчивое развитие
-        a.main-contents__card(href="#" target="blank")  
-          .main-contents__card-content 
+        .main-contents__card(href="#" target="blank")  
+          a.main-contents__card-content(href="page-5" target="blank")   
             .main-contents__card-number 5
             .main-contents__card-img
               +picture('main-card-hero-5.png')
@@ -48,7 +48,7 @@ mixin main-contents
               .main-contents__card-arrow 
                 +arrow-right 
           .main-contents__card-subtext Корпоративное управление
-        a.main-contents__card(href="#" target="blank") 
+        a.main-contents__card(href="applications" target="blank") 
           .main-contents__card-content 
             .main-contents__card-number 6
             .main-contents__card-img

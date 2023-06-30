@@ -55,7 +55,7 @@ mixin global-economy
         .chinese-economy__hero-col 
           .chinese-economy__hero-text В начале 2022 года экономика Китая была на пути к достижению целевого показателя роста в размере 5,5%, однако локальные вспышки заболеваемости и жесткая политика сдерживания COVID сильно ограничили перспективы. В итоге ВВП Китая показал по итогам 2022 года слабейший результат с середины 1970-х.
         .chinese-economy__hero-col
-          h4.chinese-economy__hero-subtitle Годовой прирост ВВП Китая, 2022–2023 гг.
+          h4.chinese-economy__hero-subtitle Годовой прирост ВВП Китая, 2022–2023&nbsp;гг.
           .chinese-economy__hero-grafic 
             +picture('chinese-eco-grafic1.png')
           .macroeconomics-grafics__col-links.chinese
@@ -100,7 +100,7 @@ mixin global-economy
             .chinese-economy__quarter-text.top В течение всего 2022 года в экономическом ландшафте Китая также прослеживались и другие сложности. К примеру, турбулентность в секторе недвижимости так и не была разрешена. Китайское правительство принимало меры для помощи застройщикам, одним из ключевых стало решение по смягчению ограничений по финансированию и кредитованию. Тем не менее, некоторые девелоперы все еще имеют серьезные финансовые проблемы. Вероятно, что правительству Китая придется утверждать новые меры поддержки сектора, хотя в стране отрицают критичность ситуации. Крах девелоперов Китая способен привести к полноценному мировому экономическому кризису, в результате чего дальнейшее развитие данной проблемы крайне важно.
             .chinese-economy__quarter-text Важнейшим событием в конце 2022 года стала отмена политики «нулевой терпимости» к COVID, что одновременно создало сложные условия для экономики в моменте, но и позволило с оптимизмом смотреть в 2023 год. Считается, что правительство Китая утвердит цель роста ВВП не менее 4,7%. 
     section(data-aos="fade-up").chinese-forecast(id="section-ge-forecast")
-      h2.chinese-forecast__title Ключевые прогнозы по Китаю
+      h3.chinese-forecast__title Ключевые прогнозы по Китаю
       .chinese-forecast__row 
         .chinese-forecast__col(data-aos="fade-up")
           h4.chinese-forecast__subtitle Снижение безработицы
@@ -306,11 +306,194 @@ mixin global-economy
               .macroeconomics-grafics__col-text.big-12 Источники: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        .mutal-trade__shares2-vector.desktop
+        .mutal-trade__shares2-vector
           +picture('mutal-trade-shares2.png')
-        .mutal-trade__shares2-container
-          .mutal-trade__shares2-vector.mobile.vector-1
-            +picture('shares-to-mobile-2.png')
+        .mutal-trade__numbers-block.desktop 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='31') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='18') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и&nbsp;техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='6') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Мебель, осветительная техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Игрушки и спортинвентарь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text Оптика, приборы, медицинская техника
+            //row 3
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Изделия из черных металлов
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Одежда швейная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Одежда трикотажная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text Обувь
+            //row 4
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='2' data-countup-suffix='%') 
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='18') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Прочие товары
+        .mutal-trade__numbers-block.mobile 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='31') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='18') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и&nbsp;техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='6') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num %
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 18
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 0
+                  span.numbers-item__number-num %
+                p.numbers-item__text Прочие товары
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Мебель, осветительная техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Игрушки и спортинвентарь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text Оптика, приборы, медицинская техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 5
+                  span.numbers-item__number-num %
+                p.numbers-item__text Изделия из черных металлов
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Одежда швейная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Одежда трикотажная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 7
+                  span.numbers-item__number-num %
+                p.numbers-item__text Обувь
       .mutal-trade__shares3(data-aos="fade-up") 
         .mutal-trade__shares3-top 
           .mutal-trade__shares3-title Доли товаров в экспорте Европа-Китай, 2022 г.
@@ -319,11 +502,224 @@ mixin global-economy
               .macroeconomics-grafics__col-text.big-12 Источники: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        .mutal-trade__shares2-vector.desktop
+        .mutal-trade__shares2-vector
           +picture('mutal-trade-shares3.png')
+        .mutal-trade__numbers-block.desktop 
+          .mutal-trade__numbers-rows
+            //row 1
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='17') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='15') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура&nbsp;связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='15') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Фармацевтическая продукция
+            //row 2
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='1' data-countup-suffix='%') 
+                p.numbers-item__text Оптика, приборы, медицинская техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='1' data-countup-suffix='%') 
+                p.numbers-item__text Летательные аппараты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text Мясо и пищевые мясные субпродукты
+            //row 3
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Готовые продукты на основе муки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Изделия из кожи, дорожные принадлежности
+            //row 4
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Медь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Древесина и продукция деревообработки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Парфюмерные, косметические и туалетные средства
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='18') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Прочие товары
+        .mutal-trade__numbers-block.mobile 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row.second-section
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='17') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='15') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура&nbsp;связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='15') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Фармацевтическая продукция
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 7
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num %
+                p.numbers-item__text Оптика, приборы, медицинская техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num %
+                p.numbers-item__text Летательные аппараты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 6
+                  span.numbers-item__number-num %
+                p.numbers-item__text Мясо и пищевые мясные субпродукты
+            //row 2
+            .mutal-trade__numbers-row.second-section 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Готовые продукты на основе муки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Изделия из кожи, дорожные принадлежности
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Медь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Древесина и продукция деревообработки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Парфюмерные, косметические и туалетные средства
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 18
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 8
+                  span.numbers-item__number-num %
+                p.numbers-item__text Прочие товары
         .mutal-trade__shares2-container
-          .mutal-trade__shares2-vector.mobile.vector-2
-            +picture('shares-to-mobile-3.png')
       .mutal-trade__export(data-aos="fade-up") 
         .mutal-trade__export-title Экспорт Китай-Европа посредством основных видов транспорта, 2021–2022 гг., % от стоимостной торговли
         .mutal-trade__export-vector.custom-desktop
