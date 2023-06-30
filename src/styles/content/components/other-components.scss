@@ -1,19 +1,17 @@
 .share-provinces__subtext{
   margin-top: 60px;
-  margin-left: 740px;
   width: 560px;
 
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
   color: color(dark);
-  @media (min-width:1026px) and (max-width: 1300px) {
-    margin-left: 670px;
-  }
-  @media (min-width:768px) and (max-width: 1025px) {
+  
+  @media #{media("<", d)} {
     width: 100%;
     margin-left: 0px;
   }
+  
   @media #{media("<", m)} {
     margin-top: 20px;
     margin-left: 0px;
@@ -22,6 +20,11 @@
     font-size: rem(14px);
     line-height: 160%;
   }
+}
+
+.share-provinces__box{
+  display: flex;
+  justify-content: end;
 }
 
 .custom-mobile__container{

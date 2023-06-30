@@ -55,6 +55,10 @@
         @media #{media("<", d)} {
           width: 100%;
         }
+
+        @media #{media("<", m)} {
+          width: calc(100% - 20px);
+        }
       }
 
       &:nth-child(2) {
@@ -67,6 +71,10 @@
         @media #{media("<", d)} {
           max-width: 100%;
           width: 100%;
+        }
+
+        @media #{media("<", m)} {
+          width: calc(100% - 20px);
         }
       }
 
@@ -519,7 +527,7 @@
       width: 560px;
 
       @media #{media("<", m)} {
-        width: 100%;
+        width: calc(100% - 20px);
       }
       &:nth-child(2) {
         width: 566px;
@@ -627,7 +635,9 @@
 
       @media #{media("<", m)} {
         margin-bottom: 12px;
+        width: calc(100% - 20px);
       }
+      
     }
   }
 }
@@ -659,7 +669,7 @@
 
     @media #{media("<", m)} {
       margin-bottom: 20px;
-      width: rem(335px);
+      width: calc(100% - 20px);
 
       font-size: rem(14px);
       line-height: 160%;
@@ -673,6 +683,10 @@
 
     @media (min-width:768px) and (max-width: 1025px) {
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media #{media("<", d)} {
+      gap: 15px;
     }
 
     @media #{media("<", m)} {
@@ -737,8 +751,12 @@
         width: 100%;
       }
 
+      @media #{media("<", d)} {
+        width: auto;
+      }
+
       @media #{media("<", m)} {
-        width: rem(246px);
+        width: auto;
 
         font-size: rem(12px);
         line-height: 160%;
@@ -755,11 +773,16 @@
       }
     }
 
+    @media #{media("<", d)} {
+      padding: 20px;
+    }
+
     @media #{media("<", m)} {
       gap: 14px;
       padding: rem(20px);
 
-      width: rem(335px);
+      width: calc(100% - 20px);
+      width: 100%;
       height: auto;
     }
   }

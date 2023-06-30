@@ -468,8 +468,8 @@
   width: 100%;
   max-width: 360px;
 
-  @media #{media('<',m)} {
-    width: rem(335px);
+  @media #{media("<", m)} {
+    width: calc(100% - 20px);
   }
 
   &.large {
@@ -514,7 +514,10 @@
       @media #{media('<',m)} {
         font-size: 44px;
       }
-      
+
+      @media (max-width: 350px) {
+        font-size: 36px;
+      }
     }
     @media (max-width: 1025px) {
       font-size: 50px;
@@ -567,7 +570,7 @@
       color: #727A75;
 
       @media #{media('<',m)} {
-        width: rem(335px);
+        width: 100%;
         font-size: rem(12px);
         line-height: 160%;
       }
@@ -582,7 +585,7 @@
 
       &.custom-cuchurina{
         @media #{media('<',m)} {
-          width: rem(268px);
+          width: 100%;
         }
       }
     }

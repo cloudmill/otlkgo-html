@@ -88,6 +88,11 @@
         margin-bottom: 40px;
         grid-template-columns: repeat(2, 1fr);
       }
+
+      @media (max-width: 350px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     &-item {
@@ -361,7 +366,7 @@
       color: color(dark);
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: calc(100% - 20px);
 
         font-size: rem(14px);
         line-height: 150%;
@@ -372,7 +377,7 @@
       width: 561px;
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: calc(100% - 20px);
       }
     }
   }
@@ -407,7 +412,7 @@
         width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: calc(100% - 20px);
       }
       .ge-card {
         margin-top: 40px;
@@ -621,7 +626,7 @@
     &.text {
       width: 560px;
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: calc(100% - 20px);
       }
     }
 
