@@ -224,7 +224,11 @@ mixin header
     .header-search(data-search-container='')  
       form.header-search__form.header-form 
         input.header-form__input(type="text" placeholder="Поиск по Годовому отчету" data-search-input) 
-        button.header-form__button(type="submit")
-          +search-normal-svg
+        .header-form__box
+          .header-form__reset(header-search-reset) 
+            .header-form__reset-line
+            .header-form__reset-line
+          button.header-form__button(type="submit")
+            +search-normal-svg
 
 

@@ -96,6 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
     $(headerSearchContainer).removeClass('active')
   }
 
+  $('[header-search-reset]').on('click', function() {
+    searchInput.value = ''
+    searchInput.focus()
+  })
+
   const currentTitle = document.querySelector('.report-hero__title ')
   const headerTextBot = document.querySelector('.header-text__bot ')
   const headerTextTop = document.querySelector('.header-text__top')

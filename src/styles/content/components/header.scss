@@ -788,6 +788,12 @@
     }
 
     &-form{
+        height: 22px;
+
+        @media #{media("<", m)} {
+            height: 17px;
+        }
+
         &__input{
             width: 100%;
             
@@ -823,6 +829,47 @@
             svg{
                 width: 20px;
                 height: 20px;
+            }
+        }
+
+        &__box{
+            display: flex;
+            gap: 35px;
+
+            @media #{media("<", m)} {
+                gap: 15px;
+            }
+        }
+
+        &__reset{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 20px;
+            height: 20px;
+
+            cursor: pointer;
+
+            svg{
+                width: 35px;
+                height: 35px;
+            }
+
+            &-line{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+
+                width: 20px;
+                height: 1.5px;
+                background: #727A75;
+
+                &:nth-child(2){
+                    transform: translate(-50%, -50%) rotate(135deg);
+                }
             }
         }
     }
