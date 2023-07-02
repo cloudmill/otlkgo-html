@@ -748,3 +748,759 @@ mixin global-economy
         .ge-results__main-title Согласно последнему прогнозу S&P Global, в 2023 году рост мировой торговли замедлится до 0,6% в связи с многочисленными ограничительными факторами и рисками.
         .ge-results__main-text Китай, в свою очередь, может нарастить экспорт за счет потенциальной активизации экономики в результате отмены антиковидных ограничений. Тем не менее, рост экспорта в пользу Европу маловероятен из-за крайне сильной динамики в последние годы и возросшей диспропорции торговых потоков. Экспорт Европы в Китай же может увеличиться за счет возрождения спроса китайского населения.
         .ge-results__main-text Европейские компании, к примеру Volkswagen, Bosch, Ferrari, возлагают большие надежды на китайский рынок в 2023 году. Важно отметить, что международная торговля зависит от взаимоотношений партнеров. В свою очередь, европейские политики рассматривают внедрение новой стратегии в отношении Китая, направленной на снижение зависимости от страны. Соответственно, политические риски могут повлиять на торговлю между партнерами.
+
+
+
+
+//EN
+
+mixin global-economy-EN
+  .container-content
+    section(data-aos="fade-up").macroeconomics(id="section-ge-macroeconomics")
+      h2.macroeconomics-title Macroeconomic Situation
+      .macroeconomics-row 
+        .macroeconomics-col 
+          h4.macroeconomics-subtitle In 2022, the global economy faced a lot of obstacles and adverse impacts, however, some causes for optimism emerged in the final quarter.
+        .macroeconomics-col 
+          .macroeconomics-text.top The global supply chains were very unstable against the acute geopolitical situation and physical shortages of various feedstock types and components. The energy market volatility and the rampant inflation impeded the global economic growth. Most regions strengthened their monetary policies, thus causing additional pressure on production and consumption. In China, new COVID outbreaks were detected almost throughout the year followed by strict anti-virus measures.
+          .macroeconomics-text However, some positive developments became apparent at the end of the year. For instance, in December the Chinese Government decided to drop the “zero COVID tolerance” practices. This may become a critical driver for global economic growth in 2023, because China is not only the largest producer and exporter of various commodities, but also a major consumer. Release of the savings accumulated by Chinese households during the pandemic may boost the demand for various products, including those produced in Europe. Hence, the economic growth in Europe and many other countries will be directly linked to the events in China.
+          .macroeconomics-subrow 
+            .macroeconomics-subcol.green
+              .macroeconomics-subcol__top
+                span.macroeconomics-subcol__num(data-countup='3')
+                span.macroeconomics-subcol__num ,
+                span.macroeconomics-subcol__num(data-countup='1' data-countup-suffix='%')
+                .macroeconomics-subcol__text.number-animate-3.number-animate.mg-left of the global GNP
+              .macroeconomics-subcol_bot
+                .macroeconomics-subcol__text-grey average estimate at the end of 2022
+            .macroeconomics-subcol.light-green
+              .macroeconomics-subcol__top
+                span.macroeconomics-subcol__num.light(data-countup='2')
+                span.macroeconomics-subcol__num.light ,
+                span.macroeconomics-subcol__num.light(data-countup='1' data-countup-suffix='%')
+              .macroeconomics-subcol_bot
+                .macroeconomics-subcol__text-grey global GNP growth forecast for 2023
+      .macroeconomics-grafics(data-aos="fade-up") 
+        .macroeconomics-grafics__col
+          h4.macroeconomics-grafics__col-title Global GDP Growth in 2022
+          .macroeconomics-grafics__col-img 
+            +picture('macro-grafic1.png')
+          .macroeconomics-grafics__col-links.first
+            .macroeconomics-grafics__col-text Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report,
+                a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/" target="blank") S&P Global,
+                a.macroeconomics-grafics__col-link(href="https://www.pwc.com/" target="blank") PwC
+        .macroeconomics-grafics__col
+          h4.macroeconomics-grafics__col-title.second Global GDP growth forecast for 2023
+          .macroeconomics-grafics__col-img 
+            +picture('macro-grafic2.png')
+          .macroeconomics-grafics__col-links.second
+            .macroeconomics-grafics__col-text Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report,
+                a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/" target="blank") S&P Global,
+                a.macroeconomics-grafics__col-link(href="https://www.pwc.com/" target="blank") PwC
+    section(data-aos="fade-up").chinese-economy(id="section-ge-chinese")
+      h2.chinese-economy__title Chinese Economy
+      .chinese-economy__hero-row 
+        .chinese-economy__hero-col 
+          .chinese-economy__hero-text In early 2022, the Chinese economy was on its way to achieving its growth target at 5.5%, but the local COVID outbursts along with the stringent COVID control policy significantly limited its prospects. As a result, the Chinese GNP in 2022 ended out to be at its lowest point since mid-1970.
+        .chinese-economy__hero-col
+          h4.chinese-economy__hero-subtitle Annual Chinese GNP Growth, 2022 to 2023 (%)
+          .chinese-economy__hero-grafic 
+            +picture('chinese-eco-grafic1.png')
+          .macroeconomics-grafics__col-links.chinese
+            .macroeconomics-grafics__col-text.chinese Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.reuters.com/" target="blank") Reuters,
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.credit-suisse.com/ru/ru.html" target="blank") Credit Suisse,
+                a.macroeconomics-grafics__col-link(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
+                a.macroeconomics-grafics__col-link(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,<br class="desktop">
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report
+      .chinese-economy__quarter(data-aos="fade-up")
+        h4.chinese-economy__quarter-title Chinese GNP Profile by Quarters, 2020 to 2022
+        .macroeconomics-grafics__col-links.quarter.desktop
+            .macroeconomics-grafics__col-text Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/" target="blank") National Bureau of Statistics of China
+        .chinese-economy__quarter-container
+          .chinese-economy__quarter-vector.desktop 
+            +picture('quarter-vector.png')
+          .chinese-economy__quarter-vector.mobile 
+            +picture('quarter-vector-mobile.png')
+        .macroeconomics-grafics__col-links.quarter.mobile
+          .macroeconomics-grafics__col-text Source: 
+            span.macroeconomics-grafics__col-list 
+              a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/" target="blank") National Bureau of Statistics of China
+        .chinese-economy__quarter-row 
+          .chinese-economy__quarter-col 
+            .ge-card.green.upper
+              .ge-card__top
+                .ge-card__num.green(data-countup='27' data-countup-prefix='-' data-countup-suffix='%')
+              .ge-card__bot
+                .ge-card__text-grey decrease in demand for real estate in China at the end of 2022
+            .ge-card.light-green
+                .ge-card__top
+                  .ge-card__num.light(data-countup='25'  data-countup-suffix='%')
+                  .ge-card__text.number-animate-25.number-animate.mg-left of the national GNP
+                .ge-card__bot
+                  .ge-card__text-grey the share of the real estate sector
+          .chinese-economy__quarter-col 
+            .chinese-economy__quarter-text.top Throughout 2022, other challenges were also apparent in China’s economic landscape. For instance, the turbulence in the real estate sector remained unsolved. The Chinese Government took action to support real estate developers, one of the key solutions being to alleviate the funding and credit limitations. However, some developers still face significant financial challenges. The Chinese Government will probably have to approve new actions to support the sector despite denying the criticality of this situation. The collapse of the Chinese developers may trigger a full-blown global economic crisis, thus it is vital to further address this issue.
+            .chinese-economy__quarter-text The key event in late 2022 was the cancellation of the “zero COVID tolerance” policy, which simultaneously created the short-term challenges for the economy and enabled an optimistic outlook for 2023. The Chinese Government is expected to approve the minimum GNP growth target at 4.7%.
+    section(data-aos="fade-up").chinese-forecast(id="section-ge-forecast")
+      h3.chinese-forecast__title Key Forecasts for China
+      .chinese-forecast__row 
+        .chinese-forecast__col(data-aos="fade-up")
+          h4.chinese-forecast__subtitle Reduction of unemployment
+          .chinese-forecast__text.line The unemployment rates correlated with the COVID outbursts during the year. This rate is predicted to reduce significantly in 2023 (down to 5.2%) due to China’s recovery after the pandemic.
+          .chinese-forecast__title-small.vector-1  Urban Population Unemployment Rate, 2020 to 2022
+          .chinese-forecast__grafic
+            +picture('chinese-forecast-vector1.png')
+          .macroeconomics-grafics__col-links.quarter
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.credit-suisse.com/ru/ru.html" target="blank") Credit Suisse,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html" target="blank") ECB
+          h4.chinese-forecast__subtitle.mg-top Retail trade growth
+          .chinese-forecast__text.line The retail trade volumes are expected to grow approximately by 2.5 to 3% in 2023 after their reduction by 0.2% in 2022. The COVID outbursts influenced the consumption in the final quarter of 2022, but their impact was not as strong as at the initial stage of the pandemic. 
+          .chinese-forecast__subtitle-small.mg-bot30 Year-to-Year Retail Trade Volume Profile, 2020 to 2022
+          .chinese-forecast__grafic-left 
+            +picture('chinese-forecast-vector2.png')
+        .chinese-forecast__col(data-aos="fade-up")
+          h4.chinese-forecast__subtitle Rapid recovery starting from the second quarter
+          .chinese-forecast__text.margin-small In the first quarter of 2023, the national economy will be adversely affected by COVID. Most of China’s population is reported to be previously infected by January, hence any repeated strong outbursts are less likely during the year. As a result, economic activity and consumption may rapidly recover starting from the second quarter triggered by the potential improvement of the epidemiological situation, release of excess savings in the household sector, and the government’s incentives.
+          .chinese-forecast__text.margin This is what many experts believe, though the Government repeatedly emphasized that the key priority is to promote the domestic demand. This may also be linked to the relatively weak state of the global economy and the growing geopolitical tension.
+          h4.chinese-forecast__subtitle Improved production rates
+          .chinese-forecast__text.line In 2023, the rates are expected to improve to approximately 4.5% on a year-to-year basis. For reference: The production rates grew by 3.6% as of the end of 2022. The chemical industry (+12.8%) and the mechanical engineering industry (+10.8%) performed better than the other sectors.
+          .chinese-forecast__subtitle-small.mg-big Industrial Production Rate Profile, 2020 to 2022
+          .chinese-forecast__grafic 
+            +picture('chinese-forecast-vector3.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-14 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-14(href="http://www.stats.gov.cn/" target="blank") National Bureau of Statistics of China
+    section(data-aos="fade-up").europe-economy(id="section-ge-europe")
+      h2.europe-economy__title European Economy
+      .europe-economy__row 
+        .europe-economy__col
+          .europe-economy__subtitle-custom As of the end of 2022, the EU GNP grew by 3.6% while the GNP in the euro area increased by 3.5%.
+        .europe-economy__col
+          .europe-economy__text The region was subject to strong pressure following the materialization of the geopolitical risks in the first quarter. The volatility intensified in the supply chains while the physical availability of certain goods produced in Russia and Ukraine was jeopardized. The logistics chains started to disrupt along with the complications occurring in the customs processes and monetary transactions.
+          .europe-economy__text The prices for energy sources and other feedstock types skyrocketed, leading to the rampant inflation almost all over the world and the high probability of the “stagflation” risk in Europe. These events collectively contributed to the introduction of a more stringent monetary policy by the European Central Bank and the increase in the capital value along with the weakening consumer demand in the region. However, some economic challenges were successfully resolved during the year, which influenced the GNP growth in 2022.
+      .europe-economy__subsection(data-aos="fade-up") 
+        h4.europe-economy__subtitle EU and Euro Area Quarterly GNP Growth Profile, 2020 to 2022
+        .europe-economy__cubes 
+          .europe-economy__cubes-item
+            .europe-economy__cubes-cube.green 
+            .europe-economy__cubes-text EU (27 countries) 
+          .europe-economy__cubes-item
+            .europe-economy__cubes-cube.light-green 
+            .europe-economy__cubes-text Euro area (19 countries)
+        .europe-economy__vector-container
+          .europe-economy__vector 
+            +picture('eco-europe-vector.png')
+        .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+    section(data-aos="fade-up").key-forecast(id="section-ge-key") 
+      h2.key-forecast__title Key Forecasts for European Union
+      .key-forecast__row.top
+        .key-forecast__col 
+          h4.key-forecast__subtitle Demand recovery starting from mid-2023
+          .key-forecast__text The euro area is predicted to show the positive GNP trend, but the trade (specifically the import) and the demand for transportation services to and from the region will most probably remain low. The European retailers have accumulated vast volumes of products still to be sold. The demand might recover in the third quarter of 2023, but there are strongly pronounced risks and limitations. For instance, the prospects of the European economy and trade will largely depend on China’s recovery from COVID. 
+        .key-forecast__col
+          .key-forecast__subtitle-small Annual Euro Area GNP Incremental Growth, 2022 to 2023
+          .key-forecast__vector 
+            +picture('key-forecast1.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.credit-suisse.com/ru/ru.html" target="blank") Credit Suisse,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html" target="blank") ECB
+      .key-forecast__row.bot(data-aos="fade-up") 
+        .key-forecast__col 
+          h4.key-forecast__subtitle Germany will avoid recession
+          .key-forecast__text As the key European economy and a major consumer of Russian energy commodities, Germany was largely affected by the growing gas and oil prices. Its GNP growth rate slowed down from 2.1% in 2021 to 1.9% in 2022, while the forecasts for 2023 predicted the recession by 0.4%. However, experts later started to believe that the country might avoid recession altogether. The German Government expects the GNP growth by 0.2% in 2023 and by 1.8% in 2024. The current mild winter, large gas inventories, business and community support packages will help the economy to grow
+        .key-forecast__col.col
+          h4.key-forecast__subtitle Further inflation cooldown
+          .key-forecast__text In 2021, the inflation in the euro area grew at a stable rate, while at the end of October 2022 the inflation rate peaked at 10.6%, which is exponentially higher than the target established by the European Central Bank. Nevertheless, the rate decreased in December, and the downward trend will most likely continue. The action taken by the European Central Bank facilitates the inflation cooldown: the key rate in January is as high as 2.5%, and the next increase by 50 b. p. is expected in March 2023. The rapid decline in energy prices in the fourth quarter also significantly contributed to alleviating the inflation pressure.
+      .key-forecast__subsection(data-aos="fade-up") 
+        .key-forecast__subsection-title Annual Inflation Fluctuation Profile in Euro Area, 2020 to 2022
+        .key-forecast__subsection-container
+          .key-forecast__subsection-vector
+            +picture('key-forecast2.png')
+        .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+      .key-forecast__stability(data-aos="fade-up") 
+        .key-forecast__stability-col 
+          h4.key-forecast__stability-title Stable unemployment level
+          .key-forecast__stability-text The unemployment level in the euro area stabilized at 6.6% in December 2022 (with 7% in December 2021). According to the various forecasts, the unemployment may amount to 7% as of the end of 2023. The action taken by the European Central Bank may adversely affect the employment levels, since the long-term tightening of the monetary policy typically results in lower employment rates.
+        .key-forecast__stability-col(data-aos="fade-up")
+          .key-forecast__stability-subtitle Population Unemployment Rates, 2020 to 2022
+          .key-forecast__stability-vector 
+            +picture('stability-forecast-vector.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+      .key-forecast__dinamic(data-aos="fade-up") 
+        .key-forecast__dinamic-col(data-aos="fade-up") 
+          h4.key-forecast__dinamic-title Trade profiles will gradually improve
+          .key-forecast__dinamic-text European consumers cut down their costs during 2022 due to the growing inflation and the introduction of a more stringent monetary policy in the region. However, the positive forecasts regarding the GNP growth in the euro area in 2023 are partially based on the potential consumer appetite improvement. The retail trade volumes are expected to gradually increase in the coming year. This will probably solve the current issue related to the record-high product inventories to be sold by retailers, which were worth as much as 91.2 billion euros as of the third quarter of 2022.
+        .key-forecast__dinamic-col(data-aos="fade-up") 
+          h4.key-forecast__dinamic-title Order backlog will support production volumes
+          .key-forecast__dinamic-text The production volumes in 2022 varied over the range similar to the previous year. Some industries, e.g. the chemical industry, were adversely affected by high energy prices to an extreme degree, which forced Europe to import specific chemical commodities to meet the demand. As mentioned above, the new order volumes for production enterprises decrease at a stable rate, but the significant order backlog will help maintain the production volumes in the next months.
+      .key-forecast__dinamic2(data-aos="fade-up")
+        .key-forecast__dinamic2-col(data-aos="fade-up") 
+          .key-forecast__dinamic2-lefttitle Retail Trade Volume Profile, 2020 to 2022
+          .key-forecast__dinamic2-vector.left
+            +picture('dinamic-vector-left.png')
+        .key-forecast__dinamic2-col(data-aos="fade-up")
+          .key-forecast__dinamic2-righttitle Year-to-Year Industrial Production Profile, 2020 to 2022
+          .key-forecast__dinamic2-vector.right
+            +picture('dinamic-vector-right.png')
+    section(data-aos="fade-up").mutal-trade(id="section-ge-mutal")  
+      h2.mutal-trade__title Mutual Trade between China and Europe
+      .mutal-trade__hero 
+        .mutal-trade__hero-col 
+          h4.mutal-trade__hero-title The bilateral trade between China and Europe is a major segment of the global trade and the central axis of Trans-Eurasian traffic
+        .mutal-trade__hero-col
+          .mutal-trade__hero-text.desktop The trade profile between the partners shapes the cargo base of the Eurasian rail transit route and the cargo traffic flow balance
+          .mutal-trade__hero-row 
+            .mutal-trade__hero-subcol
+              .ge-card.light-green
+                .ge-card__top
+                  span.ge-card__num.light(data-countup='851')
+                  span.ge-card__num.light ,
+                  span.ge-card__num.light(data-countup='9')
+                  .ge-card__text.number-animate-851.number-animate.mg-left  billion euros
+                .ge-card__bot
+                  .ge-card__text-grey total trade volume between the partners for the major commodities in 2022
+            .mutal-trade__hero-subcol
+              .ge-card.green
+                .ge-card__top
+                  .ge-card__num.green(data-countup='32'  data-countup-prefix='+' data-countup-suffix='%')
+                  .ge-card__text.top.number-animate-32.number-animate.mg-left up to 624.3  
+                    .ge-card__text billion euros
+                .ge-card__bot
+                  .ge-card__text-grey growth in export from China to Europe in 2022
+      .mutal-trade__subsection(data-aos="fade-up") 
+        .mutal-trade__subsection-col(data-aos="fade-up") 
+          .ge-card.green
+              .ge-card__top
+                span.ge-card__num.green(data-countup='3'  data-countup-prefix='+')
+                span.ge-card__num.green ,
+                span.ge-card__num.green(data-countup='2' data-countup-suffix='%')
+                .ge-card__text.top.number-animate-2.number-animate.mg-left up to 227.6 
+                  .ge-card__text billion euros 
+              .ge-card__bot
+                .ge-card__text-grey growth in export from the EU to China in 2022
+        .mutal-trade__subsection-col(data-aos="fade-up") 
+          .mutal-trade__subsection-text(data-aos="fade-up") The rapid growth in the Chinese export occurred due to the increasing volumes of dispatched organic and other chemicals, various electric devices and household goods. The trade volume growth was also caused by the fact that the supply chains returned to normal. Nevertheless, the decreasing natural trade volume is notable: the total volume reduced by 3.7%, the export from Europe decreased by 25.6%, however, the export from China grew by 13.9%.
+          .mutal-trade__subsection-text(data-aos="fade-up") Significantly, Europe’s deficit growth trend in its trade with China has been apparent since 2019 and the corresponding curve is constantly steepening. For instance, the available data show that China’s export exceeded its import by almost 2.5 times in 2022. The cargo flow balance deterioration creates inevitable challenges for the transportation industry in terms of seeking and struggling to secure cargoes for return shipments
+      .mutal-trade__balance(data-aos="fade-up") 
+        .mutal-trade__balance-top 
+          .mutal-trade__balance-title China’s and Europe’s Mutual Trade, 2021 to 2022 (billion euros)
+          .mutal-trade__balance-copy
+            .macroeconomics-grafics__col-links.forecast.first
+              .macroeconomics-grafics__col-text.big-12 Source: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        .mutal-trade__balance-container
+          .mutal-trade__balance-vector 
+            +picture('mutal-trade-balance.png')
+        .macroeconomics-grafics__col-links.forecast.second
+              .macroeconomics-grafics__col-text.big-12 Source: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+      .mutal-trade__shares.desktop(data-aos="fade-up") 
+        .mutal-trade__shares-vector 
+          +picture('mutal-trade-shares.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+      .mutal-trade__shares.mobile(data-aos="fade-up")
+        .mutal-trade__shares-title Percentage of European Countries in Total Import from China, 2022 (%)
+        .mutal-trade__shares-vector 
+          +picture('shares-mobile-1.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        .mutal-trade__shares-title Percentage of European Countries in Total Export to China, 2022 (%)
+        .mutal-trade__shares-vector 
+          +picture('shares-mobile-2.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+      .mutal-trade__shares2(data-aos="fade-up") 
+        .mutal-trade__shares2-top 
+          .mutal-trade__shares2-title Percentage of Goods in Total China–Europe Export, 2022 (%)
+          .mutal-trade__shares2-copy
+            .macroeconomics-grafics__col-links.first
+              .macroeconomics-grafics__col-text.big-12 Source: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        .mutal-trade__shares2-vector
+          +picture('mutal-trade-shares2.png')
+        .mutal-trade__numbers-block.desktop 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='31') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='18') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и&nbsp;техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='6') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Мебель, осветительная техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Игрушки и спортинвентарь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text Оптика, приборы, медицинская техника
+            //row 3
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Изделия из черных металлов
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Одежда швейная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Одежда трикотажная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text Обувь
+            //row 4
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='2' data-countup-suffix='%') 
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='18') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Прочие товары
+        .mutal-trade__numbers-block.mobile 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='31') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='18') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и&nbsp;техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='6') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num %
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 18
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 0
+                  span.numbers-item__number-num %
+                p.numbers-item__text Прочие товары
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Мебель, осветительная техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text Игрушки и спортинвентарь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text Оптика, приборы, медицинская техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 5
+                  span.numbers-item__number-num %
+                p.numbers-item__text Изделия из черных металлов
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Одежда швейная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Одежда трикотажная
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 7
+                  span.numbers-item__number-num %
+                p.numbers-item__text Обувь
+      .mutal-trade__shares3(data-aos="fade-up") 
+        .mutal-trade__shares3-top 
+          .mutal-trade__shares3-title Percentage of Goods in Total Europe–China Export, 2022 (%)
+          .mutal-trade__shares3-copy
+            .macroeconomics-grafics__col-links.first
+              .macroeconomics-grafics__col-text.big-12 Source: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        .mutal-trade__shares2-vector
+          +picture('mutal-trade-shares3.png')
+        .mutal-trade__numbers-block.desktop 
+          .mutal-trade__numbers-rows
+            //row 1
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='17') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='15') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура&nbsp;связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='15') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Фармацевтическая продукция
+            //row 2
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='1' data-countup-suffix='%') 
+                p.numbers-item__text Оптика, приборы, медицинская техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='1' data-countup-suffix='%') 
+                p.numbers-item__text Летательные аппараты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text Мясо и пищевые мясные субпродукты
+            //row 3
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Готовые продукты на основе муки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Изделия из кожи, дорожные принадлежности
+            //row 4
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Медь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Древесина и продукция деревообработки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Парфюмерные, косметические и туалетные средства
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='18') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text Прочие товары
+        .mutal-trade__numbers-block.mobile 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row.second-section
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light(data-countup='17') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Механическое оборудование и техника, компьютеры
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green(data-countup='15') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text Электрические устройства, аппаратура&nbsp;связи
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey(data-countup='15') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text Автотехника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text Фармацевтическая продукция
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 7
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num %
+                p.numbers-item__text Оптика, приборы, медицинская техника
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Пластмассы и изделия из них
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num %
+                p.numbers-item__text Летательные аппараты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 6
+                  span.numbers-item__number-num %
+                p.numbers-item__text Мясо и пищевые мясные субпродукты
+            //row 2
+            .mutal-trade__numbers-row.second-section 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Прочие химические продукты
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text Продукты органической химии
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Готовые продукты на основе муки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text Изделия из кожи, дорожные принадлежности
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Медь
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Древесина и продукция деревообработки
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text Парфюмерные, косметические и туалетные средства
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 18
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 8
+                  span.numbers-item__number-num %
+                p.numbers-item__text Прочие товары
+        .mutal-trade__shares2-container
+      .mutal-trade__export(data-aos="fade-up") 
+        .mutal-trade__export-title China–Europe Export Using Main Transportation Modes, 2021 to 2022 (% of value trade)
+        .mutal-trade__export-vector.custom-desktop
+          +picture('mutal-trade-export.png')
+        .mutal-trade__export-vector.custom-mobile
+          +picture('mutal-trade-ex-mobile1.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+      .mutal-trade__export2(data-aos="fade-up") 
+        .mutal-trade__export2-title Europe–China Export Using Main Transportation Modes, 2021 to 2022 (% of value trade)
+        .mutal-trade__export2-vector.custom-desktop
+          +picture('mutal-trade-export2.png')
+        .mutal-trade__export2-vector.custom-mobile
+          +picture('mutal-trade-ex-mobile2.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 Source: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+    section(data-aos="fade-up").ge-results 
+      .ge-results__rect 
+        +result-plug-svg
+      .ge-results__title Conclusion
+      .ge-results__main 
+        .ge-results__main-title According to the latest forecast by S&P Global, the global trade growth will slow down to 0.6% in 2023 due to multiple limitations and risks.
+        .ge-results__main-text In its turn, China may increase its export volumes by potentially revitalizing its economy upon removal of the anti-COVID restrictions. Nevertheless, the export to Europe is unlikely to grow due to the extremely strong recent trend and the increasing imbalance of trade flows. On the contrary, Europe’s export to China may increase due to the recovering demand among the Chinese population
+        .ge-results__main-text Such European companies as Volkswagen, Bosch and Ferrari set their hopes on the Chinese market in 2023. Importantly, the international trade depends on the relations between partners. In their turn, European politicians consider introducing a new strategy regarding China, which will be aimed at reducing their dependence on this country. The respective political risks may influence the trade between the partners.
