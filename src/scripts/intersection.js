@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach((entry) => {
       if (entry.intersectionRatio >= 0.8 && !entry.target.dataset.played) {
         entry.target.play();
+        entry.target.setAttribute('autoplay', 'true')
+        entry.target.load();
         entry.target.dataset.played = true;
 
         const dataValue = entry.target.getAttribute('data-svg');
