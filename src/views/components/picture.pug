@@ -19,7 +19,6 @@ mixin picture(fileName)
     };
     var fileTitle = file.getTitle(fileName);
     var fileExtension = file.getExtension(fileName);
-  //- img.picture(src=(file.getPath(fileTitle, fileExtension)) alt="")
   picture.picture&attributes(attributes)
     source(
       type="image/webp"

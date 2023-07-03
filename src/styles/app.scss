@@ -9,3 +9,42 @@
 @import "./layout/index.scss";
 @import "./libs/index.scss";
 @import "./content/index.scss";
+
+
+
+
+
+.fancybox {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // &__carousel {
+  //   width: 50%;
+  //   height: 50%;
+  // }
+
+  &__content {
+    // padding: 60px !important;
+    background: white !important;
+
+  }
+
+  &__backdrop {
+    background: rgba(0, 0, 0, 0.114) !important;
+  }
+}
+
+
+
+.is-close-btn {
+  top: 0 !important;
+
+  svg {
+    fill: #727A75 !important;
+
+  }
+}
