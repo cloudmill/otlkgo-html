@@ -1,163 +1,162 @@
 mixin header
   header.header
-    +overlay
-    .header-menu(data-header-menu)
-      .header-menu__top-container
-        .header-menu__title годовой отчет 2022
-        .header-menu__list 
-          .header-menu__item(data-header-item="about")
-            .header-menu__item-text О компании
-            .header-menu__item-num 1
-          .header-menu__item(data-header-item="strategy")
-            .header-menu__item-text Стратегический отчет
-            .header-menu__item-num 2
-          .header-menu__item(data-header-item="results")
-            .header-menu__item-text Результаты деятельности
-            .header-menu__item-num 3
-          .header-menu__item(data-header-item="growth")
-            .header-menu__item-text Устойчивое развитие
-            .header-menu__item-num 4
-          .header-menu__item(data-header-item="corporate")
-            .header-menu__item-text Корпоративное управление
-            .header-menu__item-num 5
-          .header-menu__item
-            .header-menu__item-text Приложения
-            .header-menu__item-num 6
-      .header-menu__bot-container
-        a.header-menu__download(href="#")  
-          .header-menu__download-icon 
-            +header-download-svg
-          .header-menu__download-text Скачать в PDF
-    .header-sub(data-header-sub="about")
-      .header-sub__back-item.mobile-custom(data-sub-back='')
-        .header-sub__back-text О компании
-      .header-sub__list 
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-who-we") ОТЛК&nbsp;ЕРА. Кто мы?
-          a.header-sub__item-subsection(href="about#section-new-horizonts") Новые горизонты
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-who-we-reference")  Справка о Компании
-          a.header-sub__item-subsection(href="about#section-who-we-mission") Наша миссия
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-who-we-achievement") Десять достижений 2022 года
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-who-we-report")  Об отчете
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-who-we-appeal") Обращение Генерального <br>директора
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-who-we-appeal") Обращение председателя <br>Совета Директоров
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-who-we-calendar")  Календарь событий 2022
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-indicators")  Ключевые показатели
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-business")  Бизнес–модель
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-geography")  География деятельности
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-corruption") Противодействие коррупции
-          a.header-sub__item-subsection(href="about#section-principles") Задачи антикоррупционной политики
-          a.header-sub__item-subsection(href="about#section-examenation") Принципы безопасности
-          a.header-sub__item-subsection(href="about#section-counterparty") Система проверки контрагентов
-    .header-sub(data-header-sub="strategy") 
-      .header-sub__back-item.mobile-custom(data-sub-back='')
-        .header-sub__back-text Стратегический отчет
-      .header-sub__list 
-        .header-sub__item 
-          a.header-sub__item-title(href="page-2#preview-ge")  Глобальная экономика <br> и логистический рынок в 2022 году
-          a.header-sub__item-subsection(href="page-2#section-ge-macroeconomics") Макроэкономическая ситуация
-          a.header-sub__item-subsection(href="page-2#section-ge-chinese") Экономика Китая
-          a.header-sub__item-subsection(href="page-2#section-ge-forecast") Ключевые прогнозы по Китаю
-          a.header-sub__item-subsection(href="page-2#section-ge-europe") Экономика Европы
-          a.header-sub__item-subsection(href="page-2#section-ge-key") Ключевые прогнозы по ЕС
-          a.header-sub__item-subsection(href="page-2#section-ge-mutal") Взаимная торговля Китая и Европы
-        .header-sub__item 
-          a.header-sub__item-title(href="page-2#preview-trends") Тренды логистической отрасли: <br>время альтернатив
-          a.header-sub__item-subsection(href="page-2#trends-market") Рынок морских контейнерных перевозок
-          a.header-sub__item-subsection(href="page-2#trends-forecast") Прогноз: рынок покупателя
-          a.header-sub__item-subsection(href="page-2#trends-forecast2") Прогноз: осторожный оптимизм
-        .header-sub__item 
-          a.header-sub__item-title(href="page-2#preview-transit")  Рынок ж/д транзита Китай–Европа–Китай
-          a.header-sub__item-subsection(href="page-2#transit-adaptation")  Адаптация как свидетельство гибкости
-        .header-sub__item 
-          a.header-sub__item-title(href="page-2#preview-strategy-leader")  Стратегия технологического <br>лидера 
-          a.header-sub__item-subsection(href="page-2#strategy-stakeholder")  Основные стейкхолдеры
-          a.header-sub__item-subsection(href="page-2#strategy-principles")  Базовые принципы стратегии
-          a.header-sub__item-subsection(href="page-2#strategy-iter")  Формат «высокотехнологичный интегратор»
-          a.header-sub__item-subsection(href="page-2#strategy-partners")  Партнерские сети
-    .header-sub(data-header-sub="results") 
-      .header-sub__back-item.mobile-custom(data-sub-back='')
-        .header-sub__back-text Результаты <br> деятельности
-      .header-sub__list 
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#operation-results")  Операционные результаты
-          a.header-sub__item-subsection(href="page-3#marshrute-speed") Маршрутная скорость и формирование <br>поездов
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#formation-park") Формирование парка: оптимизация
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#client-portfolio")  Клиентский портфель
-          a.header-sub__item-subsection(href="page-3#client-transportation")  Развитие перевозок Китай–РФ
-          a.header-sub__item-subsection(href="page-3#client-development__case")  Кейс: рефрижераторные перевозки
-          a.header-sub__item-subsection(href="page-3#client-development__paperless")  Безбумажные перевозки: инновационное <br>развитие
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#preview-main-line") Главные направления цифрового развития
-          a.header-sub__item-subsection(href="page-3#direction-automation")  Автоматизация внутренних бизнес-процессов
-          a.header-sub__item-subsection(href="page-3#direction-site")  Сайт компании
-          a.header-sub__item-subsection(href="page-3#direction-documents")  Электронная накладная
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#preview-section-save")  Сохранить достигнутое
-          a.header-sub__item-subsection(href="page-3#preservation-finance")  Финансовый обзор
-          a.header-sub__item-subsection(href="page-3#preservation-revenue")  Выручка
-          a.header-sub__item-subsection(href="page-3#preservation-sales")  Себестоимость продаж
-          a.header-sub__item-subsection(href="page-3#preservation-diagram")  Валовая прибыль
-          a.header-sub__item-subsection(href="page-3#preservation-expenses")  Управленческие расходы
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#profit-sales")  Прибыль от продаж 
-          a.header-sub__item-subsection(href="page-3#profit-ebitda")  EBITDA
-          a.header-sub__item-subsection(href="page-3#profit-clean")  Чистая прибыль 
-          a.header-sub__item-subsection(href="page-3#profit-reporting")  Финансовая отчетность по МСФО
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#preview-care") С заботой о деловом климате
-    .header-sub(data-header-sub="growth") 
-      .header-sub__back-item.mobile-custom(data-sub-back='')
-        .header-sub__back-text Устойчивое развитие
-      .header-sub__list 
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#human-capital") Человеческий капитал
-          a.header-sub__item-subsection(href="page-4#porganization-structure") Организационная структура ОТЛК ЕРА <br>на 31 декабря 2022 года
-          a.header-sub__item-subsection(href="page-4#organization-number") Структура персонала
-          a.header-sub__item-subsection(href="page-4#recruitment-processes") Процессы найма
-          a.header-sub__item-subsection(href="page-4#corporate-culture") Корпоративная культура
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#preview-corporate-responsibility") Корпоративная социальная <br>ответственность
-          a.header-sub__item-subsection(href="page-4#corporate-responsibility-care") Забота о людях
-          a.header-sub__item-subsection(href="page-4#corporate-responsibility-events") Корпоративные мероприятия
-          a.header-sub__item-subsection(href="page-4#corporate-responsibility-health") Здоровье и медицинское обеспечение
-          a.header-sub__item-subsection(href="page-4#material-help") Материальная и иная помощь
-          a.header-sub__item-subsection(href="page-4#education-support") Поддержка образования
-          a.header-sub__item-subsection(href="page-4#education-development") Обучение и развитие
-          a.header-sub__item-subsection(href="page-4#education-responsibility__trainings") Тренинги и конференции
-          a.header-sub__item-subsection(href="page-4#education-it") ИТ-ресурсы для сотрудников
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#preview-security-content") Охрана труда и пожарная<br> безопасность
-          a.header-sub__item-subsection(href="page-4#security-training") Обучение
-          a.header-sub__item-subsection(href="page-4#security-work") Оценка условий труда
-          a.header-sub__item-subsection(href="page-4#security-covid") Антиковидные меры
-          a.header-sub__item-subsection(href="page-4#security-fire") Пожарная и электробезопасность
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#preview-ecology-content") Экологичность как конкурентное <br>преимущество
-          a.header-sub__item-subsection(href="page-4#ecology-mt") Воздействие на климат
-          a.header-sub__item-subsection(href="page-4#ecology-dynamic") Динамика выбросов СО<sub>2</sub> ОТЛК ЕРА
-          a.header-sub__item-subsection(href="page-4#ecology-environment") Охрана окружающей среды
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#preview-charity-content") Люди прежде всего: <br>благотворительность
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#charity-utlc") Объединение людей и стран
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#section-purchase") Закупочная деятельность
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#preview-energetic-resourses") Использование энергетических<br> ресурсов
-    .header-sub(data-header-sub="corporate") 
+    //- .header-menu(data-header-menu)
+    //-   .header-menu__top-container
+    //-     .header-menu__title годовой отчет 2022
+    //-     .header-menu__list 
+    //-       .header-menu__item(data-header-item="about")
+    //-         .header-menu__item-text О компании
+    //-         .header-menu__item-num 1
+    //-       .header-menu__item(data-header-item="strategy")
+    //-         .header-menu__item-text Стратегический отчет
+    //-         .header-menu__item-num 2
+    //-       .header-menu__item(data-header-item="results")
+    //-         .header-menu__item-text Результаты деятельности
+    //-         .header-menu__item-num 3
+    //-       .header-menu__item(data-header-item="growth")
+    //-         .header-menu__item-text Устойчивое развитие
+    //-         .header-menu__item-num 4
+    //-       .header-menu__item(data-header-item="corporate")
+    //-         .header-menu__item-text Корпоративное управление
+    //-         .header-menu__item-num 5
+    //-       .header-menu__item
+    //-         .header-menu__item-text Приложения
+    //-         .header-menu__item-num 6
+    //-   .header-menu__bot-container
+    //-     a.header-menu__download(href="#")  
+    //-       .header-menu__download-icon 
+    //-         +header-download-svg
+    //-       .header-menu__download-text Скачать в PDF
+    //- .header-sub(data-header-sub="about")
+    //-   .header-sub__back-item.mobile-custom(data-sub-back='')
+    //-     .header-sub__back-text О компании
+    //-   .header-sub__list 
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-who-we") ОТЛК&nbsp;ЕРА. Кто мы?
+    //-       a.header-sub__item-subsection(href="about#section-new-horizonts") Новые горизонты
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-who-we-reference")  Справка о Компании
+    //-       a.header-sub__item-subsection(href="about#section-who-we-mission") Наша миссия
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-who-we-achievement") Десять достижений 2022 года
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-who-we-report")  Об отчете
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-who-we-appeal") Обращение Генерального <br>директора
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-who-we-appeal") Обращение председателя <br>Совета Директоров
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-who-we-calendar")  Календарь событий 2022
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-indicators")  Ключевые показатели
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-business")  Бизнес–модель
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-geography")  География деятельности
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="about#section-corruption") Противодействие коррупции
+    //-       a.header-sub__item-subsection(href="about#section-principles") Задачи антикоррупционной политики
+    //-       a.header-sub__item-subsection(href="about#section-examenation") Принципы безопасности
+    //-       a.header-sub__item-subsection(href="about#section-counterparty") Система проверки контрагентов
+    //- .header-sub(data-header-sub="strategy") 
+    //-   .header-sub__back-item.mobile-custom(data-sub-back='')
+    //-     .header-sub__back-text Стратегический отчет
+    //-   .header-sub__list 
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-2#preview-ge")  Глобальная экономика <br> и логистический рынок в 2022 году
+    //-       a.header-sub__item-subsection(href="page-2#section-ge-macroeconomics") Макроэкономическая ситуация
+    //-       a.header-sub__item-subsection(href="page-2#section-ge-chinese") Экономика Китая
+    //-       a.header-sub__item-subsection(href="page-2#section-ge-forecast") Ключевые прогнозы по Китаю
+    //-       a.header-sub__item-subsection(href="page-2#section-ge-europe") Экономика Европы
+    //-       a.header-sub__item-subsection(href="page-2#section-ge-key") Ключевые прогнозы по ЕС
+    //-       a.header-sub__item-subsection(href="page-2#section-ge-mutal") Взаимная торговля Китая и Европы
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-2#preview-trends") Тренды логистической отрасли: <br>время альтернатив
+    //-       a.header-sub__item-subsection(href="page-2#trends-market") Рынок морских контейнерных перевозок
+    //-       a.header-sub__item-subsection(href="page-2#trends-forecast") Прогноз: рынок покупателя
+    //-       a.header-sub__item-subsection(href="page-2#trends-forecast2") Прогноз: осторожный оптимизм
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-2#preview-transit")  Рынок ж/д транзита Китай–Европа–Китай
+    //-       a.header-sub__item-subsection(href="page-2#transit-adaptation")  Адаптация как свидетельство гибкости
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-2#preview-strategy-leader")  Стратегия технологического <br>лидера 
+    //-       a.header-sub__item-subsection(href="page-2#strategy-stakeholder")  Основные стейкхолдеры
+    //-       a.header-sub__item-subsection(href="page-2#strategy-principles")  Базовые принципы стратегии
+    //-       a.header-sub__item-subsection(href="page-2#strategy-iter")  Формат «высокотехнологичный интегратор»
+    //-       a.header-sub__item-subsection(href="page-2#strategy-partners")  Партнерские сети
+    //- .header-sub(data-header-sub="results") 
+    //-   .header-sub__back-item.mobile-custom(data-sub-back='')
+    //-     .header-sub__back-text Результаты <br> деятельности
+    //-   .header-sub__list 
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-3#operation-results")  Операционные результаты
+    //-       a.header-sub__item-subsection(href="page-3#marshrute-speed") Маршрутная скорость и формирование <br>поездов
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-3#formation-park") Формирование парка: оптимизация
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-3#client-portfolio")  Клиентский портфель
+    //-       a.header-sub__item-subsection(href="page-3#client-transportation")  Развитие перевозок Китай–РФ
+    //-       a.header-sub__item-subsection(href="page-3#client-development__case")  Кейс: рефрижераторные перевозки
+    //-       a.header-sub__item-subsection(href="page-3#client-development__paperless")  Безбумажные перевозки: инновационное <br>развитие
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-3#preview-main-line") Главные направления цифрового развития
+    //-       a.header-sub__item-subsection(href="page-3#direction-automation")  Автоматизация внутренних бизнес-процессов
+    //-       a.header-sub__item-subsection(href="page-3#direction-site")  Сайт компании
+    //-       a.header-sub__item-subsection(href="page-3#direction-documents")  Электронная накладная
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-3#preview-section-save")  Сохранить достигнутое
+    //-       a.header-sub__item-subsection(href="page-3#preservation-finance")  Финансовый обзор
+    //-       a.header-sub__item-subsection(href="page-3#preservation-revenue")  Выручка
+    //-       a.header-sub__item-subsection(href="page-3#preservation-sales")  Себестоимость продаж
+    //-       a.header-sub__item-subsection(href="page-3#preservation-diagram")  Валовая прибыль
+    //-       a.header-sub__item-subsection(href="page-3#preservation-expenses")  Управленческие расходы
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-3#profit-sales")  Прибыль от продаж 
+    //-       a.header-sub__item-subsection(href="page-3#profit-ebitda")  EBITDA
+    //-       a.header-sub__item-subsection(href="page-3#profit-clean")  Чистая прибыль 
+    //-       a.header-sub__item-subsection(href="page-3#profit-reporting")  Финансовая отчетность по МСФО
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-3#preview-care") С заботой о деловом климате
+    //- .header-sub(data-header-sub="growth") 
+    //-   .header-sub__back-item.mobile-custom(data-sub-back='')
+    //-     .header-sub__back-text Устойчивое развитие
+    //-   .header-sub__list 
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#human-capital") Человеческий капитал
+    //-       a.header-sub__item-subsection(href="page-4#porganization-structure") Организационная структура ОТЛК ЕРА <br>на 31 декабря 2022 года
+    //-       a.header-sub__item-subsection(href="page-4#organization-number") Структура персонала
+    //-       a.header-sub__item-subsection(href="page-4#recruitment-processes") Процессы найма
+    //-       a.header-sub__item-subsection(href="page-4#corporate-culture") Корпоративная культура
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#preview-corporate-responsibility") Корпоративная социальная <br>ответственность
+    //-       a.header-sub__item-subsection(href="page-4#corporate-responsibility-care") Забота о людях
+    //-       a.header-sub__item-subsection(href="page-4#corporate-responsibility-events") Корпоративные мероприятия
+    //-       a.header-sub__item-subsection(href="page-4#corporate-responsibility-health") Здоровье и медицинское обеспечение
+    //-       a.header-sub__item-subsection(href="page-4#material-help") Материальная и иная помощь
+    //-       a.header-sub__item-subsection(href="page-4#education-support") Поддержка образования
+    //-       a.header-sub__item-subsection(href="page-4#education-development") Обучение и развитие
+    //-       a.header-sub__item-subsection(href="page-4#education-responsibility__trainings") Тренинги и конференции
+    //-       a.header-sub__item-subsection(href="page-4#education-it") ИТ-ресурсы для сотрудников
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#preview-security-content") Охрана труда и пожарная<br> безопасность
+    //-       a.header-sub__item-subsection(href="page-4#security-training") Обучение
+    //-       a.header-sub__item-subsection(href="page-4#security-work") Оценка условий труда
+    //-       a.header-sub__item-subsection(href="page-4#security-covid") Антиковидные меры
+    //-       a.header-sub__item-subsection(href="page-4#security-fire") Пожарная и электробезопасность
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#preview-ecology-content") Экологичность как конкурентное <br>преимущество
+    //-       a.header-sub__item-subsection(href="page-4#ecology-mt") Воздействие на климат
+    //-       a.header-sub__item-subsection(href="page-4#ecology-dynamic") Динамика выбросов СО<sub>2</sub> ОТЛК ЕРА
+    //-       a.header-sub__item-subsection(href="page-4#ecology-environment") Охрана окружающей среды
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#preview-charity-content") Люди прежде всего: <br>благотворительность
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#charity-utlc") Объединение людей и стран
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#section-purchase") Закупочная деятельность
+    //-     .header-sub__item 
+    //-       a.header-sub__item-title(href="page-4#preview-energetic-resourses") Использование энергетических<br> ресурсов
+    //- .header-sub(data-header-sub="corporate") 
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Корпоративное <br>управление
       .header-sub__list 

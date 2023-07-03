@@ -38,7 +38,7 @@ mixin report-hero-about
             a.report-hero__list-item(href="#" target='blank')=item
         .report-hero__number 1
 
-mixin report-hero-about 
+mixin report-hero-about-EN 
   section.report-hero.report-hero_about
     .report-hero__row.about-row 
       .report-hero__col.about-left
@@ -49,7 +49,7 @@ mixin report-hero-about
           +picture('right-col-about.png')
         .report-hero__col-background.mobile 
           +picture('report-hero2-mobile.png')
-        .report-hero__title о компании
+        .report-hero__title About Us
         .report-hero__list
           each item in ['ОТЛК ЕРА. Кто мы?', 'Справка о Компании', 'Об Отчете','Обращение генерального директора', 'Календарь событий – 2022', 'Бизнес-модель', 'География деятельности', 'Противодействие коррупции']
             a.report-hero__list-item(href="#" target='blank')=item

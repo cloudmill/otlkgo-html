@@ -12,6 +12,7 @@ include ./components/picture
 include ./components/header
 include ./components/footer
 include ./components/overlay
+include ./components/sidebar
 
 include ./components/grid-test
 
@@ -65,7 +66,10 @@ opacity:0
       block header
         +header
 
+
       main.main
+        +sidebar
+        +overlay
         block content
 
 
