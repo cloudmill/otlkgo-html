@@ -72,3 +72,78 @@ mixin client-portfolio
                 .formation-park__structure-subtitle Мы считаем, что это наиболее прагматичный подход в текущих политических и экономических реалиях
                 .formation-park__structure-icon
                   +green-chat-svg
+
+mixin client-portfolio-EN
+  .container-content
+    section.client-portfolio(id="client-transportation")(data-aos="fade-up")
+      .transportation-development(data-aos="fade-up")
+        h2.transportation-development__title China–Russia Traffic Development
+        .transportation-development__row.top(data-aos="fade-up")
+          .transportation-development__col(data-aos="fade-up") 
+            .transportation-development__subtitle In 2022, the cargo traffic volumes on the China–Russia route in UTLC&nbsp;ERA’s services demonstrated an upward trend.
+          .transportation-development__col(data-aos="fade-up")
+            .transportation-development__text.top.text The need for alternative logistics chains and payment mechanisms, e.g. settlements in Chinese yuans, increased the demand for traffic operations in this direction among the company’s customers. 
+            .transportation-development__cards 
+              .ge-card.green
+                .ge-card__top.gap-8
+                  .ge-card__num.green(data-countup='12') 12
+                  .ge-card__text.mobile-mini.number-animate-12.number-animate contracts in yuans 
+                .ge-card__bot
+                  .ge-card__text-grey concluded in 2022
+              .ge-card.green
+                .ge-card__top.gap-8
+                  .ge-card__num.green(data-countup='31') 31
+                  .ge-card__text.number-animate-31.number-animate trains and 3,082 TEUs 
+                .ge-card__bot
+                  .ge-card__text-grey traffic volumes under these contracts
+        .transportation-development__row.mid(data-aos="fade-up")
+          .transportation-development__col.mid
+            .transportation-development__text.text A total of 26 various destination stations operated by JSCo "RZD" were engaged in 2022, which is twice as many as previously. The greatest contributors to the traffic volume growth were the stations of the Moscow Railway Hub. The volumes reached 130,564 TEUs in 2022, and 42 UTLC&nbsp;ERA’s customers used the service in this direction.
+          .transportation-development__col.mid
+            h4.transportation-development__heading growth of the total traffic volume from China to Russia by 2021
+            .transportation-development__video
+              video( muted class='video-play' playsinline  data-svg='transportation9')
+                source(src="./assets/videos/rost_summy2.mp4" type="video/mp4")
+                source(src="./assets/videos/rost_summy2.webm" type="video/webm")
+              +svg-transportation-development.for-video.video-play-transportation9 
+        .transportation-development__case(id="client-development__case")(data-aos="fade-up")
+          .transportation-development__case-top(data-aos="fade-up")
+            .transportation-development__case-name Case Study
+            .transportation-development__case-texts 
+              h3.transportation-development__case-title Refrigerator Traffic
+              .transportation-development__case-subtitle UTLC&nbsp;ERA in cooperation with one of the partners launched a service to dispatch full-length refrigerator trains from China to Russia via the Kazakhstan–China border.
+          .transportation-development__case-bot(data-aos="fade-up")
+            .transportation-development__case-card(data-aos="fade-up")
+              .ge-card.green
+                .ge-card__top
+                  .ge-card__num.green(data-countup='374')  374
+                  .ge-card__text.number-animate-374.number-animate containers
+                .ge-card__bot
+                  .ge-card__text-grey dispatched under the special temperature conditions 
+            .transportation-development__case-desk(data-aos="fade-up") 
+              .transportation-development__case-text.top.text Transportation of quick-frozen products (tuna, cod, butterfish, pollack, seafood cocktail, etc.) and frozen fruit and vegetables (mango, apricot, peach, strawberry, black currant, etc.) is subject to the specific requirements. Such cargoes require the application of the direct transfer technology to minimize the time spent at the border crossing points, as well as prompt decisions should any refrigerator equipment fail en route. For instance, these decisions may be related to access of repair crews for inspection in order to perform minor repairs or to energize the equipment.
+              .transportation-development__case-text.text In this regard, the well-managed joint efforts with one of the partners should be highlighted, which helped minimize the time spent by the cargo at the border crossing points. As a result, we performed well in terms of total time in transit, which is essential for perishable cargoes. The average time in transit for refrigerator traffic was 15 days, with the minimum time reaching 10 days on the Wendeng–Dostyk–Selyatino route.
+          .transportation-development__case-vector(data-aos="fade-up") 
+            +picture('transportation-development-case.png') 
+        .transportation-development__paperless(id="client-development__paperless")(data-aos="fade-up")
+          h2.transportation-development__paperless-title Paperless Traffic: <br>Innovative Development
+          .transportation-development__paperless-text We are an integration company in the 1,520 mm track gauge area, which is actively engaged in developing and introducing digital technologies on its routes. Acknowledging that the digital technologies will give the greatest competitive edge to logistics companies in 2023 to 2024, UTLC&nbsp;ERA continues to look for the best solution
+          .transportation-development__paperless-project(data-aos="fade-up") 
+            .transportation-development__paperless-col(data-aos="fade-up") 
+              .transportation-development__paperless-grey.desktop Project
+              .transportation-development__paperless-minititle Idea
+              .transportation-development__paperless-minitext digital traffic support in the 1&nbsp;,&nbsp;520 mm track gauge area.
+              .transportation-development__paperless-minititle Approach
+              .transportation-development__paperless-minitext establishing a conveyor digital infrastructure with the trusted information environment for various traffic process participants.
+              .transportation-development__paperless-minititle Task
+              .transportation-development__paperless-minitext generation of electronic transit declarations based on electronic shipping documents; interfaces with EAEU customs services; transfer of electronic shipping documents to other traffic stakeholders.
+              .transportation-development__paperless-minititle Expected outcome
+              .transportation-development__paperless-minitext the project will help achieve full digitalization of both the traffic process and the state control at the external borders in the EAEU.
+            .transportation-development__paperless-col(data-aos="fade-up")
+              .transportation-development__paperless-grey.mobile Project
+              .transportation-development__paperless-subtitle Digital Freight Forwarder
+              .transportation-development__paperless-text Implementation of this project may potentially demonstrate to the partners in Europe and China that the Eurasian digital infrastructure is ready to shift to state-of-the-art technologies and make the Eurasian rail corridors more attractive.
+              .formation-park__structure-plug.paperless 
+                .formation-park__structure-subtitle We believe this approach is the most reasonable in the current political and economic situation.
+                .formation-park__structure-icon
+                  +green-chat-svg

@@ -11,3 +11,17 @@ mixin operation-results
             .operation-results__subtitle Динамика объема сервиса ОТЛК&nbsp;ЕРА (ДФЭ)
             .operation-results__vector
               +picture('operation-results.png')
+
+mixin operation-results-EN
+  .container.custom-operations(data-aos="fade-up") 
+    .container-content
+      section.operation-results(id="operation-results")
+        .operation-results__inner
+          .preview__line.desktop
+          .operation-results__col.left(data-aos="fade-up") 
+            h2.operation-results__title Operating Performance
+            .operation-results__text In 2022, UTLC&nbsp;ERA operated and developed the container transit traffic in Kazakhstan, Russia and Belarus.
+          .operation-results__col.right(data-aos="fade-up") 
+            .operation-results__subtitle UTLC ERA service profile (TEU)
+            .operation-results__vector
+              +picture('operation-results.png')
