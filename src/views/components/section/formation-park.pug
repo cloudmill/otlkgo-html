@@ -6,9 +6,9 @@ mixin formation-park
       .formation-train__inner 
         .formation-train__block
           .formation-top
-            span.formation-train__number(data-countup='9') 
+            span.formation-train__number.countup-element(data-countup='9') 
             span.opacity-0.formation-train__number  
-            span.formation-train__number(data-countup='663')
+            span.formation-train__number.countup-element(data-countup='663')
           .formation-train__row   
             .col 
             .col 
@@ -31,9 +31,9 @@ mixin formation-park
           .ge-card.light-green.large
               .ge-card__top.gap-8
                 .ge-card__nums-container
-                  span.ge-card__num.light.large(data-countup='2000') 2000
+                  span.ge-card__num.light.large.countup-element(data-countup='2000') 2000
                   span.ge-card__num.light.large -
-                  span.ge-card__num.light.large(data-countup='3000') 3000
+                  span.ge-card__num.light.large.countup-element(data-countup='3000') 3000
                 .ge-card__text.number-animate-3000.number-animate платформ/мес 
               .ge-card__bot
                 .ge-card__text-grey.large Оценка оптимизации парка за счет XL-поездов
@@ -49,7 +49,7 @@ mixin formation-park
         .formation-park__col-third 
           .ge-card.green
               .ge-card__top.gap-8
-                .ge-card__num.green(data-countup='600')  600
+                .ge-card__num.green.countup-element(data-countup='600')  600
                 .ge-card__text.number-animate-600.number-animate  фитинговых <br>платформ 
               .ge-card__bot
                 .ge-card__text-grey.large-360 Получены в лизинг в первой половине 2022 года
