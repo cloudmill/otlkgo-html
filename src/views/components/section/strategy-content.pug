@@ -3,6 +3,141 @@ mixin strategy-content
     .container-content 
       .strategy-cards__inner 
         .strategy-ticket
+          p.strategy-ticket__title Миссия ОТЛК ЕРА
+          p.strategy-ticket__text Развитие транзитного потенциала ЕАЭС через внедрение высокотехнологичных логистических сервисов, требующих скоординированной политики железных дорог и регуляторов на пространстве колеи 1520 мм.
+          +column-top-svg.strategy-ticket__svg
+        .strategy-ticket
+          p.strategy-ticket__title Стратегическая цель 2025
+          p.strategy-ticket__text Обеспечить расширение грузовой базы и развитие рынка транзитных перевозок через коридоры ОТЛК ЕРА с учетом конъюнктурных и регуляторных рисков.
+          +column-top-svg.strategy-ticket__svg
+  section(data-aos="fade-up").strategy-stakeholder(id="strategy-stakeholder")  
+    .container-content 
+      .strategy-stakeholder__inner
+        h3.strategy-stakeholder__title Основные стейкхолдеры
+        .strategy-stakeholder__box 
+          .strategy-card 
+            p.strategy-card__text <span>  Акционеры, </span>   которые влияют на бизнес ОТЛК ЕРА через ключевые решения и формирование конкурентоспособности услуги через утверждение тарифной политики
+
+            .strategy-card__number
+              p 1
+          .strategy-card 
+            p.strategy-card__text <span> Ключевые клиенты,  </span> которые обеспечивают формирование выручки ОТЛК ЕРА и ее рост за счет привлечения новой грузовой базы, влияют на финансовый результат через объем закупок и уровень оборотного капитала
+
+            .strategy-card__number
+              p 2
+          .strategy-card 
+            p.strategy-card__text <span> Владельцы ключевых контейнерных терминалов на маршрутах ОТЛК ЕРА,</span>  которые обеспечивают технологическую цепочку по перегрузке контейнеров с колеи 1520 на колею 1435
+            .strategy-card__number
+              p 3
+          .strategy-card 
+            p.strategy-card__text <span> Администрация Китайских железных дорог и региональные логистические платформы,</span>  которые обеспечивают приемлемые тарифы на доставку контейнеров из центральной части Китая к границе с Казахстаном и предоставляют временные субсидии на железнодорожные контейнерные перевозки по территории Китая
+
+            .strategy-card__number
+              p 4 
+          .strategy-card.strategy-card_small
+            p.strategy-card__text <span> CoГрузоотправители, </span>  заинтересованные в сокращении сроков доставки товаров
+
+            .strategy-card__number
+              p 5
+          .strategy-card.strategy-card_small
+            p.strategy-card__text <span> Владельцы подвижного состава, </span>  обеспечивающие ОТЛК ЕРА фитинговыми платформами
+
+            .strategy-card__number
+              p 6 
+          .strategy-card.strategy-card_small 
+            p.strategy-card__text Производители фитинговых платформ и лизинговые компании
+
+            .strategy-card__number
+              p 7
+          .strategy-card.strategy-card_small
+            p.strategy-card__text Финансовые организации
+            .strategy-card__number
+              p 8
+  section(data-aos="fade-up").strategy-principles(id="strategy-principles")  
+    .container-content 
+      .strategy-principles__inner
+        h3.strategy-principles__title Базовые принципы стратегии
+        .strategy-principles__box 
+          .col 
+            p.strategy-principles__subtitile  ОТЛК&nbsp;ЕРА — интегратор высокотехнологичных транзитных контейнерных сервисов в сообщении Азия — Европа — Азия. Основная цель компании — увеличение грузовой базы транзитных перевозок.
+          .col 
+            p.strategy-principles__description Операционная модель направлена на повышение объемов транзитных перевозок на колее 1520, в том числе за счет:
+            ul.strategy-principles__list 
+              each item in['Минимизации издержек и формирования конкурентоспособного ценового предложения', 'Балансировки транзитных маршрутов', 'Балансировки транзитных маршрутов', 'Организации вывода на рынок новых логистических услуг', 'Адаптации транзитных сервисов для новых групп грузоотправителей',]
+                li.strategy-principles__item 
+                  +mark-text-svg.strategy-principles-svg
+                  p.strategy-principles__text=item
+            .row
+              p.strategy-principles__text ОТЛК&nbsp;ЕРА обеспечивает полную загрузку имеющихся пропускных мощностей &nbsp; <br class='br'> и оптимальные параметры перевозки за счет технологического и ценового преимущества. Мы предлагаем услуги на принципах открытой тарифной политики для всех клиентов, обеспечиваем недискриминационный доступ и прозрачный сервис.
+              p.strategy-principles__text ОТЛК&nbsp;ЕРА предоставляет заинтересованным сторонам платформу для совместного развития технологий, прежде всего цифровых.
+  setcion.strategy-mechanism
+    .container-content 
+      .strategy-mechanism__inner 
+        h3.strategy-mechanism__title Ключевые механизмы реализации стратегии
+        .strategy-stakeholder__box 
+          .strategy-card 
+            p.strategy-card__text <span> Формирование договорной базы </span> по обеспечению необходимого количества вагонов, терминалов и других компонентов транспортной услуги
+            .strategy-card__number
+              p 1
+
+          .strategy-card 
+            p.strategy-card__text Формирование на базе ОТЛК&nbsp;ЕРА <span> цифрового технологического полигона</span>
+            .strategy-card__number
+              p 2
+
+          .strategy-card 
+            p.strategy-card__text <span> Специальный регуляторный режим  </span>(тестирование регуляторных изменений до корректировки национальных законодательств стран-участниц Альянса), который позволяет расширить грузовую базу и снизить себестоимость перевозок
+            .strategy-card__number
+              p 3
+          .strategy-card 
+            p.strategy-card__text <span> Активное маркетинговое продвижение </span> на международном транспортно-логистическом рынке для повышения лояльности
+            .strategy-card__number
+              p 4 
+  section(data-aos="fade-up").strategy-iter(id="strategy-iter")   
+    .container-content 
+      .strategy-iter__inner 
+      h3.strategy-iter__title Формат «высокотехнологичный интегратор»
+      .strategy-iter__box 
+        .col 
+          p.strategy-iter__text.text Минувший 2022 год потребовал новых решений, одним из которых стала цифровизация транзитных перевозок. Кооперационный ресурс ОТЛК&nbsp;ЕРА (ДЗО трех ж/д администраций) создал дополнительные возможности для сквозной цифровизации процессов на территории трех стран. Апробация их работы наделила проект ОТЛК&nbsp;ЕРА функцией «регуляторной песочницы».
+
+        .col 
+          p.strategy-iter__text.text Цифровые технологии стали важным конкурентным преимуществом логистических компаний. В рамках проекта Евразийской экономической комиссии по созданию информационно-коммуникационной «витрины» национальных сервисов экосистемы цифровых транспортных коридоров ЕАЭС. 17 ноября 2022 года между ОТЛК&nbsp;ЕРА и республиканским унитарным предприятием «Центр цифрового развития» (подведомственным предприятием по разработке и реализации информационных проектов Министерства связи и информатизации Республики Беларусь), было подписано соглашение о сотрудничестве. Оно предполагает совместную работу по многим направлениям: к примеру, информационный обмен в рамках экспериментов по передаче данных о транспортировке контейнеров и электронных товаросопроводительных документов (ТСД) на международных грузовых ж/д перевозках по маршрутам «Восток-Запад-Восток».
+  section(data-aos="fade-up").strategy-partners(id="strategy-partners")  
+    .container-content 
+      .strategy-partners__inner 
+      h3.strategy-partners__title Партнерские сети
+      .strategy-partners__box
+        .col 
+          p.text.strategy-partners__text Перестройка логистических связей и возросший спрос на железнодорожные перевозки (включая контейнерные) в направлении КНР обострили вопрос соблюдения баланса интересов между грузовладельцами, владельцами инфраструктуры и операторами подвижного состава. В этой связи одним из наиболее важных аспектов развития ж/д перевозок стало обеспечение соответствующего уровня инфраструктуры.
+
+        .col 
+          p.text.strategy-partners__text В рамках договора о Евразийском экономическом союзе от 29 мая 2014 г. Казахстан, Россия и Беларусь проводят скоординированную транспортную политику, одна из задач которой — это повышение эффективности транзитного потенциала государств-участников.
+  section(data-aos="fade-up").strategy-cargo 
+    .container-content 
+      .strategy-cargo__inner 
+        h6.strategy-cargo__title Именно поэтому организация опорной сети терминально-логистических центров для консолидации грузопотока через территории Беларуси, Казахстана и России – важная часть стратегии развития ОТЛК&nbsp;ЕРА.
+        .strategy-cargo__box 
+          .col 
+            p.text.strategy-cargo__text Сегодня транспортные коридоры Центральной Азии демонстрируют динамику устойчивого роста объемов грузовых перевозок и взаимной торговли между нашими странами, а также с Китаем и странами Европы.
+
+          .col 
+            p.text.strategy-cargo__text В этом контексте особое значение приобретает создание опорной сети ТЛЦ. Так, в 2022 году наша компания стала участником рабочей группы между АО «НК «КТЖ» и ОАО «РЖД» по проекту ЖДПП Аягоз - Бахты.
+  section(data-aos="fade-up").strategy-cooperation 
+    .container-content 
+      .strategy-cooperation__inner 
+        h3.strategy-cooperation__title Что было сделано в рамках сотрудничества в 2022 году
+        .strategy-cooperation__box   
+          ul.strategy-cooperation__list
+            each item in ['Развитие проектов «Dostyk TransTerminal (Достык ТрансТерминал)» (ж/д станция Достык) и «Сухой порт Южноуральский» (ж/д станция Формачево) – совершенствование процедур пропуска, работы с объединенными поездами и работы через тыловые терминалы для увеличения пропускной способности основных пограничных переходов','Формирование монопоездов для уменьшения транзитного времени и ускорения пропуска поездов на стыках колеи 1520 мм и 1435 мм','Развитие новых маршрутов и проектов',]
+              li.strategy-cooperation__item 
+                +mark-text-svg.strategy-cooperation-svg 
+                p=item 
+mixin strategy-content-EN
+  section(data-aos="fade-up").strategy-cards 
+    .container-content 
+      .strategy-cards__inner 
+        .strategy-ticket
           p.strategy-ticket__title UTLC ERA’s mission
           p.strategy-ticket__text is to develop the EAEU transit potential by implementing high-tech logistics services that require an aligned policy to be adopted by railways and regulatory authorities in the 1,520 mm track gauge regions.
           +column-top-svg.strategy-ticket__svg
