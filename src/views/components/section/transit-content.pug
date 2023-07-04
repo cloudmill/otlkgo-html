@@ -71,6 +71,7 @@ mixin transit-content
               p Порты и станции ДВ РФ
         .transit-china__img 
           +picture('transit-china.png').transit-china-img
+          +activity-buttons('transit-china.png')
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>АО «ОТЛК&nbsp;ЕРА»
         .transit-china__row 
@@ -132,6 +133,8 @@ mixin transit-content
             p 2022
         .transit-value__img 
           +picture('transit-value.png').transit-value-img
+          +activity-buttons('transit-value.png')
+          
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
@@ -174,8 +177,12 @@ mixin transit-content-CN
         .transit-dynamic__svg.mobile 
           .transit-dynamic__svg-top
             +picture('transit-dynamic-1-mobile.png')
+            +activity-buttons('transit-dynamic-1-mobile.png')
+
           .transit-dynamic__svg-bottom
             +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
+            +activity-buttons('transit-dynamic-2-mobile.png')
+
           .row 
         .transit-dynamic__svg.desktop
           +transit-content-svg 
@@ -242,6 +249,8 @@ mixin transit-content-CN
               p 远东港口和车站
         .transit-china__img 
           +picture('transit-china.png').transit-china-img
+          +activity-buttons('transit-china.png')
+
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>UTLC ERA股份公司
 
@@ -308,6 +317,8 @@ mixin transit-content-CN
             p 2022
         .transit-value__img 
           +picture('transit-value.png').transit-value-img
+          +activity-buttons('transit-value.png')
+
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text 资料来源&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
@@ -350,8 +361,12 @@ mixin transit-content-EN
         .transit-dynamic__svg.mobile 
           .transit-dynamic__svg-top
             +picture('transit-dynamic-1-mobile.png')
+            +activity-buttons('transit-dynamic-1-mobile.png')
+
           .transit-dynamic__svg-bottom
             +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
+            +activity-buttons('transit-dynamic-2-mobile.png')
+
           .row 
         .transit-dynamic__svg.desktop
           +transit-content-svg 

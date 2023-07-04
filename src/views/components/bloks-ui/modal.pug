@@ -1,10 +1,14 @@
 mixin modal 
   .modal 
+    .modal__overlay 
     .modal__inner 
+      .modal__close 
       h3.modal__title Отправить по почте
       form.modal__form
         .modal__input 
+          p.modal__text Укажите e-mail для отправки ссылки на страницу Отчета
           input(type="text" placeholder='E-mail*')
         .modal__input 
+          p.modal__text Комментарий к письму
           input(type="text" placeholder='Комментарий к письму')
-        button.modal__button(type='submit')
+        button.modal__button(type='submit') Отправить

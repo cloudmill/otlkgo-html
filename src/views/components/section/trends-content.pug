@@ -41,12 +41,14 @@ mixin trends-content
           h6.trends-dynamic__title Динамика значений ставок WCI, 2021–2022 гг., $/СФЭ
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
+            +activity-buttons('trends-dynamic-mobile.png')
           .links.trends-dynamic__links
             p.links__text.trends-dynamic__links-text Источник: &nbsp;
           
             a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
         .trends-dynamic__svg.desktop
           +picture('trends-dynamic.png')
+          +activity-buttons('trends-dynamic.png')
         .row 
           .col 
           .col 
@@ -61,12 +63,15 @@ mixin trends-content
           h6.trends-rates__title Соотношение ставок WCI к ERAI по направлениям, 2020–2022 гг.
           .trends-rates__svg 
             +picture('trends-rates-mobile.png').mobile
+            +activity-buttons('trends-rates-mobile.png').mobile
+            
           .links.trends-rates__links
             p.links__text.trends-rates__links-text Источники:&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
+          +activity-buttons('trends-rates.png').desktop
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -76,11 +81,13 @@ mixin trends-content
           .col 
             .trends-demand__svg 
               +picture('trends-demand-mobile.png').mobile
+              +activity-buttons('trends-demand-mobile.png').mobile
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text Источник:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
           +picture('trends-demand.png').desktop
+          +activity-buttons('trends-demand.png').desktop
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
       .trends-forecast__inner 
@@ -132,6 +139,7 @@ mixin trends-content-CN
         h6.trends-volume__title 2021-2022年通过海上运输的全球贸易量，百万TEU
         .trends-volume__svg
           +picture('trends-volume.png').trends-volume-img
+          +activity-buttons('trends-volume.png')
         .links.trends-volume__links
           p.links__text.trends-volume__links-text 资料来源:&nbsp;
           a(href="https://www.containerstatistics.com/" target='blank').links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
@@ -147,12 +155,15 @@ mixin trends-content-CN
           h6.trends-dynamic__title 2021-2022年WCI费率值的动态，$/SFE
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')
+            +activity-buttons('trends-dynamic-mobile.png')
+
           .links.trends-dynamic__links
             p.links__text.trends-dynamic__links-text 资料来源: &nbsp;
           
             a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
         .trends-dynamic__svg.desktop
           +picture('trends-dynamic.png')
+          +activity-buttons('trends-dynamic.png')
         .row 
           .col 
           .col 
@@ -164,12 +175,16 @@ mixin trends-content-CN
           h6.trends-rates__title 2020-2022年按目的地分列的WCI与ERA费率比
           .trends-rates__svg 
             +picture('trends-rates-mobile.png').mobile
+            +activity-buttons('trends-rates-mobile.png').mobile
+
           .links.trends-rates__links
             p.links__text.trends-rates__links-text 资料来源:&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
+          +activity-buttons('trends-rates.png').desktop
+
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -179,11 +194,15 @@ mixin trends-content-CN
           .col 
             .trends-demand__svg 
               +picture('trends-demand-mobile.png').mobile
+              +activity-buttons('trends-demand-mobile.png').mobile
+
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text 资料来源:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
           +picture('trends-demand.png').desktop
+          +activity-buttons('trends-demand.png').desktop
+
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
       .trends-forecast__inner 
@@ -236,6 +255,8 @@ mixin trends-content-EN
 
         .trends-volume__svg
           +picture('trends-volume.png').trends-volume-img
+          +activity-buttons('trends-volume.png')
+
         .links.trends-volume__links
           p.links__text.trends-volume__links-text Source:&nbsp;
           a(href="https://www.containerstatistics.com/" target='blank').links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
@@ -251,12 +272,15 @@ mixin trends-content-EN
           h6.trends-dynamic__title WCI Rate Profile, 2021 to 2022, $/FEU
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')
+            +activity-buttons('trends-dynamic-mobile.png')
           .links.trends-dynamic__links
             p.links__text.trends-dynamic__links-text Source:&nbsp;
           
             a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
         .trends-dynamic__svg.desktop
           +picture('trends-dynamic.png')
+          +activity-buttons('trends-dynamic.png')
+
         .row 
           .col 
           .col 
@@ -268,12 +292,15 @@ mixin trends-content-EN
           h6.trends-rates__title Benchmarked WCI and ERAI Rates by Routes, 2020 to 2022
           .trends-rates__svg 
             +picture('trends-rates-mobile.png').mobile
+            +activity-buttons('trends-rates-mobile.png').mobile
+
           .links.trends-rates__links
             p.links__text.trends-rates__links-text Источники:&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
+          +activity-buttons('trends-rates.png').desktop
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -283,11 +310,15 @@ mixin trends-content-EN
           .col 
             .trends-demand__svg 
               +picture('trends-demand-mobile.png').mobile
+              +activity-buttons('trends-demand-mobile.png').mobile
+
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text Source:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
           +picture('trends-demand.png').desktop
+          +activity-buttons('trends-demand.png').desktop
+
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
       .trends-forecast__inner 
@@ -306,7 +337,6 @@ mixin trends-content-EN
     .container-content 
       .trends-forecast2__inner 
         h3.trends-forecast2__title Forecast: Cautious Optimism
-
         .row
           .col 
             p.trends-forecast2__description According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023. The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.

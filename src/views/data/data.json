@@ -1,6 +1,34 @@
 {
-  "title": "test-html",
+  "title": "OTLK",
   "routes": [
+    {
+      "href": "main",
+      "title": "Главная"
+    },
+    {
+      "href": "about",
+      "title": "О компании"
+    },
+    {
+      "href": "page-2",
+      "title": "page-2"
+    },
+    {
+      "href": "page-3",
+      "title": "page-3"
+    },
+    {
+      "href": "page-4",
+      "title": "page-4"
+    },
+    {
+      "href": "page-5",
+      "title": "page-5"
+    },
+    {
+      "href": "applications",
+      "title": "applications"
+    },
     {
       "href": "main-ENG",
       "title": "Главная-ENG"

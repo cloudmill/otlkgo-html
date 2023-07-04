@@ -14,10 +14,10 @@ import './scripts/trains-parallax';
 import './scripts/parallax-containers';
 import './scripts/print-button';
 import './scripts/fancyapps';
-import 'lightbox2/dist/js/lightbox';
-import 'lightbox2/dist/css/lightbox.css';
+import './scripts/history';
+
 import { fancybox } from './scripts/fancybox';
 
 document.addEventListener('DOMContentLoaded', () => {
-  fancybox()
-})
+  fancybox();
+});

@@ -47,6 +47,7 @@ include ./components/bloks-ui/next-page
 include ./components/bloks-ui/risks
 include ./components/bloks-ui/model
 include ./components/bloks-ui/buttons
+include ./components/bloks-ui/modal
 
 doctype html
 
@@ -54,7 +55,7 @@ html(lang='ru')
   
   head
     meta(charset="utf-8")
-    title= data.title
+    title= title?title:data.title
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
   
   body.body.body--notransition(style={
