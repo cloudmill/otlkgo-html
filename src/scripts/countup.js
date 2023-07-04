@@ -53,5 +53,38 @@ function startCountUpOnScroll() {
   });
 }
 
+window.addEventListener('beforeprint', function () {
+  const countUpElements = document.querySelectorAll('.countup-element');
+  countUpElements.forEach((element) => {
+    const countupValue = element.getAttribute('data-countup');
+    const endValue = parseFloat(countupValue);
+    const suffix = element.hasAttribute('data-countup-suffix')
+      ? element.getAttribute('data-countup-suffix')
+      : '';
+    const prefix = !element.hasAttribute('data-countup-prefix')
+      ? ''
+      : element.getAttribute('data-countup-prefix');
+
+    const countUp = new CountUp(element, endValue, {
+      ...options,
+      suffix,
+      prefix,
+    });
+    const targetElement = document.querySelector(
+      `.number-animate-${countupValue}`
+    );
+
+    if (targetElement) {
+      targetElement.classList.add('fade-up');
+    }
+    if (!countUp.error) {
+      countUp.start();
+      element.setAttribute('data-countup-started', 'true');
+    } else {
+      console.error(countUp.error);
+    }
+  });
+
+});
 window.addEventListener('DOMContentLoaded', startCountUpOnScroll);
 window.addEventListener('scroll', startCountUpOnScroll);
