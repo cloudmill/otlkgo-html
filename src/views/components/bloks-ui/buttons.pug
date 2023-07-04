@@ -7,3 +7,14 @@ mixin activity-buttons(src)
       +header-download-svg
 
 // +activity-buttons("./assets/images/achievement-number-1.png")
+
+mixin print-activity-buttons 
+  .print-activity 
+    .print-activity__item.print-activity__print(data-print-button)
+      .print-activity__item-svg 
+        +printer-svg
+      p.print-activity__item-text Распечатать
+    a.print-activity__item.print-activity__email(href="") 
+      .print-activity__item-svg
+        +sms-tracking-svg
+      p.print-activity__item-text Отправить по e-mail

@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     removeActive()
     removeBurger()
     removeOverlay()
+    historyMenu.removeClass('active')
   })
 
 
@@ -113,5 +114,17 @@ document.addEventListener('DOMContentLoaded', () => {
     headerTextTop.remove()
   }
 
+
+  const historyBtn = $('[data-media-history]')
+  const historyClose = $('[data-history-close]')
+  const historyMenu = $('[data-menu-history]')
+  
+  historyBtn.on('click', function() {
+    historyMenu.toggleClass('active')
+  })
+
+  historyClose.on('click', function() {
+    historyMenu.toggleClass('active')
+  })
 
 })

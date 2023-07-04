@@ -23,6 +23,27 @@ mixin sidebar
             .header-menu__item-text Приложения
             .header-menu__item-num 6
       .header-menu__bot-container
+        .header-menu__media.header-media 
+          .header-media__inner 
+            .header-media__share 
+              a.header-media__share-col(href="") 
+                .header-media__share-icon 
+                  +share-svg
+                .header-media__share-text.header-media__text Поделиться
+              .header-media__share-col 
+                .header-media__cubes 
+                  a.header-media__cube(href="") 
+                    +facebook-svg
+                  a.header-media__cube(href="") 
+                    +twitter-svg
+                  a.header-media__cube(href="") 
+                    +vk-svg
+                  a.header-media__cube(href="") 
+                    +telegram-svg
+            .header-media__history(data-media-history)
+              .header-media__history-icon 
+                +share-clock-svg
+              .header-media__history-text.header-media__text история
         a.header-menu__download(href="#")  
           .header-menu__download-icon 
             +header-download-svg
@@ -190,3 +211,32 @@ mixin sidebar
           a.header-sub__item-subsection(href="page-5#risk-process") Процесс управления рисками
         .header-sub__item 
           a.header-sub__item-title(href="page-5#risk-results") Итоги 2022 года
+  .header-history(data-menu-history)
+    .header-history__inner 
+      .header-history__close(data-history-close)
+        +history-menu-close
+      .header-history__content 
+        .header-history__title История
+        .header-history__clear 
+          .header-history__clear-icon 
+            +rotate-left-svg
+          .header-history__clear-text очистить историю
+        .header-history__list 
+          .header-history__item 
+            .header-history__date 2 июля 2023
+            .header-history__time-list 
+              .header-history__time-item 
+                .header-history__time-date 12:32
+                a.header-history__time-page(href="") О компании
+              .header-history__time-item 
+                .header-history__time-date 12:30
+                a.header-history__time-page(href="") О компании
+          .header-history__item 
+            .header-history__date 1 июля 2023
+            .header-history__time-list 
+              .header-history__time-item 
+                .header-history__time-date 12:12
+                a.header-history__time-page(href="") О компании
+              .header-history__time-item 
+                .header-history__time-date 12:10
+                a.header-history__time-page(href="") О компании

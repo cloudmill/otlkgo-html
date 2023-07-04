@@ -29,3 +29,45 @@
 
   }
 }
+
+.print-activity{
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px; 
+
+  @media #{media("<", m)} {
+    margin-top: 40px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+
+    cursor: pointer;
+    
+    &-svg{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+
+      svg{
+        width: 24px;
+        height: 24px; 
+      }
+    }
+
+    &-text{
+      color:  #2A2E2B;
+      font-size: 14px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%;
+      text-transform: uppercase; 
+    }
+  }
+
+
+}
+
