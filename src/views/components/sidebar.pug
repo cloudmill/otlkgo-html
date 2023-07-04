@@ -27,6 +27,26 @@ mixin sidebar
           .header-menu__download-icon 
             +header-download-svg
           .header-menu__download-text Скачать в PDF
+        .header-menu__media.desktop.header-media 
+          .header-media__inner 
+            .header-media__share 
+              .header-media__share-col 
+                .header-media__share-icon 
+                  +share-svg
+                .header-media__share-text Поделиться
+              .header-media__share-col 
+                .header-media__cubes 
+                  a.header-media__cube(href="") 
+                    +facebook-svg
+                  a.header-media__cube(href="") 
+                    +twitter-svg
+                  a.header-media__cube(href="") 
+                    +vk-svg
+                  a.header-media__cube(href="") 
+                    +telegram-svg
+            .header-media__history
+              .header-media__history-icon 
+              .header-media__history-text история
     .header-sub(data-header-sub="about")
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text О компании

@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () =>{
   const printBtn = document.querySelector('[data-print-button]')
-
-  printBtn.addEventListener('click', () => {
-    window.print();
-  })
+  if (printBtn){
+    printBtn.addEventListener('click', () => {
+      window.print();
+    })
+  }
 })

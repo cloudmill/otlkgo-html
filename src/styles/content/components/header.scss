@@ -509,7 +509,7 @@
 
                 font-family: 'Halvar Breitschrift';
                 font-weight: 700;
-                font-size: 28px;
+                font-size: 22px;
                 line-height: 100%;
                 letter-spacing: -0.04em;
                 text-transform: uppercase;
@@ -526,7 +526,7 @@
             &-num {
                 font-family: 'Halvar Breitschrift';
                 font-weight: 700;
-                font-size: 28px;
+                font-size: 22px;
                 line-height: 100%;
                 text-align: right;
                 letter-spacing: -0.04em;
@@ -676,6 +676,7 @@
                 color: color(dark);
 
                 cursor: pointer;
+                transition: color .35s 0s cubic-bezier(0.33, 1, 0.68, 1);
 
                 &::before {
                     display: block;
@@ -686,6 +687,12 @@
 
                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='13' viewBox='0 0 12 13' fill='none'%3E%3Cpath d='M3.75 11L8.25 6.5L3.75 2' stroke='%232A2E2B' stroke-width='1.5'/%3E%3C/svg%3E");
                     background-repeat: no-repeat;
+                }
+
+                &:hover{
+                    @media #{media(">", m)} {
+                    color: #045C25;
+                    }
                 }
 
                 @media #{media("<", t)} {
@@ -706,6 +713,15 @@
                 color: color(alt-grey);
                 border-bottom: 1px solid color(borders);
                 cursor: pointer;
+                transition: color .35s 0s cubic-bezier(0.33, 1, 0.68, 1);
+                transition: border-color .35s 0s cubic-bezier(0.33, 1, 0.68, 1);
+
+                &:hover{
+                    @media #{media(">", m)} {
+                    color: #045C25;
+                    border-color: #045C25;
+                    }
+                }
 
                 @media #{media("<", t)} {
                     margin-top: rem(12px);
