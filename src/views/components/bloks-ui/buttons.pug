@@ -1,8 +1,9 @@
 mixin activity-buttons(src) 
-  .activity-buttons 
-    .activity-buttons__plus.activity-buttons__item 
+  .activity-buttons
+    .activity-buttons__plus.
+    a.activity-buttons__item.fancy-button(data-fancy=`assets/images/${src}`)
       +search-plus-svg
-    a.activity-buttons__download.activity-buttons__item(href=src download)
+    a.activity-buttons__download.activity-buttons__item(href=`assets/images/${src}` download)
       +header-download-svg
 
 // +activity-buttons("./assets/images/achievement-number-1.png")

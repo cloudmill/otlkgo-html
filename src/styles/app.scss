@@ -11,12 +11,6 @@
 @import './content/index.scss';
 
 .fancybox {
-  &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   &__backdrop {
     background: rgba(0, 0, 0, 0.181) !important;
   }
