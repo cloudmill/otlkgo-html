@@ -1,7 +1,5 @@
 mixin formation-park 
   section.formation-train
-    //- .formation-train__parallax 
-    //-   +picture('formation-park-parallax.jpg')
     .container-content
       .formation-train__inner 
         .formation-train__block
@@ -75,3 +73,82 @@ mixin formation-park
             .formation-park__structure-icon
               +green-chat-svg
           .formation-park__structure-text.text В 2023 году планируется дополнительно получить 200 единиц платформ в финансовую аренду (лизинг). Также необходимое количество фитинговых платформ может быть арендовано на рынке или привлечено на рейс.
+
+mixin formation-park-EN 
+  section.formation-train
+    .container-content
+      .formation-train__inner 
+        .formation-train__block
+          .formation-top
+            span.formation-train__number(data-countup='9') 
+            span.opacity-0.formation-train__number  
+            span.formation-train__number(data-countup='663')
+          .formation-train__row   
+            .col 
+            .col 
+              p.formation-train__text 
+                span rail cars
+                | fleet managed by UTLC ERA <br> as of the end of 2022
+  section.formation-park(data-aos="fade-up")
+    .container-content
+      .formation-park__row.first(data-aos="fade-up")
+        .formation-park__col-first 
+          h4.formation-park__title It is crucial to avoid any deficit or surplus, which can be achieved by regularly assessing the current needs.
+        .formation-park__col-first 
+          .formation-park__subtitle We review multiple indicators, including:
+          ul.formation-park__list 
+            li.formation-park__list-item Predicted traffic volume
+            li.formation-park__list-item Rail car turnaround
+            li.formation-park__list-item Lack of China–Europe and Europe–China cargo flow balance
+            li.formation-park__list-item Share of integrated XL trains
+            li.formation-park__list-item Traffic volume in optimization directions
+          .formation-park__text.text | Taking into account the growing traffic volume, we have been using an efficient method to optimize fleet utilization since 2017, namely the long container train marshalling technology (XL trains), which becomes increasingly relevant every year. The company regularly conducts a comprehensive rail car review to identify the weak links in the traffic process and to take appropriate action.
+      .formation-park__row.second(data-aos="fade-up")
+        .formation-park__col-second 
+          .ge-card.light-green.large
+              .ge-card__top.gap-8
+                .ge-card__nums-container
+                  span.ge-card__num.light.large(data-countup='2000') 2000
+                  span.ge-card__num.light.large -
+                  span.ge-card__num.light.large(data-countup='3000') 3000
+                .ge-card__text.number-animate-3000.number-animate platforms <br>per month 
+              .ge-card__bot
+                .ge-card__text-grey.large Estimated fleet optimization due to XL trains
+          .formation-park__text.top.text Up to 2019, the company acquired its fitting platform fleet mainly by engaging the rolling stock on a trip-to-trip basis. The transfer to the rental and financial leasing approach was caused by the significant traffic volume growth and the resulting need to promptly expand the fleet (by 1.5 times in the first half of 2020). Other drivers include a strong market deficit of fitting platforms in late 2018 to early 2019, the risk of main contractors withdrawing their fleet from the trip-to-trip involvement process and the significant platform rate growth.
+          .formation-park__text.text The leased fleet operation experience in 2019 to 2022 has demonstrated that rental and financial leasing are cost effective options.
+        .formation-park__col-second
+          h4.formation-park__mini-heading XL Train Quantity Profile, trains
+          .formation-park__vector-right 
+            +picture('formation-park-right-vector.png')
+      .formation-park__row.third(data-aos="fade-up")
+        .formation-park__col-third
+          .formation-park__text.text The company has eventually established the most convenient rail car fleet structure based on the engagement types. By late 2022, the percentage of rented and leased platforms was 62%, which helped utilize the traffic resources with the minimum risks and in the most efficient way while ensuring the maximum flexibility. The rented and leased fleet is the guaranteed fleet to support the rolling stock traffic volumes. Should the volumes change, the company resorts to “spot” engagement/return of the fleet under the fleet engagement contract on a trip-by-trip basis.
+        .formation-park__col-third 
+          .ge-card.green
+              .ge-card__top.gap-8
+                .ge-card__num.green(data-countup='600')  600
+                .ge-card__text.number-animate-600.number-animate  fitting <br>platforms 
+              .ge-card__bot
+                .ge-card__text-grey.large-360 obtained via leasing in the first half of 2022
+      .formation-park__possession(data-aos="fade-up")
+        h3.formation-park__possession-title(data-aos="fade-up") Moreover, the rail car ownership on a rental and leasing basis enables:
+      .formation-park__possession-row.plugs(data-aos="fade-up")
+        .formation-park__possession-item 
+          .formation-park__possession-subtitle To monitor the timely fleet maintenance
+        .formation-park__possession-item
+          .formation-park__possession-subtitle To perform traffic operations 
+          .formation-park__possession-text that require the availability of the OKPO code in the rail car fleet automatic data bank
+        .formation-park__possession-item
+          .formation-park__possession-subtitle To make prompt decisions 
+          .formation-park__possession-text regarding the rolling stock utilization without the rail car owner’s consent
+      .formation-park__structure-row(data-aos="fade-up")
+        .formation-park__structure-col(data-aos="fade-up")
+          .formation-park__structure-title Structure of Average Daily Operating Fleet (%)
+          .formation-park__structure-vector
+            +picture('formation-park-structure.png')
+        .formation-park__structure-col(data-aos="fade-up")
+          .formation-park__structure-plug 
+            .formation-park__structure-subtitle The average daily rate for rail car engagement including the operating costs reduced by 8% during 2022 as compared to 2021.
+            .formation-park__structure-icon
+              +green-chat-svg
+          .formation-park__structure-text.text In 2023, it is planned to acquire 200 additional platforms on the financial leasing basis. The required quantity of fitting platforms may also be rented from the market or engaged on a trip-by-trip basis.

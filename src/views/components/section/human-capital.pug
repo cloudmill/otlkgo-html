@@ -15,6 +15,24 @@ mixin human-capital
               .ge-card__bot
                 .ge-card__text-grey Рост штата компании в 2022 году
 
+
+mixin human-capital-EN 
+  section.human-capital(id="human-capital")(data-aos="fade-up") 
+    .container-content(data-aos="fade-up") 
+      h2.human-capital__title Human capital
+      h3.human-capital__subtitle.w-100 How many are we?
+      .human-capital__hero-row(data-aos="fade-up") 
+        .human-capital__hero-col(data-aos="fade-up")
+          .human-capital__hero-text.bold By the end of 2022, 160 people were actually employed by UTLC&nbsp;ERA (with the staff size at 170 people). 69 of them hold management positions. We also have 88 specialists and 6 office employees.
+        .human-capital__hero-col(data-aos="fade-up")
+          .human-capital__hero-text.top.text 2022 was marked by growing container traffic volumes, expanded service geography and a larger fleet of fitting platforms. UTLC ERA implemented a risk management system. The procurement processes also underwent significant changes.
+          .human-capital__hero-text.text The combination of these factors resulted in changes in the company’s organizational structure and staff list as required to develop customer service, maintain high service quality, manage the own fitting platform fleet and engage in market monitoring and integrated reviews.
+          .ge-card.green.human
+              .ge-card__top
+                .ge-card__num.green(data-countup='12' data-countup-prefix='+' data-countup-suffix='%')
+              .ge-card__bot
+                .ge-card__text-grey Company’s staff size growth in 2022
+
 mixin organization-structure
   .container-content(data-aos="fade-up")
     section.organization-structure(id="organization-structure")(data-aos="fade-up") 
@@ -193,3 +211,187 @@ mixin organization-structure
           .corporate-culture__item-content 
             .corporate-culture__item-title Справедливость и честность
             .corporate-culture__item-text Это принципы, на которых мы строим взаимоотношения как с внутренними, так и с внешними клиентами. Мы не даем пустых обещаний и четко выполняем свои обязательства. Мы гарантируем лишь то, что в состоянии выполнить. Поэтому мы ожидаем соблюдения этих принципов от каждого клиента, делового партнера, но в первую очередь от каждого сотрудника.
+
+mixin organization-structure-EN
+  .container-content(data-aos="fade-up")
+    section.organization-structure(id="organization-structure")(data-aos="fade-up") 
+      .organization-structure__title UTLC&nbsp;ERA’s Organizational Structure as of December 31, 2022
+      .organization-structure__img-container(data-aos="fade-up")
+        .organization-structure__img-table(data-aos="fade-up") 
+          +picture('organization-structure-img.png')
+        .ge-card.green.desktop(data-aos="fade-up") 
+          .ge-card__top.gap-8
+            .ge-card__num.green(data-countup='170')
+            .ge-card__text.number-animate-170.number-animate units 
+          .ge-card__bot
+            .ge-card__text-grey.custom-cuchurina Headcount
+      .ge-card.green.mobile
+        .ge-card__top.gap-8
+          .ge-card__num.green(data-countup='170')
+          .ge-card__text.number-animate-170.number-animate  units 
+        .ge-card__bot
+          .ge-card__text-grey.custom-cuchurina Headcount
+      .organization-structure__number(id="organization-number")(data-aos="fade-up") 
+        .organization-structure__number-title Company’s personnel number
+        .organization-structure__number-table.desktop(data-aos="fade-up")
+          +picture('structure-number-table.png')
+        .organization-structure__number-table.mobile(data-aos="fade-up")
+          +picture('structure-number-table-mobile.png')
+      .organization-structure__personal.first(data-aos="fade-up")  
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title Personnel breakdown by categories (people)
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text managers
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text specialists
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text office staff
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text workers
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-1.png')
+      .organization-structure__personal.second(data-aos="fade-up")
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title Personnel breakdown by education (people)
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text secondary vocational education
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text basic general education
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text higher education
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text academic degree/rank
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-2.png')
+      .organization-structure__personal(data-aos="fade-up") 
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title Personnel breakdown by age (people)
+          .organization-structure__personal-cubes.no-wrap  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text 21 to 30
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text 31 to 40
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text 40 to 50
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text older than 50
+          .organization-structure__personal-text.desktop Средний возраст сотрудников компании в 2022 году составил 39 лет, это отражает сбалансированность штата. Специалисты со стажем передают свой опыт молодым, а те, в свою очередь, содействуют дальнейшему развитию компании, внедряя инновации.
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-3.png')
+      .organization-structure__personal(data-aos="fade-up") 
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title Personnel breakdown by gender (people)
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text Men
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text Women
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-4.png')
+      .organization-structure__subrow(data-aos="fade-up") 
+        .organization-structure__subcol(data-aos="fade-up") 
+          .organization-structure__subcol-title In 2022, a number of UTLC&nbsp;ERA’s internal regulations were amended, with the following documents updated and approved:
+        .organization-structure__subcol(data-aos="fade-up") 
+          .organization-structure__subcol-item Internal Labor Regulations, which establish the corporate labor regulations.
+          .organization-structure__subcol-item Bonus Award Regulations for Employees in Production and Commercial Personnel and Business Support Groups, which outline the bonus award principles and conditions.
+          .organization-structure__subcol-item Bonus Award Regulations for Employees in Management Group, which outline the bonus award principles and conditions.
+          .organization-structure__subcol-item  Onboarding Regulations, which define the uniform requirements and procedures for personnel onboarding management in the company Appendix No. 6 to the UTLC&nbsp;ERA Onboarding Regulations was supplemented.
+      section.recruitment-processes(id="recruitment-processes")(data-aos="fade-up") 
+        .recruitment-processes__title Employment Procedures
+        .recruitment-processes__text We recruit our personnel based on two fundamental principles stipulated in the Russian laws: objectivity and absence of any form of discrimination. All other criteria depend on the strategic and tactical priorities, the company’s HR management system and core business
+        .recruitment-processes__hr(data-aos="fade-up") 
+          .recruitment-processes__hr-title UTLC ERA’s HR processes consider the following:
+          .recruitment-processes__hr-row(data-aos="fade-up") 
+            .recruitment-processes__hr-col(data-aos="fade-up")
+              .recruitment-processes__hr-mark Candidate’s motivation, alignment with corporate culture and team
+              .recruitment-processes__hr-mark Expertise level
+              .recruitment-processes__hr-mark Assessment of the candidate’s hidden potential, strengths and career development prospects
+              .recruitment-processes__hr-mark Generally positive behavioral response
+              .recruitment-processes__hr-mark Adaptivity: how quickly the candidate can get the hang of things and start making connections with peers, suppliers, customers and managers
+              .recruitment-processes__hr-text.text A streamlined employment process includes stage-by-stage selection in order to assess candidates and find out whether they meet the job requirements.
+            .recruitment-processes__hr-col(data-aos="fade-up") 
+              .recruitment-processes__hr-subtitle The personnel recruitment, onboarding and development processes adopted at the company are regulated by:
+              .recruitment-processes__hr-mark Personnel Recruitment and Onboarding Regulations
+              .recruitment-processes__hr-mark Corporate Code of Conduct
+              .recruitment-processes__hr-mark Corporate Competencies Model
+              .recruitment-processes__hr-mark Personnel Training and Development Regulations
+              .recruitment-processes__hr-subtitle.second Selection stages:
+              .recruitment-processes__hr-num  
+                .hr-num__number 1
+                .hr-num__text Search and processing of CVs by reviewing all job applications, and search by keywords at HeadHunter
+              .recruitment-processes__hr-num  
+                .hr-num__number 2
+                .hr-num__text Telephone interview aimed at obtaining information about the candidate’s education and experience and learning more about their motivation behind searching for a new job
+              .recruitment-processes__hr-num  
+                .hr-num__number 3
+                .hr-num__text Personal interview aimed at assessing the candidate’s conformity to the job requirements, professional and personal qualities, motivation and alignment with the corporate culture
+              .recruitment-processes__hr-num  
+                .hr-num__number 4
+                .hr-num__text Contacting the previous employer for references, if still in doubt
+              .recruitment-processes__hr-num  
+                .hr-num__number 5
+                .hr-num__text Interview with the corporate security staff
+              .recruitment-processes__hr-num  
+                .hr-num__number 6
+                .hr-num__text Pre-employment medical examination
+  .container-content(data-aos="fade-up") 
+    section.corporate-culture(id="corporate-culture") 
+      h2.corporate-culture__title Corporate Culture
+      .corporate-culture__text Our Corporate Code of Conduct outlines the basic standards and principles of individual and collective behavior. The Code contains the company’s core values.
+      .corporate-culture__list(data-aos="fade-up") 
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +mountain-lider-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Leadership
+            .corporate-culture__item-text We strive for leadership in our business areas. Finding the best solutions is our key objective. We have an inherent “competitive spirit”: we are confident in our abilities and we can solve any task quickly and efficiently; we hit the target better than our competitors.
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +effective-svg 
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Effectiveness
+            .corporate-culture__item-text We strive for effective use of resources, competent management, prompt and accurate completion of the assigned tasks, high productivity and the best possible performance. We can mobilize and complete our tasks at a very short notice.
+        .corporate-culture__item
+          .corporate-culture__item-icon 
+            +professional-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Professionalism
+            .corporate-culture__item-text The relations inside the company are based on the personnel’s direct commitment to high performance, enabling us to become professionals in various disciplines. Making the best decision, or giving competent advice within their remit, is a matter of honor for each team member. All corporate decisions are based on competence and feasibility rather than someone’s ambitions or lobbying.
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +lamp-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Innovations
+            .corporate-culture__item-text Are relevant for any business aspect: marketing, financial operations, HR policy, IT, etc. We encourage our personnel’s initiatives, because we firmly believe that living ideas not only enhance work engagement, but also affect motivation and proactive attitude among the team, enabling the company to develop new attractive directions.
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +people-man-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Customer focus
+            .corporate-culture__item-text We understand customer focus as development of partner relations with the external and internal customers (employees), close attention to their interests and needs, quick and effective solutions to their problems.
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +scales-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title Fairness and integrity
+            .corporate-culture__item-text These principles underpin our relations with both external and internal customers. We give no empty promises and honor our commitments. We guarantee only what we are able to fulfill. So, we expect every customer, business partner and, primarily, every team member to comply with these principles.

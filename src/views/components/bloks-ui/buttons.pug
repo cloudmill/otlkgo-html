@@ -1,0 +1,8 @@
+mixin activity-buttons(src) 
+  .activity-buttons 
+    .activity-buttons__plus.activity-buttons__item 
+      +search-plus-svg
+    a.activity-buttons__download.activity-buttons__item(href=src download)
+      +header-download-svg
+
+// +activity-buttons("./assets/images/achievement-number-1.png")

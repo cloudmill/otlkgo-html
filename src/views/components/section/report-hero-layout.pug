@@ -19,6 +19,30 @@ mixin report-hero-3
           each item in ['Операционные результаты', 'Формирование парка: оптимизация', 'Клиентский портфель', 'Главные направления цифрового развития', 'Сохранить достигнутое. Финансовый обзор', 'С заботой о деловом климате']
             a.report-hero__list-item(href="#" target='blank')=item
         .report-hero__number.grom 3
+
+//page-3-EN
+
+mixin report-hero-3-EN 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row 
+      .report-hero__col
+        .report-hero__texts
+          .report-hero__name Alexey <br> Grom 
+          .report-hero__job-title General Director
+        .report-hero__portrait
+          +picture('grom.png')
+        .report-hero__portrait.mobile
+          +picture('grom-mobile.png')
+      .report-hero__col
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title.grom 2022 Performance
+        .report-hero__list
+          each item in ['Операционные результаты', 'Формирование парка: оптимизация', 'Клиентский портфель', 'Главные направления цифрового развития', 'Сохранить достигнутое. Финансовый обзор', 'С заботой о деловом климате']
+            a.report-hero__list-item(href="#" target='blank')=item
+        .report-hero__number.grom 3
 // ru-en-ch about
 
 mixin report-hero-about 
@@ -72,6 +96,30 @@ mixin report-hero-4
         .report-hero__col-background.mobile 
           +picture('report-hero2-mobile.png')
         .report-hero__title Устойчивое развитие
+        .report-hero__list
+          each item in ['Человеческий капитал', 'Корпоративная социальная ответственность', 'Охрана труда и пожарная безопасность', 'Экологичность как конкурентное преимущество', 'Люди прежде всего: благотворительность',  'Объединение людей и стран', 'Закупочная деятельность', 'Использование энергетических ресурсов']
+            a.report-hero__list-item(href="#" target='blank')=item
+        .report-hero__number 4
+
+//EN
+
+mixin report-hero-4-EN 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row 
+      .report-hero__col.custom-background
+        .report-hero__texts
+          .report-hero__name Larisa <br> Korshunova  
+          .report-hero__job-title.alt-200 Governmental Relations Director
+        .report-hero__portrait.hero-4 
+          +picture('report-hero-4-final.png')
+        .report-hero__portrait.mobile
+          +picture('report-hero-4-mobile.png')
+      .report-hero__col
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title Sustainable Development
         .report-hero__list
           each item in ['Человеческий капитал', 'Корпоративная социальная ответственность', 'Охрана труда и пожарная безопасность', 'Экологичность как конкурентное преимущество', 'Люди прежде всего: благотворительность',  'Объединение людей и стран', 'Закупочная деятельность', 'Использование энергетических ресурсов']
             a.report-hero__list-item(href="#" target='blank')=item

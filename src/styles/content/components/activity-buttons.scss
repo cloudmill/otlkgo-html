@@ -1,0 +1,31 @@
+.activity-buttons{
+  margin-top: 20px;
+  display: flex;
+  gap: 4px;
+
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    
+    border: 1px solid color(borders);
+    cursor: pointer;
+
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__plus{
+
+  }
+
+  &__download{
+
+  }
+}
