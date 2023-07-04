@@ -2,10 +2,28 @@
 @use "sass:map";
 @use "sass:string";
 
-@import "./helpers/*";
+@import './helpers/*';
 
-@import "./fonts.scss";
+@import './fonts.scss';
 
-@import "./layout/index.scss";
-@import "./libs/index.scss";
-@import "./content/index.scss";
+@import './layout/index.scss';
+@import './libs/index.scss';
+@import './content/index.scss';
+
+.fancybox {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__backdrop {
+    background: rgba(0, 0, 0, 0.181) !important;
+  }
+}
+
+.my-custom-container {
+  .fancybox__content {
+    background-color: white !important;
+    padding: 40px !important;
+  }
+}
