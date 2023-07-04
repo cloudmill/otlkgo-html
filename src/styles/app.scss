@@ -16,14 +16,13 @@
     justify-content: center;
     align-items: center;
   }
+
   &__backdrop {
     background: rgba(0, 0, 0, 0.181) !important;
   }
 }
 
-.my-custom-container {
-  .fancybox__content {
-    background-color: white !important;
-    padding: 40px !important;
-  }
+.fancybox__content {
+  background-color: white !important;
+  padding: 40px !important;
 }

@@ -6,7 +6,7 @@ function isElementInViewport(element) {
     rect.top >= 0 &&
     rect.left >= 0 &&
     rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
+    (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
@@ -15,7 +15,6 @@ let options = {
 };
 function startCountUpOnScroll() {
   const countUpElements = document.querySelectorAll('.countup-element');
-  console.log(countUpElements);
   countUpElements.forEach((element) => {
     if (
       !element.hasAttribute('data-countup-started') &&
