@@ -15,7 +15,7 @@ let options = {
 };
 function startCountUpOnScroll() {
   const countUpElements = document.querySelectorAll('.countup-element');
-  console.log(countUpElements);
+  // console.log(countUpElements);
   countUpElements.forEach((element) => {
     if (
       !element.hasAttribute('data-countup-started') &&

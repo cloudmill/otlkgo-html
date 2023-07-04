@@ -236,6 +236,7 @@ mixin corporate-responsibility
           .corporate-responsibility__it-text.text В рамках создания прозрачной и понятной для сотрудников системы возможностей развития внутри компании, на базе корпоративного портала в 2021 году разработано ИТ-решение «Маркетплейс возможностей». В 2022 году были реализованы два обучающих блока — «Продажи» и «Перевозки», в которых ведущие специалисты и эксперты по направлениям деятельности проводят видеоуроки и рассказывают про работу своих подразделений, а также делятся экспертизой. Сотрудники проходят обучение, выполняют задания, отвечают на вопросы и в конце обучения готовят проект, при успешной защите которого попадают в кадровый резерв.
 
 
+
 mixin corporate-responsibility-EN
   .container-content
     .corporate-responsibility(data-aos="fade-up")
@@ -334,7 +335,7 @@ mixin corporate-responsibility-EN
           .corporate-responsibility__health-text To ensure uninterrupted and effective team work, we have arranged remote access to the corporate web resources and allocated personal computers to our employees. The employees hired in 2022 start working remotely upon passing their probation period.
           .ge-card.light-green
               .ge-card__top
-                .ge-card__num.light(data-countup='78' data-countup-suffix='%')
+                .ge-card__num.light.countup-element(data-countup='78' data-countup-suffix='%')
               .ge-card__bot
                 .ge-card__text-grey Employees can work remotely
           .corporate-responsibility__health-text To ensure uninterrupted and effective team work, we have arranged remote access to the corporate web resources and allocated personal computers to our employees. The employees hired in 2022 start working remotely upon passing their probation period.
@@ -350,33 +351,32 @@ mixin corporate-responsibility-EN
         .personal-subsection__col.left(data-aos="fade-up") 
           .ge-card.light-green
               .ge-card__top.gap-8
-                .ge-card__num.light(data-countup='8')
+                .ge-card__num.light.countup-element(data-countup='8')
                 .ge-card__text.number-animate-8.number-animate  employees
               .ge-card__bot
                 .ge-card__text-grey.short got health resort treatment in 2022
           .personal-subsection__text.custom-top.text We also care about our personnel’s children. A new social guarantee is available since May 2022, namely reimbursement (compensation) of the child’s recreation and health improvement.
         .personal-subsection__col.right(data-aos="fade-up")
           .personal-subsection__subtitle The plan includes:
-          each item in ['Онлайн-прием терапевта', 'Онлайн-запись к врачам узкой специализации через приложение', 'Бесплатную психологическую помощь для сотрудников и их семей', 'Круглосуточный доступ к материалам программ, направленных на формирование картины здоровья, благополучия коллектива, повышение приверженности здоровому образу жизни', 'Возможность приобрести медицинские полисы ДМС для близких родственников по корпоративным ценам', 'Оформление справок для санаторно-курортного лечения', 'Полис для выезда за пределы Российской Федерации', 'Реабилитационно-восстановительное лечение для застрахованных сотрудников, перенесших вирусную пневмонию, в том числе COVID-19', 'Лечение впервые диагностированных критических заболеваний',]
-            .recruitment-processes__hr-mark Online appointment with a general practitioner
-            .recruitment-processes__hr-mark Online booking of appointments with specialist doctors via an application
-            .recruitment-processes__hr-mark Free psychological aid for employees and their families
-            .recruitment-processes__hr-mark 24/7 access to the programs aimed at keeping health records, maintaining team welfare and promoting commitment to a healthy lifestyle
-            .recruitment-processes__hr-mark Possibility to obtain voluntary health insurance policies for close family members at corporate prices
-            .recruitment-processes__hr-mark Issue of medical certificates for health resort treatment
-            .recruitment-processes__hr-mark Travel insurance policy for trips outside the Russian Federation
-            .recruitment-processes__hr-mark Rehabilitation treatment for insured employees recovering from viral pneumonia, including COVID-19
-            .recruitment-processes__hr-mark Treatment of newly diagnosed critical diseases
+          .recruitment-processes__hr-mark Online appointment with a general practitioner
+          .recruitment-processes__hr-mark Online booking of appointments with specialist doctors via an application
+          .recruitment-processes__hr-mark Free psychological aid for employees and their families
+          .recruitment-processes__hr-mark 24/7 access to the programs aimed at keeping health records, maintaining team welfare and promoting commitment to a healthy lifestyle
+          .recruitment-processes__hr-mark Possibility to obtain voluntary health insurance policies for close family members at corporate prices
+          .recruitment-processes__hr-mark Issue of medical certificates for health resort treatment
+          .recruitment-processes__hr-mark Travel insurance policy for trips outside the Russian Federation
+          .recruitment-processes__hr-mark Rehabilitation treatment for insured employees recovering from viral pneumonia, including COVID-19
+          .recruitment-processes__hr-mark Treatment of newly diagnosed critical diseases
           .personal-subsection__subrow 
             .ge-card.light-green
               .ge-card__top.gap-8
-                .ge-card__num.light(data-countup='60000')
-                .ge-card__text.number-animate-60000.number-animate rubles per year
+                .ge-card__num.light.countup-element(data-countup='60000')
+                .ge-card__text.number-animate-60000.number-animate rubles<br> per year
               .ge-card__bot
                 .ge-card__text-grey reimbursement of costs for children’s recreation or health improvement 
             .ge-card.light-green
               .ge-card__top.gap-8
-                .ge-card__num.light(data-countup='3') 
+                .ge-card__num.light.countup-element(data-countup='3') 
                 .ge-card__text.number-animate-3.number-animate  employees
               .ge-card__bot
                 .ge-card__text-grey took advantage of this opportunity in 2022
@@ -390,7 +390,7 @@ mixin corporate-responsibility-EN
         .material-help__col(data-aos="fade-up") 
           .ge-card.green
             .ge-card__top.gap-8
-              .ge-card__num.green(data-countup='21') 
+              .ge-card__num.green.countup-element(data-countup='21') 
               .ge-card__text.number-animate-21.number-animate  employees
             .ge-card__bot
               .ge-card__text-grey received financial aid in 2022
@@ -398,7 +398,7 @@ mixin corporate-responsibility-EN
         .material-help__col(data-aos="fade-up")
           .ge-card.green
             .ge-card__top.gap-8
-              .ge-card__num.green(data-countup='8')
+              .ge-card__num.green.countup-element(data-countup='8')
               .ge-card__text.number-animate-8.number-animate employees
             .ge-card__bot
               .ge-card__text-grey received various awards
@@ -413,70 +413,74 @@ mixin corporate-responsibility-EN
           .education-support__subtitle UTLC&nbsp;ERA is committed to raising the education level and HR potential in the transport industry.
           .ge-card.green
             .ge-card__top.gap-8
-              .ge-card__num.green(data-countup='7')
+              .ge-card__num.green.countup-element(data-countup='7')
               .ge-card__text.number-animate-7.number-animate students
             .ge-card__bot
               .ge-card__text-grey  Underwent on-the-job training in the company in 2022
         .education-support__col(data-aos="fade-up") 
           .education-support__text.top.text The company supports transport-oriented educational institutions, arranges joint programs, invites students and young specialists for on-the-job training, and is generally open to any other education development forms.
-          .education-support__text.text В течение 2022 года сотрудники ОТЛК&nbsp;ЕРА дважды принимали участие в оффлайн-мероприятии «День карьеры» в Российском университете транспорта (МИИТ). Встречи носили интерактивный характер: студентам рассказывали о компании и возможности пройти практику, проводили карьерные мини-консультации и викторины на железнодорожную тематику. 
+          .education-support__text.text During 2022, employees of UTLC ERA participated twice in an offline event called "Career Day" at the Russian University of Transport (MIIT). The meetings were interactive: with presentations about the company and opportunities for internships, as well as career mini-consultations and quizzes on railway-related topics being conducted for the students.
   .container-content 
     .education-development(id="education-development")(data-aos="fade-up") 
-      .education-development__title Обучение и развитие
+      .education-development__title Training and Development
       .education-development__row(data-aos="fade-up") 
         .education-development__col 
-          .education-development__subtitle Наши сотрудники проходят обучение и повышают свою квалификацию.
+          .education-development__subtitle Our employees undergo training and advance training.
         .education-development__col 
-          .education-development__text.text В 2022 году обучение (краткосрочные курсы, вебинары, профессиональные конференции) прошли 66 человек, что ниже уровня 2021 года на 7%. Затраты на обучение персонала были сокращены в целях поддержания ликвидности Общества. 
+          .education-development__text.text 66 people passed training in 2022 (short-term courses, webinars, professional conferences), which is 7% below the 2021 level. The training costs were reduced in order to maintain the company’s liquidity. 
     .education-development__personal(data-aos="fade-up") 
       .education-development__personal-row 
         .education-development__personal-col
-          .education-development__personal-title Обучение и повышение квалификации персонала (человек)
+          .education-development__personal-title Training and Professional Development (People)
           .education-development__personal-cubes 
             .education-development__personal-cube 
               .education-development__personal-rect.green 
-              .education-development__personal-text Краткосрочные курсы (семинары)
+              .education-development__personal-text Short courses (seminars)
             .education-development__personal-cube 
               .education-development__personal-rect.light-green 
-              .education-development__personal-text Повышение квалификации
+              .education-development__personal-text Professional development
             .education-development__personal-cube 
               .education-development__personal-rect.grey 
-              .education-development__personal-text Конференции
+              .education-development__personal-text Conferences
         .education-development__personal-col 
           .education-development__personal-grafic 
             +picture('education-development__personal.png')
     .education-development__subsection(data-aos="fade-up") 
       .education-development__subsection-row.top(data-aos="fade-up") 
         .education-development__subsection-col 
-          .education-development__subsection-text.custom-1.text В 2022 году сотрудники компании продолжали заниматься изучением английского и китайского языков.
-          .education-development__subsection-text.text Часть сотрудников приняли участие в подготовке к финалу корпоративного чемпионата профессионального мастерства по методике World Skills — RZDSkills 2022 в качестве экспертов по компетенциям «Управление логистикой на железнодорожном транспорте», «Продажи транспортно-логистических услуг» и «Сопровождение клиентов». Проведение чемпионата сформировало основу единого профессионального сообщества и новые подходы к развитию производственной культуры на основе международных стандартов World Skills.
+          .education-development__subsection-text.custom-1.textIn 2022, our employees continued their studies of the English and Chinese languages.
+          .education-development__subsection-text.text Some employees took part in the preparation for the finals of World Skills – RZDSkills 2022 as experts on such competencies as Railway Logistics Management, Sale of Transport and Logistics Services and Customer Support. The competition established the basis of the integrated professional community and the new approaches to workplace culture based on the World Skills international standards.
         .education-development__subsection-col 
-          .education-development__subsection-text.text Ежегодно компания выборочно проводит оценку по утвержденной модели корпоративных компетенций. В 2022 году оценку прошли 11 человек, и по итогам всем участникам выданы рекомендации и разработаны индивидуальные планы развития на год. 
+          .education-development__subsection-text.text The company makes an annual sample assessment in accordance with the approved model of corporate competencies. In 2022, 11 people were assessed, with every participant obtaining recommendations and annual individual development plans.
       .education-development__subsection-row(data-aos="fade-up")
         .education-development__subsection-col
-          .education-development__subsection-subtitle Для повышения профессионального уровня и личностного роста сотрудников в течение 2022 года компания предоставляла доступ к электронной библиотеке издательства.
+          .education-development__subsection-subtitle To enhance the professional level and personal growth of employees, throughout 2022, the company provided access to an electronic library from the publishing house.
         .education-development__subsection-col
           .ge-card.green
             .ge-card__top
-              .ge-card__num.green(data-countup='1200' data-countup-prefix='>')
+              .ge-card__num.green.countup-element(data-countup='1200' data-countup-prefix='>')
             .ge-card__bot
-              .ge-card__text-grey.long Книг скачали сотрудники бесплатно (эквивалентно  3010 академ.часам обучения)
-          .education-development__subsection-text.custom-3.text В офисе компании оборудована библиотека, в которой представлены профессиональные издания, книги по бизнесу и саморазвитию. Сотрудники организовали обмен детской и художественной литературой. Коллекция книг пополняется ежемесячно.
+              .ge-card__text-grey.long Books were downloaded by employees free of charge (equivalent to 3,010 classroom hours)
+          .education-development__subsection-text.custom-3.text There is a library available in the company’s office, which contains professional publications, business and self-development books. The employees have arranged an exchange of children’s books and fiction. The collection of books is replenished every month.
     section.corporate-responsibility__trainings(id="education-responsibility__trainings")(data-aos="fade-up") 
-      h2.corporate-responsibility__trainings-title Тренинги и конференции
+      h2.corporate-responsibility__trainings-title Trainings and Conferences
       .corporate-responsibility__trainings-row 
         .corporate-responsibility__trainings-col 
-          .corporate-responsibility__trainings-subtitle Процессы подбора, адаптации и развития персонала в компании регламентируют
+          .corporate-responsibility__trainings-subtitle The processes of selection, adaptation and development of personnel in the company are regulated by
           each item in ['Оффлайн-тренинг «В одной связке» – для повышения работоспособности сотрудников, сплочения и улучшения коммуникаций внутри коллектива', 'Онлайн-игра «Активация» – для поднятия осознанности сотрудников и проработки проблем, связанных с онлайн коммуникацией', 'Бизнес-тренинг «Развитие коммуникаций и навыков взаимодействия в команде» – для выстраивания межличностных связей и более эффективного исполнения задач компании', 'Тренинг на тему «Управление рисками» – для внедрения системы управления рисками в операционную деятельность компании', 'Серия тренингов по управленческим компетенциям для начинающих и опытных руководителей']
-            .recruitment-processes__hr-mark=item
+            .recruitment-processes__hr-mark Tied Together – an offline training to promote personnel productivity, team-building and team communications.
+            .recruitment-processes__hr-mark Activation – an online game to raise awareness and address the online communication issues.
+            .recruitment-processes__hr-mark Development of Team Communication and Interaction Skills – a business training to build interpersonal communications and to improve performance according to the company’s tasks.
+            .recruitment-processes__hr-mark Risk Management – a training course to integrate the risk management system in the company’s operations.
+            .recruitment-processes__hr-mark A series of trainings on management competencies for new and experienced managers.
         .corporate-responsibility__trainings-col 
-          .corporate-responsibility__trainings-text.text В нашей компании есть традиция — каждый год награждать молодых специалистов «Билетом в будущее», который можно использовать для прохождения кросс-функциональных стажировок в компаниях-партнерах или участия в тематических конференциях. В рамках этой программы 3 молодых специалиста в 2022 году приняли участие в международном контейнерном форуме «ЕСЭ-2022: контейнерная логистика в новых реалиях» (г. Сочи).
-          .corporate-responsibility__trainings-text.text Кроме того, 6 сотрудников приняли участие в 4-ой Конференции транспортно-логистического бизнес-блока холдинга ОАО «РЖД» (г. Нижний Новгород). В рамках одного из потоков — молодежного — эксперты и модераторы проводили оценку участников. По результатам был сформирован рейтинг ТОП-30 молодых и перспективных специалистов, куда вошли 2 наших сотрудника. А в HR-потоке директор по организационному развитию компании представил доклад на тему «Система мотивации для блока продаж».
-          .corporate-responsibility__trainings-text.custom-1.text Директор по развитию бизнеса и анализу рисков компании принял участие в бизнес-симуляции транспортно-логистического бизнес-блока холдинга ОАО«РЖД» «Единство синергии и эффективности», и команда под его руководством одержала победу.
+          .corporate-responsibility__trainings-text.text Our company traditionally awards a “Ticket to the Future” to its young specialists on an annual basis. The awarded young specialists can use this ticket to participate in cross-functional on-the-job training and discipline-specific conferences. Under this program, 3 young specialists took part in ESE-2022: Container Logistics in New Realities, an international container forum in Sochi in 2022.
+          .corporate-responsibility__trainings-text.text 6 employees participated in the 4th Conference of JSCo "RZD" Holding Transport and Logistics Business Unit in Nizhny Novgorod. Within the section dedicated to young specialists, experts and facilitators assessed the participants. Two of our employees made the TOP 30 young and promising specialists based on this assessment. In the HR section, our Organizational Development Director made a presentation on the Sales Unit Incentive System.
+          .corporate-responsibility__trainings-text.custom-1.text The Business Development and Risk Analysis Director participated in the business simulation of JSCo "RZD" Transport and Logistic Business Unit called “Synergy and Effectiveness United”, and the team led by him took home the win.
     section.corporate-responsibility__it(id="education-it")(data-aos="fade-up")  
-      h2.corporate-responsibility__it-title ИТ-ресурсы для сотрудников
+      h2.corporate-responsibility__it-title IT Resources for Employees
       .corporate-responsibility__it-row 
-        .corporate-responsibility__it-subtitle Запущенный в 2020 году корпоративный портал сегодня пользуется популярностью среди коллег и служит эффективной площадкой для информирования персонала об изменениях в жизни компании. 
+        .corporate-responsibility__it-subtitle Launched in 2020, the corporate portal is now popular among our colleagues and serves as an effective platform for keeping the team updated on any changes in the corporate life.
         .corporate-responsibility__it-texts 
-          .corporate-responsibility__it-text.text Ресурс позволяет узнавать актуальные новости отрасли, делиться идеями, получать комментарии и поддержку коллег. Также на портале размещаются полезные статьи по бизнесу и саморазвитию.
-          .corporate-responsibility__it-text.text В рамках создания прозрачной и понятной для сотрудников системы возможностей развития внутри компании, на базе корпоративного портала в 2021 году разработано ИТ-решение «Маркетплейс возможностей». В 2022 году были реализованы два обучающих блока — «Продажи» и «Перевозки», в которых ведущие специалисты и эксперты по направлениям деятельности проводят видеоуроки и рассказывают про работу своих подразделений, а также делятся экспертизой. Сотрудники проходят обучение, выполняют задания, отвечают на вопросы и в конце обучения готовят проект, при успешной защите которого попадают в кадровый резерв.
+          .corporate-responsibility__it-text.text The resource helps learn relevant industry news, share ideas, receive comments and support from the colleagues. Useful business and self-development articles are also uploaded to the portal.
+          .corporate-responsibility__it-text.text To create a transparent and clear system of in-house development opportunities, the Opportunity Marketplace IT solution was implemented in 2021 on the basis of the corporate portal. In 2022, two training packages were developed for Sales and Transportation, where leading specialists and subject-matter experts hold video lessons, telling about the operation of their units and sharing expertise. The employees undergo training, complete assignments, answer questions and ultimately develop a project, which, if successfully defended, will put them in the talent pool.
