@@ -1,6 +1,6 @@
 mixin activity-buttons(src) 
-  .activity-buttons
-    .activity-buttons__plus.
+  .activity-buttons&attributes(attributes)
+    .activity-buttons__plus
     a.activity-buttons__item.fancy-button(data-fancy=`assets/images/${src}`)
       +search-plus-svg
     a.activity-buttons__download.activity-buttons__item(href=`assets/images/${src}` download)
@@ -15,7 +15,7 @@ mixin print-activity-buttons
         .print-activity__item-svg 
           +printer-svg
         p.print-activity__item-text Распечатать
-      a.print-activity__item.print-activity__email(href="") 
+      button.print-activity__item.print-activity__email( data-modal) 
         .print-activity__item-svg
           +sms-tracking-svg
         p.print-activity__item-text Отправить по e-mail

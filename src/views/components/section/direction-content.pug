@@ -20,8 +20,11 @@ mixin direction-content
           p.direction-site__text.text_big Мы подготовили к запуску обновленный сайт компании с новым полнофункциональным личным кабинетом для клиентов ОТЛК&nbsp;ЕРА, который включает расчет стоимости перевозок, подачу и учет заявок на перевозки, слежение и контроль за процессом перевозки, взаиморасчеты.
         .direction-site__img.desktop-m
           +picture('direction-site.jpg')
+          +activity-buttons('direction-site.jpg') 
         .direction-site__img.mobile-m
           +picture('direction-site-mobile.jpg')
+          +activity-buttons('direction-site-mobile.jpg') 
+
   section(data-aos="fade-up").direction-documents.mt-section(id="direction-documents")
     .container-content 
       .direction-documents__inner 

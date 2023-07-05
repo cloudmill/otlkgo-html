@@ -54,6 +54,20 @@
   }
 }
 
+.flex-desktop {
+  display: flex;
+
+  @media #{media('<',m)} {
+    display: none !important;
+  }
+}
+.flex-m {
+  display: none !important;
+
+  @media #{media('<',m)} {
+    display: flex !important;
+  }
+}
 .flex-t {
   display: none !important;
 
@@ -87,7 +101,6 @@
     display: block;
   }
 }
-
 
 .sup-description {
   font-size: 12px;
@@ -131,11 +144,11 @@
 
 //colors
 .green-bg {
-  background: #045C25;
+  background: #045c25;
 }
 
 .green-light-bg {
-  background: #69DA91;
+  background: #69da91;
 }
 
 .w-400 {
@@ -160,14 +173,12 @@
   position: relative;
   width: 147px;
   flex-shrink: 0;
-
 }
 
 .w-suffix-2_small {
   position: relative;
   width: 125px;
   flex-shrink: 0;
-
 }
 
 .w-suffix-2_big {
@@ -225,9 +236,8 @@
 }
 
 .nowrap {
-  white-space: nowrap
+  white-space: nowrap;
 }
-
 
 .fz-10 {
   font-size: 10px;

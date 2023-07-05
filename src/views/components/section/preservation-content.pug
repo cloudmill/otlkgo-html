@@ -15,8 +15,10 @@ mixin preservation-content
         h6.preservation-dynamic__title Динамика основных финансовых показателей за 2020–2022 годы, млн руб
         .preservation-dynamic__img.desktop-m
           +picture('preservation-dynamic.png')
+          +activity-buttons('preservation-dynamic.png') 
         .preservation-dynamic__img.mobile-m
           +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
+          +activity-buttons('preservation-dynamic-mobile.png') 
   section(data-aos="fade-up").block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
     .container-content 
       .block-diagram__inner 

@@ -1,9 +1,11 @@
-.activity-buttons{
+.activity-buttons {
   margin-top: 20px;
   display: flex;
   gap: 4px;
-
-  &__item{
+  @media print {
+    display: none !important;
+  }
+  &__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,63 +13,57 @@
     width: 40px;
     height: 40px;
 
-    
     border: 1px solid color(borders);
     cursor: pointer;
 
-    svg{
+    svg {
       width: 20px;
       height: 20px;
     }
   }
 
-  &__plus{
-
+  &__plus {
   }
 
-  &__download{
-
+  &__download {
   }
 }
 
-.print-activity{
+.print-activity {
   margin-top: 100px;
   display: flex;
   align-items: flex-start;
-  gap: 40px; 
+  gap: 40px;
 
   @media #{media("<", m)} {
     margin-top: 40px;
   }
-  &__item{
+  &__item {
     display: flex;
     align-items: center;
-    gap: 12px; 
+    gap: 12px;
 
     cursor: pointer;
-    
-    &-svg{
+
+    &-svg {
       display: flex;
-      align-items:center;
+      align-items: center;
       justify-content: center;
 
-      svg{
+      svg {
         width: 24px;
-        height: 24px; 
+        height: 24px;
       }
     }
 
-    &-text{
-      color:  #2A2E2B;
+    &-text {
+      color: #2a2e2b;
       font-size: 14px;
       font-family: Manrope;
       font-style: normal;
       font-weight: 600;
       line-height: 100%;
-      text-transform: uppercase; 
+      text-transform: uppercase;
     }
   }
-
-
 }
-

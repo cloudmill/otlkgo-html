@@ -30,6 +30,8 @@ mixin ecology-content
             p.ecology-statistics__text.text На основании параметров маршрута Брест — Достык определяется объем выбросов СО<sup class='fz-10'>2</sup> на 1 ДФЭ — GПГДФЭ, который умножается на общий объем перевозок в сервисах ОТЛК&nbsp;ЕРА. <br> Эта величина рассчитывается по формуле:
           .ecology-statistics__img 
             +picture('ecology-statistics.png')
+            +activity-buttons('ecology-statistics.png') 
+
           .ecology-statistics__formulas
             p.ecology-statistics__formula
               | Р 
@@ -122,6 +124,8 @@ mixin ecology-content
           .col 
             .ecology-CO__img 
               +picture('ecology-CO-1.png').ecology-CO__img
+              +activity-buttons('ecology-CO-1.png') 
+
   section(data-aos="fade-up").ecology-CO2
     .container-content
       .ecology-CO2__inner
@@ -150,6 +154,8 @@ mixin ecology-content
             .col 
               .ecology-CO2__img 
                 +picture('ecology-CO-2.png').ecology-CO2__img
+                +activity-buttons('ecology-CO-2.png') 
+                
         .ecology-CO2__bottom.mt-section
           h6.ecology-CO2__subtitle  Межправительственный совет ЕАЭС в августе 2021 года утвердил план первоочередных мероприятий по цифровизации грузовых железнодорожных перевозок.
           .row 

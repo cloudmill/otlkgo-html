@@ -15,9 +15,11 @@ import './scripts/parallax-containers';
 import './scripts/print-button';
 import './scripts/fancyapps';
 import './scripts/history';
-
+import './scripts/form-components';
 import { fancybox } from './scripts/fancybox';
+import { modal } from './scripts/modal';
 
 document.addEventListener('DOMContentLoaded', () => {
   fancybox();
+  modal();
 });
