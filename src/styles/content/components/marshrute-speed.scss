@@ -164,6 +164,10 @@
           }
         }
       }
+
+      @media print {
+        height: 600px;
+      }
     }
   }
 
@@ -302,5 +306,9 @@
 
   &__table{
     display: flex;
+
+    @media print {
+      height: 500px;
+    }
   }
 }
