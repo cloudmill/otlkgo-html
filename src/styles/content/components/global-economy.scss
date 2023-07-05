@@ -17,7 +17,9 @@
       width: rem(335px);
     }
 
-    @media (min-width: 768px) and (max-width: 1280px) {}
+    @media print {
+      width: 100%;
+    }
   }
 
   &-subtitle {
@@ -47,6 +49,9 @@
       @media (min-width: 768px) and (max-width: 1025px) {
         width: 100%;
       }
+      @media print {
+        width: 100%;
+      }
     }
   }
 
@@ -62,12 +67,21 @@
       @media #{media('<',m)} {
         margin-bottom: rem(8px);
       }
+      @media print {
+        width: 100%;
+      }
     }
 
     @media #{media('<',m)} {
       font-size: rem(12px);
       line-height: 160%;
     }
+
+    @media print {
+      font-size: 12px;
+    }
+
+    
   }
 
   &-subrow {
@@ -88,6 +102,10 @@
     padding-top: 12px;
 
     @media #{media('<',m)} {
+      width: 100%;
+    }
+
+    @media print {
       width: 100%;
     }
 
@@ -150,6 +168,9 @@
       padding: 0px;
       display: block;
     }
+    @media print {
+      width: 100%;
+    }
 
     &__col {
       max-width: 460px;
@@ -162,9 +183,22 @@
         padding: 0px;
         display: block;
 
+        &:nth-child(1) {
+
+          @media print {
+            page-break-after: always;
+            
+          }
+        }
+
         &:nth-child(2) {
           margin-top: 20px;
         }
+      }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
       }
 
       &-title {
@@ -206,11 +240,17 @@
 
           &.second {
             display: flex;
+
+            
           }
         }
 
         &.chinese {
           margin-top: 40px;
+
+          @media print {
+            page-break-after: always;
+          }
         }
 
         &.quarter {
@@ -219,6 +259,7 @@
 
         &.forecast {
           margin-top: 19px;
+
         }
 
         &.shares {
@@ -316,6 +357,11 @@
         gap: rem(20px);
         width: rem(335px);
       }
+      @media print {
+        width: 100%;
+        max-width: 100%;
+      }
+      
     }
 
     &-col {
@@ -330,6 +376,10 @@
           width: 100%;
           width: rem(335px);
         }
+        @media print {
+          width: 100%;
+          max-width: 100%;
+        }
       }
     }
 
@@ -343,6 +393,10 @@
         width: 100%;
         font-size: rem(14px);
         line-height: 160%;
+      }
+      @media print {
+        width: 100%;
+        font-size: 14px;
       }
     }
 
@@ -365,6 +419,11 @@
 
       @media #{media('<',m)} {
         width: 100%;
+      }
+
+      @media print {
+        width: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -394,11 +453,20 @@
         grid-template-columns: repeat(1, 1fr);
         gap: rem(40px);
       }
+
+      @media print {
+        page-break-after: always;
+      }
     }
 
     &-col {
       &:nth-child(2) {
         max-width: 560px;
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
 
@@ -419,6 +487,10 @@
         margin-left: -20px;
         overflow-x: scroll;
       }
+
+      @media print {
+        width: 100%;
+      }
     }
 
     &-vector {
@@ -437,6 +509,11 @@
 
         width: 512px;
         height: 170px;
+      }
+
+      @media print {
+        width: 100%;
+        height: auto;
       }
       &.desktop{
         display: flex;
@@ -458,6 +535,10 @@
         font-size: rem(12px);
         line-height: 160%;
       }
+
+      @media print {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -472,8 +553,21 @@
     width: calc(100% - 20px);
   }
 
+  @media print {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @media print {
+    width: 100%;
+  }
+
   &.large {
     max-width: 560px;
+    @media print {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 
   &.green {
@@ -554,6 +648,10 @@
     @media (max-width: 1025px) {
       font-size: 16px;
     }
+
+    @media print {
+      font-size: 12px;
+    }
     &.top{
       color: color(green);
     }
@@ -575,16 +673,35 @@
         line-height: 160%;
       }
 
+      @media print {
+        max-width: 100%;
+        width: 100%;
+      }
+
       &.large {
         max-width: 560px;
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
+        }
       }
 
       &.large-360 {
         max-width: 360px;
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
+        }
       }
 
       &.custom-cuchurina{
         @media #{media('<',m)} {
+          width: 100%;
+        }
+
+        @media print {
           width: 100%;
         }
       }
@@ -610,6 +727,8 @@
     margin-top: rem(40px);
     padding-top: rem(8px);
   }
+
+  
   picture{
     height: auto;
   }
@@ -665,10 +784,21 @@
       @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 100%;
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        page-break-after: always;
+      }
+      
     }
 
     @media #{media('<',m)} {
       width: rem(335px);
+    }
+
+    @media print {
+      width: 100%;
     }
   }
 
@@ -705,6 +835,11 @@
         line-height: 150%;
       }
 
+      @media print {
+        width: 100%;
+        font-size: 12px;
+      }
+
       
     }
   }
@@ -724,6 +859,11 @@
       width: 100%;
       font-size: rem(12px);
       line-height: 160%;
+    }
+
+    @media print {
+      width: 100%;
+      font-size: 12px;
     }
 
     &.line {
@@ -761,8 +901,16 @@
       width: 100%;
     }
 
+    @media print {
+      width: 80%;
+    }
+
     &-left{
       display: flex;
+
+      @media print {
+        width: 80%;
+      }
     }
   }
 }
@@ -806,6 +954,11 @@
       grid-template-columns: repeat(1, 1fr);
       gap: rem(20px);
     }
+
+    @media print {
+      width: 100%;
+      page-break-after: always;
+    }
   }
 
   &__col {
@@ -819,6 +972,10 @@
       @media #{media("<", m)} {
         width: 100%;
       }
+
+      @media print {
+        width: 100%;
+      }
     }
 
     &:nth-child(2) {
@@ -829,6 +986,10 @@
       
 
       @media #{media("<", m)} {
+        width: 100%;
+      }
+
+      @media print {
         width: 100%;
       }
     }
@@ -852,6 +1013,11 @@
       font-size: rem(12px);
       line-height: 160%;
     }
+
+    @media print {
+      width: 100%;
+      font-size: 12px;
+    }
   }
 
   &__subtitle {
@@ -864,6 +1030,11 @@
       @media #{media("<", m)} {
         font-size: rem(14px);
         line-height: 150%;
+      }
+
+      @media print {
+        width: 100%;
+        font-size: 14px;
       }
     }
   }
@@ -915,6 +1086,11 @@
         font-size: rem(10px);
         line-height: 150%;
       }
+
+      @media print {
+        width: 100%;
+        font-size: 10px;
+      }
     }
   }
 
@@ -929,6 +1105,10 @@
       overflow-x: scroll;
     }
 
+    @media print {
+      width: 100%;
+    }
+
     &-container {
       @include scrollbar-hidden();
 
@@ -938,6 +1118,10 @@
 
         width: calc(100% + 40px);
         overflow-x: scroll;
+      }
+
+      @media print {
+        width: 100%;
       }
     }
   }
@@ -970,6 +1154,10 @@
     @media #{media("<", m)} {
       margin-bottom: rem(20px);
     }
+
+    @media print {
+      width: 100%;
+    }
   }
 
   &__subtitle {
@@ -979,6 +1167,10 @@
     @media #{media("<", m)} {
       width: 100%;
       margin-bottom: rem(8px);
+    }
+
+    @media print {
+      width: 100%;
     }
 
     &-small {
@@ -993,6 +1185,10 @@
         font-size: rem(12px);
         line-height: 150%;
       }
+
+      @media print {
+        width: 100%;
+      }
     }
   }
 
@@ -1002,10 +1198,18 @@
     @media (min-width: 768px) and (max-width: 1024px) {
       flex-direction: column;
     }
+
+    @media print {
+      width: 100%;
+    }
     &.top {
       justify-content: space-between;
       @media (min-width: 768px) and (max-width: 1024px) {
         flex-direction: column;
+      }
+
+      @media print {
+        width: 100%;
       }
     }
 
@@ -1013,6 +1217,10 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: rem(20px);
+    }
+
+    @media print {
+      width: 100%;
     }
 
     &.bot {
@@ -1025,6 +1233,10 @@
 
       @media #{media("<", m)} {
         margin-top: rem(20px);
+      }
+
+      @media print {
+        width: 100%;
       }
     }
   }
@@ -1040,6 +1252,14 @@
       @media #{media("<", m)} {
         width: 100%;
       }
+
+      &.print{
+        @media print {
+          width: 100%;
+          page-break-after: always;
+        }
+
+      }
     }
 
     &:nth-child(2) {
@@ -1052,6 +1272,11 @@
       @media #{media("<", m)} {
         width: 100%;
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     &.col {
@@ -1060,6 +1285,10 @@
         width: 100%;
       }
       @media #{media("<", m)} {
+        width: 100%;
+      }
+
+      @media print {
         width: 100%;
       }
     }
@@ -1074,6 +1303,11 @@
     @media #{media("<", m)} {
       font-size: rem(12px);
       line-height: 160%;
+    }
+
+    @media print {
+      width: 100%;
+      font-size: 12px;
     }
   }
 
@@ -1113,6 +1347,10 @@
         width: calc(100% + 40px);
         overflow-x: scroll;
       }
+
+      @media print {
+        width: 100%;
+      }
     }
 
     &-vector {
@@ -1121,6 +1359,10 @@
 
       @media #{media("<", m)} {
         width: rem(677px);
+      }
+
+      @media print {
+        width: 100%;
       }
     }
   }
@@ -1141,6 +1383,11 @@
       gap: rem(20px);
     }
 
+    @media print {
+      width: 100%;
+      page-break-after: always;
+    }
+
     &-col {
       &:nth-child(1) {
         width: 460px;
@@ -1148,6 +1395,10 @@
           width: 100%;
         }
         @media #{media("<", m)} {
+          width: 100%;
+        }
+
+        @media print {
           width: 100%;
         }
       }
@@ -1161,6 +1412,10 @@
         }
         @media #{media("<", m)} {
           padding-top: rem(5px);
+          width: 100%;
+        }
+
+        @media print {
           width: 100%;
         }
       }
@@ -1185,6 +1440,11 @@
         font-size: rem(12px);
         line-height: 160%;
       }
+
+      @media print {
+        width: 100%;
+        font-size: 12px;
+      }
     }
 
     &-subtitle {
@@ -1199,6 +1459,11 @@
         margin-bottom: rem(16px);
         font-size: rem(12px);
         line-height: 150%;
+      }
+
+      @media print {
+        width: 100%;
+        font-size: 12px;
       }
     }
   }
@@ -1215,11 +1480,19 @@
       gap: rem(20px);
     }
 
+    @media print {
+      width: 100%;
+    }
+
     &-col {
       &:nth-child(1) {
         width: 556px;
 
         @media #{media("<", m)} {
+          width: 100%;
+        }
+
+        @media print {
           width: 100%;
         }
       }
@@ -1228,6 +1501,10 @@
         width: 560px;
 
         @media #{media("<", m)} {
+          width: 100%;
+        }
+
+        @media print {
           width: 100%;
         }
       }
@@ -1251,6 +1528,11 @@
         font-size: rem(12px);
         line-height: 160%;
       }
+
+      @media print {
+        width: 100%;
+        font-size: 12px;
+      }
     }
   }
 
@@ -1270,6 +1552,11 @@
       gap: rem(20px);
     }
 
+    @media print {
+      width: 100%;
+      page-break-after: always;
+    }
+
     &-col {
       padding-top: 12px;
       border-top: 2px solid color(borders);
@@ -1285,6 +1572,11 @@
           padding-top: rem(5px);
           width: 100%;
         }
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
+        }
       }
 
       &:nth-child(2) {
@@ -1296,6 +1588,11 @@
 
         @media #{media("<", m)} {
           padding-top: rem(5px);
+          width: 100%;
+        }
+
+        @media print {
+          max-width: 100%;
           width: 100%;
         }
       }
@@ -1313,6 +1610,12 @@
         font-size: rem(12px);
         line-height: 150%;
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        font-size: 12px;
+      }
     }
 
     &-righttitle {
@@ -1327,6 +1630,12 @@
         font-size: rem(12px);
         line-height: 150%;
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        font-size: 12px;
+      }
     }
 
     &-vector {
@@ -1337,6 +1646,11 @@
           width: 100%;
         }
         @media #{media("<", m)} {
+          width: 100%;
+        }
+
+        @media print {
+          max-width: 100%;
           width: 100%;
         }
       }
@@ -1350,6 +1664,11 @@
         }
 
         @media #{media("<", m)} {
+          width: 100%;
+        }
+
+        @media print {
+          max-width: 100%;
           width: 100%;
         }
       }
@@ -1371,6 +1690,12 @@
     padding-top: rem(8px);
   }
 
+  @media print {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
   picture{
     height: auto;
   }
@@ -1383,6 +1708,11 @@
       margin-bottom: rem(24px);
       font-size: rem(20px);
       line-height: 120%;
+    }
+
+    @media print {
+      max-width: 100%;
+      width: 100%;
     }
   }
 
@@ -1398,6 +1728,11 @@
       gap: rem(20px);
     }
 
+    @media print {
+      max-width: 100%;
+      width: 100%;
+    }
+
     &-col {
       flex-shrink: 0;
 
@@ -1408,6 +1743,11 @@
         }
         @media #{media("<", m)} {
           width: rem(335px);
+        }
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
         }
       }
 
@@ -1420,6 +1760,11 @@
 
         @media #{media("<", m)} {
           width: rem(335px);
+        }
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
         }
       }
     }
@@ -1437,6 +1782,11 @@
           display: none;
         }
       }
+
+      @media print {
+        width: 100%;
+        font-size: 12px;
+      }
     }
 
     &-row {
@@ -1448,6 +1798,11 @@
         grid-template-columns: repeat(1, 1fr);
         gap: rem(20px);
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     &-subcol {
@@ -1457,6 +1812,11 @@
         }
         @media #{media("<", m)} {
           max-width: 100%;
+        }
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
         }
 
         .ge-card__text-grey {
@@ -1483,6 +1843,11 @@
       gap: rem(20px);
     }
 
+    @media print {
+      max-width: 100%;
+      width: 100%;
+    }
+
     &-text {
       font-weight: 400;
       font-size: 15px;
@@ -1501,6 +1866,11 @@
         font-size: rem(12px);
         line-height: 160%;
       }
+
+      @media print {
+        width: 100%;
+        font-size: 12px;
+      }
     }
   }
 
@@ -1514,6 +1884,12 @@
       width: 100%;
       margin-top: rem(20px);
       padding-top: rem(5px);
+    }
+
+    @media print {
+      max-width: 100%;
+      width: 100%;
+      page-break-after: always;
     }
 
     &-top {
@@ -1545,6 +1921,12 @@
         font-size: rem(12px);
         line-height: 150%;
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        font-size: 12px;
+      }
     }
 
     &-container {
@@ -1557,12 +1939,22 @@
         overflow-x: scroll;
       }
 
+      @media print {
+        max-width: 100%;
+        width: 100%;
+      }
+
     }
 
     &-vector {
       @media #{media("<", m)} {
         width: rem(674px);
         overflow-x: scroll;
+      }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
       }
 
     }
@@ -1604,6 +1996,12 @@
       line-height: 150%;
       color: color(dark);
       border-top: 1px solid color(light-green);
+
+      @media print {
+        width: 100%;
+        font-size: 12px;
+        
+      }
     }
 
     .macroeconomics-grafics__col-links {
@@ -1612,6 +2010,16 @@
       @media #{media("<", m)} {
         margin-top: rem(16px);
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    @media print {
+      max-width: 100%;
+      width: 100%;
+      page-break-after: always;
     }
   }
 
@@ -1624,6 +2032,11 @@
     @media #{media("<", m)} {
       margin-top: rem(40px);
       padding-top: rem(5px);
+    }
+
+    @media print {
+      max-width: 100%;
+      width: 100%;
     }
 
     &-top {
@@ -1654,6 +2067,11 @@
         line-height: 150%;
         width: 100%;
       }
+
+      @media print {
+        width: 100%;
+        font-size: 14px;
+      }
     }
 
     &-container {
@@ -1662,6 +2080,12 @@
         overflow-x: scroll;
         padding-left: 20px;
         margin-left: -20px;
+      }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        page-break-after: always;
       }
 
     }
@@ -1685,10 +2109,20 @@
 
       &.vector-1 {
         width: rem(710px);
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
+        }
       }
 
       &.vector-2 {
         width: rem(936px);
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
   }
@@ -1731,6 +2165,12 @@
         font-size: rem(14px);
         line-height: 150%;
         width: 100%;
+      }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
       }
     }
 
@@ -1775,6 +2215,12 @@
         font-size: rem(14px);
         line-height: 150%;
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
+      }
     }
 
     &-vector {
@@ -1782,6 +2228,11 @@
       &.custom-desktop {
         @media #{media("<", m)} {
           display: none;
+        }
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
         }
 
       }
@@ -1807,6 +2258,12 @@
       padding-top: rem(5px);
     }
 
+    @media print {
+      max-width: 100%;
+      width: 100%;
+      page-break-after: always;
+    }
+
     &-title {
       margin-bottom: 20px;
 
@@ -1819,6 +2276,11 @@
         margin-bottom: rem(12px);
         font-size: rem(14px);
         line-height: 150%;
+      }
+
+      @media print {
+        width: 100%;
+        font-size: 14px;
       }
     }
 
@@ -1855,6 +2317,11 @@
 
         @include scrollbar-hidden();
       }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     &-rows{
@@ -1885,6 +2352,16 @@
 
         &.second-section{
           width: 800px;
+
+          @media print {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+
+        @media print {
+          max-width: 100%;
+          width: 100%;
         }
       }
     }
@@ -1894,6 +2371,11 @@
       @media #{media("<", m)} {
         max-width: 87px;
         width: 87px;
+      }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
       }
       .numbers-item{
         &__number{
@@ -1944,6 +2426,11 @@
             font-size: 16px;
             line-height: 100%; 
           }
+
+          @media print {
+            width: 100%;
+            font-size: 14px;
+          }
         }
 
         &__text{
@@ -1956,6 +2443,12 @@
 
           @media #{media("<", m)} {
             font-size: 10px; 
+          }
+
+          @media print {
+            max-width: 100%;
+            width: 100%;
+            font-size: 10px;
           }
         }
       }
@@ -1976,6 +2469,11 @@
   @media (min-width: 768px) and (max-width: 1024px) {
     gap: 120px;
     justify-content: space-between;
+  }
+
+  @media print {
+    max-width: 100%;
+    width: 100%;
   }
   @media #{media("<", m)} {
     margin-bottom: 0px;
@@ -2014,6 +2512,11 @@
       line-height: 120%;
       margin: rem(19px) 0px rem(20px) rem(19px);
     }
+
+    @media print {
+      width: 100%;
+      font-size: 20px;
+    }
   }
 
   &__main {
@@ -2028,6 +2531,11 @@
       z-index: 2;
     }
 
+    @media print {
+      max-width: 100%;
+      width: 100%;
+    }
+
     &-title {
       margin-bottom: 16px;
       font-weight: 700;
@@ -2038,6 +2546,11 @@
       @media #{media("<", m)} {
         font-size: rem(14px);
         line-height: 140%;
+      }
+
+      @media print {
+        width: 100%;
+        font-size: 14px;
       }
     }
 
@@ -2058,6 +2571,11 @@
       @media #{media("<", m)} {
         font-size: rem(12px);
         line-height: 160%;
+      }
+
+      @media print {
+        width: 100%;
+        font-size: 12px;
       }
     }
   }

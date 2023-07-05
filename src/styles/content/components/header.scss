@@ -15,6 +15,10 @@
         height: 56px;
     }
 
+    @media print {
+        display: none;
+    }
+
     &-container {
         display: flex;
         justify-content: space-between;

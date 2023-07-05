@@ -26,6 +26,12 @@
     height: 735px;
     height: auto;
   }
+
+  @media print {
+    margin-top: 0px;
+    page-break-after: always;
+  }
+
   &__background{
     position: absolute;
     top: 0px;
@@ -99,6 +105,10 @@
         order: -1;
         height: 260px;
       }
+    }
+
+    @media print {
+      height: 100%;
     }
 
     &-background{
@@ -191,6 +201,17 @@
             object-fit: cover;
           }
         }
+
+        @media print {
+          height: 900px;
+          height: auto;
+
+          picture{
+            img{
+              object-fit: contain;
+            }
+          }
+        }
       }
     }
 
@@ -211,6 +232,10 @@
     &.hero-4{
       position: relative;
       margin-top: auto;
+    }
+
+    @media print {
+      height: 100%;
     }
   }
 
@@ -298,6 +323,13 @@
 
       font-size: rem(32px);
       line-height: 90%;
+    }
+
+    @media print {
+      position: relative;
+      z-index: 4;
+      color: white;
+      font-size: 32px;
     }
     &.page-2{
       width: 600px;
