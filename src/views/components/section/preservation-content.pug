@@ -15,10 +15,10 @@ mixin preservation-content
         h6.preservation-dynamic__title Динамика основных финансовых показателей за 2020–2022 годы, млн руб
         .preservation-dynamic__img.desktop-m
           +picture('preservation-dynamic.png')
-          +activity-buttons('preservation-dynamic.png') 
+        +activity-buttons('preservation-dynamic.png').flex-desktop
         .preservation-dynamic__img.mobile-m
           +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
-          +activity-buttons('preservation-dynamic-mobile.png') 
+        +activity-buttons('preservation-dynamic-mobile.png').flex-m 
   section(data-aos="fade-up").block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
     .container-content 
       .block-diagram__inner 
@@ -48,6 +48,8 @@ mixin preservation-content
             p.preservation-sales__description.description_big Себестоимость продаж ОТЛК ЕРА за 2020–2022 годы, млн руб
             .preservation-sales__img
               +picture('preservation-sale.png')
+            +activity-buttons('preservation-sale.png') 
+            
   section(data-aos="fade-up").preservation-structure.mt-section
     .container-content 
       .preservation-structure__inner 

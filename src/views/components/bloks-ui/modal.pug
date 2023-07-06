@@ -1,8 +1,12 @@
 mixin modal 
-  .modal.--active
+  .modal
     .modal__overlay 
     .modal__inner 
       .modal__close
+        svg(xmlns='http://www.w3.org/2000/svg' width='45' height='44' viewBox='0 0 45 44' fill='none')
+          path(d='M13.1663 12.666L31.8339 31.3336' stroke='#727A75' stroke-width='2' stroke-linecap='square' stroke-linejoin='round')
+          path(d='M13.1661 31.3336L31.8337 12.666' stroke='#727A75' stroke-width='2' stroke-linecap='square' stroke-linejoin='round')
+
       .modal__body
         h3.modal__title Отправить по почте
         form.modal__form

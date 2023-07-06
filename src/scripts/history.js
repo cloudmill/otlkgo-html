@@ -6,6 +6,7 @@ function addToHistory(page) {
   const visit = {
     page,
     date: currentDate,
+    title: document.title,
   };
   const history = getHistory();
   history.push(visit);
@@ -23,18 +24,20 @@ function displayHistory() {
   const history = getHistory();
   const groupedHistory = groupByDate(history);
 
+
+
+  console.info(history)
   for (const date in groupedHistory) {
     const dateHeading = formatDate(date);
-
     const historyItems = groupedHistory[date]
       .map((visit) => {
         const time = formatTime(visit.date);
-        const pageLink = createLinkWithTitle(visit.page);
+        const title = visit.title
 
         return `
         <div class="header-history__time-item">
           <p class="header-history__time-date">${time}</p>
-          <div class="header-history__time-page">${pageLink}</div>
+          <div class="header-history__time-page">${title}</div>
         </div>
       `;
       })
@@ -57,11 +60,6 @@ function formatDate(dateString) {
 
 function formatTime(dateString) {
   return moment(dateString).format('HH:mm');
-}
-
-function createLinkWithTitle(page) {
-  const pageTitle = document.title;
-  return `<a href="${page}">${pageTitle}</a>`;
 }
 
 function groupByDate(history) {

@@ -147,8 +147,6 @@
   }
 
   &__img {
-    height: 478px;
-
     img {
       object-fit: contain;
 
@@ -158,6 +156,9 @@
     }
   }
 
+  &__row {
+    margin-top: 20px;
+  }
 }
 
 .purchase-sving {
@@ -259,10 +260,6 @@
 
     &__title {
       font-size: 14px;
-    }
-
-    &__img {
-      height: 227px;
     }
 
     &__row {

@@ -4,7 +4,8 @@ include ../components/section/ecology-content
 include ../components/section/purchase-content
 include ../components/section/charity-content
 
-
+block variables
+  -const title = 'Устойчивое развитие'
 block content
   //- +report-hero-4
   //- +human-capital 
@@ -25,7 +26,7 @@ block content
   //- +organization-structure
   //- +preview('Корпоративная социальная ответственность','Шмидт','Елена Вячеславовна ','Главный специалист по внутренним коммуникациям','shmidt.png').custom-id(id="preview-corporate-responsibility") 
   //- +corporate-responsibility
-  //- +preview('Охрана труда и пожарная <br/> безопасность','Тарасова','Галина Александровна','Заместитель директора административно-хозяйственного департамента','tarasova.png').custom-id(id="preview-security-content")  
+  +preview('Охрана труда и пожарная <br/> безопасность','Тарасова','Галина Александровна','Заместитель директора административно-хозяйственного департамента','tarasova.png').custom-id(id="preview-security-content")  
   +security-content
   +preview('Экологичность <br/> как конкурентное <br/> преимущество','Хмельницкая','Анна Александровна','Начальник отдела маркетинговых коммуникаций','xm.png').custom-id(id="preview-ecology-content").xmelnitskaya 
   +ecology-content
