@@ -222,6 +222,15 @@
       &-img {
         display: flex;
         width: 100%;
+
+
+        &.first-print{
+          @media print {
+
+            
+          }
+        }
+        
       }
 
       &-links {
