@@ -7,6 +7,7 @@ mixin marshrute-speed
       .pre-marshrute__col 
         .pre-marshrute__table
           +picture('pre-marshrute.png')
+        +activity-buttons('pre-marshrute.png')
     section.marshrute-speed(id="marshrute-speed")(data-aos="fade-up") 
       h3.marshrute-speed__title Маршрутная скорость и формирование поездов
       .marshrute-speed__row(data-aos="fade-up") 
@@ -27,8 +28,10 @@ mixin marshrute-speed
         .marshrute-speed__subsection-col 
           .marshrute-speed__subsection-vector.alt-vector.desktop 
             +picture('change-speed-vector.png')
+          +activity-buttons('change-speed-vector.png').flex-desktop
           .marshrute-speed__subsection-vector.alt-vector.mobile 
             +picture('change-speed-vector-mobile.png')
+          +activity-buttons('change-speed-vector-mobile.png').flex-m
       .marshrute-speed__subsection(data-aos="fade-up") 
         .marshrute-speed__subsection-col(data-aos="fade-up") 
           .marshrute-speed__subsection-title Изменение транзитного времени проследования контейнерных поездов в сервисе ОТЛК&nbsp;ЕРА <br>в 2019–2022 годах
@@ -36,15 +39,19 @@ mixin marshrute-speed
         .marshrute-speed__subsection-col(data-aos="fade-up") 
           .marshrute-speed__subsection-vector.alt-vector.desktop  
             +picture('change-speed-vector-2-fin.png')
+          +activity-buttons('change-speed-vector-2-fin.png').flex-desktop
           .marshrute-speed__subsection-vector.alt-vector.mobile  
             +picture('change-speed-vector-mobile2.png')
+          +activity-buttons('change-speed-vector-mobile2.png').flex-m
       .marshrute-speed__footer(data-aos="fade-up") 
         h6.marshrute-speed__footer-title Динамика применения технологии XL-поездов
         .marshrute-speed__footer-vector.desktop
           +picture('change-speed-vector3.png')
+        +activity-buttons('change-speed-vector3.png').flex-desktop
         .marshrute-speed__footer-container 
           .marshrute-speed__footer-vector.mobile
             +picture('change-speed-vector3-mobile.png')
+          +activity-buttons('change-speed-vector3-mobile.png').flex-m
         .marshrute-speed__footer-text.text Для совершенствования технологии контейнерных перевозок наша компания запустила проект «XL-поезда», в рамках которого в 2022 году было организовано 2 279 длинносоставных поездов. Эта технология позволяет повысить эффективность использования пропускной способности инфраструктуры и сократить издержки при организации перевозок.
 
 mixin marshrute-speed-EN   

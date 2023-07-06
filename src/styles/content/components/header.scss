@@ -1096,8 +1096,14 @@
             grid-template-columns: repeat(1, 1fr);
             gap: 40px;
 
+            height: 77vh;
+            
             overflow-y: scroll;
             @include scrollbar-hidden();
+            
+            @media #{media("<", m)} {
+                height: 75vh;
+            }
         }
 
         &__item{
