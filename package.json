@@ -53,10 +53,11 @@
     "aos": "^3.0.0-beta.6",
     "countup.js": "^2.6.2",
     "jquery": "^3.6.4",
-    "lightbox2": "^2.11.4",
+    "moment": "^2.29.4",
     "normalize.css": "^8.0.1",
     "parallax-js": "^3.1.0",
     "reset-css": "^5.0.1",
+    "scroll-lock": "^2.1.5",
     "select2": "^4.1.0-rc.0",
     "simple-parallax-js": "^5.6.2",
     "swiper": "^7.4.1"

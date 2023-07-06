@@ -1,37 +1,37 @@
 // Libraries
-const path = require("path");
+const path = require('path');
 const PugPlugin = require('pug-plugin');
-const webpack = require("webpack");
-const WebpackNotifierPlugin = require("webpack-notifier");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const globImporter = require("node-sass-glob-importer");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlBeautifyPlugin = require("beautify-html-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const webpack = require('webpack');
+const WebpackNotifierPlugin = require('webpack-notifier');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const globImporter = require('node-sass-glob-importer');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlBeautifyPlugin = require('beautify-html-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 // Files
-const utils = require("./utils");
+const utils = require('./utils');
 
 // Configuration
 module.exports = (env) => {
   return {
-    context: path.resolve(__dirname, "../src"),
+    context: path.resolve(__dirname, '../src'),
     entry: {
-      app: "./app.js",
+      app: './app.js',
     },
     output: {
-      path: path.resolve(__dirname, "../public/dist"),
-      publicPath: "",
-      filename: "assets/[name].js",
+      path: path.resolve(__dirname, '../public/dist'),
+      publicPath: '',
+      filename: 'assets/[name].js',
     },
     devServer: {
-      contentBase: path.resolve(__dirname, "../src"),
-      openPage: "index",
+      contentBase: path.resolve(__dirname, '../src'),
+      openPage: 'index',
     },
-    devtool: env.NODE_ENV === "development" ? "source-map" : false,
+    devtool: env.NODE_ENV === 'development' ? 'source-map' : false,
     resolve: {
-      modules: [path.resolve(__dirname, "../src"), "node_modules"],
-      extensions: [".js", ".css", ".scss"],
+      modules: [path.resolve(__dirname, '../src'), 'node_modules'],
+      extensions: ['.js', '.css', '.scss'],
     },
 
     performance: {
@@ -49,9 +49,9 @@ module.exports = (env) => {
           exclude: [/node_modules/],
           use: [
             {
-              loader: "babel-loader",
+              loader: 'babel-loader',
               options: {
-                presets: ["@babel/preset-env", "@babel/preset-typescript"],
+                presets: ['@babel/preset-env', '@babel/preset-typescript'],
               },
             },
           ],
@@ -59,11 +59,11 @@ module.exports = (env) => {
         {
           test: /\.css$/,
           use: [
-            env.NODE_ENV === "development"
-              ? "style-loader"
+            env.NODE_ENV === 'development'
+              ? 'style-loader'
               : MiniCssExtractPlugin.loader,
             {
-              loader: "css-loader",
+              loader: 'css-loader',
               options: {
                 importLoaders: 1,
                 sourceMap: true,
@@ -74,15 +74,15 @@ module.exports = (env) => {
         {
           test: /\.scss$/,
           use: [
-            env.NODE_ENV === "development"
-              ? "style-loader"
+            env.NODE_ENV === 'development'
+              ? 'style-loader'
               : MiniCssExtractPlugin.loader,
             {
-              loader: "css-loader",
+              loader: 'css-loader',
               options: { importLoaders: 1, sourceMap: true },
             },
             {
-              loader: "sass-loader",
+              loader: 'sass-loader',
               options: {
                 sassOptions: {
                   importer: globImporter(),
@@ -99,38 +99,38 @@ module.exports = (env) => {
               loader: PugPlugin.loader,
               options: {
                 data: {
-                  data: require("../src/views/data/data.json"),
+                  data: require('../src/views/data/data.json'),
                 },
               },
-            }
-          ]
+            },
+          ],
         },
         {
           test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
           use: [
             {
-              loader: "url-loader",
+              loader: 'url-loader',
               options: {
                 limit: 3000,
-                name: "assets/images/[name].[hash:7].[ext]",
+                name: 'assets/images/[name].[hash:7].[ext]',
               },
             },
           ],
         },
         {
           test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-          loader: "url-loader",
+          loader: 'url-loader',
           options: {
             limit: 5000,
-            name: "assets/fonts/[name].[hash:7].[ext]",
+            name: 'assets/fonts/[name].[hash:7].[ext]',
           },
         },
         {
           test: /\.(mp4)(\?.*)?$/,
-          loader: "url-loader",
+          loader: 'url-loader',
           options: {
             limit: 10000,
-            name: "assets/videos/[name].[hash:7].[ext]",
+            name: 'assets/videos/[name].[hash:7].[ext]',
           },
         },
       ],
@@ -149,16 +149,16 @@ module.exports = (env) => {
           vendors: false,
           // vendor chunk
           vendor: {
-            filename: "assets/vendor.js",
+            filename: 'assets/vendor.js',
             // sync + async chunks
-            chunks: "all",
+            chunks: 'all',
             // import file path containing node_modules
             test: /node_modules/,
           },
           styles: {
-            name: "styles",
+            name: 'styles',
             test: /\.css$/,
-            chunks: "all",
+            chunks: 'all',
             enforce: true,
           },
         },
@@ -166,29 +166,28 @@ module.exports = (env) => {
     },
 
     plugins: [
-
       new CopyWebpackPlugin({
         patterns: [
-          { from: "assets/images", to: "assets/images" },
-          { from: "assets/fonts", to: "assets/fonts" },
-          { from: "assets/videos", to: "assets/videos" },
+          { from: 'assets/images', to: 'assets/images' },
+          { from: 'assets/fonts', to: 'assets/fonts' },
+          { from: 'assets/videos', to: 'assets/videos' },
         ],
       }),
 
-      // new ImageMinimizerPlugin({
-      //   minimizerOptions: {
-      //     cache: true,
-      //     plugins: [
-      //       ["gifsicle", { interlaced: true }],
-      //       ["mozjpeg", { quality: 70 }],
-      //       ["optipng", { optimizationLevel: 5 }],
-      //     ],
-      //   },
-      // }),
+      new ImageMinimizerPlugin({
+        minimizerOptions: {
+          cache: true,
+          plugins: [
+            ['gifsicle', { interlaced: true }],
+            ['mozjpeg', { quality: 70 }],
+            ['optipng', { optimizationLevel: 5 }],
+          ],
+        },
+      }),
 
       new MiniCssExtractPlugin({
-        filename: "[name].css",
-        chunkFilename: "vendors.css",
+        filename: '[name].css',
+        chunkFilename: 'vendors.css',
       }),
 
       /*
@@ -200,7 +199,7 @@ module.exports = (env) => {
         $: 'jquery',
         jQuery: 'jquery',
         'window.$': 'jquery',
-        'window.jQuery': 'jquery'
+        'window.jQuery': 'jquery',
       }),
 
       new HtmlBeautifyPlugin({
@@ -212,7 +211,7 @@ module.exports = (env) => {
       }),
 
       new WebpackNotifierPlugin({
-        title: "Bundler",
+        title: 'Bundler',
       }),
     ],
   };

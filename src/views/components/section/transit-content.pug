@@ -3,17 +3,18 @@ mixin transit-content
     .container-content 
       .transit-dynamic__inner 
         h4.transit-dynamic__title Динамика перевозок с долями основных коридоров, 2022 г.
-        .transit-dynamic__svg.mobile 
-          .transit-dynamic__svg-top
-            +picture('transit-dynamic-1-mobile.png')
-          .transit-dynamic__svg-bottom
-            +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
-          .row 
         .transit-dynamic__svg.desktop
-          +transit-content-svg 
+          .transit-dynamic__svg
+            +picture('transit-dynamic-1-mobile.png')
+   
+        .transit-dynamic__svg.mobile 
+          .transit-dynamic__svg.mobile 
+            +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
         .links.transit-dynamic__links 
           p.links__text.transit-dynamic__links-text Источник:&nbsp;
           a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+        +activity-buttons('transit-dynamic-1-mobile.png').flex-desktop
+        +activity-buttons('transit-dynamic-2-mobile.png').flex-m
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
@@ -31,9 +32,14 @@ mixin transit-content
           .transit-volume__row_top
             h4.transit-volume__title Объем транзита Китай-Европа-Китай в сервисах ОТЛК&nbsp;ЕРА, 2021–2022 гг., ДФЭ
             a.transit-volume__link.desktop-t <span>Источник: </span>АО «ОТЛК&nbsp;ЕРА»
-          .transit-volume__svg 
-            +transit-volume-svg.transit-volume-svg
+          .transit-volume__svg.desktop
+            +picture('transit-volumeTransit.png')
+          .transit-volume__svg.mobile
+            +picture('transit-volumeTransit-mobile.png')
+           
           a.transit-volume__link.flex-t <span>Источник: </span>АО «ОТЛК&nbsp;ЕРА»
+          +activity-buttons('transit-volumeTransit.png').flex-desktop
+          +activity-buttons('transit-volumeTransit-mobile.png').flex-m
           h4.transit-volume__subtitle Объемы перевозок через основные конкурентные коридоры также показали снижение в годовом выражении:
           .transit-volume__row 
             .transit-volume__item 
@@ -73,6 +79,8 @@ mixin transit-content
           +picture('transit-china.png').transit-china-img
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>АО «ОТЛК&nbsp;ЕРА»
+        +activity-buttons('transit-china.png')
+        
         .transit-china__row 
           h4.transit-china__subtitle Нисходящая динамика объемов транзитных перевозок, в том числе для сервисов <br/> ОТЛК&nbsp;ЕРА, характеризуется различными внешними влияниями:
           .transit-china__box 
@@ -123,6 +131,7 @@ mixin transit-content
         .links.transit-value__links.desktop
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+
         .transit-value__items 
           .transit-value__item 
             span.transit-value__span.green-light-bg 
@@ -132,9 +141,11 @@ mixin transit-content
             p 2022
         .transit-value__img 
           +picture('transit-value.png').transit-value-img
+          
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+        +activity-buttons('transit-value.png')
         .transit-value__row 
           .col 
             p.transit-value__description По видам перевозок за 2022 год также следует отметить увеличение экспортных объемов.
@@ -144,8 +155,9 @@ mixin transit-content
     .container-content 
       .transit-export__inner 
         h4.transit-export__title Объем экспортных контейнерных перевозок РФ, РБ-Китай в сервисах ОТЛК&nbsp;ЕРА, 2022 гг., ДФЭ
-        .transit-export__svg 
-          +transit-export-svg.transit-export-svg 
+        .transit-export__svg
+          +picture('transit-export.png').transit-export-svg 
+        +activity-buttons('transit-export.png')
   section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
     .container-content 
       .transit-adaptation__inner 
@@ -174,8 +186,12 @@ mixin transit-content-CN
         .transit-dynamic__svg.mobile 
           .transit-dynamic__svg-top
             +picture('transit-dynamic-1-mobile.png')
+            +activity-buttons('transit-dynamic-1-mobile.png')
+
           .transit-dynamic__svg-bottom
             +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
+            +activity-buttons('transit-dynamic-2-mobile.png')
+
           .row 
         .transit-dynamic__svg.desktop
           +transit-content-svg 
@@ -242,6 +258,8 @@ mixin transit-content-CN
               p 远东港口和车站
         .transit-china__img 
           +picture('transit-china.png').transit-china-img
+          +activity-buttons('transit-china.png')
+
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>UTLC ERA股份公司
 
@@ -308,6 +326,8 @@ mixin transit-content-CN
             p 2022
         .transit-value__img 
           +picture('transit-value.png').transit-value-img
+          +activity-buttons('transit-value.png')
+
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text 资料来源&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
@@ -320,8 +340,9 @@ mixin transit-content-CN
     .container-content 
       .transit-export__inner 
         h4.transit-export__title 2022年，在UTLC ERA服务中D 俄罗斯联邦、白俄罗斯-中国出口集装箱运输量，TEU。
-        .transit-export__svg 
-          +transit-export-svg.transit-export-svg 
+        .transit-export__svg
+          +picture('transit-export.png').transit-export-svg 
+          +activity-buttons('transit-export.png')
   section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
     .container-content 
       .transit-adaptation__inner 
@@ -350,8 +371,12 @@ mixin transit-content-EN
         .transit-dynamic__svg.mobile 
           .transit-dynamic__svg-top
             +picture('transit-dynamic-1-mobile.png')
+            +activity-buttons('transit-dynamic-1-mobile.png')
+
           .transit-dynamic__svg-bottom
             +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
+            +activity-buttons('transit-dynamic-2-mobile.png')
+
           .row 
         .transit-dynamic__svg.desktop
           +transit-content-svg 
@@ -490,9 +515,9 @@ mixin transit-content-EN
     .container-content 
       .transit-export__inner 
         h4.transit-export__title Export Container Traffic Volume on the Russian Federation, Republic of Belarus – China Route in UTLC ERA’s Services, 2022, TEUs
-        .transit-export__svg 
-          +transit-export-svg.transit-export-svg 
-  section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
+        .transit-export__svg
+          +picture('transit-export.png').transit-export-svg 
+          +activity-buttons('transit-export.png')  section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
     .container-content 
       .transit-adaptation__inner 
         h3.transit-adaptation__title Flexibility Evidenced by Adaptation

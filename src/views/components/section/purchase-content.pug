@@ -27,6 +27,8 @@ mixin purchase-content
               p.purchase-principles__text.text Обеспечение гласности и прозрачности закупок, информационная открытость
               .purchase-principles__img 
                 +picture(`achievement-number-1.png`)
+
+
             .purchase-principles__item 
               p.purchase-principles__text.text Равноправие, справедливость, отсутствие дискриминации и необоснованных ограничений конкуренции по отношению к участникам закупок
               .purchase-principles__img 
@@ -48,8 +50,12 @@ mixin purchase-content
         h6.purchase-value__title Объем закупок за отчетный период
         .purchase-value__img.desktop-m
           +picture('purchase-value.png')
+          +activity-buttons('purchase-value.png') 
+
         .purchase-value__img.mobile-m
           +picture('purchase-value-mobile.png')
+          +activity-buttons('purchase-value-mobile.png') 
+
         .purchase-value__row 
           +message-block('Экономия при проведении конкурентных процедур в 2022 году составила в денежном выражении 22,8 млн руб без НДС.')
   section(data-aos="fade-up").purchase-saving.mt-section
@@ -58,8 +64,12 @@ mixin purchase-content
         h6.purchase-saving__title Экономия по конкурентным закупкам, тыс руб
         .purchase-saving__img.desktop-m 
           +picture('purchase-saving.png')
+          +activity-buttons('purchase-saving.png') 
+
         .purchase-saving__img.mobile-m 
           +picture('purchase-saving-mobile.png')
+          +activity-buttons('purchase-saving-mobile.png') 
+
         .purchase-saving__row 
           +message-block('Таким образом, в 2022 году стоимостной объем закупок отчетного периода увеличился на 28% по отношению к 2021 году, что свидетельствует об осуществлении наиболее капиталоемких закупок и развитии в целом. При этом экономия также увеличилась на 44%.')
           

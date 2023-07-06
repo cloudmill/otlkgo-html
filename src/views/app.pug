@@ -47,6 +47,8 @@ include ./components/bloks-ui/next-page
 include ./components/bloks-ui/risks
 include ./components/bloks-ui/model
 include ./components/bloks-ui/buttons
+include ./components/bloks-ui/modal
+include ./components/bloks-ui/form-components
 
 doctype html
 
@@ -54,7 +56,7 @@ html(lang='ru')
   
   head
     meta(charset="utf-8")
-    title= data.title
+    title= title?title:data.title
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
     meta(property="og:type" content="website")
     meta(property="og:title" content="Годовой отчет")
@@ -70,10 +72,10 @@ opacity:0
   })
 
     .wrapper
-      +preloader
+      //- +preloader
 
       block header
-        +header
+        //- +header
 
 
       main.main

@@ -14,10 +14,12 @@ import './scripts/trains-parallax';
 import './scripts/parallax-containers';
 import './scripts/print-button';
 import './scripts/fancyapps';
-import 'lightbox2/dist/js/lightbox';
-import 'lightbox2/dist/css/lightbox.css';
+import './scripts/history';
+import './scripts/form-components';
 import { fancybox } from './scripts/fancybox';
+import { modal } from './scripts/modal';
 
 document.addEventListener('DOMContentLoaded', () => {
-  fancybox()
-})
+  fancybox();
+  modal();
+});
