@@ -186,8 +186,7 @@
         &:nth-child(1) {
 
           @media print {
-            page-break-after: always;
-            
+            // page-break-after: always;
           }
         }
 
@@ -225,10 +224,7 @@
 
 
         &.first-print{
-          @media print {
-
-            
-          }
+          
         }
         
       }
@@ -237,10 +233,6 @@
         margin-top: 20px;
         display: flex;
         gap: 2px;
-
-        &.second {
-          display: none;
-        }
 
         @media #{media('<',m)} {
           &.first {
@@ -258,7 +250,7 @@
           margin-top: 40px;
 
           @media print {
-            page-break-after: always;
+            // page-break-after: always;
           }
         }
 
@@ -342,6 +334,10 @@
   @media #{media('<',m)} {
     padding-top: 12px;
     margin-top: 40px;
+  }
+
+  @media print {
+    page-break-after: always;
   }
 
   &__title {
@@ -464,7 +460,7 @@
       }
 
       @media print {
-        page-break-after: always;
+        // page-break-after: always;
       }
     }
 
@@ -631,6 +627,10 @@
 
       font-size: 60px;
     }
+
+    @media print {
+      font-size: 40px;
+    }
   }
 
   &__top {
@@ -685,6 +685,7 @@
       @media print {
         max-width: 100%;
         width: 100%;
+        font-size: 12px;
       }
 
       &.large {
@@ -797,7 +798,7 @@
       @media print {
         max-width: 100%;
         width: 100%;
-        page-break-after: always;
+        // page-break-after: always;
       }
       
     }
@@ -966,7 +967,7 @@
 
     @media print {
       width: 100%;
-      page-break-after: always;
+      // page-break-after: always;
     }
   }
 
@@ -1149,6 +1150,10 @@
     padding-top: rem(8px);
   }
 
+  @media print {
+    page-break-after: always;
+  }
+
   picture{
     height: auto;
   }
@@ -1265,7 +1270,7 @@
       &.print{
         @media print {
           width: 100%;
-          page-break-after: always;
+          // page-break-after: always;
         }
 
       }
@@ -1394,7 +1399,7 @@
 
     @media print {
       width: 100%;
-      page-break-after: always;
+      // page-break-after: always;
     }
 
     &-col {
@@ -1563,7 +1568,7 @@
 
     @media print {
       width: 100%;
-      page-break-after: always;
+      // page-break-after: always;
     }
 
     &-col {
@@ -1703,6 +1708,7 @@
     max-width: 100%;
     width: 100%;
     margin-top: 20px;
+      page-break-after: always;
   }
 
   picture{
@@ -1898,7 +1904,7 @@
     @media print {
       max-width: 100%;
       width: 100%;
-      page-break-after: always;
+      // page-break-after: always;
     }
 
     &-top {
@@ -1997,14 +2003,20 @@
     }
 
     &-title {
-      padding-top: rem(5px);
-      margin-bottom: rem(23px);
+      padding-top: 23px;
+      margin-bottom: 40px;
 
+      font-size: 20px;
       font-weight: 700;
-      font-size: rem(14px);
       line-height: 150%;
       color: color(dark);
-      border-top: 1px solid color(light-green);
+
+      @media #{media("<", m)} {
+        padding-top: rem(5px);
+        margin-bottom: rem(23px);
+        font-size: rem(14px);
+        border-top: 1px solid color(light-green);
+      }
 
       @media print {
         width: 100%;
@@ -2028,7 +2040,13 @@
     @media print {
       max-width: 100%;
       width: 100%;
-      page-break-after: always;
+      // page-break-after: always;
+    }
+
+
+    &.shares-flex{
+      display: flex;
+      gap: 20px;
     }
   }
 
@@ -2094,7 +2112,7 @@
       @media print {
         max-width: 100%;
         width: 100%;
-        page-break-after: always;
+        // page-break-after: always;
       }
 
     }
@@ -2270,7 +2288,7 @@
     @media print {
       max-width: 100%;
       width: 100%;
-      page-break-after: always;
+      // page-break-after: always;
     }
 
     &-title {

@@ -5,6 +5,10 @@
     margin-top: 20px;
   }
 
+  @media print {
+    margin-top: 0px;
+  }
+
   &__picture {
     margin-top: 20px;
 
@@ -321,6 +325,10 @@
           grid-template-columns: repeat(1, 1fr);
           gap: 10px;
         }
+
+        @media print {
+          page-break-after: always;
+        }
       }
     }
   }
@@ -472,6 +480,11 @@
   background: url('../assets/images/formation-train.png') center/cover no-repeat;
   background-color: #F4F4F4;
 
+  @media print {
+    padding-top: 0px;
+    background: none;
+  }
+
   &__parallax{
     position: absolute;
     top: -300px;
@@ -545,6 +558,10 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
+
+    @media print {
+      background: none;
+    }
   }
 
   @media #{media('<',m)} {
@@ -575,6 +592,11 @@
         font-size: 14px;
       }
     }
+  }
+  @media print {
+    padding-top: 0px;
+    background: none;
+    height: auto;
   }
 
 

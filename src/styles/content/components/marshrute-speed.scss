@@ -79,6 +79,9 @@
       gap: 20px;
       margin-top: 60px;
     }
+    @media print {
+      margin-top: 20px;
+    }
     &-title{
       margin-bottom: 40px;
 
@@ -96,6 +99,10 @@
 
         font-size: rem(14px);
         line-height: 150%;
+      }
+
+      @media print {
+        font-size: 14px;
       }
 
     }
@@ -166,7 +173,7 @@
       }
 
       @media print {
-        height: 600px;
+        height: 500px;
       }
     }
   }
@@ -182,6 +189,10 @@
     @media #{media('<',m)} {
       margin-top: 41px;
       padding-top: 5px;
+    }
+
+    @media print {
+      page-break-after: always;
     }
     &-title{
       margin-bottom: 38px;
@@ -205,6 +216,12 @@
             object-fit: fill;
           }
         }
+      }
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+        height: 250px;
       }
     }
 
@@ -232,6 +249,11 @@
       padding-left: 20px;
       overflow-x: scroll;
       @include scrollbar-hidden();
+
+      @media print {
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
 }

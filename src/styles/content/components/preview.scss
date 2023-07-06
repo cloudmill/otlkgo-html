@@ -85,6 +85,10 @@
     @media #{media('<',t)} {
       top: 12px;
     }
+
+    @media print {
+      display: none;
+    }
   }
 
   &__right {
@@ -238,9 +242,7 @@
     }
   }
 
-  @media print {
-    page-break-after: always;
-  }
+  
 }
 
 .selutin {

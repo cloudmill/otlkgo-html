@@ -254,3 +254,10 @@
 .opacity-0 {
   opacity: 0;
 }
+
+
+.print-none{
+  @media print {
+    display: none;
+  }
+}

@@ -20,6 +20,11 @@
     font-size: rem(14px);
     line-height: 160%;
   }
+
+  @media print {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 .share-provinces__box{
