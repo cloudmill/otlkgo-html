@@ -32,6 +32,7 @@
   &__col{
     &:nth-child(1){
       max-width: 559px;
+      width: 100%;
       
       @media #{media("<", m)} {
         width: 100%;

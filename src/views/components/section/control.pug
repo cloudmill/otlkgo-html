@@ -69,7 +69,7 @@ mixin control-sections
               .custom-card__num.countup-element(data-countup='7') 7
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title заседаний
-                .custom-card__texts-subtext.desktop 5 заседаний в форме совместного присутствия,  <br>2 заседания в форме заочного голосования
+                .custom-card__texts-subtext.desktop 5 заседаний в форме совместного присутствия, 2 заседания в форме заочного голосования
             .custom-card__texts-subtext.mobile 5 заседаний в форме совместного присутствия,  <br>2 заседания в форме заочного голосования
             .custom-card__subtitle В составе комитета по аудиту совета директоров:
             each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
@@ -105,6 +105,9 @@ mixin control-sections
       .control-structure__title Структура корпоративного управления
       .control-structure__img.desktop(data-aos="fade-up") 
         +picture('control-structure-vector.png')
+      +activity-buttons('control-structure-vector.png').flex-desktop
+      
       .control-structure__img-container.mobile(data-aos="fade-up")
         .control-structure__img 
           +picture('control-structure-vector.png')
+        +activity-buttons('control-structure-vector.png').flex-m

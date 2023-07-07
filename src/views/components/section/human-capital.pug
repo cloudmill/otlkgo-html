@@ -2,7 +2,6 @@ mixin human-capital
   section.human-capital(id="human-capital")(data-aos="fade-up") 
     .container-content(data-aos="fade-up") 
       h2.human-capital__title Человеческий капитал
-      +print-activity-buttons
       h3.human-capital__subtitle.w-100 Сколько нас?
       .human-capital__hero-row(data-aos="fade-up") 
         .human-capital__hero-col(data-aos="fade-up")
@@ -57,8 +56,10 @@ mixin organization-structure
         .organization-structure__number-title Численность персонала компании
         .organization-structure__number-table.desktop(data-aos="fade-up")
           +picture('structure-number-table.png')
+        +activity-buttons('structure-number-table.png').flex-desktop
         .organization-structure__number-table.mobile(data-aos="fade-up")
           +picture('structure-number-table-mobile.png')
+        +activity-buttons('structure-number-table-mobile.png').flex-m
       .organization-structure__personal.first(data-aos="fade-up")  
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по категориям, человек
@@ -78,6 +79,7 @@ mixin organization-structure
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-1.png')
+          +activity-buttons('structure-personale-1.png')
       .organization-structure__personal.second(data-aos="fade-up")
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по образованию, человек
@@ -97,6 +99,7 @@ mixin organization-structure
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-2.png')
+          +activity-buttons('structure-personale-2.png')
       .organization-structure__personal(data-aos="fade-up") 
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по возрасту, человек
@@ -117,6 +120,7 @@ mixin organization-structure
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-3.png')
+          +activity-buttons('structure-personale-3.png')
       .organization-structure__personal(data-aos="fade-up") 
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по полу, человек
@@ -130,6 +134,7 @@ mixin organization-structure
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-4.png')
+          +activity-buttons('structure-personale-4.png')
       .organization-structure__subrow(data-aos="fade-up") 
         .organization-structure__subcol(data-aos="fade-up") 
           .organization-structure__subcol-title В течение 2022 года в ряд локально-нормативных актов ОТЛК&nbsp;ЕРА вносились дополнения, были актуализированы и утверждены следующие документы:

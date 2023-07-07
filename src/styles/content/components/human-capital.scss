@@ -145,10 +145,11 @@
       }
       @media (min-width:768px) and (max-width: 1025px) {
         overflow-x: scroll;
+        height: auto;
       }
 
       @media #{media("<", m)} {
-        width: calc(100% + 20px);
+        width: calc(100% + 40px);
         padding: 0px 0px 20px 20px;
         margin-left: -20px;
         overflow-x: scroll;
@@ -517,6 +518,10 @@
       display: flex;
       gap: 40px;
 
+      @media (max-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -526,11 +531,19 @@
     &-col {
       width: 560px;
 
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+
       @media #{media("<", m)} {
         width: calc(100% - 20px);
       }
       &:nth-child(2) {
         width: 566px;
+
+        @media (max-width: 900px) {
+          width: 100%;
+        }
 
         @media #{media("<", m)} {
           width: 100%;
@@ -599,9 +612,15 @@
         
       }
 
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+
       @media #{media("<", m)} {
         margin-bottom: 20px;
-        width: rem(335px);
+
+        width: 100%;
+        
         font-size: rem(14px);
         line-height: 150%;
       }

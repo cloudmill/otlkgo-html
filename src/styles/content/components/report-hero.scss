@@ -318,6 +318,10 @@
       line-height: 90%;
     }
 
+    @media (max-width:350px) {
+      font-size: 24px;
+    }
+
     @media print {
       position: relative;
       z-index: 4;
@@ -332,6 +336,9 @@
       @media #{media(">", ll)} {
         width: 810px;
       }
+      @media #{media("<", t)} {
+        width: 350px;
+      }
     }
     &.grom{
       max-width: 750px;
@@ -340,6 +347,7 @@
       }
       @media #{media("<", m)} {
         width: 335px;
+        font-size: 32px;
       }
     }
   }

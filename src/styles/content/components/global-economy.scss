@@ -52,6 +52,9 @@
       @media print {
         width: 100%;
       }
+      @media #{media('<',m)} {
+        width: 100%;
+      }
     }
   }
 
@@ -360,7 +363,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: rem(20px);
-        width: rem(335px);
+        width: 100%;
       }
       @media print {
         width: 100%;
@@ -379,7 +382,6 @@
         }
         @media #{media('<',m)} {
           width: 100%;
-          width: rem(335px);
         }
         @media print {
           width: 100%;
@@ -625,7 +627,7 @@
     @media #{media('<',m)} {
       margin-bottom: 12px;
 
-      font-size: 60px;
+      font-size: 50px;
     }
 
     @media print {
@@ -804,7 +806,7 @@
     }
 
     @media #{media('<',m)} {
-      width: rem(335px);
+      width: 100%;
     }
 
     @media print {
@@ -840,7 +842,9 @@
       
       @media #{media("<", m)} {
         margin-bottom: rem(30px);
-        width: rem(335px);
+
+        width: 100%;
+
         font-size: rem(12px);
         line-height: 150%;
       }
@@ -1757,7 +1761,7 @@
           width: 100%;
         }
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
 
         @media print {
@@ -1774,7 +1778,7 @@
         }
 
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
 
         @media print {

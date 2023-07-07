@@ -56,9 +56,11 @@ mixin incorporated
         .incorporated-accrued__title Начисленные и выплаченные дивиденды в 2022 году
         .incorporated-accrued__img.desktop(data-aos="fade-up") 
           +picture('incorporated-dividends-table.png')
+        +activity-buttons('incorporated-dividends-table.png').flex-desktop
         .incorporated-accrued__img-container
           .incorporated-accrued__img.mobile(data-aos="fade-up") 
             +picture('incorporated-dividends-table-mobile.png')
+        +activity-buttons('incorporated-dividends-table-mobile.png').flex-m
       .incorporated-shareholders(id="incorporated-shareholders")(data-aos="fade-up")
         h2.incorporated-shareholders__title Общее собрание акционеров
         .incorporated-shareholders__hero-row(data-aos="fade-up") 

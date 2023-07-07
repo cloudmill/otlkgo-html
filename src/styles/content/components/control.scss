@@ -24,7 +24,7 @@
       height: rem(535px);
     }
     @media #{media("<", m)} {
-      width: rem(335px);
+      width: 100%;
       height: rem(290px);
     }
     &__img{
@@ -58,6 +58,7 @@
       }
       @media (min-width: 1025px) and (max-width: 1280px) {
         left: 40px;
+        width: 93%;
       }
       @media (min-width: 768px) and (max-width: 1024px) {
         left: 10%;
@@ -70,7 +71,7 @@
       @media #{media("<", m)} {
         left: rem(20px);
         top: rem(175px);
-        width: rem(290px);
+        width: 90%;
 
         font-size: rem(24px);
         line-height: 120%;
@@ -124,7 +125,7 @@
       &.list-subhero{
         max-width: 560px;
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
     }
@@ -138,7 +139,7 @@
       color: #2A2E2B;
 
       @media #{media("<", m)} {
-        max-width: rem(335px);
+        max-width: 100%;
 
         font-size: rem(13px);
         line-height: 160%;
@@ -149,7 +150,7 @@
       max-width: 760px;
 
       @media #{media("<", m)} {
-        max-width: rem(335px);
+        max-width: 100%;
       }
     }
   }
@@ -178,8 +179,8 @@
     }
 
     &__row{
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
 
       &:nth-child(2){
@@ -228,6 +229,11 @@
     margin-top: 120px;
     padding-top: 20px;
     border-top: 1px solid #045C25;
+    
+    @media #{media("<", t)} {
+      margin-top: 44px;
+      padding-top: 8px;
+    }
 
     @media #{media("<", m)} {
       margin-top: 44px;
@@ -253,8 +259,8 @@
     &__img{
       @media #{media("<", m)} {
 
-        width: rem(571px);
-        height: rem(375px);
+        width: 571px;
+        height: 375px;
         picture{
           img{
             object-fit: fill;
@@ -263,11 +269,12 @@
       }
 
       &-container{
+
         @media #{media("<", m)} {
           padding-left: rem(20px);
           margin-left: rem(-20px);
 
-          width: calc(100% + 20px);
+          width: calc(100% + 40px);
           overflow-x: scroll;
 
           @include scrollbar-hidden();
