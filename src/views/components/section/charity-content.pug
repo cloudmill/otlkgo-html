@@ -146,3 +146,303 @@ mixin charity-content
                 p.ecology-grom__job Генеральный директор
               .col
                 +appeal2-svg.ecology-grom__elem_2
+mixin charity-content 
+  section(data-aos="fade-up").charity.mt-section
+    .container-content 
+      .charity__inner 
+        p.charity__title.description 我们的使命 - 向儿童、儿童机构、退役军人、退休职工、残疾人和处境困难的人们提供系统化援助。此外，公司股东及员工有意识地希望通过支持文化、科学、教育和体育的计划造福于社会。
+
+        .charity__row
+          .item.item_size-3
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='327') 
+              .item__col 
+                p.item__grey.number-animate-327.number-animate 亿卢布
+            .item__row 
+              p.item__subtext 2022年公司用于帮助儿童和支持行业老职工的金额
+          .charity__elem 
+            .row 
+              p.charity__text_green 其中，1.09亿卢布
+
+              p.charity__subtext 平均分配用于俄罗斯、白俄罗斯和哈萨克斯坦项目资金
+            .row 
+              p.charity__text.text 此外，公司股東和員工都有通過支持文化、科教和體育項目造福社會的自覺願望。
+        .charity__bottom.mt-section
+          p.charity__description.description_big 我们直接或通过与固定合作伙伴-俄罗斯、白俄罗斯和哈萨克斯坦的慈善基金会合作的方式，支持各种社会倡议。
+  section(data-aos="fade-up").charity-cards
+    .container-content 
+      .charity-cards__inner
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .charity-cards__row
+            .col 
+              h3.charity-cards__title 俄罗斯
+            .col.desktop-m
+              p.charity-cards__number 109亿卢布
+          .charity-cards__row
+            .col 
+              p.charity-cards__description.description_big.mt-0-m 儿童援助
+              ul.list.charity-cards__list.charity-cards__list
+                each item in ['为重症儿童提供援助。','共同发展儿童-青少年体育。 ',]
+                  li.charity-cards__list-item
+                    +mark-text-svg.charity-cards-svg.list-svg
+                    p.text.list__text.charity-cards__text=item 
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109亿卢布
+            .col 
+              p.charity-cards__description.description_big 扶持行业退休人员
+              ul.charity-cards__list.list.charity-cards__list
+                each item in ['为俄罗斯铁路公司退休人员和白俄罗斯共和国和哈萨克斯坦共和国退休铁路工人组织国际体育和健康生活方式嘉年华。','组织《善举记录大全》慈善计划它包括支持人口中未受保护的低收入阶层，以及在预防和保护公民健康领域的援助。',]
+                  li.charity-cards__list-item
+                    +mark-text-svg.charity-cards-svg
+                    p.text.charity-cards__text=item 
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .charity-cards__row
+            .col 
+              h3.charity-cards__title 白俄罗斯
+            .col.desktop-m
+              p.charity-cards__number 109亿卢布
+          .charity-cards__row
+            .col 
+              p.charity-cards__description.description_big.mt-0-m 儿童援助
+              ul.list.charity-cards__list.charity-cards__list
+                each item in ['出资建设儿童铁路列车机库，修缮儿童健康营地内大楼，设施美化。',]
+                  li.charity-cards__list-item
+                    +mark-text-svg.charity-cards-svg.list-svg
+                    p.text.list__text.charity-cards__text=item 
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109亿卢布
+            .col 
+              p.charity-cards__description.description 扶持行业退休人员
+              ul.charity-cards__list.list.charity-cards__list
+                each item in ['为白俄罗斯铁路退休员工提供物资帮助和支持；购买办公用品。','采购医疗用品、组织技术设备、软件。']
+                  li.charity-cards__list-item
+                    +mark-text-svg.charity-cards-svg
+                    p.text.charity-cards__text=item 
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .charity-cards__row
+            .col 
+              h3.charity-cards__title 哈萨克斯坦
+            .col
+              p.charity-cards__number.desktop-m 109亿卢布
+          .charity-cards__row
+            .col 
+              p.charity-cards__description.description.mt-0-m 儿童援助
+              ul.list.charity-cards__list
+                each item in ['协助哈萨克斯坦各地区儿童-青少年体育发展：资助建设了五人制足球场和篮球排球场；购买了健身器材和运动器材；为公司员工的子女组织了体育课程和UTLC ERA地区体育锦标赛。','组织并举办哈萨克斯坦铁路国有企业股份公司职工多子女家庭“助学”活动；为参加“Балауса болашақ”艺术比赛的。','哈萨克斯坦铁路国有企业股份公司职工子女参赛选手购买礼物；组织“爸爸、妈妈、我-运动之家”体育活动，以及双组织职工子女间小型足球赛。 ']
+                  li.charity-cards__list-item
+                    +mark-text-svg.charity-cards-svg.list-svg
+                    p.text.list__text.charity-cards__text!=item 
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109亿卢布
+            .col 
+              p.charity-cards__description.description 扶持行业退休人员
+              ul.charity-cards__list.list.charity-cards__list
+                each item in ['在供暖季节为哈萨克斯坦铁路运输的退休人员和退伍军人购买煤炭；为行业独居老兵和养老院采购150个菜篮子，庆祝胜利日、运输工人日和老人日；组织了一场“周年纪念开始”体育赛事，以及两个组织的退伍军人、员工和子女之间的马拉松比赛；为“哈萨克斯坦铁路国有企业股份”公司地区退伍军人委员会购买了18个信息展台，以及纪念“哈萨克斯坦铁路国有企业股份”公司退伍军人委员会成员周年的纪念品。 ']
+                  li.charity-cards__list-item
+                    +mark-text-svg.charity-cards-svg
+                    p.text.charity-cards__text=item 
+  section(data-aos="fade-up").charity-utlc.mt-section(id="charity-utlc")  
+    .container-content
+      .charity-utlc__inner 
+        h2.charity-utlc__title 团结人民和国家： UTLC Cup 2022
+        .charity-utlc__top
+          p.charity-utlc__text-top.text Вместе с футбольным клубом наша компания воплотила в жизнь социальный проект, объединяющий страны Евразийского континента — международный футбольный турнир UTLC Cup 2022.Официальным партнером проекта выступило ОАО «РЖД». 
+        .charity-utlc__bottom 
+          .row 
+            p.charity-utlc__description.description 2022年，比赛已经举行第四届，即使是艰难的地缘政治局势也没有阻止。
+            p.charity-utlc__text.text.desktop-m 来自俄罗斯、白俄罗斯、哈萨克斯坦、土耳其、塞尔维亚的8支球队抵达莫斯科参加UTLC CUP。5天时间里，在Sapsan Arene举行了16场比赛，踢进55球。
+          .row 
+            .item.item_size-2
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='18') 
+                .item__col 
+                  p.item__grey.number-animate-18.number-animate 万卢布
+              .item__row 
+                p.item__subtext UTLC ERA赞助2022 UTLC Cup锦标赛金额
+              .item__row.mobile-m
+                p.text.item__text  来自俄罗斯、白俄罗斯、哈萨克斯坦、土耳其、塞尔维亚的8支球队抵达莫斯科参加UTLC CUP。5天时间里，在Sapsan Arene举行了16场比赛，踢进55球。
+          .charity-utlc__box 
+            .charity-utlc__img 
+              +picture('charity-utlc1.png')
+            .charity-utlc__img
+              +picture('charity-utlc2.png')
+            .charity-utlc__img 
+              +picture('charity-utlc3.png')
+            .charity-utlc__img    
+              +picture('charity-utlc4.png')
+  section(data-aos="fade-up").ecology-grom.charity-grom
+    .container-content 
+      .ecology-grom__inner 
+        .col 
+          .ecology-grom__img
+            +picture('ecology-grom.png')
+        .ecology-grom__right
+          .col 
+            +appeal-svg.ecology-grom__elem_1
+          .col
+            .row 
+              p.ecology-grom__text.text “在这些人的眼中，可以看出进一步发展职业生涯的动力。他们中的许多人有生以来第一次参加如此大型的国际赛事，这对他们来说将留下深刻的印象。看到这样的情绪，我感到非常高兴。 
+            .charity-grom__bottom
+              .col
+                p.ecology-grom__name 阿列克谢·格罗姆
+                p.ecology-grom__job 总经理
+              .col
+                +appeal2-svg.ecology-grom__elem_2
+mixin charity-content-EN
+  section(data-aos="fade-up").charity.mt-section
+    .container-content 
+      .charity__inner 
+        p.charity__title.description Our goal is to provide comprehensive aid to children, children’s institutions, long-service employees, retirees, disabled and distressed people. 
+        .charity__row
+          .item.item_size-3
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='327') 
+              .item__col 
+                p.item__grey.number-animate-327.number-animate млн руб
+            .item__row 
+              p.item__subtext spent by the company in 2022 to support children and industry veterans 
+
+          .charity__elem 
+            .row 
+              p.charity__text_green including 109 million rubles
+              p.charity__subtext allocated on a parity basis between the projects in Russia, Belarus and Kazakhstan
+            .row 
+              p.charity__text.text In addition, the shareholders of the company and its employees have a conscious desire to use the services of society through programs to support culture, science, education and sports.
+        .charity__bottom.mt-section
+          p.charity__description.description_big We support various social initiatives both directly and in cooperation with our long-standing partners, i.e. charity funds in Russia, Belarus and Kazakhstan.
+  section(data-aos="fade-up").charity-cards
+    .container-content 
+      .charity-cards__inner
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .charity-cards__row
+            .col 
+              h3.charity-cards__title Russia
+            .col.desktop-m
+              p.charity-cards__number 109 million rubles
+          .charity-cards__row
+            .col 
+              p.charity-cards__description.description_big.mt-0-m Aid to Children
+              ul.list.charity-cards__list.charity-cards__list
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg.list-svg
+                  p.text.list__text.charity-cards__text We helped children with severe diseases.
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg.list-svg
+                  p.text.list__text.charity-cards__text We developed children’s and youth sports together.
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109 million rubles
+            .col 
+              p.charity-cards__description.description_big Support for Industry Veterans
+              ul.charity-cards__list.list.charity-cards__list
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text We held the International Sports and Healthy Lifestyle Festival for JSCo RZD retirees and retired railway personnel from Belarus and Kazakhstan.
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text We implemented the “Book of Good Deeds” charity program. It envisages support to vulnerable and low income population groups, preventive care and health protection assistance.
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .charity-cards__row
+            .col 
+              h3.charity-cards__title Belarus
+            .col.desktop-m
+              p.charity-cards__number 109 million rubles
+          .charity-cards__row
+            .col 
+              p.charity-cards__description.description_big.mt-0-m Aid to Children
+              ul.list.charity-cards__list.charity-cards__list
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg.list-svg
+                  p.text.list__text.charity-cards__text We allocated funds for the construction of a hangar to store the rolling stock on the Children’s Railway, and the repair of buildings and site improvement in the children’s health improvement camp.
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109 million rubles
+            .col 
+              p.charity-cards__description.description Support for Industry Veterans
+              ul.charity-cards__list.list.charity-cards__list
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text We rendered financial aid and support for retirees of the Belarusian Railway Veteran Organization and purchased stationery for the organization.
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg
+                  p.text.charity-cards__text We purchased medical products, office equipment and software.
+        .charity-cards__item 
+          +column-top-svg.charity-cards__decor
+          .charity-cards__row
+            .col 
+              h3.charity-cards__title Kazakhstan
+            .col
+              p.charity-cards__number.desktop-m 109 million rubles
+          .charity-cards__row
+            .col 
+              p.charity-cards__description.description.mt-0-m Aid to Children
+              ul.list.charity-cards__list
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg.list-svg
+                  p.text.list__text.charity-cards__text We promoted development of children's and youth sports in Kazakhstan regions: we allocated funds for construction of a mini football field and a multi-purpose basketball and volleyball court; purchased gym machines and sports gear; established sport sections for personnel’s children and held regional sport tournaments.
+                li.charity-cards__list-item
+                  +mark-text-svg.charity-cards-svg.list-svg
+                  p.text.list__text.charity-cards__text We arranged and held “Get Children Ready for School” campaign for multi-child families of JSC “NC “KTZ” employees; purchased gifts for the participants of Balausa Bolashak art competition for the children of JSC “NC “KTZ” employees; arranged a sport event “Dad, Mom and Me: a Sporting Family” and a mini football tournament among the children of employees from both companies.
+            .col.mobile-m.mt-20-m 
+              p.charity-cards__number 109 million rubles
+            .col 
+              p.charity-cards__description.description Support for Industry Veterans
+              ul.charity-cards__list.list.charity-cards__list
+                  li.charity-cards__list-item
+                    +mark-text-svg.charity-cards-svg
+                    p.text.charity-cards__text We purchased coal during the cold season for retirees and veterans of Kazakhstan railway transport; we purchased 150 food baskets for single industry veterans and assisted-living facilities to celebrate the Victory Day, the Transport Worker Day and the Day of Older Persons; we arranged an “Anniversary Competition” sports event and a marathon for veterans and employees with children from both organizations; we purchased 18 information stands for JSC “NC “KTZ” regional veteran councils and gifts for milestone birthdays of JSC “NC “KTZ” Veteran Council members.
+ 
+  section(data-aos="fade-up").charity-utlc.mt-section(id="charity-utlc")  
+    .container-content
+      .charity-utlc__inner 
+        h2.charity-utlc__title Uniting People and Countries: UTLC CUP 2022
+        .charity-utlc__top
+          p.charity-utlc__text-top.text In cooperation with a football club, we brought to life UTLC CUP 2022 International Football Tournament, a social project to unite the countries of the Eurasian continent.
+        .charity-utlc__bottom 
+          .row 
+            p.charity-utlc__description.description In 2022, the tournament was held for the fourth time, despite the challenging geopolitical situation. 
+          .row 
+            .item.item_size-2
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='18') 
+                .item__col 
+                  p.item__grey.number-animate-18.number-animate million rubles
+              .item__row 
+                p.item__subtext In 2022, the tournament was held for the fourth time, despite the challenging geopolitical situation. 
+
+              .item__row.mobile-m
+                p.text.item__text  Eight teams from Russia, Belarus, Kazakhstan, Turkey and Serbia arrived in Moscow to compete for UTLC CUP. 16 matches were played at Sapsan Arena during the five-day tournament with 55 goals scored.
+          .charity-utlc__box 
+            .charity-utlc__img 
+              +picture('charity-utlc1.png')
+            .charity-utlc__img
+              +picture('charity-utlc2.png')
+            .charity-utlc__img 
+              +picture('charity-utlc3.png')
+            .charity-utlc__img    
+              +picture('charity-utlc4.png')
+  section(data-aos="fade-up").ecology-grom.charity-grom
+    .container-content 
+      .ecology-grom__inner 
+        .col 
+          .ecology-grom__img
+            +picture('ecology-grom.png')
+        .ecology-grom__right
+          .col 
+            +appeal-svg.ecology-grom__elem_1
+          .col
+            .row 
+              p.ecology-grom__text.text These guys are motivated to develop their career, you can read this in their eyes. For many of them, this was their first major international tournament and an incredible experience. Seeing their emotions is very gratifying.
+            .charity-grom__bottom
+              .col
+                p.ecology-grom__name Alexey Grom
+                p.ecology-grom__job General Director
+              .col
+                +appeal2-svg.ecology-grom__elem_2

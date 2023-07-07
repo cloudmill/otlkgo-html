@@ -142,5 +142,294 @@ mixin profit-content
                       +arrow-bottom-svg.item__arrow 
                       p.item__grey_bottom -12%
               p.profit-reporting__text Чистый долг составил 2  742  млн. рублей, что ниже показателя 2021 года на  12%, или 390  млн. рублей. Уменьшение чистого долга обусловлено ростом денежных средств и  их  эквивалентов.
+mixin profit-content-CN
+  section(data-aos="fade-up").block-diagram.mt-section.profit
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='6461')
+                .item__col 
+                  p.item__grey.number-animate-6461.number-animate 亿卢布
+              .item__row 
+                p.item__subtext 2022年UTLC ERA销售利润指标比2021年低5%。
+            p.block-diagram__text.text 2022年UTLC ERA销售利润指标为64.61亿卢布，比2022年水平低5%。
+          .block-diagram__col 
+            p.block-diagram__description UTLC ERA 2020-2022年的销售利润，百万卢布，显示盈利率
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev8' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              +profit-sales.for-video.video-play-rev8
 
+  section(data-aos="fade-up").block-diagram.ebitda(id="profit-ebitda")
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h2.block-diagram__title EBITDA
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='6123') 
+                .item__col 
+                  p.item__grey.number-animate-6123.number-animate 亿卢布
+              .item__row 
+                p.item__subtext 2022，UTLC ERA的EBITDA指标比或比2021年减少了7.61亿卢布，或低11%。
+            p.block-diagram__text.text 2022，UTLC ERA的EBITDA为61.23亿卢布，减少7.61亿卢布，或比去年低11%。EBITDA是根据俄罗斯会计标准财务报表2计算的，作为其他收入和支出中扣除折旧、利息和汇率差异之前的利润。
+          .block-diagram__col 
+            p.block-diagram__description EBITDA，显示盈利率，百万卢布。
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev4' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              +ebitda.for-video.for-video_4.video-play-rev4
+  section(data-aos="fade-up").block-diagram.profit-net(id="profit-clean")
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h2.block-diagram__title 净利润 
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='4815')
+                .item__col 
+                  p.item__grey.number-animate-4815.number-animate 亿卢布
+              .item__row 
+                p.item__subtext 2022，UTLC ERA的净利润增加1.606亿卢布，或比去年高出3%。
+          .block-diagram__col 
+            p.block-diagram__description 净利润，显示盈利率，百万卢布。
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev7' )
+                source(src="./assets/videos/net-profit.mp4" type="video/mp4")
+                source(src="./assets/videos/net-profit.webm" type="video/webm")
+              +net-profit.for-video.video-play-rev7
+  section(data-aos="fade-up").profit-reporting(id="profit-reporting") 
+    .container-content 
+      .profit-reporting__inner 
+        h2.profit-reporting__title 国际财务报告准则财务报告
+        .profit-reporting__row 
+          .col 
+            p.profit-reporting__description.description_big UTLC ERA根据IFRS发布的财务报表包括截至2022年12月31日的公司业绩。
+            //- p.profit-reporting__subtext * Относительно 2021 г.
+          .profit-reporting__column   
+            .row
+              .item.item_size-5 
+                .item__row 
+                  h6.item__title 收入
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='55375') 
+                  .item__col.number-animate-55375.number-animate
+                    p.item__grey 亿卢布
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -15%
+                .item__row 
+                  p.item__subtext 到2022年底，UTLC ERA的收入比2021年下降了15%，达553.75亿卢布，即94.7亿卢布。
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title 毛利润
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='7682')
+                  .item__col.number-animate-7682.number-animate 
+                    p.item__grey 亿卢布
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -11%
+                .item__row 
+                  p.item__subtext 公司毛利润为76.82亿卢布，较2021年下降11%，即9.7亿卢布。
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title 营业利润
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='6327')
+                  .item__col.number-animate-6327.number-animate 
+                    p.item__grey 亿卢布
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -6%
+                .item__row 
+                  p.item__subtext 营业利润为63.27亿卢布，比2021年同期下降6%，即4.07亿卢布。
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title 净利润
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='4761')
+                  .item__col.number-animate-4761.number-animate 
+                    p.item__grey 亿卢布
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -4%
+                .item__row 
+                  p.item__subtext 净利润达到47.61亿卢布，比去年同期下降4%，即2.08亿卢布。
+            .profit-reporting__row_bottom 
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title 净债务
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='2742')
+                  .item__col.number-animate-2742.number-animate
+                    p.item__grey 亿卢布
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -12%
+              p.profit-reporting__text 净债务为27.42亿卢布，比2021年减少12%，即3.9亿卢布。债务净额减少的原因是现金和现金等价物增加。
+
+      
+mixin profit-content-EN
+  section(data-aos="fade-up").block-diagram.mt-section.profit
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='6461')
+                .item__col 
+                  p.item__grey.number-animate-6461.number-animate million rubles
+              .item__row 
+                p.item__subtext UTLC ERA’s profit on sales in 2022, which is 5% less than in 2021.
+            p.block-diagram__text.text Снижение прибыли от продаж обусловлено снижением валовой прибыли и ростом управленческих расходов.
+          .block-diagram__col 
+            p.block-diagram__description UTLC ERA’s Profit on Sales for 2020 to 2022, including cost efficiency (million rubles)
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev8' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              +profit-sales.for-video.video-play-rev8
+
+  section(data-aos="fade-up").block-diagram.ebitda(id="profit-ebitda")
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h2.block-diagram__title EBITDA
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='6123') 
+                .item__col 
+                  p.item__grey.number-animate-6123.number-animate million rubles
+              .item__row 
+                p.item__subtext UTLC ERA’s EBITDA for 2022, which is 761 million rubles or 11% less as compared to the previous year
+            p.block-diagram__text.text EBITDA is calculated on the basis of Financial Statement Form 2 according to the Russian Accounting Standards as profit before amortization, interest and exchange rate difference as part of the miscellaneous revenue and costs. 
+          .block-diagram__col 
+            p.block-diagram__description EBITDA, including cost efficiency (million rubles)
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev4' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              +ebitda.for-video.for-video_4.video-play-rev4
+  section(data-aos="fade-up").block-diagram.profit-net(id="profit-clean")
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h2.block-diagram__title Net Profit 
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='4815')
+                .item__col 
+                  p.item__grey.number-animate-4815.number-animate million rubles
+              .item__row 
+                p.item__subtext UTLC ERA’s net profit for 2022, which is 160.6 million rubles or 3% more than in 2021.
+          .block-diagram__col 
+            p.block-diagram__description Net Profit, including cost efficiency (million rubles)
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev7' )
+                source(src="./assets/videos/net-profit.mp4" type="video/mp4")
+                source(src="./assets/videos/net-profit.webm" type="video/webm")
+              +net-profit.for-video.video-play-rev7
+  section(data-aos="fade-up").profit-reporting(id="profit-reporting") 
+    .container-content 
+      .profit-reporting__inner 
+        h2.profit-reporting__title IFRS Financial Statements
+        .profit-reporting__row 
+          .col 
+            p.profit-reporting__description.description_big UTLC ERA’s IFRS Financial Statements include the company’s performance indicators. 
+            p.profit-reporting__subtext * as of December 31, 2022.
+          .profit-reporting__column   
+            .row
+              .item.item_size-5 
+                .item__row 
+                  h6.item__title Revenue
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='55375') 
+                  .item__col.number-animate-55375.number-animate
+                    p.item__grey million rubles
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -15%
+                .item__row 
+                  p.item__subtext UTLC ERA’s revenue as of the end of 2022 reduced by 15% or 9,470 million rubles as compared to 2021 and amounted to 55,375 million rubles.
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title Gross profit
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='7682')
+                  .item__col.number-animate-7682.number-animate 
+                    p.item__grey million rubles
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -11%
+                .item__row 
+                  p.item__subtext The company’s gross profit was equal to 7,682 million rubles, which is 11% or 970 million rubles less than in 2021.
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title Operating profit
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='6327')
+                  .item__col.number-animate-6327.number-animate 
+                    p.item__grey million rubles
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -6%
+                .item__row 
+                  p.item__subtext The operating profit was 6,327 million rubles, which is 6% or 407 million rubles less than in 2021.
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title Net profit
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='4761')
+                  .item__col.number-animate-4761.number-animate 
+                    p.item__grey million rubles
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -4%
+                .item__row 
+                  p.item__subtext The net profit reached 4,761 million rubles, which is 4% or 208 million rubles less as compared to the previous year.
+            .profit-reporting__row_bottom 
+              .item.item_size-4 
+                .item__row 
+                  h6.item__title Net debt
+                .item__row 
+                  .item__col 
+                    p.item__number.countup-element(data-countup='2742')
+                  .item__col.number-animate-2742.number-animate
+                    p.item__grey million rubles
+                    .item__row_top 
+                      +arrow-bottom-svg.item__arrow 
+                      p.item__grey_bottom -12%
+              p.profit-reporting__text The net debt was equal to 2,742 million rubles, which is 12% or 390 million rubles less than in 2021. The net debt reduction is related to the increase in cash and cash equivalents.
       

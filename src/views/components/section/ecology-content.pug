@@ -232,3 +232,488 @@ mixin ecology-content
               p.ecology-cards__subtext рост популяции зубров в Турмонском заказнике
             .col 
               p.ecology-cards__text.text Специалисты резервата «Иле-Балхаш» при поддержке ОТЛК&nbsp;ЕРА реализуют проект по восстановлению тугайного леса, благодаря которому к концу 2022 года уже более 12 тысяч новых саженцев туранги, лоха и ивы появилось в этих местах. Выделенные средства также помогли организовать современную систему капельного орошения и разработать меры противопожарной безопасности.
+
+
+mixin ecology-content-CN 
+  section(data-aos="fade-up").ecology.mt-section(id="ecology-mt") 
+    .container-content 
+      .ecology__inner 
+        h2.ecology__title 气候影响
+        .ecology__row 
+          .col 
+            p.ecology__description.description 2022年，世界各地的环境议程发生了一些变化，但减少对气候的影响仍是负责任人、企业和国家的关注重点。环境可持续性正在成为一种竞争优势，由于物流几乎是任何业务的一个组成部分，因此该领域的公司应该尽可能密切地关注其活动的环境部分。自然保护问题在整个欧亚空间受到越来越多的关注。
+          .col 
+            p.ecology__text.text 推广铁路服务，将其作为长途货运中最环保的服务，是减少全球运输部门温室气体排放的一个关键步骤。
+  section(data-aos="fade-up").ecology-statistics 
+    .container-content 
+      .ecology-statistics__inner 
+        .col 
+          p.ecology-statistics__text.text 推广铁路服务，将其作为长途货运中最环保的服务，是减少全球运输部门温室气体排放的一个关键步骤。 
+          .item
+            .item__row 
+              .item__col 
+                p.item__grey 达
+              .item__col 
+                p.item__number.countup-element(data-countup='20' data-countup-suffix='%')
+            .item__row 
+              p.item__subtext 所有排放到大气中的二氧化碳都是由运输部门产生的。 
+          .row 
+            p.ecology-statistics__text.text 我们的业务属于铁路运输领域，铁路运输是国际贸易中最重要的组成部分，因此我们可以自信地说，与其他方式相比，公司服务中的运输具有一系列的优势。铁路是最节约资源和最环保的运输方式之一。
+            p.ecology-statistics__text.text 作为欧亚最大的铁路集装箱运输运营商，负责中-欧-中班列主要货物的运输，UTLC ERA开发了CO2大气排放在线计数器 — https://index1520.com/en/emissions-co2/。在其的页面上，还可以看到不同运输方式运输相同数量货物时的碳足迹比较。
+        .ecology-statistics__right 
+          .row 
+            p.ecology-statistics__text.text 根据布列斯特-多斯特克主要干线的排放参数（取平均指标）和所有路线的总运输量计算出UTLC ERA的活动结果下的CO<sup class='fz-10'>2</sup> 直接排放量。
+            p.ecology-statistics__text.text 根据布列斯特-多斯特克航线的参数，确定乘以UTLC ERA服务中的总运输量的1个TEU的CO<sup class='fz-10'>2</sup>排放量为-G<sup class='fz-10'>温室气体TEU。</sup>这一数值的计算公式如下：
+          .ecology-statistics__img 
+            +picture('ecology-statistics.png')
+            +activity-buttons('ecology-statistics.png') 
+
+          .ecology-statistics__formulas
+            p.ecology-statistics__formula
+              | Р 
+              sub ТЭР
+              |&nbsp;  — &nbsp;  每公里铁路线燃料动力消耗量（吨，千立方米，千兆卡或千瓦时）；
+            p.ecology-statistics__formula 
+              | Н
+              sub КМ
+              |&nbsp;  — &nbsp;  总行程距离（公里）
+            p.ecology-statistics__formula 
+              | К 
+              sub СО
+              |&nbsp;  — &nbsp;  CO2排放系数(吨 CO<sup class='fz-10'>2</sup>/吨或千立方米燃料，吨 CO<sup class='fz-10'>2</sup>/千兆卡热能，公斤CO2/千瓦·小时电量）。
+            p.ecology-statistics__formula 
+              | Q 
+              sub КТК
+              |&nbsp;  — &nbsp;  每列车集装箱数量
+          .row 
+            p.ecology-statistics__text.text 为计算UTLC ERA产生的直接和间接CO2排放量，采用自有公司数据，确定直接排放量（TTW），以及EcoTransIT*门户网站结算及方法，以确定间接排放量（WTT）。为计算运输选择方案环保影响，同时采用作为统计和计算碳痕迹的公认源头的EcoTransIT*门户网站。 
+  section(data-aos="fade-up").ecology-algorithm 
+    .container-content 
+      .ecology-algorithm__inner 
+        h6.ecology-algorithm__title 按运输方式正确比较排放量的算法：
+        .ecology-algorithm__row.ecology-algorithm__row_top
+          ul.ecology-algorithm__list.list
+            each item in ['对于所有运输方式，采用相同的路线长度，即布列斯特-多斯特克路线，5 454公里']
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text=item 
+          ul.ecology-algorithm__list.list
+            each item in ['货运量为最密集的运输方式 —— 容量为6 636 TEU的集装箱船的满载量。这一数量需要44列火车、1艘集装箱船、3 318辆载重达26吨的卡车和1 106架货机。']
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text=item 
+        .ecology-algorithm__row
+          .col 
+            p.ecology-algorithm__description.description 运输6 636 TEU的直接排放量（TTW）为：
+            ul.ecology-algorithm__list.list
+              each item in ['对于44列列车–442 998 千克CO<sup class="fz-10">2</sup>','1艘集装箱船-2 115 677 千克CO<sup class="fz-10">2</sup>','3 318辆卡车，装载26吨以下货物-39 423 125千克CO2','1 106架货机-233 864 501千克CO<sup class="fz-10">2</sup>']
+                li.ecology-algorithm__item
+                  +mark-text-svg.ecology-algorithm-svg
+                  p.text.eclology-algorithm__text!=item 
+          .col 
+            p.ecology-algorithm__description.description 运输6 636 TEU的直接和间接排放量（WTW）为：
+            ul.ecology-algorithm__list.list
+              each item in ['对于44列列车–19 618 237 千克CO<sup class="fz-10">2</sup>；','1艘集装箱船- 2 318 405 千克CO2；','3 318辆卡车，装载26吨以下货物-46 590 965千克CO<sup class="fz-10">2</sup>；','1 106架货机-285 847 854千克CO<sup class="fz-10">2</sup>。']
+                li.ecology-algorithm__item
+                  +mark-text-svg.ecology-algorithm-svg
+                  p.text.eclology-algorithm__text!=item 
+        .ecology-algorithm__row_bottom
+          p.ecology-algorithm__text.text 根据这些计算，通过将每种运输方式的排放量除以铁路排放量，得出海运、公路和空运相对于铁路运输的系数。然后，将选定时期的实际铁路排放量乘以每种运输方式的系数。
+  section(data-aos="fade-up").ecology-dynamic.mt-section(id="ecology-dynamic")  
+    .container-content 
+      .ecology-dynamic__inner 
+        h2.ecology-dynamic__title 
+          | UTLC ERA的CO
+          sup 2
+          |&nbsp; 排放量动态
+        .ecology-dynamic__row 
+          .col 
+            p.ecology-dynamic__description.description 可持续发展以及未来实现碳中和与UTLC ERA的愿望密不可分，即为跨欧亚运输中使用的海运、公路和航空货运创造有竞争力的替代品。
+          .col 
+            p.eclology-dynamic__text.text 发展长途货运中的铁路行业，是减少全球温室天然气排放的一个关键步骤。根据在线计数器，2022年，UTLC ERAZ 中国-欧洲-中国方向过境运输累计有2.74万吨CO<sup>2</sup>排放到大气中。如果同样数量的货物通过海路运输，排放量将达到13.09万吨，公路运输。将达到243.95万吨，航空运输将达到1447.16万吨。
+
+            p.eclology-dynamic__text.text 如果我们考虑UTLC ERA直接排放量和非公司活动产生的间接排放量的总和，那么到2022年底碳足迹为121.4万吨CO<sup>2</sup>,如果使用类似数量的公路和航空运输，排放量将相应地达到2 88.31万吨和1 768.84万吨CO2。
+  section(data-aos="fade-up").ecology-CO.mt-section 
+    .container-content
+      .ecology-CO__inner 
+        p.ecology-CO__description.description_big
+          | 按运输方式分列的直接CO
+          sup.sup-description 2
+          |&nbsp; 排放量与UTLC ERA的比较
+        .ecology-CO__row 
+          .col 
+            .ecology-description
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_1
+                p.ecology-description__text «UTLC ERA股份公司»
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_2 
+                p.ecology-description__text 海运
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_3
+                p.ecology-description__text 汽运
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_4
+                p.ecology-description__text 空运
+          .col 
+            .ecology-CO__img 
+              +picture('ecology-CO-1.png').ecology-CO__img
+              +activity-buttons('ecology-CO-1.png') 
+
+  section(data-aos="fade-up").ecology-CO2
+    .container-content
+      .ecology-CO2__inner
+        .ecology-CO2__top
+          p.ecology-CO2__description.description_big
+            | 按运输方式分列的直接和间接CO
+            sup.sup-description 2
+            |&nbsp; 排放量与UTLC ERA指标的比较
+          .ecology-CO2__row 
+            .col 
+              .ecology-description
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_1
+                  p.ecology-description__text «UTLC ERA股份公司»
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_2 
+                  p.ecology-description__text 海运
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_3
+                  p.ecology-description__text 汽运
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_4
+                  p.ecology-description__text 空运
+            .col 
+              .ecology-CO2__img 
+                +picture('ecology-CO-2.png').ecology-CO2__img
+                +activity-buttons('ecology-CO-2.png') 
+                
+        .ecology-CO2__bottom.mt-section
+          h6.ecology-CO2__subtitle  欧亚经济联盟政府间理事会于2021年8月批准了铁路货运数字化优先措施计划。
+          .row 
+            .col 
+              p.ecology-CO2__text.text 该计划与俄罗斯、哈萨克斯坦和白俄罗斯铁路签署了支持欧洲和中国之间高效集装箱运输的意向宣言一起，为欧亚铁路走廊的脱碳提供了决定性的动力。 
+              p.ecology-CO2__text.text 文件承认铁路运输在实现联合国可持续发展目标方面的关键作用，包括减少运输和物流业的碳足迹、提高能源效率，以及发展可持续的区域和跨境基础设施。
+            .col 
+              p.ecology-CO2__text.text 根据双方约定，在UTLC ERA运营商近期服务中，将对欧亚空间引入技术创新和过渡到无碳铁路物流原则的试点项目进行核准。首先：2022年，在1520空间，已测试过统一电子运单。考虑到2021年铁路集装箱运输在欧亚过境总量中的占比已经接近5%（相比之下，2015年仅为1%），未来对减少二氧化碳排放和环境负面影响的贡献将越来越明显。
+  section(data-aos="fade-up").ecology-grom.mt-section
+    .container-content 
+      .ecology-grom__inner 
+        .col 
+          .ecology-grom__img
+            +picture('ecology-grom.png')
+        .ecology-grom__right
+          .col 
+            +appeal-svg.ecology-grom__elem_1
+          .col
+            .row 
+              p.ecology-grom__text.text “铁路运输的环保价值正在成为建立我们大陆上对社会负责的企业的真正理念。这条铁路很可能成为格拉斯哥气候变化会议的象征，因为可以肯定地说，将越来越多的货物转移到轨道运输上，这是实现欧洲绿色协议和促进欧亚物流脱碳的重要先决条件”
+              p.ecology-grom__name 阿列克谢·格罗姆
+
+              p.ecology-grom__job 总经理
+            .row.ecology-grom__decor-bottom 
+              +appeal2-svg.ecology-grom__elem_2
+  section(data-aos="fade-up").ecology-environment.mt-section(id="ecology-environment") 
+    .container-content 
+      .ecology-environment__inner
+        h3.ecology-envoronment 环境保护
+        .ecology-environment__row
+          .col 
+            p.ecology-environment__description.description UTLC ERA的活动不会对环境造成直接和重大的损害。
+          .col 
+            p.ecology-environment__text.text 公司根据其出席国的环境立法运作，并以合理预防原则为指导，这意味着将环境风险纳入业务战略，并在决策阶段放弃任何潜在的环境危险项目。
+        .ecology-environment__elem
+          .ecology-environment__elem-decor
+            .decor_1
+            .decor_2
+            .decor_3
+            .decor_4
+          p.ecology-environment__elem-text #KeenOnGreen – UTLC ERA环保倡议
+        .ecology-environment__bottom 
+          .item
+            .item__row 
+              .item__col.item_size-1 
+                p.item__number.countup-element(data-countup='3') 
+              .item__col 
+                p.item__grey.number-animate-3.number-animate 万卢布
+            .item__row 
+              p.item__subtext 2022年UTLC ERA在哈萨克斯坦和俄罗斯实施的项目的融资金额 
+          p.ecology-environment__text.text 从2020年开始，我们积极参与环保项目的推广和实施。#Keenongreen倡议一方面旨在宣传铁路是最环保的运输方式，另一方面旨在支持UTLC ERA集装箱列车沿线经过的国家自然区域的环境项目。作为该倡议的一部分，公司在2021年支持了一个项目，以恢复哈萨克斯坦列入红皮书的中亚红鹿种群。
+  section(data-aos="fade-up").ecology-cards.mt-section 
+    .container-content  
+      .ecology-cards__inner
+        .ecology-cards__top
+          +column-top-svg.ecology-cards__decor
+          p.ecology-cards__description 在哈萨克斯坦 
+          .row 
+            .col 
+              p.ecology-cards__text.text 哈萨克斯坦的原始森林沿着河床、支流和湖泊延伸，为许多种类的近水动物提供了栖息地。但遗憾的是，气候变化、水文状况、淤泥流量减少、火灾和过度经济使用使 中亚泛滥地森林濒临灭绝！
+            .col 
+              p.ecology-cards__text.text Ile Balkhash保护区的专家在UTLC ERA的支持下，正在实施一个恢复 中亚泛滥地森林的项目，到2022年底，这些地方已经出现了超过1.2万株新的胡杨、胡颓子和垂柳幼苗。拨款资金同时帮助组织了一个现代化的滴灌系统，并制定了消防安全措施。
+        .ecology-cards__bottom
+          +column-top-svg.ecology-cards__decor 
+          .ecology-cards__bottom-row
+            p.ecology-cards__description 在俄罗斯
+            .ecology-cards__elem.desktop-m
+              p.ecology-cards__number.countup-element(data-countup='28' data-countup-prefix='+' data-countup-suffix='%')
+              p.ecology-cards__subtext 图尔蒙保护区野牛种群增长
+          .row
+            .col 
+              p.ecology-cards__text.text 在卡拉恰伊-切尔克西亚的中心，坐落着Kizginskoye峡谷 —— 一个受保护的自然区域。20世纪90年代，苏联科学家开始在这里恢复野牛的种群，野牛是欧洲仅存的野牛，被认为是高加索阔叶林生态系统的重要组成部分。很遗憾，由于人类活动，该物种从其自然栖息地消失了，高加索地区的最后一只野牛于1927年被杀死。 
+            .ecology-cards__elem.mobile-m
+              p.ecology-cards__number +28%
+              p.ecology-cards__subtext 图尔蒙保护区野牛种群增长
+            .col 
+              p.ecology-cards__text.text 为了恢复动物数量，制定了“俄罗斯野牛保护战略”，根据该计划，在我们公司的支持下，2022年，部分野牛种群被转移到北奥塞梯的瑟蒙斯基保护区，在那里为它们发展了合适的栖息地。 
+
+
+
+mixin ecology-content-EN
+  section(data-aos="fade-up").ecology.mt-section(id="ecology-mt") 
+    .container-content 
+      .ecology__inner 
+        h2.ecology__title Climate Impact
+        .ecology__row 
+          .col 
+            p.ecology__description.description Although the global environmental agenda was changed in 2022, responsible people, businesses and states are still committed to reducing the impact on the climate. Environmental performance is becoming a competitive edge, and, with logistics being an integral part of almost every business, companies operating in this industry should pay close attention to the environmental aspect of its activities. All Eurasian states increasingly focus on environmental protection.
+          .col 
+            p.ecology__text.text Promotion of the rail transport as the most environment friendly transport mode in long-distance freight service is a key step towards reducing GHG emissions by the transportation industry worldwide. 
+  section(data-aos="fade-up").ecology-statistics 
+    .container-content 
+      .ecology-statistics__inner 
+        .col 
+          p.ecology-statistics__text.text Promotion of the rail transport as the most environment friendly transport mode in long-distance freight service is a key step towards reducing GHG emissions by the transportation industry worldwide. 
+          .item
+            .item__row 
+              .item__col 
+                p.item__grey up to
+              .item__col 
+                p.item__number.countup-element(data-countup='20' data-countup-suffix='%')
+            .item__row 
+              p.item__subtext of the total air CO<sup class='fz-10'>2</sup>  emissions are generated by the transportation industry 
+          .row 
+            p.ecology-statistics__text.text We are engaged in rail transportation, which is a critical component of international trade, and we can confidently state that our traffic services have multiple advantages over other modalities. The rail transport is one of the most resource efficient and environmentally friendly modes of transport.
+            p.ecology-statistics__text.text As a major Eurasian rail container traffic operator making up the bulk of the cargo traffic volume on the China–Europe–China route, UTLC ERA has developed an online CO<sup class='fz-10'>2</sup>. On this page, you will also find a comparison of the carbon footprint during transportation of the same cargo volumes by different means of transport.
+        .ecology-statistics__right 
+          .row 
+            p.ecology-statistics__text.text The calculated direct СО<sup class='fz-10'>2</sup> emissions from UTLC ERA’s operations are based on the emission parameters of the Brest–Dostyk key basic route (taken as the average indicator) and the total traffic on all routes.
+
+            p.ecology-statistics__text.text On the basis of the Brest–Dostyk route parameters, the company calculates СО<sup class='fz-10'>2</sup> emissions per 1 TEU, G<sup class='fz-10'>GHGTEU</sup>, which is multiplied by the total traffic volume in UTLC ERA’s services. This value is calculated using the following formula:
+          .ecology-statistics__img 
+            +picture('ecology-statistics.png')
+            +activity-buttons('ecology-statistics.png') 
+
+          .ecology-statistics__formulas
+            p.ecology-statistics__formula
+              | Р 
+              sub ТЭР
+              |&nbsp;  — &nbsp;  FER consumption per 1 km (tons, m3, Gcal or kWh)
+            p.ecology-statistics__formula 
+              | Н
+              sub КМ
+              |&nbsp;  — &nbsp;  full route distance (km)
+            p.ecology-statistics__formula 
+              | К 
+              sub СО
+              |&nbsp;  — &nbsp; СО<sup class='fz-8'>2</sup>  emission factor (tons СО<sup class='fz-8'>2</sup> /t or thousand m3 of fuel, tons СО<sup class='fz-8'>2</sup> /Gcal of thermal power, kg СО<sup class='fz-8'>2</sup> /kWh of electrical energy)
+            p.ecology-statistics__formula 
+              | Q 
+              sub КТК
+              |&nbsp;  — &nbsp;  number of containers on a train
+          .row 
+            p.ecology-statistics__text.text Для расчета объема прямых и косвенных выбросов СО<sup class='fz-10'>2</sup> (WTW), генерируемых ОТЛК&nbsp;ЕРА, использовались собственные данные компании для определения прямых выбросов (TTW), а также расчеты и методология портала <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> для определения непрямых выбросов (WTT). Для расчета экологического воздействия альтернативных видов транспорта также использовался портал <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> , который является признанным источником в вопросах учета и расчетов углеродного следа.
+
+
+            To calculate the direct and indirect СО<sup class='fz-10'>2</sup>  emission (WTW) volume generated by UTLC ERA, we used the company's own data to determine direct emissions (TTW) and the calculations and methodology from <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> portal to determine indirect emissions (WTT). To calculate the environmental impact caused by alternative means of transport, we also used EcoTransIT portal, which is a reputable source in terms of carbon footprint recording and calculations.
+  section(data-aos="fade-up").ecology-algorithm 
+    .container-content 
+      .ecology-algorithm__inner 
+        h6.ecology-algorithm__title The algorithm for correct comparison of emissions by modes of transport is as follows:
+        .ecology-algorithm__row.ecology-algorithm__row_top
+          ul.ecology-algorithm__list.list
+            li.ecology-algorithm__item
+              +mark-text-svg.ecology-algorithm-svg
+              p.text.eclology-algorithm__text The route length is assumed the same for all transport modes, corresponding to the Brest–Dostyk route length, i.e. 5,454 km.
+          ul.ecology-algorithm__list.list
+            li.ecology-algorithm__item
+              +mark-text-svg.ecology-algorithm-svg
+              p.text.eclology-algorithm__text The cargo volume is assumed equal to the full load of a container vessel with a registered tonnage of 6,636 TEUs, which is the largest load capacity. This volume can be transported by 44 trains, 1 container vessel, 3,318 trucks with a load capacity up to 26 tons, or 1,106 freight aircraft.
+        .ecology-algorithm__row
+          .col 
+            p.ecology-algorithm__description.description The direct emissions (TTW) for transportation of 6,636 TEUs will be as follows:
+            ul.ecology-algorithm__list.list
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 44 trains: 442,998 kg CO<sup class="fz-10">2</sup>,
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 1 container vessel: 2,115,677 kg CO<sup class="fz-10">2</sup>,
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 3,318 trucks with a load capacity up to 26 tons: 39,423,125 kg CO<sup class="fz-10">2</sup>,
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 1,106 freight aircraft: 233,864,501 kg CO<sup class="fz-10">2</sup>,
+          .col 
+            p.ecology-algorithm__description.description The direct and indirect emissions (WTW) for transportation of 6,636 TEUs will be as follows:
+            ul.ecology-algorithm__list.list
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 44 trains: 19,618,237 kg CO<sup class="fz-10">2</sup>,
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 1 container vessel: 2,318,405 kg CO<sup class="fz-10">2</sup>,
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 3,318 trucks with a load capacity up to 26 tons: 46,590,965 kg CO<sup class="fz-10">2</sup>,
+              li.ecology-algorithm__item
+                +mark-text-svg.ecology-algorithm-svg
+                p.text.eclology-algorithm__text 1,106 freight aircraft: 285,847,854 kg CO<sup class="fz-10">2</sup>.
+        .ecology-algorithm__row_bottom
+          p.ecology-algorithm__text.text Based on these calculations, ratios are obtained for the sea, road and air transport as compared with the rail transport by dividing the emission volume for each mode of transport by the emission volume generated by the rail transport. The actual emission volume generated by the rail transport in the selected period is then multiplied by the resulting ratio for each mode of transport.
+  section(data-aos="fade-up").ecology-dynamic.mt-section(id="ecology-dynamic")  
+    .container-content 
+      .ecology-dynamic__inner 
+        h2.ecology-dynamic__title 
+          |СО
+          sup 2
+          |&nbsp; Emission Profile at UTLC&nbsp;ERA
+        .ecology-dynamic__row 
+          .col 
+            p.ecology-dynamic__description.description Sustainable development, and, in the longer term, carbon neutrality, are closely linked to UTLC ERA’s commitment to creating a competitive alternative to the sea, road and air freight transport used in the Trans-Eurasian service. 
+          .col 
+            p.eclology-dynamic__text.text Development of the railway service in long-distance cargo transportation is a key step towards reducing GHG emissions worldwide. According to the online meter, the accumulated emission volume generated by UTLC ERA’s transit traffic in the China – Europe – China direction in 2022 amounted to 27,400 tons CO2. If the same cargo volume had been delivered by sea, emissions would have reached 130,900 tons, while the emissions in case of road and air transport would have amounted to 2,439,500 and 14,471,600 tons, respectively.
+            p.eclology-dynamic__text.text If we look at the total volume of direct emissions generated by UTLC ERA and indirect emissions other than those generated by the company’s operations, the 2022 carbon footprint equaled 1,214,000 tons СО2, whereas transportation of the same cargo volume by road or air would have generated emissions in the amount of 2,883,100 tons and 17,688,400 tons СО2 respectively.
+  section(data-aos="fade-up").ecology-CO.mt-section 
+    .container-content
+      .ecology-CO__inner 
+        p.ecology-CO__description.description_big
+          | Direct СО
+          sup.sup-description 2
+          |&nbsp; Emissions by Modes of Transport Compared with UTLC ERA’s Performance
+
+        .ecology-CO__row 
+          .col 
+            .ecology-description
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_1
+                p.ecology-description__text «UTLC ERA»
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_2 
+                p.ecology-description__text Sea transportation
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_3
+                p.ecology-description__text Road transportation
+              .ecology-description__item
+                span.ecology-description__decor.ecology-description__decor_4
+                p.ecology-description__text Air transportation
+          .col 
+            .ecology-CO__img 
+              +picture('ecology-CO-1.png').ecology-CO__img
+              +activity-buttons('ecology-CO-1.png') 
+
+  section(data-aos="fade-up").ecology-CO2
+    .container-content
+      .ecology-CO2__inner
+        .ecology-CO2__top
+          p.ecology-CO2__description.description_big
+            | Direct and Indirect СО
+            sup.sup-description 2
+            |&nbsp; Emissions by Modes of Transport Compared with UTLC ERA’s Performance
+          .ecology-CO2__row 
+            .col 
+              .ecology-description
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_1
+                  p.ecology-description__text «UTLC ERA»
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_2 
+                  p.ecology-description__text Sea transportation
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_3
+                  p.ecology-description__text Road transportation
+                .ecology-description__item
+                  span.ecology-description__decor.ecology-description__decor_4
+                  p.ecology-description__text Air transportation
+            .col 
+              .ecology-CO2__img 
+                +picture('ecology-CO-2.png').ecology-CO2__img
+                +activity-buttons('ecology-CO-2.png') 
+                
+        .ecology-CO2__bottom.mt-section
+          h6.ecology-CO2__subtitle  In August 2021, the EAEU Intergovernmental Council approved a priority action plan for digitalization of rail freight transportation. 
+          .row 
+            .col 
+              p.ecology-CO2__text.text Along with the declaration of intent to maintain effective container traffic between Europe and China signed by the Russian, Kazakhstan and Belarusian Railways, this gave a decisive impetus to decarbonization of the Eurasian railway corridor. 
+              p.ecology-CO2__text.text The document acknowledges the key role of rail transport in implementing the UN Sustainable Development Goals, including reduction of the carbon footprint in the transport and logistics industry, improvement of energy efficiency, and development of sustainable regional and cross-border infrastructure.
+            .col 
+              p.ecology-CO2__text.text As agreed between the parties, UTLC ERA services will shortly test pilot projects to implement technological innovations based on the principles of transition to carbon-free railway logistics in the Eurasian territories. The process has begun: the uniform e-waybill was tested in the 1,520 mm track gauge area in 2022. As the percentage of the rail container traffic in the total Eurasian transit volume approached 5% in 2021 (whereas in 2015 it was merely 1%), a contribution into the reduction of СО2 emissions and adverse environmental impact will become increasingly evident in the future.
+  section(data-aos="fade-up").ecology-grom.mt-section
+    .container-content 
+      .ecology-grom__inner 
+        .col 
+          .ecology-grom__img
+            +picture('ecology-grom.png')
+        .ecology-grom__right
+          .col 
+            +appeal-svg.ecology-grom__elem_1
+          .col
+            .row 
+              p.ecology-grom__text.text “The environmental value of the rail traffic is turning into a true sustainable business philosophy on our continent. The railway could well become a symbol of the Climate Change Conference in Glasgow, as we can confidently say that the transition of increasing cargo volumes to the railway is a crucial prerequisite for both achieving the European Green Deal and facilitating decarbonization of the Eurasian logistics.”
+              p.ecology-grom__name Alexey Grom
+              p.ecology-grom__job General Director
+            .row.ecology-grom__decor-bottom 
+              +appeal2-svg.ecology-grom__elem_2
+  section(data-aos="fade-up").ecology-environment.mt-section(id="ecology-environment") 
+    .container-content 
+      .ecology-environment__inner
+        h3.ecology-envoronment Environmental Protection
+        .ecology-environment__row
+          .col 
+            p.ecology-environment__description.description UTLC ERA’s operations do not cause severe direct environmental damage. 
+          .col 
+            p.ecology-environment__text.text The company works in compliance with the environmental laws of the countries of its operation and is governed by the reasonable diligence principle, which implies incorporation of environmental risks into the business strategy and abandonment of any environmentally hazardous projects at the decision-making stage.
+        .ecology-environment__elem
+          .ecology-environment__elem-decor
+            .decor_1
+            .decor_2
+            .decor_3
+            .decor_4
+          p.ecology-environment__elem-text #KeenOnGreen — UTLC ERA's Environmental Initiatives
+        .ecology-environment__bottom 
+          .item
+            .item__row 
+              .item__col.item_size-1 
+                p.item__number.countup-element(data-countup='3') 
+              .item__col 
+                p.item__grey.number-animate-3.number-animate million rubles
+            .item__row 
+              p.item__subtext funds allocated to implement UTLC ERA’s projects in Kazakhstan and Russia in 2022 
+          p.ecology-environment__text.text Since 2020, we have been playing an active role in promotion and implementation of environmental projects. #KeenOnGreen is intended to present the railway as the most environmentally friendly mode of transport, on the one hand, and to support environmental projects in the natural areas of the countries crossed by UTLC ERA’s container unit train routes, on the other hand. Under this initiative, in 2022 the company supported the project aimed at restoring the population of Red Book tugay deer in Kazakhstan. 
+  section(data-aos="fade-up").ecology-cards.mt-section 
+    .container-content  
+      .ecology-cards__inner
+        .ecology-cards__top
+          +column-top-svg.ecology-cards__decor
+          p.ecology-cards__description In Kazakhstan 
+          .row 
+            .col 
+              p.ecology-cards__text.text The tugay woodlands of Kazakhstan stretch alongside river beds, tributaries and lakes, creating a habitat for many semi aquatic animal species. Unfortunately, the changes in the climatic and hydrological conditions, reduction in Ili River runoff, wildfires and excessive economic use have brought tugay woodlands to the brink of extinction.
+            .col 
+              p.ecology-cards__text.text The team of Ili-Balkhash Natural Reserve, with the support of UTLC ERA, is implementing the tugay woodland restoration project, with more than 12,000 new Asiatic poplar, oleaster and willow seedlings planted by the end of 2022. The allocated funds were also applied towards arrangement of an advanced drip irrigation system and development of fire safety measures. 
+        .ecology-cards__bottom
+          +column-top-svg.ecology-cards__decor 
+          .ecology-cards__bottom-row
+            p.ecology-cards__description In Russia
+
+            .ecology-cards__elem.desktop-m
+              p.ecology-cards__number.countup-element(data-countup='28' data-countup-prefix='+' data-countup-suffix='%')
+              p.ecology-cards__subtext Growth of European bison population in the Turmon Natural Reserve
+          .row
+            .col 
+              p.ecology-cards__text.text The Kizgych Gorge, a protected natural area, lies in the very heart of Karachay-Cherkessia. It was here that in the 1990s the Soviet scientists began restoring the population of European bison, the only surviving buffalo in Europe, which is regarded as an important part of the Caucasian broadleaved wood ecosystem. Regrettably, human activity caused this specie to become extinct in the natural habitat: the last bison in the Caucasus was killed in 1927. 
+
+            .ecology-cards__elem.mobile-m
+              p.ecology-cards__number +28%
+              p.ecology-cards__subtext Growth of European bison population in the Turmon Natural Reserve
+              p.ecology-cards__text.text The Strategy for Preservation of European Bisons in Russia was developed with a view to restoring the number of animals. Thanks to our support, part of the bison population under this program was moved in 2022 to a suitable habitat in the Turmon Natural Reserve in North Ossetia. 

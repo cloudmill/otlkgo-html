@@ -104,3 +104,215 @@ mixin preservation-content
               source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
             +expenses.for-video.video-play-rev9.desktop
             +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg
+mixin preservation-content-CN 
+  section(data-aos="fade-up").preservation-finance.mt-section
+    .container-content(id="preservation-finance")  
+      .preservation-finance__inner 
+        h2.preservation-finance__title 财务概况
+        .preservation-finance__row 
+          .col 
+            p.preservation-finance__description.description_big 尽管2022年地缘政治和宏观经济形势显着复杂化，导致经济活动和货运量普遍下降，以及年初中国持续的流行病限制，但UTLC ERA设法保持了主要航线的数量指标在2021年的水平。 
+          .col 
+            p.text.preservation-finance__text 这归功于以下几点：扩大了额外航线清单、将基本航线上的客户费率维持在2021年的水平，以及公司为吸引货物流量和降低运输成本而采取的其他行动。凭借与此，提高了2022年底公司运营的盈利率。
+            p.text.preservation-finance__text 运量在2022年第二季度下降后加速恢复，因此可以在2022年第一季度预算调整的基础上，根据所有主要生产和财务指标的增长情况，对2022年第一季度预算进行调整。调整后的UTLC ERA预算“毛利率”超额完成6.0%，“净利润”超额完成15.5%。 
+  section(data-aos="fade-up").preservation-dynamic.mt-section
+    .container-content 
+      .preservation-dynamic__inner 
+        h6.preservation-dynamic__title 2020-2022年主要财务指标的动态，百万卢布。
+        .preservation-dynamic__img.desktop-m
+          +picture('preservation-dynamic.png')
+        +activity-buttons('preservation-dynamic.png').flex-desktop
+        .preservation-dynamic__img.mobile-m
+          +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
+        +activity-buttons('preservation-dynamic-mobile.png').flex-m 
+  section(data-aos="fade-up").block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title 收入
+        .block-diagram__row 
+          .block-diagram__col 
+            p.block-diagram__text.text 根据公司2022年的工作结果，总收入为555.77亿卢布，比去年减少92.74亿卢布，或比去年减少14%。2022年的收入完全来自于提供货运代理服务的收入，主要以美元计价。 
+            p.block-diagram__text.text 收入下降主要是由于2022年美元年平均汇率与2021年相比下降了7%（2022年-68.58卢布，2021年-73.66卢布），这是由于收入以美元计价，以及由于费率较低的运输量向提高运输比列的重新分配。
+          .block-diagram__col 
+            p.block-diagram__description.description_big UTLC ERA 2020-2022年的收入，百万卢布。
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev3' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              .block-diagram__decor
+              +profit.for-video.video-play-rev3
+  section(data-aos="fade-up").preservation-sales(id="preservation-sales") 
+    .container-content 
+      .preservation-sales__inner 
+        h3.preservation-sales__title 销售成本
+        .preservation-sales__row 
+          .col 
+            p.text.preservation-sales__text 2022年底UTLC ERA的销售成本为477.65亿卢布，减少91.25亿卢布，或比去年的销售成本指标下降16%。2022年的成本完全来自组织货运代理服务的支出。
+            p.text.preservation-sales__text 成本下降主要是由于采取了优化成本的措施，以及与2021年相比主要成本货币的汇率下降。
+          .col 
+            p.preservation-sales__description.description_big UTLC ERA 2020-2022年的销售成本，百万卢布。
+            .preservation-sales__img
+              +picture('preservation-sale.png')
+            +activity-buttons('preservation-sale.png') 
+            
+  section(data-aos="fade-up").preservation-structure.mt-section
+    .container-content 
+      .preservation-structure__inner 
+        p.preservation-structure__descrition.description_big 2022年销售成本构成，%
+          .block-diagram__video.preservation-structure__video
+            video( muted class='video-play' playsinline  data-svg='rev11' )
+              source(src="./assets/videos/strukt_sebes.mp4" type="video/mp4")
+              source(src="./assets/videos/strukt_sebes.webm" type="video/webm")
+            +sebes.for-video.video-play-rev11.desktop
+            +sebes-mobile.for-video.video-play-rev11.mobile.preservation-structure__svg
+        .preservation-structure__row  
+          .col 
+            p.text.preservation-structure__text 2022年基础设施所有者服务的费用占提供服务成本的81%，即384.59亿卢布。2022年，基础设施开支总额比2021年下降15.5%，与实施的成本优化措施以及与2021年相比主要成本货币汇率下降造成的成本整体下降相当。
+          .col 
+            p.text.preservation-structure__text 其他占成本10%的重要费用是管理中配件铁路平台车队的费用，包括其运营费用和使用权资产（融资租赁平台车）的折旧费用。从2019年年中开始，公司通过租赁和长期租赁平台车，增加管理车队。截至2022年底，租赁车队占公司运营车队的33%，长期租赁车队占公司运营车队的31%。
+            p.text.preservation-structure__text 公司通过提高以融资租赁和经营性租赁方式吸引的车队比例，以及从2022年1月1日开始应用联邦会计标准25/2018《租赁会计》，在2022年，实现了成本结构中对配件平台车队参与成本的进一步优化。
+  section(data-aos="fade-up").preservation-profit.block-diagram.mt-section(id="preservation-diagram" ) 
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title 毛利润
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='7812') 
+                .item__col 
+                  p.item__grey.number-animate-7812.number-animate  亿卢布
+              .item__row 
+                p.item__subtext 2022年UTLC ERA毛利润指标比2022年低2%。
+            p.preservation-profit__text.block-diagram__text.text 2022年底UTLC ERA的毛利润为78.12亿卢布，减少1.49亿卢布，或比去年下降2%。同时，2022年，由于成本优化措施、年均美元汇率下降以及联邦会计标准 25/2018的开始应用，成本超前下降，毛利率上涨。
+          .block-diagram__col 
+            p.block-diagram__description.description_big UTLC ERA股份公司 2020-2022年的毛利润，百万卢布，显示盈利率，百万卢布
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev1' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              +valovaya.for-video.video-play-rev1
+  section(data-aos="fade-up").preservation-expenses(id="preservation-expenses")  
+    .container-content 
+      .preservation-expenses__inner 
+        h2.preservation-expenses__title 管理费用
+        p.preservation-expenses__description.description_big UTLC ERA 2022年的管理费用为13.51亿卢布，比2021年增加16%。 
+  section(data-aos="fade-up").preservation-statistics
+    .container-content 
+      .preservation-statistics__inner 
+        p.preservation-structure__descrition.description_big 2022年管理費用結構
+          .block-diagram__video.preservation-statistics__video
+            video( muted class='video-play' playsinline  data-svg='rev9' )
+              source(src="./assets/videos/strukt_rashodov.mp4" type="video/mp4")
+              source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
+            +expenses.for-video.video-play-rev9.desktop
+            +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg
+mixin preservation-content-EN
+  section(data-aos="fade-up").preservation-finance.mt-section
+    .container-content(id="preservation-finance")  
+      .preservation-finance__inner 
+        h2.preservation-finance__title Financial Overview
+        .preservation-finance__row 
+          .col 
+            p.preservation-finance__description.description_big Despite the significant aggravation of the geopolitical and macroeconomic situation in 2022, which resulted in an overall decline in economic activity and cargo traffic volumes, along with the continuing epidemiological restrictions in China early in the year, UTLC ERA succeeded in maintaining its volumes on the principal routes at the levels achieved in 2021. 
+          .col 
+            p.text.preservation-finance__text This was possible due to the expansion of the additional route list, keeping the rates for our customers at the 2021 level on the basic routes and other actions taken by the company to attract cargo flows and reduce the net traffic costs. This improved the company’s cost efficiency as of the end of 2022. 
+            p.text.preservation-finance__text The accelerated traffic volume recovery following a decline in the second quarter of 2022 enabled a budget adjustment at the end of the first half of 2022 to reflect the improvement of all main production and financial performance indicators as compared to the budget adjustment at the end of the first quarter of 2022. UTLC ERA’s adjusted budget targets were exceeded by 6.0% in terms of gross profit and by 15.5% in terms of net profit. 
+  section(data-aos="fade-up").preservation-dynamic.mt-section
+    .container-content 
+      .preservation-dynamic__inner 
+        h6.preservation-dynamic__title Financial Performance Profile, 2020 to 2022, million rubles
+        .preservation-dynamic__img.desktop-m
+          +picture('preservation-dynamic.png')
+        +activity-buttons('preservation-dynamic.png').flex-desktop
+        .preservation-dynamic__img.mobile-m
+          +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
+        +activity-buttons('preservation-dynamic-mobile.png').flex-m 
+  section(data-aos="fade-up").block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title Revenue
+        .block-diagram__row 
+          .block-diagram__col 
+            p.block-diagram__text.text Out company’s gross revenue for 2022 was 55,577 million rubles, which is 9,274 million rubles or 14% less than last year. The revenue for 2022 is exclusively made up of transportation and freight forwarding service revenue mainly nominated in US dollars. 
+            p.block-diagram__text.text The revenue reduction is primarily caused by the reduction of the average annual US dollar exchange rate in 2022 by 7% as compared to 2021 (68.58 rubles in 2022, 73.66 rubles in 2021), because the revenue is nominated in US dollars; another reason is volume re-allocation by increasing the percentage of low-cost traffic.
+          .block-diagram__col 
+            p.block-diagram__description.description_big UTLC ERA’s Revenue, 2020 to 2022 (million rubles)
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev3' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              .block-diagram__decor
+              +profit.for-video.video-play-rev3
+  section(data-aos="fade-up").preservation-sales(id="preservation-sales") 
+    .container-content 
+      .preservation-sales__inner 
+        h3.preservation-sales__title Cost of sales
+        .preservation-sales__row 
+          .col 
+            p.text.preservation-sales__text UTLC ERA’s cost of sales as of the end of 2022 was 47,765 million rubles, which is 9,125 million rubles or 16% lower than the cost of sales in the previous year. The cost of sales for 2022 is exclusively made up of transportation and freight forwarding service management costs.
+            p.text.preservation-sales__text The reduction in the cost of sales is primarily caused by the cost optimization actions and the reduction in the exchange rate of the principal cost currencies as compared to 2021.
+          .col 
+            p.preservation-sales__description.description_big UTLC ERA’s Cost of Sales, 2020 to 2022 (million rubles)
+            .preservation-sales__img
+              +picture('preservation-sale.png')
+            +activity-buttons('preservation-sale.png') 
+            
+  section(data-aos="fade-up").preservation-structure.mt-section
+    .container-content 
+      .preservation-structure__inner 
+        p.preservation-structure__descrition.description_big Cost of Sales Structure in 2022 (%)
+          .block-diagram__video.preservation-structure__video
+            video( muted class='video-play' playsinline  data-svg='rev11' )
+              source(src="./assets/videos/strukt_sebes.mp4" type="video/mp4")
+              source(src="./assets/videos/strukt_sebes.webm" type="video/webm")
+            +sebes.for-video.video-play-rev11.desktop
+            +sebes-mobile.for-video.video-play-rev11.mobile.preservation-structure__svg
+        .preservation-structure__row  
+          .col 
+            p.text.preservation-structure__text The fees paid to infrastructure owners in 2022 included in the cost of services amounted to 81% or 38,459 million rubles. The total infrastructure fees actually paid in 2022 reduced by 15.5% as compared to the actual total amount in 2021, which is comparable with the total net cost reduction due to the cost optimization actions and the reduction in the exchange rate of the principal cost currencies as compared to 2021.
+          .col 
+            p.text.preservation-structure__text Miscellaneous significant costs, which make up 10% of the net cost, are the costs for the managed rail fitting platform fleet, including the operation and amortization of the right of use asset (platforms allocated on the financial leasing basis). Starting from mid-2019, the company expanded the fleet under its management by adding rented and leased platforms. As of the end of 2022, the rented fleet made up 33%, while the leased fleet made up 31% of the company’s total operating fleet.
+            p.text.preservation-structure__text Due to the increasing portion of the fleet acquired on the financial and operating leasing basis, as well as the adoption of Federal Accounting Standard 25/2018 – Rental Accounting starting from 01.01.2022, the company succeeded in additionally optimizing its fitting platform fleet acquisition costs in its net cost structure in 2022.
+  section(data-aos="fade-up").preservation-profit.block-diagram.mt-section(id="preservation-diagram" ) 
+    .container-content 
+      .block-diagram__inner 
+        .block-diagram__row 
+          h3.block-diagram__title Gross profit
+        .block-diagram__row 
+          .block-diagram__col 
+            .item.item_size-4
+              .item__row 
+                .item__col 
+                  p.item__number.countup-element(data-countup='7812') 
+                .item__col 
+                  p.item__grey.number-animate-7812.number-animate  million rubles
+              .item__row 
+                p.item__subtext UTLC ERA’s gross profit in 2022, which is 2% less than in 2021.
+            p.preservation-profit__text.block-diagram__text.text The gross profit as of the end of 2022 amounted to 7,812 million rubles, which is 149 million rubles or 2% less than in the similar period of the previous year. However, the gross profit cost efficiency grew in 2022 as a result of the proactive net cost reduction due to net cost optimization, decreasing average annual US dollar exchange rate and the adoption of Federal Accounting Standard 25/2018. 
+          .block-diagram__col 
+            p.block-diagram__description.description_big UTLC ERA’s Gross Profit for 2020 to 2022 (million rubles, including cost efficiency), million rubles
+            .block-diagram__video
+              video( muted class='video-play' playsinline  data-svg='rev1' )
+                source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
+                source(src="./assets/videos/block-diagram.webm" type="video/webm")
+              +valovaya.for-video.video-play-rev1
+  section(data-aos="fade-up").preservation-expenses(id="preservation-expenses")  
+    .container-content 
+      .preservation-expenses__inner 
+        h2.preservation-expenses__title Management costs
+        p.preservation-expenses__description.description_big UTLC ERA’s management costs for 2022 amounted to 1,351 million rubles, which is 16% more than in 2021.
+  section(data-aos="fade-up").preservation-statistics
+    .container-content 
+      .preservation-statistics__inner 
+        p.preservation-structure__descrition.description_big Management Cost Structure in 2022
+          .block-diagram__video.preservation-statistics__video
+            video( muted class='video-play' playsinline  data-svg='rev9' )
+              source(src="./assets/videos/strukt_rashodov.mp4" type="video/mp4")
+              source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
+            +expenses.for-video.video-play-rev9.desktop
+            +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg

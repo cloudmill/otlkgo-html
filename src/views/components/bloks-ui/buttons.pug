@@ -11,7 +11,7 @@ mixin activity-buttons(src)
 mixin print-activity-buttons
   .container(data-aos='fade-up')
     .print-activity 
-      .print-activity__item.print-activity__print(data-print-button)
+      .print-activity__item.print-activity__print(data-print-button).desktop
         .print-activity__item-svg 
           +printer-svg
         p.print-activity__item-text Распечатать

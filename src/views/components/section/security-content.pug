@@ -65,3 +65,163 @@ mixin security-content
             p.security-fire__text.text Что касается пожарной безопасности, все помещения компании обеспечены огнетушителями и взяты под охрану автоматической системой пожарной сигнализации. Помещение серверной оборудовано автоматической системой пожаротушения. Системы обслуживаются подрядной организацией с соответствующей лицензией. 
             br
             p.security-fire__text.text Промышленное производство в компании отсутствует, поэтому вопросы промышленной безопасности не рассматриваются.
+mixin security-content-CN 
+  section(data-aos="fade-up").security.mt-section
+    .container-content 
+      .security__inner 
+        h6.security__title 按照以下标准文件，建设了公司的劳动保护和消防安全系统：
+        .security__row 
+          .col
+            ul.security__list.list
+              each item in ['俄罗斯联邦劳动法典（2001年12月30日第197-FZ号）','《工伤事故和职业病强制性社会保险法》（1998年7月24日第125-FZ号）','《关于人口社会和流行病福利的联邦法》（1999年3月30日第52号联邦法）','俄罗斯联邦政府2021年12月24日第2464号法令《关于劳动保护培训和劳动保护要求知识测试程序》（连同劳动保护培训和劳动保护要求知识测试规则）',]
+                li.security__item
+                  +mark-text-svg.security-svg
+                  p.text.security__text=item 
+          .col
+            ul.security__list.list
+              each item in ['2022年2月26日第255号决议“关于联邦执行机构制定、批准和修改包含国家劳动保护规范性要求的规范性法律文件”','根据2021年10月29日第771H号命令“关于批准雇主每年为改善劳动条件和劳动保护、消除或降低职业危害水平或防止其水平增加而采取的措施的示范清单”','2021年10月29日第772H号命令“关于批准雇主制定的劳动保护规则和指示的制定程序和内容的基本要求”','联邦法律“关于修改俄罗斯联邦劳动法”（2021年7月2日第311-FZ号）',]
+                li.security__item
+                  +mark-text-svg.security-svg
+                  p.text.security__text=item 
+  section(data-aos="fade-up").security-conditions.mt-section
+    .container-content 
+      .security-conditions__inner 
+        h6.security-conditions__title 確保安全的工作條件和監控勞動保護標準是公司的首要任務
+        .security-conditions__row
+          .col 
+            p.security-conditions__description.description 确保安全的工作条件和遵守劳动保护标准是公司的主要优先事项。根据2022年3月21日第17号总经理令，下列指示生效：
+            ul.security-conditions__list.list
+              each item in ['劳动保障指南IOT 001《个人计算机操作员劳动保护》','劳动保障指南 IOT 002《出差人员劳动保护》','劳动保障指南 003《使用便携式电动工具时的劳动保护》',]
+                li.security-conditions__item
+                  +mark-text-svg.security-conditions-svg
+                  p.text.security-conditions__text=item 
+          .security-conditions__col 
+            p.securitiy-conditions__text.text 我们的职业安全专业人员识别危险和职业危害，并定期对其进行分析和评估。他们保存记录，并审查导致微损伤（微损伤）发生的原因和情况。在新工作场所投入使用之前，还对职业风险水平进行了评估。  为了监督作业生产的安全，专业人员使用仪表、装置、设备和（或）成套（系统）仪器、装置、设备，保证能对过程进行远程视频、音频或其他记录。此外，这些专业人员还负责保存收到的信息，并进行职业安全领域的电子文件管理。
+  section(data-aos="fade-up").security-training.mt-section(id="security-training") 
+    .container-content 
+      .security-training__inner 
+        h3.security-trainig__title 培训
+        .security-training__row 
+          p.security-training__text.text 根据2022年3月21日第15号《组织劳动保护培训和检查劳动保护知识和要求》总经理令，组织了员工的劳动保护培训。公司成立了委员会，其所有成员都接受了劳动保护领域的培训。
+  section(data-aos="fade-up").security-work.mt-section(id="security-work")
+    .container-content 
+      .security-work__inner 
+        h3.security-work__title 劳动条件评估
+        .security-work__row 
+          .security-work__col 
+            p.security-work__description.description 2022年8月，我们进行了专项劳动条件评估（SOUT），评估结果未发现作业场所存在潜在有害（或）危险生产因素。
+          .security-work__col
+            p.security-work__text.text 此外，没有进行定期体检的建议（根据俄罗斯联邦劳动法的强制性体检仅在招聘时进行）。
+  section(data-aos="fade-up").security-covid.mt-section(id="security-covid") 
+    .container-content 
+      .security-covid__inner 
+        h3.security-covid__title 防疫措施
+        .security-covid__row 
+          .security-covid__col 
+            p.security-covid__description.description 整个2022年，公司持续开展2020年推出的防疫措施。因而，员工收到了个人防护设备和消毒剂。办公室安装了空气再循环器、消毒剂分配器。每天测温已成为标准做法。 
+          //- .security-covid__col
+          //-   p.security-covid__text.text Так, сотрудники получили средства индивидуальной защиты и антисептические средства. В офисах установлены рециркуляторы воздуха, дозаторы с дезинфицирующими средствами. Ежедневное измерение температуры стало стандартной практикой. 
+  section(data-aos="fade-up").security-fire.mt-section(id="security-fire") 
+    .container-content 
+      .security-fire__inner 
+        h3.security-fire__title 消防和电气安全
+        .security-fire__row 
+          .security-fire__col 
+            p.security-fire__description.description 我们每年对公司员工进行消防和电气安全培训。
+          .security-fire__col
+            p.security-fire__text.text 在消防安全方面，公司所有场所都配备了灭火器，并由火灾自动报警系统保护。服务器机房配备自动灭火系统。系统由具有相应资质的承包商维护。 
+            br
+            p.security-fire__text.text 公司没有工业生产，因此不考虑工业安全问题。
+mixin security-content-EN
+  section(data-aos="fade-up").security.mt-section
+    .container-content 
+      .security__inner 
+        h6.security__title The company’s occupational and fire safety system is based on the following regulatory documents:
+        .security__row 
+          .col
+            ul.security__list.list
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Russian Labor Code (No. 197-FZ dated 30.12.2001)
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Federal Law On Mandatory Social Insurance Against Occupational Accidents and Diseases (No. 125-FZ dated 24.07.1998)
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Federal Law On Social and Epidemiological Welfare of Population (No. 52-FZ dated 30.03.1999)
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Russian Governmental Resolution No. 2464 dated 24.12.2021 On Procedures for Occupational Safety Training and Knowledge Assessment (including the occupational safety training and knowledge assessment rules)
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Resolution No. 255 dated February 26, 2022 On Development, Approval and Amendment of Legal Regulatory Acts of Federal Executive Authorities Containing Statutory Occupational Safety Requirements
+
+          .col
+            ul.security__list.list
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Order No. 771n dated October 29, 2021 On Approval of Provisional List of Annual Measures to Be Taken by Employer to Improve Workplace Conditions and Occupational Safety and to Eliminate, Mitigate or Avoid Escalation of Occupational Risks
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Order No. 772n dated October 29, 2021 On Approval of Basic Requirements for Development and Content of Employer’s Occupational Safety Rules and Instructions
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Order No. 774n dated October 29, 2021 On Approval of General Requirements for Safe Workplace Arrangements
+              li.security__item
+                +mark-text-svg.security-svg
+                p.text.security__text Federal Law On Introducing Amendments to Russian Labor Code (No. 311-FZ dated July 2, 2021).
+
+  section(data-aos="fade-up").security-conditions.mt-section
+    .container-content 
+      .security-conditions__inner 
+        h6.security-conditions__title Ensuring safe working conditions and adherence to labor protection standards are the key priorities of the company
+        .security-conditions__row
+          .col 
+            p.security-conditions__description.description Our key priority is to ensure safe work conditions and compliance with the occupational safety standards. General Director’s Order No. 17 dated March 21, 2022 enacted the following instructions:
+            ul.security-conditions__list.list
+                li.security-conditions__item
+                  +mark-text-svg.security-conditions-svg
+                  p.text.security-conditions__text IOT 001 – Occupational Safety of Personal Computer Operator
+                li.security-conditions__item
+                  +mark-text-svg.security-conditions-svg
+                  p.text.security-conditions__text IOT 002 – Occupational Safety for Employees on Business Trips
+                li.security-conditions__item
+                  +mark-text-svg.security-conditions-svg
+                  p.text.security-conditions__text IOT 003 — Occupational Safety for Portable Electric Tool Operation.
+          .security-conditions__col 
+            p.securitiy-conditions__text.text Our occupational safety specialists identify, regularly review and assess hazards and occupational risks. Specifically, they record and review the reasons and circumstances that caused micro damage (minor injuries). The occupational risk level is also assessed before launching new workplaces. To monitor safe work procedures, our specialists use instruments, devices and equipment and/or packages/systems of instruments, devices and equipment to enable remote video, audio or other recording of processes. Such employees are also responsible for storing the obtained information and maintaining the e-documents related to occupational safety.
+  section(data-aos="fade-up").security-training.mt-section(id="security-training") 
+    .container-content 
+      .security-training__inner 
+        h3.security-trainig__title Training
+        .security-training__row 
+          p.security-training__text.text Occupational safety training is arranged for personnel in accordance with General Director’s Order No. 15 dated March 21, 2022 Occupational Safety Training and Knowledge Assessment Arrangements. The company has established a commission and made sure that each member has passed occupational safety training.
+  section(data-aos="fade-up").security-work.mt-section(id="security-work")
+    .container-content 
+      .security-work__inner 
+        h3.security-work__title Workplace Assessment
+        .security-work__row 
+          .security-work__col 
+            p.security-work__description.description In August 2022, we made a special workplace assessment, which did not reveal any potentially harmful/hazardous occupational workplace factors. 
+          .security-work__col
+            p.security-work__text.text Likewise, there were no recommendations to conduct periodic medical examinations (the mandatory medical examination under the Russian Labor Code is only required at the start of employment).
+  section(data-aos="fade-up").security-covid.mt-section(id="security-covid") 
+    .container-content 
+      .security-covid__inner 
+        h3.security-covid__title Anti-COVID Measures
+        .security-covid__row 
+          .security-covid__col 
+            p.security-covid__description.description Throughout 2022, the company continued to take the anti-COVID measures introduced in 2020. 
+          .security-covid__col
+            p.security-covid__text.text The employees have received personal protection equipment and antiseptics. The offices are equipped with air sanitizers and disinfectant dispensers. Daily temperature checks have become standard practice. 
+  section(data-aos="fade-up").security-fire.mt-section(id="security-fire") 
+    .container-content 
+      .security-fire__inner 
+        h3.security-fire__title Fire and Electric Safety
+        .security-fire__row 
+          .security-fire__col 
+            p.security-fire__description.description We hold annual fire and electric safety briefings for our employees.
+          .security-fire__col
+            p.security-fire__text.text In terms of fire safety, all company’s premises are equipped with fire extinguishers and protected by the automatic fire alarm system. The server room is equipped with the automatic fire fighting system. The systems are maintained by the contractor holding a relevant license. 
+            br
+            p.security-fire__text.text Since the company has no industrial production facilities, there are no industrial safety matters to address.

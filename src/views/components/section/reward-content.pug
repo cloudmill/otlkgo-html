@@ -147,3 +147,167 @@ mixin reward-content
                     p.table__text Заместитель генерального директора (по правовым вопросам) — 25%.
         .reward-table__message
           +message-block('По результатам 2022 года КПЭ генерального директора и членов правления преимущественно выполнены/перевыполнены, имеющиеся отклонения незначительны, что обусловлено проведением мероприятий по повышению эффективности деятельности компании. ')
+mixin reward-content-EN
+  section(data-aos="fade-up").reward.mt-section(id="reward-mt")
+    .container-content
+      .reward__inner
+        .reward__top
+          h3.reward__title General Director 
+          .row
+            p.reward__text_top.text_big In order to motivate the General Director to improve the management efficiency and to solve the strategic tasks set by the shareholders and the Board of Directors, the company has the effective Regulations on General Director Rewards. 
+          .reward__bottom 
+            .reward__item 
+              .reward__item-top
+                p.reward__item-description.description_big The document provides for the following rewards:
+                ul.list
+                  each item in ['Quarter-end bonus','Year-end bonus','Outstanding performance bonus.',]
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text=item 
+              .reward__item-bottom 
+                p.text.reward__text The resolution on rewarding the General Director for the reporting period is adopted by the Board of Directors upon reviewing the General Director’s budget performance report for the corresponding period. The General Director’s performance assessment results are also taken into account. Performance means meeting the qualitative, quantitative and key performance indicators (KPI).
+                p.text.reward__text The KPI list, weight and targets for the General Director of UTLC ERA are focused on the company’s operating model, which is based on all transit traffic operations in direct rail or mixed rail and sea service through the territories of at least two shareholders via the border or port stations, including, but not limited to: Dostyk, Altynkol, Brest, Bruzhi, Svislach, Mamonovo, Zheleznodorozhny, Kaliningrad-Sortirovochny (Kaliningrad Trade Sea Port), Baltiysk (Baltyisk Port), Buslovskaya, and Wärtsilä, Finland.
+            .reward__item 
+              .reward__item-top
+                p.reward__item-description.description_big The integral assessment of the general director’s performance by the Board of Directors is performed in the following areas:
+                ul.list
+                  li
+                    +mark-text-svg.list-svg
+                    p.text.list__text Corporate discipline','High quality and timely budget development for the current and future reporting periods
+                  li
+                    +mark-text-svg.list-svg
+                    p.text.list__text Procurement planning and implementation
+                  li
+                    +mark-text-svg.list-svg
+                    p.text.list__text Contract management and execution
+                  li
+                    +mark-text-svg.list-svg
+                    p.text.list__text Interaction with the Board of Directors
+              .reward__item-bottom 
+                p.text.reward__text The list of areas is subject to change by the Board of Directors. Performance in each area is assessed according to a four-point grading scale (excellent — 3 points; good — 2; satisfactory — 1; unsatisfactory — 0), with an average grade percentage subsequently calculated for all areas.
+                p.text.reward__text Outstanding performance is rewarded as resolved by the Board of Directors on the basis of the General Director’s proposal with the attached performance calculations and supporting indicators. Outstanding performance may be rewarded throughout the reporting period as resolved by the Board of Directors, but no more frequently than once in a quarter. 
+            .reward__item 
+              .reward__item-top
+                p.reward__item-description.description_big The General Director’s KPIs are approved by the Board of Directors on an annual basis. The following KPIs were approved for 2022 (Minutes No. 46):
+                ul.list
+                  li
+                    +mark-text-svg.list-svg
+                    p.text.list__text Meeting the net profit indicator (weight: 30%)','Meeting the return on sales indicator (weight: 20%)
+                  li
+                    +mark-text-svg.list-svg
+                    p.text.list__text Meeting the transit container traffic volume indicator, which is defined as the ratio of actual transit container traffic volume in the reporting period to the volume according to the budget, and calculated in percent (weight: 40%)
+                  li
+                    +mark-text-svg.list-svg
+                    p.text.list__text Integral assessment of the director’s performance by the members of the Company’s Board of Directors with a 10% weight
+              .reward__item-bottom 
+                p.text.reward__text For the first three KPIs, a target performance range is defined, with a 0, 0.5 or 1 coefficient to be applied within this range.
+  section(data-aos="fade-up").reward-rule.mt-section(id="reward-rule")
+    .container-content
+      .reward-rule__inner 
+        .reward-rule__top
+          h3.reward-rule__title Members of the Management Board
+          .row
+            p.reward-rule__text_big.text_big To provide material incentives to the members of the Management Board for achieving the top corporate performance, improve the work quality and encourage the professional and creative activity, the Company has the effective Regulations on Rewards for Members of the Management Board.
+        .reward-rule__bottom 
+          .col
+            p.reward-rule__description.description_big  It provides for the following rewards:
+            ul.list
+              each item in ['Quarter-end bonus','Year-end bonus','Outstanding performance bonus.',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+            p.reward-rule__text.text Rewarding the members of the Management Board at the end of the reporting period is the employer’s right, not a guaranteed benefit. It depends on the qualitative and quantitative key performance indicators of the employees, the company’s financial standing and other factors that may affect the reward availability and amount.
+          .col
+            p.reward-rule__text.text The resolution on rewarding the members of the Management Board is adopted by a majority vote of the Board of Directors upon reviewing the General Director’s budget performance report for the reporting period.
+            p.reward-rule__text.text 2022 key performance indicators for the members of the Management Board were defined by the Board of Directors of UTLC ERA on December 27, 2021 (Minutes No. 46) and distributed among the members of the Management Board in accordance with their functions and remit.
+  section(data-aos="fade-up").reward-table 
+    .container-content 
+      .reward-table__inner 
+        h6.reward-table__title Key Performance Indicators for Members of the Management Board of UTLC ERA in 2022
+        .reward-table__img.mobile-t
+          +picture('reward-table-mobile.png')
+          +activity-buttons('reward-table-mobile.png') 
+
+        .reward-table__table.desktop-t
+          table.table
+            thead.table__top
+              tr.table__row
+                th.table__first №KPI
+                th.table__title Indicator
+                th.table__title Type of indicator
+                th.table__title Calculation formula
+                th.table__title Distribution and weight share (%)
+            tbody 
+              tr 
+                td.table__row-first 1
+                td.table__row-item.table__row-description Fulfillment of General Director’s assignments
+                td.table__row-item Quantitative
+                td.table__row-item Not required
+                td.table__row-item
+                  .table__row-last
+                    p.table__text First Deputy General Director -10%
+                    p.table__text Deputy General Director - Commercial Director - 10%
+                    p.table__text Deputy General Director - Transportation Director -10%
+                    p.table__text Deputy General Director (Interaction with SA BZD) - 10%.
+                    p.table__text Deputy General Director (Legal) - 10%
+              tr 
+                td.table__row-first 2
+                td.table__row-item.table__row-description Attainment of Net Income indicator
+                td.table__row-item Financial and economic
+                td.table__row-item X = Net Income (Actual) /Net Income (Plan) * 100%
+
+                td.table__row-item
+                  .table__row-last
+                    p.table__text First Deputy General Director - 30
+                    p.table__text Deputy General Director - Commercial Director - 30%
+                    p.table__text Deputy General Director - Transportation Director - 30%
+                    p.table__text Deputy General Director (Interaction with SA BZD) - 30%
+              tr 
+                td.table__row-first 3
+                td.table__row-item.table__row-description Keeping within the contractual accounts receivable
+                td.table__row-item Financial and economic
+                td.table__row-item X = Accounts receivable (Actual) / Accounts receivable (Established limit) * 100%
+                td.table__row-item
+                  .table__row-last
+                    p.table__text Deputy General Director - Commercial Director - 20%
+                    p.table__text Deputy General Director (Interaction with SA BZD) - 20%
+              tr 
+                td.table__row-first 4
+                td.table__row-item.table__row-description Attainment of UTLC ERA Transit Container Traffic indicator
+                td.table__row-item Qualitative
+                td.table__row-item X = Transit traffic (Actual) / Transit traffic (Plan)’100%
+                td.table__row-item
+                  .table__row-last
+                    p.table__text First Deputy General Director - 40%
+                    p.table__text Deputy General Director - Commercial Director - 40%
+                    p.table__text Deputy General Director - Transportation Director - 40%
+                    p.table__text Deputy General Director (Interaction with SA BZD) - 40%
+                    p.table__text Deputy General Director (Legal) - 40%
+              tr 
+                td.table__row-first 5
+                td.table__row-item.table__row-description Minimization of empty car supply costs
+                td.table__row-item Financial and economic
+                td.table__row-item X = Empty car supply expenses as part of transportation cost per 1 TEU (Actual) / Empty car supply expenses as part of transportation cost per 1 TEU (Plan) * 100%
+                  .table__row-last
+                    p.table__text First Deputy General Director -20%
+                    p.table__text Deputy General Director - Transportation Director -20%
+              tr 
+                td.table__row-first 6
+                td.table__row-item.table__row-description Creation and maintenance of the Company’s contract management system (development of regulatory documents and standard contracts)
+                td.table__row-item Quantitative
+                td.table__row-item Defined in accordance with the Company General Director’s assessment based on summarized information about repeated violations received from supervisory authorities, external and internal auditors, contracting parties, and heads of the Company’s business units
+                td.table__row-item
+                  .table__row-last
+                    p.table__text Deputy General Director (Legal) - 25%
+              tr 
+                td.table__row-first 7
+                td.table__row-item.table__row-description No violations of law confirmed by court decisions, or enacted official orders, on matters within the remit of Deputy General Director (Legal)
+                td.table__row-item Quantitative
+                td.table__row-item Not required
+                td.table__row-item
+                  .table__row-last
+                    p.table__text Not required Deputy General Director (Legal) - 25%
+
+
+        .reward-table__message
+          +message-block('The KPIs for the General Director and the members of the Management Board in 2022 were mostly met/exceeded, with minor deviations due to the measures taken to enhance the company’s business efficiency. ')  

@@ -29,3 +29,74 @@ mixin direction-content
         h3.direction-documents__title Электронная накладная
         .direction-documents__row
           p.direction-documents__text.text_big Совместно с перевозчиками компания решает вопрос применения электронной накладной и электронных сопроводительных документов для контейнерных перевозок на маршрутах ОТЛК&nbsp;ЕРА. На стадии согласования находится проект «Конвейера электронных сопроводительных документов и данных» для цифрового сопровождения перевозок на колее 1520 мм и информационное взаимодействие с национальной цифровой платформой КНР LOGINK.
+mixin direction-content-CN
+  section(data-aos="fade-up").direction-automation.mt-section(id="direction-automation") 
+    .container-content 
+      .direction-automation__inner 
+        h3.direction-automation__title 内部业务流程自动化
+        .direction-automation__row 
+          .col 
+            p.direction-automation__description.description_big 2022年，公司开发了内部信息和结算系统的功能，包括：
+          .col 
+            ul.direction-automation__list.list 
+              each item in ['为公司客户开发并投入费率系统的计算和核算功能；','开发并运行了与共同执行方对账的试用功能；','优化了途中列车脱钩的核算机制，以正确计算过境集装箱列车关税支付的支出服务；','自动化公司业务部门的流程，最终确定和优化了系统运行的各种算法，包括，形成报 告、与相关系统集成、生成运输申请和开具发票等。']
+                li.direction-automation__item 
+                  +mark-text-svg.direction-automation-svg
+                  p.text.direction-automation__text=item
+  section(data-aos="fade-up").direction-site.mt-section(id="direction-site") 
+    .container-content 
+      .direction-site__inner 
+        h3.direction-site__title 公司网站
+        .row
+          p.direction-site__text.text_big 我们为推出公司的新版网站做了准备，新的网站将为UTLC ERA客户提供功能齐全的全新个人账户，其中包括运输成本的计算、运输申请的提交和核算、运输过程的跟踪和监督、相互结算。
+        .direction-site__img.desktop-m
+          +picture('direction-site.jpg')
+        .direction-site__img.mobile-m
+          +picture('direction-site-mobile.jpg')
+
+  section(data-aos="fade-up").direction-documents.mt-section(id="direction-documents")
+    .container-content 
+      .direction-documents__inner 
+        h3.direction-documents__title 电子运单
+        .direction-documents__row
+          p.direction-documents__text.text_big 公司与承运人一起解决在UTLC ERA航线上使用电子运单和电子随附文件进行集装箱运输时出现的问题。1520毫米轨道交通数字化支持“电子随附文件和数据传送带”项目，以及与中华人民共和国国家数字平台 LOGINK的信息交互正处于审批阶段。
+mixin direction-content-EN
+  section(data-aos="fade-up").direction-automation.mt-section(id="direction-automation") 
+    .container-content 
+      .direction-automation__inner 
+        h3.direction-automation__title Internal Business Process Automation
+        .direction-automation__row 
+          .col 
+            p.direction-automation__description.description_big In 2022, the company kept developing its internal information computing system functionalities, including the following:
+
+          .col 
+            ul.direction-automation__list.list 
+              li.direction-automation__item 
+                +mark-text-svg.direction-automation-svg
+                p.text.direction-automation__text Development and commercial launch of the calculation and accounting functionalities in the rate system for the company’s customers.
+              li.direction-automation__item 
+                +mark-text-svg.direction-automation-svg
+                p.text.direction-automation__text Development and pilot launch of the functionalities to reconcile mutual accounts with co-contractors.
+              li.direction-automation__item 
+                +mark-text-svg.direction-automation-svg
+                p.text.direction-automation__text Optimization of the en-route rail car uncoupling recording mechanism to enable accurate calculation of the consumed services for transit container unit train tariff payments.
+              li.direction-automation__item 
+                +mark-text-svg.direction-automation-svg
+                p.text.direction-automation__text Automation of the company’s business unit processes, upgrade and optimization of various system algorithms, including generation of certificates, integration with related systems, generation of traffic requests and invoices, etc.
+  section(data-aos="fade-up").direction-site.mt-section(id="direction-site") 
+    .container-content 
+      .direction-site__inner 
+        h3.direction-site__title Corporate Website
+        .row
+          p.direction-site__text.text_big We are ready to launch the updated corporate website with a new fully functional personal account for UTLC ERA’s customers, which includes the traffic cost calculation, traffic request submission and recording, traffic tracking and monitoring, and mutual settlements.
+        .direction-site__img.desktop-m
+          +picture('direction-site.jpg')
+        .direction-site__img.mobile-m
+          +picture('direction-site-mobile.jpg')
+
+  section(data-aos="fade-up").direction-documents.mt-section(id="direction-documents")
+    .container-content 
+      .direction-documents__inner 
+        h3.direction-documents__title E-Waybill
+        .direction-documents__row
+          p.direction-documents__text.text_big The company cooperates with carriers to address the utilization of e-waybills and electronic shipping documents for container traffic on UTLC ERA’s routes. The Electronic Shipping Documentation and Data Conveyor Project is currently pending approval. It is intended for digital support of traffic operations in the 1,520 track gauge area and information interfaces with the LOGINK national digital platform in China.

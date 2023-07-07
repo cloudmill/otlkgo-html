@@ -73,3 +73,174 @@ mixin purchase-content
         .purchase-saving__row 
           +message-block('Таким образом, в 2022 году стоимостной объем закупок отчетного периода увеличился на 28% по отношению к 2021 году, что свидетельствует об осуществлении наиболее капиталоемких закупок и развитии в целом. При этом экономия также увеличилась на 44%.')
           
+
+mixin purchase-content-CN
+  section(data-aos="fade-up").purchase(id="section-purchase") 
+    .container-content 
+      .purachase__inner 
+        h6.purchase__title 采购活动
+        p.purchase__description.description_big UTLC ERA开展积极的采购活动，目的是创造最佳条件，及时、充分地满足对商品、工程、服务的需求，并具备必要的质量、可靠性和价格合理性指标。
+  section(data-aos="fade-up").purchase-documents
+    .container-content
+      .purchase-documents__inner 
+        .col 
+          h6.purchase-documents__subtitle 在这种情况下，我们遵循以下文件和法令： 
+          ul.list.purchase-documents__list
+            each item in ['公司董事会2022年1月27日决议批准的《商品、工程、服务采购条例》（第47号会议纪要）','经公司董事会2022年8月5日决议（第54号会议纪要）批准的变更','2022年9月16日第63号总经理令批准的《商品、工程、服务采购过程中监督UTLC ERA管理部门各分支机构相互配合的规程','俄罗斯联邦民法典和其他规范性法律文件']
+              li.purchase-documents__item 
+                +mark-text-svg
+                p.text.purchase-documents__text!=item 
+        .purchase-documents__right
+          p.text.purchase-documents__text 为优化采购流程，2022年，公司制定并通过了新版《采购条例》。这些变化考虑到了全球外部环境，减少了工作人员的劳动成本，提高了与采购过程参与者互动的效率。然而，重点仍然是遵守最佳条件，以吸引符合采购基本原则的供应商（执行方、承包商）。
+          p.text.purchase-documents__text 采购过程包括规划、组织和执行采购程序。公司的结构规定了与采购发起人的最佳互动，以结合公司的商业和技术利益。为了优化这些流程，制定了关于UTLC ERA结构部门在采购货物、工程和服务时的互动指南。
+  section(data-aos="fade-up").purchase-principles.mt-section
+    .container-content 
+      .purchase-principles__inner
+        .row 
+          h3.purchase-principles__title 主要采购原则：
+          .purchase-principles__box 
+            .purchase-principles__item 
+              p.purchase-principles__text.text 确保采购公开透明，信息公开；
+              .purchase-principles__img 
+                +picture(`achievement-number-1.png`)
+
+
+            .purchase-principles__item 
+              p.purchase-principles__text.text 公平、公正、无歧视和不合理地限制采购参与者的竞争；
+              .purchase-principles__img 
+                +picture(`achievement-number-2.png`)
+            .purchase-principles__item 
+              p.purchase-principles__text.text 购买货物、工程、服务专项支出和经济效益高的资金支出，实施降低客户成本的措施。
+              .purchase-principles__img 
+                +picture(`achievement-number-3.png`)
+        .purchase-principles__bottom.mt-section
+          .col 
+            p.purchase-principles__description.description 采购程序的目的是在竞争的基础上选择提供服务的供应商、执行方和承包商。
+          .col 
+            p.purchase-principles__text.text 因此，确保了最佳的经济采购条件：符合UTLC ERA的要求、时间、质量和资金的有效使用。
+            p.purchase-principles__text.text 为提高竞争和确保采购透明度，2022年在公司企业网站（“招标”部分）以及电子交易平台上发布竞争性采购程序。
+            p.purchase-principles__text.text 2022年，UTLC ERA进行了216次采购，其中53次以竞争方式采购，金额为2.72亿卢布。（不含增值税）。
+  section(data-aos="fade-up").purchase-value.mt-section
+    .container-content 
+      .purchase-value__inner 
+        h6.purchase-value__title 本报告所述期间的采购量
+        .purchase-value__img.desktop-m
+          +picture('purchase-value.png')
+        +activity-buttons('purchase-value.png').flex-desktop
+
+        .purchase-value__img.mobile-m
+          +picture('purchase-value-mobile.png')
+        +activity-buttons('purchase-value-mobile.png').flex-m 
+
+        .purchase-value__row 
+          +message-block('2022年竞标程序节省金额2280万卢布，不含增值税。')
+  section(data-aos="fade-up").purchase-saving.mt-section
+    .container-content 
+      .purchase-saving__inner 
+        h6.purchase-saving__title 竞争性采购节省（千卢布）
+        .purchase-saving__img.desktop-m 
+          +picture('purchase-saving.png')
+        +activity-buttons('purchase-saving.png').flex-desktop
+
+        .purchase-saving__img.mobile-m 
+          +picture('purchase-saving-mobile.png')
+        +activity-buttons('purchase-saving-mobile.png').flex-m
+
+        .purchase-saving__row 
+          +message-block('由此可见，2022年报告期采购金额较2021年增长28%，体现了资金最密集的采购和整体发展。同时，节省的资金也增加了44%。')
+          
+
+
+
+
+
+
+
+
+
+
+
+
+//- mixin purchase-content-EN
+//-   section(data-aos="fade-up").purchase(id="section-purchase") 
+//-     .container-content 
+//-       .purachase__inner 
+//-         h6.purchase__title Procurement
+//-         p.purchase__description.description_big UTLC ERA is actively engaged in procurement with a focus on creating the best possible conditions to fully and timely satisfy the need for goods, works and services with the required quality, reliability and at reasonable prices.
+//-   section(data-aos="fade-up").purchase-documents
+//-     .container-content
+//-       .purchase-documents__inner 
+//-         .col 
+//-           h6.purchase-documents__subtitle In this regard, we rely on the following documents and acts: 
+//-           ul.list.purchase-documents__list
+//-             li.purchase-documents__item 
+//-               +mark-text-svg
+//-               p.text.purchase-documents__text Regulations on Procurement of Goods, Works and Services approved by the Resolution of the Company’s Board of Directors dated 27.01.2022 (Minutes No. 47),
+//-             li.purchase-documents__item 
+//-               +mark-text-svg
+//-               p.text.purchase-documents__text Amendments approved by the Resolution of the Company’s Board of Directors dated 05.08.2022 (Minutes No. 54),
+//-             li.purchase-documents__item 
+//-               +mark-text-svg
+//-               p.text.purchase-documents__text Instruction on Interaction Between UTLC ERA Business Units in Procurement of Goods, Works and Services approved by the General Director’s Order No. 63 dated 16.09.2022,
+//-             li.purchase-documents__item 
+//-               +mark-text-svg
+//-               p.text.purchase-documents__text Civil Code and other regulatory legal acts of the Russian Federation.
+//-         .purchase-documents__right
+//-           p.text.purchase-documents__text To streamline the procurement processes, the company developed and approved an amended version of the Procurement Regulations in 2022. The amendments reflect the global situation, target a lower workload on the employees and improve responsiveness in the interfaces with the parties to the procurement process. At the same time, the focus remains on ensuring the best possible conditions for attracting suppliers/contractors/ providers, which do not contradict the main procurement principles.
+//-           p.text.purchase-documents__text The procurement process consists of planning, managing and holding the procurement procedures. The company’s structure envisages efficient interaction with the procurement initiators in order to align the company’s commercial and technical interests. To streamline these processes, we developed the Instruction on Interaction Between UTLC ERA Business Units in Procurement of Goods, Works and Services.
+//-   section(data-aos="fade-up").purchase-principles.mt-section
+//-     .container-content 
+//-       .purchase-principles__inner
+//-         .row 
+//-           h3.purchase-principles__title Key procurement principles:
+//-           .purchase-principles__box 
+//-             .purchase-principles__item 
+//-               p.purchase-principles__text.text Procurement visibility and transparency, information disclosure,
+//-               .purchase-principles__img 
+//-                 +picture(`achievement-number-1.png`)
+
+
+//-             .purchase-principles__item 
+//-               p.purchase-principles__text.text Equal, fair and non-discriminatory approach to bidders without any unreasonable limitations of competition,
+//-               .purchase-principles__img 
+//-                 +picture(`achievement-number-2.png`)
+//-             .purchase-principles__item 
+//-               p.purchase-principles__text.text Targeted and commercially effective spending of the funds allocated to procure goods, works and services and to implement customer cost reduction actions.
+//-               .purchase-principles__img 
+//-                 +picture(`achievement-number-3.png`)
+//-         .purchase-principles__bottom.mt-section
+//-           .col 
+//-             p.purchase-principles__description.description The purpose of the procurement procedures is to select suppliers, contractors and service providers on a competitive basis. 
+//-           .col 
+//-             p.purchase-principles__text.text This helps ensure the adequate commercial terms of the procurement: compliance with UTLC ERA’s requirements with regard to schedule, quality and cost efficiency.
+//-             p.purchase-principles__text.text To boost competition and ensure transparency, competitive procurement procedures in 2022 were held on the corporate website (in Tenders section) and on electronic trading platforms. 
+//-             p.purchase-principles__text.text In 2022, UTLC ERA held 216 procurement procedures, including 53 competitive procurement procedures for the amount of 272 million rubles (excluding VAT).
+//-   section(data-aos="fade-up").purchase-value.mt-section
+//-     .container-content 
+//-       .purchase-value__inner 
+//-         h6.purchase-value__title Procurement volume in the reporting period
+//-         .purchase-value__img.desktop-m
+//-           +picture('purchase-value.png')
+//-         +activity-buttons('purchase-value.png').flex-desktop
+
+//-         .purchase-value__img.mobile-m
+//-           +picture('purchase-value-mobile.png')
+//-         +activity-buttons('purchase-value-mobile.png').flex-m 
+
+//-         .purchase-value__row 
+//-           +message-block('Savings in monetary terms related to competitive procedures in 2022 amounted to 22.8 million rubles excluding VAT.')
+//-   section(data-aos="fade-up").purchase-saving.mt-section
+//-     .container-content 
+//-       .purchase-saving__inner 
+//-         h6.purchase-saving__title Saving on competitive bidding (thousand rubles)
+//-         .purchase-saving__img.desktop-m 
+//-           +picture('purchase-saving.png')
+//-         +activity-buttons('purchase-saving.png').flex-desktop
+
+//-         .purchase-saving__img.mobile-m 
+//-           +picture('purchase-saving-mobile.png')
+//-         +activity-buttons('purchase-saving-mobile.png').flex-m
+
+//-         .purchase-saving__row 
+//-           +message-block('Thus, in 2022, the value of procurement in the reporting period increased by 28% as compared to 2021, reflecting implementation of the most capital intensive procurements and general development. Savings also increased by 44%.')
+          
