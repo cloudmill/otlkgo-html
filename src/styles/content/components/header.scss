@@ -15,6 +15,10 @@
         height: 56px;
     }
 
+    @media print {
+        display: none;
+    }
+
     &-container {
         display: flex;
         justify-content: space-between;
@@ -1023,6 +1027,10 @@
         transition: all 0.3s;
         background: white;
 
+        @media #{media("<", m)} {
+            width: 100%;
+        }
+
         &.active{
             transform: translateX(0%);
         }
@@ -1087,6 +1095,15 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 40px;
+
+            height: 77vh;
+            
+            overflow-y: scroll;
+            @include scrollbar-hidden();
+            
+            @media #{media("<", m)} {
+                height: 75vh;
+            }
         }
 
         &__item{
@@ -1117,12 +1134,16 @@
             }
 
             &-date{
+                width: 40px;
+
                 color: #727A75;
                 font-size: 15px;
                 font-family: Manrope;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 160%; 
+
+                
             }
 
             &-page{

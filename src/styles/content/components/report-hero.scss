@@ -26,6 +26,12 @@
     height: 735px;
     height: auto;
   }
+
+  @media print {
+    margin-top: 0px;
+    page-break-after: always;
+  }
+
   &__background{
     position: absolute;
     top: 0px;
@@ -61,11 +67,6 @@
     &.about-row{
       gap: 0px;
     }
-    &.main-page{
-      @media #{media("<", m)} {
-        // height: rem(760px);
-      }
-    }
   }
 
   &__col{
@@ -100,6 +101,10 @@
         height: 260px;
       }
     }
+
+    // @media print {
+    //   height: 100%;
+    // }
 
     &-background{
       position: absolute;
@@ -141,7 +146,7 @@
       
       @media #{media('<', m)} {
         width: 100%;
-        height: rem(380px);
+        height: 380px;
         padding: 20px;
       }
     }
@@ -151,7 +156,7 @@
       
       @media #{media('<', m)} {
         width: 100%;
-        height: rem(380px);
+        height: 380px;
         order: 1;
       }
       @media (min-width:550px) and (max-width:768px) {
@@ -170,9 +175,9 @@
     height: 100%;
 
     &.mobile{
-      display: flex !important;
-    }
-    @media #{media(">", t)} {
+      @media #{media("<", m)} {
+        display: flex !important;
+      }
     }
     @media #{media("<", m)} {
       display: none;
@@ -181,7 +186,7 @@
         height: 390px;
         height: auto;
         display: block;
-        top: rem(85px);
+        top: 85px;
         left: 0px;
         position: relative;
         top: 0px;
@@ -189,6 +194,15 @@
         picture{
           img{
             object-fit: cover;
+          }
+        }
+
+        @media print {
+          height: 600px !important;
+          picture{
+            img{
+              object-fit: contain;
+            }
           }
         }
       }
@@ -211,6 +225,10 @@
     &.hero-4{
       position: relative;
       margin-top: auto;
+    }
+
+    @media print {
+      height: 600px !important;
     }
   }
 
@@ -236,7 +254,7 @@
       
     }
     @media #{media(">", xl)} {
-      font-size: rem(20px);
+      font-size: 20px;
       line-height: 110%;
     }
 
@@ -260,7 +278,7 @@
       z-index: 3;
 
       @media #{media('<',m)} {
-        width: rem(259px);
+        width: 259px;
       }
     }
     @media #{media("<", m)} {
@@ -281,8 +299,8 @@
     color: #FFFFFF;
 
     
-    @media #{media(">", ll)}{
-      font-size: rem(80px);
+    @media #{media(">", xl)}{
+      font-size: 80px;
       line-height: 90%;
     }
     @media (min-width: 1026px) and (max-width: 1281px) {
@@ -296,8 +314,15 @@
     @media #{media("<", m)} {
       padding: 40px 20px 0px 20px;
 
-      font-size: rem(32px);
+      font-size: 32px;
       line-height: 90%;
+    }
+
+    @media print {
+      position: relative;
+      z-index: 4;
+      color: white;
+      font-size: 32px;
     }
     &.page-2{
       width: 600px;
@@ -305,11 +330,11 @@
         width: 335px;
       }
       @media #{media(">", ll)} {
-        width: rem(810px);
+        width: 810px;
       }
     }
     &.grom{
-      max-width: 600px;
+      max-width: 750px;
       @media (max-width: 1025px) {
         font-size: 35px;
       }
@@ -348,8 +373,8 @@
         z-index: 2;
       }
       @media #{media(">", ll)} {
-        margin-bottom: rem(20px);
-        font-size: куь(16px);
+        margin-bottom: 20px;
+        font-size: 16px;
         line-height: 130%;
       }
 
@@ -399,7 +424,7 @@
     }
 
     @media #{media("<", m)} {
-      font-size: rem(140px);
+      font-size: 140px;
       bottom: 10px;
       right: 13px;
     }
@@ -412,13 +437,13 @@
 
   &_about{
     @media (min-width: 1024px) and (max-width: 1025px) {
-      height: rem(502px);
+      height: 502px;
     }
     @media (min-width: 768px) and (max-width: 1023px) {
-      height: rem(380px);
+      height: 380px;
     }
     @media #{media("<", m)} {
-      height: rem(619px);
+      height: 619px;
     }
   }
 
@@ -480,8 +505,8 @@
         font-size: 60px;
       }
       @media #{media("<", m)} {
-        font-size: rem(48px);
-        width: rem(273px);
+        font-size: 48px;
+        width: 273px;
       }
     }
 
@@ -499,7 +524,7 @@
       @media #{media("<", m)} {
         margin-bottom: 12px;
 
-        font-size: rem(20px);
+        font-size: 20px;
         line-height: 80%;
       }
     }
@@ -519,23 +544,22 @@
         font-size: 65px;
       }
       @media #{media("<", m)} {
-        font-size: rem(48px);
+        font-size: 48px;
         line-height: 80%;
       }
     }
   }
   &.custom-main{
     @media #{media("<", m)} {
-      height: rem(760px);
+      height: 760px;
     }
   }
 
   &_about{
     display: flex;
     height: auto;
-    // max-height: 707px;
+
     @media #{media(">", xl)} {
-      // height: calc(100vh - 84px);
 
       .report-hero__background{
         background-position: top 0px left -100px;
@@ -566,5 +590,21 @@
 
   &.custom-main{
     height: auto;
+  }
+}
+
+
+
+@media print {
+  .report-hero__portrait{
+    height: 600px !important;
+
+    picture{
+      height: 600px !important;
+
+      img{
+        height: 600px !important;
+      }
+    }
   }
 }
