@@ -16,10 +16,10 @@ mixin report-hero
           +picture('report-hero2-mobile.png')
         .report-hero__title.page-2 Стратегический  отчет
         .report-hero__list
-          a.report-hero__list-item(href="#preview-ge" target='blank') Глобальная экономика и логистический рынок в 2022 году
-          a.report-hero__list-item(href="#preview-trends" target='blank') Тренды логистической отрасли: время альтернатив
-          a.report-hero__list-item(href="#preview-transit" target='blank') Рынок ж/д транзита Китай — Европа — Китай
-          a.report-hero__list-item(href="#preview-strategy-leader" target='blank') Стратегия технологического лидера
+          a.report-hero__list-item(href="#preview-ge" ) Глобальная экономика и логистический рынок в 2022 году
+          a.report-hero__list-item(href="#preview-trends" ) Тренды логистической отрасли: время альтернатив
+          a.report-hero__list-item(href="#preview-transit" ) Рынок ж/д транзита Китай — Европа — Китай
+          a.report-hero__list-item(href="#preview-strategy-leader" ) Стратегия технологического лидера
         .report-hero__number 2
 
 
@@ -42,6 +42,8 @@ mixin report-hero-2-EN
           +picture('report-hero2-mobile.png')
         .report-hero__title.page-2 Strategic Report
         .report-hero__list
-          each item in ['Глобальная экономика и логистический рынок в 2022 году', 'Тренды логистической отрасли: время альтернатив', 'Рынок ж/д транзита Китай — Европа — Китай', 'Стратегия технологического лидера']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#preview-ge" ) Global economy and logistics market in 2022
+          a.report-hero__list-item(href="#preview-trends" ) Logistics industry trends: time for alternatives
+          a.report-hero__list-item(href="#preview-transit" ) Railway transit market China - Europe - China
+          a.report-hero__list-item(href="#preview-strategy-leader" ) Technology Leader Strategy
         .report-hero__number 2

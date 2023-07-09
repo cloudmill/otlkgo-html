@@ -844,6 +844,11 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
+    @media print {
+      page-break-after: always;
+    }
+    
     &__title{
       margin-bottom: 40px;
 
@@ -1168,6 +1173,13 @@
   @media (min-width: 1025px) and (max-width: 1280px) {
     max-width: 1184px;
   }
+
+  @media print {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
   &__img{
     position: relative;
     max-width: 566px;
@@ -1189,6 +1201,23 @@
       height: rem(400px);
 
       background: #F4F4F4;
+
+      picture{
+        img{
+          object-fit: contain;
+        }
+      }
+    }
+
+    @media print {
+      width: 100%;
+      height: 300px;
+
+      picture{
+        img{
+          object-fit: contain;
+        }
+      }
     }
   }
 
