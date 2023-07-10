@@ -1,4 +1,10 @@
 extends ../app
+
+include ../components/section/direction-content
+include ../components/section/preservation-content
+include ../components/section/profit-content
+include ../components/section/case-content
+
 block variables
   -const title = 'Performance results'
 block content
@@ -35,14 +41,15 @@ block content
   //-             p.item__grey.number-animate-23.number-animate  including
   //-         .item__row 
   //-           p.item__subtext new customers under direct contracts
-  //- +preview('Main Digital Development Areas','Anpilov','Kirill','Head of Information System Support Section','anpilov.png').custom-id(id="preview-main-line")(data-aos="fade-up")
-  //- +direction-content-EN
-  //- +preview('Maintaining Our Achievements','Lazutova','Elena','Director of Financial and Economic Department','lazutova.png').lazutova(id="preview-section-save")
-  //- +preservation-content-EN 
-  //- +preview('Profit on Sales ','Solovieva','Ekaterina','Deputy Chief Accountant — Department Director','solov.png').custom-id(id="profit-sales") 
-  //- +profit-content-EN
-  //- +preview('Caring for Business Climate','Lipatova','Marina','Deputy Head of Administration','lipatova.png').custom-id(id="preview-care") 
-  //-   .lipatova 
-  //-     p.lipatova__description.description We make efforts to shape the favorable regulatory environment to promote the high service quality. 
-  //- +case-content-EN
-  //- +next-page('Устойчивое развитие',4)
+  +preview('Main Digital Development Areas','Anpilov','Kirill','Head of Information System Support Section','anpilov.png').custom-id(id="preview-main-line")(data-aos="fade-up")
+  +direction-content-EN
+  +preview('Maintaining Our Achievements','Lazutova','Elena','Director of Financial and Economic Department','lazutova.png').lazutova(id="preview-section-save")
+  +preservation-content-EN 
+  +preview('Profit on Sales ','Solovieva','Ekaterina','Deputy Chief Accountant — Department Director','solov.png').custom-id(id="profit-sales") 
+  +profit-content-EN
+  +preview('Caring for Business Climate','Lipatova','Marina','Deputy Head of Administration','lipatova.png').custom-id(id="preview-care") 
+    .lipatova 
+      p.lipatova__description.description We make efforts to shape the favorable regulatory environment to promote the high service quality. 
+  +case-content-EN
+  +print-activity-buttons-EN
+  +next-page('Sustainable development',4,'Next section')

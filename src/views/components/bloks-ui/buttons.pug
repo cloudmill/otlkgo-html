@@ -1,7 +1,6 @@
 mixin activity-buttons(src) 
   .activity-buttons&attributes(attributes)
-    .activity-buttons__plus
-    a.activity-buttons__item.fancy-button(data-fancy=`assets/images/${src}`)
+    a.activity-buttons__item.button-increase.fancy-button(data-fancy=`assets/images/${src}`)
       +search-plus-svg
     a.activity-buttons__download.activity-buttons__item(href=`assets/images/${src}` download)
       +header-download-svg
@@ -19,3 +18,25 @@ mixin print-activity-buttons
         .print-activity__item-svg
           +sms-tracking-svg
         p.print-activity__item-text Отправить по e-mail
+mixin print-activity-buttons-EN
+  .container(data-aos='fade-up')
+    .print-activity 
+      .print-activity__item.print-activity__print(data-print-button).desktop
+        .print-activity__item-svg 
+          +printer-svg
+        p.print-activity__item-text Print
+      button.print-activity__item.print-activity__email( data-modal) 
+        .print-activity__item-svg
+          +sms-tracking-svg
+        p.print-activity__item-text Send by e-mail
+mixin print-activity-buttons-CN
+  .container(data-aos='fade-up')
+    .print-activity 
+      .print-activity__item.print-activity__print(data-print-button).desktop
+        .print-activity__item-svg 
+          +printer-svg
+        p.print-activity__item-text 印刷业
+      button.print-activity__item.print-activity__email( data-modal) 
+        .print-activity__item-svg
+          +sms-tracking-svg
+        p.print-activity__item-text 通过电子邮件发送

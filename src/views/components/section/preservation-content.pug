@@ -49,17 +49,18 @@ mixin preservation-content
             .preservation-sales__img
               +picture('preservation-sale.png')
             +activity-buttons('preservation-sale.png') 
-            
   section(data-aos="fade-up").preservation-structure.mt-section
     .container-content 
       .preservation-structure__inner 
         p.preservation-structure__descrition.description_big Структура себестоимости продаж в 2022 году, %
-          .block-diagram__video.preservation-structure__video
+          .block-diagram__video.preservation-structure__video.mobile
+            video( muted class='video-play' playsinline  data-svg='rev11' )
+              source(src="./assets/videos/sebes-mobile.mp4" type="video/mp4")
+            +diag-1-mob.for-video.video-play-rev11.mobile.preservation-structure__svg
+          .block-diagram__video.preservation-structure__video.desktop
             video( muted class='video-play' playsinline  data-svg='rev11' )
               source(src="./assets/videos/strukt_sebes.mp4" type="video/mp4")
-              source(src="./assets/videos/strukt_sebes.webm" type="video/webm")
-            +sebes.for-video.video-play-rev11.desktop
-            +sebes-mobile.for-video.video-play-rev11.mobile.preservation-structure__svg
+            +diag-1.for-video.video-play-rev11.desktop
         .preservation-structure__row  
           .col 
             p.text.preservation-structure__text Оплата услуг владельцев инфраструктуры в 2022 году в составе себестоимости оказания услуг составила 81%, или 38 459 млн руб. По факту 2022 года суммарный объем инфраструктурных платежей снизился на 15,5% по отношению к факту 2021 года, что сопоставимо с общим снижением себестоимости, вызванным проведенными мерами по оптимизации расходов, а также снижением курсов основных валют расходов по сравнению с 2021 годом.
@@ -120,8 +121,8 @@ mixin preservation-content-CN
       .preservation-dynamic__inner 
         h6.preservation-dynamic__title 2020-2022年主要财务指标的动态，百万卢布。
         .preservation-dynamic__img.desktop-m
-          +picture('preservation-dynamic.png')
-        +activity-buttons('preservation-dynamic.png').flex-desktop
+          +picture('preservation-dynamic-CN.png')
+        +activity-buttons('preservation-dynamic-CN.png').flex-desktop
         .preservation-dynamic__img.mobile-m
           +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
         +activity-buttons('preservation-dynamic-mobile.png').flex-m 
@@ -155,17 +156,18 @@ mixin preservation-content-CN
             .preservation-sales__img
               +picture('preservation-sale.png')
             +activity-buttons('preservation-sale.png') 
-            
   section(data-aos="fade-up").preservation-structure.mt-section
     .container-content 
       .preservation-structure__inner 
         p.preservation-structure__descrition.description_big 2022年销售成本构成，%
-          .block-diagram__video.preservation-structure__video
+          .block-diagram__video.preservation-structure__video.mobile
+            video( muted class='video-play' playsinline  data-svg='rev11' )
+              source(src="./assets/videos/sebes-mobile.mp4" type="video/mp4")
+            +diag-1-mob.for-video.video-play-rev11.mobile.preservation-structure__svg
+          .block-diagram__video.preservation-structure__video.desktop
             video( muted class='video-play' playsinline  data-svg='rev11' )
               source(src="./assets/videos/strukt_sebes.mp4" type="video/mp4")
-              source(src="./assets/videos/strukt_sebes.webm" type="video/webm")
-            +sebes.for-video.video-play-rev11.desktop
-            +sebes-mobile.for-video.video-play-rev11.mobile.preservation-structure__svg
+            +diag-1.for-video.video-play-rev11.desktop
         .preservation-structure__row  
           .col 
             p.text.preservation-structure__text 2022年基础设施所有者服务的费用占提供服务成本的81%，即384.59亿卢布。2022年，基础设施开支总额比2021年下降15.5%，与实施的成本优化措施以及与2021年相比主要成本货币汇率下降造成的成本整体下降相当。
@@ -226,8 +228,8 @@ mixin preservation-content-EN
       .preservation-dynamic__inner 
         h6.preservation-dynamic__title Financial Performance Profile, 2020 to 2022, million rubles
         .preservation-dynamic__img.desktop-m
-          +picture('preservation-dynamic.png')
-        +activity-buttons('preservation-dynamic.png').flex-desktop
+          +picture('preservation-dynamic-CN.png')
+        +activity-buttons('preservation-dynamic-CN.png').flex-desktop
         .preservation-dynamic__img.mobile-m
           +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
         +activity-buttons('preservation-dynamic-mobile.png').flex-m 
@@ -261,17 +263,18 @@ mixin preservation-content-EN
             .preservation-sales__img
               +picture('preservation-sale.png')
             +activity-buttons('preservation-sale.png') 
-            
   section(data-aos="fade-up").preservation-structure.mt-section
     .container-content 
       .preservation-structure__inner 
         p.preservation-structure__descrition.description_big Cost of Sales Structure in 2022 (%)
-          .block-diagram__video.preservation-structure__video
+          .block-diagram__video.preservation-structure__video.mobile
+            video( muted class='video-play' playsinline  data-svg='rev11' )
+              source(src="./assets/videos/sebes-mobile.mp4" type="video/mp4")
+            +diag-1-mob.for-video.video-play-rev11.mobile.preservation-structure__svg
+          .block-diagram__video.preservation-structure__video.desktop
             video( muted class='video-play' playsinline  data-svg='rev11' )
               source(src="./assets/videos/strukt_sebes.mp4" type="video/mp4")
-              source(src="./assets/videos/strukt_sebes.webm" type="video/webm")
-            +sebes.for-video.video-play-rev11.desktop
-            +sebes-mobile.for-video.video-play-rev11.mobile.preservation-structure__svg
+            +diag-1.for-video.video-play-rev11.desktop
         .preservation-structure__row  
           .col 
             p.text.preservation-structure__text The fees paid to infrastructure owners in 2022 included in the cost of services amounted to 81% or 38,459 million rubles. The total infrastructure fees actually paid in 2022 reduced by 15.5% as compared to the actual total amount in 2021, which is comparable with the total net cost reduction due to the cost optimization actions and the reduction in the exchange rate of the principal cost currencies as compared to 2021.

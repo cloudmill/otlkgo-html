@@ -10,7 +10,6 @@ function addToHistory(page) {
   };
   const history = getHistory();
   history.push(visit);
-
   localStorage.setItem('history', JSON.stringify(history));
 }
 
@@ -24,20 +23,17 @@ function displayHistory() {
   const history = getHistory();
   const groupedHistory = groupByDate(history);
 
-
-
-  console.info(history)
   for (const date in groupedHistory) {
     const dateHeading = formatDate(date);
     const historyItems = groupedHistory[date]
       .map((visit) => {
         const time = formatTime(visit.date);
-        const title = visit.title
-
+        const title = visit.title;
+        const href = visit.page;
         return `
         <div class="header-history__time-item">
           <p class="header-history__time-date">${time}</p>
-          <div class="header-history__time-page">${title}</div>
+          <a class="header-history__time-page" href=${href}>${title}</a>
         </div>
       `;
       })

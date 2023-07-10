@@ -311,3 +311,154 @@ mixin reward-content-EN
 
         .reward-table__message
           +message-block('The KPIs for the General Director and the members of the Management Board in 2022 were mostly met/exceeded, with minor deviations due to the measures taken to enhance the company’s business efficiency. ')  
+
+mixin reward-content-CN
+  section(data-aos="fade-up").reward.mt-section(id="reward-mt")
+    .container-content
+      .reward__inner
+        .reward__top
+          h3.reward__title 总经理
+          .row
+            p.reward__text_top.text_big 为激励总经理提高公司管理效率，实现股东和董事会提出的战略目标，公司有总经理奖金的规定。
+          .reward__bottom 
+            .reward__item 
+              .reward__item-top
+                p.reward__item-description.description_big 该文件规定了以下类型的奖金：
+                ul.list
+                  each item in ['根据季度业绩','根据全年工作成果','特别成就',]
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text=item 
+              .reward__item-bottom 
+                p.text.reward__text 由董事会审议总经理关于公司本报告期内预算执行情况的报告后决议，决定本报告期内的总经理奖金。因此，制定总经理业绩的评估。业绩成果包括实现数量、质量和关键绩效指标（以下简称KPI）。
+                p.text.reward__text UTLC ERA总经理的清单、权重和目标KPI侧重于公司的运营模式，其基础是通过边境或港口站（包括但不限于）在至少两个股东的领土上进行的所有直接铁路或铁路-水路联运过境运输：多斯特克、阿腾科里、布列斯特、布鲁兹吉、斯维斯洛奇、马莫诺沃、热列兹诺多罗日内、加里宁格勒-编组站（加里宁格勒商业海港）、波罗的斯克（波罗的斯克港）、布斯洛夫斯卡娅和维亚尔齐利亚（芬兰）。
+            .reward__item 
+              .reward__item-top
+                p.reward__item-description.description_big 总经理的KPI每年由董事会批准。2022年批准了以下KPI（第46号议定书）：
+                ul.list
+                  each item in ['完成“净利润”指标（权重占比-30%）','完成“销售利润率”指标（权重份额-20%）','完成“过境集装箱运输量”指标。定义为本报告所述期间实际过境集装箱运输量与预算规定的运输量之比，并以百分比计算（40%的权重）；','公司董事会成员对公司领导活动的综合评价，其权重为10%']
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text=item 
+              .reward__item-bottom 
+                p.text.reward__text 根据董事会的决定，可以更改方向清单。每个领域的活动按四分制评分（优秀-3分；良好-2分；满意-1分；不满意-0分），然后计算所有领域的平均百分比。
+                p.text.reward__text 特别成就奖由董事会根据公司总经理的提案并附绩效计算和证明指标作出决定。特别成就奖可在整个报告期内根据董事会的决定发放，但每季度最多发放一次。
+            .reward__item 
+              .reward__item-top
+                p.reward__item-description.description_big КПЭ генерального директора ежегодно утверждает совет директоров. На 2022 год были утверждены следующие КПЭ (протокол № 46)
+                ul.list
+                  each item in ['Выполнение показателя «чистая прибыль» (доля веса — 30%)','Выполнение показателя «рентабельность продаж» (доля веса – 20%)','Выполнение показателя «Объем транзитных контейнерных перевозок». Определяется как соотношение фактического объема транзитных контейнерных перевозок за отчетный период к установленному бюджетом объему и исчисляется в процентах (доля веса — 40%)','Интегральная оценка деятельности руководителя Общества со стороны членов совета директоров Общества с долей веса 10%',]
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text=item 
+              .reward__item-bottom 
+                p.text.reward__text 前三个KPI规定了一个计划业绩范围，对指标适用0、0.5或1的系数。
+  section(data-aos="fade-up").reward-rule.mt-section(id="reward-rule")
+    .container-content
+      .reward-rule__inner 
+        .reward-rule__top
+          h3.reward-rule__title 董事会成员
+          .row
+            p.reward-rule__text_big.text_big 为提高董事会成员的物质利益，以实现公司的最高业绩，提高工作质量，并为他们的专业和创造性活动创造条件，公司对董事会成员的奖金有规定。
+        .reward-rule__bottom 
+          .col
+            p.reward-rule__description.description_big 根据该规定，可适用以下类型的奖金：
+            ul.list
+              each item in ['根据季度业绩','根据全年工作成果','特别成就',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+            p.reward-rule__text.text 根据报告期的成果向董事会成员发放奖金是雇主的权利，但不是有保证的付款。该奖励取决于员工绩效的数量和质量关键指标、公司的财务状况，以及其他可能影响奖金事实和金额的因素。
+          .col
+            p.reward-rule__text.text 董事会成员在审议总经理报告期间公司预算执行情况报告后，根据公司董事会的多数票决议给予奖金。
+            p.reward-rule__text.text 2022年董事会成员的主要绩效指标由UTLC ERA董事会于2021年12月27日确定（第46号协议），并根据执行的功能及其职责范围在他们之间分配。
+  section(data-aos="fade-up").reward-table 
+    .container-content 
+      .reward-table__inner 
+        h6.reward-table__title 根据2022年的结果，总经理和董事会成员的KPI基本完成/超额完成，由于公司采取了提高效率的措施，偏差很小。 
+        .reward-table__img.mobile-t
+          +picture('reward-table-mobile.png')
+          +activity-buttons('reward-table-mobile.png') 
+
+        .reward-table__table.desktop-t
+          table.table
+            thead.table__top
+              tr.table__row
+                th.table__first MOKPI 
+                th.table__title 指标
+                th.table__title 指标类型
+                th.table__title 计算公式
+                th.table__title 重量的分配和比例，%
+            tbody 
+              tr 
+                td.table__row-first 1
+                td.table__row-item.table__row-description 执行总经理的指示
+                td.table__row-item 质量的
+                td.table__row-item 不需要
+                td.table__row-item
+                  .table__row-last
+                    p.table__text 第一副总经理 - 10%；
+                    p.table__text 副总经理-商务总监 - 10%；
+                    p.table__text 副总经理-运输总监    - 10%；
+                    p.table__text 副总经理（与白俄罗斯铁路国家联合公司的互动）- 10%；
+                    p.table__text 副总经理 （法律问题） - 10%。
+              tr 
+                td.table__row-first 2
+                td.table__row-item.table__row-description “净利润”指标完成情况
+                td.table__row-item 金融经济的
+                td.table__row-item X=净收入（事实）/净利润（计划）* 100%
+
+                td.table__row-item
+                  .table__row-last
+                    p.table__text 第一副总经理 - 30%；
+                    p.table__text 副总经理-商务总监 - 30%；
+                    p.table__text 副总经理-运输总监    - 30%；
+                    p.table__text 副总经理（与白俄罗斯铁路国家联合公司的互动）-30%。
+              tr 
+                td.table__row-first 3
+                td.table__row-item.table__row-description 不超过合同条款规定的客户应收账款水平
+                td.table__row-item 金融经济的
+                td.table__row-item X=应收客户账款(事实)/应收客户账款(既定限额) * 100%
+                td.table__row-item
+                  .table__row-last
+                    p.table__text 副总经理-商务总监 - 20%；
+                    p.table__text 副总经理（与白俄罗斯铁路国家联合公司的互动）- 20%。
+              tr 
+                td.table__row-first 4
+                td.table__row-item.table__row-description 完成UTLC ERA“过境集装箱运输量”指标。
+                td.table__row-item 定量的
+                td.table__row-item X=过境运输量(事实)/过境运输量(计划) * 100%
+                td.table__row-item
+                  .table__row-last
+                    p.table__text 第一副总经理 - 40%；
+                    p.table__text 副总经理-商务总监 - 40%；
+                    p.table__text 副总经理-运输总监    - 40%；
+                    p.table__text 副总经理（与白俄罗斯铁路国家联合公司的互动）- 40%；
+                    p.table__text 副总经理 （法律问题） - 40%。
+              tr 
+                td.table__row-first 5
+                td.table__row-item.table__row-description 空车调运费用优化
+                td.table__row-item 金融经济的
+                td.table__row-item X=1DFE运输成本中空车调运费用（事实）/1DFE运输成本中空车调运费用（计划）* 100%
+                td.table__row-item
+                  .table__row-last
+                    p.table__text 第一副总经理 - 20%；
+                    p.table__text 副总经理-运输总监    - 20%。
+              tr 
+                td.table__row-first 6
+                td.table__row-item.table__row-description 建立和维护公司的合同工作制度（制定规范性文件，制定合同范本）
+                td.table__row-item 质量的
+                td.table__row-item 根据公司总经理的评估，根据公司监督机构、外部和内部审计师、协作单位、职能部门负责人对系统性违规行为的综合信息确定
+                td.table__row-item
+                  .table__row-last
+                    p.table__text 副总经理 （法律问题） - 25%。
+              tr 
+                td.table__row-first 7
+                td.table__row-item.table__row-description 没有违反法律，即作为国家机构关于属于副总经理（法律事务）职权范围内事项指令的司法决议记录的立法
+                td.table__row-item 质量的
+                td.table__row-item 不需要
+                td.table__row-item
+                  .table__row-last
+                    p.table__text 副总经理 （法律问题） - 25%。
+        .reward-table__message
+          +message-block('根据2022年的结果，总经理和董事会成员的KPI基本完成/超额完成，由于公司采取了提高效率的措施，偏差很小。  ')

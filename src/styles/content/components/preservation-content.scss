@@ -2,7 +2,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #69DA91;
+    border-top: 1px solid #69da91;
   }
 
   &__row {
@@ -28,7 +28,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #045C25;
+    border-top: 1px solid #045c25;
   }
 
   &__title {
@@ -53,12 +53,12 @@
     &:nth-child(2) {
       padding-top: 20px;
 
-      border-top: 1px solid #E8E8E8;
+      border-top: 1px solid #e8e8e8;
     }
   }
 
   &__inner {
-    border-top: 1px solid #69DA91;
+    border-top: 1px solid #69da91;
     padding-top: 20px;
   }
 
@@ -99,7 +99,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #045C25;
+    border-top: 1px solid #045c25;
   }
 
   &__title {
@@ -124,55 +124,22 @@
     gap: 40px;
   }
 
-
   &__video {
-    height: 625px;
-
-    &__svg {
-      @media #{media('<',xs)} {
-        transform: translate(-27px, 10px);
-        width: 345px;
-      }
-    }
-
-    @media #{media('<',d)} {
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-    }
-
-    // @media #{media('<',m)} {
-    //   height: auto;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-
-    // }
-
+    height: 530px;
     video {
-      height: 99%;
-
-      @media #{media('<',d)} {
-        height: 530px;
+      transform: scale(0.9);
+      // @media #{media("<",t)} {
+      //   transform: scale(0.7);
+      // }
+      @media #{media("<",m)} {
+        transform: translateX(6px);
       }
-
-      @media #{media('<',t)} {
-        height: 392px;
-      }
-
-      @media #{media('<',m)} {
-        width: 58%;
-        transform: translate(23px, 16px);
-        margin: 0 auto;
-      }
-
-      @media #{media('<',s)} {
-        width: 60%;
-        transform: translate(18px, 10px);
-        margin: 0 auto;
-      }
+    }
+    @media #{media("<",t)} {
+      height: 392px;
+    }
+    @media #{media("<",m)} {
+      height: 235px;
     }
   }
 }
@@ -186,7 +153,7 @@
 .preservation-expenses {
   &__inner {
     padding-top: 20px;
-    border-top: 1px solid #69DA91;
+    border-top: 1px solid #69da91;
   }
 
   &__description {
@@ -215,7 +182,7 @@
   &__svg {
     transform: translateX(-90px);
 
-    @media (max-width:420px) {
+    @media (max-width: 420px) {
       width: 335px;
       transform: none;
     }
@@ -247,7 +214,7 @@
       }
     }
 
-    @media (max-width:420px) {
+    @media (max-width: 420px) {
       margin-top: 0;
       width: 320px;
 
@@ -255,10 +222,8 @@
         width: 311px;
         transform: translate(13px, -47px);
       }
-
     }
   }
-
 }
 
 @media #{media('<',t)} {
@@ -291,7 +256,7 @@
     }
 
     &__description {
-      width: auto
+      width: auto;
     }
 
     .col {
@@ -316,7 +281,7 @@
       padding-left: 20px;
       overflow-x: scroll;
 
-      @include scrollbar-hidden
+      @include scrollbar-hidden;
     }
 
     &-img {
@@ -326,7 +291,6 @@
   }
 
   .preservation-sales {
-
     .col {
       gap: 20px;
 
@@ -340,7 +304,7 @@
     }
 
     &__img {
-      max-width: 100%
+      max-width: 100%;
     }
 
     &__row {
@@ -380,7 +344,6 @@
         margin-top: -20px;
       }
     }
-
   }
 
   .preservation-profit {
@@ -393,7 +356,7 @@
     &__inner {
       padding-top: 8px;
 
-      border-top: 1px solid #69DA91;
+      border-top: 1px solid #69da91;
     }
 
     &__description {
@@ -402,7 +365,6 @@
   }
 
   .preservation-statistics {
-
     &__row {
       display: flex;
       gap: 40px;
@@ -416,5 +378,4 @@
       width: 560px;
     }
   }
-
 }

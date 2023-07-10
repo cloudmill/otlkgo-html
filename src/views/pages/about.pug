@@ -1,4 +1,6 @@
 extends ../app
+include ../components/section/map
+
 
 include ../components/section/calendar-content
 include ../components/section/business-content
@@ -9,8 +11,8 @@ include ../components/section/indicators
 block variables
   -const title = 'О компании'
 block content
-  +report-hero-about
-  +who-we
+  //- +report-hero-about
+  //- +who-we
   +calendar-content
   +indicators
   +preview('Бизнес–модель','Селютин','Михаил Иванович','Директор по развитию бизнеса и анализу рисков','selutin.png').custom-id(id="section-business") 
@@ -31,4 +33,4 @@ block content
           li
             p.text.text-t!=item
   +corruption-content
-
+  +next-page('Стратегический отчет', 2)

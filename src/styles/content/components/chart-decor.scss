@@ -1,0 +1,33 @@
+.chart-decor {
+  display: block;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+
+  @media #{media("<",m)} {
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+  }
+
+  &_green {
+    background-color: #045c25;
+  }
+  &_light-green {
+    background-color: #69da91;
+  }
+
+  &_white-green {
+    background-color: #c4dacc;
+  }
+  &_gray {
+    background-color: #abb5ae;
+  }
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

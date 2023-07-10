@@ -1,5 +1,5 @@
--
-  var test = 'test'
+//- -
+//-   var test = 'test'
 
 block variables
   - var param = false
@@ -10,33 +10,14 @@ include ./components/svg
 include ./components/picture
 
 include ./components/header
-include ./components/footer
+//- include ./components/footer
 include ./components/overlay
 include ./components/sidebar
 
-include ./components/grid-test
+//- include ./components/grid-test
 
 //section
-include ./components/section/map
-include ./components/section/strategy-content
-include ./components/section/transit-content
-include ./components/section/trends-content
-include ./components/section/report-hero
-include ./components/section/report-hero-layout
-include ./components/section/global-economy
-include ./components/section/operation-results
-include ./components/section/marshrute-speed
-include ./components/section/formation-park
-include ./components/section/client-portfolio
-include ./components/section/who-we
-include ./components/section/corporate-responsibility
-include ./components/section/human-capital
-include ./components/section/control
-include ./components/section/incorporated
-include ./components/section/main-contents 
 include ./components/preview/preview-2
-
-
 include ./components/other-blocks/other-components
 
 // elements
@@ -44,7 +25,6 @@ include ./components/buttons
 include ./components/preloader
 include ./components/bloks-ui/message-block
 include ./components/bloks-ui/next-page
-include ./components/bloks-ui/risks
 include ./components/bloks-ui/model
 include ./components/bloks-ui/buttons
 include ./components/bloks-ui/modal
@@ -58,17 +38,17 @@ html(lang='ru')
     meta(charset="utf-8")
     title= title?title:data.title
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
-    meta(property="og:type" content="website")
-    meta(property="og:title" content="Годовой отчет")
-    meta(property="og:url" content="http://www.site.ru/canonicalpage/")
-    meta(property="og:image" content="assets/images/report-hero-about.png")
-    meta(property="og:image:width" content="1200")
-    meta(property="og:image:height" content="630")
-    meta(property="og:description" content="Описание поста можно кратко или как угодно")
-    meta(property="og:site_name" content="Годовой отчет деятельности ОТЛК ЕРА")
+    //- favicon
+    link(rel="icon", type='image/png' href="assets/images/favicon_16x16.png" sizes='16x16')
+    link(rel="icon", type='image/png' href="assets/images/favicon_32x32.png" sizes='32x32')
+    link(rel="shortcut icon", href="assets/images/favicon.ico")
+    //- IOS
+    link(rel="apple-touch-icon", href="assets/images/svg/appletouch.svg")
+    //- opengraph
+    meta(property='og:image' content='assets/images/opengraph.jpg')
   
   body.body.body--notransition(style={
-opacity:0
+    opacity:0
   })
 
     .wrapper
@@ -76,18 +56,16 @@ opacity:0
 
       block header
         +header
-
-
       main.main
         +modal
         +sidebar
         +overlay
         block content
 
-      block footer
+      //- block footer
         //- +footer
 
-      block grid-test
-        +grid-test
+      //- block grid-test
+      //-   +grid-test
 
     block scripts

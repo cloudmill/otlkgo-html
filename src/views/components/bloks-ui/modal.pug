@@ -21,3 +21,49 @@ mixin modal
         p.modal-submit__title Готово
         p.modal-submit__text Ссылка на эту страницу отправлена адресату. <br> Проверьте почту.
         button.modal__button.modal-submit__button(type='submit') Закрыть
+mixin modal-EN
+  .modal
+    .modal__overlay 
+    .modal__inner 
+      .modal__close
+        svg(xmlns='http://www.w3.org/2000/svg' width='45' height='44' viewBox='0 0 45 44' fill='none')
+          path(d='M13.1663 12.666L31.8339 31.3336' stroke='#727A75' stroke-width='2' stroke-linecap='square' stroke-linejoin='round')
+          path(d='M13.1661 31.3336L31.8337 12.666' stroke='#727A75' stroke-width='2' stroke-linecap='square' stroke-linejoin='round')
+
+      .modal__body
+        h3.modal__title Send by mail
+        form.modal__form
+          .modal__input 
+            p.modal__text Specify the e-mail address to send the link to the Report page
+            +input(placeholder='E-mail*')
+          .modal__input 
+            p.modal__text Comment to the letter
+            +textarea(placeholder='Сообщение')
+          button.modal__button(type='submit') Send
+      .modal-submit 
+        p.modal-submit__title Done
+        p.modal-submit__text The link to this page has been sent to the addressee. <br> Check your email.
+        button.modal__button.modal-submit__button(type='submit') To close
+mixin modal-CN
+  .modal
+    .modal__overlay 
+    .modal__inner 
+      .modal__close
+        svg(xmlns='http://www.w3.org/2000/svg' width='45' height='44' viewBox='0 0 45 44' fill='none')
+          path(d='M13.1663 12.666L31.8339 31.3336' stroke='#727A75' stroke-width='2' stroke-linecap='square' stroke-linejoin='round')
+          path(d='M13.1661 31.3336L31.8337 12.666' stroke='#727A75' stroke-width='2' stroke-linecap='square' stroke-linejoin='round')
+
+      .modal__body
+        h3.modal__title 邮寄
+        form.modal__form
+          .modal__input 
+            p.modal__text 指定要将链接发送到报告页面的电子邮件地址
+            +input(placeholder='E-mail*')
+          .modal__input 
+            p.modal__text 对这封信的评论
+            +textarea(placeholder='Сообщение')
+          button.modal__button(type='submit') 发送
+      .modal-submit 
+        p.modal-submit__title 完成
+        p.modal-submit__text 本页的链接已发送给收件人. <br>检查您的电子邮件。
+        button.modal__button.modal-submit__button(type='submit') 关闭

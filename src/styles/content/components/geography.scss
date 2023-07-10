@@ -2,16 +2,27 @@
   padding: 0 20px;
   position: relative;
 
+  &_EN {
+    .geography__inner {
+      background: url('../assets/images/geography-bg-EN.jpg') center/cover
+        no-repeat;
+    }
+  }
+  &_CN {
+    .geography__inner {
+      background: url('../assets/images/geography-bg-CN.jpg') center/cover
+        no-repeat;
+    }
+  }
   &__inner {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // height: calc(100vh - 83px);
+
     height: 100vh;
 
     background: url('../assets/images/geography-bg.jpg') center/cover no-repeat;
-    // background-position: -20px;
 
     @media #{media('<',d)} {
       height: auto;
@@ -36,7 +47,7 @@
 
     background: url('../assets/images/geography-bg.jpg') center/cover no-repeat;
     // background: url('../assets/images/geography-bg.jpg') top/contain no-repeat;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     overflow-x: scroll;
     overflow-y: hidden;
 
@@ -65,13 +76,13 @@
     &-left {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 20px;
     }
 
     &-right {
       display: flex;
       flex-direction: column;
-      gap: 8px
+      gap: 8px;
     }
   }
 
@@ -83,8 +94,7 @@
     grid-column-gap: 40px;
     z-index: $index-1;
 
-    border-top: 1px solid #045C25;
-
+    border-top: 1px solid #045c25;
 
     @media #{media('<',t)} {
       grid-template-columns: repeat(1, 1fr);
@@ -127,8 +137,6 @@
     font-size: 18px;
     line-height: 160%;
     color: color(dark);
-
-
 
     span {
       padding-right: 8px;
@@ -183,7 +191,7 @@
       font-weight: 700;
       font-size: 14px;
       line-height: 150%;
-      color: #2A2E2B;
+      color: #2a2e2b;
     }
 
     &__th {
@@ -192,14 +200,14 @@
       width: 121px;
       height: 40px;
 
-      background: #D4E3DA;
-      border: 1px solid #EDEDED;
+      background: #d4e3da;
+      border: 1px solid #ededed;
 
       &_row {
         font-weight: 500;
         font-size: 14px;
         line-height: 150%;
-        color: #2A2E2B;
+        color: #2a2e2b;
         text-align: left;
       }
     }
@@ -208,9 +216,9 @@
       font-weight: 700;
       font-size: 14px;
       line-height: 150%;
-      color: #2A2E2B;
-      background: #FFFFFF;
-      border: 1px solid #EDEDED;
+      color: #2a2e2b;
+      background: #ffffff;
+      border: 1px solid #ededed;
       text-align: center;
     }
 
@@ -223,9 +231,9 @@
       font-weight: 700;
       font-size: 14px;
       line-height: 150%;
-      color: #2A2E2B;
-      background: #69DA91;
-      border: 1px solid #EDEDED;
+      color: #2a2e2b;
+      background: #69da91;
+      border: 1px solid #ededed;
       text-align: left;
     }
 
@@ -233,7 +241,6 @@
       background: transparent;
       border: none;
     }
-
   }
 }
 
@@ -249,7 +256,7 @@
 
     &__inner {
       justify-content: flex-start;
-      gap: 0
+      gap: 0;
     }
 
     &__box {
@@ -277,7 +284,7 @@
         gap: 12px;
         padding-top: 8px;
 
-        border-top: 1px solid #045C25;
+        border-top: 1px solid #045c25;
       }
     }
 

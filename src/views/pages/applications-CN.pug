@@ -1,5 +1,6 @@
 extends ../app
-
+block variables
+  -const title = '申请表格'
 block content
   section.applications(data-aos="fade-up") 
     .container-content 
@@ -88,4 +89,4 @@ block content
               p.applications-bottom__text.text 在所进行的检查的基础上，监察委员会确定了公司2022年年度会计（财务）报表及UTLC ERA股份公司2022年年度报告中数据的真实性。  
             .applications-bottom__img
               +picture('applications-bottom.png')
-  +next-page('О компании', 1)
+  +next-page('关于公司', 1,'下一节')

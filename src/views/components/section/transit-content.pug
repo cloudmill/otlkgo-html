@@ -3,24 +3,37 @@ mixin transit-content
     .container-content 
       .transit-dynamic__inner 
         h4.transit-dynamic__title Динамика перевозок с долями основных коридоров, 2022 г.
-        .transit-dynamic__svg.desktop
-          .transit-dynamic__svg
-            +picture('transit-dynamic-1-mobile.png')
-   
-        .transit-dynamic__svg.mobile 
-          +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
-        .links.transit-dynamic__links 
+        .transit-dynamic__top
+          .transit-dynamic__left
+            .transit-dynamic__elements  
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_green
+                p.text ОТЛК ЕРА
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_light-green
+                p.text Наушки
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_white-green 
+                p.text Забайкальск
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_gray
+                p.text Порты и станции ДВ РФ
+            .links.transit-dynamic__links.desktop 
+              p.links__text.transit-dynamic__links-text Источник:&nbsp;
+              a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+          .transit-dynamic__right
+            .transit-dynamic__svg
+              +picture('transit-dynamic-1-mobile.png')
+        .links.transit-dynamic__links.flex-m
           p.links__text.transit-dynamic__links-text Источник:&nbsp;
           a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-dynamic-1-mobile.png').flex-desktop
-        +activity-buttons('transit-dynamic-2-mobile.png').flex-m
+        +activity-buttons('transit-dynamic-1-mobile.png')
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
               span.countup-element(data-countup='89')
               span ,
               span.countup-element(data-countup='3' data-countup-suffix='%')
-
             p.transit-dynamic__sub Доля компании за 2022 году на конкурентных МТК&nbsp;«Восток-Запад» маршрутах 
           .col 
             p.text.transit-dynamic__text В 2022 году в контейнерных сервисах ОТЛК&nbsp;ЕРА по транзитному маршруту через пограничные переходы Достык и Алтынколь было перевезено 410 638 ДФЭ (-34,6% в годовом исчислении). В свою очередь, в направлении Китай-Европа было перевезено 276 472 ДФЭ, а в направлении Европа-Китай — 134 166 ДФЭ (уменьшение объемов на 33,9% и 36% соответственно).
@@ -185,18 +198,16 @@ mixin transit-content-CN
         .transit-dynamic__svg.mobile 
           .transit-dynamic__svg-top
             +picture('transit-dynamic-1-mobile.png')
-            +activity-buttons('transit-dynamic-1-mobile.png')
-
           .transit-dynamic__svg-bottom
             +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
-            +activity-buttons('transit-dynamic-2-mobile.png')
-
           .row 
         .transit-dynamic__svg.desktop
           +transit-content-svg 
         .links.transit-dynamic__links 
           p.links__text.transit-dynamic__links-text 资料来源:&nbsp;
           a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+        +activity-buttons('transit-dynamic-1-mobile.png').flex-desktop
+        +activity-buttons('transit-dynamic-2-mobile.png').flex-m
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
@@ -214,10 +225,13 @@ mixin transit-content-CN
           .transit-volume__row_top
             h4.transit-volume__title 2021-2022年UTLC ERA服务中的中欧中转量，TEU
             a.transit-volume__link.desktop-t <span>资料来源: </span>UTLC ERA股份公司
-
-          .transit-volume__svg 
-            +transit-volume-svg.transit-volume-svg
+          .transit-volume__svg.desktop
+            +picture('transit-volumeTransit.png')
+          .transit-volume__svg.mobile
+            +picture('transit-volumeTransit-mobile.png')
           a.transit-volume__link.flex-t <span>资料来源: </span>UTLC ERA股份公司
+          +activity-buttons('transit-volumeTransit.png').flex-desktop
+          +activity-buttons('transit-volumeTransit-mobile.png').flex-m
 
           h4.transit-volume__subtitle 通过主要竞争走廊的运输量也呈逐年下降趋势：
           .transit-volume__row 
@@ -257,11 +271,9 @@ mixin transit-content-CN
               p 远东港口和车站
         .transit-china__img 
           +picture('transit-china.png').transit-china-img
-          +activity-buttons('transit-china.png')
-
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>UTLC ERA股份公司
-
+        +activity-buttons('transit-china.png')
         .transit-china__row 
           h4.transit-china__subtitle 过境运输量的下降趋势，包括UTLC ERA服务的下降趋势，具有各种外部影响的特点：
           .transit-china__box 
@@ -314,8 +326,6 @@ mixin transit-content-CN
         .links.transit-value__links.desktop
           p.links__text.transit-value__links-text 资料来源&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') UTLC ERA股份公司
-
-
         .transit-value__items 
           .transit-value__item 
             span.transit-value__span.green-light-bg 
@@ -325,11 +335,11 @@ mixin transit-content-CN
             p 2022
         .transit-value__img 
           +picture('transit-value.png').transit-value-img
-          +activity-buttons('transit-value.png')
 
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text 资料来源&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+        +activity-buttons('transit-value.png')
         .transit-value__row 
           .col 
             p.transit-value__description 从运输方式来看，2022年出口量的增长也值得注意。
@@ -341,7 +351,7 @@ mixin transit-content-CN
         h4.transit-export__title 2022年，在UTLC ERA服务中D 俄罗斯联邦、白俄罗斯-中国出口集装箱运输量，TEU。
         .transit-export__svg
           +picture('transit-export.png').transit-export-svg 
-          +activity-buttons('transit-export.png')
+        +activity-buttons('transit-export.png')
   section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
     .container-content 
       .transit-adaptation__inner 
@@ -366,22 +376,17 @@ mixin transit-content-EN
     .container-content 
       .transit-dynamic__inner 
         h4.transit-dynamic__title Traffic Profile Showing Major Corridor Shares, 2022
-
-        .transit-dynamic__svg.mobile 
-          .transit-dynamic__svg-top
-            +picture('transit-dynamic-1-mobile.png')
-            +activity-buttons('transit-dynamic-1-mobile.png')
-
-          .transit-dynamic__svg-bottom
-            +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
-            +activity-buttons('transit-dynamic-2-mobile.png')
-
-          .row 
         .transit-dynamic__svg.desktop
-          +transit-content-svg 
+          .transit-dynamic__svg
+            +picture('transit-dynamic-1-mobile.png')
+          .transit-dynamic__svg.mobile 
+            +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
+          .row 
         .links.transit-dynamic__links 
           p.links__text.transit-dynamic__links-text Source:&nbsp;
           a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+        +activity-buttons('transit-dynamic-1-mobile.png').flex-desktop
+        +activity-buttons('transit-dynamic-2-mobile.png').flex-m
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
@@ -400,9 +405,13 @@ mixin transit-content-EN
             h4.transit-volume__title China–Europe–China Transit Volume in UTLC ERA Services, 2021 to 2022 (TEU)
 
             a.transit-volume__link.desktop-t <span>Source: </span>АО «ОТЛК&nbsp;ЕРА»
-          .transit-volume__svg 
-            +transit-volume-svg.transit-volume-svg
+          .transit-volume__svg.desktop
+            +picture('transit-volumeTransit.png')
+          .transit-volume__svg.mobile
+            +picture('transit-volumeTransit-mobile.png')
           a.transit-volume__link.flex-t <span>Source: </span>АО «ОТЛК&nbsp;ЕРА»
+          +activity-buttons('transit-volumeTransit.png').flex-desktop
+          +activity-buttons('transit-volumeTransit-mobile.png').flex-m
           h4.transit-volume__subtitle The transit via the major competitive corridors has also declined on a year-on-year basis:
           .transit-volume__row 
             .transit-volume__item 
@@ -441,7 +450,8 @@ mixin transit-content-EN
         .transit-china__img 
           +picture('transit-china.png').transit-china-img
         a.transit-china__link.mobile(href="#" target='blank') 
-            <span>Source: </span>АО «ОТЛК&nbsp;ЕРА»
+            <span>Источник: </span>АО «ОТЛК&nbsp;ЕРА»
+        +activity-buttons('transit-china.png')
         .transit-china__row 
           h4.transit-china__subtitle The downward trend in the transit traffic volumes, including UTLC ERA’s services, is affected by various external influences:
           .transit-china__box 
@@ -505,6 +515,7 @@ mixin transit-content-EN
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+        +activity-buttons('transit-value.png')
         .transit-value__row 
           .col 
             p.transit-value__description The growth in export volumes by traffic types in 2022 is also notable.
@@ -516,7 +527,8 @@ mixin transit-content-EN
         h4.transit-export__title Export Container Traffic Volume on the Russian Federation, Republic of Belarus – China Route in UTLC ERA’s Services, 2022, TEUs
         .transit-export__svg
           +picture('transit-export.png').transit-export-svg 
-          +activity-buttons('transit-export.png')  section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
+        +activity-buttons('transit-export.png')
+  section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")  
     .container-content 
       .transit-adaptation__inner 
         h3.transit-adaptation__title Flexibility Evidenced by Adaptation

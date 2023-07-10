@@ -39,16 +39,25 @@ mixin trends-content
       .trends-dynamic__inner 
         .row
           h6.trends-dynamic__title Динамика значений ставок WCI, 2021–2022 гг., $/СФЭ
+          .trends-dynamic__elements 
+            .trends-dynamic__elem 
+              span.trends-dynamic__green
+              p Композитный WCI
+            .trends-dynamic__elem
+              span.trends-dynamic__light-green
+              p WCI Шанхай-Роттердам
+            .trends-dynamic__elem 
+              span.trends-dynamic__brown
+              p WCI Роттердам-Шанхай
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
             +activity-buttons('trends-dynamic-mobile.png')
-          .links.trends-dynamic__links
-            p.links__text.trends-dynamic__links-text Источник: &nbsp;
-          
-            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
         .trends-dynamic__svg.desktop
           +picture('trends-dynamic.png')
-          +activity-buttons('trends-dynamic.png')
+        .links.trends-dynamic__links
+          p.links__text.trends-dynamic__links-text Источник: &nbsp;
+          a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+        +activity-buttons('trends-dynamic.png')
         .row 
           .col 
           .col 
@@ -59,19 +68,32 @@ mixin trends-content
   section(data-aos="fade-up").trends-rates 
     .container-content 
       .trends-rates__inner 
-        .row
+        .trends-rates__row
           h6.trends-rates__title Соотношение ставок WCI к ERAI по направлениям, 2020–2022 гг.
-          .trends-rates__svg 
-            +picture('trends-rates-mobile.png').mobile
-            +activity-buttons('trends-rates-mobile.png').flex-m
-            
-          .links.trends-rates__links
+          .links.trends-rates__links.desktop
             p.links__text.trends-rates__links-text Источники:&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        .trends-dynamic__elements 
+          .trends-dynamic__elem 
+            span.trends-dynamic__pink
+            p Первые волны COVID
+          .trends-dynamic__elem
+            span.trends-dynamic__light-green
+            p WCI Шанхай-Роттердам
+          .trends-dynamic__elem 
+            span.trends-dynamic__brown
+            p WCI Роттердам-Шанхай
+        .trends-rates__svg 
+          +picture('trends-rates-mobile.png').mobile
+          +activity-buttons('trends-rates-mobile.png').flex-m
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
           +activity-buttons('trends-rates.png').desktop
+        .links.trends-rates__links.flex-m
+          p.links__text.trends-rates__links-text Источники:&nbsp;
+          a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
+          a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -79,12 +101,22 @@ mixin trends-content
           .col
             h6.trends-demand__title Спрос на глобальные морские контейнерные перевозки, факт 2020–2022 гг., <br/> прогноз 2023–2026 гг., млн ДФЭ и %
           .col 
-            .trends-demand__svg 
-              +picture('trends-demand-mobile.png').mobile
-              +activity-buttons('trends-demand-mobile.png').flex-m
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text Источник:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+        .trends-demand__elements
+          .trends-demand__elem
+            .elem
+              span.chart-decor.chart-decor_light-green 
+              span.chart-decor.chart-decor_green
+              span.chart-decor.chart-decor_gray
+            p.trends-demand__text Пропускная способность, млн. ДФЭ
+            .elem
+              .elem_line
+              p.trends-demand__text Изменение год к году
+            .trends-demand__svg 
+              +picture('trends-demand-mobile.png').mobile
+              +activity-buttons('trends-demand-mobile.png').flex-m
         .trends-demand__svg 
           +picture('trends-demand.png').desktop
           +activity-buttons('trends-demand.png').desktop
@@ -153,17 +185,27 @@ mixin trends-content-CN
       .trends-dynamic__inner 
         .row
           h6.trends-dynamic__title 2021-2022年WCI费率值的动态，$/SFE
+          .trends-dynamic__elements 
+            .trends-dynamic__elem 
+              span.trends-dynamic__green
+              p Композитный WCI
+            .trends-dynamic__elem
+              span.trends-dynamic__light-green
+              p WCI Шанхай-Роттердам
+            .trends-dynamic__elem 
+              span.trends-dynamic__brown
+              p WCI Роттердам-Шанхай
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')
             +activity-buttons('trends-dynamic-mobile.png')
-
-          .links.trends-dynamic__links
-            p.links__text.trends-dynamic__links-text 资料来源: &nbsp;
-          
-            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+    
         .trends-dynamic__svg.desktop
           +picture('trends-dynamic.png')
           +activity-buttons('trends-dynamic.png')
+        .links.trends-dynamic__links
+          p.links__text.trends-dynamic__links-text 资料来源: &nbsp;
+          a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+        +activity-buttons('trends-dynamic.png')
         .row 
           .col 
           .col 
@@ -270,17 +312,25 @@ mixin trends-content-EN
       .trends-dynamic__inner 
         .row
           h6.trends-dynamic__title WCI Rate Profile, 2021 to 2022, $/FEU
+          .trends-dynamic__elements 
+            .trends-dynamic__elem 
+              span.trends-dynamic__green
+              p Композитный WCI
+            .trends-dynamic__elem
+              span.trends-dynamic__light-green
+              p WCI Шанхай-Роттердам
+            .trends-dynamic__elem 
+              span.trends-dynamic__brown
+              p WCI Роттердам-Шанхай
           .trends-dynamic__svg.mobile
-            +picture('trends-dynamic-mobile.png')
+            +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
             +activity-buttons('trends-dynamic-mobile.png')
-          .links.trends-dynamic__links
-            p.links__text.trends-dynamic__links-text Source:&nbsp;
-          
-            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
         .trends-dynamic__svg.desktop
           +picture('trends-dynamic.png')
-          +activity-buttons('trends-dynamic.png')
-
+        .links.trends-dynamic__links
+          p.links__text.trends-dynamic__links-text Source:&nbsp;
+          a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+        +activity-buttons('trends-dynamic.png')
         .row 
           .col 
           .col 

@@ -54,9 +54,7 @@
     font-size: 15px;
     line-height: 160%;
     color: color(alt-grey);
-
   }
-
 }
 
 .mobile {
@@ -69,7 +67,6 @@
   &__inner {
     border-top: 1px solid color(green);
     padding-top: 20px;
-
   }
 
   &__svg {
@@ -108,7 +105,6 @@
       }
     }
   }
-
 }
 
 .trends-dynamic {
@@ -117,7 +113,6 @@
   &__inner {
     border-top: 1px solid color(green);
     padding-top: 20px;
-
   }
 
   &__title {
@@ -126,21 +121,70 @@
     line-height: 150%;
     color: color(dark);
   }
-
-  &__svg {
+  &__elements {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    @media #{media('<',m)} {
+      gap: 5px;
+    }
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+      color: #2a2e2b;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 150%;
+      white-space: nowrap;
+
+      @media #{media('<',m)} {
+        font-size: 10px;
+      }
+    }
+    span {
+      width: 18px;
+      height: 4px;
+
+      border-radius: 4.427px;
+    }
+  }
+
+  &__green {
+    background-color: #045c25;
+  }
+  &__light-green {
+    background-color: #69da91;
+  }
+  &__brown {
+    background-color: #c59e7d;
+  }
+  &__pink {
+    background-color: #ffcfcf;
+  }
+  &__svg {
+    margin-top: 30px;
+    @media #{media('<',m)} {
+      margin-top: 16px;
+    }
   }
 
   .row {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
 
   &__text {
     width: 760px;
   }
-
 }
 
 .trends-rates {
@@ -159,8 +203,9 @@
     color: color(dark);
   }
 
-  .row {
+  &__row {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -177,6 +222,15 @@
     padding-top: 20px;
   }
 
+  &__elem {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    @media #{media('<',m)} {
+      margin-top: 14px;
+    }
+  }
   &__title {
     font-family: 'Manrope';
     font-weight: 700;
@@ -255,10 +309,7 @@
     font-size: 15px;
     line-height: 160%;
     color: color(alt-grey);
-
   }
-
-
 }
 
 .trends-forecast2 {
@@ -274,7 +325,7 @@
     &:nth-child(2) {
       display: flex;
       flex-direction: column;
-      gap: 16px
+      gap: 16px;
     }
   }
 
@@ -292,7 +343,6 @@
     color: color(dark);
   }
 }
-
 
 @media #{media("<", m)} {
   .trends-market {
@@ -339,7 +389,6 @@
 
     &__inner {
       padding-top: 8px;
-
     }
 
     &__title {
@@ -398,7 +447,6 @@
 
     &__inner {
       padding-top: 8px;
-
     }
 
     &__title {
@@ -418,7 +466,6 @@
     &__text {
       width: auto;
     }
-
   }
 
   .trends-rates {
@@ -433,8 +480,8 @@
     }
 
     .row {
-      flex-direction: column;
-      gap: 12px;
+      display: flex;
+      justify-content: space-between;
     }
 
     &__svg {
@@ -456,7 +503,18 @@
     &__links {
       margin-top: 20px;
     }
+    &__elements {
+      margin-top: 30px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
 
+    &__elem {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
     .row {
       flex-direction: column;
       gap: 12px;
@@ -464,6 +522,13 @@
 
     &__svg {
       margin-top: 20px;
+    }
+
+    &__text {
+      font-size: 12px;
+      @media #{media('<',m)} {
+        font-size: 10px;
+      }
     }
   }
 
@@ -502,7 +567,6 @@
       width: auto;
     }
 
-
     &__sub {
       margin-top: 12px;
 
@@ -526,7 +590,7 @@
       &:nth-child(2) {
         display: flex;
         flex-direction: column;
-        gap: 16px
+        gap: 16px;
       }
     }
 
@@ -540,4 +604,11 @@
       font-size: 14px;
     }
   }
+}
+
+.elem_line {
+  width: 18px;
+  height: 4px;
+
+  background-color: #045c25;
 }

@@ -24,8 +24,10 @@ mixin picture(fileName)
       type="image/webp"
       srcset=(file.getPath(fileTitle, "webp") + " 1x")
       data-fancybox
+      alt=fileTitle
     )
     img.picture__img(
       src=(file.getPath(fileTitle, fileExtension))
             data-fancybox
+       alt=fileTitle
     )

@@ -1,5 +1,6 @@
 extends ../app
-
+block variables
+  -const title = 'Applications'
 block content
   section.applications(data-aos="fade-up") 
     .container-content 
@@ -88,4 +89,4 @@ block content
               p.applications-bottom__text.text Based on this audit, the Audit Commission confirms the reliability of the data contained in the Company's annual accounting (financial) statements for 2022 and JSC UTLC ERA Annual Report for 2022.
             .applications-bottom__img
               +picture('applications-bottom.png')
-  +next-page('О компании', 1)
+  +next-page('About the company', 1,'Next section')

@@ -5,35 +5,35 @@ include ../components/section/purchase-content
 include ../components/section/charity-content
 
 block variables
-  -const title = 'Устойчивое развитие'
-  
-  //- +preview('职业安全和消防安全','塔拉索娃','贾丽娜·亚历山德罗夫娜','行政管理部副经理','tarasova.png').custom-id(id="preview-security-content")  
-  //- +security-content-CN
-  //- +preview('环境可持续性是我们的竞争优势','赫梅里尼茨卡亚','安娜·亚历山德罗夫娜','营销联络部主任','xm.png').custom-id(id="preview-ecology-content").xmelnitskaya 
-  //- +ecology-content-CN
-  //- +preview('以人为本：慈善事业','芭鲁兹金娜','奥尔加·亚历山德罗夫娜','组织发展部经理','baruzdina.png').custom-id(id="preview-charity-content").baruzdina 
-  //- +charity-content-CN
-  //- +purchase-content-CN
-//-   +preview('能源资源利用','波罗夏伊','阿丽娜·尤里耶夫娜
-//- ','行政管理部经理','porochay.png').porochay(id="preview-energetic-resourses") 
-//-     .porochay__table
-//-       .preview__table
-//-         table.preview-table
-//-           thead.preview-table__top  
-//-             tr.preview-table__row
-//-               each i in ['2022年指标','支出','金额，卢布']
-//-                 th.preview-table__name=i
-//-           tbody.preview-table__bottom
-//-             tr.preview-table__row
-//-               td.preview-table__item 供电，千瓦 
-//-               td.preview-table__item.preview-table__item_bold 218 122,14
-//-               td.preview-table__item.preview-table__item_bold  1 415 662,45
-//-             tr.preview-table__row
-//-               td.preview-table__item 供水，立方米 
-//-               td.preview-table__item.preview-table__item_bold 1540,44
-//-               td.preview-table__item.preview-table__item_bold  112 002,63
-//-             tr.preview-table__row
-//-               td.preview-table__item 热量消耗，千兆卡/立方米 
-//-               td.preview-table__item.preview-table__item_bold 369,16
-//-               td.preview-table__item.preview-table__item_bold  766 022,07
-  +next-page('Корпоративное управление',5)
+  -const title = '可持续发展'
+block content
+  +preview('职业安全和消防安全','塔拉索娃','贾丽娜·亚历山德罗夫娜','行政管理部副经理','tarasova.png').custom-id(id="preview-security-content")  
+  +security-content-CN
+  +preview('环境可持续性是我们的竞争优势','赫梅里尼茨卡亚','安娜·亚历山德罗夫娜','营销联络部主任','xm.png').custom-id(id="preview-ecology-content").xmelnitskaya 
+  +ecology-content-CN
+  +preview('以人为本：慈善事业','芭鲁兹金娜','奥尔加·亚历山德罗夫娜','组织发展部经理','baruzdina.png').custom-id(id="preview-charity-content").baruzdina 
+  +charity-content-CN
+  +purchase-content-CN
+  +preview('能源资源利用','波罗夏伊','阿丽娜·尤里耶夫娜','行政管理部经理','porochay.png').porochay(id="preview-energetic-resourses") 
+    .porochay__table
+      .preview__table
+        table.preview-table
+          thead.preview-table__top  
+            tr.preview-table__row
+              each i in ['2022年指标','支出','金额，卢布']
+                th.preview-table__name=i
+          tbody.preview-table__bottom
+            tr.preview-table__row
+              td.preview-table__item 供电，千瓦 
+              td.preview-table__item.preview-table__item_bold 218 122,14
+              td.preview-table__item.preview-table__item_bold  1 415 662,45
+            tr.preview-table__row
+              td.preview-table__item 供水，立方米 
+              td.preview-table__item.preview-table__item_bold 1540,44
+              td.preview-table__item.preview-table__item_bold  112 002,63
+            tr.preview-table__row
+              td.preview-table__item 热量消耗，千兆卡/立方米 
+              td.preview-table__item.preview-table__item_bold 369,16
+              td.preview-table__item.preview-table__item_bold  766 022,07
+  +print-activity-buttons-CN
+  +next-page('企业管治',5,'下一节')

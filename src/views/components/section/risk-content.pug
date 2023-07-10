@@ -219,41 +219,361 @@ mixin risk-content-EN
       .risk-analysis__inner 
         h2.risk-analysis__title SWOT analysis
         .risk-analysis__box
-          p.risk-analysis__item-subtitle Внутренние факторы
+          p.risk-analysis__item-subtitle INTERNAL FACTORS
           .row
             .risk-analysis__item 
-              p.risk-analysis__item-title Сильные стороны
+              p.risk-analysis__item-title Strengths
               ul.list.risk-analysis__list
-                each item in ['Уникальность ресурса – международного сотрудничества на пространстве ЕАЭC','Лидерство на рынке по издержкам за счет постоянной оптимизации и выстраивания системы долгосрочного партнерства','Адаптивность выстроенных бизнес-процессов Общества к внешним вызовам','Клиентский сервис в формате «единого окна»','Операционная и финансовая стабильность  <br class ="br-t"> Общества',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Unique resource — international cooperation in the EAEU
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Cost leadership in the market achieved by continuous optimization and building of a long-term partnership system
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Adaptivity of the company’s established business processes to external challenges
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Streamlined technology for en route container unit train management
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text One-stop customer service
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Company’s operational and financial stability
+              +picture('s.png').risk-analysis__item-img
+            .risk-analysis__item 
+              p.risk-analysis__item-title Weaknesses
+              ul.list.risk-analysis__list
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Business model limitations, including the company’s operation area
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text No access to end consignors
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Lack of information on the cost of the integrated logistics service components outside the company’s remit
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Overlapping structure of customers and service component providers (the same companies)
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Slow corporate decision making due to the need to align the interests of three shareholders
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text No customer relations management IT system
+              +picture('w.png').risk-analysis__item-img
+                
+        .risk-analysis__box
+          p.risk-analysis__item-subtitle EXTERNAL FACTORS
+          .row
+            .risk-analysis__item 
+              +picture('o.png').risk-analysis__item-img
+              p.risk-analysis__item-title Opportunities
+              ul.list.risk-analysis__list
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Growing demand for import and export traffic with China
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Implementation of a coordinated development and integration program for the EAEU transport system 
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Development of international programs with the company’s participation aimed at testing new, primarily digital, technologies and services
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Transformation of the container traffic market structure, new emerging routes/market players
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Development of the terminal network in the EAEU
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Potential demand due to rail transport stability
+            .risk-analysis__item 
+              +picture('t.png').risk-analysis__item-img
+              p.risk-analysis__item-title Threats
+              ul.list.risk-analysis__list
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Reduced subsidies for rail transportation in China
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text EU sanction policy
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Refusal of international insurance companies to insure cargoes transported via the company’s operation area
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Stronger competition among international transport corridors and development of alternative border crossings
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Changes in the shareholders’ tariff policy in regard to the company
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text Unfavorable market fluctuations for currency pairs
+ 
+  section(data-aos="fade-up").risk-task.mt-section(id="risk-task")
+    .container-content 
+      .risk-task__inner
+        .risk-task__row
+          h3.risk-task__title Key risk management tasks
+          p.risk-task__text.text_big The risk management model is built on the three-line defense concept:
+          .risk-task__box
+            .card-line
+              +column-top-svg.card-line__svg
+              h3.card-line__title Line 1
+              .card-line__row 
+                .card-line__col
+                  .row
+                    p.card-line__description Risk owners — business units
+                  .row
+                    p.card-line__description Tasks
+                    p.card-line__text.text Bear the ultimate responsibility for management of risks related to the company’s day-to-day operations
+                .card-line__col 
+                  p.card-line__description Functions
+                  ul.list
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text  Identify and analyze risks inherent in the day-to-day operations within their discipline.
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text Share information/discuss risks with the management to integrate risks into the decision making process.
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text Develop and implement measures and monitoring procedures to minimize the risks within their discipline. 
+                
+            .card-line
+              +column-top-svg.card-line__svg
+              h3.card-line__title Line 2
+              .card-line__row 
+                .card-line__col
+                  .row
+                    p.card-line__description Supervising units
+                    p.card-line__description Risk management unit
+                  .row
+                    p.card-line__description Tasks
+                    p.card-line__text.text Identify the emerging risks, practice a proactive approach, identify potential gaps in the control system
+                .card-line__col 
+                  p.card-line__description Functions
+                  .row
+                    p.description_big Risk management
+                    ul.list
+                      li
+                        +mark-text-svg.list-svg
+                        p.text.list__text Bears responsibility for methodological support and coordination of risk management processes.
+                      li
+                        +mark-text-svg.list-svg
+                        p.text.list__text Provides advisory support to the first line of defense in terms of risk identification and assessment, definition of an acceptable risk level, development of measures and monitoring procedures.
+                      li
+                        +mark-text-svg.list-svg
+                        p.text.list__text Prepares risk management reports with up-to-date and adequate risk information. 
+                  .row
+                    p.description_big Other supervising units
+                    ul.list
+                      li
+                        +mark-text-svg.list-svg
+                        p.text.list__text Perform/assist the first line of defense in identification and analysis of cross-functional risks within their discipline.
+                      li
+                        +mark-text-svg.list-svg
+                        p.text.list__text Develop and implement measures and supervising procedures to minimize cross-functional risks within their discipline. 
+            .card-line
+              +column-top-svg.card-line__svg
+              h3.card-line__title Line 3
+              .card-line__row 
+                .card-line__col
+                  .row
+                    p.card-line__description Internal audit
+                  .row
+                    p.card-line__description Tasks
+                    p.card-line__text.text Provides for a fair and independent auditor opinion, assesses efficiency of the first and second line services
+                .card-line__col 
+                  p.card-line__description Functions
+                  ul.list
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text Makes an independent assessment of the risk management system.
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text Assists development and follow-up monitoring of the procedures and measures to improve the risk management system.
+                    li
+                      +mark-text-svg.list-svg
+                      p.text.list__text Coordinates with the risk management consulting service providers. 
+  section(data-aos="fade-up").risk-model.mt-section(id="risk-model")
+    .container-content 
+      .risk-model__inner 
+        h3.risk-model__title Risk management model
+        +risks
+        +model
+  section(data-aos="fade-up").risk-process.mt-section(id="risk-process") 
+    .container-content 
+      .risk-process__inner
+        .row
+          p.risk-process__title Risk management process
+          .risk-process__img.desktop
+            +picture('risk-process-EN.png')
+          .risk-process__img.mobile
+            +picture('risk-process-mobile-EN.png')
+        .risk-process__box 
+          .risk-process__item
+            p.risk-process__item-description.description_big Планирование
+            p.risk-process__text.text  Планирование управления рисками включает определение цели и области применения процесса управления рисками с учетом внутреннего и внешнего контекста, а также разработку плана действий по внедрению.
+          .risk-process__item
+            p.risk-process__item-description.description_big Выявление и анализ риска
+            p.risk-process__text.text  Выявление и анализ рисков включают поиск, определение, описание и классификацию рисков, которые могут повлиять на достижение целей компании, анализ их причин и вероятных последствий.
+          .risk-process__item
+            p.risk-process__item-description.description_big Оценка риска
+            p.risk-process__text.text  Оценка риска заключается в определении степени влияния рисков на цели компании.
+          .risk-process__item
+            p.risk-process__item-description.description_big Реагирование на риск
+            p.risk-process__text.text  Реагирование на риск предполагает выбор наиболее эффективных мер по управлению рисками для снижения их вероятности или ущерба.
+          .risk-process__item
+            p.risk-process__item-description.description_big Мониторинг
+            p.risk-process__text.text  Мониторинг является непрерывным процессом, охватывающим все этапы управления рисками. К мониторингу относится анализ статуса выполнения мероприятий по управлению рисками, анализ изменений для своевременного учета в процессе управления рисками.
+          .risk-process__item
+            p.risk-process__item-description.description_big Документирование
+            p.risk-process__text.text  Документирование результатов этапов управления рисками нацелено на повышение уровня осведомленности и ответственности за управление рисками.
+  section(data-aos="fade-up").results.mt-section(id="risk-results") 
+    .container-content 
+      .results__inner 
+        h2.results__title Results for 2022
+        .results__row 
+          .col 
+            .results__description.description_big In 2022, UTLC ERA identified 52 risks, including 12 key risks deemed highly probable and material:
+          .col 
+            .results__img 
+              +picture('results-EN.png')
+  section(data-aos="fade-up").results-bottom.mt-section
+    .container-content 
+      .results-bottom__inner 
+        .results-bottom__row
+          .results-bottom__left 
+            h3.results-bottom__title Key risks:
+          .col
+            .row 
+              ul.list-number.list
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 1.
+                  p.text.list-number__text Risk of declining political stability in the countries where the company/its partners operate and in the countries along the route
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 2.
+                  p.text.list-number__text Risk of reduction/stagnation of traffic volumes in the corridor via Kazakhstan 
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 3.
+                  p.text.list-number__text Risk of amendments to the railway transit service terms in the UTLC ERA member countries
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 4.
+                  p.text.list-number__text Risk of closure/partial operating limitations of the checkpoints on the EU border
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 5.
+                  p.text.list-number__text Risk of creating a negative image of the company
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 6.
+                  p.text.list-number__text Risk of significant disruptions/railway infrastructure limitations in the 1,520 mm track gauge areas
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 7.
+                  p.text.list-number__text Risk of increasingly unbalanced container traffic flows
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 8.
+                  p.text.list-number__text Risk of impossibility to make payments
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 9.
+                  p.text.list-number__text Risk of banks failing to fulfill their cash management obligations
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 10.
+                  p.text.list-number__text Risk of data corruption/inaccessibility or loss, IT unavailability caused by cyber security incidents
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 11.
+                  p.text.list-number__text Currency risk
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 12.
+                  p.text.list-number__text Risk of non-applicability of special tariff terms.
+            .row
+              .results-bottom__message
+                +message-block('To mitigate the risks and the consequences of potential risk realization scenarios, we developed and approved UTLC ERA’s risk mitigation plan for 2022. The key priorities for 2022 were the export and import traffic development actions, which helped make up for the adverse impact of reduced China–EU–China transit volume caused by geopolitical confrontation')
+        .results-bottom__row
+          .results-bottom__left 
+            p.results-bottom__subtitle.title-24 Out of 52 identified risks, 7 were realized, <br class='br'>including 3 key risks:
+          .col
+            .row 
+              ul.list-number.list
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 1.
+                  p.text.list-number__text Risk of declining political stability in the countries where the company / its partners operate and in the countries along the route (key risk)
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 2.
+                  p.text.list-number__text Risk of significant disruptions / railway infrastructure limitations in the 1,520 mm track gauge areas (key risk)
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 3.
+                  p.text.list-number__text Risk of failure to provide the required rail car fleet
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 4.
+                  p.text.list-number__text Risk of increasing platform procurement costs
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 5.
+                  p.text.list-number__text Accounting misstatement risk
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 6.
+                  p.text.list-number__text Rail car seizure risk
+                li.results-bottom__list-li
+                  p.list-number__number.results-bottom__list-number 7.
+                  p.text.list-number__text Currency risk (key risk).
+            .row
+              .results-bottom__message
+                +message-block('The main priority for 2023 in terms of the risk management system development will be automation of the main processes.')
+mixin risk-content-CN
+  section(data-aos="fade-up").risk.mt-section
+    .container-content 
+      .risk__inner 
+        .risk__left
+          p.risk__desciption.description 考虑到高度的地缘政治紧张局势，UTLC ERA董事会决定形成一个成熟的风险管理体系。
+        .col 
+          ul.list
+            each item in ['成立了实施风险管理系统的工作组（UTLC ERA2021年12月24日第64号命令）。','UTLC ERA风险管理政策（董事会会议纪要，2022年5月11日第52号）获得批准。',' 2022年5月11日批准了UTLC ERA风险管理法规和风险管理方法建议。','对参与风险管理流程的广泛工作人员进行了培训。 ',]
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text!=item 
+  section(data-aos="fade-up").risk-analysis.mt-section(id="risk-analysis")
+    .container-content 
+      .risk-analysis__inner 
+        h2.risk-analysis__title SWOT分析
+        .risk-analysis__box
+          p.risk-analysis__item-subtitle 内部因素
+          .row
+            .risk-analysis__item 
+              p.risk-analysis__item-title 优势
+              ul.list.risk-analysis__list
+                each item in ['资源的独特性 —— EAEU空间的国际合作','通过持续优化和构建长期合作伙伴关系体系在成本上领先市场','公司结构化业务流程对外部挑战的适应性',' 集装箱列车在线路上的调试组织技术','一站式客户服务',' 公司的经营和财务稳定',]
                   li
                     +mark-text-svg.list-svg
                     p.text.list__text!=item
               +picture('s.png').risk-analysis__item-img
             .risk-analysis__item 
-              p.risk-analysis__item-title Слабые стороны
+              p.risk-analysis__item-title 劣势
               ul.list.risk-analysis__list
-                each item in ['Ограничения бизнес-модели, в т.ч. полигона работы  <br class ="br-t"> Общества','Отсутствие доступа к конечным грузоотправителям','Отсутствие информации о стоимости компонентов  <br class ="br-t"> комплексной  логистической услуги, не входящих в  <br class ="br-t"> зону ответственности  Общества','Перекрестная структура клиентов и исполнителей  <br class ="br-t"> компонентов услуги (одни и те же компании)','Длительность принятия корпоративных решений  <br class ="br-t"> в связи с необходимостью согласования интересов  <br class ="br-t"> трех акционеров','Отсутствие IT-системы управления  <br class ="br-t"> взаимоотношений с клиентами',]
+                each item in ['商业模式的局限性，包括公司工作试验场','无法接触最终托运人',' 公司职责范围以外的综合物流服务组件成本信息缺失','服务组成的客户和执行者的交叉结构（同一间公司）',' 三位股东利益协调需求下的公司决策时长','不具备客户关系管理IT系统',]
                   li
                     +mark-text-svg.list-svg
                     p.text.list__text!=item 
               +picture('w.png').risk-analysis__item-img
                 
         .risk-analysis__box
-          p.risk-analysis__item-subtitle Внешние факторы
+          p.risk-analysis__item-subtitle 外部因素
           .row
             .risk-analysis__item 
               +picture('o.png').risk-analysis__item-img
-              p.risk-analysis__item-title Возможности
+              p.risk-analysis__item-title 潜力
               ul.list.risk-analysis__list
-                each item in ['Растущий спрос на импортные и экспортные  <br class ="br-t"> перевозки с КНР','Реализация скоординированной программы развития  <br class ="br-t"> и интеграции транспортной системы ЕАЭС','Развитие международных программ с участием  <br class ="br-t"> Общества, направленных на тестирование новых  <br class ="br-t"> технологий и сервисов, прежде всего цифровых','Трансформация структуры рынка контейнерных  <br class ="br-t"> перевозок, появление новых маршрутов/ игроков','Развитие терминальной сети на пространстве ЕАЭС','Наличие потенциального спроса, обусловленного  <br class ="br-t"> стабильностью железнодорожного транспорта',]
+                each item in ['对中国进出口运输的需求日益增长','实施欧亚经济联盟运输系统发展和一体化协调方案','发展公司参与的国际方案，以测试新技术和服务，主要是数字技术和服务','集装箱运输市场结构的转变，新航线/参与者的出现','发展EAEU空间终端网络','由于铁路运输的稳定性而产生的潜在需求',]
                   li
                     +mark-text-svg.list-svg
                     p.text.list__text!=item 
             .risk-analysis__item 
               +picture('t.png').risk-analysis__item-img
-              p.risk-analysis__item-title Угрозы
+              p.risk-analysis__item-title 威胁
               ul.list.risk-analysis__list
-                each item in ['Снижение субсидирования железнодорожных  <br class ="br-t"> перевозок в КНР','Санкционная политика ЕС','Отказ международных страховых компаний  <br class ="br-t"> от страхования грузов, следующих через полигон работы Общества','Усиление конкуренции международных  <br class ="br-t"> транспортных коридоров и развитие альтернативных  <br class ="br-t"> погранпереходов','Изменение тарифной политики акционеров в   <br class ="br-t"> отношении Общества','Неблагоприятные рыночные колебания  <br class ="br-t"> по валютным парам',]
+                each item in ['中国铁路运输补贴减少','欧盟制裁政策','国际保险公司拒绝为通过公司工作试验场的货物提供保险','加强国际运输走廊的竞争和发展替代过境点','股东对公司费率政策的变化','货币对的不利市场波动',]
                   li
                     +mark-text-svg.list-svg
                     p.text.list__text!=item 
@@ -261,83 +581,83 @@ mixin risk-content-EN
     .container-content 
       .risk-task__inner
         .risk-task__row
-          h3.risk-task__title Ключевые задачи управления рисками  
-          p.risk-task__text.text_big Модель управления рисками строится на концепции трех линий защиты:
+          h3.risk-task__title 风险管理的首要任务
+          p.risk-task__text.text_big 风险管理模式基于三道防线的概念：
           .risk-task__box
             .card-line
               +column-top-svg.card-line__svg
-              h3.card-line__title 1 линия
+              h3.card-line__title 第1条线
               .card-line__row 
                 .card-line__col
                   .row
-                    p.card-line__description Владельцы рисков — структурные подразделения
+                    p.card-line__description 风险所有者-结构部门
                   .row
-                    p.card-line__description Задачи
-                    p.card-line__text.text Несут основную ответственность за управление рисками, связанными с повседневной операционной деятельностью организации
+                    p.card-line__description 目标
+                    p.card-line__text.text 主要负责管理与本组织日常业务活动有关的风险
                 .card-line__col 
-                  p.card-line__description Функции
+                  p.card-line__description 职能
                   ul.list
-                      each item in ['Выявляют и анализируют риски, присущие ежедневной  <br class ="br-t"> бизнес-деятельности в рамках своей функциональной  <br class ="br-t"> области','Передают информацию/обсуждают риски с руководством, для  <br class ="br-t"> учета при принятии решений','Разрабатывают и применяют мероприятия и контрольные   <br class ="br-t"> процедуры в целях минимизации рисков в рамках своей функциональной области',]
+                      each item in ['-查明和分析其职能领域内日常业务活动所固有的风险。','-向管理层传达信息/讨论风险，以供决策时考虑。','-制定和实施措施和控制程序，以尽量减少其职能领域内的风险。',]
                         li
                           +mark-text-svg.list-svg
                           p.text.list__text!=item 
             .card-line
               +column-top-svg.card-line__svg
-              h3.card-line__title 2 линия
+              h3.card-line__title 第2条线
               .card-line__row 
                 .card-line__col
                   .row
-                    p.card-line__description Контрольные подразделения
-                    p.card-line__description Подразделение по управлению рисками
+                    p.card-line__description 控制部门
+                    p.card-line__description 风险管理部门
                   .row
-                    p.card-line__description Задачи
-                    p.card-line__text.text Выявляют возникающие риски, реализуют упреждающий подход, выявляют потенциальные пробелы в системе контроля
+                    p.card-line__description 目标
+                    p.card-line__text.text 查明新出现的风险，采取积极主动的做法，查明控制方面的潜在差距
                 .card-line__col 
-                  p.card-line__description Функции
+                  p.card-line__description 职能
                   .row
-                    p.description_big Управление рисками
+                    p.description_big 风险管理
                     ul.list
-                        each item in ['Отвечает за методологическое обеспечение и координацию процессов управления рисками','Оказывает консультационную поддержку 1-й линии защиты при выявлении и оценке рисков, определении приемлемого уровня рисков, разработке мероприятий и контрольных процедур','Подготавливает отчетность по вопросам управления рисками, содержащую актуальную и достаточную информацию о рисках',]
+                        each item in ['-负责风险管理进程的方法支持和协调。','-在确定和评估风险、确定可接受的风险水平、制定措施和控制程序方面为第一道防线提供咨询支助。','-就风险管理编制报告，其中包括风险的有效和真实信息。',]
                           li
                             +mark-text-svg.list-svg
                             p.text.list__text=item 
                   .row
-                    p.description_big Прочие контрольные подразделения
+                    p.description_big 其他控制部门
                     ul.list
-                        each item in [`Выполняют/оказывают содействие 1-й линии защиты<br class="br-t">в выявлении и анализе кросс-функциональных рисков <br class ="br-t"> по  своему направлению`,'Разрабатывают и внедряют мероприятия и контрольные  <br class ="br-t"> процедуры в целях минимизации кросс-функциональных рисков  <br class ="br-t"> по своему направлению',]
+                        each item in ['-执行/协助第一道防线，以查明和分析其目的地的交叉职能风险。','-制定和实施措施和控制程序，以尽量减少其领域的交叉业务风险。',]
                           li
                             +mark-text-svg.list-svg
                             p.text.list__text!=item 
             .card-line
               +column-top-svg.card-line__svg
-              h3.card-line__title 3 линия
+              h3.card-line__title 第3条线
               .card-line__row 
                 .card-line__col
                   .row
-                    p.card-line__description Внутренний аудит
+                    p.card-line__description 内部审计
                   .row
-                    p.card-line__description Задачи
-                    p.card-line__text.text Предоставляет объективное и независимое аудиторское подтверждение, оценивает эффективность служб первой и второй линий
+                    p.card-line__description 目标
+                    p.card-line__text.text 查明新出现的风险，采取积极主动的做法，查明控制方面的潜在差距
                 .card-line__col 
-                  p.card-line__description Функции
+                  p.card-line__description 职能
                   ul.list
-                      each item in ['Проводит независимую оценку системы управления рисками','Оказывает содействие в разработке и мониторинге исполнения процедур и мероприятий по совершенствованию системы управления рисками','Осуществляет координацию деятельности с лицами,  <br class ="br-t"> оказывающими услуги по консультированию в области  <br class ="br-t"> управления рисками',]
+                      each item in ['-对风险管理系统进行独立评估。','-协助制定和监测改进风险管理的程序和活动。','-与提供风险管理咨询服务的人员进行协调。']
                         li
                           +mark-text-svg.list-svg
                           p.text.list__text!=item 
   section(data-aos="fade-up").risk-model.mt-section(id="risk-model")
     .container-content 
       .risk-model__inner 
-        h3.risk-model__title Модель управления рисками
+        h3.risk-model__title 风险管理模式
         +risks
         +model
   section(data-aos="fade-up").risk-process.mt-section(id="risk-process") 
     .container-content 
       .risk-process__inner
         .row
-          p.risk-process__title Процесс управления рисками
+          p.risk-process__title 风险管理过程
           .risk-process__img.desktop
-            +picture('risk-process.png')
+            +picture('risk-process-CN.png')
           .risk-process__img.mobile
             +picture('risk-process-mobile.png')
         .risk-process__box 
@@ -362,39 +682,39 @@ mixin risk-content-EN
   section(data-aos="fade-up").results.mt-section(id="risk-results") 
     .container-content 
       .results__inner 
-        h2.results__title Итоги 2022 года
+        h2.results__title 2022年度成果
         .results__row 
           .col 
-            .results__description.description_big В 2022 году ОТЛК&nbsp;ЕРА идентифицировала 52 риска, из которых 12 – ключевые, т.е. имели высокую вероятность и материальность.
+            .results__description.description_big 2022年，UTLC ERA确定了52项风险其中12个是关键风险，即，具有很高的可能性和物质利益：
           .col 
             .results__img 
-              +picture('results.png')
+              +picture('results-CN.png')
   section(data-aos="fade-up").results-bottom.mt-section
     .container-content 
       .results-bottom__inner 
         .results-bottom__row
           .results-bottom__left 
-            h3.results-bottom__title Ключевые риски
+            h3.results-bottom__title 主要风险：
           .col
             .row 
               ul.list-number.list
-                each item,index in ['Риск снижения стабильности политической обстановки в странах присутствия Общества/партнеров и странах на пути следования','Риск снижения/стагнации объема перевозок в коридоре через Казахстан','Риск изменения условий оказания транзитных железнодорожных перевозок в странах-участниках ОТЛК&nbsp;ЕРА','Риск закрытия/частичного ограничения пунктов пропуска на границе с ЕС','Риск формирования негативного имиджа Общества','Риск существенных ограничений на инфраструктуре железных дорог 1520','Риск увеличения несбалансированности контейнерных грузопотоков','Риск невозможности осуществления платежей','Риск неисполнения обязательств банками по расчетно-кассовому обслуживанию','Риск искажения/недоступности или потери данных, недоступности ИТ из-за инцидентов информационной безопасности','Валютный риск','Риск неприменения специальных тарифных условий',]
+                each item,index in ['公司/伙伴国和过境国的政治不稳定风险；','通过哈萨克斯坦的走廊运输量下降/停滞的风险；','UTLC ERA参与国家过境运输条件发生变化的风险；','关闭/部分限制与欧盟接壤的过境点的风险；','树立负面公司形象的风险；','1520铁路基础设施重大故障/限制的风险；','集装箱货物流动不平衡加剧的风险；','无法付款的风险；','银行不履行结算和现金服务义务的风险；','数据失真/不可用或丢失、信息安全事件导致IT不可用的风险；','外汇风险；','不适用特殊关税条件的风险',]
                   li.results-bottom__list-li
                     p.list-number__number.results-bottom__list-number!=index+1 + '.'
                     p.text.list-number__text!=item 
             .row
               .results-bottom__message
-                +message-block('В целях снижения уровня рисков и последствий от их возможной реализации мы  разработали и утвердили план мероприятий по воздействию на риски ОТЛК&nbsp;ЕРА на 2022 год. Наиболее важными в 2022 году были мероприятия по развитию экспортных и импортных перевозок, которые позволили компенсировать негативный эффект от вызванного геополитическим противостоянием снижения транзита Китай-ЕС-Китай.')
+                +message-block('为了降低风险水平及其可能实施的后果，我们制定并通过了2022年UTLC ERA风险影响措施计划。2022年最重要的是发展进出口运输的措施，这抵消了地缘政治对抗导致中欧中转运下降的负面影响。')
         .results-bottom__row
           .results-bottom__left 
-            p.results-bottom__subtitle.title-24 Из 52 выявленных рисков реализовались 7, <br class='br'>в том числе 3 ключевых:
+            p.results-bottom__subtitle.title-24 在确定的52个风险中，7个已得到执行 <br class='br'>重点3项：
           .col
             .row 
               ul.list-number.list
-                each item,index in ['Риск снижения стабильности политической обстановки в странах присутствия Общества/ партнеров и странах на пути следования (ключевой риск)','Риск существенного сбоя в работе/ограничений на инфраструктуре железных дорог 1520 (ключевой риск)','Риск необеспечения вагонным парком','Риск увеличения стоимости закупки платформ','Риск искажения отчетности','Риск ареста вагонов','Валютный риск (ключевой риск)',]
+                each item,index in ['公司/伙伴国和过境国的政治不稳定风险（关键风险）','1520铁路基础设施重大故障/限制的风险（关键风险）','车队不保障的风险','平台采购成本增加的风险','误报风险','扣车风险','外汇风险（关键风险）',]
                   li.results-bottom__list-li
                     p.list-number__number.results-bottom__list-number!=index+1 + '.'
                     p.text.list-number__text!=item 
             .row
               .results-bottom__message
-                +message-block('Основная задача на 2023 год в части развития системы управления рисками — это автоматизация основных процессов системы.')
+                +message-block('2023年风险管理系统开发的主要任务是系统主要流程的自动化。')

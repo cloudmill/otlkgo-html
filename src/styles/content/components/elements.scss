@@ -1,5 +1,4 @@
 .item {
-
   &_size-1 {
     .item__col:nth-child(2) {
       left: 56px;
@@ -40,7 +39,7 @@
 
       width: 360px;
 
-      border-top: 1px solid #045C25;
+      border-top: 1px solid #045c25;
     }
 
     &:nth-child(2) {
@@ -68,14 +67,13 @@
   }
 
   &__number {
-
-    // width: 200px;
     font-family: 'Halvar Breitschrift';
     font-weight: 700;
     font-size: 60px;
     line-height: 80%;
     letter-spacing: -0.08em;
     color: color(green);
+    white-space: nowrap;
   }
 
   &__grey {
@@ -84,7 +82,7 @@
     font-size: 16px;
     letter-spacing: -0.06em;
     text-transform: uppercase;
-    color: #727A75;
+    color: #727a75;
   }
 
   &__subtext {
@@ -93,14 +91,14 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: #727A75;
+    color: #727a75;
 
     &_big {
       @media #{media('<',m)} {
         font-weight: 400;
         font-size: 15px;
         line-height: 160%;
-        color: #727A75;
+        color: #727a75;
       }
     }
   }
@@ -120,7 +118,6 @@
     &__row:nth-child(3) {
       width: auto;
       margin-top: 12px;
-
     }
 
     &__row {
@@ -130,7 +127,6 @@
     &__title {
       font-size: 18px;
     }
-
   }
 }
 
@@ -140,7 +136,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #69DA91
+    border-top: 1px solid #69da91;
   }
 
   &__row {
@@ -156,7 +152,7 @@
     &:nth-child(2) {
       padding-top: 20px;
 
-      border-top: 1px solid #E8E8E8;
+      border-top: 1px solid #e8e8e8;
     }
   }
 
@@ -226,7 +222,7 @@
   justify-content: center;
   padding: 24px;
 
-  background: #F4F4F4;
+  background: #f4f4f4;
   border-radius: 16px;
 
   &__svg {
