@@ -17,3 +17,7 @@ mixin modal
             p.modal__text Комментарий к письму
             +textarea(placeholder='Сообщение')
           button.modal__button(type='submit') Отправить
+      .modal-submit 
+        p.modal-submit__title Готово
+        p.modal-submit__text Ссылка на эту страницу отправлена адресату. <br> Проверьте почту.
+        button.modal__button.modal-submit__button(type='submit') Закрыть
