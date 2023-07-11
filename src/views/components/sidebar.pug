@@ -211,11 +211,6 @@ mixin sidebar
           a.header-sub__item-subsection(href="page-5#risk-process") Процесс управления рисками
         .header-sub__item 
           a.header-sub__item-title(href="page-5#risk-results") Итоги 2022 года
-
-
-
-
-
   .header-history(data-menu-history)
     .header-history__inner 
       .header-history__close(data-history-close)
@@ -228,28 +223,452 @@ mixin sidebar
           .header-history__clear-text очистить историю
         .header-history__list 
 
+mixin sidebar-EN 
+  .sidebar 
+    .header-menu(data-header-menu)
+      .header-menu__top-container
+        .header-menu__title Annual Report for 2022
+        .header-menu__list 
+          .header-menu__item(data-header-item="about")
+            .header-menu__item-text About Us
+            .header-menu__item-num 1
+          .header-menu__item(data-header-item="strategy")
+            .header-menu__item-text Strategic Report
+            .header-menu__item-num 2
+          .header-menu__item(data-header-item="results")
+            .header-menu__item-text 2022 Performance
+            .header-menu__item-num 3
+          .header-menu__item(data-header-item="growth")
+            .header-menu__item-text Sustainable Development
+            .header-menu__item-num 4
+          .header-menu__item(data-header-item="corporate")
+            .header-menu__item-text Corporate Governance
+            .header-menu__item-num 5
+          .header-menu__item
+            .header-menu__item-text Appendices
+            .header-menu__item-num 6
+      .header-menu__bot-container
+        .header-menu__media.header-media 
+          .header-media__inner 
+            .header-media__share 
+              a.header-media__share-col(href="") 
+                .header-media__share-icon 
+                  +share-svg
+                .header-media__share-text.header-media__text Share
+              .header-media__share-col 
+                .header-media__cubes 
+                  a.header-media__cube(href="") 
+                    +facebook-svg
+                  a.header-media__cube(href="") 
+                    +twitter-svg
+                  a.header-media__cube(href="") 
+                    +vk-svg
+                  a.header-media__cube(href="") 
+                    +telegram-svg
+            .header-media__history(data-media-history)
+              .header-media__history-icon 
+                +share-clock-svg
+              .header-media__history-text.header-media__text history
+        a.header-menu__download(href="#")  
+          .header-menu__download-icon 
+            +header-download-svg
+          .header-menu__download-text Download in PDF
+    .header-sub(data-header-sub="about")
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text About Us
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-who-we") UTLC ERA. Who are we? -EN
+          a.header-sub__item-subsection(href="about-EN#section-new-horizonts") New Horizons
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-who-we-reference")  Company Profile
+          a.header-sub__item-subsection(href="about-EN#section-who-we-mission") Our mission
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-who-we-achievement") Ten Achievements of 2022
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-who-we-report")  About this Report 
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-who-we-appeal") Message from the General Director
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-who-we-appeal") Chairman's message<br>Board of directors
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-who-we-calendar")  Event Calendar for 2022
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-indicators")  Key Performance Indicators
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-business")  Business Model
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-geography")  Operating Geography
+        .header-sub__item 
+          a.header-sub__item-title(href="about-EN#section-corruption") Anti-Corruption Activities 
+          a.header-sub__item-subsection(href="about-EN#section-principles") Objectives of anti-corruption policy
+          a.header-sub__item-subsection(href="about-EN#section-examenation") Security Principles
+          a.header-sub__item-subsection(href="about-EN#section-counterparty") Counterparty verification system
+    .header-sub(data-header-sub="strategy") 
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text Strategic Report
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-EN#preview-ge")  Global economy <br> and the logistics market in 2022
+          a.header-sub__item-subsection(href="page-2-EN#section-ge-macroeconomics") Macroeconomic Situation
+          a.header-sub__item-subsection(href="page-2-EN#section-ge-chinese") Economy of China
+          a.header-sub__item-subsection(href="page-2-EN#section-ge-forecast") Key Forecasts for China
+          a.header-sub__item-subsection(href="page-2-EN#section-ge-europe") Economy of Europe
+          a.header-sub__item-subsection(href="page-2-EN#section-ge-key") Key forecasts for the EU
+          a.header-sub__item-subsection(href="page-2-EN#section-ge-mutal") Mutual trade between China and Europe
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-EN#preview-trends") Logistics industry trends: <br>time for alternatives
+          a.header-sub__item-subsection(href="page-2-EN#trends-market") Sea container transportation market
+          a.header-sub__item-subsection(href="page-2-EN#trends-forecast") Forecast: buyer's market
+          a.header-sub__item-subsection(href="page-2-EN#trends-forecast2") Forecast: cautious optimism
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-EN#preview-transit")  China–Europe–China Rail Transit Market
+          a.header-sub__item-subsection(href="page-2-EN#transit-adaptation")  Adaptation as evidence of flexibility
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-EN#preview-strategy-leader")  Technological Leadership <br>Strategy
+          a.header-sub__item-subsection(href="page-2-EN#strategy-stakeholder")  Main stakeholders
+          a.header-sub__item-subsection(href="page-2-EN#strategy-principles")  Basic principles of the strategy
+          a.header-sub__item-subsection(href="page-2-EN#strategy-iter") Format "high-tech integrator"
+          a.header-sub__item-subsection(href="page-2-EN#strategy-partners")  Partner networks
+    .header-sub(data-header-sub="results") 
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text 2022 Performance
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#operation-results")  Operating Performance
+          a.header-sub__item-subsection(href="page-3-EN#marshrute-speed") Route speed and formation of <br>trains
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#formation-park") Park Formation: Optimization
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#client-portfolio")  Customer Portfolio
+          a.header-sub__item-subsection(href="page-3-EN#client-transportation")  Development of China-RF transportation
+          a.header-sub__item-subsection(href="page-3-EN#client-development__case")  Case: refrigerated transportation
+          a.header-sub__item-subsection(href="page-3-EN#client-development__paperless")  Paperless transportation: innovative <br>development
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#preview-main-line") Main Digital Development Areas
+          a.header-sub__item-subsection(href="page-3-EN#direction-automation")  Automation of internal business processes
+          a.header-sub__item-subsection(href="page-3-EN#direction-site")  The site of the company
+          a.header-sub__item-subsection(href="page-3-EN#direction-documents")  Electronic consignment note
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#preview-section-save")  Save what has been achieved
+          a.header-sub__item-subsection(href="page-3-EN#preservation-finance")  Financial overview
+          a.header-sub__item-subsection(href="page-3-EN#preservation-revenue")  Revenue
+          a.header-sub__item-subsection(href="page-3-EN#preservation-sales")  Cost of sales
+          a.header-sub__item-subsection(href="page-3-EN#preservation-diagram")  Gross profit
+          a.header-sub__item-subsection(href="page-3-EN#preservation-expenses")  Management expenses
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#profit-sales")  Revenue from sales
+          a.header-sub__item-subsection(href="page-3-EN#profit-ebitda")  EBITDA
+          a.header-sub__item-subsection(href="page-3-EN#profit-clean")  Net profit
+          a.header-sub__item-subsection(href="page-3-EN#profit-reporting")  IFRS financial statements
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#preview-care") Caring about the business climate
+    .header-sub(data-header-sub="growth") 
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text Sustainable development
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#human-capital") Human capital
+          a.header-sub__item-subsection(href="page-4-EN#porganization-structure") Organizational structure of UTLC ERA <br>as of December 31, 2022
+          a.header-sub__item-subsection(href="page-4-EN#organization-number") Personnel structure
+          a.header-sub__item-subsection(href="page-4-EN#recruitment-processes") Recruitment processes
+          a.header-sub__item-subsection(href="page-4-EN#corporate-culture") Corporate culture
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#preview-corporate-responsibility") Corporate Social <br> Responsibility 
+          a.header-sub__item-subsection(href="page-4-EN#corporate-responsibility-care") Caring for people
+          a.header-sub__item-subsection(href="page-4-EN#corporate-responsibility-events") Corporate events
+          a.header-sub__item-subsection(href="page-4-EN#corporate-responsibility-health") Health and medical support
+          a.header-sub__item-subsection(href="page-4-EN#material-help") Financial and other assistance
+          a.header-sub__item-subsection(href="page-4-EN#education-support") Education support
+          a.header-sub__item-subsection(href="page-4-EN#education-development") Education and development
+          a.header-sub__item-subsection(href="page-4-EN#education-responsibility__trainings") Trainings and conferences
+          a.header-sub__item-subsection(href="page-4-EN#education-it") IT resources for employees
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#preview-security-content") Labor protection and fire<br> safety
+          a.header-sub__item-subsection(href="page-4-EN#security-training") Education
+          a.header-sub__item-subsection(href="page-4-EN#security-work") Evaluation of working conditions
+          a.header-sub__item-subsection(href="page-4-EN#security-covid") Anti-COVID measures
+          a.header-sub__item-subsection(href="page-4-EN#security-fire") Fire and electrical safety
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#preview-ecology-content") Environmental friendliness as a competitive <br>advantage
+          a.header-sub__item-subsection(href="page-4-EN#ecology-mt") Climate impact
+          a.header-sub__item-subsection(href="page-4-EN#ecology-dynamic") Dynamics of CO<sub>2</sub> EPA emissions
+          a.header-sub__item-subsection(href="page-4-EN#ecology-environment") Environmental protection
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#preview-charity-content") People first: <br>charity
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#charity-utlc") Uniting people and countries
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#section-purchase") Purchasing activities
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-EN#preview-energetic-resourses") Use of energy<br> resources
+    .header-sub(data-header-sub="corporate")
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text Corporate <br>governance
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#control-hero") Corporate Governance <br>Structure
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#share-capital") Share capital
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#incorporated-dividends") Dividend Policy
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#incorporated-shareholders") General Meeting of Shareholders
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#incorporated-council") Board of Directors
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#incorporated-corporative") Corporate Secretary and <br>Secretary of Committees
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#incorporated-governing") Management Board, General Director <br>(Chairman of the Board)
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#preview-reward-content") Reward system
+          a.header-sub__item-subsection(href="page-5-EN#reward-mt") CEO
+          a.header-sub__item-subsection(href="page-5-EN#reward-rule") Board members
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#controls-content") Control system
+          a.header-sub__item-subsection(href="page-5-EN#controls-revision") Audit committee
+          a.header-sub__item-subsection(href="page-5-EN#controls-auditor") Auditor
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#risk-content") Management of risks
+          a.header-sub__item-subsection(href="page-5-EN#risk-analysis") SWOT analysis
+          a.header-sub__item-subsection(href="page-5-EN#risk-task") Key tasks of risk management
+          a.header-sub__item-subsection(href="page-5-EN#risk-model") Risk management model
+          a.header-sub__item-subsection(href="page-5-EN#risk-process") Risk Management Process
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-EN#risk-results") Results of 2022
+  .header-history(data-menu-history)
+    .header-history__inner 
+      .header-history__close(data-history-close)
+        +history-menu-close
+      .header-history__content 
+        .header-history__title History
+        button.header-history__clear 
+          .header-history__clear-icon 
+            +rotate-left-svg
+          .header-history__clear-text clear the history
+        .header-history__list 
 
-          //- .header-history__item 
-          //-   .header-history__date 2 июля 2023
-          //-   .header-history__time-list 
-
-
-          //-     .header-history__time-item 
-          //-       .header-history__time-date 12:32
-          //-       a.header-history__time-page(href="") О компании
-
-
-          //-     .header-history__time-item 
-          //-       .header-history__time-date 12:30
-          //-       a.header-history__time-page(href="") О компании
-
-
-          //- //- .header-history__item 
-          //- //-   .header-history__date 1 июля 2023
-          //- //-   .header-history__time-list 
-          //- //-     .header-history__time-item 
-          //- //-       .header-history__time-date 12:12
-          //- //-       a.header-history__time-page(href="") О компании
-          //- //-     .header-history__time-item 
-          //- //-       .header-history__time-date 12:10
-          //- //-       a.header-history__time-page(href="") О компании
+mixin sidebar-CN 
+  .sidebar 
+    .header-menu(data-header-menu)
+      .header-menu__top-container
+        .header-menu__title 2022年年度报告
+        .header-menu__list 
+          .header-menu__item(data-header-item="about")
+            .header-menu__item-text 关于公司
+            .header-menu__item-num 1
+          .header-menu__item(data-header-item="strategy")
+            .header-menu__item-text 战略报告
+            .header-menu__item-num 2
+          .header-menu__item(data-header-item="results")
+            .header-menu__item-text 2022年业绩
+            .header-menu__item-num 3
+          .header-menu__item(data-header-item="growth")
+            .header-menu__item-text 可持续发展
+            .header-menu__item-num 4
+          .header-menu__item(data-header-item="corporate")
+            .header-menu__item-text 公司治理
+            .header-menu__item-num 5
+          .header-menu__item
+            .header-menu__item-text 附件
+            .header-menu__item-num 6
+      .header-menu__bot-container
+        .header-menu__media.header-media 
+          .header-media__inner 
+            .header-media__share 
+              a.header-media__share-col(href="") 
+                .header-media__share-icon 
+                  +share-svg
+                .header-media__share-text.header-media__text 分享
+              .header-media__share-col 
+                .header-media__cubes 
+                  a.header-media__cube(href="") 
+                    +facebook-svg
+                  a.header-media__cube(href="") 
+                    +twitter-svg
+                  a.header-media__cube(href="") 
+                    +vk-svg
+                  a.header-media__cube(href="") 
+                    +telegram-svg
+            .header-media__history(data-media-history)
+              .header-media__history-icon 
+                +share-clock-svg
+              .header-media__history-text.header-media__text 故事
+        a.header-menu__download(href="#")  
+          .header-menu__download-icon 
+            +header-download-svg
+          .header-menu__download-text 下载 PDF 格式
+    .header-sub(data-header-sub="about")
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text 关于公司
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-who-we") EXC&nbsp;EPA。 我们是谁？
+          a.header-sub__item-subsection(href="about-CN#section-new-horizonts") 新视野
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-who-we-reference")  公司信息
+          a.header-sub__item-subsection(href="about-CN#section-who-we-mission") 我们的任务
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-who-we-achievement") 2022年十大成就
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-who-we-report")  关于报告
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-who-we-appeal") 总经理致辞
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-who-we-appeal") 董事长致辞
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-who-we-calendar")  2022 年活动日历
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-indicators")  关键指标
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-business")  商业模式
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-geography")  活动地理
+        .header-sub__item 
+          a.header-sub__item-title(href="about-CN#section-corruption") 反腐败
+          a.header-sub__item-subsection(href="about-CN#section-principles") 反腐败政策的目标
+          a.header-sub__item-subsection(href="about-CN#section-examenation") 安全原则
+          a.header-sub__item-subsection(href="about-CN#section-counterparty") 交易对手验证系统
+    .header-sub(data-header-sub="strategy") 
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text 战略报告
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-CN#preview-ge")  2022年全球经济与物流市场
+          a.header-sub__item-subsection(href="page-2-CN#section-ge-macroeconomics") 宏观经济形势
+          a.header-sub__item-subsection(href="page-2-CN#section-ge-chinese") 中国经济
+          a.header-sub__item-subsection(href="page-2-CN#section-ge-forecast") 中国的主要预测
+          a.header-sub__item-subsection(href="page-2-CN#section-ge-europe") 欧洲经济
+          a.header-sub__item-subsection(href="page-2-CN#section-ge-key") 对欧盟的主要预测
+          a.header-sub__item-subsection(href="page-2-CN#section-ge-mutal") 中国与欧洲的相互贸易
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-CN#preview-trends") 物流行业趋势：<br>寻找替代方案的时机
+          a.header-sub__item-subsection(href="page-2-CN#trends-market") 海运集装箱运输市场
+          a.header-sub__item-subsection(href="page-2-CN#trends-forecast") 预测：买方市场
+          a.header-sub__item-subsection(href="page-2-CN#trends-forecast2") 预测：谨慎乐观
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-CN#preview-transit")  轨道交通市场中国-欧洲-中国
+          a.header-sub__item-subsection(href="page-2-CN#transit-adaptation")  适应作为灵活性的证据
+        .header-sub__item 
+          a.header-sub__item-title(href="page-2-CN#preview-strategy-leader")  技术领先战略
+          a.header-sub__item-subsection(href="page-2-CN#strategy-stakeholder")  主要利益相关者
+          a.header-sub__item-subsection(href="page-2-CN#strategy-principles")  战略的基本原则
+          a.header-sub__item-subsection(href="page-2-CN#strategy-iter")  格式化“高科技集成商”
+          a.header-sub__item-subsection(href="page-2-CN#strategy-partners")  合作伙伴网络
+    .header-sub(data-header-sub="results") 
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text 结果活动
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#operation-results")  经营业绩
+          a.header-sub__item-subsection(href="page-3-CN#marshrute-speed") 列车的路线速度和编组
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#formation-park") 园区布局：优化
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#client-portfolio")  客户组合
+          a.header-sub__item-subsection(href="page-3-CN#client-transportation")  中国-射频运输的发展
+          a.header-sub__item-subsection(href="page-3-CN#client-development__case")  案例：冷藏运输
+          a.header-sub__item-subsection(href="page-3-CN#client-development__paperless")  无纸化交通：创新发展
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#preview-main-line") 数字化发展的主要方向
+          a.header-sub__item-subsection(href="page-3-CN#direction-automation")  内部业务流程自动化
+          a.header-sub__item-subsection(href="page-3-CN#direction-site")  公司网站
+          a.header-sub__item-subsection(href="page-3-CN#direction-documents")  电子运单
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#preview-section-save")  保存已取得的成果
+          a.header-sub__item-subsection(href="page-3-CN#preservation-finance")  财务概览
+          a.header-sub__item-subsection(href="page-3-CN#preservation-revenue")  收入
+          a.header-sub__item-subsection(href="page-3-CN#preservation-sales")  销售成本
+          a.header-sub__item-subsection(href="page-3-CN#preservation-diagram")  毛利
+          a.header-sub__item-subsection(href="page-3-CN#preservation-expenses")  管理费用
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#profit-sales")  销售收入
+          a.header-sub__item-subsection(href="page-3-CN#profit-ebitda")  EBITDA
+          a.header-sub__item-subsection(href="page-3-CN#profit-clean")  净利
+          a.header-sub__item-subsection(href="page-3-CN#profit-reporting")  国际财务报告准则财务报表
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#preview-care") 关心营商环境
+    .header-sub(data-header-sub="growth") 
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text 可持续发展
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#human-capital") 人力资本
+          a.header-sub__item-subsection(href="page-4-CN#porganization-structure") 截至 2022 年 12 月 31 日的 UTLC ERA 组织结构
+          a.header-sub__item-subsection(href="page-4-CN#organization-number") 人员结构
+          a.header-sub__item-subsection(href="page-4-CN#recruitment-processes") 招聘流程
+          a.header-sub__item-subsection(href="page-4-CN#corporate-culture") 企业文化
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#preview-corporate-responsibility") 企业社会责任
+          a.header-sub__item-subsection(href="page-4-CN#corporate-responsibility-care") 关爱他人
+          a.header-sub__item-subsection(href="page-4-CN#corporate-responsibility-events") 企业活动
+          a.header-sub__item-subsection(href="page-4-CN#corporate-responsibility-health") 健康和医疗支持
+          a.header-sub__item-subsection(href="page-4-CN#material-help") 财政和其他援助
+          a.header-sub__item-subsection(href="page-4-CN#education-support") 教育支持
+          a.header-sub__item-subsection(href="page-4-CN#education-development") 教育与发展
+          a.header-sub__item-subsection(href="page-4-CN#education-responsibility__trainings") 培训和会议
+          a.header-sub__item-subsection(href="page-4-CN#education-it") 为员工提供 IT 资源
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#preview-security-content") 劳动保护和消防<br>安全
+          a.header-sub__item-subsection(href="page-4-CN#security-training") 教育
+          a.header-sub__item-subsection(href="page-4-CN#security-work") 工作条件评估
+          a.header-sub__item-subsection(href="page-4-CN#security-covid") 抗疫措施
+          a.header-sub__item-subsection(href="page-4-CN#security-fire") 消防和电气安全
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#preview-ecology-content") 环境友好作为竞争优势
+          a.header-sub__item-subsection(href="page-4-CN#ecology-mt") 气候影响
+          a.header-sub__item-subsection(href="page-4-CN#ecology-dynamic") CO<sub>2</sub> EPA 排放动态
+          a.header-sub__item-subsection(href="page-4-CN#ecology-environment") 环境保护
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#preview-charity-content") 以人为本：慈善事业
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#charity-utlc") 团结人民和国家
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#section-purchase") 采购活动
+        .header-sub__item 
+          a.header-sub__item-title(href="page-4-CN#preview-energetic-resourses") 能源资源的利用
+    .header-sub(data-header-sub="corporate")
+      .header-sub__back-item.mobile-custom(data-sub-back='')
+        .header-sub__back-text 公司治理
+      .header-sub__list 
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#control-hero") 公司治理结构
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#share-capital") 股本
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#incorporated-dividends") 股息政策
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#incorporated-shareholders") 股东大会
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#incorporated-council") 董事会
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#incorporated-corporative") 公司秘书和委员会秘书
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#incorporated-governing") 管理委员会、总经理<br>（董事会主席）
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#preview-reward-content") 奖励系统
+          a.header-sub__item-subsection(href="page-5-CN#reward-mt") CEO
+          a.header-sub__item-subsection(href="page-5-CN#reward-rule") 董事会成员
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#controls-content") 控制系统
+          a.header-sub__item-subsection(href="page-5-CN#controls-revision") 审计委员会
+          a.header-sub__item-subsection(href="page-5-CN#controls-auditor") 审计员
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#risk-content") 风险管理
+          a.header-sub__item-subsection(href="page-5-CN#risk-analysis") SWOT分析
+          a.header-sub__item-subsection(href="page-5-CN#risk-task") 风险管理的重点任务
+          a.header-sub__item-subsection(href="page-5-CN#risk-model") 风险管理模型
+          a.header-sub__item-subsection(href="page-5-CN#risk-process") 风险管理流程
+        .header-sub__item 
+          a.header-sub__item-title(href="page-5-CN#risk-results") 2022 年业绩
+  .header-history(data-menu-history)
+    .header-history__inner 
+      .header-history__close(data-history-close)
+        +history-menu-close
+      .header-history__content 
+        .header-history__title 故事
+        button.header-history__clear 
+          .header-history__clear-icon 
+            +rotate-left-svg
+          .header-history__clear-text 清除历史记录
+        .header-history__list 
