@@ -4,55 +4,60 @@ include ../components/section/ecology-content
 include ../components/section/purchase-content
 include ../components/section/charity-content
 
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/section/corporate-responsibility
+include ../components/section/human-capital
+
 block variables
   -const title = 'Sustainable development'
 block content
-  //- +report-hero-4-EN
-  //- +human-capital-EN
-  //- +preview('','Irina','Kuchurina ','Chief Specialist for HR Administration','cuchurina-preview.png')(data-aos="fade-up")
-  //-   .cuchurina 
-  //-     p.cuchurina__text.text_big In 2022, the company hired 27 people, which is 4 people, or 12.5%, more than in 2021. 9 people were dismissed.
-  //-     .item
-  //-       .item__row 
-  //-         .item__col 
-  //-           p.item__number.flex
-  //-             span.countup-element(data-countup='5')
-  //-             span ,
-  //-             span.countup-element(data-countup='88' data-countup-suffix='%')
-  //-         .item__col 
-  //-           p.item__grey 
-  //-       .item__row 
-  //-         p.item__subtext staff turnover ratio in 2022,<br> with the standard ratio of 5-7%
-  //- +organization-structure-EN
-  //- +preview('Corporate Social Responsibility','Elena','Schmidt','Chief Specialist for Internal Communication','shmidt.png').custom-id(id="preview-corporate-responsibility") 
-  //- +corporate-responsibility-EN
-  +preview('Occupational and Fire Safety','Tarasova','Galina','Deputy Director of Administrative Department','tarasova.png').custom-id(id="preview-security-content")  
-  +security-content-EN
-  +preview('Environmental Performance as a Competitive Edge','Khmelnitskaya','Anna','Head of Marketing Communications Section','xm.png').custom-id(id="preview-ecology-content").xmelnitskaya 
-  +ecology-content-EN
-  +preview('People Come First: Charity','Baruzdina','Olga','Organizational Development Director','baruzdina.png').custom-id(id="preview-charity-content").baruzdina 
-  +charity-content-EN
-  +purchase-content-EN
-  +preview('Use of Energy Resources','Poroschai','Alina','Administrative Department Director','porochay.png').porochay(id="preview-energetic-resourses") 
-    .porochay__table
-      .preview__table
-        table.preview-table
-          thead.preview-table__top  
-            tr.preview-table__row
-              each i in ['Figure for 2022','Consumption','Amount (rubles)']
-                th.preview-table__name=i
-          tbody.preview-table__bottom
-            tr.preview-table__row
-              td.preview-table__item Energy supply (kW) 
-              td.preview-table__item.preview-table__item_bold 218 122,14
-              td.preview-table__item.preview-table__item_bold  1 415 662,45
-            tr.preview-table__row
-              td.preview-table__item Water supply (m3) 
-              td.preview-table__item.preview-table__item_bold 1540,44
-              td.preview-table__item.preview-table__item_bold  112 002,63
-            tr.preview-table__row
-              td.preview-table__item Heat consumption (Gcal/m3)
-              td.preview-table__item.preview-table__item_bold 369,16
-              td.preview-table__item.preview-table__item_bold  766 022,07
-  +print-activity-buttons-EN
-  +next-page('Corporate governance',5,'Next section')
+  +report-hero-4-EN
+  +human-capital-EN
+  +preview('','Irina','Kuchurina ','Chief Specialist for HR Administration','cuchurina-preview.png')(data-aos="fade-up")
+    .cuchurina 
+      p.cuchurina__text.text_big In 2022, the company hired 27 people, which is 4 people, or 12.5%, more than in 2021. 9 people were dismissed.
+      .item
+        .item__row 
+          .item__col 
+            p.item__number.flex
+              span.countup-element(data-countup='5')
+              span ,
+              span.countup-element(data-countup='88' data-countup-suffix='%')
+          .item__col 
+            p.item__grey 
+        .item__row 
+          p.item__subtext staff turnover ratio in 2022,<br> with the standard ratio of 5-7%
+  +organization-structure-EN
+  +preview('Corporate Social Responsibility','Elena','Schmidt','Chief Specialist for Internal Communication','shmidt.png').custom-id(id="preview-corporate-responsibility") 
+  +corporate-responsibility-EN
+  //- +preview('Occupational and Fire Safety','Tarasova','Galina','Deputy Director of Administrative Department','tarasova.png').custom-id(id="preview-security-content")  
+  //- +security-content-EN
+  //- +preview('Environmental Performance as a Competitive Edge','Khmelnitskaya','Anna','Head of Marketing Communications Section','xm.png').custom-id(id="preview-ecology-content").xmelnitskaya 
+  //- +ecology-content-EN
+  //- +preview('People Come First: Charity','Baruzdina','Olga','Organizational Development Director','baruzdina.png').custom-id(id="preview-charity-content").baruzdina 
+  //- +charity-content-EN
+  //- +purchase-content-EN
+  //- +preview('Use of Energy Resources','Poroschai','Alina','Administrative Department Director','porochay.png').porochay(id="preview-energetic-resourses") 
+  //-   .porochay__table
+  //-     .preview__table
+  //-       table.preview-table
+  //-         thead.preview-table__top  
+  //-           tr.preview-table__row
+  //-             each i in ['Figure for 2022','Consumption','Amount (rubles)']
+  //-               th.preview-table__name=i
+  //-         tbody.preview-table__bottom
+  //-           tr.preview-table__row
+  //-             td.preview-table__item Energy supply (kW) 
+  //-             td.preview-table__item.preview-table__item_bold 218 122,14
+  //-             td.preview-table__item.preview-table__item_bold  1 415 662,45
+  //-           tr.preview-table__row
+  //-             td.preview-table__item Water supply (m3) 
+  //-             td.preview-table__item.preview-table__item_bold 1540,44
+  //-             td.preview-table__item.preview-table__item_bold  112 002,63
+  //-           tr.preview-table__row
+  //-             td.preview-table__item Heat consumption (Gcal/m3)
+  //-             td.preview-table__item.preview-table__item_bold 369,16
+  //-             td.preview-table__item.preview-table__item_bold  766 022,07
+  //- +print-activity-buttons-EN
+  //- +next-page('Corporate governance',5,'Next section')
