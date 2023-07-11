@@ -106,7 +106,6 @@ mixin control-sections
       .control-structure__img.desktop(data-aos="fade-up") 
         +picture('control-structure-vector.png')
       +activity-buttons('control-structure-vector.png').flex-desktop
-      
       .control-structure__img-container.mobile(data-aos="fade-up")
         .control-structure__img 
           +picture('control-structure-vector.png')
@@ -236,3 +235,128 @@ mixin control-sections-EN
         .control-structure__img 
           +picture('control-structure-vector-EN.png')
       +activity-buttons('control-structure-vector-EN.png').flex-m
+
+mixin control-sections-CN 
+  .container.container_control-hero(data-aos="fade-up") 
+    section.control-hero(id="control-hero")
+      .control-hero__img.desktop 
+        +picture('page-5-hero.png')
+      .control-hero__img.mobile 
+        +picture('page-5-hero-mobile.png')
+      .control-hero__title 公司治理结构 
+  .container-content(data-aos="fade-up")
+    section.control-subhero
+      .control-subhero__row(data-aos="fade-up")
+        p.control-subhero__subtitle 有效的公司治理体系是 UTLC&nbsp;ERA 可持续发展的重要因素。
+        p.control-subhero__text.text 公司拥有先进的公司治理制度，该制度建立在俄罗斯联邦法律要求和最佳公司实践的基础上。
+      .control-subhero__title 根据俄罗斯银行《公司治理守则》的建议，我们遵循以下构建公司治理体系的基本原则：
+      .control-subhero__row.listing(data-aos="fade-up") 
+        .control-subhero__col.list-subhero 
+          .recruitment-processes__hr-mark 平等对待股东权益
+          .recruitment-processes__hr-mark 尊重和保护股东的权利
+          .recruitment-processes__hr-mark 决策的一致性和合议性
+          .recruitment-processes__hr-mark 董事会和董事会成员的积极性和专业性
+          .recruitment-processes__hr-mark 稳定透明的股利政策
+        .control-subhero__col.list-subhero 
+          .recruitment-processes__hr-mark 信息公开透明
+          .recruitment-processes__hr-mark 反对一切形式的腐败
+          .recruitment-processes__hr-mark 遵守道德行为标准
+          .recruitment-processes__hr-mark 企业和社会责任。
+  .container-content  
+    section.control-meetings(data-aos="fade-up")
+      h3.control-meetings__title 2022年股东大会/董事会及其委员会、董事会会议次数
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title 股东大会-
+            .custom-card__row
+              .custom-card__num.w-1.countup-element(data-countup='4') 4
+              .custom-card__texts.number-animate-4.number-animate 
+                .custom-card__texts-title 全体股东大会
+                .custom-card__texts-subtext.desktop 2次大会的（可预先发送选票）
+            .custom-card__texts-subtext.mobile 缺席投票形式2次会议（通过发送选票方式）
+        .control-meetings__col(data-aos="fade-up") 
+          //card
+          .custom-card 
+            .custom-card__title 董事会 
+            .custom-card__row
+              .custom-card__num.w-2.countup-element(data-countup='13') 13
+              .custom-card__texts.number-animate-13.number-animate 
+                .custom-card__texts-title 次会议
+                .custom-card__texts-subtext.desktop 9次联合出席形式的会议(8次视频会议,1次联合出席,4次缺席投票)。
+            .custom-card__texts-subtext.mobile 9次联合出席形式的会议(8次视频会议,1次联合出席,4次缺席投票)。
+            .custom-card__subtitle 董事会成员：
+            .recruitment-processes__hr-mark 俄罗斯铁路股份有限公司的两名代表
+            .recruitment-processes__hr-mark 哈萨克斯坦铁路国有企业股份公司的两名代表
+            .recruitment-processes__hr-mark 白俄罗斯铁路的两名代表。
+            .custom-card__text 董事会成员不包括独立董事。
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title 董事会战略委员会  
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='8') 8
+              .custom-card__texts.number-animate-8.number-animate  
+                .custom-card__texts-title 次会议。
+                .custom-card__texts-subtext.desktop 3次联合出席形式的会议，5次缺席投票会议。
+            .custom-card__texts-subtext.mobile 3次联合出席形式的会议，5次缺席投票会议。
+            .custom-card__subtitle 董事会战略委员会成员：
+            .recruitment-processes__hr-mark 俄罗斯铁路股份有限公司的两名代表
+            .recruitment-processes__hr-mark 哈萨克斯坦铁路国有企业股份公司的两名代表
+            .recruitment-processes__hr-mark 白俄罗斯铁路的两名代表
+            .recruitment-processes__hr-mark UTLC ERA的两名代表。
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title 董事会审计委员会
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__texts.number-animate-7.number-animate 
+                .custom-card__texts-title 次会议
+                .custom-card__texts-subtext.desktop 5次联合出席形式的会议，2次缺席投票会议
+            .custom-card__texts-subtext.mobile 5次联合出席形式的会议，2次缺席投票会议
+            .custom-card__subtitle 作为董事会审计委员会的一部分：
+            .recruitment-processes__hr-mark 俄罗斯铁路股份有限公司的两名代表
+            .recruitment-processes__hr-mark 哈萨克斯坦铁路国有企业股份公司的两名代表
+            .recruitment-processes__hr-mark 白俄罗斯铁路的两名代表
+            .recruitment-processes__hr-mark UTLC ERA的两名代表。
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title 董事会人事、薪酬和公司治理委员会组成
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__texts.number-animate-7.number-animate 
+                .custom-card__texts-title 次会议
+                .custom-card__texts-subtext.desktop 5次联合出席形式的会议，2次缺席投票会议
+            .custom-card__texts-subtext.mobile 5次联合出席形式的会议，2次缺席投票会议
+            .custom-card__subtitle 作为董事会人力资源、薪酬和公司治理委员会的一部分：
+            .recruitment-processes__hr-mark 俄罗斯铁路股份有限公司的两名代表
+            .recruitment-processes__hr-mark 哈萨克斯坦铁路国有企业股份公司的两名代表
+            .recruitment-processes__hr-mark 白俄罗斯铁路的两名代表
+            .recruitment-processes__hr-mark UTLC ERA的两名代表。
+        .control-meetings__col(data-aos="fade-up") 
+          //card
+          .custom-card 
+            .custom-card__title 管理机构
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='31') 31
+              .custom-card__texts.number-animate-31.number-animate  
+                .custom-card__texts-title 会议
+                .custom-card__texts-subtext.desktop （30次联合出席形式的会议，1次缺席投票会议）。
+            .custom-card__texts-subtext.mobile （30次联合出席形式的会议，1次缺席投票会议）。
+            .custom-card__subtitle 作为董事会审计委员会的一部分：
+            .custom-card__text 成员包括UTLC ERA的六名代表。
+  .container-content  
+    section.control-structure(data-aos="fade-up")
+      .control-structure__title 公司治理结构
+      .control-structure__img.desktop(data-aos="fade-up") 
+        +picture('control-structure-vector.png')
+      +activity-buttons('control-structure-vector.png').flex-desktop
+      .control-structure__img-container.mobile(data-aos="fade-up")
+        .control-structure__img 
+          +picture('control-structure-vector.png')
+        +activity-buttons('control-structure-vector.png').flex-m
