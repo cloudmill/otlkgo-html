@@ -74,6 +74,30 @@ mixin report-hero-about
           a.report-hero__list-item(href="#about-corruption" ) Противодействие коррупции
         .report-hero__number 1
 
+
+mixin report-hero-about-CN 
+  section.report-hero.report-hero_about
+    .report-hero__row.about-row 
+      .report-hero__col.about-left
+        .report-hero__img-about 
+          +picture('report-hero-about.png')
+      .report-hero__col.about-right
+        .report-hero__col-background.about-desktop
+          +picture('right-col-about.png')
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title 关于公司
+        .report-hero__list
+          a.report-hero__list-item(href="#section-who-we") UTLC ERA我们是谁？
+          a.report-hero__list-item(href="#section-who-we-reference" ) 公司证明
+          a.report-hero__list-item(href="#section-who-we-report" ) 关于报告
+          a.report-hero__list-item(href="#section-who-we-appeal" ) 总经理态度 
+          a.report-hero__list-item(href="#section-who-we-calendar" ) 2022年活动日历
+          a.report-hero__list-item(href="#section-business" ) 商业模式
+          a.report-hero__list-item(href="#about-geography" ) 活动地理范围
+          a.report-hero__list-item(href="#about-corruption" ) 反腐败
+        .report-hero__number 1
+
 mixin report-hero-about-EN 
   section.report-hero.report-hero_about
     .report-hero__row.about-row 
