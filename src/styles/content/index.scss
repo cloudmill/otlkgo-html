@@ -4,3 +4,13 @@
 
 @import "./pages/*";
 @import "../select2.scss";
+
+
+
+.f-button svg {
+  stroke: #4b514d !important;
+
+  &:hover {
+    stroke: black !important;
+  }
+}

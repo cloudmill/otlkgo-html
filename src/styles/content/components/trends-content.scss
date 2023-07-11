@@ -121,12 +121,14 @@
     line-height: 150%;
     color: color(dark);
   }
+
   &__elements {
     margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 32px;
     flex-wrap: wrap;
+
     @media #{media('<',m)} {
       gap: 5px;
     }
@@ -148,6 +150,7 @@
         font-size: 10px;
       }
     }
+
     span {
       width: 18px;
       height: 4px;
@@ -159,17 +162,22 @@
   &__green {
     background-color: #045c25;
   }
+
   &__light-green {
     background-color: #69da91;
   }
+
   &__brown {
     background-color: #c59e7d;
   }
+
   &__pink {
     background-color: #ffcfcf;
   }
+
   &__svg {
     margin-top: 30px;
+
     @media #{media('<',m)} {
       margin-top: 16px;
     }
@@ -227,10 +235,12 @@
     display: flex;
     align-items: center;
     gap: 32px;
+
     @media #{media('<',m)} {
       margin-top: 14px;
     }
   }
+
   &__title {
     font-family: 'Manrope';
     font-weight: 700;
@@ -341,6 +351,10 @@
     font-size: 20px;
     line-height: 150%;
     color: color(dark);
+
+    &_EN {
+      width: auto;
+    }
   }
 }
 
@@ -503,11 +517,16 @@
     &__links {
       margin-top: 20px;
     }
+
     &__elements {
       margin-top: 30px;
       display: flex;
       gap: 32px;
       flex-wrap: wrap;
+
+      @media #{media("<",m)} {
+        margin-top: 0;
+      }
     }
 
     &__elem {
@@ -515,6 +534,7 @@
       gap: 12px;
       align-items: center;
     }
+
     .row {
       flex-direction: column;
       gap: 12px;
@@ -526,6 +546,7 @@
 
     &__text {
       font-size: 12px;
+
       @media #{media('<',m)} {
         font-size: 10px;
       }

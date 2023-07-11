@@ -106,9 +106,7 @@ mixin preservation-content
               source(src="./assets/videos/strukt_rashodov.mp4" type="video/mp4")
               source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
             +diag-2.for-video.video-play-rev9.desktop
-            //- +expenses.for-video.video-play-rev9.desktop
-            //- +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg
-
+            +diag-2-mob.for-video.video-play-rev9.mobile
 
 
 
@@ -173,11 +171,11 @@ mixin preservation-content-CN
           .block-diagram__video.preservation-structure__video.mobile
             video( muted class='video-play' playsinline  data-svg='rev11' )
               source(src="./assets/videos/sebes-mobile.mp4" type="video/mp4")
-            +diag-1-mob.for-video.video-play-rev11.mobile.preservation-structure__svg
+            +diag-1-mob-CN.for-video.video-play-rev11.mobile.preservation-structure__svg
           .block-diagram__video.preservation-structure__video.desktop
             video( muted class='video-play' playsinline  data-svg='rev11' )
               source(src="./assets/videos/strukt_sebes.mp4" type="video/mp4")
-            +diag-1.for-video.video-play-rev11.desktop
+            +diag-1-CN.for-video.video-play-rev11.desktop
         .preservation-structure__row  
           .col 
             p.text.preservation-structure__text 2022年基础设施所有者服务的费用占提供服务成本的81%，即384.59亿卢布。2022年，基础设施开支总额比2021年下降15.5%，与实施的成本优化措施以及与2021年相比主要成本货币汇率下降造成的成本整体下降相当。
@@ -220,8 +218,12 @@ mixin preservation-content-CN
             video( muted class='video-play' playsinline  data-svg='rev9' )
               source(src="./assets/videos/strukt_rashodov.mp4" type="video/mp4")
               source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
-            +expenses.for-video.video-play-rev9.desktop
-            +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg
+            +diag-2-CN.for-video.video-play-rev9.desktop
+            +diag-2-mob-CN.for-video.video-play-rev9.mobile
+
+
+
+
 mixin preservation-content-EN
   section(data-aos="fade-up").preservation-finance.mt-section
     .container-content(id="preservation-finance")  
@@ -238,11 +240,11 @@ mixin preservation-content-EN
       .preservation-dynamic__inner 
         h6.preservation-dynamic__title Financial Performance Profile, 2020 to 2022, million rubles
         .preservation-dynamic__img.desktop-m
-          +picture('preservation-dynamic-CN.png')
-        +activity-buttons('preservation-dynamic-CN.png').flex-desktop
+          +picture('preservation-dynamic-EN.png')
+        +activity-buttons('preservation-dynamic-EN.png').flex-desktop
         .preservation-dynamic__img.mobile-m
-          +picture('preservation-dynamic-mobile.png').preservation-dynamic-img
-        +activity-buttons('preservation-dynamic-mobile.png').flex-m 
+          +picture('preservation-dynamic-mobile-EN.png').preservation-dynamic-img
+        +activity-buttons('preservation-dynamic-mobile-EN.png').flex-m 
   section(data-aos="fade-up").block-diagram.mt-section.preservation-revenue(id="preservation-revenue") 
     .container-content 
       .block-diagram__inner 
@@ -280,11 +282,11 @@ mixin preservation-content-EN
           .block-diagram__video.preservation-structure__video.mobile
             video( muted class='video-play' playsinline  data-svg='rev11' )
               source(src="./assets/videos/sebes-mobile.mp4" type="video/mp4")
-            +diag-1-mob.for-video.video-play-rev11.mobile.preservation-structure__svg
+            +diag-1-mob-EN.for-video.video-play-rev11.mobile.preservation-structure__svg
           .block-diagram__video.preservation-structure__video.desktop
             video( muted class='video-play' playsinline  data-svg='rev11' )
               source(src="./assets/videos/strukt_sebes.mp4" type="video/mp4")
-            +diag-1.for-video.video-play-rev11.desktop
+            +diag-1-EN.for-video.video-play-rev11.desktop
         .preservation-structure__row  
           .col 
             p.text.preservation-structure__text The fees paid to infrastructure owners in 2022 included in the cost of services amounted to 81% or 38,459 million rubles. The total infrastructure fees actually paid in 2022 reduced by 15.5% as compared to the actual total amount in 2021, which is comparable with the total net cost reduction due to the cost optimization actions and the reduction in the exchange rate of the principal cost currencies as compared to 2021.
@@ -327,5 +329,7 @@ mixin preservation-content-EN
             video( muted class='video-play' playsinline  data-svg='rev9' )
               source(src="./assets/videos/strukt_rashodov.mp4" type="video/mp4")
               source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
-            +expenses.for-video.video-play-rev9.desktop
-            +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg
+            +diag-2-EN.for-video.video-play-rev9.desktop
+            +diag-2-mob-EN.for-video.video-play-rev9.mobile
+
+

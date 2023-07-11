@@ -17,36 +17,32 @@ let options = {
 function startCountUpOnScroll() {
   const countUpElements = document.querySelectorAll('.countup-element');
   countUpElements.forEach((element) => {
-    if (
-      !element.hasAttribute('data-countup-started') &&
-      isElementInViewport(element)
-    ) {
+    if (!element.classList.contains('countup-started') && isElementInViewport(element)) {
       const countupValue = element.getAttribute('data-countup');
       const endValue = parseFloat(countupValue);
       const suffix = element.hasAttribute('data-countup-suffix')
         ? element.getAttribute('data-countup-suffix')
         : '';
-      const prefix = !element.hasAttribute('data-countup-prefix')
-        ? ''
-        : element.getAttribute('data-countup-prefix');
+      const prefix = element.hasAttribute('data-countup-prefix')
+        ? element.getAttribute('data-countup-prefix')
+        : '';
 
       const countUp = new CountUp(element, endValue, {
         ...options,
         suffix,
         prefix,
       });
-      const targetElement = document.querySelector(
-        `.number-animate-${countupValue}`
-      );
 
+      const targetElement = document.querySelector(`.number-animate-${countupValue}`);
       if (targetElement) {
         setTimeout(() => {
           targetElement.classList.add('fade-up');
         }, 2000);
       }
+
       if (!countUp.error) {
         countUp.start();
-        element.setAttribute('data-countup-started', 'true');
+        element.classList.add('countup-started');
       } else {
         console.error(countUp.error);
       }

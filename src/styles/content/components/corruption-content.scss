@@ -27,6 +27,7 @@
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
     @media #{media('<',t)} {
       flex-direction: column;

@@ -126,20 +126,21 @@
 
   &__video {
     height: 530px;
+
     video {
       transform: scale(0.9);
-      // @media #{media("<",t)} {
-      //   transform: scale(0.7);
-      // }
+
       @media #{media("<",m)} {
-        transform: translateX(6px);
+        transform: translateX(6px) scale(1);
       }
     }
+
     @media #{media("<",t)} {
       height: 392px;
     }
+
     @media #{media("<",m)} {
-      height: 235px;
+      height: 300px;
     }
   }
 }
@@ -191,38 +192,31 @@
   &__video {
     height: 680px;
 
-    video {
-      width: 101%;
-      height: 99%;
-    }
-
     @media #{media('<',d)} {
       height: 574px;
     }
 
     @media #{media('<',t)} {
-      height: 434px;
+      height: 425px;
     }
 
     @media #{media('<',m)} {
       margin-top: 40px;
-      width: 576px;
+      height: 494px;
 
       video {
-        width: 370px;
-        transform: translate(16px, -53px);
+        transform: translate(0, -44px);
       }
     }
 
-    @media (max-width: 420px) {
-      margin-top: 0;
-      width: 320px;
+    @media #{media('<',xs)} {
+      height: 300px;
 
       video {
-        width: 311px;
-        transform: translate(13px, -47px);
+        transform: translate(0, -33px);
       }
     }
+
   }
 }
 

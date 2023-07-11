@@ -2,6 +2,7 @@
   margin-top: 20px;
   display: flex;
   gap: 4px;
+
   @media print {
     display: none !important;
   }
@@ -10,12 +11,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     width: 40px;
     height: 40px;
 
     border: 1px solid color(borders);
     cursor: pointer;
+    transition: $transition;
+    overflow: hidden;
+
+    // &::after {
+    //   content: '';
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   background-color: black;
+    //   transform: translateY(100%);
+    //   transition: $transition;
+
+    // }
+
+    // &:hover {
+    //   &::after {
+    //     transform: translateY(0);
+    //   }
+
+    // }
 
     svg {
       width: 20px;
@@ -30,9 +52,14 @@
   align-items: flex-start;
   gap: 40px;
 
+  @media print {
+    display: none !important;
+  }
+
   @media #{media("<", m)} {
     margin-top: 40px;
   }
+
   &__item {
     display: flex;
     align-items: center;

@@ -51,20 +51,20 @@ mixin trends-content
               p WCI Роттердам-Шанхай
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
-            +activity-buttons('trends-dynamic-mobile.png')
-        .trends-dynamic__svg.desktop
-          +picture('trends-dynamic.png')
-        .links.trends-dynamic__links
-          p.links__text.trends-dynamic__links-text Источник: &nbsp;
-          a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
-        +activity-buttons('trends-dynamic.png')
-        .row 
-          .col 
-          .col 
-            p.text.trends-dynamic__text 
-              | Дополнительно следует провести сравнение между значениями ставок морского фрахта WCI &nbsp; 
-              br.br 
-              | и железнодорожных ставок, измеряемых ERAI. Так, рассмотрение значений по направлениям показывает возврат рынка к ситуации до начала пандемии. 
+          .trends-dynamic__svg.desktop
+            +picture('trends-dynamic.png')
+          .links.trends-dynamic__links
+            p.links__text.trends-dynamic__links-text Источник: &nbsp;
+            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+          +activity-buttons('trends-dynamic.png').desktop
+          +activity-buttons('trends-dynamic-mobile.png').mobile
+          .row 
+            .col 
+            .col 
+              p.text.trends-dynamic__text 
+                | Дополнительно следует провести сравнение между значениями ставок морского фрахта WCI &nbsp; 
+                br.br 
+                | и железнодорожных ставок, измеряемых ERAI. Так, рассмотрение значений по направлениям показывает возврат рынка к ситуации до начала пандемии. 
   section(data-aos="fade-up").trends-rates 
     .container-content 
       .trends-rates__inner 
@@ -86,14 +86,16 @@ mixin trends-content
             p WCI Роттердам-Шанхай
         .trends-rates__svg 
           +picture('trends-rates-mobile.png').mobile
-          +activity-buttons('trends-rates-mobile.png').flex-m
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
-          +activity-buttons('trends-rates.png').desktop
         .links.trends-rates__links.flex-m
           p.links__text.trends-rates__links-text Источники:&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        +activity-buttons('trends-rates.png').desktop
+        +activity-buttons('trends-rates-mobile.png').flex-m
+
+
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -101,7 +103,7 @@ mixin trends-content
           .col
             h6.trends-demand__title Спрос на глобальные морские контейнерные перевозки, факт 2020–2022&nbsp;гг., <br/> прогноз 2023–2026 гг., млн ДФЭ и %
           .col 
-            .links.trends-demand__links 
+            .links.trends-demand__links.desktop
               p.links__text.trends-demand__links-text Источник:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__elements
@@ -114,12 +116,15 @@ mixin trends-content
             .elem
               .elem_line
               p.trends-demand__text Изменение год к году
-            .trends-demand__svg 
-              +picture('trends-demand-mobile.png').mobile
-              +activity-buttons('trends-demand-mobile.png').flex-m
         .trends-demand__svg 
-          +picture('trends-demand.png').desktop
-          +activity-buttons('trends-demand.png').desktop
+          +picture('trends-demand-mobile.png').mobile
+        .trends-demand__svg 
+        +picture('trends-demand.png').desktop
+        .links.trends-demand__links.flex-m
+            p.links__text.trends-demand__links-text Источник:&nbsp;
+            a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+        +activity-buttons('trends-demand.png').desktop
+        +activity-buttons('trends-demand-mobile.png').flex-m
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
       .trends-forecast__inner 
@@ -144,6 +149,10 @@ mixin trends-content
           .col 
             p.text.trends-forecast2__text Осторожный оптимизм преимущественно связан с перспективой резкого подъема экономической активности в Китае. Тем не менее, неопределенность относительно будущих перспектив высока, как минимум из-за высоких запасов нереализованной продукции у ритейлеров в Европе, но также и из-за растущей конкуренции со стороны морских сервисов. Если работа в портах и соблюдение сроков доставки продолжат показывать улучшения, то это может привести еще к большему оттоку грузов &nbsp; <br class='br'> в пользу морских перевозчиков. Также необходимо учитывать фактор транзитного времени. При текущих высоких запасах инвентаря в Европе у ритейлеров нет необходимости в быстром восполнении продукции, то есть ключевое преимущество авиаперевозок — скорость — не имеет сильной востребованности.
             p.text.trends-forecast2__text Сокращение ставок авиа-сервисов, в свою очередь, может изменить ситуацию. Уровень предложения, вероятнее всего, продолжит восстанавливаться, что вкупе со слабыми ожиданиями по росту объемов перевозок может привести к снижению ставок в ближайшие кварталы. Таким образом, вероятно улучшение конкурентоспособности ставок на авиагрузоперевозки относительно железнодорожных &nbsp; <br class='br'> за указанный период.
+
+
+
+
 mixin trends-content-CN
   section(data-aos="fade-up").trends-market(id="trends-market") 
     .container-content 
@@ -196,36 +205,33 @@ mixin trends-content-CN
               span.trends-dynamic__brown
               p WCI Роттердам-Шанхай
           .trends-dynamic__svg.mobile
-            +picture('trends-dynamic-mobile.png')
-            +activity-buttons('trends-dynamic-mobile.png')
-    
-        .trends-dynamic__svg.desktop
-          +picture('trends-dynamic.png')
-          +activity-buttons('trends-dynamic.png')
-        .links.trends-dynamic__links
-          p.links__text.trends-dynamic__links-text 资料来源: &nbsp;
-          a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
-        +activity-buttons('trends-dynamic.png')
-        .row 
-          .col 
-          .col 
-            p.text.trends-dynamic__text 此外，还应在WCI海运费率和ERAI测量的铁路费率之间进行比较。因此，对方向值的考虑表明市场已恢复到疫情开始前的状况。
+            +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
+          .trends-dynamic__svg.desktop
+            +picture('trends-dynamic.png')
+          .links.trends-dynamic__links
+            p.links__text.trends-dynamic__links-text Источник: &nbsp;
+            a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
+          +activity-buttons('trends-dynamic.png').desktop
+          +activity-buttons('trends-dynamic-mobile.png').mobile
+          .row 
+            .col 
+            .col 
+              p.text.trends-dynamic__text 此外，还应在WCI海运费率和ERAI测量的铁路费率之间进行比较。因此，对方向值的考虑表明市场已恢复到疫情开始前的状况。
   section(data-aos="fade-up").trends-rates 
     .container-content 
       .trends-rates__inner 
         .row
           h6.trends-rates__title 2020-2022年按目的地分列的WCI与ERA费率比
-          .trends-rates__svg 
-            +picture('trends-rates-mobile.png').mobile
-            +activity-buttons('trends-rates-mobile.png').mobile
-
-          .links.trends-rates__links
-            p.links__text.trends-rates__links-text 资料来源:&nbsp;
-            a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
-            a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        .trends-rates__svg 
+          +picture('trends-rates-mobile.png').mobile
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
-          +activity-buttons('trends-rates.png').desktop
+        .links.trends-rates__links.flex-m
+          p.links__text.trends-rates__links-text 资料来源:&nbsp;
+          a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
+          a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        +activity-buttons('trends-rates.png').desktop
+        +activity-buttons('trends-rates-mobile.png').flex-m
 
   section(data-aos="fade-up").trends-demand 
     .container-content 
@@ -322,15 +328,15 @@ mixin trends-content-EN
             .trends-dynamic__elem 
               span.trends-dynamic__brown
               p WCI Роттердам-Шанхай
-          .trends-dynamic__svg.mobile
-            +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
-            +activity-buttons('trends-dynamic-mobile.png')
+        .trends-dynamic__svg.mobile
+          +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
         .trends-dynamic__svg.desktop
           +picture('trends-dynamic.png')
         .links.trends-dynamic__links
-          p.links__text.trends-dynamic__links-text Source:&nbsp;
+          p.links__text.trends-dynamic__links-text Источник: &nbsp;
           a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
-        +activity-buttons('trends-dynamic.png')
+        +activity-buttons('trends-dynamic.png').desktop
+        +activity-buttons('trends-dynamic-mobile.png').mobile
         .row 
           .col 
           .col 
@@ -340,17 +346,32 @@ mixin trends-content-EN
       .trends-rates__inner 
         .row
           h6.trends-rates__title Benchmarked WCI and ERAI Rates by Routes, 2020 to 2022
-          .trends-rates__svg 
-            +picture('trends-rates-mobile.png').mobile
-            +activity-buttons('trends-rates-mobile.png').mobile
-
-          .links.trends-rates__links
-            p.links__text.trends-rates__links-text Источники:&nbsp;
+          .links.trends-rates__links.desktop
+            p.links__text.trends-rates__links-text Sources:&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
             a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        .trends-dynamic__elements 
+          .trends-dynamic__elem 
+            span.trends-dynamic__pink
+            p Первые волны COVID
+          .trends-dynamic__elem
+            span.trends-dynamic__light-green
+            p WCI Шанхай-Роттердам
+          .trends-dynamic__elem 
+            span.trends-dynamic__brown
+            p WCI Роттердам-Шанхай
+        .trends-rates__svg 
+          +picture('trends-rates-mobile.png').mobile
         .trends-rates__svg 
           +picture('trends-rates.png').desktop
-          +activity-buttons('trends-rates.png').desktop
+        .links.trends-rates__links.flex-m
+          p.links__text.trends-rates__links-text Источники:&nbsp;
+          a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
+          a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
+        +activity-buttons('trends-rates.png').desktop
+        +activity-buttons('trends-rates-mobile.png').flex-m
+
+          
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -389,6 +410,6 @@ mixin trends-content-EN
         h3.trends-forecast2__title Forecast: Cautious Optimism
         .row
           .col 
-            p.trends-forecast2__description According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023. The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
+            p.trends-forecast2__description.trends-forecast2__description_EN According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023. The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
           .col 
             p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period
