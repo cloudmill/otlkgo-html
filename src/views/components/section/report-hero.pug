@@ -22,6 +22,29 @@ mixin report-hero
           a.report-hero__list-item(href="#preview-strategy-leader" ) Стратегия технологического лидера
         .report-hero__number 2
 
+mixin report-hero-CN 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row 
+      .report-hero__col
+        .report-hero__texts
+          .report-hero__name 弗拉德金娜<br> ·叶卡捷琳娜·格里果里耶夫娜 
+          .report-hero__job-title 营销部主任
+        .report-hero__portrait.page-2 
+          +picture('hero-2-prev.png')
+        .report-hero__portrait.mobile
+          +picture('fradkina-mobile.png')
+      .report-hero__col
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title.page-2 战略报告
+        .report-hero__list
+          a.report-hero__list-item(href="#preview-ge" ) 宏观经济形势和主要市场概况
+          a.report-hero__list-item(href="#preview-trends" ) 物流业趋势
+          a.report-hero__list-item(href="#preview-transit" ) 中欧中铁路转运市场
+          a.report-hero__list-item(href="#preview-strategy-leader" ) 技术领先者战略 
+        .report-hero__number 2
 
 mixin report-hero-2-EN 
   section.report-hero

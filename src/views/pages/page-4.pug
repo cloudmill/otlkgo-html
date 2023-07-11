@@ -12,51 +12,51 @@ include ../components/section/human-capital
 block variables
   -const title = 'Устойчивое развитие'
 block content
-  //- +report-hero-4
-  //- +human-capital 
-  //- +preview('','Кучурина','Ирина Владимировна ','Главный специалист по кадровому администрированию','cuchurina-preview.png')(data-aos="fade-up")
-  //-   .cuchurina 
-  //-     p.cuchurina__text.text_big В течение 2022 года в компанию было принято 27 человек — на 4 человека, или на 12,5%, больше, чем в 2021 году. Уволено 9 человек.
-  //-     .item
-  //-       .item__row 
-  //-         .item__col 
-  //-           p.item__number.flex
-  //-             span.countup-element(data-countup='5')
-  //-             span ,
-  //-             span.countup-element(data-countup='88' data-countup-suffix='%')
-  //-         .item__col 
-  //-           p.item__grey 
-  //-       .item__row 
-  //-         p.item__subtext Коэффициент текучести кадров в 2022 году <br>  при норме в&nbsp;5-7% 
-  //- +organization-structure
-  //- +preview('Корпоративная социальная ответственность','Шмидт','Елена Вячеславовна ','Главный специалист по внутренним коммуникациям','shmidt.png').custom-id(id="preview-corporate-responsibility") 
-  //- +corporate-responsibility
-  +preview('Охрана труда и пожарная <br/> безопасность','Тарасова','Галина Александровна','Заместитель директора административно-хозяйственного департамента','tarasova.png').custom-id(id="preview-security-content")  
-  +security-content
-  +preview('Экологичность <br/> как конкурентное <br/> преимущество','Хмельницкая','Анна Александровна','Начальник отдела маркетинговых коммуникаций','xm.png').custom-id(id="preview-ecology-content").xmelnitskaya 
-  +ecology-content
-  +preview('Люди прежде всего: <br/> благотворительность','Баруздина','Ольга Александровна','Директор по организационному развитию','baruzdina.png').custom-id(id="preview-charity-content").baruzdina 
-  +charity-content
-  +purchase-content
-  +preview('Использование  <br/> энергетических ресурсов','Порощай','Алина Юрьевна','Директор административно-хозяйственного департамента','porochay.png').porochay(id="preview-energetic-resourses") 
-    .porochay__table
-      .preview__table
-        table.preview-table
-          thead.preview-table__top  
-            tr.preview-table__row
-              each i in ['Показатель за 2022 год','Расход','Сумма, руб']
-                th.preview-table__name=i
-          tbody.preview-table__bottom
-            tr.preview-table__row
-              td.preview-table__item Энергоснабжение, кВт
-              td.preview-table__item.preview-table__item_bold 218 122,14
-              td.preview-table__item.preview-table__item_bold  1 415 662,45
-            tr.preview-table__row
-              td.preview-table__item Водоснабжение, куб.м
-              td.preview-table__item.preview-table__item_bold 1540,44
-              td.preview-table__item.preview-table__item_bold  112 002,63
-            tr.preview-table__row
-              td.preview-table__item Теплопотребление, Гкал/ куб.&nbsp;м
-              td.preview-table__item.preview-table__item_bold 369,16
-              td.preview-table__item.preview-table__item_bold  766 022,07
-  +next-page('Корпоративное управление',5)
+  +report-hero-4
+  +human-capital 
+  +preview('','Кучурина','Ирина Владимировна ','Главный специалист по кадровому администрированию','cuchurina-preview.png')(data-aos="fade-up")
+    .cuchurina 
+      p.cuchurina__text.text_big В течение 2022 года в компанию было принято 27 человек — на 4 человека, или на 12,5%, больше, чем в 2021 году. Уволено 9 человек.
+      .item
+        .item__row 
+          .item__col 
+            p.item__number.flex
+              span.countup-element(data-countup='5')
+              span ,
+              span.countup-element(data-countup='88' data-countup-suffix='%')
+          .item__col 
+            p.item__grey 
+        .item__row 
+          p.item__subtext Коэффициент текучести кадров в 2022 году <br>  при норме в&nbsp;5-7% 
+  +organization-structure
+  +preview('Корпоративная социальная ответственность','Шмидт','Елена Вячеславовна ','Главный специалист по внутренним коммуникациям','shmidt.png').custom-id(id="preview-corporate-responsibility") 
+  +corporate-responsibility
+  //- +preview('Охрана труда и пожарная <br/> безопасность','Тарасова','Галина Александровна','Заместитель директора административно-хозяйственного департамента','tarasova.png').custom-id(id="preview-security-content")  
+  //- +security-content
+  //- +preview('Экологичность <br/> как конкурентное <br/> преимущество','Хмельницкая','Анна Александровна','Начальник отдела маркетинговых коммуникаций','xm.png').custom-id(id="preview-ecology-content").xmelnitskaya 
+  //- +ecology-content
+  //- +preview('Люди прежде всего: <br/> благотворительность','Баруздина','Ольга Александровна','Директор по организационному развитию','baruzdina.png').custom-id(id="preview-charity-content").baruzdina 
+  //- +charity-content
+  //- +purchase-content
+  //- +preview('Использование  <br/> энергетических ресурсов','Порощай','Алина Юрьевна','Директор административно-хозяйственного департамента','porochay.png').porochay(id="preview-energetic-resourses") 
+  //-   .porochay__table
+  //-     .preview__table
+  //-       table.preview-table
+  //-         thead.preview-table__top  
+  //-           tr.preview-table__row
+  //-             each i in ['Показатель за 2022 год','Расход','Сумма, руб']
+  //-               th.preview-table__name=i
+  //-         tbody.preview-table__bottom
+  //-           tr.preview-table__row
+  //-             td.preview-table__item Энергоснабжение, кВт
+  //-             td.preview-table__item.preview-table__item_bold 218 122,14
+  //-             td.preview-table__item.preview-table__item_bold  1 415 662,45
+  //-           tr.preview-table__row
+  //-             td.preview-table__item Водоснабжение, куб.м
+  //-             td.preview-table__item.preview-table__item_bold 1540,44
+  //-             td.preview-table__item.preview-table__item_bold  112 002,63
+  //-           tr.preview-table__row
+  //-             td.preview-table__item Теплопотребление, Гкал/ куб.&nbsp;м
+  //-             td.preview-table__item.preview-table__item_bold 369,16
+  //-             td.preview-table__item.preview-table__item_bold  766 022,07
+  //- +next-page('Корпоративное управление',5)

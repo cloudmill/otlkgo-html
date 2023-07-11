@@ -50,6 +50,32 @@ mixin report-hero-3-EN
           a.report-hero__list-item(href="#preview-care") Caring about the business climate
         .report-hero__number.grom 3
 
+mixin report-hero-3-CN 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row 
+      .report-hero__col
+        .report-hero__texts
+          .report-hero__name 格罗姆 <br> ·阿列克谢·尼古拉耶维奇 
+          .report-hero__job-title 总经理
+        .report-hero__portrait
+          +picture('grom.png')
+        .report-hero__portrait.mobile
+          +picture('grom-mobile.png')
+      .report-hero__col
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title.grom 2022年业绩
+        .report-hero__list
+          a.report-hero__list-item(href="#operation-results") 业务成果
+          a.report-hero__list-item(href="#formation-park") 建立车场：优化
+          a.report-hero__list-item(href="#client-portfolio") 客户群
+          a.report-hero__list-item(href="#preview-main-line") 数字化发展的主要方向
+          a.report-hero__list-item(href="#preview-section-save") 保持成绩财务概况 
+          a.report-hero__list-item(href="#preview-care") 关注商业环境
+        .report-hero__number.grom 3
+
 
 mixin report-hero-about 
   section.report-hero.report-hero_about
@@ -269,6 +295,23 @@ mixin report-hero-main-EN
           <span> as Our Greatest Asset </span>
         .report-hero__main-bot 
           .report-hero__main-text Annual Report
+          .report-hero__main-number 2022
+        .main-contents__code.desktop
+          +picture('main-code.png')
+      .report-hero__col.main-right
+        .report-hero__main-img 
+          +picture('report-hero-main.png')
+
+mixin report-hero-main-CN 
+  section.report-hero.custom-main
+    .report-hero__row.main-page 
+      .report-hero__col.main-left
+        .report-hero__main-bg
+          +picture('left-col-main.png')
+        .report-hero__main-title 人类 
+          <span> 作为主要价值</span>
+        .report-hero__main-bot 
+          .report-hero__main-text 年年度报告
           .report-hero__main-number 2022
         .main-contents__code.desktop
           +picture('main-code.png')
