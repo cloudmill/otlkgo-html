@@ -90,6 +90,8 @@ mixin preservation-content
                 source(src="./assets/videos/block-diagram.mp4" type="video/mp4")
                 source(src="./assets/videos/block-diagram.webm" type="video/webm")
               +valovaya.for-video.video-play-rev1
+
+
   section(data-aos="fade-up").preservation-expenses(id="preservation-expenses")  
     .container-content 
       .preservation-expenses__inner 
@@ -103,8 +105,16 @@ mixin preservation-content
             video( muted class='video-play' playsinline  data-svg='rev9' )
               source(src="./assets/videos/strukt_rashodov.mp4" type="video/mp4")
               source(src="./assets/videos/strukt_rashodov.webm" type="video/webm")
-            +expenses.for-video.video-play-rev9.desktop
-            +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg
+            +diag-2.for-video.video-play-rev9.desktop
+            //- +expenses.for-video.video-play-rev9.desktop
+            //- +expenses-mobile.for-video.video-play-rev9.mobile.preservation-statistics__svg
+
+
+
+
+
+
+
 mixin preservation-content-CN 
   section(data-aos="fade-up").preservation-finance.mt-section
     .container-content(id="preservation-finance")  
