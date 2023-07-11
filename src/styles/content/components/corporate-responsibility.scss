@@ -8,12 +8,7 @@
     display: flex;
     gap: 76px;
 
-    @media (min-width:768px) and (max-width: 1025px) {
-      gap: 20px;
-      justify-content: space-between;
-    }
-
-    @media #{media("<", m)} {
+    @media #{media("<", t)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
@@ -28,8 +23,12 @@
     line-height: 150%;
     color: color(dark);
 
+    @media #{media("<", t)} {
+      width: 100%;
+    }
+
     @media #{media("<", m)} {
-      width: rem(335px);
+      width: 100%;
 
       font-size: rem(14px);
       line-height: 150%;
@@ -44,8 +43,12 @@
     line-height: 160%;
     color: color(dark);
 
+    @media #{media("<", t)} {
+      width: 100%;
+    }
+
     @media #{media("<", m)} {
-      width: rem(335px);
+      width: 100%;
 
       font-size: rem(14px);
       line-height: 160%;
@@ -467,7 +470,7 @@
     &-col {
       width: 560px;
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
 
@@ -482,7 +485,7 @@
       &.custom-1 {
         max-width: 543px;
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
     }
@@ -518,7 +521,7 @@
       @media #{media("<", m)} {
         margin-bottom: 20px;
 
-        width: rem(187px);
+        width: 100%;
       }
     }
 
@@ -526,11 +529,12 @@
       display: flex;
       gap: 40px;
 
-      @media #{media("<", t)} {
+      @media #{media("<", d)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
       }
+
     }
 
     &-subtitle {
@@ -546,7 +550,7 @@
       }
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(14px);
         line-height: 150%;
@@ -561,7 +565,7 @@
       }
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
 
@@ -636,14 +640,14 @@
         width: 70%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
 
     &.right {
       width: 760px;
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
 
         .recruitment-processes__hr-mark{
           margin-bottom: 8px;
@@ -754,7 +758,7 @@
       width: 100%;
     }
     @media #{media("<", m)} {
-      width: rem(335px);
+      width: 100%;
     }
   }
 
@@ -826,7 +830,7 @@
         width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
 
@@ -836,7 +840,7 @@
         width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
   }
@@ -912,7 +916,7 @@
       width: 100%;
     }
     @media #{media("<", m)} {
-      width: rem(335px);
+      width: 100%;
 
       font-size: rem(14px);
       line-height: 150%;
@@ -925,7 +929,7 @@
       width: 100%;
     }
     @media #{media("<", m)} {
-      width: rem(335px);
+      width: 100%;
     }
   }
 
@@ -971,14 +975,14 @@
       &:nth-child(1) {
         width: 598px;
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
 
       &:nth-child(2) {
         width: 562px;
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
     }
@@ -1015,6 +1019,17 @@
       color: color(dark);
     }
 
+    &-grafic{
+      @media print {
+        height: 250px;
+
+        picture{
+          img{
+            object-fit: contain;
+          }
+        }
+      }
+    }
 
   }
 
@@ -1043,13 +1058,13 @@
     &-col {
       width: 560px;
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
       .ge-card {
         .long {
           width: 360px;
           @media #{media("<", m)} {
-            width: rem(335px);
+            width: 100%;
           }
         }
       }

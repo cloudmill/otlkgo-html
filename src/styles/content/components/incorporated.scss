@@ -49,7 +49,7 @@
         width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
         height: rem(60px);
       }
       &-background{
@@ -115,6 +115,7 @@
         font-size: 20px;
         line-height: 130%;
         color: #2A2E2B;
+        white-space: nowrap;
 
         @media #{media("<", m)} {
           font-size: rem(14px);
@@ -181,7 +182,7 @@
         @media #{media("<", m)} {
           margin-bottom: 12px;
 
-          width: rem(335px);
+          width: 100%;
 
           font-size: rem(14px);
           line-height: 150%;
@@ -194,7 +195,7 @@
           width: 100%;
         }
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
     }
@@ -245,12 +246,12 @@
       margin-left: 400px;
 
       @media #{media('<', t)} {
-        width: rem(335px);
+        width: 100%;
 
         margin-left: 0px;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
         margin-left: 0px;
       }
     }
@@ -301,7 +302,7 @@
           margin-left: 0px;
           margin-top: 20px;
 
-          width: rem(335px);
+          width: 100%;
 
           font-size: rem(14px);
           line-height: 160%;
@@ -442,7 +443,7 @@
           padding-left: rem(20px);
           margin-left: rem(-20px);
 
-          width: calc(100% + 20px);
+          width: calc(100% + 40px);
 
           overflow-x: scroll;
           @include scrollbar-hidden();
@@ -493,7 +494,7 @@
           max-width: 100%;
         }
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
 
           font-size: rem(14px);
           line-height: 150%;
@@ -594,7 +595,7 @@
         max-width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
   }
@@ -645,7 +646,7 @@
           width: 100%;
         }
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
 
           font-size: rem(14px);
           line-height: 150%;
@@ -672,7 +673,7 @@
           max-width: 100%;
         }
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
     }
@@ -705,7 +706,7 @@
           width: 100%;
         }
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
 
           font-size: rem(12px);
           line-height: 150%;
@@ -718,7 +719,7 @@
           width: 100%;
         }
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
       &-text{
@@ -772,7 +773,7 @@
         max-width: 560px;
 
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
       &-subtitle{
@@ -818,7 +819,7 @@
         width: 371px;
 
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
 
           font-size: rem(18px);
           line-height: 130%;
@@ -828,7 +829,7 @@
         max-width: 560px;
 
         @media #{media("<", m)} {
-          width: rem(335px);
+          width: 100%;
         }
       }
     }
@@ -843,6 +844,11 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
+    @media print {
+      page-break-after: always;
+    }
+    
     &__title{
       margin-bottom: 40px;
 
@@ -862,7 +868,7 @@
         max-width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(14px);
         line-height: 150%;
@@ -875,7 +881,7 @@
         max-width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
     &__text{
@@ -905,7 +911,7 @@
     padding-top: 20px;
     border-top: 1px solid color(light-green);
 
-    @media #{media("<", m)} {
+    @media #{media("<", t)} {
       margin-top: 40px;
       padding-top: 8px;
     }
@@ -937,7 +943,7 @@
       color: #2A2E2B;
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(14px);
         line-height: 150%;
@@ -947,7 +953,7 @@
       max-width: 560px;
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
 
@@ -1003,7 +1009,7 @@
         max-width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
     &__text{
@@ -1020,7 +1026,7 @@
       @media #{media("<", m)} {
         margin-bottom: 12px;
 
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(13px);
         line-height: 160%;
@@ -1038,7 +1044,7 @@
       @media #{media("<", m)} {
         margin-top: 12px;
 
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(12px);
         line-height: 160%;
@@ -1092,7 +1098,7 @@
         max-width: 100%;
       }
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
       }
     }
     &__text{
@@ -1113,7 +1119,7 @@
       @media #{media("<", m)} {
         margin-bottom: 12px;
 
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(13px);
         line-height: 160%;
@@ -1159,7 +1165,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
 
-    width: rem(335px);
+    width: 100%;
   }
   @media #{media(">", xl)} {
     gap: 140px;
@@ -1167,6 +1173,13 @@
   @media (min-width: 1025px) and (max-width: 1280px) {
     max-width: 1184px;
   }
+
+  @media print {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
   &__img{
     position: relative;
     max-width: 566px;
@@ -1184,10 +1197,27 @@
       max-height: 100%;
     }
     @media #{media("<", m)} {
-      width: rem(335px);
+      width: 100%;
       height: rem(400px);
 
       background: #F4F4F4;
+
+      picture{
+        img{
+          object-fit: contain;
+        }
+      }
+    }
+
+    @media print {
+      width: 100%;
+      height: 300px;
+
+      picture{
+        img{
+          object-fit: contain;
+        }
+      }
     }
   }
 
@@ -1198,7 +1228,8 @@
       max-width: 100%;
     }
     @media #{media("<", m)} {
-      width: rem(335px);
+      padding: 0px 20px;
+      width: 100%;
     }
   }
 
@@ -1260,7 +1291,7 @@
             width: 100%;
           }
           @media #{media("<", m)} {
-            width: rem(335px);
+            width: 100%;
           }
         }
         &-right{
@@ -1270,7 +1301,7 @@
             width: 100%;
           }
           @media #{media("<", m)} {
-            width: rem(335px);
+            width: 100%;
           }
         }
       }
@@ -1284,7 +1315,7 @@
       color: #2A2E2B;
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(13px);
         line-height: 160%;
@@ -1298,7 +1329,7 @@
       color: #2A2E2B;
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(12px);
         line-height: 160%;
@@ -1331,7 +1362,7 @@
       color: #2A2E2B;
 
       @media #{media("<", m)} {
-        width: rem(335px);
+        width: 100%;
 
         font-size: rem(13px);
         line-height: 160%;
@@ -1383,8 +1414,8 @@
           max-width: 230px;
 
           @media #{media("<", m)} {
-            max-width: rem(315px);
-            width: rem(315px);
+            max-width: 100%;
+            width: 100%;
           }
         }
       }

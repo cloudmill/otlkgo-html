@@ -16,8 +16,12 @@ mixin report-hero-3
           +picture('report-hero2-mobile.png')
         .report-hero__title.grom Результаты деятельности в&nbsp;2022 году
         .report-hero__list
-          each item in ['Операционные результаты', 'Формирование парка: оптимизация', 'Клиентский портфель', 'Главные направления цифрового развития', 'Сохранить достигнутое. Финансовый обзор', 'С заботой о деловом климате']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#operation-results") Операционные результаты
+          a.report-hero__list-item(href="#formation-park") Формирование парка: оптимизация
+          a.report-hero__list-item(href="#client-portfolio") Клиентский портфель
+          a.report-hero__list-item(href="#preview-main-line") Главные направления цифрового развития
+          a.report-hero__list-item(href="#preview-section-save") Сохранить достигнутое. Финансовый обзор
+          a.report-hero__list-item(href="#preview-care") С заботой о деловом климате
         .report-hero__number.grom 3
 
 //page-3-EN
@@ -40,8 +44,12 @@ mixin report-hero-3-EN
           +picture('report-hero2-mobile.png')
         .report-hero__title.grom 2022 Performance
         .report-hero__list
-          each item in ['Операционные результаты', 'Формирование парка: оптимизация', 'Клиентский портфель', 'Главные направления цифрового развития', 'Сохранить достигнутое. Финансовый обзор', 'С заботой о деловом климате']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#operation-results") Operating results
+          a.report-hero__list-item(href="#formation-park") Park formation: optimization
+          a.report-hero__list-item(href="#client-portfolio") Client portfolio
+          a.report-hero__list-item(href="#preview-main-line") The main directions of digital development
+          a.report-hero__list-item(href="#preview-section-save") Save what has been achieved. Financial overview
+          a.report-hero__list-item(href="#preview-care") Caring about the business climate
         .report-hero__number.grom 3
 // ru-en-ch about
 
@@ -58,8 +66,14 @@ mixin report-hero-about
           +picture('report-hero2-mobile.png')
         .report-hero__title о компании
         .report-hero__list
-          each item in ['ОТЛК ЕРА. Кто мы?', 'Справка о Компании', 'Об Отчете','Обращение генерального директора', 'Календарь событий – 2022', 'Бизнес-модель', 'География деятельности', 'Противодействие коррупции']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#section-who-we") ОТЛК ЕРА. Кто мы?
+          a.report-hero__list-item(href="#section-who-we-reference" ) Справка о Компании
+          a.report-hero__list-item(href="#section-who-we-report" ) Об Отчете
+          a.report-hero__list-item(href="#section-who-we-appeal" ) Обращение генерального директора
+          a.report-hero__list-item(href="#section-who-we-calendar" ) Календарь событий – 2022
+          a.report-hero__list-item(href="#section-business" ) Бизнес-модель
+          a.report-hero__list-item(href="#about-geography" ) География деятельности
+          a.report-hero__list-item(href="#about-corruption" ) Противодействие коррупции
         .report-hero__number 1
 
 mixin report-hero-about-EN 
@@ -75,8 +89,14 @@ mixin report-hero-about-EN
           +picture('report-hero2-mobile.png')
         .report-hero__title About Us
         .report-hero__list
-          each item in ['ОТЛК ЕРА. Кто мы?', 'Справка о Компании', 'Об Отчете','Обращение генерального директора', 'Календарь событий – 2022', 'Бизнес-модель', 'География деятельности', 'Противодействие коррупции']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#section-who-we") OTLC ERA. Who are we?
+          a.report-hero__list-item(href="#section-who-we-reference" ) Information about the Company
+          a.report-hero__list-item(href="#section-who-we-report" ) About the Report
+          a.report-hero__list-item(href="#section-who-we-appeal" ) Message from the CEO
+          a.report-hero__list-item(href="#section-who-we-calendar" ) Events calendar - 2022
+          a.report-hero__list-item(href="#section-business" ) Business model
+          a.report-hero__list-item(href="#about-geography" ) Geography of activity
+          a.report-hero__list-item(href="#about-corruption" ) Anti-corruption
         .report-hero__number 1
 
 mixin report-hero-4 
@@ -97,8 +117,14 @@ mixin report-hero-4
           +picture('report-hero2-mobile.png')
         .report-hero__title Устойчивое развитие
         .report-hero__list
-          each item in ['Человеческий капитал', 'Корпоративная социальная ответственность', 'Охрана труда и пожарная безопасность', 'Экологичность как конкурентное преимущество', 'Люди прежде всего: благотворительность',  'Объединение людей и стран', 'Закупочная деятельность', 'Использование энергетических ресурсов']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#human-capital") Человеческий капитал
+          a.report-hero__list-item(href="#corporate-culture") Корпоративная социальная ответственность
+          a.report-hero__list-item(href="#preview-security-content") Охрана труда и пожарная безопасность
+          a.report-hero__list-item(href="#preview-ecology-content") Экологичность как конкурентное преимущество
+          a.report-hero__list-item(href="#preview-charity-content") Люди прежде всего: благотворительность
+          a.report-hero__list-item(href="#charity-utlc") Объединение людей и стран
+          a.report-hero__list-item(href="#section-purchase") Закупочная деятельность
+          a.report-hero__list-item(href="#preview-energetic-resourses") Использование энергетических ресурсов
         .report-hero__number 4
 
 //EN
@@ -121,8 +147,14 @@ mixin report-hero-4-EN
           +picture('report-hero2-mobile.png')
         .report-hero__title Sustainable Development
         .report-hero__list
-          each item in ['Человеческий капитал', 'Корпоративная социальная ответственность', 'Охрана труда и пожарная безопасность', 'Экологичность как конкурентное преимущество', 'Люди прежде всего: благотворительность',  'Объединение людей и стран', 'Закупочная деятельность', 'Использование энергетических ресурсов']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#human-capital") Human capital
+          a.report-hero__list-item(href="#corporate-culture") Corporate Social Responsibility
+          a.report-hero__list-item(href="#preview-security-content") Labor protection and fire safety
+          a.report-hero__list-item(href="#preview-ecology-content") Environmental friendliness as a competitive advantage
+          a.report-hero__list-item(href="#preview-charity-content") People First: Charity
+          a.report-hero__list-item(href="#charity-utlc") Uniting people and countries
+          a.report-hero__list-item(href="#section-purchase") Purchasing activities
+          a.report-hero__list-item(href="#preview-energetic-resourses") Use of energy resources
         .report-hero__number 4
 
 mixin report-hero-5 
@@ -143,9 +175,50 @@ mixin report-hero-5
           +picture('report-hero2-mobile.png')
         .report-hero__title Корпоративное управление
         .report-hero__list
-          each item in ['Структура корпоративного управления', 'Акционерный капитал', 'Дивидендная политика', 'Общее собрание акционеров', 'Совет директоров', 'Корпоративный секретарь и секретарь комитетов', 'Правление и генеральный директор', 'Система вознаграждения', 'Система контроля', 'Управление рисками', 'Итоги 2022 года']
-            a.report-hero__list-item(href="#" target='blank')=item
+          a.report-hero__list-item(href="#control-hero") Структура корпоративного управления
+          a.report-hero__list-item(href="#share-capital") Акционерный капитал
+          a.report-hero__list-item(href="#incorporated-dividends") Дивидендная политика
+          a.report-hero__list-item(href="#incorporated-shareholders") Общее собрание акционеров
+          a.report-hero__list-item(href="#incorporated-council") Совет директоров
+          a.report-hero__list-item(href="#incorporated-corporative") Корпоративный секретарь и секретарь комитетов
+          a.report-hero__list-item(href="#incorporated-governing") Правление и генеральный директор
+          a.report-hero__list-item(href="#preview-reward-content") Система вознаграждения
+          a.report-hero__list-item(href="#controls-content") Система контроля
+          a.report-hero__list-item(href="#risk-content") Управление рисками
+          a.report-hero__list-item(href="#risk-results") Итоги 2022 года
         .report-hero__number 5
+
+mixin report-hero-5-EN 
+  section.report-hero
+    .report-hero__background
+      +picture('hero.png')
+    .report-hero__row 
+      .report-hero__col
+        .report-hero__texts
+          .report-hero__name Elena  <br> Sapronova 
+          .report-hero__job-title.alt-200 Legal Department Director
+        .report-hero__portrait.hero-5
+          +picture('report-hero-5.png')
+        .report-hero__portrait.mobile
+          +picture('report-hero-5-mobile.png')
+      .report-hero__col
+        .report-hero__col-background.mobile 
+          +picture('report-hero2-mobile.png')
+        .report-hero__title Corporate Governance
+        .report-hero__list
+          a.report-hero__list-item(href="#control-hero") Structure of corporate governance
+          a.report-hero__list-item(href="#share-capital") Share capital
+          a.report-hero__list-item(href="#incorporated-dividends") Dividend Policy
+          a.report-hero__list-item(href="#incorporated-shareholders") General Meeting of Shareholders
+          a.report-hero__list-item(href="#incorporated-council") Board of Directors
+          a.report-hero__list-item(href="#incorporated-corporative") Corporate Secretary and Committee Secretary
+          a.report-hero__list-item(href="#incorporated-governing") Board and CEO
+          a.report-hero__list-item(href="#preview-reward-content") Reward system
+          a.report-hero__list-item(href="#controls-content") Control system
+          a.report-hero__list-item(href="#risk-content") Management of risks
+          a.report-hero__list-item(href="#risk-results") Results of 2022
+        .report-hero__number 5
+
 
 mixin report-hero-main 
   section.report-hero.custom-main
@@ -157,6 +230,23 @@ mixin report-hero-main
           <span> как главная ценность </span>
         .report-hero__main-bot 
           .report-hero__main-text Годовой отчет
+          .report-hero__main-number 2022
+        .main-contents__code.desktop
+          +picture('main-code.png')
+      .report-hero__col.main-right
+        .report-hero__main-img 
+          +picture('report-hero-main.png')
+
+mixin report-hero-main-EN
+  section.report-hero.custom-main
+    .report-hero__row.main-page 
+      .report-hero__col.main-left
+        .report-hero__main-bg
+          +picture('left-col-main.png')
+        .report-hero__main-title People  
+          <span> as Our Greatest Asset </span>
+        .report-hero__main-bot 
+          .report-hero__main-text Annual Report
           .report-hero__main-number 2022
         .main-contents__code.desktop
           +picture('main-code.png')

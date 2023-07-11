@@ -69,7 +69,7 @@ mixin control-sections
               .custom-card__num.countup-element(data-countup='7') 7
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title заседаний
-                .custom-card__texts-subtext.desktop 5 заседаний в форме совместного присутствия,  <br>2 заседания в форме заочного голосования
+                .custom-card__texts-subtext.desktop 5 заседаний в форме совместного присутствия, 2 заседания в форме заочного голосования
             .custom-card__texts-subtext.mobile 5 заседаний в форме совместного присутствия,  <br>2 заседания в форме заочного голосования
             .custom-card__subtitle В составе комитета по аудиту совета директоров:
             each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
@@ -105,6 +105,134 @@ mixin control-sections
       .control-structure__title Структура корпоративного управления
       .control-structure__img.desktop(data-aos="fade-up") 
         +picture('control-structure-vector.png')
+      +activity-buttons('control-structure-vector.png').flex-desktop
+      
       .control-structure__img-container.mobile(data-aos="fade-up")
         .control-structure__img 
           +picture('control-structure-vector.png')
+        +activity-buttons('control-structure-vector.png').flex-m
+
+mixin control-sections-EN 
+  .container.container_control-hero(data-aos="fade-up") 
+    section.control-hero(id="control-hero")
+      .control-hero__img.desktop 
+        +picture('page-5-hero.png')
+      .control-hero__img.mobile 
+        +picture('page-5-hero-mobile.png')
+      .control-hero__title Corporate Governance Structure
+  .container-content(data-aos="fade-up")
+    section.control-subhero
+      .control-subhero__row(data-aos="fade-up")
+        p.control-subhero__subtitle An effective corporate governance system is a major driver of UTLC&nbsp;ERA’s sustainable development.
+        p.control-subhero__text.text We have an advanced corporate governance system based on the Russian statutory requirements and the best corporate practices.
+      .control-subhero__title In line with the recommendations of the Corporate Governance Code of the Bank of Russia, we are governed by the following key principles for building the corporate governance system:
+      .control-subhero__row.listing(data-aos="fade-up") 
+        .control-subhero__col.list-subhero 
+          .recruitment-processes__hr-mark Equal treatment of the rights and interests of the shareholders
+          .recruitment-processes__hr-mark Respect and protection of shareholder rights
+          .recruitment-processes__hr-mark Consistent and inclusive decision making
+          .recruitment-processes__hr-mark Dedicated and professional members of the Board of Directors and the Management Board
+          .recruitment-processes__hr-mark Stable and transparent dividend policy
+        .control-subhero__col.list-subhero 
+          .recruitment-processes__hr-mark Openness and transparency
+          .recruitment-processes__hr-mark Zero tolerance to any forms of corruption
+          .recruitment-processes__hr-mark Compliance with the code of conduct
+          .recruitment-processes__hr-mark Corporate social responsibility
+  .container-content  
+    section.control-meetings(data-aos="fade-up")
+      h3.control-meetings__title Number of General Meetings of Shareholders / Meetings of the Board of Directors and its Committees, the Management Board in 2022
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title General Meetings of Shareholders
+            .custom-card__row
+              .custom-card__num.w-1.countup-element(data-countup='4') 4
+              .custom-card__texts.number-animate-4.number-animate 
+                .custom-card__texts-title meetings
+                .custom-card__texts-subtext.desktop 2 meetings in the form of joint attendance (with a possibility to deliver early voting ballots), 2 meetings in the form of absentee voting (by sending out ballots).            
+            .custom-card__texts-subtext.mobile 2 meetings in the form of joint attendance (with a possibility to deliver early voting ballots), 2 meetings in the form of absentee voting (by sending out ballots).
+        .control-meetings__col(data-aos="fade-up") 
+          //card
+          .custom-card 
+            .custom-card__title Board of Directors
+            .custom-card__row
+              .custom-card__num.w-2.countup-element(data-countup='13') 13
+              .custom-card__texts.number-animate-13.number-animate 
+                .custom-card__texts-title meetings 
+                .custom-card__texts-subtext.desktop 9 meetings in the form of joint attendance (8 meetings by video conference, 1 meeting with joint attendance), 4 meetings in the form of absentee voting.
+            .custom-card__texts-subtext.mobile 9 meetings in the form of joint attendance <br>(8 meetings by video conference, 1 meeting with joint attendance),<br> 4 meetings in the form of absentee voting.
+            .custom-card__subtitle There are no independent directors in the Board of Directors:
+            .recruitment-processes__hr-mark Two representatives of JSCo "RZD"
+            .recruitment-processes__hr-mark Two representatives of JSC “NC “KTZ”
+            .recruitment-processes__hr-mark Two representatives of the Belarusian Railway
+            .custom-card__text There were no independent directors in the Board of Directors.
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title Strategy Committee under the Board of Directors
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='8') 8
+              .custom-card__texts.number-animate-8.number-animate  
+                .custom-card__texts-title meetings 
+                .custom-card__texts-subtext.desktop 3 meetings in the form of joint attendance, <br>5 meetings in the form of absentee voting
+            .custom-card__texts-subtext.mobile 3 meetings in the form of joint attendance,<br> 5 meetings in the form of absentee voting
+            .custom-card__subtitle The Strategy Committee is composed of:
+            .recruitment-processes__hr-mark Two representatives of JSCo "RZD"
+            .recruitment-processes__hr-mark Two representatives of JSC “NC “KTZ”
+            .recruitment-processes__hr-mark Two representatives of the Belarusian Railway
+            .recruitment-processes__hr-mark Two representatives of UTLC ERA
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title Audit Committee under the Board of Directors
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__texts.number-animate-7.number-animate 
+                .custom-card__texts-title meetings 
+                .custom-card__texts-subtext.desktop 5 meetings in the form of joint attendance, <br>2 meetings in the form of absentee voting
+            .custom-card__texts-subtext.mobile 5 meetings in the form of joint attendance, <br>2 meetings in the form of absentee voting
+            .custom-card__subtitle The Audit Committee is composed of:
+            .recruitment-processes__hr-mark Two representatives of JSCo "RZD"
+            .recruitment-processes__hr-mark Two representatives of JSC “NC “KTZ”
+            .recruitment-processes__hr-mark Two representatives of the Belarusian Railway
+            .recruitment-processes__hr-mark One representative of UTLC ERA
+      .control-meetings__row(data-aos="fade-up") 
+        .control-meetings__col(data-aos="fade-up")
+          //card
+          .custom-card 
+            .custom-card__title HR, Remuneration and Corporate Governance<br> Committee under the Board of Directors
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__texts.number-animate-7.number-animate 
+                .custom-card__texts-title meetings 
+                .custom-card__texts-subtext.desktop 5 meetings in the form of joint attendance,<br> 2 meetings in the form of absentee voting
+            .custom-card__texts-subtext.mobile 5 meetings in the form of joint attendance, <br>2 meetings in the form of absentee voting
+            .custom-card__subtitle The HR, Remuneration and Corporate Governance Committee is composed of:
+            .recruitment-processes__hr-mark Two representatives of JSCo "RZD"
+            .recruitment-processes__hr-mark Two representatives of JSC “NC “KTZ”
+            .recruitment-processes__hr-mark Two representatives of the Belarusian Railway
+            .recruitment-processes__hr-mark One representative of UTLC ERA
+        .control-meetings__col(data-aos="fade-up") 
+          //card
+          .custom-card 
+            .custom-card__title Management Board
+            .custom-card__row
+              .custom-card__num.countup-element(data-countup='31') 31
+              .custom-card__texts.number-animate-31.number-animate  
+                .custom-card__texts-title meetings 
+                .custom-card__texts-subtext.desktop 30 meetings in the form of joint attendance, <br>1 meeting in the form of absentee voting
+            .custom-card__texts-subtext.mobile 30 meetings in the form of joint attendance,<br> 1 meeting in the form of absentee voting
+            .custom-card__subtitle As part of the Audit Committee of the Board of Directors:
+            .custom-card__text The Management Board is composed of six representatives of UTLC&nbsp;ERA
+  .container-content  
+    section.control-structure(data-aos="fade-up")
+      .control-structure__title Corporate Governance Structure
+      .control-structure__img.desktop(data-aos="fade-up") 
+        +picture('control-structure-vector-EN.png')
+      +activity-buttons('control-structure-vector-EN.png').flex-desktop
+      .control-structure__img-container.mobile(data-aos="fade-up")
+        .control-structure__img 
+          +picture('control-structure-vector-EN.png')
+      +activity-buttons('control-structure-vector-EN.png').flex-m

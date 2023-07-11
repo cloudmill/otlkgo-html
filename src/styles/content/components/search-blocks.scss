@@ -1,0 +1,163 @@
+.search-blocks{
+  &__inner{
+    padding: 132px 140px 0px 140px;
+
+    @media #{media("<", m)} {
+      padding: 88px 20px 0px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 20px;
+
+    color: color(black);
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -1.44px;
+    
+    @media #{media("<", m)} {
+      font-size: 24px;
+      letter-spacing: -0.72px; 
+    }
+  }
+
+  &__subtitle{
+    margin-bottom: 24px;
+
+    color: #727A75;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
+
+    @media #{media("<", m)} {
+      font-size: 14px;  
+    }
+  }
+
+  &__search{
+
+  }
+
+  &__form{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    margin-bottom: 48px;
+
+    border-bottom: 1px solid #045C25;
+
+    @media #{media("<", m)} {
+      padding-bottom: 15px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    @media #{media("<", m)} {
+      gap: 20px;
+    }
+  }
+
+  &__input{
+    color: color(black);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.18px; 
+    border: none;
+
+    @media #{media("<", m)} {
+      font-size: 14px;  
+    }
+
+    
+
+    
+  }
+
+  &__submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__results{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+    max-width: 760px;
+    
+
+    &-item{
+      padding-bottom: 12px;
+
+      width: 100%;
+      max-height: 85px;
+      overflow: hidden;
+
+      color: color(black);
+      font-family: Manrope;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; 
+      border-bottom: 1px solid color(borders);
+
+      span{
+        color: #69DA91;
+      }
+
+      @media #{media("<", m)} {
+        font-size: 12px;  
+      }
+    }
+
+  }
+
+
+
+  &__reset{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+
+    &-line{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+
+      width: 20px;
+      height: 1.5px;
+      background: #727A75;
+
+      &:nth-child(2){
+          transform: translate(-50%, -50%) rotate(135deg);
+      }
+    }
+  }
+}
