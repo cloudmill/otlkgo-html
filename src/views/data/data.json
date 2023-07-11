@@ -84,6 +84,10 @@
     {
       "href": "applications-CN",
       "title": "applications-CN"
+    },
+    {
+      "href": "search-results",
+      "title": "search-results"
     }
   ]
 }

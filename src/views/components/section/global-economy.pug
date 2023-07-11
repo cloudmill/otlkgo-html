@@ -1556,3 +1556,787 @@ mixin global-economy-EN
         .ge-results__main-title According to the latest forecast by S&P Global, the global trade growth will slow down to 0.6% in 2023 due to multiple limitations and risks.
         .ge-results__main-text In its turn, China may increase its export volumes by potentially revitalizing its economy upon removal of the anti-COVID restrictions. Nevertheless, the export to Europe is unlikely to grow due to the extremely strong recent trend and the increasing imbalance of trade flows. On the contrary, Europe’s export to China may increase due to the recovering demand among the Chinese population
         .ge-results__main-text Such European companies as Volkswagen, Bosch and Ferrari set their hopes on the Chinese market in 2023. Importantly, the international trade depends on the relations between partners. In their turn, European politicians consider introducing a new strategy regarding China, which will be aimed at reducing their dependence on this country. The respective political risks may influence the trade between the partners.
+
+mixin global-economy-CN
+  .container-content
+    section(data-aos="fade-up").macroeconomics(id="section-ge-macroeconomics")
+      h2.macroeconomics-title 宏观经济形势
+      .macroeconomics-row 
+        .macroeconomics-col 
+          h4.macroeconomics-subtitle 2022年，世界经济面临诸多阻力和负面影响，但在最终季度，呈现出积极的态势。
+        .macroeconomics-col 
+          .macroeconomics-text.top 在严峻的地缘政治局势以及各种原材料和零部件实际短缺的背景下，全球供应链一直非常不稳定。能源市场的波动和通胀的强劲加速减缓了全球经济增长。大多数地区收紧货币政策，对生产和消费造成进一步压力。在中国，几乎全年都有新的COVID爆发，并采取了严厉的抗疫措施。
+          .macroeconomics-text 但在年底，可以看到一些积极的发展。例如，12月，中国政府决定取消COVID的“零容忍”做法。<br>这可能成为2023年世界经济增长的最重要催化剂，因为中国不仅是各种商品的最大生产国和出口国，也是消费国。中国家庭在大流行期间积累的储蓄的释放可能会增加对各种产品的需求，包括欧洲的生产。在这方面，欧洲和许多其他国家的经济增长将直接依赖于中国正在发生的事件。
+          .macroeconomics-subrow 
+            .macroeconomics-subcol.green
+              .macroeconomics-subcol__top
+                span.macroeconomics-subcol__num.countup-element(data-countup='3')
+                span.macroeconomics-subcol__num ,
+                span.macroeconomics-subcol__num.countup-element(data-countup='1' data-countup-suffix='%')
+                .macroeconomics-subcol__text.number-animate-3.number-animate.mg-left 占世界国内生产总值的
+              .macroeconomics-subcol_bot
+                .macroeconomics-subcol__text-grey 2022年平均估值
+            .macroeconomics-subcol.light-green
+              .macroeconomics-subcol__top
+                span.macroeconomics-subcol__num.light.countup-element(data-countup='2')
+                span.macroeconomics-subcol__num.light ,
+                span.macroeconomics-subcol__num.light.countup-element(data-countup='1' data-countup-suffix='%')
+              .macroeconomics-subcol_bot
+                .macroeconomics-subcol__text-grey 2023年全球GDP增长预测
+      .macroeconomics-grafics(data-aos="fade-up") 
+        .macroeconomics-grafics__col
+          h4.macroeconomics-grafics__col-title 2022-2023年全球GDP年增长率，%
+          .macroeconomics-grafics__col-img.first-print 
+            +picture('macro-grafic1.png')
+          .macroeconomics-grafics__col-links.first
+            .macroeconomics-grafics__col-text 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report,
+                a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/" target="blank") S&P Global,
+                a.macroeconomics-grafics__col-link(href="https://www.pwc.com/" target="blank") PwC
+          +activity-buttons('macro-grafic1.png')
+        .macroeconomics-grafics__col
+          h4.macroeconomics-grafics__col-title.second 2023年GDP增​​长预测
+          .macroeconomics-grafics__col-img 
+            +picture('macro-grafic2.png')
+          .macroeconomics-grafics__col-links.second
+            .macroeconomics-grafics__col-text 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report,
+                a.macroeconomics-grafics__col-link(href="https://www.spglobal.com/en/" target="blank") S&P Global,
+                a.macroeconomics-grafics__col-link(href="https://www.pwc.com/" target="blank") PwC
+          +activity-buttons('macro-grafic2.png')
+    section(data-aos="fade-up").chinese-economy(id="section-ge-chinese")
+      h2.chinese-economy__title 中国经济
+      .chinese-economy__hero-row 
+        .chinese-economy__hero-col 
+          .chinese-economy__hero-text 2022年初，中国经济有望实现5.5%的增长目标，但局部疫情和严格的COVID遏制政策严重限制了发展前景。最终，2022年中国的GDP增长幅度是自1970年代中期以来增长幅度最低的一年。
+        .chinese-economy__hero-col
+          h4.chinese-economy__hero-subtitle 2022-2023年中国GDP年增长率，%
+          .chinese-economy__hero-grafic 
+            +picture('chinese-eco-grafic1.png')
+          .macroeconomics-grafics__col-links.chinese
+            .macroeconomics-grafics__col-text.chinese 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="https://www.reuters.com/" target="blank") Reuters,
+                a.macroeconomics-grafics__col-link(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link(href="https://www.credit-suisse.com/ru/ru.html" target="blank") Credit Suisse,
+                a.macroeconomics-grafics__col-link(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
+                a.macroeconomics-grafics__col-link(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,<br class="desktop">
+                a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report
+          +activity-buttons('chinese-eco-grafic1.png')
+      .chinese-economy__quarter(data-aos="fade-up")
+        h4.chinese-economy__quarter-title 2020-2022年中国GDP季度动态，%
+        .macroeconomics-grafics__col-links.quarter.desktop
+            .macroeconomics-grafics__col-text 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/" target="blank") 中国国家统计局
+        .chinese-economy__quarter-container
+          .chinese-economy__quarter-vector.desktop 
+            +picture('quarter-vector.png')
+        +activity-buttons('quarter-vector.png').flex-desktop
+          .chinese-economy__quarter-vector.mobile 
+            +picture('quarter-vector-mobile.png')
+        +activity-buttons('quarter-vector-mobile.png').flex-m
+        .macroeconomics-grafics__col-links.quarter.mobile
+          .macroeconomics-grafics__col-text 资料来源: 
+            span.macroeconomics-grafics__col-list 
+              a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/" target="blank") 中国国家统计局
+        .chinese-economy__quarter-row 
+          .chinese-economy__quarter-col 
+            .ge-card.green.upper
+              .ge-card__top
+                .ge-card__num.green.countup-element(data-countup='27' data-countup-prefix='-' data-countup-suffix='%')
+              .ge-card__bot
+                .ge-card__text-grey 2022年中国房地产需求下降
+            .ge-card.light-green
+                .ge-card__top
+                  .ge-card__num.light.countup-element(data-countup='25'  data-countup-suffix='%')
+                  .ge-card__text.number-animate-25.number-animate.mg-left 占国内GDP的
+                .ge-card__bot
+                  .ge-card__text-grey 占房地产市场的份额
+          .chinese-economy__quarter-col 
+            .chinese-economy__quarter-text.top 2022年全年，中国经济格局也出现了其他复杂情况。例如，房地产行业的动荡未得到解决。中国政府已采取措施帮助开发商，其中一个关键决定是放松融资和贷款限制。然而，一些开发商仍然存在严重的财务问题。也许，尽管中国政府否认情况危急，但不得不批准支持该市场的新措施。中国开发商的倒闭可能导致全面的全球经济危机，因此这个问题的进一步发展极为重要。
+            .chinese-economy__quarter-text 2022年底，最重要的事件是取消对COVID的“零容忍”政策，这在为当下经济创造困难条件的同时，也让人们对2023年持乐观态度。据信，中国政府将批准至少4.7%的GDP增长目标。
+    section(data-aos="fade-up").chinese-forecast(id="section-ge-forecast")
+      h3.chinese-forecast__title 对中国的关键预测
+      .chinese-forecast__row 
+        .chinese-forecast__col(data-aos="fade-up")
+          h4.chinese-forecast__subtitle 失业率下降
+          .chinese-forecast__text.line 失业率与全年的COVID爆发相关。预测表明，随着中国从大流行中复苏，该指标将在2023年大幅下降 —— 至5.2%。
+          .chinese-forecast__title-small.vector-1  2020-2022年城镇失业率
+          .chinese-forecast__grafic
+            +picture('chinese-forecast-vector1.png')
+          .macroeconomics-grafics__col-links.quarter
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.credit-suisse.com/ru/ru.html" target="blank") Credit Suisse,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html" target="blank") ECB
+          +activity-buttons('chinese-forecast-vector1.png')
+          h4.chinese-forecast__subtitle.mg-top 零售业增长
+          .chinese-forecast__text.line 在2022年下降0.2 %后，预计2023年零售贸易量将增长至2.5%-3%左右。COVID爆发影响了2022年最后一个季度的消费，但其影响不如大流行开始时那么强烈。
+          .chinese-forecast__subtitle-small.mg-bot30 2020-2022年零售额的年度动态
+          .chinese-forecast__grafic-left 
+            +picture('chinese-forecast-vector2.png')
+          +activity-buttons('chinese-forecast-vector2.png')
+        .chinese-forecast__col(data-aos="fade-up")
+          h4.chinese-forecast__subtitle 二季度以来大幅反弹
+          .chinese-forecast__text.margin-small 2023年第一季度，COVID将对该国经济产生负面影响。有消息称，1月份，中国大部分人口可能已经感染，降低了全年再次出现重症疫情的可能性。因此，在流行病形势潜在改善、家庭过剩储蓄释放和政府刺激措施的背景下，经济活动和消费可能会从第二季度开始大幅复苏。
+          .chinese-forecast__text.margin 这是许多专家的看法，尽管政府一再表示优先考虑刺激内需。这一事实可能与全球经济的相对疲软以及地缘政治紧张局势的加剧有关。
+          h4.chinese-forecast__subtitle 提高生产动态
+          .chinese-forecast__text.line 2023 年，动态有望同比改善至4.5%左右。相比较：到2022年底，产量增长3.6%。化工业（+12.8%）和机械工程工业（+10.8%）的情况相比其他行业更好。
+          .chinese-forecast__subtitle-small.mg-big 2020-2022年工业生产动态
+          .chinese-forecast__grafic 
+            +picture('chinese-forecast-vector3.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-14 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-14(href="http://www.stats.gov.cn/" target="blank") 中国国家统计局
+          +activity-buttons('chinese-forecast-vector3.png')
+    section(data-aos="fade-up").europe-economy(id="section-ge-europe")
+      h2.europe-economy__title 欧洲经济
+      .europe-economy__row 
+        .europe-economy__col
+          .europe-economy__subtitle-custom 到2022年底，欧盟GDP增长3.6%，欧元区GDP增长3.5%。
+        .europe-economy__col
+          .europe-economy__text 在今年第一季度实施地缘政治风险后，该地区承受了沉重的压力。供应链波动加剧，俄罗斯和乌克兰生产的某些商品的实际可用性受到质疑。物流链开始断裂,与海关和货币交易有关的程序变得更加复杂。
+          .europe-economy__text 能源和其他原材料价格飙升，几乎在世界各地加速了通货膨胀，并引起了对欧洲“滞胀”风险的严肃考虑。所有这些事态发展都导致欧洲央行收紧货币政策和资本成本上升，并削弱了该地区的购买需求。然而，这一年经济中的一些困难得到了解决，影响了2022年的GDP增长
+      .europe-economy__subsection(data-aos="fade-up") 
+        h4.europe-economy__subtitle 2020-2022年欧洲和欧洲区的GDP季度动态
+        .europe-economy__cubes 
+          .europe-economy__cubes-item
+            .europe-economy__cubes-cube.green 
+            .europe-economy__cubes-text 欧盟（27个国家）
+          .europe-economy__cubes-item
+            .europe-economy__cubes-cube.light-green 
+            .europe-economy__cubes-text 欧元区国（19个国家
+        .europe-economy__vector-container
+          .europe-economy__vector 
+            +picture('eco-europe-vector.png')
+        +activity-buttons('eco-europe-vector.png')
+        .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+    section(data-aos="fade-up").key-forecast(id="section-ge-key") 
+      h2.key-forecast__title 对欧盟的关键预测
+      .key-forecast__row.top
+        .key-forecast__col
+          h4.key-forecast__subtitle 2023年中期需求回升
+          .key-forecast__text 预测表明，欧元区国GPD将出现积极动态，但与该地区的贸易（特别是进口）和运输需求可能会下降。欧洲的零售商积累了大量尚未售出的产品。从2023年第三季度开始，需求可能开始复苏，但存在明显的风险和制约因素。例如，欧洲经济和贸易的前景将在很大程度上取决于中国在疫情后的复苏。
+        .key-forecast__col
+          .key-forecast__subtitle-small 2022-2023年欧洲区GDP年增长率
+          .key-forecast__vector 
+            +picture('key-forecast1.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.worldbank.org/en/home" target="blank") World Bank,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.imf.org/en/Home" target="blank") IMF,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.credit-suisse.com/ru/ru.html" target="blank") Credit Suisse,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,
+                a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html" target="blank") ECB
+          +activity-buttons('key-forecast1.png')
+      .key-forecast__row.bot(data-aos="fade-up") 
+        .key-forecast__col 
+          h4.key-forecast__subtitle 德国将避免经济衰退
+          .key-forecast__text 德国是欧洲的一个重要经济体，也是俄罗斯能源的最大消费国，由于天然气和石油价格上涨，德国受到的打击尤其严重。GDP增速从2021年的2.1%放缓至2022年的1.9%，2023年预测经济收缩0.4%。但是，后来专家表示说，该国可以完全避免经济衰退。德国政府预计2023年GDP增长0.2%，2024年增长1.8%。当前温和的冬季、高天然气储备，以及对企业和民众的一揽子援助将有助于经济增长。
+        .key-forecast__col.col
+          h4.key-forecast__subtitle 通货膨胀进一步降温
+          .key-forecast__text 2021年，欧元区通胀稳步上升，到2022年10月底，这一数字达到10.6%的峰值，比欧洲央行的目标值高出数倍。然而，该指标在12月有所下降，下降趋势可能继续。欧洲央行的措施有助于冷却通货膨胀：1月份的关键利率已达到2.5%，预计2023年3月将再次上调50个基点。第四季度能源成本的大幅下降也明显缓解了通胀压力
+      .key-forecast__subsection(data-aos="fade-up") 
+        .key-forecast__subsection-title 2020-2022年欧元区通胀年度变化趋势
+        .key-forecast__subsection-container
+          .key-forecast__subsection-vector
+            +picture('key-forecast2.png')
+        .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('key-forecast2.png')
+      .key-forecast__stability(data-aos="fade-up") 
+        .key-forecast__stability-col 
+          h4.key-forecast__stability-title 稳定的失业率
+          .key-forecast__stability-text 2022年12月，欧元区的失业率稳定在6.6%（2021年12月-7%）。根据各种预测，到2023年底，失业率可能达到7%。欧洲央行抑制通胀的措施可能会对就业产生负面影响，因为长期收紧货币政策通常会导致就业减少。
+        .key-forecast__stability-col(data-aos="fade-up")
+          .key-forecast__stability-subtitle 2020-2022人口失业率
+          .key-forecast__stability-vector 
+            +picture('stability-forecast-vector.png')
+          .macroeconomics-grafics__col-links.forecast
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+          +activity-buttons('stability-forecast-vector.png')
+      .key-forecast__dinamic(data-aos="fade-up") 
+        .key-forecast__dinamic-col(data-aos="fade-up") 
+          h4.key-forecast__dinamic-title 贸易发展将逐步改善
+          .key-forecast__dinamic-text 由于通胀上升和该地区货币政策收紧，欧洲消费者在2022年期间减少了支出。但是，对2023年欧元区GDP增长的积极预测，部分取决于消费者欲望的潜在提升。相信未来一年零售量的走势会逐渐增强。这可能有助于解决当前零售商未售出产品库存创纪录的问题（2022年第三季度达到912亿欧元）。
+        .key-forecast__dinamic-col(data-aos="fade-up") 
+          h4.key-forecast__dinamic-title 未完成的订单将支持产量
+          .key-forecast__dinamic-text 2022年期间，产量在上一年的水平上波动。一些工业，如化工业，受到高能源价格的严重影响，欧洲不得不通过进口来满足某些化学产品的需要。如前所述，制造业的新订单量正在稳步下降，但大量未完成订单将使未来几个月的产量保持不变。
+      .key-forecast__dinamic2(data-aos="fade-up")
+        .key-forecast__dinamic2-col(data-aos="fade-up") 
+          .key-forecast__dinamic2-lefttitle 2020-2022年零售额动态
+          .key-forecast__dinamic2-vector.left
+            +picture('dinamic-vector-left.png')
+          +activity-buttons('dinamic-vector-left.png')
+        .key-forecast__dinamic2-col(data-aos="fade-up")
+          .key-forecast__dinamic2-righttitle 2020-2022年工业生产年度动态
+          .key-forecast__dinamic2-vector.right
+            +picture('dinamic-vector-right.png')
+          +activity-buttons('dinamic-vector-right.png')
+    section(data-aos="fade-up").mutal-trade(id="section-ge-mutal")  
+      h2.mutal-trade__title 中欧双边贸易
+      .mutal-trade__hero 
+        .mutal-trade__hero-col 
+          h4.mutal-trade__hero-title 中欧双边贸易是世界贸易的主要板块之一，也是跨欧亚运输的中轴线。
+        .mutal-trade__hero-col
+          .mutal-trade__hero-text.desktop 合作伙伴之间的贸易动态决定了欧亚轨道交通路线的货运基础，以及货物流量的平衡
+          .mutal-trade__hero-row 
+            .mutal-trade__hero-subcol
+              .ge-card.light-green
+                .ge-card__top
+                  span.ge-card__num.light.countup-element(data-countup='851')
+                  span.ge-card__num.light ,
+                  span.ge-card__num.light.countup-element(data-countup='9')
+                  .ge-card__text.number-animate-851.number-animate.mg-left 亿欧元
+                .ge-card__bot
+                  .ge-card__text-grey 2022年主要商品项下合作伙伴之间的贸易总额
+            .mutal-trade__hero-subcol
+              .ge-card.green
+                .ge-card__top
+                  .ge-card__num.green.countup-element(data-countup='32'  data-countup-prefix='+' data-countup-suffix='%')
+                  .ge-card__text.top.number-animate-32.number-animate.mg-left 624,3 
+                    .ge-card__text 亿欧元
+                .ge-card__bot
+                  .ge-card__text-grey 2022年中国对欧出口增长 
+      .mutal-trade__subsection(data-aos="fade-up") 
+        .mutal-trade__subsection-col(data-aos="fade-up") 
+          .ge-card.green
+              .ge-card__top
+                span.ge-card__num.green.countup-element(data-countup='3'  data-countup-prefix='+')
+                span.ge-card__num.green ,
+                span.ge-card__num.green.countup-element(data-countup='2' data-countup-suffix='%')
+                .ge-card__text.top.number-animate-2.number-animate.mg-left  227,6
+                  .ge-card__text 亿欧元 
+              .ge-card__bot
+                .ge-card__text-grey 2022年欧盟对华出口增长
+        .mutal-trade__subsection-col(data-aos="fade-up") 
+          .mutal-trade__subsection-text(data-aos="fade-up") 中国出口的急剧增长是由于有机化学和其他化学产品、各种电器和家居用品的发货量增加。供应链正常化也促进了贸易增长。尽管如此，必须指出，自给贸易量有所下降：总量下降3.7%，欧洲出口下降25.6%，但中国出口增长13.9%。
+          .mutal-trade__subsection-text(data-aos="fade-up") 特别是，2019年以来欧洲对华贸易逆差呈上升趋势，且势头不断加快。因此，根据现有数据，2022年，中国的出口比进口高出近2.5倍。货物流通平衡的恶化不可避免地给运输业带来了寻找和争夺回程货物的挑战。
+      .mutal-trade__balance(data-aos="fade-up") 
+        .mutal-trade__balance-top 
+          .mutal-trade__balance-title 2021-2022年中欧双边贸易，亿欧元
+          .mutal-trade__balance-copy
+            .macroeconomics-grafics__col-links.forecast.first
+              .macroeconomics-grafics__col-text.big-12 资料来源: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        .mutal-trade__balance-container
+          .mutal-trade__balance-vector 
+            +picture('mutal-trade-balance.png')
+        .macroeconomics-grafics__col-links.forecast.second
+              .macroeconomics-grafics__col-text.big-12 资料来源: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('mutal-trade-balance.png')
+      .mutal-trade__shares.desktop.shares-flex(data-aos="fade-up")
+        .mutal-trade__col-share
+          .mutal-trade__shares-title 2022年欧洲国家从中国进口的份额，%
+          .mutal-trade__shares-vector 
+            +picture('mutal-trade-shares.png')
+          .macroeconomics-grafics__col-links.shares
+              .macroeconomics-grafics__col-text.big-12 资料来源: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+          +activity-buttons('mutal-trade-shares.png').flex-desktop
+        .mutal-trade__col-share
+          .mutal-trade__shares-title 2022年欧洲国家对中国出口的份额，%
+          .mutal-trade__shares-vector 
+            +picture('mutal-trade-shares-right.png')
+          .macroeconomics-grafics__col-links.shares
+              .macroeconomics-grafics__col-text.big-12 资料来源: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+          +activity-buttons('mutal-trade-shares-right.png').flex-desktop
+      .mutal-trade__shares.mobile(data-aos="fade-up")
+        .mutal-trade__shares-title 2022年欧洲国家从中国进口的份额，%
+        .mutal-trade__shares-vector 
+          +picture('shares-mobile-1.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('shares-mobile-1.png').flex-m
+        .mutal-trade__shares-title 2022年欧洲国家对中国出口的份额，%
+        .mutal-trade__shares-vector 
+          +picture('shares-mobile-2.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('shares-mobile-2.png').flex-m
+      .mutal-trade__shares2(data-aos="fade-up") 
+        .mutal-trade__shares2-top 
+          .mutal-trade__shares2-title 2022年中欧出口货物份额，%
+          .mutal-trade__shares2-copy
+            .macroeconomics-grafics__col-links.first
+              .macroeconomics-grafics__col-text.big-12 资料来源: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        .mutal-trade__shares2-vector
+          +picture('mutal-trade-shares2.png')
+        .mutal-trade__numbers-block.desktop 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='31') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text 电气设备、通讯设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='18') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 机械设备及电器、计算机
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='6') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text 有机化学产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text 汽车
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text 家具、照明设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text 玩具和运动器材
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text 塑料及其制品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text 光学、器件、医疗设备
+            //row 3
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text 黑色金属制品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 缝纫用的衣服
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 针织服装
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text 鞋
+            //row 4
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='2' data-countup-suffix='%') 
+                p.numbers-item__text 其他化工产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='18') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text 其他商品
+        .mutal-trade__numbers-block.mobile 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='31') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text 电气设备、通讯设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='18') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 机械设备及电器、计算机
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='6') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text 有机化学产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text 汽车
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num %
+                p.numbers-item__text 其他化工产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 18
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 0
+                  span.numbers-item__number-num %
+                p.numbers-item__text 其他商品
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text 家具、照明设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='0' data-countup-suffix='%') 
+                p.numbers-item__text 玩具和运动器材
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text 塑料及其制品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='2') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text 光学、器件、医疗设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 5
+                  span.numbers-item__number-num %
+                p.numbers-item__text 黑色金属制品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text 缝纫用的衣服
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 2
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text 针织服装
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 7
+                  span.numbers-item__number-num %
+                p.numbers-item__text 鞋
+      .mutal-trade__shares3(data-aos="fade-up") 
+        .mutal-trade__shares3-top 
+          .mutal-trade__shares3-title 2022年欧洲-中国出口货物份额，%
+          .mutal-trade__shares3-copy
+            .macroeconomics-grafics__col-links.first
+              .macroeconomics-grafics__col-text.big-12 资料来源: 
+                span.macroeconomics-grafics__col-list 
+                  a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        .mutal-trade__shares2-vector
+          +picture('mutal-trade-shares3.png')
+        .mutal-trade__numbers-block.desktop 
+          .mutal-trade__numbers-rows
+            //row 1
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='17') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 机械设备及机械、计算机
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='15') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text 电气设备、通讯设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='15') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text 汽车
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 医药产品
+            //row 2
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='1' data-countup-suffix='%') 
+                p.numbers-item__text 光学、器件、医疗设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 塑料及其制品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='3') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='1' data-countup-suffix='%') 
+                p.numbers-item__text 飞行器
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='6' data-countup-suffix='%') 
+                p.numbers-item__text 肉类及食用内脏
+            //row 3
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text 其他化工产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text 有机化学产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 面粉类成品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 皮具、旅行配件
+            //row 4
+            .mutal-trade__numbers-row 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 铜
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 木材及木工产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 香水、化妆品和盥洗用品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='18') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='8' data-countup-suffix='%') 
+                p.numbers-item__text 其他商品
+        .mutal-trade__numbers-block.mobile 
+          .mutal-trade__numbers-rows 
+            .mutal-trade__numbers-row.second-section
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='17') 
+                  span.numbers-item__number-num.big-light  , 
+                  span.numbers-item__number-num.big-light.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 机械设备及机械、计算机
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='15') 
+                  span.numbers-item__number-num.big-green , 
+                  span.numbers-item__number-num.big-green.countup-element(data-countup='9' data-countup-suffix='%') 
+                p.numbers-item__text 电气装置、通讯设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='15') 
+                  span.numbers-item__number-num.big-grey  , 
+                  span.numbers-item__number-num.big-grey.countup-element(data-countup='7' data-countup-suffix='%') 
+                p.numbers-item__text 汽车
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='7') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='3' data-countup-suffix='%') 
+                p.numbers-item__text 医药产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 7
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num %
+                p.numbers-item__text 光学、器件、医疗设备
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text 塑料及其制品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num %
+                p.numbers-item__text 飞行器
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 6
+                  span.numbers-item__number-num %
+                p.numbers-item__text 肉类及食用内脏
+            //row 2
+            .mutal-trade__numbers-row.second-section 
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text 其他化工产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='5' data-countup-suffix='%') 
+                p.numbers-item__text 有机化学产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 面粉类成品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num.countup-element(data-countup='1') 
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num.countup-element(data-countup='4' data-countup-suffix='%') 
+                p.numbers-item__text 皮具、旅行配件
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text 铜
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text 木材及木工产品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 1
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 3
+                  span.numbers-item__number-num %
+                p.numbers-item__text 香水、化妆品和盥洗用品
+              .mutal-trade__numbers-item 
+                .numbers-item__number 
+                  span.numbers-item__number-num 18
+                  span.numbers-item__number-num , 
+                  span.numbers-item__number-num 8
+                  span.numbers-item__number-num %
+                p.numbers-item__text 其他商品
+        .mutal-trade__shares2-container
+      .mutal-trade__export(data-aos="fade-up") 
+        .mutal-trade__export-title 2021-2022年通过主要运输方式运输的中欧出口占贸易额的%
+        .mutal-trade__export-vector.custom-desktop
+          +picture('mutal-trade-export.png')
+        .mutal-trade__export-vector.custom-mobile
+          +picture('mutal-trade-ex-mobile1.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('mutal-trade-export.png').flex-desktop
+        +activity-buttons('mutal-trade-ex-mobile1.png').flex-m
+      .mutal-trade__export2(data-aos="fade-up") 
+        .mutal-trade__export2-title 2021-2022年通过主要运输方式运输的欧洲-中国出口占贸易价值%
+        .mutal-trade__export2-vector.custom-desktop
+          +picture('mutal-trade-export2.png')
+        .mutal-trade__export2-vector.custom-mobile
+          +picture('mutal-trade-ex-mobile2.png')
+        .macroeconomics-grafics__col-links.shares
+            .macroeconomics-grafics__col-text.big-12 资料来源: 
+              span.macroeconomics-grafics__col-list 
+                a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('mutal-trade-export2.png').flex-desktop
+        +activity-buttons('mutal-trade-ex-mobile2.png').flex-m
+    section(data-aos="fade-up").ge-results 
+      .ge-results__rect 
+        +result-plug-svg
+      .ge-results__title 结论
+      .ge-results__main 
+        .ge-results__main-title 根据S&P Global最新预测，由于诸多制约因素和风险，2023年全球贸易增速将放缓至0.6%。
+        .ge-results__main-text 反之，中国可以通过取消防疫限制而潜在地激活经济来增加出口。
+        .ge-results__main-text 然 大众、博世、法拉利等欧洲企业对2023年中国市场寄予厚望。必须指出，国际贸易取决于伙伴关系。反之，欧洲政策制定者正在考虑实施一项新的对华战略，以减少对该国的依赖。相应地，政治风险可能会影响合作伙伴之间的贸易。

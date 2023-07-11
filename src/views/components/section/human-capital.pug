@@ -33,6 +33,23 @@ mixin human-capital-EN
               .ge-card__bot
                 .ge-card__text-grey Company’s staff size growth in 2022
 
+mixin human-capital-CN 
+  section.human-capital(id="human-capital")(data-aos="fade-up") 
+    .container-content(data-aos="fade-up") 
+      h2.human-capital__title 人力资源
+      h3.human-capital__subtitle.w-100 我们的团队有多少人？
+      .human-capital__hero-row(data-aos="fade-up") 
+        .human-capital__hero-col(data-aos="fade-up")
+          .human-capital__hero-text.bold 截止2022年底，UTLC ERA实际雇用了160人（人员编制-170人）。其中，69人担任领导职务。我们还有88名专家和6名职员。 
+        .human-capital__hero-col(data-aos="fade-up")
+          .human-capital__hero-text.top.text 2022年，集装箱运输量增长，地域扩大，配件平台数量增加。UTLC ERA引入了风险管理系统。采购过程也发生了很大变化。
+          .human-capital__hero-text.text 所有这些都导致公司的组织结构和人员配置发生变化，以进一步发展客户服务，保持高质量的服务，管理自己的配件平台车队，并对市场环境进行监测和综合分析。
+          .ge-card.green.human
+              .ge-card__top
+                .ge-card__num.green.countup-element(data-countup='12' data-countup-prefix='+' data-countup-suffix='%')
+              .ge-card__bot
+                .ge-card__text-grey 2022年公司员工增长
+
 mixin organization-structure
   .container-content(data-aos="fade-up")
     section.organization-structure(id="organization-structure")(data-aos="fade-up") 
@@ -403,3 +420,193 @@ mixin organization-structure-EN
           .corporate-culture__item-content 
             .corporate-culture__item-title Fairness and integrity
             .corporate-culture__item-text These principles underpin our relations with both external and internal customers. We give no empty promises and honor our commitments. We guarantee only what we are able to fulfill. So, we expect every customer, business partner and, primarily, every team member to comply with these principles.
+
+mixin organization-structure-CN
+  .container-content(data-aos="fade-up")
+    section.organization-structure(id="organization-structure")(data-aos="fade-up") 
+      .organization-structure__title 截至2022年12月31日UTLC ERA组织结构图
+      .organization-structure__img-container(data-aos="fade-up")
+        .organization-structure__img-table(data-aos="fade-up") 
+          +picture('organization-structure-img.png')
+        .ge-card.green.desktop(data-aos="fade-up") 
+          .ge-card__top.gap-8
+            .ge-card__num.green.countup-element(data-countup='170')
+            .ge-card__text.number-animate-170.number-animate 单元 
+          .ge-card__bot
+            .ge-card__text-grey.custom-cuchurina 人数
+      .ge-card.green.mobile
+        .ge-card__top.gap-8
+          .ge-card__num.green.countup-element(data-countup='170')
+          .ge-card__text.number-animate-170.number-animate  单元 
+        .ge-card__bot
+          .ge-card__text-grey.custom-cuchurina 人数
+      .organization-structure__number(id="organization-number")(data-aos="fade-up") 
+        .organization-structure__number-title 公司员工人数
+        .organization-structure__number-table.desktop(data-aos="fade-up")
+          +picture('structure-number-table.png')
+        +activity-buttons('structure-number-table.png').flex-desktop
+        .organization-structure__number-table.mobile(data-aos="fade-up")
+          +picture('structure-number-table-mobile.png')
+        +activity-buttons('structure-number-table-mobile.png').flex-m
+      .organization-structure__personal.first(data-aos="fade-up")  
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title 按职类分列的工作人员结构（人）
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text 管理人员 
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text 专业人员
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text 服务人员
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text 工作人员
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-1.png')
+          +activity-buttons('structure-personale-1.png')
+      .organization-structure__personal.second(data-aos="fade-up")
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title 按学历分列的工作人员结构（人）
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text 中等专业教育
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text 基础综合教育
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text 高等教育
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text 学籍/学衔
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-2.png')
+          +activity-buttons('structure-personale-2.png')
+      .organization-structure__personal(data-aos="fade-up") 
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title 按年龄分列的工作人员结构（人）
+          .organization-structure__personal-cubes.no-wrap  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text 21–30
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text 31–40
+            .organization-structure__cube 
+              .organization-structure__cube-rect.dark-grey 
+              .organization-structure__cube-text 41–50
+            .organization-structure__cube 
+              .organization-structure__cube-rect.grey 
+              .organization-structure__cube-text 51岁以上
+          .organization-structure__personal-text.desktop 2022年公司员工的平均年龄为39岁，这反映了员工的平衡性。有经验的专家将他们的经验传授给年轻人，而年轻人则通过引入创新为公司的进一步发展做出贡献。
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-3.png')
+          +activity-buttons('structure-personale-3.png')
+      .organization-structure__personal(data-aos="fade-up") 
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-title 按性别划分的工作人员结构（人）
+          .organization-structure__personal-cubes.category  
+            .organization-structure__cube 
+              .organization-structure__cube-rect.green 
+              .organization-structure__cube-text 男性
+            .organization-structure__cube 
+              .organization-structure__cube-rect.light-green 
+              .organization-structure__cube-text 女性
+        .organization-structure__personal-col(data-aos="fade-up") 
+          .organization-structure__personal-grafic 
+            +picture('structure-personale-4.png')
+          +activity-buttons('structure-personale-4.png')
+      .organization-structure__subrow(data-aos="fade-up") 
+        .organization-structure__subcol(data-aos="fade-up") 
+          .organization-structure__subcol-title 2022年期间，对UTLC ERA的多项具体法规进行了补充，更新并批准了以下文件
+        .organization-structure__subcol(data-aos="fade-up") 
+          .organization-structure__subcol-item 内部劳动规则 — 规范公司内部劳动规则。
+          .organization-structure__subcol-item 《职工、“生产商务人员”和“企业管理”人员奖励条例》— 规定了奖励的原则和条件。
+          .organization-structure__subcol-item 《职工、管理人员团队奖金条例》—— 规定了奖金的原则和条件 。
+          .organization-structure__subcol-item  员工适应条例 —— 规定了公司员工适应的统一要求和组织程序。补充了《UTLC ERA工作人员适应条例》附件6。
+      section.recruitment-processes(id="recruitment-processes")(data-aos="fade-up") 
+        .recruitment-processes__title 征聘程序
+        .recruitment-processes__text 在招聘人员时，我们考虑到俄罗斯联邦立法中规定的两项基本原则：客观性和不存在任何形式的歧视。所有其他标准都是由战略和战术优先事项、人力资源管理系统和公司活动类型决定的。
+        .recruitment-processes__hr(data-aos="fade-up") 
+          .recruitment-processes__hr-title 在人力资源流程中，UTLC ERA考虑：
+          .recruitment-processes__hr-row(data-aos="fade-up") 
+            .recruitment-processes__hr-col(data-aos="fade-up")
+              .recruitment-processes__hr-mark 求职者的动机，及其与企业文化和员工的兼容性
+              .recruitment-processes__hr-mark 专业知识和经验水平
+              .recruitment-processes__hr-mark 评估潜在储备、申请人的优势、预测其未来成长
+              .recruitment-processes__hr-mark 适应性：员工能够尽快参与事务并开始与同事、供应商、客户、经理建立联系
+              .recruitment-processes__hr-mark 一般的积极行为反应
+              .recruitment-processes__hr-text.text 最佳设计的招聘流程包括分阶段选择，其目的是评估申请人并确定他们是否符合职位要求。
+            .recruitment-processes__hr-col(data-aos="fade-up") 
+              .recruitment-processes__hr-subtitle 公司人员的选拔、适应和发展过程规定
+              .recruitment-processes__hr-mark 《员工甄选和适应条例》
+              .recruitment-processes__hr-mark 公司道德守则
+              .recruitment-processes__hr-mark 企业胜任力模型
+              .recruitment-processes__hr-mark 员工培训和适应条例。
+              .recruitment-processes__hr-subtitle.second 筛选步骤
+              .recruitment-processes__hr-num  
+                .hr-num__number 1
+                .hr-num__text 在查看所有职位申请时搜索和处理简历，并在HeadHunter上根据关键选项进行筛选。
+              .recruitment-processes__hr-num  
+                .hr-num__number 2
+                .hr-num__text  电话面试，在此过程中，公司获得有关应聘者的经验和教育的信息；更多地了解寻找新工作的动机。
+              .recruitment-processes__hr-num  
+                .hr-num__number 3
+                .hr-num__text 面试，公司届时评估应聘者是否符合空缺职位的要求、其专业和个性特征、动机以及与企业文化的兼容性。
+              .recruitment-processes__hr-num  
+                .hr-num__number 4
+                .hr-num__text 如果仍有疑问，核查前雇主的推荐。
+              .recruitment-processes__hr-num  
+                .hr-num__number 5
+                .hr-num__text 公司安全部门面试。
+              .recruitment-processes__hr-num  
+                .hr-num__number 6
+                .hr-num__text 入职体检。
+  .container-content(data-aos="fade-up") 
+    section.corporate-culture(id="corporate-culture") 
+      h2.corporate-culture__title 企业文化
+      .corporate-culture__text 我们制定了企业道德守则，规定了员工个人和集体行为的基本规范和规则。该守则包含对公司有意义的价值。
+      .corporate-culture__list(data-aos="fade-up") 
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +mountain-lider-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title 领导力。
+            .corporate-culture__item-text 我们努力成为我们工作领域的领导者。找到更好的解决方案是我们的主要任务。我们与生俱来的“战斗精神”：我们对自己的能力充满信心，能够快速有效地解决任何问题，比竞争对手更能实现预期目标。
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +effective-svg 
+          .corporate-culture__item-content 
+            .corporate-culture__item-title 业绩。
+            .corporate-culture__item-text 我们努力实现资源的最佳利用、专业管理、快速且精准地执行既定任务、高劳动生产率，并达成更好的成果。我们善于部署，在最短的时间内完成任务
+        .corporate-culture__item
+          .corporate-culture__item-icon 
+            +professional-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title 专业精神。
+            .corporate-culture__item-text 公司内部关系建立在员工对工作的直接兴趣的基础上，使我们能够成为不同领域的专业人士。做出最佳决定，在其职权范围内提供专业的建议，这是每位员工的职责。公司的所有决定都是从能力和权宜的角度做出的，而不是为了取悦某人的野心或游说。
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +lamp-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title 开拓和创新。
+            .corporate-culture__item-text 创新适用于业务的任何方面：营销、财务活动、人力资源政策、IT技术等，我们鼓励员工的主动性，因为我们相信活跃的想法不仅有助于更多地参与工作流程，而且还会影响同事的积极性和主动性，让公司朝着有意义的新方向发展。
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +people-man-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title 以客户为中心。
+            .corporate-culture__item-text 在我们的理解中，是指与外部和内部客户（员工）发展伙伴关系，关注他们的利益和需求，并有效和迅速地解决他们的困难。
+        .corporate-culture__item
+          .corporate-culture__item-icon
+            +scales-svg
+          .corporate-culture__item-content 
+            .corporate-culture__item-title 公平和诚实。
+            .corporate-culture__item-text 这是我们与内部和外部客户建立关系的原则。我们不做空洞的承诺，我们明确地履行我们的义务。我们言出必行。因此，我们期望每位客户、业务伙伴，但首先是每位员工，都遵守这些原则。
