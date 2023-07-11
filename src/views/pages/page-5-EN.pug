@@ -4,24 +4,28 @@ extends ../app
 include ../components/section/reward-content
 include ../components/section/controls-content
 include ../components/section/risk-content
+
 include ../components/section/incorporated
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/section/control
 
 include ../components/bloks-ui/risks
 
 block variables
   -const title = 'Corporate governance'
 block content
-  //-   =+report-hero-5-EN
-  //- +control-sections-EN 
-  //- +preview('Authorized Capital','Kseniya ','Pavlova ','Head of Financial Instruments Operation Function','pavlova.png').custom-id(id="share-capital")(data-aos="fade-up")
-  //-   .pavlova 
-  //-     p.pavlova__text.text Joint-Stock Company “UTLC ERA“ was registered by Interdistrict Tax Inspectorate No. 46 for Moscow on 2 April 2018 under Principal State Registration Number 1187746369590 (TIN 9701104646).
+  +report-hero-5-EN
+  +control-sections-EN 
+  +preview('Authorized Capital','Kseniya ','Pavlova ','Head of Financial Instruments Operation Function','pavlova.png').custom-id(id="share-capital")(data-aos="fade-up")
+    .pavlova 
+      p.pavlova__text.text Joint-Stock Company “UTLC ERA“ was registered by Interdistrict Tax Inspectorate No. 46 for Moscow on 2 April 2018 under Principal State Registration Number 1187746369590 (TIN 9701104646).
   +incorporated-EN
-  +preview('Remuneration system','Ivanova','Marina','HR Management Department Director','ivanova.png').custom-id(id="preview-reward-content")
-  +reward-content-EN
-  +preview('Control System','Pavlushkova','Irina','Chief Accountant — Department Director','pavluchkova.png').custom-id(id="controls-content")
-  +controls-content-EN
-  +preview('Risk Management ','Belyakova','Anna','Deputy Commercial Director — Director of Account Settlement Control and Production Analysis Department, Commercial Directorate','belyakova.png').custom-id(id="risk-content")
-  +risk-content-EN
-  +print-activity-buttons-EN
-  +next-page('Applications',6,'Next section')
+  //- +preview('Remuneration system','Ivanova','Marina','HR Management Department Director','ivanova.png').custom-id(id="preview-reward-content")
+  //- +reward-content-EN
+  //- +preview('Control System','Pavlushkova','Irina','Chief Accountant — Department Director','pavluchkova.png').custom-id(id="controls-content")
+  //- +controls-content-EN
+  //- +preview('Risk Management ','Belyakova','Anna','Deputy Commercial Director — Director of Account Settlement Control and Production Analysis Department, Commercial Directorate','belyakova.png').custom-id(id="risk-content")
+  //- +risk-content-EN
+  //- +print-activity-buttons-EN
+  //- +next-page('Applications',6,'Next section')
