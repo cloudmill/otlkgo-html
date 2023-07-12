@@ -32,8 +32,12 @@
       grid-template-columns: repeat(2, 1fr);
     }
     @media #{media('<', m)} {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
@@ -49,20 +53,27 @@
       background: #F4F4F4;
 
       @media #{media(">", ll)} {
-        height: rem(360px);
+        height: 360px;
       }
       @media #{media('<', m)} {
-        height: rem(223px);
-        width: rem(335px);
+        height: 223px;
+        width: 100%;
       }
-      @media (min-width:550px) and (max-width:600px) {
-        width: auto;
-        height: rem(290px);
+
+
+
+      @media #{media('<', m)} {
+        height: auto;
+        min-height: 200px;
       }
-      @media (min-width:600px) and (max-width:768px) {
-        width: auto;
-        height: rem(400px);
-      }
+      // @media (min-width:550px) and (max-width:600px) {
+      //   width: auto;
+      //   height: rem(290px);
+      // }
+      // @media (min-width:600px) and (max-width:768px) {
+      //   width: auto;
+      //   height: rem(400px);
+      // }
 
       &:hover{
         .main-contents__card-btn{
@@ -95,7 +106,7 @@
       -webkit-text-fill-color: transparent;
 
       @media #{media('<', m)} {
-        font-size: rem(60px);
+        font-size: 60px;
         line-height: 80%;
       }
     }
@@ -129,8 +140,8 @@
       overflow: hidden;
 
       @media #{media('<', m)} {
-        width: rem(32px);
-        height: rem(32px);
+        width: 32px;
+        height: 32px;
       }
       
         
@@ -166,8 +177,8 @@
         width: 12.5px;
         height: 12.5px;
         @media #{media('<', m)} {
-          width: rem(10px);
-          height: rem(10px);
+          width: 10px;
+          height: 10px;
         }
       }
 
@@ -193,7 +204,7 @@
 
       @media #{media('<', m)} {
         margin-top: 12px;
-        font-size: rem(16px);
+        font-size: 16px;
         line-height: 120%;
       }
     }
@@ -206,5 +217,9 @@
 
     width: 107px;
     height: 107px;
+
+    @media #{media('<', t)} {
+      display: none;
+    }
   }
 }
