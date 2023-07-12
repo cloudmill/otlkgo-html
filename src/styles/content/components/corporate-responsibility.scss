@@ -190,6 +190,10 @@
         width: 132px;
         height: 133px;
 
+        @media #{media("<", t)} {
+          height: 90px;
+        }
+
         @media #{media("<", m)} {
           width: rem(68px);
           height: rem(69px);

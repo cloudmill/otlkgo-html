@@ -152,14 +152,18 @@
     &__text-grey {
       font-weight: 400;
       font-size: 15px;
-      line-height: 160%;
+      line-height: 160%; 
       color: #727A75;
     }
   }
 
   &-grafics {
     display: flex;
-    gap: 140px;
+    gap: 20px;
+    
+    @media #{media('>',t)} {
+      justify-content: space-between;
+    }
 
     @media (min-width: 768px) and (max-width: 1024px) {
       gap: rem(30px);
@@ -453,6 +457,11 @@
       display: flex;
       justify-content: space-between;
       gap: 20px;
+
+      @media #{media('<',t)} {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       @media #{media('<',m)} {
         margin-top: 40px;

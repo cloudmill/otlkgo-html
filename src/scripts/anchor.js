@@ -22,19 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const allLinks = document.querySelectorAll('a');
 
   allLinks.forEach(btn => {
-    btn.addEventListener('click', () => {
-      $(function () {
-        var hash = document.location.hash;
-        if (hash.length > 1 && $(hash).length) {
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top - offsetScroll
-          }, 500);
-        }
+    if (!btn.classList.contains('activity-buttons__item')){
+
+      btn.addEventListener('click', () => {
+        $(function () {
+          var hash = document.location.hash;
+          if (hash.length > 1 && $(hash).length) {
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top - offsetScroll
+            }, 500);
+          }
+        });
+        removeBurger();
+        removeActive();
+        removeOverlay();
       });
-      removeBurger();
-      removeActive();
-      removeOverlay();
-    });
+    }
   });
 });
 

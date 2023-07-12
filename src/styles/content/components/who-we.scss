@@ -145,6 +145,13 @@
       }
     }
 
+    &-boxes{
+
+      @media #{media("<", t)} {
+        width: 400px;
+      }
+    }
+
 
 
     &-number {
@@ -155,6 +162,11 @@
       line-height: 80%;
       letter-spacing: -0.08em;
       color: #045C25;
+
+      @media #{media("<", t)} {
+        font-size: 90px;
+        line-height: 80%;
+      }
 
       @media #{media("<", m)} {
         width: 100%;
@@ -221,7 +233,7 @@
       margin-left: -20px;
 
       width: 100vw;
-      height: 270px;
+      // height: 270px;
 
       z-index: 1;
     }
@@ -748,7 +760,7 @@
 
 
       @media #{media("<", d)} {
-        height: 210px;
+        height: 226px;
       }
 
       @media #{media("<", m)} {

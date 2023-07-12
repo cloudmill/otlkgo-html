@@ -63,6 +63,7 @@ mixin organization-structure
             .ge-card__text.number-animate-170.number-animate единиц 
           .ge-card__bot
             .ge-card__text-grey.custom-cuchurina Штатная численность
+      +activity-buttons('organization-structure-img.png')
       .ge-card.green.mobile
         .ge-card__top.gap-8
           .ge-card__num.green.countup-element(data-countup='170')
@@ -74,8 +75,9 @@ mixin organization-structure
         .organization-structure__number-table.desktop(data-aos="fade-up")
           +picture('structure-number-table.png')
         +activity-buttons('structure-number-table.png').flex-desktop
-        .organization-structure__number-table.mobile(data-aos="fade-up")
-          +picture('structure-number-table-mobile.png')
+        .organization-structure__number-container
+          .organization-structure__number-table.mobile(data-aos="fade-up")
+            +picture('structure-number-table-mobile.png')
         +activity-buttons('structure-number-table-mobile.png').flex-m
       .organization-structure__personal.first(data-aos="fade-up")  
         .organization-structure__personal-col(data-aos="fade-up") 
@@ -248,6 +250,7 @@ mixin organization-structure-EN
             .ge-card__text.number-animate-170.number-animate units 
           .ge-card__bot
             .ge-card__text-grey.custom-cuchurina Headcount
+      +activity-buttons('organization-structure-img-EN.png')
       .ge-card.green.mobile
         .ge-card__top.gap-8
           .ge-card__num.green.countup-element(data-countup='170')
@@ -259,9 +262,10 @@ mixin organization-structure-EN
         .organization-structure__number-table.desktop(data-aos="fade-up")
           +picture('structure-number-table-EN.png')
           +activity-buttons('structure-number-table-EN.png')
-        .organization-structure__number-table.mobile(data-aos="fade-up")
-          +picture('structure-number-table-EN.png')
-          +activity-buttons('structure-number-table-EN.png')
+        .organization-structure__number-container.en
+          .organization-structure__number-table.en.mobile(data-aos="fade-up")
+            +picture('structure-number-table-EN.png')
+        +activity-buttons('structure-number-table-EN.png')
       .organization-structure__personal.first(data-aos="fade-up")  
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Personnel breakdown by categories (people)
@@ -281,6 +285,7 @@ mixin organization-structure-EN
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-1.png')
+          +activity-buttons('structure-personale-1.png')
       .organization-structure__personal.second(data-aos="fade-up")
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Personnel breakdown by education (people)
@@ -300,6 +305,7 @@ mixin organization-structure-EN
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-2.png')
+          +activity-buttons('structure-personale-2.png')
       .organization-structure__personal(data-aos="fade-up") 
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Personnel breakdown by age (people)
@@ -320,6 +326,7 @@ mixin organization-structure-EN
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-3.png')
+          +activity-buttons('structure-personale-3.png')
       .organization-structure__personal(data-aos="fade-up") 
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Personnel breakdown by gender (people)
@@ -333,6 +340,7 @@ mixin organization-structure-EN
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-grafic 
             +picture('structure-personale-4.png')
+          +activity-buttons('structure-personale-4.png')
       .organization-structure__subrow(data-aos="fade-up") 
         .organization-structure__subcol(data-aos="fade-up") 
           .organization-structure__subcol-title In 2022, a number of UTLC&nbsp;ERA’s internal regulations were amended, with the following documents updated and approved:
@@ -427,13 +435,14 @@ mixin organization-structure-CN
       .organization-structure__title 截至2022年12月31日UTLC&nbsp;ERA组织结构图
       .organization-structure__img-container(data-aos="fade-up")
         .organization-structure__img-table(data-aos="fade-up") 
-          +picture('organization-structure-img.png')
+          +picture('organization-structure-img-CN.png')
         .ge-card.green.desktop(data-aos="fade-up") 
           .ge-card__top.gap-8
             .ge-card__num.green.countup-element(data-countup='170')
             .ge-card__text.number-animate-170.number-animate 单元 
           .ge-card__bot
             .ge-card__text-grey.custom-cuchurina 人数
+      +activity-buttons('organization-structure-img-CN.png')
       .ge-card.green.mobile
         .ge-card__top.gap-8
           .ge-card__num.green.countup-element(data-countup='170')
@@ -445,8 +454,9 @@ mixin organization-structure-CN
         .organization-structure__number-table.desktop(data-aos="fade-up")
           +picture('structure-number-table.png')
         +activity-buttons('structure-number-table.png').flex-desktop
-        .organization-structure__number-table.mobile(data-aos="fade-up")
-          +picture('structure-number-table-mobile.png')
+        .organization-structure__number-container
+          .organization-structure__number-table.mobile(data-aos="fade-up")
+            +picture('structure-number-table-mobile.png')
         +activity-buttons('structure-number-table-mobile.png').flex-m
       .organization-structure__personal.first(data-aos="fade-up")  
         .organization-structure__personal-col(data-aos="fade-up") 
