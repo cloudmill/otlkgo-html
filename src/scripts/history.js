@@ -78,14 +78,28 @@ function groupByDate(history) {
 }
 
 function clearHistory() {
+  console.log('done')
   localStorage.removeItem('history');
   displayHistory();
 }
 
+
 const clearHistoryButton = document.querySelector('.header-history__clear');
 clearHistoryButton.addEventListener('click', clearHistory);
+
+
+// $('.header-history__clear').on('click', function() {
+//   console.log('done')
+// })
+
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
+  console.log(clearHistoryButton)
   const currentPage = window.location.pathname;
   addToHistory(currentPage);
   displayHistory();
 });
+
+
