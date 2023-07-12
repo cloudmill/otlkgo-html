@@ -1,16 +1,120 @@
-@import "./utils/*";
+@import './utils/*';
 
-@import "./components/*";
+@import './components/*';
 
-@import "./pages/*";
-@import "../select2.scss";
-
-
+@import './pages/*';
+@import '../select2.scss';
 
 .f-button svg {
   stroke: #4b514d !important;
 
   &:hover {
     stroke: black !important;
+  }
+}
+//////////////////
+.print-gap {
+  page-break-before: always;
+}
+
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  .who-we .reference-subrow__col.icons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #section-who-we-mission {
+    page-break-before: always;
+  }
+  .who-we__achievement-img {
+    display: none;
+  }
+  .appeal-line {
+    display: none;
+  }
+  .who-we__appeal .appeal-col:nth-child(1) {
+    max-width: 100%;
+  }
+  .appeal-svg {
+    display: none;
+  }
+  .who-we__appeal .appeal-col:nth-child(2) {
+    padding-top: 10px;
+  }
+  .indicators-finance picture {
+    width: auto;
+    height: auto;
+  }
+  .who-we__trains-bot {
+    justify-content: start;
+  }
+  .geography__box {
+    height: auto;
+  }
+  .geography__box picture {
+    width: auto;
+  }
+  .chinese-forecast__grafic {
+    width: 100%;
+  }
+  .chinese-forecast__grafic-left {
+    width: 100%;
+  }
+  .key-forecast__subsection-container,
+  .mutal-trade__balance-container,
+  .transit-volume__svg,
+  .transit-china__img,
+  .transit-value__img,
+  .transit-export__svg,
+  .marshrute-speed__footer-container,
+  .control-structure__img-container,
+  .incorporated-accrued__img-container,
+  .reward-table__img {
+    padding-left: 0;
+    margin-left: 0;
+    width: auto;
+  }
+  .trends-volume-img {
+    width: auto;
+  }
+  picture {
+    width: auto !important;
+    height: auto !important;
+  }
+  .marshrute-speed__subsection-vector {
+    height: auto;
+  }
+  .marshrute-speed__footer-vector {
+    height: auto !important;
+  }
+  .organization-structure__img-container {
+    margin-left: 0;
+  }
+  .organization-structure__personal-grafic {
+    height: auto;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+  .control-structure__img,
+  .incorporated-accrued__img,
+  .alt-preview__img {
+    height: auto;
+    width: auto;
+  }
+  .risk-analysis__item-img {
+    display: none;
+  }
+  .risk-analysis__item {
+    padding-bottom: 0;
+  }
+  .risk-process__img {
+    height: auto;
+  }
+  .applications {
+    margin-top: 20px !important;
   }
 }

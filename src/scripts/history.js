@@ -45,7 +45,9 @@ function displayHistory() {
         <div class="header-history__time-list">${historyItems}</div>
       </div>
     `;
+
     historyContainer.innerHTML += historyBlock;
+    console.log(historyContainer);
   }
 }
 
@@ -86,4 +88,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const currentPage = window.location.pathname;
   addToHistory(currentPage);
   displayHistory();
+  console.info('asdfasdf');
 });

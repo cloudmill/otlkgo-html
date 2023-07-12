@@ -111,10 +111,6 @@
       }
     }
 
-    // @media print {
-    //   height: 100%;
-    // }
-
     &-background {
       position: absolute;
       width: 100%;
@@ -235,9 +231,9 @@
       margin-top: auto;
     }
 
-    @media print {
-      height: 600px !important;
-    }
+    // @media print {
+    //   height: 600px !important;
+    // }
   }
 
   &__texts {
@@ -636,16 +632,16 @@
   }
 }
 
-@media print {
-  .report-hero__portrait {
-    height: 600px !important;
+// @media print {
+//   .report-hero__portrait {
+//     height: 600px !important;
 
-    picture {
-      height: 600px !important;
+//     picture {
+//       height: 600px !important;
 
-      img {
-        height: 600px !important;
-      }
-    }
-  }
-}
+//       img {
+//         height: 600px !important;
+//       }
+//     }
+//   }
+// }

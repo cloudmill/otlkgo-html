@@ -26,7 +26,9 @@
       width: 100%;
 
       overflow: hidden;
-
+      @media print {
+        display: none !important;
+      }
       &::before {
         content: '';
         position: absolute;
@@ -50,14 +52,16 @@
 
         transition: opacity $transition;
         animation: leftToRight 2s $transition-timing-function infinite forwards;
-        animation-delay: 2s,
-          1.5s;
-        background: linear-gradient(270deg, color(green) 0%, rgba(255, 255, 255, 0) 79.69%);
+        animation-delay: 2s, 1.5s;
+        background: linear-gradient(
+          270deg,
+          color(green) 0%,
+          rgba(255, 255, 255, 0) 79.69%
+        );
       }
     }
 
     &-title {
-
       @media #{media("<", m)} {
         margin-bottom: 20px;
       }
@@ -145,14 +149,11 @@
       }
     }
 
-    &-boxes{
-
+    &-boxes {
       @media #{media("<", t)} {
         width: 400px;
       }
     }
-
-
 
     &-number {
       position: relative;
@@ -161,7 +162,7 @@
       font-size: 160px;
       line-height: 80%;
       letter-spacing: -0.08em;
-      color: #045C25;
+      color: #045c25;
 
       @media #{media("<", t)} {
         font-size: 90px;
@@ -202,9 +203,7 @@
     @media #{media("<", m)} {
       height: auto;
     }
-
   }
-
 
   &__parallax-img {
     display: flex;
@@ -227,6 +226,9 @@
     @media #{media(">", l)} {
       height: auto;
     }
+    @media print {
+      display: none !important;
+    }
 
     @media #{media("<", m)} {
       position: relative;
@@ -243,7 +245,7 @@
 
   .new-horizonts {
     padding-top: 20px;
-    border-top: 1px solid #045C25;
+    border-top: 1px solid #045c25;
 
     @media #{media("<", m)} {
       margin-top: 40px;
@@ -251,7 +253,6 @@
     }
 
     &__title {
-
       @media #{media("<", m)} {
         margin-bottom: 20px;
       }
@@ -284,7 +285,7 @@
 
   .reference {
     margin-top: 100px;
-    border-top: 1px solid #69DA91;
+    border-top: 1px solid #69da91;
     padding-top: 20px;
 
     @media #{media("<", m)} {
@@ -344,13 +345,12 @@
     }
 
     &-subrow {
-
       display: flex;
       gap: 40px;
 
       &.custom-first {
         margin-top: 100px;
-        border-top: 1px solid #045C25;
+        border-top: 1px solid #045c25;
         padding-top: 20px;
 
         @media #{media("<", t)} {
@@ -418,7 +418,7 @@
           line-height: 100%;
           letter-spacing: -0.06em;
           text-transform: uppercase;
-          color: #727A75;
+          color: #727a75;
         }
 
         &-textgrey {
@@ -427,7 +427,7 @@
           font-weight: 400;
           font-size: 15px;
           line-height: 160%;
-          color: #727A75;
+          color: #727a75;
 
           @media #{media("<", m)} {
             margin-top: 12px;
@@ -443,10 +443,9 @@
 
         &.custom-lightgreen {
           padding-top: 20px;
-          border-top: 1px solid #69DA91;
+          border-top: 1px solid #69da91;
         }
       }
-
 
       &__col {
         &.icons {
@@ -462,8 +461,6 @@
       }
 
       &__item {
-
-
         &:nth-child(1) {
           margin-right: 54px;
 
@@ -596,11 +593,10 @@
           font-weight: 400;
           font-size: 12px;
           line-height: 150%;
-          color: #727A75;
+          color: #727a75;
         }
       }
     }
-
 
     &-mission {
       margin-top: 100px;
@@ -638,7 +634,7 @@
           font-size: 14px;
           line-height: 150%;
           text-align: center;
-          color: #727A75;
+          color: #727a75;
 
           @media #{media("<", m)} {
             margin: 0px;
@@ -676,9 +672,8 @@
 
   &__achievement {
     margin-top: 100px;
-    border-top: 1px solid #69DA91;
+    border-top: 1px solid #69da91;
     padding-top: 20px;
-
 
     @media #{media("<", m)} {
       margin-top: 40px;
@@ -751,13 +746,12 @@
       }
 
       &.light-green {
-        border-top: 2px solid #69DA91;
+        border-top: 2px solid #69da91;
       }
 
       &.green {
-        border-top: 2px solid #045C25;
+        border-top: 2px solid #045c25;
       }
-
 
       @media #{media("<", d)} {
         height: 226px;
@@ -769,7 +763,7 @@
         min-height: 93px;
       }
 
-      @media (max-width:350px) {
+      @media (max-width: 350px) {
         min-height: 140px;
       }
     }
@@ -805,7 +799,7 @@
     margin-top: 100px;
     padding-top: 20px;
 
-    border-top: 1px solid #69DA91;
+    border-top: 1px solid #69da91;
 
     @media #{media("<", m)} {
       margin-top: 40px;
@@ -839,8 +833,6 @@
     }
 
     .report {
-
-
       &-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -870,7 +862,6 @@
       }
 
       &__text {
-
         font-weight: 400;
         font-size: 15px;
         line-height: 160%;
@@ -899,7 +890,7 @@
           padding-left: 28px;
 
           &::before {
-            content: "";
+            content: '';
             display: block;
             position: absolute;
             left: 0px;
@@ -941,7 +932,7 @@
       &__protocol {
         padding-top: 12px;
 
-        border-top: 1px solid #045C25;
+        border-top: 1px solid #045c25;
 
         &-item {
           margin-bottom: 12px;
@@ -953,9 +944,7 @@
         }
       }
     }
-
   }
-
 
   &__appeal {
     margin-top: 100px;
@@ -976,7 +965,7 @@
           gap: 0px;
         }
 
-        @media (min-width:768px) and (max-width: 1025px) {
+        @media (min-width: 768px) and (max-width: 1025px) {
           padding: 0px;
         }
 
@@ -995,14 +984,14 @@
           height: 988px;
           overflow: hidden;
 
-          background: #F4F4F4;
+          background: #f4f4f4;
 
           @media #{media("<", d)} {
             max-width: 521px;
             height: 714px;
           }
 
-          @media (min-width:768px) and (max-width: 1025px) {
+          @media (min-width: 768px) and (max-width: 1025px) {
             width: 50%;
             height: 515px;
             flex-shrink: 0;
@@ -1025,7 +1014,7 @@
 
           border: 1px solid color(borders);
 
-          @media (min-width:768px) and (max-width: 1280px) {
+          @media (min-width: 768px) and (max-width: 1280px) {
             padding: 110px 20px 84px 20px;
             height: auto;
             width: 50%;
@@ -1045,13 +1034,12 @@
         width: 720px;
         height: 780px;
 
-
         @media #{media("<", d)} {
           width: 521px;
           height: 559px;
         }
 
-        @media (min-width:768px) and (max-width: 1025px) {
+        @media (min-width: 768px) and (max-width: 1025px) {
           width: 100%;
           height: 413px;
         }
@@ -1116,17 +1104,21 @@
           height: 2px;
 
           transition: opacity $transition;
-          animation: leftToRight 2s $transition-timing-function infinite forwards;
-          animation-delay: 2s,
-            1.5s;
-          background: linear-gradient(270deg, color(green) 0%, rgba(255, 255, 255, 0) 79.69%);
+          animation: leftToRight 2s $transition-timing-function infinite
+            forwards;
+          animation-delay: 2s, 1.5s;
+          background: linear-gradient(
+            270deg,
+            color(green) 0%,
+            rgba(255, 255, 255, 0) 79.69%
+          );
         }
 
         @media #{media("<", d)} {
           width: 90%;
         }
 
-        @media (min-width:768px) and (max-width: 1025px) {
+        @media (min-width: 768px) and (max-width: 1025px) {
           top: 12px;
         }
 
@@ -1140,7 +1132,7 @@
         margin-top: 61px;
         margin-left: 40px;
 
-        @media (min-width:768px) and (max-width: 1025px) {
+        @media (min-width: 768px) and (max-width: 1025px) {
           margin-top: 20px;
           margin-left: 12px;
         }
@@ -1165,15 +1157,13 @@
           letter-spacing: -0.03em;
           text-transform: uppercase;
           color: color(dark);
-
-
         }
 
         &__job {
           font-weight: 500;
           font-size: 14px;
           line-height: 150%;
-          color: #727A75;
+          color: #727a75;
         }
 
         @media #{media("<", d)} {
@@ -1190,7 +1180,7 @@
         }
 
         &.desktop {
-          @media (min-width:768px) and (max-width: 1025px) {
+          @media (min-width: 768px) and (max-width: 1025px) {
             display: none;
           }
         }
@@ -1198,7 +1188,7 @@
         &.devices {
           display: none;
 
-          @media (min-width:768px) and (max-width: 1025px) {
+          @media (min-width: 768px) and (max-width: 1025px) {
             display: block;
             margin-left: 0px;
             padding-top: 20px;
@@ -1228,7 +1218,7 @@
       &-text {
         margin-bottom: 12px;
 
-        @media (min-width:768px) and (max-width: 1025px) {
+        @media (min-width: 768px) and (max-width: 1025px) {
           font-size: rem(12px);
           line-height: 160%;
         }
@@ -1241,7 +1231,6 @@
         font-size: 20px;
         line-height: 150%;
         color: color(dark);
-
 
         @media #{media("<", t)} {
           margin-bottom: 8px;
@@ -1257,7 +1246,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 160%;
-        color: #727A75;
+        color: #727a75;
 
         @media #{media("<", t)} {
           font-size: rem(12px);
@@ -1292,7 +1281,7 @@
           right: 60px;
           bottom: 30px;
 
-          @media (min-width:768px) and (max-width: 1025px) {
+          @media (min-width: 768px) and (max-width: 1025px) {
             right: 264px;
             bottom: 20px;
 
