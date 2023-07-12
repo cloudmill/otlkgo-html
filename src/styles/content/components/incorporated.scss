@@ -430,7 +430,7 @@
     &__img{
       @media #{media("<", m)} {
         width: rem(523px);
-        height: rem(265px);
+        height: auto;
 
         picture{
           img{

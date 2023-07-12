@@ -1,36 +1,36 @@
-//- extends ../app
-//- include ../components/section/security-content
-//- include ../components/section/ecology-content
-//- include ../components/section/purchase-content
-//- include ../components/section/charity-content
+extends ../app
+include ../components/section/security-content
+include ../components/section/ecology-content
+include ../components/section/purchase-content
+include ../components/section/charity-content
 
-//- include ../components/section/report-hero
-//- include ../components/section/report-hero-layout
-//- include ../components/section/corporate-responsibility
-//- include ../components/section/human-capital
-//- block header 
-//-   +header-EN
-//- block variables
-//-   -const title = 'Sustainable development'
-//- block content
-//-   +sidebar-EN
-//-   +report-hero-4-EN
-//-   +human-capital-EN
-//-   +preview('','Irina','Kuchurina ','Chief Specialist for HR Administration','cuchurina-preview.png')(data-aos="fade-up")
-//-     .cuchurina 
-//-       p.cuchurina__text.text_big In 2022, the company hired 27 people, which is 4 people, or 12.5%, more than in 2021. 9 people were dismissed.
-//-       .item
-//-         .item__row 
-//-           .item__col 
-//-             p.item__number.flex
-//-               span.countup-element(data-countup='5')
-//-               span ,
-//-               span.countup-element(data-countup='88' data-countup-suffix='%')
-//-           .item__col 
-//-             p.item__grey 
-//-         .item__row 
-//-           p.item__subtext staff turnover ratio in 2022,<br> with the standard ratio of 5-7%
-//-   +organization-structure-EN
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/section/corporate-responsibility
+include ../components/section/human-capital
+block header 
+  +header-EN
+block variables
+  -const title = 'Sustainable development'
+block content
+  +sidebar-EN
+  +report-hero-4-EN
+  +human-capital-EN
+  +preview('','Irina','Kuchurina ','Chief Specialist for HR Administration','cuchurina-preview.png')(data-aos="fade-up")
+    .cuchurina 
+      p.cuchurina__text.text_big In 2022, the company hired 27 people, which is 4 people, or 12.5%, more than in 2021. 9 people were dismissed.
+      .item
+        .item__row 
+          .item__col 
+            p.item__number.flex
+              span.countup-element(data-countup='5')
+              span ,
+              span.countup-element(data-countup='88' data-countup-suffix='%')
+          .item__col 
+            p.item__grey 
+        .item__row 
+          p.item__subtext staff turnover ratio in 2022,<br> with the standard ratio of 5-7%
+  +organization-structure-EN
 //-   +preview('Corporate Social Responsibility','Elena','Schmidt','Chief Specialist for Internal Communication','shmidt.png').custom-id(id="preview-corporate-responsibility") 
 //-   +corporate-responsibility-EN
 //-   +preview('Occupational and Fire Safety','Tarasova','Galina','Deputy Director of Administrative Department','tarasova.png').custom-id(id="preview-security-content")  

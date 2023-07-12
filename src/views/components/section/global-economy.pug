@@ -78,9 +78,10 @@ mixin global-economy
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/" target="blank") Национальное статистическое бюро Китая
         .chinese-economy__quarter-container
-          .chinese-economy__quarter-vector.desktop 
+          .chinese-economy__quarter-vector.desktop
             +picture('quarter-vector.png')
         +activity-buttons('quarter-vector.png').flex-desktop
+        .chinese-economy__quarter-container
           .chinese-economy__quarter-vector.mobile 
             +picture('quarter-vector-mobile.png')
         +activity-buttons('quarter-vector-mobile.png').flex-m
@@ -815,6 +816,7 @@ mixin global-economy-EN
           h4.macroeconomics-grafics__col-title Global GDP Growth in 2022
           .macroeconomics-grafics__col-img 
             +picture('macro-grafic1.png')
+          +activity-buttons('macro-grafic1.png')
           .macroeconomics-grafics__col-links.first
             .macroeconomics-grafics__col-text Source: 
               span.macroeconomics-grafics__col-list 
@@ -827,6 +829,7 @@ mixin global-economy-EN
           h4.macroeconomics-grafics__col-title.second Global GDP growth forecast for 2023
           .macroeconomics-grafics__col-img 
             +picture('macro-grafic2.png')
+          +activity-buttons('macro-grafic2.png')
           .macroeconomics-grafics__col-links.second
             .macroeconomics-grafics__col-text Source: 
               span.macroeconomics-grafics__col-list 
@@ -844,6 +847,7 @@ mixin global-economy-EN
           h4.chinese-economy__hero-subtitle Annual Chinese GNP Growth, 2022 to 2023 (%)
           .chinese-economy__hero-grafic 
             +picture('chinese-eco-grafic1-EN.png')
+          
           .macroeconomics-grafics__col-links.chinese
             .macroeconomics-grafics__col-text.chinese Source: 
               span.macroeconomics-grafics__col-list 
@@ -864,12 +868,17 @@ mixin global-economy-EN
         .chinese-economy__quarter-container
           .chinese-economy__quarter-vector.desktop 
             +picture('quarter-vector.png')
+        
+        .chinese-economy__quarter-container
           .chinese-economy__quarter-vector.mobile 
             +picture('quarter-vector-mobile.png')
+          
         .macroeconomics-grafics__col-links.quarter.mobile
           .macroeconomics-grafics__col-text Source: 
             span.macroeconomics-grafics__col-list 
               a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/" target="blank") National Bureau of Statistics of China
+        +activity-buttons('quarter-vector.png').flex-desktop
+        +activity-buttons('quarter-vector-mobile.png').flex-m
         .chinese-economy__quarter-row 
           .chinese-economy__quarter-col 
             .ge-card.green.upper
@@ -910,6 +919,7 @@ mixin global-economy-EN
           .chinese-forecast__subtitle-small.mg-bot30 Year-to-Year Retail Trade Volume Profile, 2020 to 2022
           .chinese-forecast__grafic-left 
             +picture('chinese-forecast-vector2.png')
+          +activity-buttons('chinese-forecast-vector2.png')
         .chinese-forecast__col(data-aos="fade-up")
           h4.chinese-forecast__subtitle Rapid recovery starting from the second quarter
           .chinese-forecast__text.margin-small In the first quarter of 2023, the national economy will be adversely affected by COVID. Most of China’s population is reported to be previously infected by January, hence any repeated strong outbursts are less likely during the year. As a result, economic activity and consumption may rapidly recover starting from the second quarter triggered by the potential improvement of the epidemiological situation, release of excess savings in the household sector, and the government’s incentives.
@@ -948,6 +958,7 @@ mixin global-economy-EN
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('eco-europe-vector.png')
     section(data-aos="fade-up").key-forecast(id="section-ge-key") 
       h2.key-forecast__title Key Forecasts for European Union
       .key-forecast__row.top
@@ -1010,6 +1021,7 @@ mixin global-economy-EN
           .key-forecast__dinamic2-lefttitle Retail Trade Volume Profile, 2020 to 2022
           .key-forecast__dinamic2-vector.left
             +picture('dinamic-vector-left.png')
+          +activity-buttons('dinamic-vector-left.png')
         .key-forecast__dinamic2-col(data-aos="fade-up")
           .key-forecast__dinamic2-righttitle Year-to-Year Industrial Production Profile, 2020 to 2022
           .key-forecast__dinamic2-vector.right
@@ -1531,23 +1543,27 @@ mixin global-economy-EN
       .mutal-trade__export(data-aos="fade-up") 
         .mutal-trade__export-title China–Europe Export Using Main Transportation Modes, 2021 to 2022 (% of value trade)
         .mutal-trade__export-vector.custom-desktop
-          +picture('mutal-trade-export.png')
+          +picture('mutal-trade-export-EN.png')
         .mutal-trade__export-vector.custom-mobile
-          +picture('mutal-trade-ex-mobile1.png')
+          +picture('mutal-trade-ex-mobile1-EN.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('mutal-trade-export-EN.png').flex-desktop
+        +activity-buttons('mutal-trade-ex-mobile1-EN.png').flex-m
       .mutal-trade__export2(data-aos="fade-up") 
         .mutal-trade__export2-title Europe–China Export Using Main Transportation Modes, 2021 to 2022 (% of value trade)
         .mutal-trade__export2-vector.custom-desktop
-          +picture('mutal-trade-export2.png')
+          +picture('mutal-trade-export2-EN.png')
         .mutal-trade__export2-vector.custom-mobile
-          +picture('mutal-trade-ex-mobile2.png')
+          +picture('mutal-trade-ex-mobile2-EN.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
+        +activity-buttons('mutal-trade-export2-EN.png').flex-desktop
+        +activity-buttons('mutal-trade-ex-mobile2-EN.png').flex-m
     section(data-aos="fade-up").ge-results 
       .ge-results__rect 
         +result-plug-svg
@@ -1640,6 +1656,7 @@ mixin global-economy-CN
           .chinese-economy__quarter-vector.desktop 
             +picture('quarter-vector.png')
         +activity-buttons('quarter-vector.png').flex-desktop
+        .chinese-economy__quarter-container
           .chinese-economy__quarter-vector.mobile 
             +picture('quarter-vector-mobile.png')
         +activity-buttons('quarter-vector-mobile.png').flex-m

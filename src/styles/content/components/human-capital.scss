@@ -226,6 +226,28 @@
         line-height: 150%;
       }
     }
+
+    &-container{
+      &.en{
+        @media #{media("<", m)} {
+          width: calc(100% + 40px);
+          margin-left: -20px;
+          padding-left: 20px;
+          @include scrollbar-hidden();
+          overflow-x: scroll;
+        }
+      }
+      
+    }
+    &-table{
+      &.en{
+        @media #{media("<", m)} {
+          width: 1160px;
+          height: auto;
+        }
+      }
+      
+    }
   }
 
 
