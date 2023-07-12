@@ -10,12 +10,14 @@ include ../components/section/indicators
 include ../components/section/report-hero
 include ../components/section/report-hero-layout
 include ../components/section/who-we
+include ../components/bloks-ui/modal
 
 block header 
   +header
 block variables
   -const title = 'О компании'
 block content
+  +modal
   +sidebar
   +report-hero-about
   +who-we

@@ -1020,15 +1020,15 @@
     }
 
     &-grafic{
-      @media print {
-        height: 250px;
+      // @media print {
+      //   height: 250px;
 
-        picture{
-          img{
-            object-fit: contain;
-          }
-        }
-      }
+      //   picture{
+      //     img{
+      //       object-fit: contain;
+      //     }
+      //   }
+      // }
     }
 
   }

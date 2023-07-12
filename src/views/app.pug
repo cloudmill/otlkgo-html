@@ -9,9 +9,6 @@ include ./components/picture
 include ./components/header
 include ./components/overlay
 include ./components/sidebar
-
-//- include ./components/grid-test
-
 //section
 include ./components/preview/preview-2
 include ./components/section/search-results-blocks
@@ -53,11 +50,7 @@ html(lang='ru')
       block header
         +header
       main.main
-        //- +sidebar
+        +sidebar
         +overlay
         block content
-
-      //- block grid-test
-      //-   +grid-test
-
     block scripts

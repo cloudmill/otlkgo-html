@@ -2,7 +2,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #6BD895;
+    border-top: 1px solid #6bd895;
   }
 
   &__row {
@@ -42,7 +42,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
 
-    border-top: 1px solid #6BD895;
+    border-top: 1px solid #6bd895;
 
     .row {
       display: flex;
@@ -56,7 +56,7 @@
     flex-direction: column;
 
     .row {
-      gap: 20px
+      gap: 20px;
     }
   }
 
@@ -69,20 +69,20 @@
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    gap: 4px
+    gap: 4px;
   }
 
   &__formula {
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
-    color: #727A75;
+    color: #727a75;
   }
 
   &__link {
     font-size: 15px;
     line-height: 160%;
-    color: #727A75;
+    color: #727a75;
     cursor: pointer;
   }
 }
@@ -93,7 +93,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #6BD895;
+    border-top: 1px solid #6bd895;
   }
 
   &__title {
@@ -108,8 +108,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
-
-
 
     &_bottom {
       display: flex;
@@ -136,7 +134,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #6BD895;
+    border-top: 1px solid #6bd895;
   }
 
   &__row {
@@ -181,8 +179,7 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #045C25;
-    ;
+    border-top: 1px solid #045c25;
   }
 
   &__title {
@@ -203,14 +200,8 @@
   }
 
   &__img {
-    margin-top: -100px;
     max-width: 662px;
-
-    @media #{media('<',t)} {
-      margin-top: 0;
-    }
   }
-
 }
 
 .ecology-CO2 {
@@ -258,22 +249,21 @@
     border-radius: 4px;
 
     &_1 {
-      background: #045C25;
+      background: #045c25;
     }
 
     &_2 {
-      background: #69DA91;
+      background: #69da91;
     }
 
     &_3 {
-      background: #96BCA4;
+      background: #96bca4;
     }
 
     &_4 {
-      background: #E0EBE4;
+      background: #e0ebe4;
     }
   }
-
 }
 
 .ecology-grom {
@@ -282,14 +272,12 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    border-top: 1px solid #045C25;
-
+    border-top: 1px solid #045c25;
 
     @media #{media('<',t)} {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
-
   }
 
   &__img {
@@ -311,7 +299,7 @@
 
     @media #{media('<',t)} {
       grid-column: span 2;
-      gap: 20px
+      gap: 20px;
     }
 
     .col {
@@ -358,16 +346,15 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-    color: #727A75;
+    color: #727a75;
   }
-
 }
 
 .ecology-environment {
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #69DA91;
+    border-top: 1px solid #69da91;
   }
 
   &__row {
@@ -446,7 +433,7 @@
       font-size: 20px;
       line-height: 150%;
       text-align: center;
-      color: #727A75;
+      color: #727a75;
     }
   }
 
@@ -477,8 +464,8 @@
     padding-top: 40px;
     padding-bottom: 34px;
 
-    border: 1px solid #EDEDED;
-    border-top: 1px solid #6BD895;
+    border: 1px solid #ededed;
+    border-top: 1px solid #6bd895;
 
     .row {
       display: grid;
@@ -503,7 +490,7 @@
     font-size: 40px;
     line-height: 80%;
     letter-spacing: -0.08em;
-    color: #69DA91;
+    color: #69da91;
   }
 
   &__description {
@@ -526,10 +513,9 @@
   &__subtext {
     font-size: 12px;
     line-height: 150%;
-    color: #727A75;
+    color: #727a75;
   }
 }
-
 
 @media #{media('<',m)} {
   .ecology {
@@ -544,7 +530,7 @@
     }
 
     &__description {
-      max-width: 100%
+      max-width: 100%;
     }
   }
 
@@ -570,7 +556,7 @@
 
     &__right {
       .row {
-        gap: 20px
+        gap: 20px;
       }
     }
 
@@ -610,14 +596,12 @@
           &:nth-child(2) {
             margin-top: 0;
           }
-
         }
       }
 
       &_bottom {
         margin-top: 20px;
       }
-
     }
 
     &__list {
@@ -626,7 +610,6 @@
 
     &__description {
       max-width: 100%;
-
     }
 
     &__col {
@@ -656,7 +639,7 @@
     }
 
     &__description {
-      max-width: 100%
+      max-width: 100%;
     }
 
     sup {
@@ -690,9 +673,7 @@
     &__img {
       margin-top: 40px;
       max-width: 100%;
-
     }
-
   }
 
   .ecology-CO2 {
@@ -701,7 +682,7 @@
     &__bottom {
       padding-top: 12px;
 
-      border-top: 1px solid #045C25;
+      border-top: 1px solid #045c25;
 
       .row {
         margin-top: 20px;
@@ -743,22 +724,21 @@
       height: 15px;
 
       &_1 {
-        background: #045C25;
+        background: #045c25;
       }
 
       &_2 {
-        background: #69DA91;
+        background: #69da91;
       }
 
       &_3 {
-        background: #96BCA4;
+        background: #96bca4;
       }
 
       &_4 {
-        background: #E0EBE4;
+        background: #e0ebe4;
       }
     }
-
   }
 
   .ecology-grom {
@@ -783,7 +763,6 @@
         max-width: auto;
       }
 
-
       .row {
         &:nth-child(2) {
           display: flex;
@@ -807,7 +786,6 @@
     &__job {
       font-size: 12px;
     }
-
   }
 
   .ecology-environment {
@@ -848,7 +826,7 @@
     &__inner {
       display: flex;
       flex-direction: column;
-      gap: 20px
+      gap: 20px;
     }
 
     &__top,
@@ -863,7 +841,7 @@
     }
 
     &__top {
-      border-bottom: 1px solid #EDEDED;
+      border-bottom: 1px solid #ededed;
     }
 
     &__bottom-row {

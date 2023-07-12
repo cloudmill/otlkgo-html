@@ -136,6 +136,10 @@ mixin risk-content
             +picture('risk-process.png')
           .risk-process__img.mobile
             +picture('risk-process-mobile.png')
+          .risk-process-controls.desktop
+            +activity-buttons('risk-process.png')
+          .risk-process-controls.mobile
+            +activity-buttons('risk-process-mobile.png')
         .risk-process__box 
           .risk-process__item
             p.risk-process__item-description.description_big Планирование
@@ -165,6 +169,8 @@ mixin risk-content
           .col 
             .results__img 
               +picture('results.png')
+              +activity-buttons('results.png')
+  
   section(data-aos="fade-up").results-bottom.mt-section
     .container-content 
       .results-bottom__inner 
@@ -180,7 +186,7 @@ mixin risk-content
                     p.text.list-number__text!=item 
             .row
               .results-bottom__message
-                +message-block('В целях снижения уровня рисков и последствий от их возможной реализации мы  разработали и утвердили план мероприятий по воздействию на риски ОТЛК&nbsp;ЕРА на 2022 год. Наиболее важными в 2022 году были мероприятия по развитию экспортных и импортных перевозок, которые позволили компенсировать негативный эффект от вызванного геополитическим противостоянием снижения транзита Китай-ЕС-Китай.')
+                +message-block('В целях снижения уровня рисков и последствий от их возможной реализации мы  разработали и утвердили план мероприятий по воздействию на риски ОТЛК&nbsp;ЕРА на 2022 год. Наиболее важными в 2022 году были мероприятия по развитию экспортных и импортных перевозок, которые позволили компенсировать негативный эффект от вызванного геополитическим противостоянием снижения транзита Китай-Европа-Китай.')
         .results-bottom__row
           .results-bottom__left 
             p.results-bottom__subtitle.title-24 Из 52 выявленных рисков реализовались 7, <br class='br'>в том числе 3 ключевых:
@@ -199,18 +205,18 @@ mixin risk-content-EN
     .container-content 
       .risk__inner 
         .risk__left
-          p.risk__desciption.description In view of the high geopolitical tension, the Management Board of UTLC ERA resolved to set up a comprehensive risk management system.
+          p.risk__desciption.description In view of the high geopolitical tension, the Management Board of UTLC&nbsp;ERA resolved to set up a comprehensive risk management system.
         .col 
           ul.list
             li
               +mark-text-svg.list-svg
-              p.text.list__text A risk management team was formed (UTLC ERA Order No. 64 dated December 24, 2021).
+              p.text.list__text A risk management team was formed (UTLC&nbsp;ERA Order No. 64 dated December 24, 2021).
             li
               +mark-text-svg.list-svg
-              p.text.list__text UTLC ERA’s risk management policy was approved (BoD Minutes No. 52 dated May 11, 2022).
+              p.text.list__text UTLC&nbsp;ERA’s risk management policy was approved (BoD Minutes No. 52 dated May 11, 2022).
             li
               +mark-text-svg.list-svg
-              p.text.list__text UTLC ERA’s Risk Management Regulations and Recommended Risk Management Practices were approved on May 11, 2022.
+              p.text.list__text UTLC&nbsp;ERA’s Risk Management Regulations and Recommended Risk Management Practices were approved on May 11, 2022.
             li
               +mark-text-svg.list-svg
               p.text.list__text Training was held for a wide audience of employees involved in the risk management processes. 
@@ -415,6 +421,10 @@ mixin risk-content-EN
             +picture('risk-process-EN.png')
           .risk-process__img.mobile
             +picture('risk-process-mobile-EN.png')
+          .risk-process__control.desktop
+            +activity-buttons('risk-process-EN.png')
+          .risk-process__control.mobile
+            +activity-buttons('risk-process-mobile-EN.png')
         .risk-process__box 
           .risk-process__item
             p.risk-process__item-description.description_big Планирование
@@ -440,10 +450,11 @@ mixin risk-content-EN
         h2.results__title Results for 2022
         .results__row 
           .col 
-            .results__description.description_big In 2022, UTLC ERA identified 52 risks, including 12 key risks deemed highly probable and material:
+            .results__description.description_big In 2022, UTLC&nbsp;ERA identified 52 risks, including 12 key risks deemed highly probable and material:
           .col 
             .results__img 
               +picture('results-EN.png')
+              +activity-buttons('results-EN.png')
   section(data-aos="fade-up").results-bottom.mt-section
     .container-content 
       .results-bottom__inner 
@@ -461,7 +472,7 @@ mixin risk-content-EN
                   p.text.list-number__text Risk of reduction/stagnation of traffic volumes in the corridor via Kazakhstan 
                 li.results-bottom__list-li
                   p.list-number__number.results-bottom__list-number 3.
-                  p.text.list-number__text Risk of amendments to the railway transit service terms in the UTLC ERA member countries
+                  p.text.list-number__text Risk of amendments to the railway transit service terms in the UTLC&nbsp;ERA member countries
                 li.results-bottom__list-li
                   p.list-number__number.results-bottom__list-number 4.
                   p.text.list-number__text Risk of closure/partial operating limitations of the checkpoints on the EU border
@@ -491,7 +502,7 @@ mixin risk-content-EN
                   p.text.list-number__text Risk of non-applicability of special tariff terms.
             .row
               .results-bottom__message
-                +message-block('To mitigate the risks and the consequences of potential risk realization scenarios, we developed and approved UTLC ERA’s risk mitigation plan for 2022. The key priorities for 2022 were the export and import traffic development actions, which helped make up for the adverse impact of reduced China–EU–China transit volume caused by geopolitical confrontation')
+                +message-block('To mitigate the risks and the consequences of potential risk realization scenarios, we developed and approved UTLC&nbsp;ERA’s risk mitigation plan for 2022. The key priorities for 2022 were the export and import traffic development actions, which helped make up for the adverse impact of reduced China–EU–China transit volume caused by geopolitical confrontation')
         .results-bottom__row
           .results-bottom__left 
             p.results-bottom__subtitle.title-24 Out of 52 identified risks, 7 were realized, <br class='br'>including 3 key risks:
@@ -527,10 +538,10 @@ mixin risk-content-CN
     .container-content 
       .risk__inner 
         .risk__left
-          p.risk__desciption.description 考虑到高度的地缘政治紧张局势，UTLC ERA董事会决定形成一个成熟的风险管理体系。
+          p.risk__desciption.description 考虑到高度的地缘政治紧张局势，UTLC&nbsp;ERA董事会决定形成一个成熟的风险管理体系。
         .col 
           ul.list
-            each item in ['成立了实施风险管理系统的工作组（UTLC ERA2021年12月24日第64号命令）。','UTLC ERA风险管理政策（董事会会议纪要，2022年5月11日第52号）获得批准。',' 2022年5月11日批准了UTLC ERA风险管理法规和风险管理方法建议。','对参与风险管理流程的广泛工作人员进行了培训。 ',]
+            each item in ['成立了实施风险管理系统的工作组（UTLC&nbsp;ERA2021年12月24日第64号命令）。','UTLC&nbsp;ERA风险管理政策（董事会会议纪要，2022年5月11日第52号）获得批准。',' 2022年5月11日批准了UTLC&nbsp;ERA风险管理法规和风险管理方法建议。','对参与风险管理流程的广泛工作人员进行了培训。 ',]
               li
                 +mark-text-svg.list-svg
                 p.text.list__text!=item 
@@ -660,6 +671,10 @@ mixin risk-content-CN
             +picture('risk-process-CN.png')
           .risk-process__img.mobile
             +picture('risk-process-mobile-CN.png')
+          .risk-process__control.desktop
+            +activity-buttons('risk-process-CN.png')
+          .risk-process__control.mobile
+            +activity-buttons('risk-process-mobile-CN.png')
         .risk-process__box 
           .risk-process__item
             p.risk-process__item-description.description_big Планирование
@@ -685,10 +700,11 @@ mixin risk-content-CN
         h2.results__title 2022年度成果
         .results__row 
           .col 
-            .results__description.description_big 2022年，UTLC ERA确定了52项风险其中12个是关键风险，即，具有很高的可能性和物质利益：
+            .results__description.description_big 2022年，UTLC&nbsp;ERA确定了52项风险其中12个是关键风险，即，具有很高的可能性和物质利益：
           .col 
             .results__img 
               +picture('results-CN.png')
+              +activity-buttons('results-CN.png')
   section(data-aos="fade-up").results-bottom.mt-section
     .container-content 
       .results-bottom__inner 
@@ -698,13 +714,13 @@ mixin risk-content-CN
           .col
             .row 
               ul.list-number.list
-                each item,index in ['公司/伙伴国和过境国的政治不稳定风险；','通过哈萨克斯坦的走廊运输量下降/停滞的风险；','UTLC ERA参与国家过境运输条件发生变化的风险；','关闭/部分限制与欧盟接壤的过境点的风险；','树立负面公司形象的风险；','1520铁路基础设施重大故障/限制的风险；','集装箱货物流动不平衡加剧的风险；','无法付款的风险；','银行不履行结算和现金服务义务的风险；','数据失真/不可用或丢失、信息安全事件导致IT不可用的风险；','外汇风险；','不适用特殊关税条件的风险',]
+                each item,index in ['公司/伙伴国和过境国的政治不稳定风险；','通过哈萨克斯坦的走廊运输量下降/停滞的风险；','UTLC&nbsp;ERA参与国家过境运输条件发生变化的风险；','关闭/部分限制与欧盟接壤的过境点的风险；','树立负面公司形象的风险；','1520铁路基础设施重大故障/限制的风险；','集装箱货物流动不平衡加剧的风险；','无法付款的风险；','银行不履行结算和现金服务义务的风险；','数据失真/不可用或丢失、信息安全事件导致IT不可用的风险；','外汇风险；','不适用特殊关税条件的风险',]
                   li.results-bottom__list-li
                     p.list-number__number.results-bottom__list-number!=index+1 + '.'
                     p.text.list-number__text!=item 
             .row
               .results-bottom__message
-                +message-block('为了降低风险水平及其可能实施的后果，我们制定并通过了2022年UTLC ERA风险影响措施计划。2022年最重要的是发展进出口运输的措施，这抵消了地缘政治对抗导致中欧中转运下降的负面影响。')
+                +message-block('为了降低风险水平及其可能实施的后果，我们制定并通过了2022年UTLC&nbsp;ERA风险影响措施计划。2022年最重要的是发展进出口运输的措施，这抵消了地缘政治对抗导致中欧中转运下降的负面影响。')
         .results-bottom__row
           .results-bottom__left 
             p.results-bottom__subtitle.title-24 在确定的52个风险中，7个已得到执行 <br class='br'>重点3项：

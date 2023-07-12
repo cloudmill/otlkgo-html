@@ -1,6 +1,6 @@
 mixin activity-buttons(src) 
   .activity-buttons&attributes(attributes)
-    a.activity-buttons__item.button-increase.fancy-button(data-fancy=`assets/images/${src}`)
+    .activity-buttons__item.button-increase.fancy-button(data-fancy=`assets/images/${src}`)
       +search-plus-svg
     a.activity-buttons__download.activity-buttons__item(href=`assets/images/${src}` download)
       +header-download-svg
