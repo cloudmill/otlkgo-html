@@ -17,11 +17,10 @@ function getHistory() {
   const historyString = localStorage.getItem('history');
   return historyString ? JSON.parse(historyString) : [];
 }
-function displayHistory() {
-  const historyContainer = document.querySelector('.header-history__list');
-  console.log(historyContainer);
 
-  historyContainer.innerHTML = '';
+function displayHistory() {
+  const historyContainer = $('.header-history__list');
+  historyContainer.empty();
   const history = getHistory();
   const groupedHistory = groupByDate(history);
 
@@ -48,7 +47,7 @@ function displayHistory() {
       </div>
     `;
 
-    historyContainer.innerHTML += historyBlock;
+    historyContainer.append(historyBlock);
   }
 }
 
@@ -80,11 +79,13 @@ function groupByDate(history) {
 function clearHistory() {
   localStorage.removeItem('history');
   displayHistory();
+  console.info('asdf');
 }
 
-const clearHistoryButton = document.querySelector('.header-history__clear');
-clearHistoryButton.addEventListener('click', clearHistory);
-window.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function () {
+  const clearHistoryButton = $('.header-history__clear');
+  clearHistoryButton.on('click', clearHistory);
+
   const currentPage = window.location.pathname;
   addToHistory(currentPage);
   displayHistory();

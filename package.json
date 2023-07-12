@@ -53,6 +53,7 @@
     "aos": "^3.0.0-beta.6",
     "countup.js": "^2.6.2",
     "jquery": "^3.6.4",
+    "lazysizes": "^5.3.2",
     "moment": "^2.29.4",
     "normalize.css": "^8.0.1",
     "parallax-js": "^3.1.0",
