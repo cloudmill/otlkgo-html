@@ -7,7 +7,6 @@
   width: 100%;
   height: 707px;
 
-
   @media (min-width: 1025px) {
     margin-top: 84px;
     width: 100%;
@@ -102,7 +101,7 @@
       width: 100%;
 
       &:nth-child(1) {
-        background: #F4F4F4;
+        background: #f4f4f4;
         height: auto;
       }
 
@@ -124,7 +123,6 @@
       left: 0px;
       display: none;
 
-
       @media #{media("<", m)} {
         z-index: -1;
         display: block;
@@ -140,8 +138,6 @@
       }
     }
 
-
-
     &.main-left {
       display: flex;
       flex-direction: column;
@@ -151,9 +147,7 @@
       padding: 40px;
       position: relative;
 
-
-      background: #69DA91;
-
+      background: #69da91;
 
       @media #{media('<', m)} {
         width: 100%;
@@ -163,7 +157,6 @@
     }
 
     &.main-right {
-
       flex-shrink: 0;
 
       @media #{media('<', m)} {
@@ -172,7 +165,7 @@
         order: 1;
       }
 
-      @media (min-width:550px) and (max-width:768px) {
+      @media (min-width: 550px) and (max-width: 768px) {
         height: auto;
       }
     }
@@ -268,7 +261,6 @@
 
     @media #{media("<", m)} {
       margin: 20px 0px 4px 20px;
-
     }
 
     @media #{media(">", xl)} {
@@ -279,7 +271,6 @@
     @media (max-width: 1025px) {
       font-size: 15px;
     }
-
   }
 
   &__job-title {
@@ -305,7 +296,6 @@
     }
   }
 
-
   &__title {
     padding: 40px 40px 60px 60px;
 
@@ -315,9 +305,13 @@
     line-height: 90%;
     letter-spacing: -0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
 
-
+    @media print {
+      color: white;
+      opacity: 1;
+      z-index: 1;
+    }
     @media #{media(">", xl)} {
       font-size: 80px;
       line-height: 90%;
@@ -340,7 +334,7 @@
       line-height: 90%;
     }
 
-    @media (max-width:350px) {
+    @media (max-width: 350px) {
       font-size: 24px;
     }
 
@@ -406,7 +400,7 @@
         display: block;
         width: 12px;
         height: 12px;
-        content: "";
+        content: '';
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M3.75 10.5L8.25 6L3.75 1.5' stroke='%232A2E2B' stroke-width='1.5'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         z-index: 2;
@@ -430,8 +424,6 @@
     @media #{media("<", t)} {
       display: none;
     }
-
-
   }
 
   &__number {
@@ -449,12 +441,11 @@
     text-align: right;
     letter-spacing: -0.03em;
 
-    background: linear-gradient(180deg, #006525 0%, #35CA76 95.26%);
+    background: linear-gradient(180deg, #006525 0%, #35ca76 95.26%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
 
     @media #{media(">", xl)} {
       font-size: 450px;
@@ -498,7 +489,6 @@
   }
 
   &__main {
-
     &-bg {
       position: absolute;
       left: 0px;
@@ -518,7 +508,6 @@
         }
       }
     }
-
 
     &-logo {
       position: absolute;
@@ -544,7 +533,7 @@
       font-size: 90px;
       line-height: 80%;
       letter-spacing: -0.03em;
-      color: #FFFFFF;
+      color: #ffffff;
 
       span {
         display: block;
@@ -570,7 +559,7 @@
       font-size: 24px;
       line-height: 80%;
       letter-spacing: -0.01em;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         margin-bottom: 12px;
@@ -589,7 +578,7 @@
       font-size: 90px;
       line-height: 80%;
       letter-spacing: -0.06em;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media('<', d)} {
         font-size: 65px;
@@ -613,7 +602,6 @@
     height: auto;
 
     @media #{media(">", xl)} {
-
       .report-hero__background {
         background-position: top 0px left -100px;
       }
@@ -647,8 +635,6 @@
     height: auto;
   }
 }
-
-
 
 @media print {
   .report-hero__portrait {

@@ -1,68 +1,70 @@
-extends ../app
+//- extends ../app
 
-include ../components/section/direction-content
-include ../components/section/preservation-content
-include ../components/section/profit-content
-include ../components/section/case-content
+//- include ../components/section/direction-content
+//- include ../components/section/preservation-content
+//- include ../components/section/profit-content
+//- include ../components/section/case-content
 
-include ../components/section/report-hero
-include ../components/section/report-hero-layout
-include ../components/section/operation-results
-include ../components/other-blocks/other-components
-include ../components/section/client-portfolio
-include ../components/section/marshrute-speed
-include ../components/section/formation-park
+//- include ../components/section/report-hero
+//- include ../components/section/report-hero-layout
+//- include ../components/section/operation-results
+//- include ../components/other-blocks/other-components
+//- include ../components/section/client-portfolio
+//- include ../components/section/marshrute-speed
+//- include ../components/section/formation-park
+//- include ../components/bloks-ui/modal
 
-block header 
-  +header-EN
+//- block header 
+//-   +header-EN
 
-block variables
-  -const title = 'Performance results'
-block content
-  +sidebar-EN
-  +report-hero-3-EN
-  +operation-results-EN
-  +preview('','Yevgeny','Pakhomov','Deputy Director of Account Settlement Control and Production Analysis Department, Commercial Directorate','pahomov.png').pahomov-preview(data-aos="fade-up")
-    .pahomov 
-      p.pahomov__descripiton.description_big Share of provinces in 2022
-      .pahomov__img
-        +picture('share-provinces-page3.png')
-  +share-provinces-subtext-EN
-  +marshrute-speed-EN
-  +preview('Fleet Formation:  <br/>Optimization','Elena',' Androsova ','Head of Account Settlement Management Section, Commercial Directorate','androsova.png').custom-id(id="formation-park")(data-aos="fade-up")
-    .androsova 
-      p.androsova__description.description The key to traffic volume growth is the availability of the necessary rolling stock capacities for large containers. In 2019 to 2022, we significantly expanded our fleet to meet the growing demand. 
-  +formation-park-EN
-  +preview('Customer Portfolio','Yuliya','Kostikova','Deputy Head of Customer Service Section, Commercial Directorate','kostikova.png').custom-id.device-debug(id="client-portfolio")(data-aos="fade-up")
-    .kosticova 
-      p.kosticova__description.description A number of factors drove the active growth of UTLC&nbsp;ERA’s customer portfolio in 2022. They include the high reliability, service quality and customer support levels.
-      .kosticova__row
-        .item.item_size-2
-          .item__row 
-            .item__col 
-              p.item__number.countup-element(data-countup='65') 
-            .item__col 
-              p.item__grey.number-animate-65.number-animate  companies
-          .item__row 
-            p.item__subtext attracted for integrated services year to date
-        .item.item_size-2
-          .item__row 
-            .item__col 
-              p.item__number.countup-element(data-countup='23') 
-            .item__col 
-              p.item__grey.number-animate-23.number-animate  including
-          .item__row 
-            p.item__subtext new customers under direct contracts
-  +client-portfolio-EN
-  +preview('Main Digital Development Areas','Anpilov','Kirill','Head of Information System Support Section','anpilov.png').custom-id(id="preview-main-line")(data-aos="fade-up")
-  +direction-content-EN
-  +preview('Maintaining Our Achievements','Lazutova','Elena','Director of Financial and Economic Department','lazutova.png').lazutova(id="preview-section-save")
-  +preservation-content-EN 
-  +preview('Profit on Sales ','Solovieva','Ekaterina','Deputy Chief Accountant — Department Director','solov.png').custom-id(id="profit-sales") 
-  +profit-content-EN
-  +preview('Caring for Business Climate','Lipatova','Marina','Deputy Head of Administration','lipatova.png').custom-id(id="preview-care") 
-    .lipatova 
-      p.lipatova__description.description We make efforts to shape the favorable regulatory environment to promote the high service quality. 
-  +case-content-EN
-  +print-activity-buttons-EN
-  +next-page('Sustainable development',4,'Next section')
+//- block variables
+//-   -const title = 'Performance results'
+//- block content
+//- +modal-EN
+//-   +sidebar-EN
+//-   +report-hero-3-EN
+//-   +operation-results-EN
+//-   +preview('','Yevgeny','Pakhomov','Deputy Director of Account Settlement Control and Production Analysis Department, Commercial Directorate','pahomov.png').pahomov-preview(data-aos="fade-up")
+//-     .pahomov 
+//-       p.pahomov__descripiton.description_big Share of provinces in 2022
+//-       .pahomov__img
+//-         +picture('share-provinces-page3.png')
+//-   +share-provinces-subtext-EN
+//-   +marshrute-speed-EN
+//-   +preview('Fleet Formation:  <br/>Optimization','Elena',' Androsova ','Head of Account Settlement Management Section, Commercial Directorate','androsova.png').custom-id(id="formation-park")(data-aos="fade-up")
+//-     .androsova 
+//-       p.androsova__description.description The key to traffic volume growth is the availability of the necessary rolling stock capacities for large containers. In 2019 to 2022, we significantly expanded our fleet to meet the growing demand. 
+//-   +formation-park-EN
+//-   +preview('Customer Portfolio','Yuliya','Kostikova','Deputy Head of Customer Service Section, Commercial Directorate','kostikova.png').custom-id.device-debug(id="client-portfolio")(data-aos="fade-up")
+//-     .kosticova 
+//-       p.kosticova__description.description A number of factors drove the active growth of UTLC&nbsp;ERA’s customer portfolio in 2022. They include the high reliability, service quality and customer support levels.
+//-       .kosticova__row
+//-         .item.item_size-2
+//-           .item__row 
+//-             .item__col 
+//-               p.item__number.countup-element(data-countup='65') 
+//-             .item__col 
+//-               p.item__grey.number-animate-65.number-animate  companies
+//-           .item__row 
+//-             p.item__subtext attracted for integrated services year to date
+//-         .item.item_size-2
+//-           .item__row 
+//-             .item__col 
+//-               p.item__number.countup-element(data-countup='23') 
+//-             .item__col 
+//-               p.item__grey.number-animate-23.number-animate  including
+//-           .item__row 
+//-             p.item__subtext new customers under direct contracts
+//-   +client-portfolio-EN
+//-   +preview('Main Digital Development Areas','Anpilov','Kirill','Head of Information System Support Section','anpilov.png').custom-id(id="preview-main-line")(data-aos="fade-up")
+//-   +direction-content-EN
+//-   +preview('Maintaining Our Achievements','Lazutova','Elena','Director of Financial and Economic Department','lazutova.png').lazutova(id="preview-section-save")
+//-   +preservation-content-EN 
+//-   +preview('Profit on Sales ','Solovieva','Ekaterina','Deputy Chief Accountant — Department Director','solov.png').custom-id(id="profit-sales") 
+//-   +profit-content-EN
+//-   +preview('Caring for Business Climate','Lipatova','Marina','Deputy Head of Administration','lipatova.png').custom-id(id="preview-care") 
+//-     .lipatova 
+//-       p.lipatova__description.description We make efforts to shape the favorable regulatory environment to promote the high service quality. 
+//-   +case-content-EN
+//-   +print-activity-buttons-EN
+//-   +next-page('Sustainable development',4,'Next section')

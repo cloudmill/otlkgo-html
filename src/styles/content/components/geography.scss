@@ -4,7 +4,8 @@
 
   &_EN {
     .geography__inner {
-      background: url('../assets/images/geography-bg-EN.jpg') center/cover no-repeat;
+      background: url('../assets/images/geography-bg-EN.jpg') center/cover
+        no-repeat;
 
       @media #{media('<',d)} {
         height: auto;
@@ -14,13 +15,15 @@
     }
 
     .geography__box {
-      background: url('../assets/images/geography-bg-EN.jpg') center/cover no-repeat;
+      background: url('../assets/images/geography-bg-EN.jpg') center/cover
+        no-repeat;
     }
   }
 
   &_CN {
     .geography__inner {
-      background: url('../assets/images/geography-bg-CN.jpg') center/cover no-repeat;
+      background: url('../assets/images/geography-bg-CN.jpg') center/cover
+        no-repeat;
 
       @media #{media('<',d)} {
         height: auto;
@@ -30,9 +33,9 @@
     }
 
     .geography__box {
-      background: url('../assets/images/geography-bg-CN.jpg') center/cover no-repeat;
+      background: url('../assets/images/geography-bg-CN.jpg') center/cover
+        no-repeat;
     }
-
   }
 
   &__inner {
@@ -116,7 +119,7 @@
 
     border-top: 1px solid #045c25;
 
-    @media #{media('<',t)} {
+    @media (max-width: 1125px) {
       grid-template-columns: repeat(1, 1fr);
       gap: 40px;
     }

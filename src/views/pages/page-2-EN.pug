@@ -6,6 +6,7 @@ include ../components/section/map
 include ../components/section/global-economy
 include ../components/section/report-hero
 include ../components/section/report-hero-layout
+include ../components/bloks-ui/modal
 
 block header 
   +header-EN
@@ -13,6 +14,7 @@ block header
 block variables
   -const title = 'Strategic report'
 block content
+  +modal-EN
   +sidebar-EN
   +report-hero-2-EN
   +preview('Global Economy<br/> and Logistics Market<br/>in 2022','Artemiy ','Ivanov','Head of Marketing Studies Section','ivanov.png').ivanov-preview(id="preview-ge") 

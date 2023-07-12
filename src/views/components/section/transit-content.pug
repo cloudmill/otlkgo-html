@@ -195,19 +195,31 @@ mixin transit-content-CN
     .container-content 
       .transit-dynamic__inner 
         h4.transit-dynamic__title 2022年主要走廊份额的运输动态
-        .transit-dynamic__svg.mobile 
-          .transit-dynamic__svg-top
-            +picture('transit-dynamic-1-mobile.png')
-          .transit-dynamic__svg-bottom
-            +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
-          .row 
-        .transit-dynamic__svg.desktop
-          +transit-content-svg 
-        .links.transit-dynamic__links 
-          p.links__text.transit-dynamic__links-text 资料来源:&nbsp;
-          a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-dynamic-1-mobile.png').flex-desktop
-        +activity-buttons('transit-dynamic-2-mobile.png').flex-m
+        .transit-dynamic__top
+          .transit-dynamic__left
+            .transit-dynamic__elements  
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_green
+                p.text UTLC ERA
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_light-green
+                p.text 努什基
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_white-green 
+                p.text 扎拜卡尔斯克
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_gray
+                p.text 俄罗斯联邦远东地区的港口和车站
+            .links.transit-dynamic__links.desktop 
+              p.links__text.transit-dynamic__links-text 一个来源:&nbsp;
+              a.links__link.transit-dynamic__link(href="#" target='blank') UTLC&nbsp;ERA
+          .transit-dynamic__right
+            .transit-dynamic__svg
+              +picture('transit-dynamic-1-mobile-CN.png')
+        .links.transit-dynamic__links.flex-m
+          p.links__text.transit-dynamic__links-text 一个来源:&nbsp;
+          a.links__link.transit-dynamic__link(href="#" target='blank') UTLC&nbsp;ERA
+        +activity-buttons('transit-dynamic-1-mobile-CN.png')
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
@@ -218,6 +230,30 @@ mixin transit-content-CN
             p.transit-dynamic__sub 公司2022年在竞争性“东西”国际运输走廊航线上的份额 
           .col 
             p.text.transit-dynamic__text 2022年，UTLC ERA集装箱服务在通过多斯特克和阿腾科里边境口岸的过境路线上运输了410 638 TEU（同比-34.6%）。反之，中-欧方向运输276 472 TEU，欧-中方向运输134 166 TEU（分别下降33.9%和36%）。
+  
+  
+  
+  
+    section(data-aos="fade-up").transit-volume 
+    .container-content
+      .transit-volume__inner 
+        .row 
+          .transit-volume__row_top
+            h4.transit-volume__title China–Europe–China Transit Volume in UTLC ERA Services, 2021 to 2022 (TEU)
+            a.transit-volume__link.desktop-t <span>Source: </span>«UTLC&nbsp;ERA"
+          .transit-volume__svg
+            +picture('transit-volumeTransit-EN.png')
+          a.transit-volume__link.flex-t <span>Source: </span>«UTLC&nbsp;ERA"
+          +activity-buttons('transit-volumeTransit-EN.png')
+  
+  
+  
+  
+  
+  
+  
+  
+  
   section(data-aos="fade-up").transit-volume 
     .container-content
       .transit-volume__inner 
@@ -225,14 +261,14 @@ mixin transit-content-CN
           .transit-volume__row_top
             h4.transit-volume__title 2021-2022年UTLC ERA服务中的中欧中转量，TEU
             a.transit-volume__link.desktop-t <span>资料来源: </span>UTLC ERA股份公司
-          .transit-volume__svg.desktop
-            +picture('transit-volumeTransit.png')
-          .transit-volume__svg.mobile
-            +picture('transit-volumeTransit-mobile.png')
+          .transit-volume__svg
+            +picture('transit-volumeTransit-EN.png')
           a.transit-volume__link.flex-t <span>资料来源: </span>UTLC ERA股份公司
-          +activity-buttons('transit-volumeTransit.png').flex-desktop
-          +activity-buttons('transit-volumeTransit-mobile.png').flex-m
-
+          +activity-buttons('transit-volumeTransit-EN.png')
+          .transit-volume__svg
+            +picture('transit-volumeTransit-EN.png')
+          a.transit-volume__link.flex-t <span>资料来源: </span>UTLC ERA股份公司
+          +activity-buttons('transit-volumeTransit-EN.png')
           h4.transit-volume__subtitle 通过主要竞争走廊的运输量也呈逐年下降趋势：
           .transit-volume__row 
             .transit-volume__item 
@@ -270,10 +306,10 @@ mixin transit-content-CN
               span.transit-china__item_alt-grey
               p 远东港口和车站
         .transit-china__img 
-          +picture('transit-china.png').transit-china-img
+          +picture('transit-china-CN.png').transit-china-img
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>UTLC ERA股份公司
-        +activity-buttons('transit-china.png')
+        +activity-buttons('transit-china-CN.png')
         .transit-china__row 
           h4.transit-china__subtitle 过境运输量的下降趋势，包括UTLC ERA服务的下降趋势，具有各种外部影响的特点：
           .transit-china__box 
@@ -334,12 +370,12 @@ mixin transit-content-CN
             span.transit-value__span.green-bg
             p 2022
         .transit-value__img 
-          +picture('transit-value.png').transit-value-img
+          +picture('transit-value-CN.png').transit-value-img
 
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text 资料来源&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-value.png')
+        +activity-buttons('transit-value-CN.png')
         .transit-value__row 
           .col 
             p.transit-value__description 从运输方式来看，2022年出口量的增长也值得注意。
@@ -350,8 +386,8 @@ mixin transit-content-CN
       .transit-export__inner 
         h4.transit-export__title 2022年，在UTLC ERA服务中D 俄罗斯联邦、白俄罗斯-中国出口集装箱运输量，TEU。
         .transit-export__svg
-          +picture('transit-export.png').transit-export-svg 
-        +activity-buttons('transit-export.png')
+          +picture('transit-export-CN.png').transit-export-svg 
+        +activity-buttons('transit-export-CN.png')
   section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
     .container-content 
       .transit-adaptation__inner 
@@ -376,17 +412,31 @@ mixin transit-content-EN
     .container-content 
       .transit-dynamic__inner 
         h4.transit-dynamic__title Traffic Profile Showing Major Corridor Shares, 2022
-        .transit-dynamic__svg.desktop
-          .transit-dynamic__svg
-            +picture('transit-dynamic-1-mobile.png')
-          .transit-dynamic__svg.mobile 
-            +picture('transit-dynamic-2-mobile.png').transit-dynamic__svg-img
-          .row 
-        .links.transit-dynamic__links 
+         .transit-dynamic__top
+          .transit-dynamic__left
+            .transit-dynamic__elements  
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_green
+                p.text UTLC ERA
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_light-green
+                p.text Noushki
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_white-green 
+                p.text Zabaikalsk
+              .transit-dynamic__elem 
+                .chart-decor.chart-decor_gray
+                p.text Ports and stations of the Far East of the Russian Federation
+            .links.transit-dynamic__links.desktop 
+              p.links__text.transit-dynamic__links-text Source:&nbsp;
+              a.links__link.transit-dynamic__link(href="#" target='blank') UTLC&nbsp;ERA
+          .transit-dynamic__right
+            .transit-dynamic__svg
+              +picture('transit-dynamic-1-mobile-EN.png')
+        .links.transit-dynamic__links.flex-m
           p.links__text.transit-dynamic__links-text Source:&nbsp;
-          a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-dynamic-1-mobile.png').flex-desktop
-        +activity-buttons('transit-dynamic-2-mobile.png').flex-m
+          a.links__link.transit-dynamic__link(href="#" target='blank') UTLC&nbsp;ERA
+        +activity-buttons('transit-dynamic-1-mobile-EN.png')
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
@@ -403,15 +453,11 @@ mixin transit-content-EN
         .row 
           .transit-volume__row_top
             h4.transit-volume__title China–Europe–China Transit Volume in UTLC ERA Services, 2021 to 2022 (TEU)
-
-            a.transit-volume__link.desktop-t <span>Source: </span>АО «ОТЛК&nbsp;ЕРА»
-          .transit-volume__svg.desktop
-            +picture('transit-volumeTransit.png')
-          .transit-volume__svg.mobile
-            +picture('transit-volumeTransit-mobile.png')
-          a.transit-volume__link.flex-t <span>Source: </span>АО «ОТЛК&nbsp;ЕРА»
-          +activity-buttons('transit-volumeTransit.png').flex-desktop
-          +activity-buttons('transit-volumeTransit-mobile.png').flex-m
+            a.transit-volume__link.desktop-t <span>Source: </span>«UTLC&nbsp;ERA"
+          .transit-volume__svg
+            +picture('transit-volumeTransit-EN.png')
+          a.transit-volume__link.flex-t <span>Source: </span>«UTLC&nbsp;ERA"
+          +activity-buttons('transit-volumeTransit-EN.png')
           h4.transit-volume__subtitle The transit via the major competitive corridors has also declined on a year-on-year basis:
           .transit-volume__row 
             .transit-volume__item 
@@ -448,10 +494,10 @@ mixin transit-content-EN
               span.transit-china__item_alt-grey
               p Far East ports and stations
         .transit-china__img 
-          +picture('transit-china.png').transit-china-img
+          +picture('transit-china-EN.png').transit-china-img
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>АО «ОТЛК&nbsp;ЕРА»
-        +activity-buttons('transit-china.png')
+        +activity-buttons('transit-china-EN.png')
         .transit-china__row 
           h4.transit-china__subtitle The downward trend in the transit traffic volumes, including UTLC ERA’s services, is affected by various external influences:
           .transit-china__box 
@@ -511,11 +557,11 @@ mixin transit-content-EN
             span.transit-value__span.green-bg
             p 2022
         .transit-value__img 
-          +picture('transit-value.png').transit-value-img
+          +picture('transit-value-EN.png').transit-value-img
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-value.png')
+        +activity-buttons('transit-value-EN.png')
         .transit-value__row 
           .col 
             p.transit-value__description The growth in export volumes by traffic types in 2022 is also notable.
@@ -526,8 +572,8 @@ mixin transit-content-EN
       .transit-export__inner 
         h4.transit-export__title Export Container Traffic Volume on the Russian Federation, Republic of Belarus – China Route in UTLC ERA’s Services, 2022, TEUs
         .transit-export__svg
-          +picture('transit-export.png').transit-export-svg 
-        +activity-buttons('transit-export.png')
+          +picture('transit-export-EN.png').transit-export-svg 
+        +activity-buttons('transit-export-EN.png')
   section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")  
     .container-content 
       .transit-adaptation__inner 

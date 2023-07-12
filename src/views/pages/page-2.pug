@@ -6,12 +6,14 @@ include ../components/section/map
 include ../components/section/global-economy
 include ../components/section/report-hero
 include ../components/section/report-hero-layout
+include ../components/bloks-ui/modal
 
 block header 
   +header
 block variables
   -const title = 'Стратегический отчет'
 block content
+  +modal
   +sidebar
   +report-hero
   +preview('Глобальная экономика <br/> и логистический рынок <br/>в 2022 году','Иванов','Артемий Павлович','Начальник отдела маркетинговых исследований','ivanov.png').ivanov-preview(id="preview-ge") 
