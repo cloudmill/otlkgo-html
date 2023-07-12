@@ -19,6 +19,8 @@ function getHistory() {
 }
 function displayHistory() {
   const historyContainer = document.querySelector('.header-history__list');
+  console.log(historyContainer);
+
   historyContainer.innerHTML = '';
   const history = getHistory();
   const groupedHistory = groupByDate(history);
@@ -47,7 +49,6 @@ function displayHistory() {
     `;
 
     historyContainer.innerHTML += historyBlock;
-    console.log(historyContainer);
   }
 }
 
@@ -83,10 +84,8 @@ function clearHistory() {
 
 const clearHistoryButton = document.querySelector('.header-history__clear');
 clearHistoryButton.addEventListener('click', clearHistory);
-
 window.addEventListener('DOMContentLoaded', () => {
   const currentPage = window.location.pathname;
   addToHistory(currentPage);
   displayHistory();
-  console.info('asdfasdf');
 });

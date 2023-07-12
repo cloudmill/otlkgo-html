@@ -132,4 +132,16 @@
   .who-we__appeal .appeal-signature {
     width: auto;
   }
+  .preview__title {
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .report-hero__portrait.mobile {
+    width: 100% !important;
+    img {
+      width: 100% !important;
+    }
+  }
 }

@@ -1,31 +1,31 @@
-extends ../app
-include ../components/section/strategy-content
-include ../components/section/transit-content
-include ../components/section/trends-content
-include ../components/section/map
-include ../components/section/global-economy
-include ../components/section/report-hero
-include ../components/section/report-hero-layout
-include ../components/bloks-ui/modal
+//- extends ../app
+//- include ../components/section/strategy-content
+//- include ../components/section/transit-content
+//- include ../components/section/trends-content
+//- include ../components/section/map
+//- include ../components/section/global-economy
+//- include ../components/section/report-hero
+//- include ../components/section/report-hero-layout
+//- include ../components/bloks-ui/modal
 
-block header 
-  +header
-block variables
-  -const title = 'Стратегический отчет'
-block content
-  +modal
-  +sidebar
-  +report-hero
-  +preview('Глобальная экономика <br/> и логистический рынок <br/>в 2022 году','Иванов','Артемий Павлович','Начальник отдела маркетинговых исследований','ivanov.png').ivanov-preview(id="preview-ge") 
-  +global-economy
-  +preview('Тренды логистической<br/> отрасли: время <br/> альтернатив','Коробов','Денис Сергеевич','Начальник отдела клиентского сервиса департамента <br/> по работе с клиентами коммерческой дирекции','korobov.png').custom-id(id="preview-trends")
-  +trends-content
-  +preview('Рынок ж/д транзита   <br/>Китай — Европа — Китай','кадыров','Айдар Ерболатович','Ведущий менеджер департамента логистики <br class="btn-t"/>коммерческой дирекции','kadyrov.png').custom-id(id="preview-transit").preview__kadyrov
-    .kadyrov
-      p.kadyrov__text По итогам 2022 года общий объем железнодорожных транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по основным маршрутам МТК «Восток-Запад» сократился, а позиция ОТЛК ЕРА на рынке значительно упрочилась.
-  +transit-content
-  +preview('Стратегия <br/>технологического лидера','Ковалева','Дарья Александровна','Системный аналитик отдела сопровождения информационных систем','kovaleva.png').custom-id(id="preview-strategy-leader")
-  +strategy-content
-  +map
-  +print-activity-buttons 
-  +next-page('Результаты деятельности',3)
+//- block header 
+//-   +header
+//- block variables
+//-   -const title = 'Стратегический отчет'
+//- block content
+//-   +modal
+//-   +sidebar
+//-   +report-hero
+//-   +preview('Глобальная экономика <br/> и логистический рынок <br/>в 2022 году','Иванов','Артемий Павлович','Начальник отдела маркетинговых исследований','ivanov.png').ivanov-preview(id="preview-ge") 
+//-   +global-economy
+//-   +preview('Тренды логистической<br/> отрасли: время <br/> альтернатив','Коробов','Денис Сергеевич','Начальник отдела клиентского сервиса департамента <br/> по работе с клиентами коммерческой дирекции','korobov.png').custom-id(id="preview-trends")
+//-   +trends-content
+//-   +preview('Рынок ж/д транзита   <br/>Китай — Европа — Китай','кадыров','Айдар Ерболатович','Ведущий менеджер департамента логистики <br class="btn-t"/>коммерческой дирекции','kadyrov.png').custom-id(id="preview-transit").preview__kadyrov
+//-     .kadyrov
+//-       p.kadyrov__text По итогам 2022 года общий объем железнодорожных транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по основным маршрутам МТК «Восток-Запад» сократился, а позиция ОТЛК ЕРА на рынке значительно упрочилась.
+//-   +transit-content
+//-   +preview('Стратегия <br/>технологического лидера','Ковалева','Дарья Александровна','Системный аналитик отдела сопровождения информационных систем','kovaleva.png').custom-id(id="preview-strategy-leader")
+//-   +strategy-content
+//-   +map
+//-   +print-activity-buttons 
+//-   +next-page('Результаты деятельности',3)
