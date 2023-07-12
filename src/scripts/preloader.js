@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 
     setTimeout(() => {
       document.body.classList.remove("body--hidden");
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
       preloader.classList.add('preloader--hide')
 
     }, DELAY);

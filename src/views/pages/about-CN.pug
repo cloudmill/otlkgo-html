@@ -1,22 +1,22 @@
-//- extends ../app
-//- include ../components/section/map
+extends ../app
+include ../components/section/map
 
-//- include ../components/section/calendar-content
-//- include ../components/section/business-content
-//- include ../components/section/corruption-content
-//- include ../components/section/geography
-//- include ../components/section/indicators
-//- include ../components/section/report-hero
-//- include ../components/section/report-hero-layout
-//- include ../components/section/who-we
-//- block header 
-//-   +header-CN
-//- block variables
-//-   -const title = '关于公司'
-//- block content
-//-   +sidebar-CN
-//-   +report-hero-about
-//-   +who-we
+include ../components/section/calendar-content
+include ../components/section/business-content
+include ../components/section/corruption-content
+include ../components/section/geography
+include ../components/section/indicators
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/section/who-we
+block header 
+  +header-CN
+block variables
+  -const title = '关于公司'
+block content
+  +sidebar-CN
+  +report-hero-about-CN
+  +who-we-CN
 //-   +calendar-content-CN
 //-   +indicators-CN
 //-   +preview('商业模式','谢柳京','米哈伊尔·伊万诺维奇','业务发展及风险分析主任','selutin.png').custom-id(id="section-business") 

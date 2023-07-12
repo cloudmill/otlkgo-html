@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const headerSearchContainer = document.querySelector('[data-search-container]')
   const searchInput = document.querySelector('.header-form__input')
 
+  const historyBtn = $('[data-media-history]')
+  const historyClose = $('[data-history-close]')
+  const historyMenu = $('[data-menu-history]')
+
 
   $('[data-header-burger]').on('click', () => {
     if (!$('[data-header-burger]').hasClass('active')){
@@ -79,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       addOverlay()
       removeActive()
       removeBurger()
+      historyMenu.removeClass('active')
     } else {
       toggleSearchActive()
       removeOverlay()
@@ -115,12 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  const historyBtn = $('[data-media-history]')
-  const historyClose = $('[data-history-close]')
-  const historyMenu = $('[data-menu-history]')
+  
   
   historyBtn.on('click', function() {
     historyMenu.toggleClass('active')
+    removeActive()
   })
 
   historyClose.on('click', function() {

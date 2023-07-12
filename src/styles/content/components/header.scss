@@ -473,7 +473,7 @@
             justify-content: space-between;
             gap: 20px;
         }
-        @media #{media("<", t)} {
+        @media #{media("<", m)} {
             display: flex;
             flex-direction: column;
             gap: 24px;
@@ -621,7 +621,7 @@
                 justify-content: center;
                 gap: rem(14px);
 
-                width: rem(315px);
+                width: 100%;
                 height: rem(57px);
 
                 border: 1px solid #E8E8E8;
@@ -682,7 +682,7 @@
         overflow-y: scroll;
         @include styled-scrollbar;
 
-        @media #{media("<", t)} {
+        @media #{media("<", m)} {
             padding-top: 56px;
 
             width: calc(100% - 20px);
@@ -696,7 +696,7 @@
 
             @media #{media("<", t)} {
                 transform: translateX(0%);
-                z-index: 5;
+                z-index: 6;
             }
         }
 
