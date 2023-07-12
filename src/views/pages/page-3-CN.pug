@@ -13,9 +13,13 @@ include ../components/section/client-portfolio
 include ../components/section/marshrute-speed
 include ../components/section/formation-park
 
+block header 
+  +header-CN
+
 block variables
   -const title = '績效結果'
 block content
+  +sidebar-CN
   +report-hero-3-CN
   +operation-results-CN
   +preview('','帕霍莫夫','·叶夫根尼·弗拉基米罗维奇','商务管理处结算监督与生产分析科副经理','pahomov.png').pahomov-preview(data-aos="fade-up")

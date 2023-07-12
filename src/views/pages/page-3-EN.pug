@@ -13,9 +13,13 @@ include ../components/section/client-portfolio
 include ../components/section/marshrute-speed
 include ../components/section/formation-park
 
+block header 
+  +header-EN
+
 block variables
   -const title = 'Performance results'
 block content
+  +sidebar-EN
   +report-hero-3-EN
   +operation-results-EN
   +preview('','Yevgeny','Pakhomov','Deputy Director of Account Settlement Control and Production Analysis Department, Commercial Directorate','pahomov.png').pahomov-preview(data-aos="fade-up")

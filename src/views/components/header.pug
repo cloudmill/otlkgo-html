@@ -41,3 +41,86 @@ mixin header
             +search-normal-svg
 
 
+mixin header-EN
+  header.header
+    .header-container
+      .header-col 
+        .header-burger(data-header-burger)
+          .header-burger__inner
+            .header-burger__content 
+              .header-burger__content-line 
+        .header-logo 
+          +header-logo-en 
+        .header-title People as
+          span.header-title__green Our Greatest Asset
+        .header-text 
+          .header-text__top Annual Report for 2022
+          .header-text__bot 0
+      .header-col
+        .header-actions
+          .header-actions__item.header-actions_search.header-actions_before(data-header-search='') 
+            .header-actions__item-icon 
+              +search-normal-svg.search
+          .header-actions__item
+            .select-wrapper 
+              .select
+                select.select__select(width='100%')
+                  each item in ['EN', 'RU', 'CH']
+                    option(value=item)
+                      |#{item}
+          .header-actions__item.header-actions_before
+            .header-actions__item-row
+              .header-actions__item-icon
+                +header-download-svg.download
+              .header-actions__item-text.dark PDF
+    .header-search(data-search-container='')  
+      form.header-search__form.header-form 
+        input.header-form__input(type="text" placeholder="Search by Annual Report" data-search-input) 
+        .header-form__box
+          .header-form__reset(header-search-reset) 
+            .header-form__reset-line
+            .header-form__reset-line
+          button.header-form__button(type="submit")
+            +search-normal-svg
+
+mixin header-CN
+  header.header
+    .header-container
+      .header-col 
+        .header-burger(data-header-burger)
+          .header-burger__inner
+            .header-burger__content 
+              .header-burger__content-line 
+        .header-logo 
+          +header-logo-en 
+        .header-title 人为主 
+          span.header-title__green  要价值
+        .header-text 
+          .header-text__top 2022年年度报告
+          .header-text__bot 0
+      .header-col
+        .header-actions
+          .header-actions__item.header-actions_search.header-actions_before(data-header-search='') 
+            .header-actions__item-icon 
+              +search-normal-svg.search
+          .header-actions__item
+            .select-wrapper 
+              .select
+                select.select__select(width='100%')
+                  each item in ['EN', 'RU', 'CH']
+                    option(value=item)
+                      |#{item}
+          .header-actions__item.header-actions_before
+            .header-actions__item-row
+              .header-actions__item-icon
+                +header-download-svg.download
+              .header-actions__item-text.dark PDF
+    .header-search(data-search-container='')  
+      form.header-search__form.header-form 
+        input.header-form__input(type="text" placeholder="按年度报告搜索" data-search-input) 
+        .header-form__box
+          .header-form__reset(header-search-reset) 
+            .header-form__reset-line
+            .header-form__reset-line
+          button.header-form__button(type="submit")
+            +search-normal-svg
