@@ -3,7 +3,7 @@
 
   width: 100%;
 
-  background: #F4F4F4;
+  background: #f4f4f4;
 
   &__inner {
     padding-top: 80px;
@@ -25,10 +25,7 @@
 
       background: color(white);
     }
-
   }
-
-
 
   &__col {
     &:nth-child(1) {
@@ -64,7 +61,7 @@
       }
     }
 
-    &.left{
+    &.left {
       max-width: 640px;
       flex-shrink: 0;
 
@@ -75,13 +72,13 @@
       @media #{media("<", t)} {
         width: 100%;
       }
-      
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
 
-    &.right{
+    &.right {
       margin-right: 120px;
       width: 560px;
       flex-shrink: 0;
@@ -111,7 +108,6 @@
   }
 
   &__text {
-
     max-width: 540px;
     margin-top: 32px;
 
@@ -120,7 +116,7 @@
     line-height: 140%;
     color: color(dark);
 
-    @media (min-width:768px) and (max-width: 1025px) {
+    @media (min-width: 768px) and (max-width: 1025px) {
       max-width: 400px;
     }
 
@@ -150,20 +146,15 @@
     }
   }
 
-
-  &__vector{
+  &__vector {
     display: flex;
   }
 
-  &__inner{
+  &__inner {
     padding-left: 40px;
 
     @media #{media("<", m)} {
       padding: 0px;
     }
-  }
-
-  @media print {
-    page-break-after: always;
   }
 }

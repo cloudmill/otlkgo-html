@@ -4,10 +4,6 @@
   z-index: 0;
   width: 100%;
 
-  @media print {
-    display: none;
-  }
-
   &_disable {
     .input {
       padding-right: rem(54px);
@@ -44,7 +40,7 @@
     transform-origin: left top;
     transition: $transition;
     pointer-events: none;
-    color: rgba(6, 8, 8, 0.50);
+    color: rgba(6, 8, 8, 0.5);
 
     @media #{media('<',m)} {
       font-size: 14px;

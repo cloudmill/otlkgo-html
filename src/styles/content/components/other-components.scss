@@ -1,4 +1,4 @@
-.share-provinces__subtext{
+.share-provinces__subtext {
   margin-top: 60px;
   width: 560px;
 
@@ -6,35 +6,30 @@
   font-size: 18px;
   line-height: 160%;
   color: color(dark);
-  
+
   @media #{media("<", d)} {
     width: 100%;
     margin-left: 0px;
   }
-  
+
   @media #{media("<", m)} {
     margin-top: 20px;
     margin-left: 0px;
-    
+
     width: 100%;
     font-size: rem(14px);
     line-height: 160%;
   }
-
-  @media print {
-    font-size: 14px;
-    width: 100%;
-  }
 }
 
-.share-provinces__box{
+.share-provinces__box {
   display: flex;
   justify-content: end;
 }
 
-.custom-mobile__container{
+.custom-mobile__container {
   margin-top: 20px;
-  .preview__title{
+  .preview__title {
     padding-left: 0px;
 
     padding-top: 5px;

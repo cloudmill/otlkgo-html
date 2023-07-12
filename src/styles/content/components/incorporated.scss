@@ -1,15 +1,15 @@
-.incorporated{
+.incorporated {
   margin-top: 100px;
   @media #{media("<", m)} {
     margin-top: 40px;
   }
-  &__title{
+  &__title {
     margin-bottom: 40px;
 
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
-    color: #2A2E2B;
+    color: #2a2e2b;
 
     @media #{media("<", m)} {
       margin-bottom: 20px;
@@ -19,7 +19,7 @@
     }
   }
 
-  &-plugs{
+  &-plugs {
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,16 +34,16 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
-    &__item{
+    &__item {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
       max-width: 360px;
       height: 82px;
 
-      background: #E0EBE4;
+      background: #e0ebe4;
 
       @media #{media("<", t)} {
         width: 100%;
@@ -52,20 +52,20 @@
         width: 100%;
         height: rem(60px);
       }
-      &-background{
+      &-background {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         @media #{media("<", m)} {
-          svg{
+          svg {
             width: rem(85px);
             height: rem(52px);
           }
         }
       }
-      &-text{
+      &-text {
         position: relative;
         text-align: center;
         z-index: 2;
@@ -73,14 +73,12 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 160%;
-        color: #2A2E2B;
-
-        
-      } 
+        color: #2a2e2b;
+      }
     }
   }
 
-  &-cards{
+  &-cards {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -94,27 +92,27 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
-    &__item{
+    &__item {
       padding: 50px;
 
-      border: 1px solid #EDEDED;
+      border: 1px solid #ededed;
 
       @media #{media("<", m)} {
         padding: 20px;
       }
-      &.light{  
-          border-top: 3px solid #69DA91;
+      &.light {
+        border-top: 3px solid #69da91;
       }
-      &.green{
-        border-top: 3px solid #045C25;
+      &.green {
+        border-top: 3px solid #045c25;
       }
-      &-title{
+      &-title {
         margin-bottom: 2px;
 
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
-        color: #2A2E2B;
+        color: #2a2e2b;
         white-space: nowrap;
 
         @media #{media("<", m)} {
@@ -122,32 +120,31 @@
           line-height: 150%;
         }
       }
-      &-num{
+      &-num {
         margin-bottom: 10px;
 
         font-weight: 700;
         font-size: 16px;
         line-height: 140%;
-        color: #727A75;
+        color: #727a75;
 
         @media #{media("<", m)} {
           font-size: rem(13px);
           line-height: 160%;
         }
       }
-      &-text{
+      &-text {
         font-weight: 400;
         font-size: 12px;
         line-height: 150%;
-        color: #2A2E2B;
-
+        color: #2a2e2b;
       }
     }
   }
-  &-capital{
+  &-capital {
     margin-top: 100px;
     padding-top: 20px;
-    border-top: 1px solid #045C25;
+    border-top: 1px solid #045c25;
     display: flex;
     justify-content: space-between;
 
@@ -164,8 +161,8 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 18px;
     }
-    &__texts{
-      &-title{
+    &__texts {
+      &-title {
         margin-bottom: 20px;
 
         max-width: 460px;
@@ -173,7 +170,7 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 130%;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media("<", t)} {
           max-width: 100%;
@@ -188,7 +185,7 @@
           line-height: 150%;
         }
       }
-      &-text{
+      &-text {
         width: 460px;
 
         @media #{media("<", t)} {
@@ -200,7 +197,7 @@
       }
     }
 
-    &__img{
+    &__img {
       margin-top: -20px;
 
       width: 617px;
@@ -224,24 +221,23 @@
     }
   }
 
-
-  &-dividends{
+  &-dividends {
     padding-top: 20px;
     margin-top: 100px;
-    border-top: 1px solid #045C25;
+    border-top: 1px solid #045c25;
 
     @media #{media("<", m)} {
       margin-top: 40px;
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       @media #{media("<", m)} {
         margin-bottom: 20px;
       }
     }
-    &__text{
+    &__text {
       max-width: 760px;
       margin-left: 400px;
 
@@ -256,22 +252,22 @@
       }
     }
 
-    &__principes{
+    &__principes {
       padding-top: 20px;
       margin-top: 40px;
-      border-top: 1px solid #045C25;
+      border-top: 1px solid #045c25;
 
       @media #{media("<", m)} {
         padding-top: 8px;
       }
-      &-title{
+      &-title {
         margin-bottom: 40px;
 
         font-weight: 700;
         font-size: 36px;
         line-height: 120%;
         letter-spacing: -0.02em;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media("<", m)} {
           margin-bottom: 20px;
@@ -281,7 +277,7 @@
         }
       }
 
-      &-subtext{
+      &-subtext {
         margin-top: 40px;
         margin-left: 400px;
 
@@ -290,7 +286,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 160%;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media("<", d)} {
           margin-left: 0px;
@@ -310,7 +306,7 @@
       }
     }
 
-    &__cards{
+    &__cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
@@ -323,12 +319,16 @@
         gap: 20px;
       }
     }
-    &__card{
+    &__card {
       padding: 40px 40px 35px;
 
       height: 211px;
 
-      background: linear-gradient(180deg, #BEF0D7 0%, rgba(190, 240, 215, 0) 100%);
+      background: linear-gradient(
+        180deg,
+        #bef0d7 0%,
+        rgba(190, 240, 215, 0) 100%
+      );
       @media #{media("<", t)} {
         height: auto;
       }
@@ -336,13 +336,13 @@
         padding: 20px;
         height: auto;
       }
-      &-title{
+      &-title {
         margin-bottom: 12px;
 
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media("<", m)} {
           margin-bottom: 10px;
@@ -351,25 +351,24 @@
           line-height: 130%;
         }
       }
-      &-text{
+      &-text {
         font-weight: 400;
         font-size: 12px;
         line-height: 150%;
-        color: #2A2E2B;
+        color: #2a2e2b;
       }
     }
   }
 
-  &-conditions{
+  &-conditions {
     display: flex;
     gap: 20px;
     justify-content: space-between;
     padding-top: 20px;
     margin-top: 60px;
 
-    border-top: 1px solid #045C25;
+    border-top: 1px solid #045c25;
 
-    
     @media #{media("<", m)} {
       margin-top: 40px;
       padding-top: 8px;
@@ -378,12 +377,11 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
-    &__title{
-
+    &__title {
       font-weight: 700;
       font-size: 24px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", t)} {
         width: 100%;
@@ -393,30 +391,30 @@
         line-height: 150%;
       }
     }
-    &__list{
+    &__list {
       max-width: 560px;
 
-      .recruitment-processes__hr-mark{
+      .recruitment-processes__hr-mark {
         margin-bottom: 12px;
       }
     }
   }
 
-  &-accrued{
+  &-accrued {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #87EBAA;
+    border-top: 1px solid #87ebaa;
 
     @media #{media("<", m)} {
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       font-weight: 700;
       font-size: 24px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         margin-bottom: 20px;
@@ -426,19 +424,18 @@
       }
     }
 
-
-    &__img{
+    &__img {
       @media #{media("<", m)} {
         width: rem(523px);
         height: auto;
 
-        picture{
-          img{
+        picture {
+          img {
             object-fit: fill;
           }
         }
       }
-      &-container{
+      &-container {
         @media #{media("<", m)} {
           padding-left: rem(20px);
           margin-left: rem(-20px);
@@ -452,7 +449,7 @@
     }
   }
 
-  &-shareholders{
+  &-shareholders {
     margin-top: 100px;
     padding-top: 20px;
     border-top: 1px solid color(green);
@@ -461,15 +458,15 @@
       margin-top: 40px;
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       @media #{media("<", m)} {
         margin-bottom: 20px;
       }
     }
-    &__hero{
-      &-row{
+    &__hero {
+      &-row {
         display: flex;
         gap: 20px;
         justify-content: space-between;
@@ -482,13 +479,13 @@
           gap: 12px;
         }
       }
-      &-subtitle{
+      &-subtitle {
         max-width: 560px;
 
         font-weight: 700;
         font-size: 20px;
         line-height: 150%;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media('<', t)} {
           max-width: 100%;
@@ -500,9 +497,9 @@
           line-height: 150%;
         }
       }
-      
-      &-text{
-        &.top{
+
+      &-text {
+        &.top {
           margin-bottom: 16px;
 
           @media #{media("<", m)} {
@@ -513,7 +510,7 @@
     }
   }
 
-  &-solutions{
+  &-solutions {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid color(green);
@@ -521,7 +518,7 @@
     @media #{media("<", m)} {
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       @media #{media("<", m)} {
@@ -532,21 +529,21 @@
       }
     }
 
-    &__subtitle{
+    &__subtitle {
       margin-bottom: 20px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
-      &.second{
+      &.second {
         margin-top: 40px;
         @media #{media("<", m)} {
           margin-top: 20px;
         }
       }
-      &.third{
+      &.third {
         margin-top: 28px;
         @media #{media("<", m)} {
           margin-top: 20px;
@@ -557,11 +554,11 @@
 
         font-size: rem(13px);
         line-height: 160%;
-        border-top: 1px solid #6BD895;
+        border-top: 1px solid #6bd895;
       }
     }
 
-    &__row{
+    &__row {
       display: flex;
       gap: 20px;
       justify-content: space-between;
@@ -576,13 +573,13 @@
       }
     }
 
-    &__col{
+    &__col {
       max-width: 560px;
 
-      .recruitment-processes__hr-mark{
+      .recruitment-processes__hr-mark {
         margin-bottom: 12px;
 
-        &.custom{
+        &.custom {
           width: 476px;
           @media #{media("<", m)} {
             width: 100%;
@@ -600,7 +597,7 @@
     }
   }
 
-  &-council{
+  &-council {
     margin-top: 100px;
     padding-top: 20px;
     border-top: 1px solid color(green);
@@ -609,14 +606,14 @@
       margin-top: 40px;
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       @media #{media("<", m)} {
         margin-bottom: 20px;
       }
     }
-    &__row{
+    &__row {
       display: flex;
       gap: 20px;
       justify-content: space-between;
@@ -633,12 +630,12 @@
       }
     }
 
-    &__subtitle{
+    &__subtitle {
       font-weight: 700;
       font-size: 20px;
       line-height: 150%;
-      color: #2A2E2B;
-      &.col{
+      color: #2a2e2b;
+      &.col {
         width: 560px;
         flex-shrink: 0;
 
@@ -654,9 +651,8 @@
       }
     }
 
-    &__text{
-
-      &.mb-16{
+    &__text {
+      &.mb-16 {
         margin-bottom: 16px;
 
         @media #{media("<", m)} {
@@ -664,7 +660,7 @@
         }
       }
 
-      &.col{
+      &.col {
         max-width: 560px;
         flex-shrink: 0;
 
@@ -677,7 +673,7 @@
         }
       }
     }
-    &__subsection{
+    &__subsection {
       margin-top: 40px;
       padding-top: 20px;
       border-top: 1px solid color(green);
@@ -694,13 +690,13 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
-      &-subtitle{
+      &-subtitle {
         width: 500px;
 
         font-weight: 700;
         font-size: 16px;
         line-height: 150%;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media("<", t)} {
           width: 100%;
@@ -711,8 +707,8 @@
           font-size: rem(12px);
           line-height: 150%;
         }
-      } 
-      &-col{
+      }
+      &-col {
         width: 560px;
 
         @media #{media("<", t)} {
@@ -722,8 +718,8 @@
           width: 100%;
         }
       }
-      &-text{
-        &.mb-20{
+      &-text {
+        &.mb-20 {
           margin-top: 20px;
           margin-bottom: 20px;
 
@@ -734,7 +730,7 @@
       }
     }
 
-    &__chairman{
+    &__chairman {
       margin-top: 60px;
       padding-top: 12px;
       border-top: 1px solid color(light-green);
@@ -743,13 +739,13 @@
         margin-top: 40px;
         padding-top: 8px;
       }
-      &-title{
+      &-title {
         margin-bottom: 40px;
 
         font-weight: 700;
         font-size: 24px;
         line-height: 130%;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media("<", m)} {
           margin-bottom: 20px;
@@ -757,8 +753,8 @@
           font-size: rem(18px);
           line-height: 130%;
         }
-      } 
-      &-row{
+      }
+      &-row {
         display: flex;
         gap: 20px;
         justify-content: space-between;
@@ -769,20 +765,20 @@
           gap: 0px;
         }
       }
-      &-col{
+      &-col {
         max-width: 560px;
 
         @media #{media("<", m)} {
           width: 100%;
         }
       }
-      &-subtitle{
+      &-subtitle {
         margin-bottom: 16px;
 
         font-weight: 700;
         font-size: 16px;
         line-height: 150%;
-        color: #2A2E2B;
+        color: #2a2e2b;
 
         @media #{media("<", m)} {
           margin-bottom: 12px;
@@ -791,7 +787,7 @@
           line-height: 150%;
         }
       }
-      &-text{
+      &-text {
         margin-bottom: 16px;
 
         @media #{media("<", m)} {
@@ -799,7 +795,7 @@
         }
       }
     }
-    &__insurance{
+    &__insurance {
       margin-top: 60px;
       padding-top: 12px;
       border-top: 1px solid color(light-green);
@@ -810,12 +806,11 @@
       @media #{media("<", m)} {
         margin-top: 28px;
         padding-top: 8px;
-        
+
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
       }
-      &-title{
+      &-title {
         width: 371px;
 
         @media #{media("<", m)} {
@@ -825,7 +820,7 @@
           line-height: 130%;
         }
       }
-      &-text{
+      &-text {
         max-width: 560px;
 
         @media #{media("<", m)} {
@@ -835,7 +830,7 @@
     }
   }
 
-  &-corporative{
+  &-corporative {
     margin-top: 100px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
@@ -845,24 +840,20 @@
       padding-top: 8px;
     }
 
-    @media print {
-      page-break-after: always;
-    }
-    
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       @media #{media("<", m)} {
         margin-bottom: 20px;
       }
     }
-    &__subtitle{
+    &__subtitle {
       max-width: 560px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", t)} {
         max-width: 100%;
@@ -874,7 +865,7 @@
         line-height: 150%;
       }
     }
-    &__desk{
+    &__desk {
       max-width: 560px;
 
       @media #{media("<", t)} {
@@ -884,11 +875,11 @@
         width: 100%;
       }
     }
-    &__text{
+    &__text {
       margin-bottom: 12px;
     }
 
-    &__row{
+    &__row {
       display: flex;
       gap: 20px;
       justify-content: space-between;
@@ -906,7 +897,7 @@
     }
   }
 
-  &-governing{
+  &-governing {
     margin-top: 176px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
@@ -915,7 +906,7 @@
       margin-top: 40px;
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       @media #{media("<", m)} {
@@ -923,7 +914,7 @@
       }
     }
 
-    &__row{
+    &__row {
       display: flex;
       gap: 20px;
       justify-content: space-between;
@@ -934,13 +925,13 @@
         gap: 12px;
       }
     }
-    &__subtitle{
+    &__subtitle {
       max-width: 560px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         width: 100%;
@@ -949,7 +940,7 @@
         line-height: 150%;
       }
     }
-    &__desk{
+    &__desk {
       max-width: 560px;
 
       @media #{media("<", m)} {
@@ -957,12 +948,12 @@
       }
     }
 
-    &__text{
+    &__text {
       margin-bottom: 12px;
     }
   }
 
-  &-general{
+  &-general {
     margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
@@ -971,14 +962,14 @@
       margin-top: 28px;
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       font-weight: 700;
       font-size: 36px;
       line-height: 120%;
       letter-spacing: -0.02em;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         margin-bottom: 20px;
@@ -987,7 +978,7 @@
         line-height: 120%;
       }
     }
-    &__row{
+    &__row {
       display: flex;
       gap: 20px;
       justify-content: space-between;
@@ -1002,7 +993,7 @@
         gap: 0px;
       }
     }
-    &__col{
+    &__col {
       max-width: 560px;
 
       @media #{media('<', t)} {
@@ -1012,16 +1003,16 @@
         width: 100%;
       }
     }
-    &__text{
+    &__text {
       margin-bottom: 12px;
     }
-    &__subtitle{
+    &__subtitle {
       margin-bottom: 20px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         margin-bottom: 12px;
@@ -1033,13 +1024,13 @@
       }
     }
 
-    &__grey{
+    &__grey {
       margin-top: 20px;
 
       font-weight: 400;
       font-size: 15px;
       line-height: 160%;
-      color: #727A75;
+      color: #727a75;
 
       @media #{media("<", m)} {
         margin-top: 12px;
@@ -1051,7 +1042,7 @@
       }
     }
   }
-  &-direction{
+  &-direction {
     margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid color(light-green);
@@ -1060,14 +1051,14 @@
       margin-top: 40px;
       padding-top: 8px;
     }
-    &__title{
+    &__title {
       margin-bottom: 40px;
 
       font-weight: 700;
       font-size: 36px;
       line-height: 120%;
       letter-spacing: -0.02em;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         margin-bottom: 20px;
@@ -1076,7 +1067,7 @@
         line-height: 120%;
       }
     }
-    &__row{
+    &__row {
       display: flex;
       gap: 20px;
       justify-content: space-between;
@@ -1091,7 +1082,7 @@
         gap: 0px;
       }
     }
-    &__col{
+    &__col {
       max-width: 560px;
 
       @media #{media('<', t)} {
@@ -1101,20 +1092,20 @@
         width: 100%;
       }
     }
-    &__text{
+    &__text {
       margin-bottom: 20px;
 
       @media #{media("<", m)} {
         margin-bottom: 12px;
       }
     }
-    &__subtitle{
+    &__subtitle {
       margin-bottom: 20px;
 
       font-weight: 700;
       font-size: 20px;
       line-height: 130%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         margin-bottom: 12px;
@@ -1125,11 +1116,10 @@
         line-height: 160%;
       }
     }
-
   }
 }
 
-.alt-preview{
+.alt-preview {
   margin: 0 auto;
   margin-top: 60px;
   display: flex;
@@ -1147,7 +1137,6 @@
 
     width: 100%;
   }
-
 
   @media #{media("<", t)} {
     padding: 0px 20px;
@@ -1174,18 +1163,12 @@
     max-width: 1184px;
   }
 
-  @media print {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  &__img{
+  &__img {
     position: relative;
     max-width: 566px;
     max-height: 511px;
     flex-shrink: 0;
-    
+
     @media #{media("<", d)} {
       width: 100%;
       height: 400px;
@@ -1200,28 +1183,17 @@
       width: 100%;
       height: rem(400px);
 
-      background: #F4F4F4;
+      background: #f4f4f4;
 
-      picture{
-        img{
-          object-fit: contain;
-        }
-      }
-    }
-
-    @media print {
-      width: 100%;
-      height: 300px;
-
-      picture{
-        img{
+      picture {
+        img {
           object-fit: contain;
         }
       }
     }
   }
 
-  &__content{
+  &__content {
     max-width: 578px;
 
     @media #{media("<", t)} {
@@ -1233,14 +1205,14 @@
     }
   }
 
-  &__title{
+  &__title {
     margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 120%;
     letter-spacing: -0.02em;
-    color: #2A2E2B;
+    color: #2a2e2b;
 
     @media #{media("<", m)} {
       font-size: rem(20px);
@@ -1248,13 +1220,13 @@
     }
   }
 
-  &__job{
+  &__job {
     margin-bottom: 40px;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-    color: #727A75;
+    color: #727a75;
 
     @media #{media("<", m)} {
       margin-bottom: 20px;
@@ -1264,7 +1236,7 @@
     }
   }
 
-  &__dates{
+  &__dates {
     display: flex;
     gap: 42px;
     margin-bottom: 20px;
@@ -1282,9 +1254,9 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
-    &-col{
-      &.bulgakov{
-        &-left{
+    &-col {
+      &.bulgakov {
+        &-left {
           width: 258px;
 
           @media #{media("<", t)} {
@@ -1294,7 +1266,7 @@
             width: 100%;
           }
         }
-        &-right{
+        &-right {
           width: 278px;
 
           @media #{media("<", t)} {
@@ -1306,13 +1278,13 @@
         }
       }
     }
-    &-top{
+    &-top {
       margin-bottom: 4px;
 
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         width: 100%;
@@ -1320,13 +1292,12 @@
         font-size: rem(13px);
         line-height: 160%;
       }
-
     }
-    &-bot{
+    &-bot {
       font-weight: 400;
       font-size: 12px;
       line-height: 150%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         width: 100%;
@@ -1337,7 +1308,7 @@
     }
   }
 
-  &__knowledge{
+  &__knowledge {
     display: flex;
     gap: 42px;
 
@@ -1354,12 +1325,12 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
-    &-title{
+    &-title {
       margin-bottom: 16px;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
       @media #{media("<", m)} {
         width: 100%;
@@ -1368,8 +1339,8 @@
         line-height: 160%;
       }
     }
-    &-col{
-      .knowledge-mark{
+    &-col {
+      .knowledge-mark {
         display: flex;
         gap: 11px;
         margin-bottom: 12px;
@@ -1377,11 +1348,11 @@
         @media #{media("<", m)} {
           gap: 8px;
         }
-        &__icon{
+        &__icon {
           display: flex;
           justify-content: center;
 
-          svg{
+          svg {
             width: 20px;
             height: 20px;
 
@@ -1391,26 +1362,26 @@
             }
           }
         }
-        &__title{
+        &__title {
           margin-bottom: 4px;
 
           font-weight: 700;
           font-size: 12px;
           line-height: 150%;
-          color: #727A75;
+          color: #727a75;
 
           @media #{media("<", m)} {
             font-size: rem(10px);
           }
         }
-        &__text{
+        &__text {
           font-weight: 400;
           font-size: 12px;
           line-height: 150%;
-          color: #2A2E2B;
+          color: #2a2e2b;
         }
 
-        &__desk{
+        &__desk {
           max-width: 230px;
 
           @media #{media("<", m)} {
@@ -1420,11 +1391,11 @@
         }
       }
     }
-    &-shares{
+    &-shares {
       font-weight: 400;
       font-size: 12px;
       line-height: 150%;
-      color: #727A75;
+      color: #727a75;
 
       @media #{media("<", m)} {
         margin-left: 20px;
@@ -1432,13 +1403,13 @@
       }
     }
 
-    &-bot{
+    &-bot {
       margin-top: 39px;
 
       @media #{media("<", m)} {
         margin-top: 20px;
       }
-      &.grom{
+      &.grom {
         margin-top: 160px;
 
         @media #{media("<", m)} {

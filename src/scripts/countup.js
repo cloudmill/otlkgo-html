@@ -57,3 +57,25 @@ function startCountUpOnScroll() {
 
 window.addEventListener('DOMContentLoaded', startCountUpOnScroll);
 window.addEventListener('scroll', startCountUpOnScroll);
+window.addEventListener('beforeprint', () => {
+  const countUpElements = document.querySelectorAll('.countup-element');
+  countUpElements.forEach((element) => {
+    const countupValue = element.getAttribute('data-countup');
+    const suffix = element.hasAttribute('data-countup-suffix')
+      ? element.getAttribute('data-countup-suffix')
+      : '';
+    const prefix = element.hasAttribute('data-countup-prefix')
+      ? element.getAttribute('data-countup-prefix')
+      : '';
+
+    let inner = `${prefix + countupValue + suffix}`;
+    element.innerHTML = inner;
+
+    const targetElement = document.querySelector(
+      `.number-animate-${countupValue}`
+    );
+    if (targetElement) {
+      targetElement.classList.add('fade-up');
+    }
+  });
+});

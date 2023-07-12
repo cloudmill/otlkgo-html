@@ -117,4 +117,19 @@
   .applications {
     margin-top: 20px !important;
   }
+  .report-hero__portrait {
+    width: auto !important;
+    height: auto !important;
+
+    picture {
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+  .macroeconomics-grafics__col {
+    max-width: 100%;
+  }
+  .who-we__appeal .appeal-signature {
+    width: auto;
+  }
 }
