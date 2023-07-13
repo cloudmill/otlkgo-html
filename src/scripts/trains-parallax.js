@@ -1,40 +1,48 @@
-// import { mediaQuery } from "./mediaQueries"
+import { mediaQuery } from "./mediaQueries"
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const parallaxContainer = document.querySelector('[data-parallax-container]')
-//   const parallaxImg = document.querySelector('[data-parallax-img]');
+document.addEventListener('DOMContentLoaded', () => {
+  const parallaxContainer = document.querySelector('[data-parallax-container]')
+  const parallaxImg = document.querySelector('[data-parallax-img]');
 
-//   const windowSize = window.screen.width;
+  const windowSize = window.screen.width;
   
-//   const parallaxScale = 1920/windowSize;
+  const parallaxScale = 1920/windowSize;
 
   
   
 
-//   if(parallaxContainer){
+  if(parallaxContainer){
 
-//     window.addEventListener('scroll', () => {
-//       let windowScroll = window.scrollY;
+    $(window).on('scroll', function() {
+      let windowScroll = window.scrollY;
   
-//       const parallaxStart = parallaxContainer.offsetTop;
+      const parallaxStart = parallaxContainer.offsetTop;
 
-//       if (window.screen.width > 2000){
-//         if(windowScroll > parallaxStart - 1800){
-//           let parallaxScroll = ((windowScroll - parallaxStart))/5 - 50 * parallaxScale + 'px';
-//           parallaxImg.style.bottom = parallaxScroll;
-//         }
-//       } else if (window.screen.width < 1500){
-//         if(windowScroll > parallaxStart - 1300){
-//           let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 75 + 'px';
-//           parallaxImg.style.bottom = parallaxScroll;
-//         }
-//       } else {
-//         if(windowScroll > parallaxStart - 1300){
-//           let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 'px';
-//           parallaxImg.style.bottom = parallaxScroll;
-//         }
-//       }
-//     })
-//   }
+      if (window.screen.width > 2000){
+        if(windowScroll > parallaxStart - 1800){
+          console.log(parallaxImg)
+          let parallaxScroll = ((windowScroll - parallaxStart))/5 - 50 * parallaxScale + 'px';
+          parallaxImg.style.transform = translate3D(`0px, ${parallaxScroll}, 0px`);
+        }
+      } 
 
-// })
+      // if (window.screen.width > 2000){
+      //   if(windowScroll > parallaxStart - 1800){
+      //     let parallaxScroll = ((windowScroll - parallaxStart))/5 - 50 * parallaxScale + 'px';
+      //     parallaxImg.style.transform = translate3d(`0px, ${parallaxScroll}, 0px`);
+      //   }
+      // } else if (window.screen.width < 1500){
+      //   if(windowScroll > parallaxStart - 1300){
+      //     let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 75 + 'px';
+      //     parallaxImg.style.bottom = parallaxScroll;
+      //   }
+      // } else {
+      //   if(windowScroll > parallaxStart - 1300){
+      //     let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 'px';
+      //     parallaxImg.style.bottom = parallaxScroll;
+      //   }
+      // }
+    })
+  }
+
+})

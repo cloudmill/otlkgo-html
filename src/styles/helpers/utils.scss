@@ -249,6 +249,16 @@
 
 .gap-8 {
   gap: 8px;
+  @media #{media("<", m)} {
+    .ge-card__nums-container{
+      
+    }
+    .ge-card__num{
+      font-size: 34px;
+    }
+  }
+
+  //
 }
 
 .opacity-0 {
