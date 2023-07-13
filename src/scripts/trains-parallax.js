@@ -18,30 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
       const parallaxStart = parallaxContainer.offsetTop;
 
-      if (window.screen.width > 2000){
+      if (window.screen.width > 1024){
         if(windowScroll > parallaxStart - 1800){
-          console.log(parallaxImg)
-          let parallaxScroll = ((windowScroll - parallaxStart))/5 - 50 * parallaxScale + 'px';
-          parallaxImg.style.transform = translate3D(`0px, ${parallaxScroll}, 0px`);
+          console.log(parallaxImg.style)
+          let parallaxScroll = ((windowScroll - parallaxStart))/5 + 175 * parallaxScale + 'px';
+          parallaxImg.style.transform = `translate3D(0px, ${parallaxScroll}, 0px)`;
+
         }
       } 
 
-      // if (window.screen.width > 2000){
-      //   if(windowScroll > parallaxStart - 1800){
-      //     let parallaxScroll = ((windowScroll - parallaxStart))/5 - 50 * parallaxScale + 'px';
-      //     parallaxImg.style.transform = translate3d(`0px, ${parallaxScroll}, 0px`);
-      //   }
-      // } else if (window.screen.width < 1500){
-      //   if(windowScroll > parallaxStart - 1300){
-      //     let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 75 + 'px';
-      //     parallaxImg.style.bottom = parallaxScroll;
-      //   }
-      // } else {
-      //   if(windowScroll > parallaxStart - 1300){
-      //     let parallaxScroll = ((windowScroll - parallaxStart))/5 * parallaxScale + 'px';
-      //     parallaxImg.style.bottom = parallaxScroll;
-      //   }
-      // }
     })
   }
 
