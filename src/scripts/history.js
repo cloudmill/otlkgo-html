@@ -24,7 +24,9 @@ function displayHistory() {
   const history = getHistory();
   const groupedHistory = groupByDate(history);
 
-  for (const date in groupedHistory) {
+  const sortedDates = Object.keys(groupedHistory).sort((a, b) => moment(b).valueOf() - moment(a).valueOf());
+
+  for (const date of sortedDates) {
     const dateHeading = formatDate(date);
     const historyItems = groupedHistory[date]
       .map((visit) => {
@@ -50,6 +52,7 @@ function displayHistory() {
     historyContainer.append(historyBlock);
   }
 }
+
 
 function formatDate(dateString) {
   const date = moment(dateString).format('D MMMM');
