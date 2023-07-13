@@ -688,6 +688,12 @@
     margin-top: 40px;
     margin-bottom: 40px;
 
+    @media #{media("<", d)} {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+
     @media #{media("<", m)} {
       margin-top: 20px;
       margin-bottom: 20px;
@@ -751,6 +757,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 
+    @media #{media("<", d)} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     @media #{media("<", t)} {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -758,6 +768,17 @@
 
   &__col {
     width: 360px;
+
+    &:nth-child(1){
+      @media #{media("<", d)} {
+        grid-column: span 2;
+        width: 100%;
+      }
+      @media #{media("<", t)} {
+        grid-column: span 1;
+        width: 100%;
+      }
+    }
     @media (min-width:768px) and (max-width: 1025px) {
       width: 100%;
     }
