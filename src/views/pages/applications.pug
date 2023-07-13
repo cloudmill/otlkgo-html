@@ -1,98 +1,98 @@
-extends ../app
-include ../components/bloks-ui/modal
-block header 
-  +header
-block variables
-  -const title = 'Приложения'
-block content
-  +sidebar
-  +modal
-  section.applications(data-aos="fade-up") 
-    .container-content 
-      .applications__inner 
-        h2.applicatoins__title Приложения
-        .applications__row 
-          .applications__col 
-            p.applications__description Перечень сделок с&nbsp;<br class='br'>заинтересованностью
-            p.applications__text.text В 2022 году ОТЛК ЕРА не заключало сделки, в совершении&nbsp;<br class='br'> которых имеется заинтересованность.
-          .applications__col 
-            p.applications__description По закону: права акционеров
-            p.applications__text.text Мы в ОТЛК ЕРА применяем лучшие отраслевые практики, регулирующие вопрос взаимодействия Общества с акционерами. В частности, представители акционеров могут принять участие в органах управления ОТЛК ЕРА, а также ознакомиться с информацией о деятельности компании в соответствии с Федеральным законом № 208-ФЗ от 26 декабря 1995 года «Об акционерных обществах», Федеральным законом № 39-ФЗ от 22 апреля 1996 года «О рынке ценных бумаг», уставом и акционерным соглашением Общества.
-  section.applications-info.mt-section(data-aos="fade-up")
-    .container-content 
-      .applications-info__inner 
-        h6.applications-info__title Справочная информация
-        .applications-info__row 
-          .applications-info__col 
-            .applications-info__item
-              p.applications-info__description Полное фирменное наименование на&nbsp;<br class='br'> русском языке
-              p.applications-info__text.text Акционерное общество «Объединенная транспортно-логистическая компания – Евразийский железнодорожный альянс»
-            .applications-info__item
-              p.applications-info__description Сокращенное фирменное наименование&nbsp;<br class='br'>на русском языке
-              p.applications-info__text.text АО «ОТЛК ЕРА»
-            .applications-info__item
-              p.applications-info__description Полное фирменное наименование&nbsp;<br class='br'> на английском языке
-              p.applications-info__text.text Joint Stock Company «UTLC&nbsp;ERA»
-            .applications-info__item
-              p.applications-info__description Сокращенное фирменное наименование&nbsp;<br class='br'> на английском языке
-              p.applications-info__text.text JSC UTLC ERA
-            .applications-info__item
-              p.applications-info__description Место нахождения Компании
-              p.applications-info__text.text 107078, г. Москва, ул. Садовая-Черногрязская, дом 8, стр. 7
-            .applications-info__item
-              p.applications-info__description Почтовый адрес Компании
-              p.applications-info__text.text 107078, г. Москва, ул. Садовая-Черногрязская, дом 8, стр. 7
-            .applications-info__item
-              p.applications-info__description ОГРН
-              p.applications-info__text.text 1187746369590
-            .applications-info__item
-              p.applications-info__description ИНН
-              p.applications-info__text.text 9701104646
-          .applications-info__col 
-            .applications-info__item
-              p.applications-info__description Адрес страницы в сети Интернет, на которой &nbsp;<br class='br'>размещается информация о Компании
-              p.applications-info__text.text(href="www.utlc.com") www.utlc.com
-            .applications-info__item
-              p.applications-info__description Телефон
-              a.applications-info__text.text(href="tel: +74959959591") +7 (495) 995-95-91
-            .applications-info__item
-              p.applications-info__description Адрес электронной почты
-              a.applications-info__text.text(href="mailto: utlc@utlc.com") utlc@utlc.com
-            .applications-info__item
-              p.applications-info__description Реестродержатель
-              p.applications-info__text.text Акционерное общество «Регистраторское общество «СТАТУС»
-              p.applications-info__text.text Место нахождения: 109052, г. Москва, ул. Новохохловская, дом 23, стр. 1, здание бизнес-центра «Ринг парк»
-              p.applications-info__text.text ОГРН 1027700003924
-              p.applications-info__text.text ИНН 7707179242
-              p.applications-info__text.text Лицензия на осуществление деятельности по ведению реестра № &nbsp;<br class='br-t'>10-000-1-00304 от 12 марта 2004 года выдана Федеральной службой по финансовым рынкам Российской Федерации без ограничения срока действия.
-              p.applications-info__text.text Телефон: +7 (495) 280-04-87
-              p.applications-info__text.text Адрес страницы в сети Интернет: www.rostatus.ru
-            .applications-info__item
-              p.applications-info__description Аудитор
-              p.applications-info__text.text Общество с ограниченной ответственностью «Центр аудиторских технологий и решений – аудиторские услуги»
-              p.applications-info__text.text Место нахождения: 115035, г. Москва, наб. Садовническая, д. 77, стр. 1
-              p.applications-info__text.text ОГРН 1027739707203
-              p.applications-info__text.text ИНН 7709383532
-              p.applications-info__text.text Телефон: +7 (495)755-97-00
-              p.applications-info__text.text Адрес страницы в сети Интернет: www.tsatr-audit-services.ru
-  section.applicartions-bottom.mt-section(data-aos="fade-up") 
-    .container-content 
-      .applications-bottom__inner 
-        .applications-bottom__row 
-          .col 
-            p.applicaions-bottom__text.text По результатам ревизионной проверки финансово-хозяйственной деятельности Акционерного общества «Объединенная транспортно-логистическая компания — Евразийский железнодорожный альянс» за 2022 год
-          .col 
-        .applications-bottom__row 
-          .col
-          .applications-bottom__col
-            h6.applications-bottom__title Выписка из заключения ревизионной комиссии
-            .applications-bottom__item 
-              p.applications-bottom__subtext По результатам ревизионной проверки финансово-хозяйственной деятельности акционерного общества «Объединенная транспортно-логистическая компания — Евразийский железнодорожный альянс»&nbsp;<br class='br-t'>за 2022 год
-            p.applications-bottom__subtext 28 апреля 2023 года, г. Москва
-            .applications-bottom__block
-              p.applications-bottom__text.text В соответствии со статьей 85 Федерального закона от 26.12.1995 № 208-ФЗ «Об акционерных обществах», планом работы ревизионной комиссии Акционерного общества «Объединенная транспортно–логистическая компания — Евразийский железнодорожный альянс», утвержденным решением ревизионной комиссии (протокол от 14 марта 2023 г. № 2), комиссией в составе: председателя комиссии Степанян Е.А.,членов комиссии: Лазуты Н.В., Какимова А.С. проведена плановая проверка финансово-хозяйственной деятельности Акционерного общества «Объединенная транспортно–логистическая компания — Евразийский железнодорожный альянс» (далее — АО «ОТЛК ЕРА», Общество) за 2022 год.
-              p.applications-bottom__text.text На основании проведенной проверки ревизионная комиссия подтверждает достоверность данных, содержащихся в годовой бухгалтерской (финансовой) отчетности Общества за 2022 год и годовом отчете АО «ОТЛК ЕРА» за 2022 год.
-            .applications-bottom__img
-              +picture('applications-bottom.png')
-  +print-activity-buttons
-  +next-page('О компании', 1)
+//- extends ../app
+//- include ../components/bloks-ui/modal
+//- block header 
+//-   +header
+//- block variables
+//-   -const title = 'Приложения'
+//- block content
+//-   +sidebar
+//-   +modal
+//-   section.applications(data-aos="fade-up") 
+//-     .container-content 
+//-       .applications__inner 
+//-         h2.applicatoins__title Приложения
+//-         .applications__row 
+//-           .applications__col 
+//-             p.applications__description Перечень сделок с&nbsp;<br class='br'>заинтересованностью
+//-             p.applications__text.text В 2022 году ОТЛК ЕРА не заключало сделки, в совершении&nbsp;<br class='br'> которых имеется заинтересованность.
+//-           .applications__col 
+//-             p.applications__description По закону: права акционеров
+//-             p.applications__text.text Мы в ОТЛК ЕРА применяем лучшие отраслевые практики, регулирующие вопрос взаимодействия Общества с акционерами. В частности, представители акционеров могут принять участие в органах управления ОТЛК ЕРА, а также ознакомиться с информацией о деятельности компании в соответствии с Федеральным законом № 208-ФЗ от 26 декабря 1995 года «Об акционерных обществах», Федеральным законом № 39-ФЗ от 22 апреля 1996 года «О рынке ценных бумаг», уставом и акционерным соглашением Общества.
+//-   section.applications-info.mt-section(data-aos="fade-up")
+//-     .container-content 
+//-       .applications-info__inner 
+//-         h6.applications-info__title Справочная информация
+//-         .applications-info__row 
+//-           .applications-info__col 
+//-             .applications-info__item
+//-               p.applications-info__description Полное фирменное наименование на&nbsp;<br class='br'> русском языке
+//-               p.applications-info__text.text Акционерное общество «Объединенная транспортно-логистическая компания – Евразийский железнодорожный альянс»
+//-             .applications-info__item
+//-               p.applications-info__description Сокращенное фирменное наименование&nbsp;<br class='br'>на русском языке
+//-               p.applications-info__text.text АО «ОТЛК ЕРА»
+//-             .applications-info__item
+//-               p.applications-info__description Полное фирменное наименование&nbsp;<br class='br'> на английском языке
+//-               p.applications-info__text.text Joint Stock Company «UTLC&nbsp;ERA»
+//-             .applications-info__item
+//-               p.applications-info__description Сокращенное фирменное наименование&nbsp;<br class='br'> на английском языке
+//-               p.applications-info__text.text JSC UTLC ERA
+//-             .applications-info__item
+//-               p.applications-info__description Место нахождения Компании
+//-               p.applications-info__text.text 107078, г. Москва, ул. Садовая-Черногрязская, дом 8, стр. 7
+//-             .applications-info__item
+//-               p.applications-info__description Почтовый адрес Компании
+//-               p.applications-info__text.text 107078, г. Москва, ул. Садовая-Черногрязская, дом 8, стр. 7
+//-             .applications-info__item
+//-               p.applications-info__description ОГРН
+//-               p.applications-info__text.text 1187746369590
+//-             .applications-info__item
+//-               p.applications-info__description ИНН
+//-               p.applications-info__text.text 9701104646
+//-           .applications-info__col 
+//-             .applications-info__item
+//-               p.applications-info__description Адрес страницы в сети Интернет, на которой &nbsp;<br class='br'>размещается информация о Компании
+//-               p.applications-info__text.text(href="www.utlc.com") www.utlc.com
+//-             .applications-info__item
+//-               p.applications-info__description Телефон
+//-               a.applications-info__text.text(href="tel: +74959959591") +7 (495) 995-95-91
+//-             .applications-info__item
+//-               p.applications-info__description Адрес электронной почты
+//-               a.applications-info__text.text(href="mailto: utlc@utlc.com") utlc@utlc.com
+//-             .applications-info__item
+//-               p.applications-info__description Реестродержатель
+//-               p.applications-info__text.text Акционерное общество «Регистраторское общество «СТАТУС»
+//-               p.applications-info__text.text Место нахождения: 109052, г. Москва, ул. Новохохловская, дом 23, стр. 1, здание бизнес-центра «Ринг парк»
+//-               p.applications-info__text.text ОГРН 1027700003924
+//-               p.applications-info__text.text ИНН 7707179242
+//-               p.applications-info__text.text Лицензия на осуществление деятельности по ведению реестра № &nbsp;<br class='br-t'>10-000-1-00304 от 12 марта 2004 года выдана Федеральной службой по финансовым рынкам Российской Федерации без ограничения срока действия.
+//-               p.applications-info__text.text Телефон: +7 (495) 280-04-87
+//-               p.applications-info__text.text Адрес страницы в сети Интернет: www.rostatus.ru
+//-             .applications-info__item
+//-               p.applications-info__description Аудитор
+//-               p.applications-info__text.text Общество с ограниченной ответственностью «Центр аудиторских технологий и решений – аудиторские услуги»
+//-               p.applications-info__text.text Место нахождения: 115035, г. Москва, наб. Садовническая, д. 77, стр. 1
+//-               p.applications-info__text.text ОГРН 1027739707203
+//-               p.applications-info__text.text ИНН 7709383532
+//-               p.applications-info__text.text Телефон: +7 (495)755-97-00
+//-               p.applications-info__text.text Адрес страницы в сети Интернет: www.tsatr-audit-services.ru
+//-   section.applicartions-bottom.mt-section(data-aos="fade-up") 
+//-     .container-content 
+//-       .applications-bottom__inner 
+//-         .applications-bottom__row 
+//-           .col 
+//-             p.applicaions-bottom__text.text По результатам ревизионной проверки финансово-хозяйственной деятельности Акционерного общества «Объединенная транспортно-логистическая компания — Евразийский железнодорожный альянс» за 2022 год
+//-           .col 
+//-         .applications-bottom__row 
+//-           .col
+//-           .applications-bottom__col
+//-             h6.applications-bottom__title Выписка из заключения ревизионной комиссии
+//-             .applications-bottom__item 
+//-               p.applications-bottom__subtext По результатам ревизионной проверки финансово-хозяйственной деятельности акционерного общества «Объединенная транспортно-логистическая компания — Евразийский железнодорожный альянс»&nbsp;<br class='br-t'>за 2022 год
+//-             p.applications-bottom__subtext 28 апреля 2023 года, г. Москва
+//-             .applications-bottom__block
+//-               p.applications-bottom__text.text В соответствии со статьей 85 Федерального закона от 26.12.1995 № 208-ФЗ «Об акционерных обществах», планом работы ревизионной комиссии Акционерного общества «Объединенная транспортно–логистическая компания — Евразийский железнодорожный альянс», утвержденным решением ревизионной комиссии (протокол от 14 марта 2023 г. № 2), комиссией в составе: председателя комиссии Степанян Е.А.,членов комиссии: Лазуты Н.В., Какимова А.С. проведена плановая проверка финансово-хозяйственной деятельности Акционерного общества «Объединенная транспортно–логистическая компания — Евразийский железнодорожный альянс» (далее — АО «ОТЛК ЕРА», Общество) за 2022 год.
+//-               p.applications-bottom__text.text На основании проведенной проверки ревизионная комиссия подтверждает достоверность данных, содержащихся в годовой бухгалтерской (финансовой) отчетности Общества за 2022 год и годовом отчете АО «ОТЛК ЕРА» за 2022 год.
+//-             .applications-bottom__img
+//-               +picture('applications-bottom.png')
+//-   +print-activity-buttons
+//-   +next-page('О компании', 1)

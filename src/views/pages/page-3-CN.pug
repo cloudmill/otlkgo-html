@@ -1,70 +1,70 @@
-extends ../app
+//- extends ../app
 
-include ../components/section/direction-content
-include ../components/section/preservation-content
-include ../components/section/profit-content
-include ../components/section/case-content
+//- include ../components/section/direction-content
+//- include ../components/section/preservation-content
+//- include ../components/section/profit-content
+//- include ../components/section/case-content
 
-include ../components/section/report-hero
-include ../components/section/report-hero-layout
-include ../components/section/operation-results
-include ../components/other-blocks/other-components
-include ../components/section/client-portfolio
-include ../components/section/marshrute-speed
-include ../components/section/formation-park
-include ../components/bloks-ui/modal
+//- include ../components/section/report-hero
+//- include ../components/section/report-hero-layout
+//- include ../components/section/operation-results
+//- include ../components/other-blocks/other-components
+//- include ../components/section/client-portfolio
+//- include ../components/section/marshrute-speed
+//- include ../components/section/formation-park
+//- include ../components/bloks-ui/modal
 
-block header 
-  +header-CN
+//- block header 
+//-   +header-CN
 
-block variables
-  -const title = '績效結果'
-block content
-  +modal-CN
-  +sidebar-CN
-  +report-hero-3-CN
-  +operation-results-CN
-  +preview('','帕霍莫夫','·叶夫根尼·弗拉基米罗维奇','商务管理处结算监督与生产分析科副经理','pahomov.png').pahomov-preview(data-aos="fade-up")
-    .pahomov 
-      p.pahomov__descripiton.description_big 2022年各省份占比
-      .pahomov__img
-        +picture('share-provinces-page3.png')
-  +share-provinces-subtext-CN
-  +marshrute-speed-CN
-  +preview('建立车场:  <br/>优化','安德罗索娃',' 叶列娜 弗拉基米罗夫娜','商务管理处组织结算部主任','androsova.png').custom-id(id="formation-park")(data-aos="fade-up")
-    .androsova 
-      p.androsova__description.description 运输增长的一个关键因素是公司拥有必要数量的大型集装箱列车。2019-2022年，在需求浪潮下，我们大规模扩大了车场。
-  +formation-park-CN
-  +preview('客户群','科斯基科娃','·尤利娅·伊戈列夫那','商务管理处客户服务部副主任','kostikova.png').custom-id.device-debug(id="client-portfolio")(data-aos="fade-up")
-    .kosticova 
-      p.kosticova__description.description 诸多因素确保了2022年 UTLC&nbsp;ERA 客户群的积极增长。  其中 - 高度的可靠性、服务水平和客户支持。
-      .kosticova__row
-        .item.item_size-2
-          .item__row 
-            .item__col 
-              p.item__number.countup-element(data-countup='65') 
-            .item__col 
-              p.item__grey.number-animate-65.number-animate  家公司
-          .item__row 
-            p.item__subtext 从年初开始，就参与到综合服务中
-        .item.item_size-2
-          .item__row 
-            .item__col 
-              p.item__number.countup-element(data-countup='23') 
-            .item__col 
-              p.item__grey.number-animate-23.number-animate  其中家
-          .item__row 
-            p.item__subtext 直接合同下的新客户
-  +client-portfolio-CN
-  +preview('数字化发展的主要方向','安皮洛夫','基里尔·安德烈耶维奇','信息系统支持部主任','anpilov.png').custom-id(id="preview-main-line")(data-aos="fade-up")
-  +direction-content-CN
-  +preview('保持成绩','拉祖托娃','叶莲娜·米哈伊洛夫娜','财务经济部经理','lazutova.png').lazutova(id="preview-section-save")
-  +preservation-content-CN
-  +preview('销售利润','索洛维耶娃','叶卡捷琳娜·米哈伊洛夫娜','副总会计师-部门经理','solov.png').custom-id(id="profit-sales") 
-  +profit-content-CN
-  +preview('关注商业环境','利帕托娃','马丽娜·亚历山德罗夫娜','业务管理副主任','lipatova.png').custom-id(id="preview-care") 
-    .lipatova 
-      p.lipatova__description.description 我们正在努力形成有利于提供高水平服务的有利法律环境
-  +case-content-CN
-  +print-activity-buttons-CN
-  +next-page('可持续发展',4,'下一节')
+//- block variables
+//-   -const title = '績效結果'
+//- block content
+//-   +modal-CN
+//-   +sidebar-CN
+//-   +report-hero-3-CN
+//-   +operation-results-CN
+//-   +preview('','帕霍莫夫','·叶夫根尼·弗拉基米罗维奇','商务管理处结算监督与生产分析科副经理','pahomov.png').pahomov-preview(data-aos="fade-up")
+//-     .pahomov 
+//-       p.pahomov__descripiton.description_big 2022年各省份占比
+//-       .pahomov__img
+//-         +picture('share-provinces-page3.png')
+//-   +share-provinces-subtext-CN
+//-   +marshrute-speed-CN
+//-   +preview('建立车场:  <br/>优化','安德罗索娃',' 叶列娜 弗拉基米罗夫娜','商务管理处组织结算部主任','androsova.png').custom-id(id="formation-park")(data-aos="fade-up")
+//-     .androsova 
+//-       p.androsova__description.description 运输增长的一个关键因素是公司拥有必要数量的大型集装箱列车。2019-2022年，在需求浪潮下，我们大规模扩大了车场。
+//-   +formation-park-CN
+//-   +preview('客户群','科斯基科娃','·尤利娅·伊戈列夫那','商务管理处客户服务部副主任','kostikova.png').custom-id.device-debug(id="client-portfolio")(data-aos="fade-up")
+//-     .kosticova 
+//-       p.kosticova__description.description 诸多因素确保了2022年 UTLC&nbsp;ERA 客户群的积极增长。  其中 - 高度的可靠性、服务水平和客户支持。
+//-       .kosticova__row
+//-         .item.item_size-2
+//-           .item__row 
+//-             .item__col 
+//-               p.item__number.countup-element(data-countup='65') 
+//-             .item__col 
+//-               p.item__grey.number-animate-65.number-animate  家公司
+//-           .item__row 
+//-             p.item__subtext 从年初开始，就参与到综合服务中
+//-         .item.item_size-2
+//-           .item__row 
+//-             .item__col 
+//-               p.item__number.countup-element(data-countup='23') 
+//-             .item__col 
+//-               p.item__grey.number-animate-23.number-animate  其中家
+//-           .item__row 
+//-             p.item__subtext 直接合同下的新客户
+//-   +client-portfolio-CN
+//-   +preview('数字化发展的主要方向','安皮洛夫','基里尔·安德烈耶维奇','信息系统支持部主任','anpilov.png').custom-id(id="preview-main-line")(data-aos="fade-up")
+//-   +direction-content-CN
+//-   +preview('保持成绩','拉祖托娃','叶莲娜·米哈伊洛夫娜','财务经济部经理','lazutova.png').lazutova(id="preview-section-save")
+//-   +preservation-content-CN
+//-   +preview('销售利润','索洛维耶娃','叶卡捷琳娜·米哈伊洛夫娜','副总会计师-部门经理','solov.png').custom-id(id="profit-sales") 
+//-   +profit-content-CN
+//-   +preview('关注商业环境','利帕托娃','马丽娜·亚历山德罗夫娜','业务管理副主任','lipatova.png').custom-id(id="preview-care") 
+//-     .lipatova 
+//-       p.lipatova__description.description 我们正在努力形成有利于提供高水平服务的有利法律环境
+//-   +case-content-CN
+//-   +print-activity-buttons-CN
+//-   +next-page('可持续发展',4,'下一节')

@@ -1,3 +1,4 @@
+
 mixin risks
   .risks 
     .container-content
@@ -68,3 +69,199 @@ mixin risks
                 li
                   +mark-text-svg.list-svg
                   p.text.list__text=item 
+      +activity-buttons('table-r.jpg')
+mixin risks-CN
+  .risks 
+    .container-content
+      .risks__inner
+        .risks__row.risks__row_1
+          .risks__col 
+            .risks-table 董事会
+          .risks__col-right
+            ul.list
+              each item in ['批准风险管理政策']
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+        .risks__row.risks__row_gray.risks__row_2 
+          .risks__col 
+            .risks-gray
+              .risks-gray__inner 审计委员会
+          .risks__col-right
+            ul.list
+              each item in ['审查风险材料并编写提交董事会的建议','审查关键风险；风险和风险可接受程度图',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+        .risks__row.risks__row_3
+          .risks__col 
+            .risks-table 理事会
+          .risks__col-right
+            ul.list
+              each item in ['统一风险管理标准文件','统一登记簿、风险图、风险可接受值、风险影响活动计划','风险管理报告的迹象',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+        .risks__row.risks__row_4
+          .risks__col 
+            .risks-table 总经理
+          .risks__col-right
+            ul.list
+              each item in ['批准风险管理条例和指导方针','批准风险管理计划','批准风险登记簿、风险和风险可接受程度图','批准风险影响活动计划',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+        .risks__row.risks__row_gray
+          .risks__col 
+            .risks-gray
+              .risks-gray__inner 风险管理工作组
+          .risks__col-right
+            ul.list
+              each item in ['根据风险管理方法的完整性和一致性审查已查明的风险','按临界水平对风险进行排序','可接受风险值的验证','为登记管理机构做出决议，升级风险信息',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+        .risks__row.risks__row_gray
+          .risks__col 
+            .risks-gray
+              .risks-gray__inner 业务发展及风险分析管理处
+          .risks__col-right
+            ul.list
+              each item in ['编制更新的管理标准文件草案','根据风险管理方法的完整性和一致性审查已查明的风险','评估提出的风险影响活动','协调和监测风险管理进程和风险影响活动的状况','对风险承担者的方法和咨询支持','信息合并----建立登记薄、风险图和影响计划','编写定期风险管理报告',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+        .risks__row.risks__row_5
+          .risks__col 
+            .risks-table 风险承担者
+          .risks__col-right
+            ul.list
+              each item in ['财务经营过程中的风险识别、分析和评估','拟订关于可接受风险值的建议','制定和实施风险影响活动；监测活动的执行情况','对可接受的风险值、风险水平、风险实现情况的指标进行业务监测','为登记管理机构做出决议，升级风险信息',]
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+  +activity-buttons('table-r-CN.jpg')
+
+mixin risks-EN
+  .risks 
+    .container-content
+      .risks__inner
+        .risks__row.risks__row_1
+          .risks__col 
+            .risks-table Board of Directors
+          .risks__col-right
+            ul.list
+              each item in ['Approves Risk Management Policy']
+                li
+                  +mark-text-svg.list-svg
+                  p.text.list__text=item 
+        .risks__row.risks__row_gray.risks__row_2 
+          .risks__col 
+            .risks-gray
+              .risks-gray__inner Audit Committee
+          .risks__col-right
+            ul.list
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Reviews risk materials and prepares recommendations for the Board of Directors
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Reviews results of independent risk management system assessment
+        .risks__row.risks__row_3
+          .risks__col 
+            .risks-table Management Board
+          .risks__col-right
+            ul.list
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Signs off corporate risk management regulations
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Signs off register, risk map, acceptable risk value, and risk treatment plan
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Signs off Risk Management Report
+        .risks__row.risks__row_4
+          .risks__col 
+            .risks-table General Director
+          .risks__col-right
+            ul.list
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Approves risk management procedures and methodical recommendations
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Approves risk management plan
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Approves key risks, risk map, and acceptable risk value
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Approves risk treatment plan
+        .risks__row.risks__row_gray
+          .risks__col 
+            .risks-gray
+              .risks-gray__inner Risk Management Team
+          .risks__col-right
+            ul.list
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Examines identified risks for completeness and conformity to risk management methods
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Rates risks by criticality level
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Validates acceptable risk value indicators
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Escalates risk information to be taken into account in decision making by management bodies
+        .risks__row.risks__row_gray
+          .risks__col 
+            .risks-gray
+              .risks-gray__inner Business Development <br class='br-t'>  and Risk Analysis Director 
+          .risks__col-right
+            ul.list
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Prepares draft updates of management regulations
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Examines identified risks for completeness and conformity to risk management methods
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Examines proposed risk treatment actions
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Coordinates and monitors risk management processes and risk treatment actions
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Provides guidance and advice to risk owners
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Consolidates information - forms register, risk map, and risk treatment plan
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Prepares periodic risk management reports
+        .risks__row.risks__row_5
+          .risks__col 
+            .risks-table Risk owners
+          .risks__col-right
+            ul.list
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Identify, analyze and assess risks in the course of financial and business operations
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Prepare proposals on acceptable risk value indicators
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Develop and implement risk treatment measures; monitor implementation
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Conduct in-process monitoring of acceptable risk value indicators, risk level, risk realization events
+              li
+                +mark-text-svg.list-svg
+                p.text.list__text Escalate risk information to be taken into account in decision making by management bodies
+              li
+      +activity-buttons('table-r-EN.jpg')

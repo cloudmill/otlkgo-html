@@ -79,7 +79,7 @@ mixin organization-structure
           .organization-structure__number-table.mobile(data-aos="fade-up")
             +picture('structure-number-table-mobile.png')
         +activity-buttons('structure-number-table-mobile.png').flex-m
-      .organization-structure__personal.first(data-aos="fade-up")  
+      .organization-structure__personal.first.print-gap(data-aos="fade-up")  
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по категориям, человек
           .organization-structure__personal-cubes.category  
@@ -99,7 +99,7 @@ mixin organization-structure
           .organization-structure__personal-grafic 
             +picture('structure-personale-1.png')
           +activity-buttons('structure-personale-1.png')
-      .organization-structure__personal.second(data-aos="fade-up")
+      .organization-structure__personal.second.print-gap(data-aos="fade-up")
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по образованию, человек
           .organization-structure__personal-cubes.category  
@@ -119,7 +119,7 @@ mixin organization-structure
           .organization-structure__personal-grafic 
             +picture('structure-personale-2.png')
           +activity-buttons('structure-personale-2.png')
-      .organization-structure__personal(data-aos="fade-up") 
+      .organization-structure__personal.print-gap(data-aos="fade-up") 
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по возрасту, человек
           .organization-structure__personal-cubes.no-wrap  
@@ -140,7 +140,7 @@ mixin organization-structure
           .organization-structure__personal-grafic 
             +picture('structure-personale-3.png')
           +activity-buttons('structure-personale-3.png')
-      .organization-structure__personal(data-aos="fade-up") 
+      .organization-structure__personal.print-gap.print-gap(data-aos="fade-up") 
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Структура персонала по полу, человек
           .organization-structure__personal-cubes.category  
@@ -165,7 +165,7 @@ mixin organization-structure
       section.recruitment-processes(id="recruitment-processes")(data-aos="fade-up") 
         .recruitment-processes__title Процессы найма
         .recruitment-processes__text При подборе персонала мы принимаем во внимание два основополагающих принципа, закрепленных в законодательстве РФ: объективность и отсутствие любых форм дискриминации. Все остальные критерии определяются стратегическими и тактическими приоритетами, системой управления персоналом и видом деятельности компании.
-        .recruitment-processes__hr(data-aos="fade-up") 
+        .recruitment-processes__hr.print-gap(data-aos="fade-up") 
           .recruitment-processes__hr-title В HR-процессах ОТЛК&nbsp;ЕРА учитывает
           .recruitment-processes__hr-row(data-aos="fade-up") 
             .recruitment-processes__hr-col(data-aos="fade-up")
@@ -265,7 +265,7 @@ mixin organization-structure-EN
         .organization-structure__number-container.en
           .organization-structure__number-table.en.mobile(data-aos="fade-up")
             +picture('structure-number-table-EN.png')
-        +activity-buttons('structure-number-table-EN.png')
+            +activity-buttons('structure-number-table-EN.png')
       .organization-structure__personal.first(data-aos="fade-up")  
         .organization-structure__personal-col(data-aos="fade-up") 
           .organization-structure__personal-title Personnel breakdown by categories (people)

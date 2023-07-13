@@ -153,4 +153,28 @@
       width: 100% !important;
     }
   }
+  .pahomov__img {
+    height: auto;
+  }
+  .block-diagram__col {
+    display: none;
+  }
+  .preservation-structure__video,
+  .preservation-statistics__video {
+    display: none !important;
+  }
+  .preservation-statistics__video {
+    margin-top: 0 !important;
+  }
+  .preservation-structure__descrition {
+    height: 60px;
+  }
+  .preservation-dynamic__img {
+    width: auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .preview__title {
+    padding-top: 0;
+  }
 }
