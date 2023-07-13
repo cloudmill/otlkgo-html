@@ -634,7 +634,7 @@
 
     &.large {
       @media #{media('<',m)} {
-        font-size: 44px;
+        font-size: 34px;
       }
 
       @media (max-width: 350px) {
