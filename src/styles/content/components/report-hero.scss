@@ -201,13 +201,30 @@
         }
 
         @media print {
-          height: 600px !important;
-
+          width: 100%;
+          height: auto;
           picture {
             img {
               object-fit: contain;
             }
           }
+        }
+      }
+
+      @media print {
+        width: 100%;
+        height: auto;
+        picture {
+          width: 100% !important;
+          height: 100% !important;
+          img {
+            object-fit: contain;
+          }
+        }
+
+        &.mobile {
+          width: 100% !important;
+          
         }
       }
     }
@@ -631,16 +648,9 @@
   }
 }
 
-// @media print {
-//   .report-hero__portrait {
-//     height: 600px !important;
-
-//     picture {
-//       height: 600px !important;
-
-//       img {
-//         height: 600px !important;
-//       }
-//     }
-//   }
-// }
+@media print {
+  .report-hero__portrait {
+    width: 100%;
+    height: auto;
+  }
+}

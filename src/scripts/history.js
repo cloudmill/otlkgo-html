@@ -77,6 +77,7 @@ function groupByDate(history) {
 }
 
 function clearHistory() {
+  console.log('done');
   localStorage.removeItem('history');
   displayHistory();
   console.info('asdf');

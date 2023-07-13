@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const historyClose = $('[data-history-close]')
   const historyMenu = $('[data-menu-history]')
 
+  
+
+
 
   $('[data-header-burger]').on('click', () => {
     if (!$('[data-header-burger]').hasClass('active')){
@@ -130,5 +133,13 @@ document.addEventListener('DOMContentLoaded', () => {
   historyClose.on('click', function() {
     historyMenu.toggleClass('active')
   })
+
+  
+
+  const btntest = document.querySelector('.header-menu__item')
+  btntest.addEventListener('click', () => {
+    console.log('done')
+  })
+
 
 })

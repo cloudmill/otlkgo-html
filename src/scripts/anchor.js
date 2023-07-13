@@ -8,23 +8,27 @@ if (window.screen.width < 768) {
   offsetScroll = 70;
 }
 
-$(function () {
-  var hash = document.location.hash;
-  if (hash.length > 1 && $(hash).length) {
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top - offsetScroll
-    }, 700);
-  }
-});
+console.log(offsetScroll)
+
+setTimeout(() => {
+  $(function () {
+    var hash = document.location.hash;
+    if (hash.length > 1 && $(hash).length) {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - offsetScroll
+      }, 100);
+    }
+  });
+}, 600)
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
   const allLinks = document.querySelectorAll('a');
 
   allLinks.forEach(btn => {
-    if (!btn.classList.contains('activity-buttons__item')){
-
-      btn.addEventListener('click', () => {
+    btn.addEventListener('click', () => {
+      setTimeout(() => {
         $(function () {
           var hash = document.location.hash;
           if (hash.length > 1 && $(hash).length) {
@@ -36,8 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
         removeBurger();
         removeActive();
         removeOverlay();
-      });
-    }
+      }, 100)
+      
+    });
   });
 });
 
