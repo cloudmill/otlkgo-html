@@ -23,11 +23,11 @@ mixin transit-content
               a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
           .transit-dynamic__right
             .transit-dynamic__svg
-              +picture('transit-dynamic-1-mobile.png')
+              +picture('transit-dynamic-1-mobile.png','t')
         .links.transit-dynamic__links.flex-m
           p.links__text.transit-dynamic__links-text Источник:&nbsp;
           a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-dynamic-1-mobile.png')
+        +activity-buttons('transit-dynamic-1-mobile.png','t')
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
@@ -45,13 +45,13 @@ mixin transit-content
             h4.transit-volume__title Объем транзита Китай-Европа-Китай в сервисах ОТЛК&nbsp;ЕРА, 2021–2022&nbsp;гг., ДФЭ
             a.transit-volume__link.desktop-t <span>Источник: </span>ОТЛК&nbsp;ЕРА
           .transit-volume__svg.desktop
-            +picture('transit-volumeTransit.png')
+            +picture('transit-volumeTransit.png','t')
           .transit-volume__svg.mobile
-            +picture('transit-volumeTransit-mobile.png')
+            +picture('transit-volumeTransit-mobile.png','t')
            
           a.transit-volume__link.flex-t <span>Источник: </span>ОТЛК&nbsp;ЕРА
-          +activity-buttons('transit-volumeTransit.png').flex-desktop
-          +activity-buttons('transit-volumeTransit-mobile.png').flex-m
+          +activity-buttons('transit-volumeTransit.png','t').flex-desktop
+          +activity-buttons('transit-volumeTransit-mobile.png','t').flex-m
           h4.transit-volume__subtitle Объемы перевозок через основные конкурентные коридоры также показали снижение в годовом выражении:
           .transit-volume__row 
             .transit-volume__item 
@@ -88,7 +88,7 @@ mixin transit-content
               span.transit-china__item_alt-grey
               p Порты и станции ДВ РФ
         .transit-china__img 
-          +picture('transit-china.png').transit-china-img
+          +picture('transit-china.png','t').transit-china-img
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>«ОТЛК&nbsp;ЕРА»
         +activity-buttons('transit-china.png')
@@ -152,12 +152,12 @@ mixin transit-content
             span.transit-value__span.green-bg
             p 2022
         .transit-value__img 
-          +picture('transit-value.png').transit-value-img
+          +picture('transit-value.png','t').transit-value-img
           
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-value.png')
+        +activity-buttons('transit-value.png','t')
         .transit-value__row 
           .col 
             p.transit-value__description По видам перевозок за 2022 год также следует отметить увеличение экспортных объемов.
@@ -166,10 +166,10 @@ mixin transit-content
   section(data-aos="fade-up").transit-export 
     .container-content 
       .transit-export__inner 
-        h4.transit-export__title Объем экспортных контейнерных перевозок РФ, РБ-Китай в сервисах ОТЛК&nbsp;ЕРА, 2022&nbsp;гг., ДФЭ
+        h4.transit-export__title Объем экспортных контейнерных перевозок России и Беларуси в Китай в сервисах ОТЛК ЕРА, 2022 гг., ДФЭ
         .transit-export__svg
-          +picture('transit-export.png').transit-export-svg 
-        +activity-buttons('transit-export.png')
+          +picture('transit-export.png','t').transit-export-svg 
+        +activity-buttons('transit-export.png','t')
   section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
     .container-content 
       .transit-adaptation__inner 

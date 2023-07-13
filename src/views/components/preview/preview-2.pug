@@ -1,6 +1,6 @@
-mixin preview(title, name, surname, job, picture)
+mixin preview(title, name, surname, job, picture,lz)
   - var mobilePicture = picture.split('.').slice(0, -1).join('.') + '-mobile.' + picture.split('.').pop()
-
+  - var lazy = lz ? 't' : ''
   section(data-aos="fade-up").preview.print-gap&attributes(attributes)
     .preview__container
       .preview__inner
@@ -10,7 +10,7 @@ mixin preview(title, name, surname, job, picture)
             .preview__block-top
               h6.preview__title!= title
               .preview__img-mobile.mobile
-                +picture(mobilePicture)
+                +picture(mobilePicture,lazy)
           .preview__block
             block
           .preview__row-bottom
@@ -19,5 +19,5 @@ mixin preview(title, name, surname, job, picture)
             p.preview__job!= job
         .preview__right.desktop-m
           .preview__img
-            +picture(picture)
+            +picture(picture,lazy)
 

@@ -24,7 +24,7 @@ mixin trends-content
       .trends-volume__inner 
         h6.trends-volume__title Объем мировой торговли посредством морского транспорта, 2021 – 2022&nbsp;гг., млн ДФЭ
         .trends-volume__svg
-          +picture('trends-volume.png').trends-volume-img
+          +picture('trends-volume.png','t').trends-volume-img
         .links.trends-volume__links
           p.links__text.trends-volume__links-text Источник:&nbsp;
           a(href="https://www.containerstatistics.com/" target='blank').links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
@@ -52,7 +52,7 @@ mixin trends-content
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
           .trends-dynamic__svg.desktop
-            +picture('trends-dynamic.png')
+            +picture('trends-dynamic.png','t')
           .links.trends-dynamic__links
             p.links__text.trends-dynamic__links-text Источник: &nbsp;
             a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
@@ -85,9 +85,9 @@ mixin trends-content
             span.trends-dynamic__brown
             p WCI Роттердам-Шанхай
         .trends-rates__svg 
-          +picture('trends-rates-mobile.png').mobile
+          +picture('trends-rates-mobile.png','t').mobile
         .trends-rates__svg 
-          +picture('trends-rates.png').desktop
+          +picture('trends-rates.png','t').desktop
         .links.trends-rates__links.flex-m
           p.links__text.trends-rates__links-text Источники:&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
@@ -117,9 +117,9 @@ mixin trends-content
               .elem_line
               p.trends-demand__text Изменение год к году
         .trends-demand__svg 
-          +picture('trends-demand-mobile.png').mobile
+          +picture('trends-demand-mobile.png','t').mobile
         .trends-demand__svg 
-        +picture('trends-demand.png').desktop
+        +picture('trends-demand.png','t').desktop
         .links.trends-demand__links.flex-m
             p.links__text.trends-demand__links-text Источник:&nbsp;
             a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
@@ -176,7 +176,7 @@ mixin trends-content-CN
       .trends-volume__inner 
         h6.trends-volume__title 2021-2022年通过海上运输的全球贸易量，百万TEU
         .trends-volume__svg
-          +picture('trends-volume-CN.png').trends-volume-img
+          +picture('trends-volume-CN.png','t').trends-volume-img
         +activity-buttons('trends-volume-CN.png')
         .links.trends-volume__links
           p.links__text.trends-volume__links-text 资料来源:&nbsp;
@@ -235,9 +235,9 @@ mixin trends-content-CN
             span.trends-dynamic__brown
             p Wci鹿特丹-上海
         .trends-rates__svg 
-          +picture('trends-rates-mobile.png').mobile
+          +picture('trends-rates-mobile.png','t').mobile
         .trends-rates__svg 
-          +picture('trends-rates.png').desktop
+          +picture('trends-rates.png','t').desktop
         .links.trends-rates__links.flex-m
           p.links__text.trends-rates__links-text Sources:&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
@@ -252,14 +252,14 @@ mixin trends-content-CN
             h6.trends-demand__title 全球海运集装箱运输需求，2020-2022年事实，2023-2026年预测，百万TEU和%
           .col 
             .trends-demand__svg 
-              +picture('trends-demand-mobile.png').mobile
+              +picture('trends-demand-mobile.png','t').mobile
               +activity-buttons('trends-demand-mobile.png').mobile
 
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text 资料来源:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
-          +picture('trends-demand.png').desktop
+          +picture('trends-demand.png','t').desktop
           +activity-buttons('trends-demand.png').desktop
 
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
@@ -313,7 +313,7 @@ mixin trends-content-EN
         h6.trends-volume__title Global Sea Transport Trade Volume, 2021 to 2022 (million TEUs)
 
         .trends-volume__svg
-          +picture('trends-volume-EN.png').trends-volume-img
+          +picture('trends-volume-EN.png','t').trends-volume-img
         +activity-buttons('trends-volume-EN.png')
 
         .links.trends-volume__links
@@ -340,9 +340,9 @@ mixin trends-content-EN
               span.trends-dynamic__brown
               p WCI Rotterdam-Shanghai
         .trends-dynamic__svg.mobile
-          +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
+          +picture('trends-dynamic-mobile.png','t')(data-fancybox="gallery")
         .trends-dynamic__svg.desktop
-          +picture('trends-dynamic.png')
+          +picture('trends-dynamic.png','t')
         .links.trends-dynamic__links
           p.links__text.trends-dynamic__links-text Source: &nbsp;
           a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
@@ -372,9 +372,9 @@ mixin trends-content-EN
             span.trends-dynamic__brown
             p WCI Rotterdam-Shanghai
         .trends-rates__svg 
-          +picture('trends-rates-mobile.png').mobile
+          +picture('trends-rates-mobile.png','t').mobile
         .trends-rates__svg 
-          +picture('trends-rates.png').desktop
+          +picture('trends-rates.png','t').desktop
         .links.trends-rates__links.flex-m
           p.links__text.trends-rates__links-text Sources:&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
@@ -391,14 +391,14 @@ mixin trends-content-EN
             h6.trends-demand__title Global Sea Container Traffic Demand, 2020 to 2022 (actual), 2023 to 2026 (forecast), million TEUs and %
           .col 
             .trends-demand__svg 
-              +picture('trends-demand-mobile.png').mobile
+              +picture('trends-demand-mobile.png','t').mobile
               +activity-buttons('trends-demand-mobile.png').mobile
 
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text Source:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
-          +picture('trends-demand.png').desktop
+          +picture('trends-demand.png','t').desktop
           +activity-buttons('trends-demand.png').desktop
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 

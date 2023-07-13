@@ -1,4 +1,4 @@
-mixin picture(fileName)
+mixin picture(fileName,lazy)
   -
     var file = {
       getTitle(filename) {
@@ -19,15 +19,18 @@ mixin picture(fileName)
     };
     var fileTitle = file.getTitle(fileName);
     var fileExtension = file.getExtension(fileName);
+    var lazyloading = lazy?'lazyload':''
   picture.picture&attributes(attributes)
     source(
       type="image/webp"
       srcset=(file.getPath(fileTitle, "webp") + " 1x")
       data-fancybox
       alt=fileTitle
+      class=lazyloading
     )
     img.picture__img(
       src=(file.getPath(fileTitle, fileExtension))
             data-fancybox
        alt=fileTitle
+       class=lazyloading
     )

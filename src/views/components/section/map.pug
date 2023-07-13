@@ -3,19 +3,19 @@ mixin map
     .container 
       .map__inner 
         .map__img
-          +picture('map.jpg').map-img.img
+          +picture('map.jpg','t').map-img.img
       +activity-buttons('map.jpg')
 mixin map-EN
   .map(data-aos="fade-up")
     .container 
       .map__inner 
         .map__img
-          +picture('map-EN.jpg').map-img.img
+          +picture('map-EN.jpg','t').map-img.img
       +activity-buttons('map-EN.png')
 mixin map-CN
   .map(data-aos="fade-up")
     .container 
       .map__inner 
         .map__img
-          +picture('map-CN.jpg').map-img.img
+          +picture('map-CN.jpg','t').map-img.img
       +activity-buttons('map-CN.png')

@@ -17,10 +17,10 @@ mixin controls-content
             .row 
               p.controls-revision__description.description Ревизионная комиссия ОТЛК&nbsp;ЕРА избирается на годовом общем собрании акционеров на один год до следующего годового общего собрания в количестве трех членов
               ul.list
-                each item in ['Один представитель ОАО «РЖД»','Один представитель АО «НК «КТЖ»','Один представитель Белорусской железной дороги']
+                each item in ['Один представитель ОАО «РЖД»','Один представитель АО&nbsp;«НК&nbsp;«КТЖ»','Один представитель Белорусской железной дороги']
                   li
                     +mark-text-svg.list-svg
-                    p.text.list__text=item 
+                    p.text.list__text!=item 
           .controls-revision__right
             p.controls-revision__subtitle.description Компетенции ревизионной комиссии
             ul.list
