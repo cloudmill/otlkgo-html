@@ -8,8 +8,6 @@ if (window.screen.width < 768) {
   offsetScroll = 70;
 }
 
-console.log(offsetScroll)
-
 setTimeout(() => {
   $(function () {
     var hash = document.location.hash;
@@ -41,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         removeActive();
         removeOverlay();
       }, 100)
-      
+
     });
   });
 });
