@@ -195,6 +195,7 @@
       }
 
       @media #{media('<',m)} {
+        max-width: 100%;
         width: 100%;
         padding: 0px;
         display: block;
@@ -489,6 +490,10 @@
       &:nth-child(2) {
         max-width: 560px;
 
+        @media #{media('<',m)} {
+          max-width: 100%;
+        }
+
         @media print {
           max-width: 100%;
           width: 100%;
@@ -510,11 +515,13 @@
       @media #{media('<', m)} {
         width: calc(100% + 40px);
         padding-left: 20px;
+        padding-right: 20px;
         margin-left: -20px;
         overflow-x: scroll;
       }
 
       @media print {
+        padding-right: 0px;
         width: 100%;
       }
     }
@@ -823,6 +830,10 @@
 
       @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 100%;
+      }
+      @media #{media('<',m)} {
+        max-width: 100%;
+        width: 100%;
       }
 
       @media print {
@@ -1149,8 +1160,8 @@
     @include scrollbar-hidden();
 
     @media #{media("<", m)} {
-      width: rem(742px);
-      margin-top: rem(23px);
+      width: 742px;
+      margin-top: 23px;
       overflow-x: scroll;
     }
 
@@ -1162,7 +1173,7 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
-        padding: 0px 0px 0px 20px;
+        padding: 0px 20px 0px 20px;
         margin-left: -20px;
 
         width: calc(100% + 40px);
@@ -1170,6 +1181,7 @@
       }
 
       @media print {
+        padding-right: 0px;
         width: 100%;
       }
     }
@@ -1402,6 +1414,7 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
+        padding-right: 20px;
         padding-left: 20px;
         margin-left: -20px;
 
@@ -1410,6 +1423,7 @@
       }
 
       @media print {
+        padding-right: 0px;
         width: 100%;
       }
     }
@@ -1636,6 +1650,7 @@
         }
 
         @media #{media("<", m)} {
+          max-width: 100%;
           padding-top: rem(5px);
           width: 100%;
         }
@@ -1654,6 +1669,7 @@
         }
 
         @media #{media("<", m)} {
+          max-width: 100%;
           padding-top: rem(5px);
           width: 100%;
         }
@@ -1733,6 +1749,7 @@
         }
 
         @media #{media("<", m)} {
+          max-width: 100%;
           width: 100%;
         }
 
@@ -2008,6 +2025,7 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
+        padding-right: 20px;
         padding-left: 20px;
         margin-left: -20px;
 
@@ -2016,6 +2034,7 @@
       }
 
       @media print {
+        padding-right: 0px;
         max-width: 100%;
         width: 100%;
       }
