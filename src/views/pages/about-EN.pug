@@ -32,8 +32,11 @@ block content
   +business-content-EN
   +geography-EN
   +preview('Anti-Corruption Activities','Klimochkin','Alexandr','Security Director','klimochkin.png','t')
-    .klimochkin 
-      p.description UTLC&nbsp;ERA has absolutely zero tolerance to any types and forms of corruption. This policy applies not only to the company’s employees, but also to its contractors that have business and informal relations with our company. The company’s current day-to-day business operations comply with the new revision of UTLC&nbsp;ERA’s Anti-Corruption Policy approved by the Board of Directors on January 25, 2021. 
+    p.description UTLC&nbsp;ERA has absolutely zero tolerance to any types and forms of corruption.
+      ul.list
+        each item in ['This policy applies not only to the company’s employees, but also to its contractors that have business and informal relations with our company. ','The company’s current day-to-day business operations comply with the new revision of UTLC&nbsp;ERA’s Anti-Corruption Policy approved by the Board of Directors on January 25, 2021. ']
+          li
+            p.text.text-t!=item
   +corruption-content-EN
   +print-activity-buttons-EN
   +next-page('Strategic Report',2,'Next section')

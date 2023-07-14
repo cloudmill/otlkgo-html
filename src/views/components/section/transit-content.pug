@@ -236,55 +236,35 @@ mixin transit-content-CN
           .col 
             p.text.transit-dynamic__text 2022年，UTLC&nbsp;ERA集装箱服务在通过多斯特克和阿腾科里边境口岸的过境路线上运输了410 638 TEU（同比-34.6%）。反之，中-欧方向运输276 472 TEU，欧-中方向运输134 166 TEU（分别下降33.9%和36%）。
   
-    section(data-aos="fade-up").transit-volume 
+  section(data-aos="fade-up").transit-volume 
     .container-content
       .transit-volume__inner 
         .row 
           .transit-volume__row_top
             h4.transit-volume__title 2021年至2022年UTLC时代中国–欧洲-中国过境量(TEU)
             a.transit-volume__link.desktop-t <span>來源: </span>«UTLC&nbsp;ERA"
-          .transit-volume__svg
-            +picture('transit-volumeTransit-CN.png')
+          .transit-volume__svg.desktop
+            +picture('transit-volumeTransit-CN.png','t')
+          .transit-volume__svg.mobile
+            +picture('transit-volumeTransit-mobile-CN.png','t')
+           
           a.transit-volume__link.flex-t <span>來源: </span>«UTLC&nbsp;ERA"
-          +activity-buttons('transit-volumeTransit-CN.png')
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  section(data-aos="fade-up").transit-volume 
-    .container-content
-      .transit-volume__inner 
-        .row 
-          .transit-volume__row_top
-            h4.transit-volume__title 2021-2022年UTLC&nbsp;ERA服务中的中欧中转量，TEU
-            a.transit-volume__link.desktop-t <span>资料来源: </span>UTLC&nbsp;ERA股份公司
-          .transit-volume__svg
-            +picture('transit-volumeTransit-EN.png')
-          a.transit-volume__link.flex-t <span>资料来源: </span>UTLC&nbsp;ERA股份公司
-          +activity-buttons('transit-volumeTransit-EN.png')
-          .transit-volume__svg
-            +picture('transit-volumeTransit-EN.png')
-          a.transit-volume__link.flex-t <span>资料来源: </span>UTLC&nbsp;ERA股份公司
-          +activity-buttons('transit-volumeTransit-EN.png')
+          +activity-buttons('transit-volumeTransit.png','t').flex-desktop
+          +activity-buttons('transit-volumeTransit-mobile.png','t').flex-m  
           h4.transit-volume__subtitle 通过主要竞争走廊的运输量也呈逐年下降趋势：
           .transit-volume__row 
             .transit-volume__item 
               p.transit-volume__place 后贝加尔斯克
               p.transit-volume__number -61,5%
-              p.transit-volume__sub до 17 706 ДФЭ
+              p.transit-volume__sub 高達 17,706 TEU
             .transit-volume__item 
               p.transit-volume__place 纳乌什基
               p.transit-volume__number -64,4%
-              p.transit-volume__sub до 25 354 ДФЭ
+              p.transit-volume__sub 高達  25 354 TEU
             .transit-volume__item 
               p.transit-volume__place 远东港口和车站
               p.transit-volume__number -70,2%
-              p.transit-volume__sub до 6 235 ДФЭ
+              p.transit-volume__sub 高達  6 235 TEU
   section(data-aos="fade-up").transit-china 
     .container-content 
       .transit-china__inner
