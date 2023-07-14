@@ -844,6 +844,10 @@
 
     }
 
+    &:nth-child(2){
+      order: -1;
+    }
+
     @media #{media('<',m)} {
       width: 100%;
     }
