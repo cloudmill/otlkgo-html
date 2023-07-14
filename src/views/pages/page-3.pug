@@ -1,70 +1,70 @@
-//- extends ../app
+extends ../app
 
-//- include ../components/section/direction-content
-//- include ../components/section/preservation-content
-//- include ../components/section/profit-content
-//- include ../components/section/case-content
+include ../components/section/direction-content
+include ../components/section/preservation-content
+include ../components/section/profit-content
+include ../components/section/case-content
 
-//- include ../components/section/report-hero
-//- include ../components/section/report-hero-layout
-//- include ../components/section/operation-results
-//- include ../components/other-blocks/other-components
-//- include ../components/section/client-portfolio
-//- include ../components/section/marshrute-speed
-//- include ../components/section/formation-park
-//- include ../components/bloks-ui/modal
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/section/operation-results
+include ../components/other-blocks/other-components
+include ../components/section/client-portfolio
+include ../components/section/marshrute-speed
+include ../components/section/formation-park
+include ../components/bloks-ui/modal
 
-//- block header 
-//-   +header
+block header 
+  +header
   
-//- block variables
-//-   -const title = 'Результаты деятельности'
-//- block content
-//-   +modal
-//-   +sidebar
-//-   +report-hero-3
-//-   +operation-results
-//-   +preview('','Пахомов','Евгений Владимирович','Заместитель директора департамента по контролю расчетов <br class="br-t">&nbsp;и производственного анализа коммерческой дирекции','pahomov.png','t').pahomov-preview(data-aos="fade-up")
-//-     .pahomov 
-//-       p.pahomov__descripiton.description_big Доля провинций в 2022 году
-//-       .pahomov__img
-//-         +picture('share-provinces-page3.png')
-//-   +share-provinces-subtext
-//-   +marshrute-speed
-//-   +preview('Формирование парка:  <br/>оптимизация','Андросова','Елена Владимировна ','Начальник отдела по организации расчетов коммерческой дирекции','androsova.png','t').custom-id(id="formation-park")(data-aos="fade-up")
-//-     .androsova 
-//-       p.androsova__description.description Ключевой фактор роста перевозок — наличие у компании необходимого количества подвижного состава для крупнотоннажных контейнеров. В 2019–2022 годах на волне спроса мы серьезно увеличили парк. 
-//-   +formation-park
-//-   +preview('Клиентский портфель','Костикова','Юлия Игоревна','Заместитель начальника отдела клиентского сервиса коммерческой дирекции','kostikova.png','t').print-gap.custom-id.device-debug(id="client-portfolio")(data-aos="fade-up")
-//-     .kosticova 
-//-       p.kosticova__description.description Ряд факторов обеспечил активный рост клиентского портфеля ОТЛК&nbsp;ЕРА в 2022 году.  Среди них – высокая степень надежности, уровень сервисного обслуживания и поддержки клиентов.
-//-       .kosticova__row
-//-         .item.item_size-2
-//-           .item__row 
-//-             .item__col 
-//-               p.item__number.countup-element(data-countup='65') 
-//-             .item__col 
-//-               p.item__grey.number-animate-65.number-animate  компаний
-//-           .item__row 
-//-             p.item__subtext Привлекли к комплексному обслуживанию с начала года
-//-         .item.item_size-2
-//-           .item__row 
-//-             .item__col 
-//-               p.item__number.countup-element(data-countup='23') 
-//-             .item__col 
-//-               p.item__grey.number-animate-23.number-animate  из них
-//-           .item__row 
-//-             p.item__subtext Новые клиенты по прямому договору
-//-   +client-portfolio
-//-   +preview('Главные направления <br/> цифрового развития','Анпилов','Кирилл Андреевич','Начальник отдела сопровождения информационных систем','anpilov.png','t').custom-id(id="preview-main-line")(data-aos="fade-up")
-//-   +direction-content
-//-   +preview('Сохранить достигнутое','Лазутова','Елена Михайловна','Директор финансово-экономического департамента','lazutova.png','t').lazutova(id="preview-section-save")
-//-   +preservation-content 
-//-   +preview('Прибыль от продаж','Соловьева','Екатерина Михайловна','Заместитель главного бухгалтера – директора департамента <br> бухгалтерского и налогового учета','solov.png','t').custom-id(id="profit-sales") 
-//-   +profit-content
-//-   +preview('С заботой о деловом <br/> климате','Липатова','Марина Александровна','Заместитель начальника управления делами','lipatova.png','t').custom-id(id="preview-care") 
-//-     .lipatova 
-//-       p.lipatova__description.description Мы работаем над формированием благоприятных правовых <br/>  условий, которые способствуют предоставлению высокого уровня <br/>  сервиса.
-//-   +case-content
-//-   +print-activity-buttons
-//-   +next-page('Устойчивое развитие',4)
+block variables
+  -const title = 'Результаты деятельности'
+block content
+  +modal
+  +sidebar
+  +report-hero-3
+  +operation-results
+  +preview('','Пахомов','Евгений Владимирович','Заместитель директора департамента по контролю расчетов <br class="br-t">&nbsp;и производственного анализа коммерческой дирекции','pahomov.png','t').pahomov-preview(data-aos="fade-up")
+    .pahomov 
+      p.pahomov__descripiton.description_big Доля провинций в 2022 году
+      .pahomov__img
+        +picture('share-provinces-page3.png')
+  +share-provinces-subtext
+  +marshrute-speed
+  +preview('Формирование парка:  <br/>оптимизация','Андросова','Елена Владимировна ','Начальник отдела по организации расчетов коммерческой дирекции','androsova.png','t').custom-id(id="formation-park")(data-aos="fade-up")
+    .androsova 
+      p.androsova__description.description Ключевой фактор роста перевозок — наличие у компании необходимого количества подвижного состава для крупнотоннажных контейнеров. В 2019–2022 годах на волне спроса мы серьезно увеличили парк. 
+  +formation-park
+  +preview('Клиентский портфель','Костикова','Юлия Игоревна','Заместитель начальника отдела клиентского сервиса коммерческой дирекции','kostikova.png','t').print-gap.custom-id.device-debug(id="client-portfolio")(data-aos="fade-up")
+    .kosticova 
+      p.kosticova__description.description Ряд факторов обеспечил активный рост клиентского портфеля ОТЛК&nbsp;ЕРА в 2022 году.  Среди них – высокая степень надежности, уровень сервисного обслуживания и поддержки клиентов.
+      .kosticova__row
+        .item.item_size-2
+          .item__row 
+            .item__col 
+              p.item__number.countup-element(data-countup='65') 
+            .item__col 
+              p.item__grey.number-animate-65.number-animate  компаний
+          .item__row 
+            p.item__subtext Привлекли к комплексному обслуживанию с начала года
+        .item.item_size-2
+          .item__row 
+            .item__col 
+              p.item__number.countup-element(data-countup='23') 
+            .item__col 
+              p.item__grey.number-animate-23.number-animate  из них
+          .item__row 
+            p.item__subtext Новые клиенты по прямому договору
+  +client-portfolio
+  +preview('Главные направления <br/> цифрового развития','Анпилов','Кирилл Андреевич','Начальник отдела сопровождения информационных систем','anpilov.png','t').custom-id(id="preview-main-line")(data-aos="fade-up")
+  +direction-content
+  +preview('Сохранить достигнутое','Лазутова','Елена Михайловна','Директор финансово-экономического департамента','lazutova.png','t').lazutova(id="preview-section-save")
+  +preservation-content 
+  +preview('Прибыль от продаж','Соловьева','Екатерина Михайловна','Заместитель главного бухгалтера – директора департамента <br> бухгалтерского и налогового учета','solov.png','t').custom-id(id="profit-sales") 
+  +profit-content
+  +preview('С заботой о деловом <br/> климате','Липатова','Марина Александровна','Заместитель начальника управления делами','lipatova.png','t').custom-id(id="preview-care") 
+    .lipatova 
+      p.lipatova__description.description Мы работаем над формированием благоприятных правовых <br/>  условий, которые способствуют предоставлению высокого уровня <br/>  сервиса.
+  +case-content
+  +print-activity-buttons
+  +next-page('Устойчивое развитие',4)

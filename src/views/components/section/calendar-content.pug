@@ -82,7 +82,7 @@ mixin calendar-content
                     each item in ['Обсуждение транспортной отрасли и ситуации по транзиту на встрече премьер-министров России и Казахстана в Екатеринбурге', 'Возобновление перевозок автомобилей из Нидерландов в Китай']
                       li.calendar__item
                         +mark-text-svg.calendar-svg
-                        p.text.calendar__tex!t=item
+                        p.text.calendar__tex!=item
               .calendar__row
                 .calendar__col-month 
                   p.calendar__month Сентябрь
