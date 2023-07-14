@@ -3,12 +3,12 @@ mixin strategy-content
     .container-content 
       .strategy-cards__inner 
         .strategy-ticket
-          p.strategy-ticket__title Миссия ОТЛК ЕРА
+          p.strategy-ticket__title Миссия ОТЛК&nbsp;ЕРА
           p.strategy-ticket__text Развитие транзитного потенциала ЕАЭС через внедрение высокотехнологичных логистических сервисов, требующих скоординированной политики железных дорог и регуляторов на пространстве колеи 1520 мм.
           +column-top-svg.strategy-ticket__svg
         .strategy-ticket
           p.strategy-ticket__title Стратегическая цель 2025
-          p.strategy-ticket__text Обеспечить расширение грузовой базы и развитие рынка транзитных перевозок через коридоры ОТЛК ЕРА с учетом конъюнктурных и регуляторных рисков.
+          p.strategy-ticket__text Обеспечить расширение грузовой базы и развитие рынка транзитных перевозок через коридоры ОТЛК&nbsp;ЕРА с учетом конъюнктурных и регуляторных рисков.
           +column-top-svg.strategy-ticket__svg
   section(data-aos="fade-up").strategy-stakeholder(id="strategy-stakeholder")  
     .container-content 
@@ -16,17 +16,17 @@ mixin strategy-content
         h3.strategy-stakeholder__title Основные стейкхолдеры
         .strategy-stakeholder__box 
           .strategy-card 
-            p.strategy-card__text <span>  Акционеры, </span>   которые влияют на бизнес ОТЛК ЕРА через ключевые решения и формирование конкурентоспособности услуги через утверждение тарифной политики
+            p.strategy-card__text <span>  Акционеры, </span>   которые влияют на бизнес ОТЛК&nbsp;ЕРА через ключевые решения и формирование конкурентоспособности услуги через утверждение тарифной политики
 
             .strategy-card__number
               p 1
           .strategy-card 
-            p.strategy-card__text <span> Ключевые клиенты,  </span> которые обеспечивают формирование выручки ОТЛК ЕРА и ее рост за счет привлечения новой грузовой базы, влияют на финансовый результат через объем закупок и уровень оборотного капитала
+            p.strategy-card__text <span> Ключевые клиенты,  </span> которые обеспечивают формирование выручки ОТЛК&nbsp;ЕРА и ее рост за счет привлечения новой грузовой базы, влияют на финансовый результат через объем закупок и уровень оборотного капитала
 
             .strategy-card__number
               p 2
           .strategy-card 
-            p.strategy-card__text <span> Владельцы ключевых контейнерных терминалов на маршрутах ОТЛК ЕРА,</span>  которые обеспечивают технологическую цепочку по перегрузке контейнеров с колеи 1520 на колею 1435
+            p.strategy-card__text <span> Владельцы ключевых контейнерных терминалов на маршрутах ОТЛК&nbsp;ЕРА,</span>  которые обеспечивают технологическую цепочку по перегрузке контейнеров с колеи 1520 на колею 1435
             .strategy-card__number
               p 3
           .strategy-card 
@@ -40,7 +40,7 @@ mixin strategy-content
             .strategy-card__number
               p 5
           .strategy-card.strategy-card_small
-            p.strategy-card__text <span> Владельцы подвижного состава, </span>  обеспечивающие ОТЛК ЕРА фитинговыми платформами
+            p.strategy-card__text <span> Владельцы подвижного состава, </span>  обеспечивающие ОТЛК&nbsp;ЕРА фитинговыми платформами
 
             .strategy-card__number
               p 6 
@@ -66,7 +66,7 @@ mixin strategy-content
               each item in['Минимизации издержек и формирования конкурентоспособного ценового предложения', 'Балансировки транзитных маршрутов', 'Повышения скорости доставки', 'Организации вывода на рынок новых логистических услуг', 'Адаптации транзитных сервисов для новых групп грузоотправителей',]
                 li.strategy-principles__item 
                   +mark-text-svg.strategy-principles-svg
-                  p.strategy-principles__text=item
+                  p.strategy-principles__text!=item
             .row
               p.strategy-principles__text ОТЛК&nbsp;ЕРА обеспечивает полную загрузку имеющихся пропускных мощностей &nbsp; <br class='br'> и оптимальные параметры перевозки за счет технологического и ценового преимущества. Мы предлагаем услуги на принципах открытой тарифной политики для всех клиентов, обеспечиваем недискриминационный доступ и прозрачный сервис.
               p.strategy-principles__text ОТЛК&nbsp;ЕРА предоставляет заинтересованным сторонам платформу для совместного развития технологий, прежде всего цифровых.
@@ -132,7 +132,7 @@ mixin strategy-content
             each item in ['Развитие проектов «Dostyk TransTerminal (Достык ТрансТерминал)» (ж/д станция Достык) и «Сухой порт Южноуральский» (ж/д станция Формачево) – совершенствование процедур пропуска, работы с объединенными поездами и работы через тыловые терминалы для увеличения пропускной способности основных пограничных переходов','Формирование монопоездов для уменьшения транзитного времени и ускорения пропуска поездов на стыках колеи 1520 мм и 1435 мм','Развитие новых маршрутов и проектов',]
               li.strategy-cooperation__item 
                 +mark-text-svg.strategy-cooperation-svg 
-                p=item 
+                p!=item 
 mixin strategy-content-CN
   section(data-aos="fade-up").strategy-cards 
     .container-content 
@@ -201,7 +201,7 @@ mixin strategy-content-CN
               each item in['成本最小化，形成有竞争力的报价', '平衡过境路线', 'Б提高交货速度', '组织新物流服务的市场推广', '为新的托运人群体调整过境服务',]
                 li.strategy-principles__item 
                   +mark-text-svg.strategy-principles-svg
-                  p.strategy-principles__text=item
+                  p.strategy-principles__text!=item
             .row
               p.strategy-principles__text UTLC&nbsp;ERA利用现有通车能力全面装载，并通过技术和价格优势，提供最佳运输参数。我们为所有客户提供开放的资费政策，提供公平的访问和透明的服务。
               p.strategy-principles__text UTLC&nbsp;ERA为利益相关者提供了一个共同开发技术，主要是数字技术的平台。

@@ -26,11 +26,19 @@ function startCountUpOnScroll() {
       const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
 
       const targetElement = document.querySelector(`.number-animate-${countupValue}`);
+
       if (targetElement) {
-        setTimeout(() => {
-          targetElement.classList.add('fade-up');
-        }, 2000);
+        const targetElements = document.querySelectorAll(`.number-animate-${countupValue}`);
+        targetElements.forEach((targetEl) => {
+          if (!targetEl.classList.contains('animate-started')) {
+            targetEl.classList.add('animate-started');
+            setTimeout(() => {
+              targetEl.classList.add('fade-up');
+            }, 2000);
+          }
+        });
       }
+
 
       if (!countUp.error) {
         countUp.start();

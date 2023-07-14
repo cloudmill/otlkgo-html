@@ -14,7 +14,7 @@ mixin charity-content
               .item__col 
                 p.item__grey.number-animate-327.number-animate млн руб
             .item__row 
-              p.item__subtext Сумма, потраченная компанией на помощь детям и поддержку ветеранов отрасли в 2022 году, реализуемых в Казахстане и России в 2022 году 
+              p.item__subtext Сумма, потраченная компанией на помощь детям и поддержку ветеранов отрасли в 2022 году.
           .charity__elem 
             .row 
               p.charity__text_green Из них по 109 млн рублей
@@ -40,7 +40,7 @@ mixin charity-content
                 each item in ['Помогли детям, страдающим тяжелыми заболеваниями','Развивали вместе детско-юношеский спорт',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109 млн ₽
             .col 
@@ -49,7 +49,7 @@ mixin charity-content
                 each item in ['Организовали Международный фестиваль спорта и здорового образа жизни для пенсионеров ОАО «РЖД» и пенсионеров-железнодорожников Беларуси и Казахстана.','Реализовали благотворительную программу «Книга благих дел». Она заключается в поддержке незащищенных, малообеспеченных слоев населения, а также помощи в сфере профилактики и охраны здоровья граждан.',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -64,7 +64,7 @@ mixin charity-content
                 each item in ['Профинансировали строительство ангара для хранения подвижного состава на Детской железной дороге, а также ремонт корпусов и работы по благоустройству территории детского оздоровительного лагеря.',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109 млн ₽
             .col 
@@ -73,7 +73,7 @@ mixin charity-content
                 each item in ['Оказали материальную помощь и поддержку неработающих пенсионеров Организации ветеранов Белорусской железной дороги; закупили канцтовары для организации.','Приобрели медицинские товары, оргтехнику, программное обеспечение.']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -186,7 +186,7 @@ mixin charity-content-CN
                 each item in ['为重症儿童提供援助。','共同发展儿童-青少年体育。 ',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109亿卢布
             .col 
@@ -195,7 +195,7 @@ mixin charity-content-CN
                 each item in ['为俄罗斯铁路公司退休人员和白俄罗斯共和国和哈萨克斯坦共和国退休铁路工人组织国际体育和健康生活方式嘉年华。','组织《善举记录大全》慈善计划它包括支持人口中未受保护的低收入阶层，以及在预防和保护公民健康领域的援助。',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -210,7 +210,7 @@ mixin charity-content-CN
                 each item in ['出资建设儿童铁路列车机库，修缮儿童健康营地内大楼，设施美化。',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109亿卢布
             .col 
@@ -219,7 +219,7 @@ mixin charity-content-CN
                 each item in ['为白俄罗斯铁路退休员工提供物资帮助和支持；购买办公用品。','采购医疗用品、组织技术设备、软件。']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -243,7 +243,7 @@ mixin charity-content-CN
                 each item in ['在供暖季节为哈萨克斯坦铁路运输的退休人员和退伍军人购买煤炭；为行业独居老兵和养老院采购150个菜篮子，庆祝胜利日、运输工人日和老人日；组织了一场“周年纪念开始”体育赛事，以及两个组织的退伍军人、员工和子女之间的马拉松比赛；为“哈萨克斯坦铁路国有企业股份”公司地区退伍军人委员会购买了18个信息展台，以及纪念“哈萨克斯坦铁路国有企业股份”公司退伍军人委员会成员周年的纪念品。 ']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
   section(data-aos="fade-up").charity-utlc.mt-section(id="charity-utlc")  
     .container-content
       .charity-utlc__inner 

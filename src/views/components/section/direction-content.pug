@@ -11,7 +11,7 @@ mixin direction-content
               each item in ['Разработала и ввела в опытную эксплуатацию функционал сверки взаиморасчетов с соисполнителями','Автоматизировала процессы бизнес-подразделений компании, доработала и оптимизировала различные алгоритмы работы системы, в т.ч. формирование актов, интеграцию со смежными системами, создание заявок на перевозки и выставление счетов и т.д.','Разработала и ввела в промышленную эксплуатацию функционал расчета и учета системы ставок для клиентов компании','Оптимизировала механизм учета отцепок вагонов в пути следования  для корректного расчета расходных услуг оплаты тарифа на транзитные контейнерные поезда',]
                 li.direction-automation__item 
                   +mark-text-svg.direction-automation-svg
-                  p.text.direction-automation__text=item
+                  p.text.direction-automation__text!=item
   section(data-aos="fade-up").direction-site.mt-section(id="direction-site") 
     .container-content 
       .direction-site__inner 
@@ -42,7 +42,7 @@ mixin direction-content-CN
               each item in ['为公司客户开发并投入费率系统的计算和核算功能；','开发并运行了与共同执行方对账的试用功能；','优化了途中列车脱钩的核算机制，以正确计算过境集装箱列车关税支付的支出服务；','自动化公司业务部门的流程，最终确定和优化了系统运行的各种算法，包括，形成报 告、与相关系统集成、生成运输申请和开具发票等。']
                 li.direction-automation__item 
                   +mark-text-svg.direction-automation-svg
-                  p.text.direction-automation__text=item
+                  p.text.direction-automation__text!=item
   section(data-aos="fade-up").direction-site.mt-section(id="direction-site") 
     .container-content 
       .direction-site__inner 

@@ -9,21 +9,21 @@ mixin model
             each item in ['Утверждение политики по управлению рисками']
               li
                 +mark-text-svg.list-svg
-                p.text.list__text=item
+                p.text.list__text!=item
           .model__item.model__item_gray 
             p Комитет по аудиту
           ul.list.model__list.model__list_pl
             each item in ['Рассмотрение материалов по рискам и подготовка рекомендаций для Совета директоров','Рассмотрение результатов независимой оценки системы управления рисками']
               li
                 +mark-text-svg.list-svg
-                p.text.list__text=item 
+                p.text.list__text!=item 
           .model__item.model__item_green 
               p Правление
           ul.list.model__list
             each item in ['Согласование нормативных документов по управлению рисками','Согласование реестра, карты рисков, приемлемой величины рисков, плана мероприятий по воздействию на риски','Согласование отчета по управлению рисками']
               li
                 +mark-text-svg.list-svg
-                p.text.list__text=item
+                p.text.list__text!=item
           .model__item.model__item_green 
               p Генеральный директор
           ul.list.model__list
@@ -37,7 +37,7 @@ mixin model
             each item in ['Экспертиза выявленных рисков на полноту и соответствие методологии управления рисками','Ранжирование рисков по уровням критичности','Валидация показателей приемлемой величины рисков','Эскалация информации о рисках для учета при принятии решений органами управления',]
               li
                 +mark-text-svg.list-svg
-                p.text.list__text=item 
+                p.text.list__text!=item 
         .model__bottom
           .model__item.model__item_gray.model-big
             p Дирекция по развитию бизнеса и анализу рисков
@@ -64,14 +64,14 @@ mixin model-CN
             each item in ['批准风险管理政策']
               li
                 +mark-text-svg.list-svg
-                p.text.list__text=item
+                p.text.list__text!=item
           .model__item.model__item_gray 
             p 审计委员会
           ul.list.model__list.model__list_pl
             each item in ['审查风险材料并编写提交董事会的建议','审查关键风险；风险和风险可接受程度图']
               li
                 +mark-text-svg.list-svg
-                p.text.list__text=item 
+                p.text.list__text!=item 
           .model__item.model__item_green 
               p 理事会
           ul.list.model__list
