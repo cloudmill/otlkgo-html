@@ -126,6 +126,7 @@
 
   &__video {
     height: 530px;
+
     video {
       transform: scale(0.9);
 
@@ -356,7 +357,10 @@
     }
   }
 
+
+
   .preservation-statistics {
+
     &__row {
       display: flex;
       gap: 40px;
@@ -370,4 +374,20 @@
       width: 560px;
     }
   }
+}
+
+
+.preservation-statistics__inner {
+  padding-top: 20px;
+
+  border-top: 1px solid #045C25;
+
+  @media #{media('<',m)} {
+    padding-top: 8px;
+  }
+
+}
+
+.nbsp {
+  white-space: nowrap;
 }
