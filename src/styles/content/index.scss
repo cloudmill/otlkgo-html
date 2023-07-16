@@ -12,6 +12,7 @@
     stroke: black !important;
   }
 }
+
 //////////////////
 .print-gap {
   page-break-before: always;
@@ -21,6 +22,7 @@
   @page {
     margin: 1cm;
   }
+
   .who-we .reference-subrow__col.icons {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -28,40 +30,52 @@
   #section-who-we-mission {
     page-break-before: always;
   }
+
   .who-we__achievement-img {
     display: none;
   }
+
   .appeal-line {
     display: none;
   }
+
   .who-we__appeal .appeal-col:nth-child(1) {
     max-width: 100%;
   }
+
   .appeal-svg {
     display: none;
   }
+
   .who-we__appeal .appeal-col:nth-child(2) {
     padding-top: 10px;
   }
+
   .indicators-finance picture {
     width: auto;
     height: auto;
   }
+
   .who-we__trains-bot {
     justify-content: start;
   }
+
   .geography__box {
     height: auto;
   }
+
   .geography__box picture {
     width: auto;
   }
+
   .chinese-forecast__grafic {
     width: 100%;
   }
+
   .chinese-forecast__grafic-left {
     width: 100%;
   }
+
   .key-forecast__subsection-container,
   .mutal-trade__balance-container,
   .transit-volume__svg,
@@ -76,22 +90,28 @@
     margin-left: 0;
     width: auto;
   }
+
   .trends-volume-img {
     width: auto;
   }
+
   picture {
     width: auto !important;
     height: auto !important;
   }
+
   .marshrute-speed__subsection-vector {
     height: auto;
   }
+
   .marshrute-speed__footer-vector {
     height: auto !important;
   }
+
   .organization-structure__img-container {
     margin-left: 0;
   }
+
   .organization-structure__personal-grafic {
     height: auto;
   }
@@ -99,24 +119,30 @@
   body {
     padding-bottom: 60px;
   }
+
   .control-structure__img,
   .incorporated-accrued__img,
   .alt-preview__img {
     height: auto;
     width: auto;
   }
+
   .risk-analysis__item-img {
     display: none;
   }
+
   .risk-analysis__item {
     padding-bottom: 0;
   }
+
   .risk-process__img {
     height: auto;
   }
+
   .applications {
     margin-top: 20px !important;
   }
+
   .report-hero__portrait {
     width: auto !important;
     height: auto !important;
@@ -126,6 +152,7 @@
       height: auto !important;
     }
   }
+
   .report-hero__portrait {
     width: 90% !important;
     height: auto !important;
@@ -135,12 +162,15 @@
       height: auto !important;
     }
   }
+
   .macroeconomics-grafics__col {
     max-width: 100%;
   }
+
   .who-we__appeal .appeal-signature {
     width: auto;
   }
+
   .preview__title {
     font-size: 52px;
     text-align: center;
@@ -149,32 +179,47 @@
 
   .report-hero__portrait.mobile {
     width: 100% !important;
+
     img {
       width: 100% !important;
     }
   }
+
   .pahomov__img {
     height: auto;
   }
+
   .block-diagram__col {
     display: none;
   }
+
   .preservation-structure__video,
   .preservation-statistics__video {
     display: none !important;
   }
+
   .preservation-statistics__video {
     margin-top: 0 !important;
   }
+
   .preservation-structure__descrition {
     height: 60px;
   }
+
   .preservation-dynamic__img {
     width: auto;
     margin-left: 0;
     padding-left: 0;
   }
+
   .preview__title {
     padding-top: 0;
   }
+}
+
+
+
+
+.tt {
+  text-transform: initial !important;
 }

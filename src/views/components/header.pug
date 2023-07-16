@@ -19,13 +19,18 @@ mixin header
             .header-actions__item-icon 
               +search-normal-svg.search
           .header-actions__item
-            .select-wrapper 
-              .select
-                select.select__select(width='100%')
-                  each item in ['EN', 'RU', 'CH']
-                    option(value=item)
-                      |#{item}
-          .header-actions__item.header-actions_before
+            .header-select__inner
+              .header-select__content
+                .header-select__item 
+                  p.header-select__item-text RU
+                  .header-select__item-arrow 
+                    +header-arrow-svg 
+              .header-select__dropdown 
+                a.header-select__sub(href="#") 
+                  p.header-select__sub-text EN
+                a.header-select__sub(href="#")  
+                  p.header-select__sub-text CN
+          a.header-actions__item.header-actions_before(href="#" download)
             .header-actions__item-row
               .header-actions__item-icon
                 +header-download-svg.download
@@ -62,12 +67,17 @@ mixin header-EN
             .header-actions__item-icon 
               +search-normal-svg.search
           .header-actions__item
-            .select-wrapper 
-              .select
-                select.select__select(width='100%')
-                  each item in ['EN', 'RU', 'CH']
-                    option(value=item)
-                      |#{item}
+            .header-select__inner
+              .header-select__content
+                .header-select__item 
+                  p.header-select__item-text EN
+                  .header-select__item-arrow 
+                    +header-arrow-svg 
+              .header-select__dropdown 
+                a.header-select__sub(href="#") 
+                  p.header-select__sub-text RU
+                a.header-select__sub(href="#")  
+                  p.header-select__sub-text CN
           .header-actions__item.header-actions_before
             .header-actions__item-row
               .header-actions__item-icon
@@ -104,12 +114,17 @@ mixin header-CN
             .header-actions__item-icon 
               +search-normal-svg.search
           .header-actions__item
-            .select-wrapper 
-              .select
-                select.select__select(width='100%')
-                  each item in ['EN', 'RU', 'CH']
-                    option(value=item)
-                      |#{item}
+            .header-select__inner
+              .header-select__content
+                .header-select__item 
+                  p.header-select__item-text CN
+                  .header-select__item-arrow 
+                    +header-arrow-svg 
+              .header-select__dropdown 
+                a.header-select__sub(href="#") 
+                  p.header-select__sub-text EN
+                a.header-select__sub(href="#")  
+                  p.header-select__sub-text RU
           .header-actions__item.header-actions_before
             .header-actions__item-row
               .header-actions__item-icon

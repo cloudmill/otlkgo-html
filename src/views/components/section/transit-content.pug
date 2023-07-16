@@ -8,7 +8,7 @@ mixin transit-content
             .transit-dynamic__elements  
               .transit-dynamic__elem 
                 .chart-decor.chart-decor_green
-                p.text ОТЛК ЕРА
+                p.text ОТЛК&nbsp;ЕРА
               .transit-dynamic__elem 
                 .chart-decor.chart-decor_light-green
                 p.text Наушки
@@ -23,11 +23,11 @@ mixin transit-content
               a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
           .transit-dynamic__right
             .transit-dynamic__svg
-              +picture('transit-dynamic-1-mobile.png')
+              +picture('transit-dynamic-1-mobile.png','t')
         .links.transit-dynamic__links.flex-m
           p.links__text.transit-dynamic__links-text Источник:&nbsp;
           a.links__link.transit-dynamic__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-dynamic-1-mobile.png')
+        +activity-buttons('transit-dynamic-1-mobile.png','t')
         .transit-dynamic__row 
           .transit-dynamic__item 
             p.transit-dynamic__number.flex
@@ -42,16 +42,16 @@ mixin transit-content
       .transit-volume__inner 
         .row 
           .transit-volume__row_top
-            h4.transit-volume__title Объем транзита Китай-Европа-Китай в сервисах ОТЛК&nbsp;ЕРА, 2021–2022&nbsp;гг., ДФЭ
+            h4.transit-volume__title Объем транзита Китай–Европа–Китай в сервисах ОТЛК&nbsp;ЕРА, 2021–2022&nbsp;гг., ДФЭ
             a.transit-volume__link.desktop-t <span>Источник: </span>ОТЛК&nbsp;ЕРА
           .transit-volume__svg.desktop
-            +picture('transit-volumeTransit.png')
+            +picture('transit-volumeTransit.png','t')
           .transit-volume__svg.mobile
-            +picture('transit-volumeTransit-mobile.png')
+            +picture('transit-volumeTransit-mobile.png','t')
            
           a.transit-volume__link.flex-t <span>Источник: </span>ОТЛК&nbsp;ЕРА
-          +activity-buttons('transit-volumeTransit.png').flex-desktop
-          +activity-buttons('transit-volumeTransit-mobile.png').flex-m
+          +activity-buttons('transit-volumeTransit.png','t').flex-desktop
+          +activity-buttons('transit-volumeTransit-mobile.png','t').flex-m
           h4.transit-volume__subtitle Объемы перевозок через основные конкурентные коридоры также показали снижение в годовом выражении:
           .transit-volume__row 
             .transit-volume__item 
@@ -70,9 +70,9 @@ mixin transit-content
     .container-content 
       .transit-china__inner
         .row
-          h4.transit-china__title Динамика долей погранпереходов в направлении Китай-Европа-Китай, 2022&nbsp;г.
+          h4.transit-china__title Динамика долей погранпереходов в направлении Китай–Европа–Китай, 2022&nbsp;г.
           a.transit-china__link.desktop(href="#" target='blank') 
-            <span>Источник: </span>«ОТЛК&nbsp;ЕРА»
+            <span>Источник: </span>ОТЛК&nbsp;ЕРА
         .row 
           .transit-china__items 
             .transit-china__item 
@@ -88,7 +88,7 @@ mixin transit-content
               span.transit-china__item_alt-grey
               p Порты и станции ДВ РФ
         .transit-china__img 
-          +picture('transit-china.png').transit-china-img
+          +picture('transit-china.png','t').transit-china-img
         a.transit-china__link.mobile(href="#" target='blank') 
             <span>Источник: </span>«ОТЛК&nbsp;ЕРА»
         +activity-buttons('transit-china.png')
@@ -126,16 +126,21 @@ mixin transit-content
                 +mark-text-svg 
               .col 
                 p.text.transit-china__text <span> Снижение количества субсидий, </span>  выделяемых правительством КНР на поддержку железнодорожного импорта в Европу, вкупе с падением ставок морского фрахта, привело к дополнительному снижению рыночной привлекательности железнодорожных транзитных перевозок.
+  
+  
+  
+  
+  
   section(data-aos="fade-up").transit-level 
     .container-content 
       .transit-level__inner 
         .col 
           p.transit-level__description Тем не менее, спрос на транзитные контейнерные перевозки, проходящие по территории России, оставался на высоком уровне.
         .col 
-          p.text.transit-level__text Так, в сервисах ОТЛК ЕРА были совершены транзитные перевозки по 28 новым маршрутам, 10 из которых относятся к направлению Европа-Китай, а 18 к направлению Китай-Европа. На карту новых локаций за 2022 год добавились 4 новые точки зарождения/поглощения грузов: Таулов (Дания), Котка (Финляндия), Шанграо и Дулаин (Китай).
+          p.text.transit-level__text Так, в сервисах ОТЛК&nbsp;ЕРА были совершены транзитные перевозки по 28 новым маршрутам, 10 из которых относятся к направлению Европа-Китай, а 18 к направлению Китай-Европа. На карту новых локаций за 2022 год добавились 4 новые точки зарождения/поглощения грузов: Таулов (Дания), Котка (Финляндия), Шанграо и Дулаин (Китай).
           p.text.transit-level__text Изменения во внешней среде заставили участников внешнеэкономической деятельности существенно пересмотреть собственные процессы в 2022 году. Как результат, произошли изменения в логистических цепочках, повлиявшие на перераспределение долей в общем объеме ОТЛК&nbsp;ЕРА.
           p.text.transit-level__text Так, заметно приросли объемы в импортных сервисах, что позволило частично нивелировать сократившийся транзитный грузопоток. За 2022 год сервисами компании было перевезено 148 560 ДФЭ на направлении Китай-Россия. Таким образом, этот сегмент вырос на 771% относительно 2021 года. В апреле 2022 года наша компания приняла первый платеж в юанях в рамках одной из таких перевозок, по итогам года с клиентами заключено 12 договоров на оплату в юанях, и отправлен 31 поезд в рамках соглашений. 
-          p.text.transit-level__text Всего за период  компания обеспечила импортные перевозки по 194 новым маршрутам. Мы добавили 14 новых точек поглощения грузов на территории РФ: Силикатная, Кольцово, Анисовка, Костариха, Черняховск, Автово, Нижнекамск, Ростов-Товарный, Черниковка, Лужская, Тихоново, Иня-Восточная, Базаиха и Бронка, а также 12 новых точек зарождения импортных грузов: Хайфон (Вьетнам), Гаои, Шицзячжуан, Вэньдэн, Лучжоу, Линьи, Миньхан, Гуан-Юань, Нанша, Туаньцзецунь, Цзаоцзяопу, Шихэцзы (Китай). Объемы перевозок по еще одному импортному сегменту ОТЛК ЕРА, а именно перевозки Китай-Беларусь, достигли 14 098 ДФЭ в 2022 году (годовой рост 536%).
+          p.text.transit-level__text Всего за период  компания обеспечила импортные перевозки по 194 новым маршрутам. Мы добавили 14 новых точек поглощения грузов на территории РФ: Силикатная, Кольцово, Анисовка, Костариха, Черняховск, Автово, Нижнекамск, Ростов-Товарный, Черниковка, Лужская, Тихоново, Иня-Восточная, Базаиха и Бронка, а также 12 новых точек зарождения импортных грузов: Хайфон (Вьетнам), Гаои, Шицзячжуан, Вэньдэн, Лучжоу, Линьи, Миньхан, Гуан-Юань, Нанша, Туаньцзецунь, Цзаоцзяопу, Шихэцзы (Китай). Объемы перевозок по еще одному импортному сегменту ОТЛК&nbsp;ЕРА, а именно перевозки Китай-Беларусь, достигли 14 098 ДФЭ в 2022 году (годовой рост 536%).
   section(data-aos="fade-up").transit-value 
     .container-content 
       .transit-value__inner 
@@ -152,12 +157,12 @@ mixin transit-content
             span.transit-value__span.green-bg
             p 2022
         .transit-value__img 
-          +picture('transit-value.png').transit-value-img
+          +picture('transit-value.png','t').transit-value-img
           
         .links.transit-value__links.mobile
           p.links__text.transit-value__links-text Источник:&nbsp;
           a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
-        +activity-buttons('transit-value.png')
+        +activity-buttons('transit-value.png','t')
         .transit-value__row 
           .col 
             p.transit-value__description По видам перевозок за 2022 год также следует отметить увеличение экспортных объемов.
@@ -166,10 +171,10 @@ mixin transit-content
   section(data-aos="fade-up").transit-export 
     .container-content 
       .transit-export__inner 
-        h4.transit-export__title Объем экспортных контейнерных перевозок РФ, РБ-Китай в сервисах ОТЛК&nbsp;ЕРА, 2022&nbsp;гг., ДФЭ
+        h4.transit-export__title Объем экспортных контейнерных перевозок России и Беларуси в Китай в сервисах ОТЛК&nbsp;ЕРА, 2022 гг., ДФЭ
         .transit-export__svg
-          +picture('transit-export.png').transit-export-svg 
-        +activity-buttons('transit-export.png')
+          +picture('transit-export.png','t').transit-export-svg 
+        +activity-buttons('transit-export.png','t')
   section(data-aos="fade-up").transit-adaptation(id="transit-adaptation")   
     .container-content 
       .transit-adaptation__inner 
@@ -179,7 +184,7 @@ mixin transit-content
             p.transit-adaptation__description  В 2022 году произошли значительные изменения условий деятельности евразийских железнодорожных контейнерных перевозок.
           .col 
             p.text.transit-adaptation__text Ухудшение международно-политической обстановки, затронувшее страны-участницы перевозок, стало главной отправной точкой для большинства изменений в установившемся порядке торговых взаимоотношений. Однако адаптация рынка к текущей реальности очевидна, учитывая кратный рост объемов ОТЛК&nbsp;ЕРА во многих новых направлениях деятельности. Таким образом, подтвердилась гибкость, присущая железнодорожным контейнерным перевозкам. Учитывая временное снижение спроса с европейской стороны, введение новых маршрутов в импортных и экспортных направлениях, а также поддержание высокого качества сервиса основного транзитного маршрута дали положительные результаты в непростой год для евразийских железнодорожных контейнерных перевозок. Более того, удалось поддержать показатель объемов перевозок на уровне рекордного 2021 года.
-            p.text.transit-adaptation__text В 2023 году обозначенные политические и конъюнктурные факторы продолжат оказывать влияние на индустрию, а главным барьером для успешной работы на направлении Китай-Европа-Китай продолжит быть сложная геополитическая обстановка. В свою очередь, появится ряд возможностей. К примеру, отмена политики «нулевой терпимости» к COVID в Китае способна активизировать производства и экспорт страны, а также привести к возрождению потребительского спроса, что простимулирует импорт. Стремление китайских производителей нарастить экспорт электрокаров в западном направлении также способно дать индустрии перевозок новые объемы, равно как и продолжающийся рост отправок грузов электронной коммерции. Соответственно, для дальнейшего успешного развития важно пользоваться появляющимися возможностями и продолжать работу над улучшением качества сервисов.
+            p.text.transit-adaptation__text В 2023 году обозначенные политические и конъюнктурные факторы продолжат оказывать влияние на индустрию, а главным барьером для успешной работы на направлении Китай–Европа–Китай продолжит быть сложная геополитическая обстановка. В свою очередь, появится ряд возможностей. К примеру, отмена политики «нулевой терпимости» к COVID в Китае способна активизировать производства и экспорт страны, а также привести к возрождению потребительского спроса, что простимулирует импорт. Стремление китайских производителей нарастить экспорт электрокаров в западном направлении также способно дать индустрии перевозок новые объемы, равно как и продолжающийся рост отправок грузов электронной коммерции. Соответственно, для дальнейшего успешного развития важно пользоваться появляющимися возможностями и продолжать работу над улучшением качества сервисов.
   section(data-aos="fade-up").transit-conclusion 
     .container-content 
       .transit-conclusion__inner 
@@ -188,7 +193,7 @@ mixin transit-content
           +column-top-svg.transit-conclusion-svg
         .col 
           p.transit-conclusion__description По итогам 2022 года можно говорить о замедлении темпов роста мировой экономики, однако ряд позитивных событий позволяет с большим оптимизмом смотреть в грядущий 2023 год с точки зрения развития глобальной экономики и международной торговли.
-          p.text.transit-conclusion__text Между тем, морские перевозки вернули себе звание наиболее «экономичного» способа доставки. Стабилизация на рынке морских грузоперевозок определенно сказалась на бизнесе авиаперевозчиков, которые заявляют об активном оттоке грузов в пользу морских сервисов. Также, вероятно, сказалась она и на железнодорожных перевозках Китай-Европа-Китай, но здесь роль сыграли и другие факторы. Прежде всего, это ухудшение геополитической ситуации и общая слабость европейской и китайской экономик.
+          p.text.transit-conclusion__text Между тем, морские перевозки вернули себе звание наиболее «экономичного» способа доставки. Стабилизация на рынке морских грузоперевозок определенно сказалась на бизнесе авиаперевозчиков, которые заявляют об активном оттоке грузов в пользу морских сервисов. Также, вероятно, сказалась она и на железнодорожных перевозках Китай–Европа–Китай, но здесь роль сыграли и другие факторы. Прежде всего, это ухудшение геополитической ситуации и общая слабость европейской и китайской экономик.
           p.text.transit-conclusion__text Тем не менее, евразийские железнодорожные сервисы продолжили совершенствоваться и адаптироваться к изменениям в мире. Новые клиенты присоединились к евразийским перевозкам, были достигнуты высокие показатели в рамках новых сегментов, что позволило поддержать объемы перевозок на уровне рекордного 2021 года. В 2023 году индустрии предстоит справляться с целым рядом вызовов, но на рынке также остается и множество возможностей. Соответственно, основным направлением, как и на протяжении всего 2022 года, остается развитие новых точек деятельности и диверсификация портфеля услуг, что позволит нивелировать сокращение в сегментах. Напоследок, не менее важным является дальнейшее качественное развитие индустрии. Повышение цифровизации процессов и прозрачности деятельности, как и лояльности всех стейкхолдеров к железнодорожным перевозкам могут стать важнейшими факторами роста в будущем.
 mixin transit-content-CN 
   section(data-aos="fade-up").transit-dynamic
@@ -231,58 +236,35 @@ mixin transit-content-CN
           .col 
             p.text.transit-dynamic__text 2022年，UTLC&nbsp;ERA集装箱服务在通过多斯特克和阿腾科里边境口岸的过境路线上运输了410 638 TEU（同比-34.6%）。反之，中-欧方向运输276 472 TEU，欧-中方向运输134 166 TEU（分别下降33.9%和36%）。
   
-  
-  
-  
-    section(data-aos="fade-up").transit-volume 
-    .container-content
-      .transit-volume__inner 
-        .row 
-          .transit-volume__row_top
-            h4.transit-volume__title 2021年至2022年UTLC时代中国–欧洲-中国过境量(TEU)
-            a.transit-volume__link.desktop-t <span>Source: </span>«UTLC&nbsp;ERA"
-          .transit-volume__svg
-            +picture('transit-volumeTransit-EN.png')
-          a.transit-volume__link.flex-t <span>Source: </span>«UTLC&nbsp;ERA"
-          +activity-buttons('transit-volumeTransit-EN.png')
-  
-  
-  
-  
-  
-  
-  
-  
-  
   section(data-aos="fade-up").transit-volume 
     .container-content
       .transit-volume__inner 
         .row 
           .transit-volume__row_top
-            h4.transit-volume__title 2021-2022年UTLC&nbsp;ERA服务中的中欧中转量，TEU
-            a.transit-volume__link.desktop-t <span>资料来源: </span>UTLC&nbsp;ERA股份公司
-          .transit-volume__svg
-            +picture('transit-volumeTransit-EN.png')
-          a.transit-volume__link.flex-t <span>资料来源: </span>UTLC&nbsp;ERA股份公司
-          +activity-buttons('transit-volumeTransit-EN.png')
-          .transit-volume__svg
-            +picture('transit-volumeTransit-EN.png')
-          a.transit-volume__link.flex-t <span>资料来源: </span>UTLC&nbsp;ERA股份公司
-          +activity-buttons('transit-volumeTransit-EN.png')
+            h4.transit-volume__title 2021年至2022年UTLC时代中国–欧洲-中国过境量(TEU)
+            a.transit-volume__link.desktop-t <span>來源: </span>«UTLC&nbsp;ERA"
+          .transit-volume__svg.desktop
+            +picture('transit-volumeTransit-CN.png','t')
+          .transit-volume__svg.mobile
+            +picture('transit-volumeTransit-mobile-CN.png','t')
+           
+          a.transit-volume__link.flex-t <span>來源: </span>«UTLC&nbsp;ERA"
+          +activity-buttons('transit-volumeTransit.png','t').flex-desktop
+          +activity-buttons('transit-volumeTransit-mobile.png','t').flex-m  
           h4.transit-volume__subtitle 通过主要竞争走廊的运输量也呈逐年下降趋势：
           .transit-volume__row 
             .transit-volume__item 
               p.transit-volume__place 后贝加尔斯克
               p.transit-volume__number -61,5%
-              p.transit-volume__sub до 17 706 ДФЭ
+              p.transit-volume__sub 高達 17,706 TEU
             .transit-volume__item 
               p.transit-volume__place 纳乌什基
               p.transit-volume__number -64,4%
-              p.transit-volume__sub до 25 354 ДФЭ
+              p.transit-volume__sub 高達  25 354 TEU
             .transit-volume__item 
               p.transit-volume__place 远东港口和车站
               p.transit-volume__number -70,2%
-              p.transit-volume__sub до 6 235 ДФЭ
+              p.transit-volume__sub 高達  6 235 TEU
   section(data-aos="fade-up").transit-china 
     .container-content 
       .transit-china__inner
@@ -420,13 +402,13 @@ mixin transit-content-EN
                 p.text UTLC&nbsp;ERA
               .transit-dynamic__elem 
                 .chart-decor.chart-decor_light-green
-                p.text Noushki
+                p.text Naushki
               .transit-dynamic__elem 
                 .chart-decor.chart-decor_white-green 
                 p.text Zabaikalsk
               .transit-dynamic__elem 
                 .chart-decor.chart-decor_gray
-                p.text Ports and stations of the Far East of the Russian Federation
+                p.text Ports and stations of Russian Far East
             .links.transit-dynamic__links.desktop 
               p.links__text.transit-dynamic__links-text Source:&nbsp;
               a.links__link.transit-dynamic__link(href="#" target='blank') UTLC&nbsp;ERA
@@ -526,12 +508,14 @@ mixin transit-content-EN
               .col 
                 +mark-text-svg 
               .col 
-                p.text.transit-china__text <span> Reduced number of subsidies</span>  allocated by the Chinese Government to support the rail import to Europe, along with the decreasing sea freight rates, has caused the rail container transit market to become even less attractive.
+                
+                p.text.transit-china__text <span> Unwillingness of European cargo owners </span>   to transport their cargoes via Russia due to the conflict in Ukraine. Starting from March 2022, the cargo flows started to switch to the competitive modalities or routes outside of Russia. For instance, they switched to the Trans-Caspian International Transport Route (TITR), where 33,000 TEUs were transported in 2022, which is 33% more than in the previous year (8,000 TEUs).
             .transit-china__item 
               .col 
                 +mark-text-svg 
               .col 
-                p.text.transit-china__text <span> Unwillingness of European cargo owners </span>   to transport their cargoes via Russia due to the conflict in Ukraine. Starting from March 2022, the cargo flows started to switch to the competitive modalities or routes outside of Russia. For instance, they switched to the Trans-Caspian International Transport Route (TITR), where 33,000 TEUs were transported in 2022, which is 33% more than in the previous year (8,000 TEUs).
+                p.text.transit-china__text <span> Reduced number of subsidies</span>  allocated by the Chinese Government to support the rail import to Europe, along with the decreasing sea freight rates, has caused the rail container transit market to become even less attractive.
+                
   section(data-aos="fade-up").transit-level 
     .container-content 
       .transit-level__inner 
@@ -547,8 +531,8 @@ mixin transit-content-EN
       .transit-value__inner 
         h4.transit-value__title China–Russia Import Container Traffic Volume in UTLC&nbsp;ERA’s Services, TEUs and number of import routes, 2021 to 2022
         .links.transit-value__links.desktop
-          p.links__text.transit-value__links-text Источник:&nbsp;
-          a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+          p.links__text.transit-value__links-text Source:&nbsp;
+          a.links__link.transit-value__link(href="#" target='blank') UTLC&nbsp;ERA
         .transit-value__items 
           .transit-value__item 
             span.transit-value__span.green-light-bg 
@@ -559,12 +543,12 @@ mixin transit-content-EN
         .transit-value__img 
           +picture('transit-value-EN.png').transit-value-img
         .links.transit-value__links.mobile
-          p.links__text.transit-value__links-text Источник:&nbsp;
-          a.links__link.transit-value__link(href="#" target='blank') ОТЛК&nbsp;ЕРА
+          p.links__text.transit-value__links-text Source:&nbsp;
+          a.links__link.transit-value__link(href="#" target='blank') UTLC&nbsp;ERA
         +activity-buttons('transit-value-EN.png')
         .transit-value__row 
           .col 
-            p.transit-value__description The growth in export volumes by traffic types in 2022 is also notable.
+            p.transit-value__description The Growth in export volumes by traffic types in 2022 is also notable.
           .col 
             p.text.transit-value__text In particular, the traffic volume under the project for potassium chloride transportation from the Republic of Belarus to China launched in 2022 was equal to 52,284 TEUs. The total traffic volume in UTLC&nbsp;ERA’s export services was 107,901 TEUs, which exceeds the last year’s volume by 137%.
   section(data-aos="fade-up").transit-export 
@@ -580,9 +564,11 @@ mixin transit-content-EN
         h3.transit-adaptation__title Flexibility Evidenced by Adaptation
         .transit-adaptation__row 
           .col 
-            p.transit-adaptation__description.transit-adaptation__description_EN  In 2022, the conditions for Eurasian rail container traffic operations changed in a drastic manner. The deteriorating international political situation that affected the countries participating in the traffic operations was the main driver behind most changes in the established trade relations. However, the market adaptation to the current realities is obvious, taking into account the multi-fold growth in UTLC&nbsp;ERA’s volumes in many directions. This confirmed the inherent flexibility of rail container traffic. Taking into account the temporary decline in demand from the European side, introduction of new import and export routes and maintaining the high service quality on the main transit route have contributed to positive performance shown by the Eurasian rail container traffic during a challenging year. Moreover, we succeeded in maintaining the traffic volumes at the record high level achieved in 2021.
+            p.transit-adaptation__description.transit-adaptation__description_EN  In 2022, the conditions for Eurasian rail container traffic operations changed in a drastic manner. 
+
           .col 
             p.text.transit-adaptation__text In 2023, the specified political and market drivers will continue to affect the industry, and the challenging geopolitical situation will remain the main obstacle for successful operations on the China–Europe–China route. However, a number of opportunities will also arise. For instance, the cancellation of the “zero COVID tolerance” policy in China can revitalize the national production and export volumes, as well as the consumer demand, which will boost the import volumes. The intention of Chinese manufacturers to increase the electric car export volumes in the western direction, as well as the continuing growth in e-commerce cargo dispatch rates can also bring new volumes into the traffic industry. Accordingly, it is crucial to embrace the emerging opportunities and to further improve the service quality to ensure successful future development.
+            p.text.transit-adaptation__text.mt-20 The deteriorating international political situation that affected the countries participating in the traffic operations was the main driver behind most changes in the established trade relations. However, the market adaptation to the current realities is obvious, taking into account the multi-fold growth in UTLC&nbsp;ERA’s volumes in many directions. This confirmed the inherent flexibility of rail container traffic. Taking into account the temporary decline in demand from the European side, introduction of new import and export routes and maintaining the high service quality on the main transit route have contributed to positive performance shown by the Eurasian rail container traffic during a challenging year. Moreover, we succeeded in maintaining the traffic volumes at the record high level achieved in 2021.
   section(data-aos="fade-up").transit-conclusion 
     .container-content 
       .transit-conclusion__inner 

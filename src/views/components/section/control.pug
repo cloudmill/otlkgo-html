@@ -15,10 +15,10 @@ mixin control-sections
       .control-subhero__row.listing(data-aos="fade-up") 
         .control-subhero__col.list-subhero 
           each item in ['Равное отношение к правам и интересам акционеров', 'Уважение и защита прав акционеров', 'Последовательность и коллегиальность в принятии решений', 'Активность и профессионализм членов совета директоров и правления', 'Стабильная и прозрачная дивидендная политика']
-            .recruitment-processes__hr-mark=item
+            .recruitment-processes__hr-mark!=item
         .control-subhero__col.list-subhero 
-          each item in ['Информационная открытость и прозрачность', 'Неприятие коррупции в любых ее проявлениях', 'Последовательность и коллегиальность в принятии решений', 'Соблюдение этических норм поведения', 'Корпоративная социальная ответственность']
-            .recruitment-processes__hr-mark=item
+          each item in ['Информационная открытость и прозрачность', 'Неприятие коррупции в любых ее проявлениях', 'Соблюдение этических норм поведения', 'Корпоративная социальная ответственность']
+            .recruitment-processes__hr-mark!=item
   .container-content  
     section.control-meetings(data-aos="fade-up")
       h3.control-meetings__title Количество общих собраний акционеров/заседаний совета директоров и его комитетов, правления в 2022 году
@@ -28,7 +28,7 @@ mixin control-sections
           .custom-card 
             .custom-card__title Общее собрания акционеров
             .custom-card__row
-              .custom-card__num.w-1.countup-element(data-countup='4') 4
+              .custom-card__num.w-1.countup-element(data-countup='4')
               .custom-card__texts.number-animate-4.number-animate 
                 .custom-card__texts-title заседания
                 .custom-card__texts-subtext.desktop 2 собрания в форме совместного присутствия (с возможностью предварительного направления бюллетеней), 2 собрания в форме заочного голосования (путем направления бюллетеней)            
@@ -38,14 +38,14 @@ mixin control-sections
           .custom-card 
             .custom-card__title Совет директоров
             .custom-card__row
-              .custom-card__num.w-2.countup-element(data-countup='13') 13
+              .custom-card__num.w-2.countup-element(data-countup='13')
               .custom-card__texts.number-animate-13.number-animate 
                 .custom-card__texts-title заседаний
                 .custom-card__texts-subtext.desktop 9 заседаний в форме совместного присутствия, <br>(8 – по видеоконференцсвязи, 1 – совместное присутствие), <br>4 заседания в форме заочного голосования
             .custom-card__texts-subtext.mobile 9 заседаний в форме совместного присутствия, <br>(8 – по видеоконференцсвязи, 1 – совместное присутствие), <br>4 заседания в форме заочного голосования
             .custom-card__subtitle В составе совета директоров:
-            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги']
-              .recruitment-processes__hr-mark=item
+            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО&nbsp;«НК&nbsp;«КТЖ»', 'Два представителя Белорусской железной дороги']
+              .recruitment-processes__hr-mark!=item
             .custom-card__text Независимые директора не входили в состав совета директоров.
       .control-meetings__row(data-aos="fade-up") 
         .control-meetings__col(data-aos="fade-up")
@@ -53,47 +53,47 @@ mixin control-sections
           .custom-card 
             .custom-card__title Комитет по стратегии совета директоров
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='8') 8
+              .custom-card__num.countup-element(data-countup='8')
               .custom-card__texts.number-animate-8.number-animate  
                 .custom-card__texts-title заседаний
                 .custom-card__texts-subtext.desktop 3 заседания в форме совместного присутствия, <br>5 заседаний в форме заочного голосования
             .custom-card__texts-subtext.mobile 3 заседания в форме совместного присутствия, <br>5 заседаний в форме заочного голосования
             .custom-card__subtitle В составе комитета по стратегии совета директоров:
-            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
-              .recruitment-processes__hr-mark=item
+            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО&nbsp;«НК&nbsp;«КТЖ»', 'Два представителя Белорусской железной дороги','Два представителя ОТЛК&nbsp;ЕРА']
+              .recruitment-processes__hr-mark!=item
         .control-meetings__col(data-aos="fade-up")
           //card
           .custom-card 
             .custom-card__title Комитет по аудиту совета директоров
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__num.countup-element(data-countup='7')
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title заседаний
                 .custom-card__texts-subtext.desktop 5 заседаний в форме совместного присутствия, 2 заседания в форме заочного голосования
             .custom-card__texts-subtext.mobile 5 заседаний в форме совместного присутствия,  <br>2 заседания в форме заочного голосования
             .custom-card__subtitle В составе комитета по аудиту совета директоров:
-            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
-              .recruitment-processes__hr-mark=item
+            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО&nbsp;«НК&nbsp;«КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК&nbsp;ЕРА']
+              .recruitment-processes__hr-mark!=item
       .control-meetings__row(data-aos="fade-up") 
         .control-meetings__col(data-aos="fade-up")
           //card
           .custom-card 
             .custom-card__title Комитет по кадрам, вознаграждениям <br>и корпоративному управлению совета директоров
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__num.countup-element(data-countup='7')
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title заседаний
                 .custom-card__texts-subtext.desktop 5 заседаний в форме совместного присутствия, <br>2 заседания в форме заочного голосования
             .custom-card__texts-subtext.mobile 5 заседаний в форме совместного присутствия, <br>2 заседания в форме заочного голосования
             .custom-card__subtitle В составе комитета по кадрам, вознаграждениям и корпоративному управлению совета директоров:
-            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО «НК «КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК ЕРА']
-              .recruitment-processes__hr-mark=item
+            each item in ['Два представителя ОАО «РЖД»', 'Два представителя АО&nbsp;«НК&nbsp;«КТЖ»', 'Два представителя Белорусской железной дороги', 'Два представителя ОТЛК&nbsp;ЕРА']
+              .recruitment-processes__hr-mark!=item
         .control-meetings__col(data-aos="fade-up") 
           //card
           .custom-card 
             .custom-card__title Правление
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='31') 31
+              .custom-card__num.countup-element(data-countup='31') 
               .custom-card__texts.number-animate-31.number-animate  
                 .custom-card__texts-title заседание
                 .custom-card__texts-subtext.desktop 30 заседаний в форме совместного присутствия, 1 заседание <br>в форме заочного голосования
@@ -108,8 +108,8 @@ mixin control-sections
       +activity-buttons('control-structure-vector.png').flex-desktop
       .control-structure__img-container.mobile(data-aos="fade-up")
         .control-structure__img 
-          +picture('control-structure-vector.png')
-      +activity-buttons('control-structure-vector.png').flex-m
+          +picture('control-structure-vector-mobile.png')
+      +activity-buttons('control-structure-vector-mobile.png').flex-m
 
 mixin control-sections-EN 
   .container.container_control-hero(data-aos="fade-up") 
@@ -146,7 +146,7 @@ mixin control-sections-EN
           .custom-card 
             .custom-card__title General Meetings of Shareholders
             .custom-card__row
-              .custom-card__num.w-1.countup-element(data-countup='4') 4
+              .custom-card__num.w-1.countup-element(data-countup='4')
               .custom-card__texts.number-animate-4.number-animate 
                 .custom-card__texts-title meetings
                 .custom-card__texts-subtext.desktop 2 meetings in the form of joint attendance (with a possibility to deliver early voting ballots), 2 meetings in the form of absentee voting (by sending out ballots).            
@@ -156,7 +156,7 @@ mixin control-sections-EN
           .custom-card 
             .custom-card__title Board of Directors
             .custom-card__row
-              .custom-card__num.w-2.countup-element(data-countup='13') 13
+              .custom-card__num.w-2.countup-element(data-countup='13') 
               .custom-card__texts.number-animate-13.number-animate 
                 .custom-card__texts-title meetings 
                 .custom-card__texts-subtext.desktop 9 meetings in the form of joint attendance (8 meetings by video conference, 1 meeting with joint attendance), 4 meetings in the form of absentee voting.
@@ -172,7 +172,7 @@ mixin control-sections-EN
           .custom-card 
             .custom-card__title Strategy Committee under the Board of Directors
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='8') 8
+              .custom-card__num.countup-element(data-countup='8')
               .custom-card__texts.number-animate-8.number-animate  
                 .custom-card__texts-title meetings 
                 .custom-card__texts-subtext.desktop 3 meetings in the form of joint attendance, <br>5 meetings in the form of absentee voting
@@ -187,7 +187,7 @@ mixin control-sections-EN
           .custom-card 
             .custom-card__title Audit Committee under the Board of Directors
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__num.countup-element(data-countup='7')
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title meetings 
                 .custom-card__texts-subtext.desktop 5 meetings in the form of joint attendance, <br>2 meetings in the form of absentee voting
@@ -203,7 +203,7 @@ mixin control-sections-EN
           .custom-card 
             .custom-card__title HR, Remuneration and Corporate Governance<br> Committee under the Board of Directors
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__num.countup-element(data-countup='7')
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title meetings 
                 .custom-card__texts-subtext.desktop 5 meetings in the form of joint attendance,<br> 2 meetings in the form of absentee voting
@@ -218,7 +218,7 @@ mixin control-sections-EN
           .custom-card 
             .custom-card__title Management Board
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='31') 31
+              .custom-card__num.countup-element(data-countup='31') 
               .custom-card__texts.number-animate-31.number-animate  
                 .custom-card__texts-title meetings 
                 .custom-card__texts-subtext.desktop 30 meetings in the form of joint attendance, <br>1 meeting in the form of absentee voting
@@ -233,8 +233,8 @@ mixin control-sections-EN
       +activity-buttons('control-structure-vector-EN.png').flex-desktop
       .control-structure__img-container.mobile(data-aos="fade-up")
         .control-structure__img 
-          +picture('control-structure-vector-EN.png')
-      +activity-buttons('control-structure-vector-EN.png').flex-m
+          +picture('control-structure-vector-mobile-EN.png')
+      +activity-buttons('control-structure-vector-mobile-EN.png').flex-m
 
 mixin control-sections-CN 
   .container.container_control-hero(data-aos="fade-up") 
@@ -271,7 +271,7 @@ mixin control-sections-CN
           .custom-card 
             .custom-card__title 股东大会-
             .custom-card__row
-              .custom-card__num.w-1.countup-element(data-countup='4') 4
+              .custom-card__num.w-1.countup-element(data-countup='4')
               .custom-card__texts.number-animate-4.number-animate 
                 .custom-card__texts-title 全体股东大会
                 .custom-card__texts-subtext.desktop 2次大会的（可预先发送选票）
@@ -281,7 +281,7 @@ mixin control-sections-CN
           .custom-card 
             .custom-card__title 董事会 
             .custom-card__row
-              .custom-card__num.w-2.countup-element(data-countup='13') 13
+              .custom-card__num.w-2.countup-element(data-countup='13') 
               .custom-card__texts.number-animate-13.number-animate 
                 .custom-card__texts-title 次会议
                 .custom-card__texts-subtext.desktop 9次联合出席形式的会议(8次视频会议,1次联合出席,4次缺席投票)。
@@ -297,7 +297,7 @@ mixin control-sections-CN
           .custom-card 
             .custom-card__title 董事会战略委员会  
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='8') 8
+              .custom-card__num.countup-element(data-countup='8')
               .custom-card__texts.number-animate-8.number-animate  
                 .custom-card__texts-title 次会议。
                 .custom-card__texts-subtext.desktop 3次联合出席形式的会议，5次缺席投票会议。
@@ -312,7 +312,7 @@ mixin control-sections-CN
           .custom-card 
             .custom-card__title 董事会审计委员会
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__num.countup-element(data-countup='7')
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title 次会议
                 .custom-card__texts-subtext.desktop 5次联合出席形式的会议，2次缺席投票会议
@@ -328,7 +328,7 @@ mixin control-sections-CN
           .custom-card 
             .custom-card__title 董事会人事、薪酬和公司治理委员会组成
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='7') 7
+              .custom-card__num.countup-element(data-countup='7')
               .custom-card__texts.number-animate-7.number-animate 
                 .custom-card__texts-title 次会议
                 .custom-card__texts-subtext.desktop 5次联合出席形式的会议，2次缺席投票会议
@@ -343,7 +343,7 @@ mixin control-sections-CN
           .custom-card 
             .custom-card__title 管理机构
             .custom-card__row
-              .custom-card__num.countup-element(data-countup='31') 31
+              .custom-card__num.countup-element(data-countup='31') 
               .custom-card__texts.number-animate-31.number-animate  
                 .custom-card__texts-title 会议
                 .custom-card__texts-subtext.desktop （30次联合出席形式的会议，1次缺席投票会议）。
@@ -358,5 +358,5 @@ mixin control-sections-CN
       +activity-buttons('control-structure-vector-CN.png').flex-desktop
       .control-structure__img-container.mobile(data-aos="fade-up")
         .control-structure__img 
-          +picture('control-structure-vector-CN.png')
-      +activity-buttons('control-structure-vector-CN.png').flex-m
+          +picture('control-structure-vector-mobile-CN.png')
+      +activity-buttons('control-structure-vector-mobile-CN.png').flex-m

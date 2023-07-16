@@ -1,8 +1,10 @@
 .incorporated {
   margin-top: 100px;
+
   @media #{media("<", m)} {
     margin-top: 40px;
   }
+
   &__title {
     margin-bottom: 40px;
 
@@ -29,11 +31,13 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
+
     @media #{media("<", m)} {
       margin-bottom: 40px;
       grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
+
     &__item {
       position: relative;
       display: flex;
@@ -48,10 +52,12 @@
       @media #{media("<", t)} {
         width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
         height: rem(60px);
       }
+
       &-background {
         position: absolute;
         top: 50%;
@@ -65,6 +71,7 @@
           }
         }
       }
+
       &-text {
         position: relative;
         text-align: center;
@@ -87,11 +94,13 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
+
     @media #{media("<", m)} {
       margin-top: 20px;
       grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
+
     &__item {
       padding: 50px;
 
@@ -100,12 +109,15 @@
       @media #{media("<", m)} {
         padding: 20px;
       }
+
       &.light {
         border-top: 3px solid #69da91;
       }
+
       &.green {
         border-top: 3px solid #045c25;
       }
+
       &-title {
         margin-bottom: 2px;
 
@@ -120,6 +132,7 @@
           line-height: 150%;
         }
       }
+
       &-num {
         margin-bottom: 10px;
 
@@ -133,6 +146,7 @@
           line-height: 160%;
         }
       }
+
       &-text {
         font-weight: 400;
         font-size: 12px;
@@ -141,6 +155,7 @@
       }
     }
   }
+
   &-capital {
     margin-top: 100px;
     padding-top: 20px;
@@ -153,6 +168,7 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 18px;
     }
+
     @media #{media("<", m)} {
       padding-top: 8px;
       margin-top: 40px;
@@ -161,6 +177,7 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 18px;
     }
+
     &__texts {
       &-title {
         margin-bottom: 20px;
@@ -176,6 +193,7 @@
           max-width: 100%;
           width: 100%;
         }
+
         @media #{media("<", m)} {
           margin-bottom: 12px;
 
@@ -185,12 +203,14 @@
           line-height: 150%;
         }
       }
+
       &-text {
         width: 460px;
 
         @media #{media("<", t)} {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -212,6 +232,7 @@
         width: 100%;
         height: auto;
       }
+
       @media #{media("<", m)} {
         margin-top: 0px;
 
@@ -230,6 +251,7 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -237,6 +259,7 @@
         margin-bottom: 20px;
       }
     }
+
     &__text {
       max-width: 760px;
       margin-left: 400px;
@@ -246,6 +269,7 @@
 
         margin-left: 0px;
       }
+
       @media #{media("<", m)} {
         width: 100%;
         margin-left: 0px;
@@ -260,6 +284,7 @@
       @media #{media("<", m)} {
         padding-top: 8px;
       }
+
       &-title {
         margin-bottom: 40px;
 
@@ -314,28 +339,31 @@
       @media #{media("<", t)} {
         grid-template-columns: repeat(1, 1fr);
       }
+
       @media #{media("<", m)} {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
       }
     }
+
     &__card {
       padding: 40px 40px 35px;
 
       height: 211px;
 
-      background: linear-gradient(
-        180deg,
-        #bef0d7 0%,
-        rgba(190, 240, 215, 0) 100%
-      );
+      background: linear-gradient(180deg,
+          #bef0d7 0%,
+          rgba(190, 240, 215, 0) 100%);
+
       @media #{media("<", t)} {
         height: auto;
       }
+
       @media #{media("<", m)} {
         padding: 20px;
         height: auto;
       }
+
       &-title {
         margin-bottom: 12px;
 
@@ -351,6 +379,7 @@
           line-height: 130%;
         }
       }
+
       &-text {
         font-weight: 400;
         font-size: 12px;
@@ -377,6 +406,7 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
+
     &__title {
       font-weight: 700;
       font-size: 24px;
@@ -386,11 +416,13 @@
       @media #{media("<", t)} {
         width: 100%;
       }
+
       @media #{media("<", m)} {
         font-size: rem(14px);
         line-height: 150%;
       }
     }
+
     &__list {
       max-width: 560px;
 
@@ -408,6 +440,7 @@
     @media #{media("<", m)} {
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -435,15 +468,21 @@
           }
         }
       }
+
       &-container {
         @media #{media("<", m)} {
-          padding-left: rem(20px);
-          margin-left: rem(-20px);
+          padding-right: 20px;
+          padding-left: 20px;
+          margin-left: -20px;
 
           width: calc(100% + 40px);
 
           overflow-x: scroll;
           @include scrollbar-hidden();
+        }
+
+        @media print {
+          padding-right: 0px;
         }
       }
     }
@@ -458,6 +497,7 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -465,6 +505,7 @@
         margin-bottom: 20px;
       }
     }
+
     &__hero {
       &-row {
         display: flex;
@@ -475,10 +516,12 @@
           display: grid;
           grid-template-columns: repeat(1, 1fr);
         }
+
         @media #{media("<", m)} {
           gap: 12px;
         }
       }
+
       &-subtitle {
         max-width: 560px;
 
@@ -490,6 +533,7 @@
         @media #{media('<', t)} {
           max-width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
 
@@ -518,6 +562,7 @@
     @media #{media("<", m)} {
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -539,16 +584,20 @@
 
       &.second {
         margin-top: 40px;
+
         @media #{media("<", m)} {
           margin-top: 20px;
         }
       }
+
       &.third {
         margin-top: 28px;
+
         @media #{media("<", m)} {
           margin-top: 20px;
         }
       }
+
       @media #{media("<", m)} {
         padding-top: 8px;
 
@@ -567,6 +616,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -581,6 +631,7 @@
 
         &.custom {
           width: 476px;
+
           @media #{media("<", m)} {
             width: 100%;
           }
@@ -591,6 +642,7 @@
         width: 100%;
         max-width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -606,6 +658,7 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -613,6 +666,7 @@
         margin-bottom: 20px;
       }
     }
+
     &__row {
       display: flex;
       gap: 20px;
@@ -623,6 +677,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 12px;
       }
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -635,6 +690,7 @@
       font-size: 20px;
       line-height: 150%;
       color: #2a2e2b;
+
       &.col {
         width: 560px;
         flex-shrink: 0;
@@ -642,6 +698,7 @@
         @media #{media("<", t)} {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
 
@@ -668,11 +725,13 @@
           width: 100%;
           max-width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
         }
       }
     }
+
     &__subsection {
       margin-top: 40px;
       padding-top: 20px;
@@ -685,11 +744,13 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
+
       @media #{media("<", m)} {
         padding-top: 8px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
+
       &-subtitle {
         width: 500px;
 
@@ -701,6 +762,7 @@
         @media #{media("<", t)} {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
 
@@ -708,23 +770,26 @@
           line-height: 150%;
         }
       }
+
       &-col {
         width: 560px;
 
         @media #{media("<", t)} {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
         }
       }
+
       &-text {
         &.mb-20 {
           margin-top: 20px;
           margin-bottom: 20px;
 
           @media #{media("<", m)} {
-            margin: 12px 0px 12px;
+            margin: 0px 0px 12px;
           }
         }
       }
@@ -739,6 +804,7 @@
         margin-top: 40px;
         padding-top: 8px;
       }
+
       &-title {
         margin-bottom: 40px;
 
@@ -754,6 +820,7 @@
           line-height: 130%;
         }
       }
+
       &-row {
         display: flex;
         gap: 20px;
@@ -765,6 +832,7 @@
           gap: 0px;
         }
       }
+
       &-col {
         max-width: 560px;
 
@@ -772,6 +840,7 @@
           width: 100%;
         }
       }
+
       &-subtitle {
         margin-bottom: 16px;
 
@@ -787,6 +856,7 @@
           line-height: 150%;
         }
       }
+
       &-text {
         margin-bottom: 16px;
 
@@ -795,6 +865,7 @@
         }
       }
     }
+
     &__insurance {
       margin-top: 60px;
       padding-top: 12px;
@@ -810,6 +881,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
+
       &-title {
         width: 371px;
 
@@ -820,6 +892,7 @@
           line-height: 130%;
         }
       }
+
       &-text {
         max-width: 560px;
 
@@ -847,6 +920,7 @@
         margin-bottom: 20px;
       }
     }
+
     &__subtitle {
       max-width: 560px;
 
@@ -858,6 +932,7 @@
       @media #{media("<", t)} {
         max-width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
 
@@ -865,16 +940,19 @@
         line-height: 150%;
       }
     }
+
     &__desk {
       max-width: 560px;
 
       @media #{media("<", t)} {
         max-width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
+
     &__text {
       margin-bottom: 12px;
     }
@@ -889,6 +967,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 12px;
       }
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -906,6 +985,7 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -925,6 +1005,7 @@
         gap: 12px;
       }
     }
+
     &__subtitle {
       max-width: 560px;
 
@@ -940,6 +1021,7 @@
         line-height: 150%;
       }
     }
+
     &__desk {
       max-width: 560px;
 
@@ -962,6 +1044,7 @@
       margin-top: 28px;
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -978,6 +1061,7 @@
         line-height: 120%;
       }
     }
+
     &__row {
       display: flex;
       gap: 20px;
@@ -987,25 +1071,30 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 0px;
       }
     }
+
     &__col {
       max-width: 560px;
 
       @media #{media('<', t)} {
         max-width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
+
     &__text {
       margin-bottom: 12px;
     }
+
     &__subtitle {
       margin-bottom: 20px;
 
@@ -1042,6 +1131,7 @@
       }
     }
   }
+
   &-direction {
     margin-top: 60px;
     padding-top: 20px;
@@ -1051,6 +1141,7 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
     &__title {
       margin-bottom: 40px;
 
@@ -1067,6 +1158,7 @@
         line-height: 120%;
       }
     }
+
     &__row {
       display: flex;
       gap: 20px;
@@ -1076,22 +1168,26 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 0px;
       }
     }
+
     &__col {
       max-width: 560px;
 
       @media #{media('<', t)} {
         max-width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
     }
+
     &__text {
       margin-bottom: 20px;
 
@@ -1099,6 +1195,7 @@
         margin-bottom: 12px;
       }
     }
+
     &__subtitle {
       margin-bottom: 20px;
 
@@ -1147,6 +1244,7 @@
 
     width: 100%;
   }
+
   @media #{media("<", m)} {
     padding: 0px;
     margin-top: 40px;
@@ -1156,9 +1254,11 @@
 
     width: 100%;
   }
+
   @media #{media(">", xl)} {
     gap: 140px;
   }
+
   @media (min-width: 1025px) and (max-width: 1280px) {
     max-width: 1184px;
   }
@@ -1179,6 +1279,7 @@
       height: auto;
       max-height: 100%;
     }
+
     @media #{media("<", m)} {
       width: 100%;
       height: rem(400px);
@@ -1199,6 +1300,7 @@
     @media #{media("<", t)} {
       max-width: 100%;
     }
+
     @media #{media("<", m)} {
       padding: 0px 20px;
       width: 100%;
@@ -1244,16 +1346,19 @@
     @media #{media("<", l)} {
       gap: 20px;
     }
+
     @media #{media("<", t)} {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
+
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
+
     &-col {
       &.bulgakov {
         &-left {
@@ -1262,22 +1367,26 @@
           @media #{media("<", t)} {
             width: 100%;
           }
+
           @media #{media("<", m)} {
             width: 100%;
           }
         }
+
         &-right {
           width: 278px;
 
           @media #{media("<", t)} {
             width: 100%;
           }
+
           @media #{media("<", m)} {
             width: 100%;
           }
         }
       }
     }
+
     &-top {
       margin-bottom: 4px;
 
@@ -1293,6 +1402,7 @@
         line-height: 160%;
       }
     }
+
     &-bot {
       font-weight: 400;
       font-size: 12px;
@@ -1315,16 +1425,19 @@
     @media #{media("<", l)} {
       gap: 20px;
     }
+
     @media #{media("<", t)} {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
+
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
+
     &-title {
       margin-bottom: 16px;
       font-weight: 700;
@@ -1339,6 +1452,7 @@
         line-height: 160%;
       }
     }
+
     &-col {
       .knowledge-mark {
         display: flex;
@@ -1348,6 +1462,7 @@
         @media #{media("<", m)} {
           gap: 8px;
         }
+
         &__icon {
           display: flex;
           justify-content: center;
@@ -1362,6 +1477,7 @@
             }
           }
         }
+
         &__title {
           margin-bottom: 4px;
 
@@ -1374,6 +1490,7 @@
             font-size: rem(10px);
           }
         }
+
         &__text {
           font-weight: 400;
           font-size: 12px;
@@ -1391,6 +1508,7 @@
         }
       }
     }
+
     &-shares {
       font-weight: 400;
       font-size: 12px;
@@ -1409,6 +1527,7 @@
       @media #{media("<", m)} {
         margin-top: 20px;
       }
+
       &.grom {
         margin-top: 160px;
 

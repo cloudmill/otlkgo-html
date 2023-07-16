@@ -49,11 +49,11 @@ mixin purchase-content
       .purchase-value__inner 
         h6.purchase-value__title Объем закупок за отчетный период
         .purchase-value__img.desktop-m
-          +picture('purchase-value.png')
+          +picture('purchase-value.png','t')
         +activity-buttons('purchase-value.png').flex-desktop
 
         .purchase-value__img.mobile-m
-          +picture('purchase-value-mobile.png')
+          +picture('purchase-value-mobile.png','t')
         +activity-buttons('purchase-value-mobile.png').flex-m 
 
         .purchase-value__row 
@@ -63,11 +63,11 @@ mixin purchase-content
       .purchase-saving__inner 
         h6.purchase-saving__title Экономия по конкурентным закупкам, тыс руб
         .purchase-saving__img.desktop-m 
-          +picture('purchase-saving.png')
+          +picture('purchase-saving.png','t')
         +activity-buttons('purchase-saving.png').flex-desktop
 
         .purchase-saving__img.mobile-m 
-          +picture('purchase-saving-mobile.png')
+          +picture('purchase-saving-mobile.png','t')
         +activity-buttons('purchase-saving-mobile.png').flex-m
 
         .purchase-saving__row 
@@ -125,11 +125,11 @@ mixin purchase-content-CN
       .purchase-value__inner 
         h6.purchase-value__title 本报告所述期间的采购量
         .purchase-value__img.desktop-m
-          +picture('purchase-value-CN.png')
+          +picture('purchase-value-CN.png','t')
         +activity-buttons('purchase-value-CN.png').flex-desktop
 
         .purchase-value__img.mobile-m
-          +picture('purchase-value-mobile-CN.png')
+          +picture('purchase-value-mobile-CN.png','t')
         +activity-buttons('purchase-value-mobile-CN.png').flex-m 
 
         .purchase-value__row 
@@ -139,11 +139,11 @@ mixin purchase-content-CN
       .purchase-saving__inner 
         h6.purchase-saving__title 竞争性采购节省（千卢布）
         .purchase-saving__img.desktop-m 
-          +picture('purchase-saving-CN.png')
+          +picture('purchase-saving-CN.png','t')
         +activity-buttons('purchase-saving-CN.png').flex-desktop
 
         .purchase-saving__img.mobile-m 
-          +picture('purchase-saving-mobile-CN.png')
+          +picture('purchase-saving-mobile-CN.png','t')
         +activity-buttons('purchase-saving-mobile-CN.png').flex-m
 
         .purchase-saving__row 
@@ -162,16 +162,16 @@ mixin purchase-content-EN
           ul.list.purchase-documents__list
             li.purchase-documents__item 
               +mark-text-svg
-              p.text.purchase-documents__text Regulations on Procurement of Goods, Works and Services approved by the Resolution of the Company’s Board of Directors dated 27.01.2022 (Minutes No. 47),
+              p.text.purchase-documents__text Regulations on Procurement of Goods, Works and Services approved by the Resolution of the Company’s Board of Directors dated 27.01.2022 (Minutes No. 47)
             li.purchase-documents__item 
               +mark-text-svg
-              p.text.purchase-documents__text Amendments approved by the Resolution of the Company’s Board of Directors dated 05.08.2022 (Minutes No. 54),
+              p.text.purchase-documents__text Amendments approved by the Resolution of the Company’s Board of Directors dated 05.08.2022 (Minutes No. 54)
             li.purchase-documents__item 
               +mark-text-svg
-              p.text.purchase-documents__text Instruction on Interaction Between UTLC&nbsp;ERA Business Units in Procurement of Goods, Works and Services approved by the General Director’s Order No. 63 dated 16.09.2022,
+              p.text.purchase-documents__text Instruction on Interaction Between UTLC&nbsp;ERA Business Units in Procurement of Goods, Works and Services approved by the General Director’s Order No. 63 dated 16.09.2022
             li.purchase-documents__item 
               +mark-text-svg
-              p.text.purchase-documents__text Civil Code and other regulatory legal acts of the Russian Federation.
+              p.text.purchase-documents__text Civil Code and other regulatory legal acts of the Russian Federation
         .purchase-documents__right
           p.text.purchase-documents__text To streamline the procurement processes, the company developed and approved an amended version of the Procurement Regulations in 2022. The amendments reflect the global situation, target a lower workload on the employees and improve responsiveness in the interfaces with the parties to the procurement process. At the same time, the focus remains on ensuring the best possible conditions for attracting suppliers/contractors/ providers, which do not contradict the main procurement principles.
           p.text.purchase-documents__text The procurement process consists of planning, managing and holding the procurement procedures. The company’s structure envisages efficient interaction with the procurement initiators in order to align the company’s commercial and technical interests. To streamline these processes, we developed the Instruction on Interaction Between UTLC&nbsp;ERA Business Units in Procurement of Goods, Works and Services.
@@ -182,17 +182,15 @@ mixin purchase-content-EN
           h3.purchase-principles__title Key procurement principles:
           .purchase-principles__box 
             .purchase-principles__item 
-              p.purchase-principles__text.text Procurement visibility and transparency, information disclosure,
+              p.purchase-principles__text.text Procurement visibility and transparency, information disclosure
               .purchase-principles__img 
                 +picture(`achievement-number-1.png`)
-
-
             .purchase-principles__item 
-              p.purchase-principles__text.text Equal, fair and non-discriminatory approach to bidders without any unreasonable limitations of competition,
+              p.purchase-principles__text.text Equal, fair and non-discriminatory approach to bidders without any unreasonable limitations of competition
               .purchase-principles__img 
                 +picture(`achievement-number-2.png`)
             .purchase-principles__item 
-              p.purchase-principles__text.text Targeted and commercially effective spending of the funds allocated to procure goods, works and services and to implement customer cost reduction actions.
+              p.purchase-principles__text.text Targeted and commercially effective spending of the funds allocated to procure goods, works and services and to implement customer cost reduction actions
               .purchase-principles__img 
                 +picture(`achievement-number-3.png`)
         .purchase-principles__bottom.mt-section
@@ -207,11 +205,11 @@ mixin purchase-content-EN
       .purchase-value__inner 
         h6.purchase-value__title Procurement volume in the reporting period
         .purchase-value__img.desktop-m
-          +picture('purchase-value-EN.png')
+          +picture('purchase-value-EN.png','t')
         +activity-buttons('purchase-value-EN.png').flex-desktop
 
         .purchase-value__img.mobile-m
-          +picture('purchase-value-mobile-EN.png')
+          +picture('purchase-value-mobile-EN.png','t')
         +activity-buttons('purchase-value-mobile-EN.png').flex-m 
 
         .purchase-value__row 
@@ -221,11 +219,11 @@ mixin purchase-content-EN
       .purchase-saving__inner 
         h6.purchase-saving__title Saving on competitive bidding (thousand rubles)
         .purchase-saving__img.desktop-m 
-          +picture('purchase-saving-EN.png')
+          +picture('purchase-saving-EN.png','t')
         +activity-buttons('purchase-saving-EN.png').flex-desktop
 
         .purchase-saving__img.mobile-m 
-          +picture('purchase-saving-mobile-EN.png')
+          +picture('purchase-saving-mobile-EN.png','t')
         +activity-buttons('purchase-saving-mobile-EN.png').flex-m
 
         .purchase-saving__row 

@@ -5,7 +5,7 @@ mixin ecology-content
         h2.ecology__title Воздействие на климат
         .ecology__row 
           .col 
-            p.ecology__description.description В 2022 году экологическая повестка во всем мире претерпела некоторые изменения, но снижение воздействия на климат продолжает интересовать ответственных людей, бизнес, и государство.
+            p.ecology__description.description В 2022 году экологическая повестка во всем мире претерпела некоторые изменения, но снижение воздействия на климат продолжает интересовать ответственных людей, бизнес и государство.
           .col 
             p.ecology__text.text Экологичность становится конкурентным преимуществом, а так как логистика — неотъемлемая составляющая практически любого бизнеса, то компании в этой сфере должны относиться к экологической составляющей своей деятельности максимально внимательно. Вопросам охраны природы уделяется все больше внимания на всем евразийском пространстве.
   section(data-aos="fade-up").ecology-statistics 
@@ -23,20 +23,21 @@ mixin ecology-content
               p.item__subtext Всех выбросов углекислого газа в атмосферу производит сфера транспорта 
           .row 
             p.ecology-statistics__text.text Мы работаем в области железнодорожных перевозок — важнейшего компонента международной торговли, поэтому с уверенностью можем сказать, что перевозки в сервисах компании имеют целый ряд преимуществ перед другими модальностями. Железная дорога — один из самых ресурсосберегающих и экологически чистых видов транспорта.
-            p.ecology-statistics__text.text ОТЛК&nbsp;ЕРА, как крупнейший евразийский оператор железнодорожных контейнерных перевозок, отвечающий за перевозку основного объема грузов по маршруту Китай — Европа — Китай, разработал онлайн-счетчик выбросов CO2 в атмосферу. На его странице можно также увидеть сравнение углеродного следа при перевозке одного и того же объема грузов разными видами транспорта.
+            p.ecology-statistics__text.text ОТЛК&nbsp;ЕРА, как крупнейший евразийский оператор железнодорожных контейнерных перевозок, отвечающий за перевозку основного объема грузов по маршруту Китай–Европа–Китай, разработал <a class="ecology-statistics__link" target="_blank" href="https://index1520.com/emissions-co2/">онлайн-счетчик выбросов CO<sup class='fz-10'>2</sup> в атмосферу.  </a> На его странице можно также увидеть сравнение углеродного следа при перевозке одного и того же объема грузов разными видами транспорта.
         .ecology-statistics__right 
           .row 
-            p.ecology-statistics__text.text Объем прямых выбросов СО<sup class='fz-10'>2</sup> (TTW) по результатам деятельности ОТЛК&nbsp;ЕРА рассчитывается исходя из параметров выбросов ключевого базового маршрута Брест — Достык (принято за усредненный показатель) и суммарного объема перевозок по всем маршрутам.
-            p.ecology-statistics__text.text На основании параметров маршрута Брест — Достык определяется объем выбросов СО<sup class='fz-10'>2</sup> на 1 ДФЭ — GПГДФЭ, который умножается на общий объем перевозок в сервисах ОТЛК&nbsp;ЕРА. <br> Эта величина рассчитывается по формуле:
+            p.ecology-statistics__text.text Объем прямых выбросов СО<sup class='fz-10'>2</sup> (TTW) по результатам деятельности ОТЛК&nbsp;ЕРА рассчитывается исходя из параметров выбросов ключевого базового маршрута Брест–Достык (принято за усредненный показатель) и суммарного объема перевозок по всем маршрутам.
+            p.ecology-statistics__text.text На основании параметров маршрута Брест–Достык определяется объем выбросов СО<sup class='fz-10'>2</sup> на 1 ДФЭ — GПГДФЭ, который умножается на общий объем перевозок в сервисах ОТЛК&nbsp;ЕРА. 
+            p.ecology-statistics__text.text Эта величина рассчитывается по формуле:
           .ecology-statistics__img 
-            +picture('ecology-statistics.png')
+            +picture('ecology-statistics.png','t')
             +activity-buttons('ecology-statistics.png') 
 
           .ecology-statistics__formulas
             p.ecology-statistics__formula
               | Р 
               sub ТЭР
-              |&nbsp;  — &nbsp;  расход ТЭР на 1 км пути (тонн, тыс. куб. м, Гкал или кВт в час)
+              |&nbsp;&nbsp;  — &nbsp;&nbsp;  расход ТЭР на 1 км пути (тонн, тыс. куб. м, Гкал или кВт в час)
             p.ecology-statistics__formula 
               | Н
               sub КМ
@@ -44,7 +45,7 @@ mixin ecology-content
             p.ecology-statistics__formula 
               | К 
               sub СО
-              |&nbsp;  — &nbsp;  коэффициент выброса СО<sup class='fz-8'>2</sup> (тонн СО<sup class='fz-8'>2</sup> / т или тыс. куб. м топлива, тонн СО<sup class='fz-8'>2</sup>/ Гкал тепловой энергии, кг СО<sup class='fz-8'>2</sup> / кВт в час электроэнергии);
+              |&nbsp;  —  &nbsp; <span> коэффициент выброса СО<sup class='fz-8'>2</sup> (тонн СО<sup class='fz-8'>2</sup> / т или тыс. куб. м топлива, тонн СО<sup class='fz-8'>2</sup>/ Гкал тепловой энергии, кг СО<sup class='fz-8'>2</sup> / кВт в час электроэнергии);</span> 
             p.ecology-statistics__formula 
               | Q 
               sub КТК
@@ -57,15 +58,15 @@ mixin ecology-content
         h6.ecology-algorithm__title Алгоритм корректного сравнения объемов выбросов по видам транспорта
         .ecology-algorithm__row.ecology-algorithm__row_top
           ul.ecology-algorithm__list.list
-            each item in ['Для всех видов транспорта берется одинаковая длина маршрута, а именно длина маршрута Брест — Достык, 5 454 км']
+            each item in ['Для всех видов транспорта берется одинаковая длина маршрута, а именно длина маршрута Брест–Достык, 5 454 км']
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text=item 
+                p.text.eclology-algorithm__text!=item 
           ul.ecology-algorithm__list.list
-            each item in ['За объем груза принимается объем полной загрузки наиболее грузоемкого транспорта – контейнерного судна вместимостью 6 636 ДФЭ. Для перевозки этого объема требуются 44 поезда, 1 контейнерное судно, 3 318 грузовиков с загрузкой до 26 тонн, 1 106 грузовых самолетов']
+            each item in ['За объем груза принимается объем полной загрузки наиболее грузоемкого транспорта–контейнерного судна вместимостью 6 636 ДФЭ. Для перевозки этого объема требуются 44 поезда, 1 контейнерное судно, 3 318 грузовиков с загрузкой до 26 тонн, 1 106 грузовых самолетов']
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text=item 
+                p.text.eclology-algorithm__text!=item 
         .ecology-algorithm__row
           .col 
             p.ecology-algorithm__description.description Прямые выбросы (TTW) для перевозки 6 636 ДФЭ составят
@@ -95,7 +96,7 @@ mixin ecology-content
             p.ecology-dynamic__description.description Устойчивое развитие, а в перспективе и достижение углеродной нейтральности нераздельно связаны со стремлением ОТЛК&nbsp;ЕРА создать конкурентоспособную альтернативу морскому, автомобильному и авиационному грузовому транспорту, которые используются в трансъевразийских перевозках. 
           .col 
             p.eclology-dynamic__text.text 
-              | Развитие железнодорожного сообщения в грузоперевозках на дальние расстояния — ключевой шаг в сокращении выбросов парниковых газов во всем мире. Согласно онлайн-счетчику, в 2022 году в результате транзитных перевозок ОТЛК&nbsp;ЕРА  по направлению Китай — Европа — Китай накопленный объём выбросов составил 27,4 тыс. тонн СО<sup>2</sup>. Если бы аналогичный объем груза доставлялся морем, выбросы достигли бы 130,9 тыс. тонн, автомобильным транспортом —  2 439,5 тыс. тонн, авиаперевозками — 14 471,6 тыс. тонн.
+              | Развитие железнодорожного сообщения в грузоперевозках на дальние расстояния — ключевой шаг в сокращении выбросов парниковых газов во всем мире. Согласно онлайн-счетчику, в 2022 году в результате транзитных перевозок ОТЛК&nbsp;ЕРА  по направлению Китай–Европа–Китай накопленный объём выбросов составил 27,4 тыс. тонн СО<sup>2</sup>. Если бы аналогичный объем груза доставлялся морем, выбросы достигли бы 130,9 тыс. тонн, автомобильным транспортом —  2 439,5 тыс. тонн, авиаперевозками — 14 471,6 тыс. тонн.
             p.eclology-dynamic__text.text Если рассматривать суммарный объем прямых выбросов ОТЛК&nbsp;ЕРА и косвенных выбросов, которые не являются следствием деятельности компании, то по итогам 2022 года углеродный след составил 1 214 тыс. тонн СО <sup>2</sup>, а при перевозке аналогичного объема груза авто- и авиатранспортом выбросы достигли бы 2 883,1 тыс. тонн и 17 688,4 тыс. тонн СО<sup>2</sup> соответственно.
   section(data-aos="fade-up").ecology-CO.mt-section 
     .container-content
@@ -111,7 +112,7 @@ mixin ecology-content
             .ecology-description
               .ecology-description__item
                 span.ecology-description__decor.ecology-description__decor_1
-                p.ecology-description__text «ОТЛК&nbsp;ЕРА»
+                p.ecology-description__text ОТЛК&nbsp;ЕРА
               .ecology-description__item
                 span.ecology-description__decor.ecology-description__decor_2 
                 p.ecology-description__text Морские перевозки
@@ -123,7 +124,7 @@ mixin ecology-content
                 p.ecology-description__text Авиаперевозки
           .col 
             .ecology-CO__img 
-              +picture('ecology-CO-1.png').ecology-CO__img
+              +picture('ecology-CO-1.png','t').ecology-CO__img
               +activity-buttons('ecology-CO-1.png') 
 
   section(data-aos="fade-up").ecology-CO2
@@ -141,7 +142,7 @@ mixin ecology-content
               .ecology-description
                 .ecology-description__item
                   span.ecology-description__decor.ecology-description__decor_1
-                  p.ecology-description__text «ОТЛК&nbsp;ЕРА»
+                  p.ecology-description__text ОТЛК&nbsp;ЕРА
                 .ecology-description__item
                   span.ecology-description__decor.ecology-description__decor_2 
                   p.ecology-description__text Морские перевозки
@@ -153,14 +154,14 @@ mixin ecology-content
                   p.ecology-description__text Авиаперевозки
             .col 
               .ecology-CO2__img 
-                +picture('ecology-CO-2.png').ecology-CO2__img
+                +picture('ecology-CO-2.png','t').ecology-CO2__img
                 +activity-buttons('ecology-CO-2.png') 
                 
         .ecology-CO2__bottom.mt-section
           h6.ecology-CO2__subtitle  Межправительственный совет ЕАЭС в августе 2021 года утвердил план первоочередных мероприятий по цифровизации грузовых железнодорожных перевозок.
           .row 
             .col 
-              p.ecology-CO2__text.text Это, наряду с подписанием железными дорогами России, Казахстана и Белоруссии декларации о намерениях поддерживать эффективные контейнерные перевозки между Европой и Китаем, дало решающий импульс декарбонизации евразийского железнодорожного коридора. 
+              p.ecology-CO2__text.text Это, наряду с подписанием железными дорогами России, Казахстана и Беларуси декларации о намерениях поддерживать эффективные контейнерные перевозки между Европой и Китаем, дало решающий импульс декарбонизации евразийского железнодорожного коридора. 
               p.ecology-CO2__text.text Документ признает ключевую роль железнодорожного транспорта для выполнения Целей в области устойчивого развития ООН, в том числе по уменьшению углеродного следа от транспортно-логистической отрасли, повышению энергоэффективности, а также в части развития устойчивой региональной и трансграничной инфраструктуры.
             .col 
               p.ecology-CO2__text.text В соответствии с договоренностью сторон, в сервисах оператора ОТЛК&nbsp;ЕРА в ближайшее время будут апробированы пилотные проекты по внедрению на евразийском пространстве технологических инноваций с учетом принципов перехода к безуглеродной железнодорожной логистике. Начало положено: в 2022 году на пространстве 1520 уже протестирована единая электронная накладная. С учетом того, что доля железнодорожных контейнерных перевозок в общем объеме евразийского транзита в 2021 году уже приблизилась к 5% (для сравнения в 2015 году она составляла всего 1%), вклад в сокращение выбросов углекислого газа и негативного влияния на окружающую среду в будущем будет все более очевиден.
@@ -169,7 +170,7 @@ mixin ecology-content
       .ecology-grom__inner 
         .col 
           .ecology-grom__img
-            +picture('ecology-grom.png')
+            +picture('ecology-grom.png','t')
         .ecology-grom__right
           .col 
             +appeal-svg.ecology-grom__elem_1
@@ -205,7 +206,7 @@ mixin ecology-content
                 p.item__grey.number-animate-3.number-animate млн рублей
             .item__row 
               p.item__subtext Объем финансирования проектов ОТЛК&nbsp;ЕРА, реализуемых в Казахстане и России в 2022 году 
-          p.ecology-environment__text.text Начиная с 2020 года мы активно участвуем в популяризации и реализации экологических проектов. Инициатива #KeenOnGreen направлена на то, чтобы, с одной стороны, рассказывать о железных дорогах как о наиболее экологичном виде транспорта, а с другой — поддерживать экологические проекты в природных зонах стран, по территориям которых проходят маршруты контейнерных поездов ОТЛК&nbsp;ЕРА. В рамках инициативы в 2021 году компания поддержала проект по восстановлению в Казахстане популяции тугайных оленей, занесенных в Красную книгу.
+          p.ecology-environment__text.text Начиная с 2020 года мы активно участвуем в популяризации и реализации экологических проектов. Инициатива #KeenOnGreen направлена на то, чтобы, с одной стороны, рассказывать о железных дорогах как о наиболее экологичном виде транспорта, а с другой — поддерживать экологические проекты в природных зонах стран, по территориям которых проходят маршруты контейнерных поездов ОТЛК&nbsp;ЕРА. В рамках инициативы в 2022 году компания поддержала проект по восстановлению в Казахстане популяции тугайных оленей, занесенных в Красную книгу.
   section(data-aos="fade-up").ecology-cards.mt-section 
     .container-content  
       .ecology-cards__inner
@@ -231,7 +232,7 @@ mixin ecology-content
               p.ecology-cards__number +28%
               p.ecology-cards__subtext рост популяции зубров в Турмонском заказнике
             .col 
-              p.ecology-cards__text.text Специалисты резервата «Иле-Балхаш» при поддержке ОТЛК&nbsp;ЕРА реализуют проект по восстановлению тугайного леса, благодаря которому к концу 2022 года уже более 12 тысяч новых саженцев туранги, лоха и ивы появилось в этих местах. Выделенные средства также помогли организовать современную систему капельного орошения и разработать меры противопожарной безопасности.
+              p.ecology-cards__text.text Для восстановления численности животных была разработана «Стратегия сохранения зубров в России», и по этой программе благодаря поддержке нашей компании в 2022 году часть популяции зубра перевезли в Турмонский заповедник в Северной Осетии, где для них сложилась подходящая среда обитания. 
 
 
 mixin ecology-content-CN 
@@ -265,7 +266,7 @@ mixin ecology-content-CN
             p.ecology-statistics__text.text 根据布列斯特-多斯特克主要干线的排放参数（取平均指标）和所有路线的总运输量计算出UTLC ERA的活动结果下的CO<sup class='fz-10'>2</sup> 直接排放量。
             p.ecology-statistics__text.text 根据布列斯特-多斯特克航线的参数，确定乘以UTLC ERA服务中的总运输量的1个TEU的CO<sup class='fz-10'>2</sup>排放量为-G<sup class='fz-10'>温室气体TEU。</sup>这一数值的计算公式如下：
           .ecology-statistics__img 
-            +picture('ecology-statistics.png')
+            +picture('ecology-statistics.png','t')
             +activity-buttons('ecology-statistics.png') 
 
           .ecology-statistics__formulas
@@ -296,12 +297,12 @@ mixin ecology-content-CN
             each item in ['对于所有运输方式，采用相同的路线长度，即布列斯特-多斯特克路线，5 454公里']
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text=item 
+                p.text.eclology-algorithm__text!=item 
           ul.ecology-algorithm__list.list
             each item in ['货运量为最密集的运输方式 —— 容量为6 636 TEU的集装箱船的满载量。这一数量需要44列火车、1艘集装箱船、3 318辆载重达26吨的卡车和1 106架货机。']
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text=item 
+                p.text.eclology-algorithm__text!=item 
         .ecology-algorithm__row
           .col 
             p.ecology-algorithm__description.description 运输6 636 TEU的直接排放量（TTW）为：
@@ -357,7 +358,7 @@ mixin ecology-content-CN
                 p.ecology-description__text 空运
           .col 
             .ecology-CO__img 
-              +picture('ecology-CO-1.png').ecology-CO__img
+              +picture('ecology-CO-1.png','t').ecology-CO__img
               +activity-buttons('ecology-CO-1.png') 
 
   section(data-aos="fade-up").ecology-CO2
@@ -385,7 +386,7 @@ mixin ecology-content-CN
                   p.ecology-description__text 空运
             .col 
               .ecology-CO2__img 
-                +picture('ecology-CO-2.png').ecology-CO2__img
+                +picture('ecology-CO-2.png','t').ecology-CO2__img
                 +activity-buttons('ecology-CO-2.png') 
                 
         .ecology-CO2__bottom.mt-section
@@ -401,7 +402,7 @@ mixin ecology-content-CN
       .ecology-grom__inner 
         .col 
           .ecology-grom__img
-            +picture('ecology-grom.png')
+            +picture('ecology-grom.png','t')
         .ecology-grom__right
           .col 
             +appeal-svg.ecology-grom__elem_1
@@ -490,7 +491,7 @@ mixin ecology-content-EN
               .item__col 
                 p.item__number.countup-element(data-countup='20' data-countup-suffix='%')
             .item__row 
-              p.item__subtext of the total air CO<sup class='fz-10'>2</sup>  emissions are generated by the transportation industry 
+              p.item__subtext Of the total air CO<sup class='fz-10'>2</sup>  emissions are generated by the transportation industry 
           .row 
             p.ecology-statistics__text.text We are engaged in rail transportation, which is a critical component of international trade, and we can confidently state that our traffic services have multiple advantages over other modalities. The rail transport is one of the most resource efficient and environmentally friendly modes of transport.
             p.ecology-statistics__text.text As a major Eurasian rail container traffic operator making up the bulk of the cargo traffic volume on the China–Europe–China route, UTLC ERA has developed an online CO<sup class='fz-10'>2</sup>. On this page, you will also find a comparison of the carbon footprint during transportation of the same cargo volumes by different means of transport.
@@ -500,7 +501,7 @@ mixin ecology-content-EN
 
             p.ecology-statistics__text.text On the basis of the Brest–Dostyk route parameters, the company calculates СО<sup class='fz-10'>2</sup> emissions per 1 TEU, G<sup class='fz-10'>GHGTEU</sup>, which is multiplied by the total traffic volume in UTLC ERA’s services. This value is calculated using the following formula:
           .ecology-statistics__img 
-            +picture('ecology-statistics.png')
+            +picture('ecology-statistics.png','t')
             +activity-buttons('ecology-statistics.png') 
 
           .ecology-statistics__formulas
@@ -515,13 +516,16 @@ mixin ecology-content-EN
             p.ecology-statistics__formula 
               | К 
               sub СО
-              |&nbsp;  — &nbsp; СО<sup class='fz-8'>2</sup>  emission factor (tons СО<sup class='fz-8'>2</sup> /t or thousand m3 of fuel, tons СО<sup class='fz-8'>2</sup> /Gcal of thermal power, kg СО<sup class='fz-8'>2</sup> /kWh of electrical energy)
+              |&nbsp;  — &nbsp; <p>СО<sup class='fz-8'>2</sup>  emission factor (tons СО<sup class='fz-8'>2</sup> /t or thousand m3 of fuel, tons СО<sup class='fz-8'>2</sup> /Gcal of thermal power, kg СО<sup class='fz-8'>2</sup> /kWh of electrical energy) </p>
+              
+              
+    
             p.ecology-statistics__formula 
               | Q 
               sub КТК
               |&nbsp;  — &nbsp;  number of containers on a train
           .row 
-            p.ecology-statistics__text.text   To calculate the direct and indirect СО<sup class='fz-10'>2</sup>  emission (WTW) volume generated by UTLC ERA, we used the company's own data to determine direct emissions (TTW) and the calculations and methodology from <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> portal to determine indirect emissions (WTT). To calculate the environmental impact caused by alternative means of transport, we also used EcoTransIT portal, which is a reputable source in terms of carbon footprint recording and calculations.
+            p.ecology-statistics__text.text   To calculate the direct and indirect СО<sup class='fz-10'>2</sup>  emission (WTW) volume generated by UTLC ERA, we used the company's own data to determine direct emissions (TTW) and the calculations and methodology from <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> portal to determine indirect emissions (WTT). To calculate the environmental impact caused by alternative means of transport, we also used <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> portal, which is a reputable source in terms of carbon footprint recording and calculations.
   section(data-aos="fade-up").ecology-algorithm 
     .container-content 
       .ecology-algorithm__inner 
@@ -530,42 +534,42 @@ mixin ecology-content-EN
           ul.ecology-algorithm__list.list
             li.ecology-algorithm__item
               +mark-text-svg.ecology-algorithm-svg
-              p.text.eclology-algorithm__text The route length is assumed the same for all transport modes, corresponding to the Brest–Dostyk route length, i.e. 5,454 km.
+              p.text.eclology-algorithm__text The route length is assumed the same for all transport modes, corresponding to the Brest–Dostyk route length, i.e. 5,454 km
           ul.ecology-algorithm__list.list
             li.ecology-algorithm__item
               +mark-text-svg.ecology-algorithm-svg
-              p.text.eclology-algorithm__text The cargo volume is assumed equal to the full load of a container vessel with a registered tonnage of 6,636 TEUs, which is the largest load capacity. This volume can be transported by 44 trains, 1 container vessel, 3,318 trucks with a load capacity up to 26 tons, or 1,106 freight aircraft.
+              p.text.eclology-algorithm__text The cargo volume is assumed equal to the full load of a container vessel with a registered tonnage of 6,636 TEUs, which is the largest load capacity. This volume can be transported by 44 trains, 1 container vessel, 3,318 trucks with a load capacity up to 26 tons, or 1,106 freight aircraft
         .ecology-algorithm__row
           .col 
             p.ecology-algorithm__description.description The direct emissions (TTW) for transportation of 6,636 TEUs will be as follows:
             ul.ecology-algorithm__list.list
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 44 trains: 442,998 kg CO<sup class="fz-10">2</sup>,
+                p.text.eclology-algorithm__text 44 trains: 442,998 kg CO<sup class="fz-10">2</sup>
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 1 container vessel: 2,115,677 kg CO<sup class="fz-10">2</sup>,
+                p.text.eclology-algorithm__text 1 container vessel: 2,115,677 kg CO<sup class="fz-10">2</sup>
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 3,318 trucks with a load capacity up to 26 tons: 39,423,125 kg CO<sup class="fz-10">2</sup>,
+                p.text.eclology-algorithm__text 3,318 trucks with a load capacity up to 26 tons: 39,423,125 kg CO<sup class="fz-10">2</sup>
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 1,106 freight aircraft: 233,864,501 kg CO<sup class="fz-10">2</sup>,
+                p.text.eclology-algorithm__text 1,106 freight aircraft: 233,864,501 kg CO<sup class="fz-10">2</sup>
           .col 
             p.ecology-algorithm__description.description The direct and indirect emissions (WTW) for transportation of 6,636 TEUs will be as follows:
             ul.ecology-algorithm__list.list
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 44 trains: 19,618,237 kg CO<sup class="fz-10">2</sup>,
+                p.text.eclology-algorithm__text 44 trains: 19,618,237 kg CO<sup class="fz-10">2</sup>
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 1 container vessel: 2,318,405 kg CO<sup class="fz-10">2</sup>,
+                p.text.eclology-algorithm__text 1 container vessel: 2,318,405 kg CO<sup class="fz-10">2</sup>
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 3,318 trucks with a load capacity up to 26 tons: 46,590,965 kg CO<sup class="fz-10">2</sup>,
+                p.text.eclology-algorithm__text 3,318 trucks with a load capacity up to 26 tons: 46,590,965 kg CO<sup class="fz-10">2</sup>
               li.ecology-algorithm__item
                 +mark-text-svg.ecology-algorithm-svg
-                p.text.eclology-algorithm__text 1,106 freight aircraft: 285,847,854 kg CO<sup class="fz-10">2</sup>.
+                p.text.eclology-algorithm__text 1,106 freight aircraft: 285,847,854 kg CO<sup class="fz-10">2</sup>
         .ecology-algorithm__row_bottom
           p.ecology-algorithm__text.text Based on these calculations, ratios are obtained for the sea, road and air transport as compared with the rail transport by dividing the emission volume for each mode of transport by the emission volume generated by the rail transport. The actual emission volume generated by the rail transport in the selected period is then multiplied by the resulting ratio for each mode of transport.
   section(data-aos="fade-up").ecology-dynamic.mt-section(id="ecology-dynamic")  
@@ -594,7 +598,7 @@ mixin ecology-content-EN
             .ecology-description
               .ecology-description__item
                 span.ecology-description__decor.ecology-description__decor_1
-                p.ecology-description__text «UTLC ERA»
+                p.ecology-description__text UTLC ERA
               .ecology-description__item
                 span.ecology-description__decor.ecology-description__decor_2 
                 p.ecology-description__text Sea transportation
@@ -606,7 +610,7 @@ mixin ecology-content-EN
                 p.ecology-description__text Air transportation
           .col 
             .ecology-CO__img 
-              +picture('ecology-CO-1.png').ecology-CO__img
+              +picture('ecology-CO-1.png','t').ecology-CO__img
               +activity-buttons('ecology-CO-1.png') 
 
   section(data-aos="fade-up").ecology-CO2
@@ -622,7 +626,7 @@ mixin ecology-content-EN
               .ecology-description
                 .ecology-description__item
                   span.ecology-description__decor.ecology-description__decor_1
-                  p.ecology-description__text «UTLC ERA»
+                  p.ecology-description__text UTLC ERA
                 .ecology-description__item
                   span.ecology-description__decor.ecology-description__decor_2 
                   p.ecology-description__text Sea transportation
@@ -634,7 +638,7 @@ mixin ecology-content-EN
                   p.ecology-description__text Air transportation
             .col 
               .ecology-CO2__img 
-                +picture('ecology-CO-2.png').ecology-CO2__img
+                +picture('ecology-CO-2.png','t').ecology-CO2__img
                 +activity-buttons('ecology-CO-2.png') 
                 
         .ecology-CO2__bottom.mt-section
@@ -650,13 +654,13 @@ mixin ecology-content-EN
       .ecology-grom__inner 
         .col 
           .ecology-grom__img
-            +picture('ecology-grom.png')
+            +picture('ecology-grom.png','t')
         .ecology-grom__right
           .col 
             +appeal-svg.ecology-grom__elem_1
           .col
             .row 
-              p.ecology-grom__text.text “The environmental value of the rail traffic is turning into a true sustainable business philosophy on our continent. The railway could well become a symbol of the Climate Change Conference in Glasgow, as we can confidently say that the transition of increasing cargo volumes to the railway is a crucial prerequisite for both achieving the European Green Deal and facilitating decarbonization of the Eurasian logistics.”
+              p.ecology-grom__text.text The environmental value of the rail traffic is turning into a true sustainable business philosophy on our continent. The railway could well become a symbol of the Climate Change Conference in Glasgow, as we can confidently say that the transition of increasing cargo volumes to the railway is a crucial prerequisite for both achieving the European Green Deal and facilitating decarbonization of the Eurasian logistics.
               p.ecology-grom__name Alexey Grom
               p.ecology-grom__job General Director
             .row.ecology-grom__decor-bottom 
@@ -685,7 +689,7 @@ mixin ecology-content-EN
               .item__col 
                 p.item__grey.number-animate-3.number-animate million rubles
             .item__row 
-              p.item__subtext funds allocated to implement UTLC ERA’s projects in Kazakhstan and Russia in 2022 
+              p.item__subtext Funds allocated to implement UTLC ERA’s projects in Kazakhstan and Russia in 2022 
           p.ecology-environment__text.text Since 2020, we have been playing an active role in promotion and implementation of environmental projects. #KeenOnGreen is intended to present the railway as the most environmentally friendly mode of transport, on the one hand, and to support environmental projects in the natural areas of the countries crossed by UTLC ERA’s container unit train routes, on the other hand. Under this initiative, in 2022 the company supported the project aimed at restoring the population of Red Book tugay deer in Kazakhstan. 
   section(data-aos="fade-up").ecology-cards.mt-section 
     .container-content  

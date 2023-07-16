@@ -21,3 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
   fancybox();
   modal();
 });
+
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';

@@ -14,7 +14,7 @@ mixin charity-content
               .item__col 
                 p.item__grey.number-animate-327.number-animate млн руб
             .item__row 
-              p.item__subtext Сумма, потраченная компанией на помощь детям и поддержку ветеранов отрасли в 2022 году, реализуемых в Казахстане и России в 2022 году 
+              p.item__subtext Сумма, потраченная компанией на помощь детям и поддержку ветеранов отрасли в 2022 году.
           .charity__elem 
             .row 
               p.charity__text_green Из них по 109 млн рублей
@@ -37,10 +37,10 @@ mixin charity-content
             .col 
               p.charity-cards__description.description_big.mt-0-m Помощь детям
               ul.list.charity-cards__list.charity-cards__list
-                each item in ['Помогли детям, страдающим тяжелыми заболеваниями','Развивали вместе детско-юношеский спорт',]
+                each item in ['Помогли детям, страдающим тяжелыми заболеваниями.','Развивали вместе детско-юношеский спорт.',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109 млн ₽
             .col 
@@ -49,7 +49,7 @@ mixin charity-content
                 each item in ['Организовали Международный фестиваль спорта и здорового образа жизни для пенсионеров ОАО «РЖД» и пенсионеров-железнодорожников Беларуси и Казахстана.','Реализовали благотворительную программу «Книга благих дел». Она заключается в поддержке незащищенных, малообеспеченных слоев населения, а также помощи в сфере профилактики и охраны здоровья граждан.',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -64,16 +64,16 @@ mixin charity-content
                 each item in ['Профинансировали строительство ангара для хранения подвижного состава на Детской железной дороге, а также ремонт корпусов и работы по благоустройству территории детского оздоровительного лагеря.',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109 млн ₽
             .col 
               p.charity-cards__description.description Поддержка ветеранов отрасли
               ul.charity-cards__list.list.charity-cards__list
-                each item in ['Оказали материальную помощь и поддержку неработающих пенсионеров ОВ Белорусский железной дороги; закупили канцтовары для организации.','Приобрели медицинские товары, оргтехнику, программное обеспечение.']
+                each item in ['Оказали материальную помощь и поддержку неработающих пенсионеров Организации ветеранов Белорусской железной дороги; закупили канцтовары для организации.','Приобрели медицинские товары, оргтехнику, программное обеспечение.']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -85,7 +85,7 @@ mixin charity-content
             .col 
               p.charity-cards__description.description.mt-0-m Помощь детям
               ul.list.charity-cards__list
-                each item in ['Содействовали развитию детско-юношеского спорта в регионах Казахстана: профинансировали строительство мини-футбольного поля и универсальной площадки для баскетбола и волейбола; приобрели тренажеры и спортивный инвентарь; организовали спортивные секции для детей сотрудников компании и региональные спортивные турниры ОТЛК&nbsp;ЕРА.','Организовали и провели акцию «Соберем детей в школу» для многодетных семей сотрудников АО «НК «КТЖ»; купили подарки участникам художественного конкурса «Балауса болашақ» для детей сотрудников АО «НК «КТЖ»; организовали спортивное мероприятие «Папа, мама, я — спортивная семья», а также турнир по мини-футболу среди детей сотрудников обеих организаций. ']
+                each item in ['Содействовали развитию детско-юношеского спорта в регионах Казахстана: профинансировали строительство мини-футбольного поля и универсальной площадки для баскетбола и волейбола; приобрели тренажеры и спортивный инвентарь; организовали спортивные секции для детей сотрудников компании и региональные спортивные турниры ОТЛК&nbsp;ЕРА.','Организовали и провели акцию «Соберем детей в школу» для многодетных семей сотрудников АО&nbsp;«НК&nbsp;«КТЖ»; купили подарки участникам художественного конкурса «Балауса болашақ» для детей сотрудников АО&nbsp;«НК&nbsp;«КТЖ»; организовали спортивное мероприятие «Папа, мама, я — спортивная семья», а также турнир по мини-футболу среди детей сотрудников обеих организаций. ']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
                     p.text.list__text.charity-cards__text!=item 
@@ -94,10 +94,10 @@ mixin charity-content
             .col 
               p.charity-cards__description.description Поддержка ветеранов отрасли
               ul.charity-cards__list.list.charity-cards__list
-                each item in ['Приобрели уголь в отопительном сезоне для пенсионеров и ветеранов железнодорожного транспорта Казахстана; закупили 150 продуктовых корзин для одиноких ветеранов отрасли и домов престарелых в честь празднования Дня победы, Дня работников транспорта и Дня пожилого человека; организовали спортивное мероприятие «Юбилейные старты», и марафон среди ветеранов, сотрудников с детьми обеих организаций; приобрели 18 информационных стендов для региональных советов ветеранов АО «НК «КТЖ», а также сувенирную продукцию в честь юбилеев членов Совета ветеранов АО «НК «КТЖ».']
+                each item in ['Приобрели уголь в отопительном сезоне для пенсионеров и ветеранов железнодорожного транспорта Казахстана; закупили 150 продуктовых корзин для одиноких ветеранов отрасли и домов престарелых в честь празднования Дня победы, Дня работников транспорта и Дня пожилого человека; организовали спортивное мероприятие «Юбилейные старты», и марафон среди ветеранов, сотрудников с детьми обеих организаций; приобрели 18 информационных стендов для региональных советов ветеранов АО&nbsp;«НК&nbsp;«КТЖ», а также сувенирную продукцию в честь юбилеев членов Совета ветеранов АО&nbsp;«НК&nbsp;«КТЖ».']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
   section(data-aos="fade-up").charity-utlc.mt-section(id="charity-utlc")  
     .container-content
       .charity-utlc__inner 
@@ -186,7 +186,7 @@ mixin charity-content-CN
                 each item in ['为重症儿童提供援助。','共同发展儿童-青少年体育。 ',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109亿卢布
             .col 
@@ -195,7 +195,7 @@ mixin charity-content-CN
                 each item in ['为俄罗斯铁路公司退休人员和白俄罗斯共和国和哈萨克斯坦共和国退休铁路工人组织国际体育和健康生活方式嘉年华。','组织《善举记录大全》慈善计划它包括支持人口中未受保护的低收入阶层，以及在预防和保护公民健康领域的援助。',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -210,7 +210,7 @@ mixin charity-content-CN
                 each item in ['出资建设儿童铁路列车机库，修缮儿童健康营地内大楼，设施美化。',]
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg.list-svg
-                    p.text.list__text.charity-cards__text=item 
+                    p.text.list__text.charity-cards__text!=item 
             .col.mobile-m.mt-20-m 
               p.charity-cards__number 109亿卢布
             .col 
@@ -219,7 +219,7 @@ mixin charity-content-CN
                 each item in ['为白俄罗斯铁路退休员工提供物资帮助和支持；购买办公用品。','采购医疗用品、组织技术设备、软件。']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
         .charity-cards__item 
           +column-top-svg.charity-cards__decor
           .charity-cards__row
@@ -243,7 +243,7 @@ mixin charity-content-CN
                 each item in ['在供暖季节为哈萨克斯坦铁路运输的退休人员和退伍军人购买煤炭；为行业独居老兵和养老院采购150个菜篮子，庆祝胜利日、运输工人日和老人日；组织了一场“周年纪念开始”体育赛事，以及两个组织的退伍军人、员工和子女之间的马拉松比赛；为“哈萨克斯坦铁路国有企业股份”公司地区退伍军人委员会购买了18个信息展台，以及纪念“哈萨克斯坦铁路国有企业股份”公司退伍军人委员会成员周年的纪念品。 ']
                   li.charity-cards__list-item
                     +mark-text-svg.charity-cards-svg
-                    p.text.charity-cards__text=item 
+                    p.text.charity-cards__text!=item 
   section(data-aos="fade-up").charity-utlc.mt-section(id="charity-utlc")  
     .container-content
       .charity-utlc__inner 
@@ -305,14 +305,14 @@ mixin charity-content-EN
               .item__col 
                 p.item__grey.number-animate-327.number-animate million rubles
             .item__row 
-              p.item__subtext spent by the company in 2022 to support children and industry veterans 
+              p.item__subtext Spent by the company in 2022 to support children and industry veterans 
 
           .charity__elem 
             .row 
               p.charity__text_green including 109 million rubles
-              p.charity__subtext allocated on a parity basis between the projects in Russia, Belarus and Kazakhstan
+              p.charity__subtext Allocated on a parity basis between the projects in Russia, Belarus and Kazakhstan
             .row 
-              p.charity__text.text In addition, the shareholders of the company and its employees have a conscious desire to use the services of society through programs to support culture, science, education and sports.
+              p.charity__text.text Our shareholders and employees are also consciously committed to benefiting the society by implementing programs to support culture, science, education and sports.
         .charity__bottom.mt-section
           p.charity__description.description_big We support various social initiatives both directly and in cooperation with our long-standing partners, i.e. charity funds in Russia, Belarus and Kazakhstan.
   section(data-aos="fade-up").charity-cards
@@ -400,12 +400,13 @@ mixin charity-content-EN
   section(data-aos="fade-up").charity-utlc.mt-section(id="charity-utlc")  
     .container-content
       .charity-utlc__inner 
-        h2.charity-utlc__title Uniting People and Countries: UTLC CUP 2022
+        h2.charity-utlc__title Uniting People and Countries: UTLC&nbsp;CUP 2022
         .charity-utlc__top
-          p.charity-utlc__text-top.text In cooperation with a football club, we brought to life UTLC CUP 2022 International Football Tournament, a social project to unite the countries of the Eurasian continent.
+          p.charity-utlc__text-top.text In cooperation with a football club, we brought to life UTLC&nbsp;CUP 2022 International Football Tournament, a social project to unite the countries of the Eurasian continent.
         .charity-utlc__bottom 
           .row 
             p.charity-utlc__description.description In 2022, the tournament was held for the fourth time, despite the challenging geopolitical situation. 
+            p.charity-utlc__text.text.desktop-m Eight teams from Russia, Belarus, Kazakhstan, Turkey and Serbia arrived in Moscow to compete for UTLC CUP. 16 matches were played at Sapsan Arena during the five-day tournament with 55 goals scored.
           .row 
             .item.item_size-2
               .item__row 
@@ -414,10 +415,9 @@ mixin charity-content-EN
                 .item__col 
                   p.item__grey.number-animate-18.number-animate million rubles
               .item__row 
-                p.item__subtext In 2022, the tournament was held for the fourth time, despite the challenging geopolitical situation. 
-
+                p.item__subtext Sponsor aid allocated by UTLC ERA to UTLC CUP 2022
               .item__row.mobile-m
-                p.text.item__text  Eight teams from Russia, Belarus, Kazakhstan, Turkey and Serbia arrived in Moscow to compete for UTLC CUP. 16 matches were played at Sapsan Arena during the five-day tournament with 55 goals scored.
+                p.text.item__text  Eight teams from Russia, Belarus, Kazakhstan, Turkey and Serbia arrived in Moscow to compete for UTLC&nbsp;CUP. 16 matches were played at Sapsan Arena during the five-day tournament with 55 goals scored.
           .charity-utlc__box 
             .charity-utlc__img 
               +picture('charity-utlc1.png')

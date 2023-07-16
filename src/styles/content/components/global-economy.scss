@@ -33,9 +33,11 @@
 
     display: flex;
     gap: 40px;
+
     @media (min-width: 768px) and (max-width: 1025px) {
       flex-direction: column;
     }
+
     @media #{media('<',m)} {
       margin-bottom: 20px;
       display: block;
@@ -46,12 +48,15 @@
     &:nth-child(1) {
       width: 360px;
       flex-shrink: 0;
+
       @media (min-width: 768px) and (max-width: 1025px) {
         width: 100%;
       }
+
       @media print {
         width: 100%;
       }
+
       @media #{media('<',m)} {
         width: 100%;
       }
@@ -70,6 +75,7 @@
       @media #{media('<',m)} {
         margin-bottom: rem(8px);
       }
+
       @media print {
         width: 100%;
       }
@@ -84,7 +90,7 @@
       font-size: 12px;
     }
 
-    
+
   }
 
   &-subrow {
@@ -126,7 +132,7 @@
     }
 
     &__num {
-      font-family: Halvar Breitschrift; 
+      font-family: Halvar Breitschrift;
       margin-bottom: 20px;
       font-weight: 700;
       font-size: 60px;
@@ -140,7 +146,7 @@
     }
 
     &__text {
-      font-family: Halvar Breitschrift; 
+      font-family: Halvar Breitschrift;
       font-weight: 700;
       font-size: 16px;
       line-height: 100%;
@@ -152,7 +158,7 @@
     &__text-grey {
       font-weight: 400;
       font-size: 15px;
-      line-height: 160%; 
+      line-height: 160%;
       color: #727A75;
     }
   }
@@ -160,7 +166,7 @@
   &-grafics {
     display: flex;
     gap: 20px;
-    
+
     @media #{media('>',t)} {
       justify-content: space-between;
     }
@@ -175,6 +181,7 @@
       padding: 0px;
       display: block;
     }
+
     @media print {
       width: 100%;
     }
@@ -182,10 +189,13 @@
     &__col {
       max-width: 460px;
       flex-shrink: 0;
+
       @media (min-width: 768px) and (max-width: 1025px) {
         max-width: 100%;
       }
+
       @media #{media('<',m)} {
+        max-width: 100%;
         width: 100%;
         padding: 0px;
         display: block;
@@ -230,10 +240,8 @@
         width: 100%;
 
 
-        &.first-print{
-          
-        }
-        
+        &.first-print {}
+
       }
 
       &-links {
@@ -249,7 +257,7 @@
           &.second {
             display: flex;
 
-            
+
           }
         }
 
@@ -297,9 +305,9 @@
           }
         }
 
-        &.chinese{
+        &.chinese {
           width: 100%;
-          
+
         }
       }
 
@@ -354,26 +362,29 @@
       margin-bottom: 20px;
     }
   }
-  
+
   &__hero {
     &-row {
       display: flex;
       justify-content: space-between;
       gap: 20px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         flex-direction: column;
       }
+
       @media #{media('<',m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: rem(20px);
         width: 100%;
       }
+
       @media print {
         width: 100%;
         max-width: 100%;
       }
-      
+
     }
 
     &-col {
@@ -381,12 +392,15 @@
 
       &:nth-child(1) {
         width: 460px;
+
         @media (min-width: 768px) and (max-width: 1024px) {
           width: 100%;
         }
+
         @media #{media('<',m)} {
           width: 100%;
         }
+
         @media print {
           width: 100%;
           max-width: 100%;
@@ -405,6 +419,7 @@
         font-size: rem(14px);
         line-height: 160%;
       }
+
       @media print {
         width: 100%;
         font-size: 14px;
@@ -469,15 +484,15 @@
         grid-template-columns: repeat(1, 1fr);
         gap: rem(40px);
       }
-
-      @media print {
-        // page-break-after: always;
-      }
     }
 
     &-col {
       &:nth-child(2) {
         max-width: 560px;
+
+        @media #{media('<',m)} {
+          max-width: 100%;
+        }
 
         @media print {
           max-width: 100%;
@@ -500,11 +515,13 @@
       @media #{media('<', m)} {
         width: calc(100% + 40px);
         padding-left: 20px;
+        padding-right: 20px;
         margin-left: -20px;
         overflow-x: scroll;
       }
 
       @media print {
+        padding-right: 0px;
         width: 100%;
       }
     }
@@ -520,18 +537,19 @@
           object-fit: fill;
         }
       }
+
       @media #{media('<',m)} {
         overflow-x: scroll;
 
         width: 512px;
-        height: 170px;
       }
 
       @media print {
         width: 100%;
         height: auto;
       }
-      &.desktop{
+
+      &.desktop {
         display: flex;
       }
 
@@ -580,6 +598,7 @@
 
   &.large {
     max-width: 560px;
+
     @media print {
       max-width: 100%;
       width: 100%;
@@ -622,13 +641,14 @@
 
     &.large {
       @media #{media('<',m)} {
-        font-size: 44px;
+        font-size: 34px;
       }
 
       @media (max-width: 350px) {
         font-size: 36px;
       }
     }
+
     @media (max-width: 1025px) {
       font-size: 50px;
     }
@@ -649,7 +669,7 @@
     // gap: 8px;
   }
 
-  &__text{
+  &__text {
 
     white-space: nowrap;
     font-family: 'Halvar Breitschrift';
@@ -672,10 +692,12 @@
     @media print {
       font-size: 12px;
     }
-    &.top{
+
+    &.top {
       color: color(green);
     }
-    &.mg-left{
+
+    &.mg-left {
       margin-left: 7px;
     }
 
@@ -717,7 +739,7 @@
         }
       }
 
-      &.custom-cuchurina{
+      &.custom-cuchurina {
         @media #{media('<',m)} {
           width: 100%;
         }
@@ -729,7 +751,7 @@
     }
   }
 
-  picture{
+  picture {
     height: auto;
   }
 }
@@ -749,10 +771,11 @@
     padding-top: rem(8px);
   }
 
-  
-  picture{
+
+  picture {
     height: auto;
   }
+
   &__title {
     margin-bottom: 40px;
 
@@ -788,9 +811,11 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
     @media (min-width: 768px) and (max-width: 1024px) {
       flex-direction: column;
     }
+
     @media #{media('<',m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -802,8 +827,13 @@
   &__col {
     &:nth-child(1) {
       max-width: 460px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 100%;
+      }
+      @media #{media('<',m)} {
+        max-width: 100%;
+        width: 100%;
       }
 
       @media print {
@@ -811,7 +841,11 @@
         width: 100%;
         // page-break-after: always;
       }
-      
+
+    }
+
+    &:nth-child(2){
+      order: -1;
     }
 
     @media #{media('<',m)} {
@@ -845,10 +879,10 @@
         margin-bottom: 70px;
       }
 
-      &.mg-bot30{
+      &.mg-bot30 {
         margin-bottom: 30px;
       }
-      
+
       @media #{media("<", m)} {
         margin-bottom: rem(30px);
 
@@ -863,7 +897,7 @@
         font-size: 12px;
       }
 
-      
+
     }
   }
 
@@ -878,6 +912,7 @@
     @media (min-width: 768px) and (max-width: 1024px) {
       width: 100%;
     }
+
     @media #{media('<',m)} {
       width: 100%;
       font-size: rem(12px);
@@ -917,9 +952,11 @@
   &__grafic {
     display: flex;
     width: 460px;
+
     @media (min-width: 768px) and (max-width: 1024px) {
       width: 100%;
     }
+
     @media #{media("<", m)} {
       width: 100%;
     }
@@ -928,7 +965,7 @@
       width: 80%;
     }
 
-    &-left{
+    &-left {
       display: flex;
 
       @media print {
@@ -952,7 +989,7 @@
     padding-top: rem(8px);
   }
 
-  picture{
+  picture {
     height: auto;
   }
 
@@ -972,6 +1009,7 @@
     @media (min-width: 768px) and (max-width: 1024px) {
       flex-direction: column;
     }
+
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -989,9 +1027,11 @@
 
     &:nth-child(1) {
       max-width: 360px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -1003,10 +1043,11 @@
 
     &:nth-child(2) {
       max-width: 760px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 100%;
       }
-      
+
 
       @media #{media("<", m)} {
         width: 100%;
@@ -1123,8 +1164,8 @@
     @include scrollbar-hidden();
 
     @media #{media("<", m)} {
-      width: rem(742px);
-      margin-top: rem(23px);
+      width: 742px;
+      margin-top: 23px;
       overflow-x: scroll;
     }
 
@@ -1136,7 +1177,7 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
-        padding: 0px 0px 0px 20px;
+        padding: 0px 20px 0px 20px;
         margin-left: -20px;
 
         width: calc(100% + 40px);
@@ -1144,6 +1185,7 @@
       }
 
       @media print {
+        padding-right: 0px;
         width: 100%;
       }
     }
@@ -1167,11 +1209,11 @@
     page-break-after: always;
   }
 
-  picture{
+  picture {
     height: auto;
   }
 
-  &__vector{
+  &__vector {
     display: flex;
   }
 
@@ -1222,6 +1264,7 @@
   &__row {
     display: flex;
     gap: 20px;
+
     @media (min-width: 768px) and (max-width: 1024px) {
       flex-direction: column;
     }
@@ -1229,8 +1272,10 @@
     @media print {
       width: 100%;
     }
+
     &.top {
       justify-content: space-between;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         flex-direction: column;
       }
@@ -1273,14 +1318,16 @@
 
     &:nth-child(1) {
       width: 460px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
 
-      &.print{
+      &.print {
         @media print {
           width: 100%;
           // page-break-after: always;
@@ -1291,10 +1338,11 @@
 
     &:nth-child(2) {
       max-width: 560px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 100%;
       }
-      
+
 
       @media #{media("<", m)} {
         width: 100%;
@@ -1308,9 +1356,11 @@
 
     &.col {
       width: 460px;
+
       @media (min-width: 768px) and (max-width: 1024px) {
         width: 100%;
       }
+
       @media #{media("<", m)} {
         width: 100%;
       }
@@ -1368,6 +1418,7 @@
       @include scrollbar-hidden();
 
       @media #{media("<", m)} {
+        padding-right: 20px;
         padding-left: 20px;
         margin-left: -20px;
 
@@ -1376,6 +1427,7 @@
       }
 
       @media print {
+        padding-right: 0px;
         width: 100%;
       }
     }
@@ -1403,6 +1455,7 @@
       flex-direction: column;
       gap: 40px;
     }
+
     @media #{media("<", m)} {
       margin-top: rem(20px);
       display: grid;
@@ -1418,9 +1471,11 @@
     &-col {
       &:nth-child(1) {
         width: 460px;
+
         @media (min-width: 768px) and (max-width: 1024px) {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -1434,9 +1489,11 @@
         width: 560px;
         padding-top: 8px;
         border-top: 1px solid color(borders);
+
         @media (min-width: 768px) and (max-width: 1024px) {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           padding-top: rem(5px);
           width: 100%;
@@ -1453,7 +1510,7 @@
 
     }
 
-    &-vector{
+    &-vector {
       display: flex;
     }
 
@@ -1572,6 +1629,7 @@
     @media (min-width: 768px) and (max-width: 1024px) {
       flex-direction: column;
     }
+
     @media #{media("<", m)} {
       margin-top: rem(20px);
       display: grid;
@@ -1590,12 +1648,13 @@
 
       &:nth-child(1) {
         max-width: 560px;
-        
+
         @media (min-width: 768px) and (max-width: 1024px) {
           max-width: 100%;
         }
 
         @media #{media("<", m)} {
+          max-width: 100%;
           padding-top: rem(5px);
           width: 100%;
         }
@@ -1614,6 +1673,7 @@
         }
 
         @media #{media("<", m)} {
+          max-width: 100%;
           padding-top: rem(5px);
           width: 100%;
         }
@@ -1669,9 +1729,11 @@
       &.left {
         display: flex;
         width: 460px;
+
         @media (min-width: 768px) and (max-width: 1024px) {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -1691,6 +1753,7 @@
         }
 
         @media #{media("<", m)} {
+          max-width: 100%;
           width: 100%;
         }
 
@@ -1721,10 +1784,10 @@
     max-width: 100%;
     width: 100%;
     margin-top: 20px;
-      page-break-after: always;
+    page-break-after: always;
   }
 
-  picture{
+  picture {
     height: auto;
   }
 
@@ -1747,9 +1810,11 @@
   &__hero {
     display: flex;
     gap: 40px;
+
     @media (min-width: 768px) and (max-width: 1024px) {
       flex-direction: column;
     }
+
     @media #{media("<", m)} {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -1766,9 +1831,11 @@
 
       &:nth-child(1) {
         width: 360px;
+
         @media (min-width: 768px) and (max-width: 1024px) {
           width: 100%;
         }
+
         @media #{media("<", m)} {
           width: 100%;
         }
@@ -1838,6 +1905,7 @@
         @media (max-width: 1025px) {
           max-width: 270px;
         }
+
         @media #{media("<", m)} {
           max-width: 100%;
         }
@@ -1927,11 +1995,11 @@
       align-items: center;
     }
 
-    &-vector{
+    &-vector {
       display: flex;
-    } 
+    }
 
-    
+
 
     &-copy {
       display: flex;
@@ -1959,7 +2027,9 @@
 
     &-container {
       @include scrollbar-hidden();
+
       @media #{media("<", m)} {
+        padding-right: 20px;
         padding-left: 20px;
         margin-left: -20px;
 
@@ -1968,6 +2038,7 @@
       }
 
       @media print {
+        padding-right: 0px;
         max-width: 100%;
         width: 100%;
       }
@@ -2034,7 +2105,7 @@
       @media print {
         width: 100%;
         font-size: 12px;
-        
+
       }
     }
 
@@ -2050,6 +2121,7 @@
         width: 100%;
       }
     }
+
     @media print {
       max-width: 100%;
       width: 100%;
@@ -2057,7 +2129,7 @@
     }
 
 
-    &.shares-flex{
+    &.shares-flex {
       display: flex;
       gap: 20px;
     }
@@ -2132,6 +2204,7 @@
 
     &-vector {
       display: flex;
+
       &.desktop {
         @media #{media("<", m)} {
           display: none;
@@ -2265,6 +2338,7 @@
 
     &-vector {
       display: flex;
+
       &.custom-desktop {
         @media #{media("<", m)} {
           display: none;
@@ -2326,6 +2400,7 @@
 
     &-vector {
       display: flex;
+
       &.custom-desktop {
         @media #{media("<", m)} {
           display: none;
@@ -2343,8 +2418,8 @@
     }
   }
 
-  &__numbers{
-    &-block{ 
+  &__numbers {
+    &-block {
       margin-top: 25px;
 
       @media #{media("<", m)} {
@@ -2364,11 +2439,11 @@
       }
     }
 
-    &-rows{
+    &-rows {
       position: relative;
     }
 
-    &-row{
+    &-row {
       padding-bottom: 16px;
       margin-bottom: 24px;
       display: grid;
@@ -2378,11 +2453,11 @@
 
       border-bottom: 1px solid color(borders);
 
-      &:last-child{
+      &:last-child {
         border: none;
       }
 
-      @media #{media("<", m)} { 
+      @media #{media("<", m)} {
         padding-bottom: 12px;
         margin-bottom: 19px;
         grid-template-columns: repeat(8, 1fr);
@@ -2390,7 +2465,7 @@
 
         width: 750px;
 
-        &.second-section{
+        &.second-section {
           width: 800px;
 
           @media print {
@@ -2405,7 +2480,8 @@
         }
       }
     }
-    &-item{
+
+    &-item {
       max-width: 264px;
 
       @media #{media("<", m)} {
@@ -2417,8 +2493,9 @@
         max-width: 100%;
         width: 100%;
       }
-      .numbers-item{
-        &__number{
+
+      .numbers-item {
+        &__number {
           margin-bottom: 16px;
           display: flex;
           flex-wrap: nowrap;
@@ -2427,44 +2504,47 @@
             margin-bottom: 13px;
           }
         }
-        &__number-num{
+
+        &__number-num {
           color: #727A75;
           font-size: 36px;
           font-family: Manrope;
           font-style: normal;
           font-weight: 700;
-          line-height: 80%; 
+          line-height: 80%;
 
-          &.big-light{
+          &.big-light {
             color: #69DA91;
-            font-size: 88px; 
+            font-size: 88px;
 
             @media #{media("<", m)} {
-              font-size: 24px; 
-              line-height: 100%; 
+              font-size: 24px;
+              line-height: 100%;
             }
           }
-          &.big-green{
+
+          &.big-green {
             color: color(green);
-            font-size: 64px; 
+            font-size: 64px;
 
             @media #{media("<", m)} {
-              font-size: 20px; 
-              line-height: 100%; 
+              font-size: 20px;
+              line-height: 100%;
             }
           }
-          &.big-grey{
-            font-size: 42px; 
+
+          &.big-grey {
+            font-size: 42px;
 
             @media #{media("<", m)} {
-              font-size: 18px; 
-              line-height: 100%; 
+              font-size: 18px;
+              line-height: 100%;
             }
           }
 
           @media #{media("<", m)} {
             font-size: 16px;
-            line-height: 100%; 
+            line-height: 100%;
           }
 
           @media print {
@@ -2473,16 +2553,16 @@
           }
         }
 
-        &__text{
+        &__text {
           font-size: 12px;
           font-family: Manrope;
           font-style: normal;
           font-weight: 400;
-          line-height: 150%; 
+          line-height: 150%;
           color: color(black);
 
           @media #{media("<", m)} {
-            font-size: 10px; 
+            font-size: 10px;
           }
 
           @media print {
@@ -2506,6 +2586,7 @@
   align-items: start;
   gap: 244px;
   border: 1px solid color(light-green);
+
   @media (min-width: 768px) and (max-width: 1024px) {
     gap: 120px;
     justify-content: space-between;
@@ -2515,6 +2596,7 @@
     max-width: 100%;
     width: 100%;
   }
+
   @media #{media("<", m)} {
     margin-bottom: 0px;
     margin-top: rem(40px);
@@ -2561,9 +2643,11 @@
 
   &__main {
     padding: 40px 100px 40px 0px;
+
     @media (min-width: 768px) and (max-width: 1024px) {
       padding: 40px 40px 40px 0px;
     }
+
     @media #{media("<", m)} {
       padding: 0px rem(15px) rem(25px) rem(20px);
       width: 100%;
@@ -2622,6 +2706,6 @@
 }
 
 
-.ge-card__nums-container{
+.ge-card__nums-container {
   display: flex;
 }

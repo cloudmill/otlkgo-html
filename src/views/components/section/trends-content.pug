@@ -24,7 +24,7 @@ mixin trends-content
       .trends-volume__inner 
         h6.trends-volume__title Объем мировой торговли посредством морского транспорта, 2021 – 2022&nbsp;гг., млн ДФЭ
         .trends-volume__svg
-          +picture('trends-volume.png').trends-volume-img
+          +picture('trends-volume.png','t').trends-volume-img
         .links.trends-volume__links
           p.links__text.trends-volume__links-text Источник:&nbsp;
           a(href="https://www.containerstatistics.com/" target='blank').links__link.trends-volume__links-link Container Trades Statistics Ltd (CTS)
@@ -33,26 +33,26 @@ mixin trends-content
           .col 
             p.text.trends-volume__text Ставки морского фрахта, достигнув рекордных отметок в конце 2021 года, в 2022 году начали корректироваться на фоне ослабления спроса, ценовой конкуренции между перевозчиками за объемы перевозок и некоторых улучшений в части работы ключевых портов в Азии и Европе.
           .col 
-            p.text.trends-volume__text Таким образом, по итогам декабря 2022 года композитный WCI скорректировался относительно пика 2021 года на 79,6% и составил 2 120 $/СФЭ. Для отдельных трейдов динамика была схожей — ставка Шанхай-Роттердам снизилась на 88,5% относительно максимумов и достигла 1 706 $/СФЭ. Для обратного направления, Роттердам-Шанхай, ставка скорректировалась на 54,8% до 789 $/СФЭ.
+            p.text.trends-volume__text Таким образом, по итогам декабря 2022 года композитный WCI скорректировался относительно пика 2021 года на 79,6% и составил <span class='nbsp'>2&nbsp;120&nbsp;$/СФЭ.</span> Для отдельных трейдов динамика была схожей — ставка <span class='nbsp'>Шанхай-Роттердам </span>снизилась на 88,5% относительно максимумов и достигла <span class='nbsp'>1 706&nbsp;$/СФЭ.</span> Для обратного направления, Роттердам-Шанхай, ставка скорректировалась на 54,8% до 789&nbsp;$/СФЭ.
   section(data-aos="fade-up").trends-dynamic
     .container-content 
       .trends-dynamic__inner 
         .row
-          h6.trends-dynamic__title Динамика значений ставок WCI, 2021–2022 гг., $/СФЭ
+          h6.trends-dynamic__title Динамика значений ставок WCI, 2021–2022 гг.,&nbsp;$/СФЭ
           .trends-dynamic__elements 
             .trends-dynamic__elem 
               span.trends-dynamic__green
               p Композитный WCI
             .trends-dynamic__elem
               span.trends-dynamic__light-green
-              p WCI Шанхай-Роттердам
+              p WCI&nbsp;<span>Шанхай-Роттердам</span>
             .trends-dynamic__elem 
               span.trends-dynamic__brown
-              p WCI Роттердам-Шанхай
+              p WCI&nbsp;<span>Роттердам-Шанхай</span>
           .trends-dynamic__svg.mobile
             +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
           .trends-dynamic__svg.desktop
-            +picture('trends-dynamic.png')
+            +picture('trends-dynamic.png','t')
           .links.trends-dynamic__links
             p.links__text.trends-dynamic__links-text Источник: &nbsp;
             a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
@@ -85,9 +85,9 @@ mixin trends-content
             span.trends-dynamic__brown
             p WCI Роттердам-Шанхай
         .trends-rates__svg 
-          +picture('trends-rates-mobile.png').mobile
+          +picture('trends-rates-mobile.png','t').mobile
         .trends-rates__svg 
-          +picture('trends-rates.png').desktop
+          +picture('trends-rates.png','t').desktop
         .links.trends-rates__links.flex-m
           p.links__text.trends-rates__links-text Источники:&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
@@ -117,9 +117,9 @@ mixin trends-content
               .elem_line
               p.trends-demand__text Изменение год к году
         .trends-demand__svg 
-          +picture('trends-demand-mobile.png').mobile
+          +picture('trends-demand-mobile.png','t').mobile
         .trends-demand__svg 
-        +picture('trends-demand.png').desktop
+        +picture('trends-demand.png','t').desktop
         .links.trends-demand__links.flex-m
             p.links__text.trends-demand__links-text Источник:&nbsp;
             a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
@@ -176,7 +176,7 @@ mixin trends-content-CN
       .trends-volume__inner 
         h6.trends-volume__title 2021-2022年通过海上运输的全球贸易量，百万TEU
         .trends-volume__svg
-          +picture('trends-volume-CN.png').trends-volume-img
+          +picture('trends-volume-CN.png','t').trends-volume-img
         +activity-buttons('trends-volume-CN.png')
         .links.trends-volume__links
           p.links__text.trends-volume__links-text 资料来源:&nbsp;
@@ -235,9 +235,9 @@ mixin trends-content-CN
             span.trends-dynamic__brown
             p Wci鹿特丹-上海
         .trends-rates__svg 
-          +picture('trends-rates-mobile.png').mobile
+          +picture('trends-rates-mobile.png','t').mobile
         .trends-rates__svg 
-          +picture('trends-rates.png').desktop
+          +picture('trends-rates.png','t').desktop
         .links.trends-rates__links.flex-m
           p.links__text.trends-rates__links-text Sources:&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
@@ -252,14 +252,14 @@ mixin trends-content-CN
             h6.trends-demand__title 全球海运集装箱运输需求，2020-2022年事实，2023-2026年预测，百万TEU和%
           .col 
             .trends-demand__svg 
-              +picture('trends-demand-mobile.png').mobile
+              +picture('trends-demand-mobile.png','t').mobile
               +activity-buttons('trends-demand-mobile.png').mobile
 
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text 资料来源:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
-          +picture('trends-demand.png').desktop
+          +picture('trends-demand.png','t').desktop
           +activity-buttons('trends-demand.png').desktop
 
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
@@ -313,7 +313,7 @@ mixin trends-content-EN
         h6.trends-volume__title Global Sea Transport Trade Volume, 2021 to 2022 (million TEUs)
 
         .trends-volume__svg
-          +picture('trends-volume-EN.png').trends-volume-img
+          +picture('trends-volume-EN.png','t').trends-volume-img
         +activity-buttons('trends-volume-EN.png')
 
         .links.trends-volume__links
@@ -332,7 +332,7 @@ mixin trends-content-EN
           .trends-dynamic__elements 
             .trends-dynamic__elem 
               span.trends-dynamic__green
-              p Composite RCA
+              p Composite WCI
             .trends-dynamic__elem
               span.trends-dynamic__light-green
               p WCI Shanghai-Rotterdam
@@ -340,9 +340,9 @@ mixin trends-content-EN
               span.trends-dynamic__brown
               p WCI Rotterdam-Shanghai
         .trends-dynamic__svg.mobile
-          +picture('trends-dynamic-mobile.png')(data-fancybox="gallery")
+          +picture('trends-dynamic-mobile.png','t')(data-fancybox="gallery")
         .trends-dynamic__svg.desktop
-          +picture('trends-dynamic.png')
+          +picture('trends-dynamic.png','t')
         .links.trends-dynamic__links
           p.links__text.trends-dynamic__links-text Source: &nbsp;
           a.links__link.trends-dynamic__links-link(href="https://www.drewry.co.uk/" target='blank')  Drewry
@@ -364,17 +364,17 @@ mixin trends-content-EN
         .trends-dynamic__elements 
           .trends-dynamic__elem 
             span.trends-dynamic__pink
-            p The first waves of COVID
+            p First COVID waves
           .trends-dynamic__elem
             span.trends-dynamic__light-green
-            p WCI Shanghai-Rotterdam
+            p WCI Shanghai-Rotterdam/ERAI/West 
           .trends-dynamic__elem 
             span.trends-dynamic__brown
-            p WCI Rotterdam-Shanghai
+            p WCI Rotterdam-Shanghai/ERAI/East
         .trends-rates__svg 
-          +picture('trends-rates-mobile.png').mobile
+          +picture('trends-rates-mobile.png','t').mobile
         .trends-rates__svg 
-          +picture('trends-rates.png').desktop
+          +picture('trends-rates.png','t').desktop
         .links.trends-rates__links.flex-m
           p.links__text.trends-rates__links-text Sources:&nbsp;
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank')  Drewry,&nbsp;
@@ -391,14 +391,14 @@ mixin trends-content-EN
             h6.trends-demand__title Global Sea Container Traffic Demand, 2020 to 2022 (actual), 2023 to 2026 (forecast), million TEUs and %
           .col 
             .trends-demand__svg 
-              +picture('trends-demand-mobile.png').mobile
+              +picture('trends-demand-mobile.png','t').mobile
               +activity-buttons('trends-demand-mobile.png').mobile
 
             .links.trends-demand__links 
               p.links__text.trends-demand__links-text Source:&nbsp;
               a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
-          +picture('trends-demand.png').desktop
+          +picture('trends-demand.png','t').desktop
           +activity-buttons('trends-demand.png').desktop
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
@@ -411,15 +411,18 @@ mixin trends-content-EN
               p.trends-forecast__number +7–11%
               p.trends-forecast__sub expected net capacity growth in 2023
           .col 
+            p.text.trends-forecast__text «Specifically, in its press release in December, Maersk predicted the decline in demand throughout 2023 due to a relatively weak state of the global economy and the significant inventories still to be sold by retailers. Yet, in its January publication, the company stated that there were causes for optimism and predicted a significant growth in trade and demand starting from the second half of the year against the cancellation of strong anti-COVID restrictions by China. However, the potential for excessive market capacities is still high. 
             p.text.trends-forecast__text The current supply and demand predictions show that the “buyer’s market” is the most probable option in 2023. Nevertheless, sea carriers may take action to strengthen the supply controls and to boost the rate growth. According to Drewry, the cost effectiveness of the Asia – North Europe services has already decreased almost to zero, thus the companies will have to leverage all available tools to avoid financial loss. 
-            p.text.trends-forecast__text Apart from the standard voyage cancellation tool, carriers may improve the traffic economics by adopting the “slow streaming” practice (i.e. intentionally slowing down the vessel speed in order to cut the costs by reducing fuel consumption and CO2 emissions) and re-routing the vessels via the Cape of Good Hope (to avoid the fees to cross the Suez Canal and to partially withdraw the supply from the market by extending the time in transit by 10 to 12 days). The efficiency of the actions taken by carriers will definitely depend on multiple fundamental drivers affecting the industry. 
-            p.text.trends-forecast__text The rapid swings in demand, port congestion, natural disasters and many more reasons may significantly change the market situation.
+            p.text.trends-forecast__text Apart from the standard voyage cancellation tool, carriers may improve the traffic economics by adopting the “slow streaming” practice (i.e. intentionally slowing down the vessel speed in order to cut the costs by reducing fuel consumption and CO2 emissions) and re-routing the vessels via the Cape of Good Hope (to avoid the fees to cross the Suez Canal and to partially withdraw the supply from the market by extending the time in transit by 10 to 12 days). The efficiency of the actions taken by carriers will definitely depend on multiple fundamental drivers affecting the industry. The rapid swings in demand, port congestion, natural disasters and many more reasons may significantly change the market situation.»
   section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
     .container-content 
       .trends-forecast2__inner 
         h3.trends-forecast2__title Forecast: Cautious Optimism
         .row
           .col 
-            p.trends-forecast2__description.trends-forecast2__description_EN According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023. The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
+            p.trends-forecast2__description.trends-forecast2__description_EN According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023.
+            
           .col 
-            p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period
+            p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period.  The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
+
+            

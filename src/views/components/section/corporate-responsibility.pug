@@ -71,13 +71,12 @@ mixin corporate-responsibility
       .corporate-responsibility__care-row(data-aos="fade-up") 
         .corporate-responsibility__care-col(data-aos="fade-up") 
           .corporate-responsibility__care-subtitle Люди, работающие в ОТЛК&nbsp;ЕРА — основное конкурентное преимущество компании, а их благополучие — часть корпоративной культуры well-being. ОТЛК&nbsp;ЕРА стремится создавать все условия для соблюдения интересов персонала, поэтому для компании важны:
-        .corporate-responsibility__care-col(data-aos="fade-up")
-          .corporate-responsibility__care-subtext Процессы подбора, адаптации и развития персонала в&nbsp;компании регламентируют
           .corporate-responsibility__care-list 
             .recruitment-processes__hr-mark Профессиональное и личностное развитие каждого сотрудника
             .recruitment-processes__hr-mark Создание благоприятного морально-психологического климата и&nbsp;нормальных условий труда на рабочих местах
             .recruitment-processes__hr-mark Справедливая оценка вклада и инициативности сотрудников
             .recruitment-processes__hr-mark Здоровье и благополучие сотрудников и членов их семей
+        .corporate-responsibility__care-col(data-aos="fade-up")
           .corporate-responsibility__care-text.top.text Компания обеспечивает достойный уровень оплаты труда, но не ограничивается этим, и стремится оказать сотрудникам максимальную социальную поддержку и предоставить возможности для обучения и развития. Мы заботимся о благополучии сотрудников, об улучшении их психического и физического состояния, а также уровне удовлетворенности.
           .corporate-responsibility__care-text.text В рамках well-being программ в 2022 году компания внедрила сервис по поддержке сотрудников, в рамках которого можно обратиться неограниченное количество раз за психологической консультацией.
   .container-content
@@ -120,7 +119,7 @@ mixin corporate-responsibility
         .personal-subsection__col.right(data-aos="fade-up")
           .personal-subsection__subtitle Программа включает
           each item in ['Онлайн-прием терапевта', 'Онлайн-запись к врачам узкой специализации через приложение', 'Бесплатную психологическую помощь для сотрудников и их семей', 'Круглосуточный доступ к материалам программ, направленных на формирование картины здоровья, благополучия коллектива, повышение приверженности здоровому образу жизни', 'Возможность приобрести медицинские полисы ДМС для близких родственников по корпоративным ценам', 'Оформление справок для санаторно-курортного лечения', 'Полис для выезда за пределы Российской Федерации', 'Реабилитационно-восстановительное лечение для застрахованных сотрудников, перенесших вирусную пневмонию, в том числе COVID-19', 'Лечение впервые диагностированных критических заболеваний',]
-            .recruitment-processes__hr-mark=item
+            .recruitment-processes__hr-mark!=item
           .personal-subsection__subrow 
             .ge-card.light-green
               .ge-card__top.gap-8
@@ -173,7 +172,7 @@ mixin corporate-responsibility
               .ge-card__text-grey Прошли практику в компании в 2022 году
         .education-support__col(data-aos="fade-up") 
           .education-support__text.top.text Компания поддерживает учебные заведения транспортной направленности, организует совместные программы, приглашает студентов и молодых специалистов на практику и открыта для любых иных форматов развития образования.  
-          .education-support__text.text В течение 2022 года сотрудники ОТЛК&nbsp;ЕРА дважды принимали участие в оффлайн-мероприятии «День карьеры» в Российском университете транспорта (МИИТ). Встречи носили интерактивный характер: студентам рассказывали о компании и возможности пройти практику, проводили карьерные мини-консультации и викторины на железнодорожную тематику. 
+          .education-support__text.text В течение 2022 года сотрудники ОТЛК&nbsp;ЕРА дважды принимали участие в оффлайн-мероприятии <span class='nbsp'> «День карьеры» </span> в Российском университете транспорта (МИИТ). Встречи носили интерактивный характер: студентам рассказывали о компании и возможности пройти практику, проводили карьерные мини-консультации и викторины на железнодорожную тематику. 
   .container-content 
     .education-development(id="education-development")(data-aos="fade-up") 
       .education-development__title Обучение и развитие
@@ -209,7 +208,7 @@ mixin corporate-responsibility
           .education-development__subsection-text.text Ежегодно компания выборочно проводит оценку по утвержденной модели корпоративных компетенций. В 2022 году оценку прошли 11 человек, и по итогам всем участникам выданы рекомендации и разработаны индивидуальные планы развития на год. 
       .education-development__subsection-row(data-aos="fade-up")
         .education-development__subsection-col
-          .education-development__subsection-subtitle Для повышения профессионального уровня и личностного роста сотрудников в течение 2022 года компания предоставляла доступ к электронной библиотеке издательства.
+          .education-development__subsection-subtitle Для повышения профессионального уровня и личностного роста сотрудников в течение 2022 года компания предоставляла доступ к электронной библиотеке.
         .education-development__subsection-col
           .ge-card.green
             .ge-card__top
@@ -223,7 +222,7 @@ mixin corporate-responsibility
         .corporate-responsibility__trainings-col 
           .corporate-responsibility__trainings-subtitle Процессы подбора, адаптации и развития персонала в компании регламентируют
           each item in ['Оффлайн-тренинг «В одной связке» – для повышения работоспособности сотрудников, сплочения и улучшения коммуникаций внутри коллектива', 'Онлайн-игра «Активация» – для поднятия осознанности сотрудников и проработки проблем, связанных с онлайн коммуникацией', 'Бизнес-тренинг «Развитие коммуникаций и навыков взаимодействия в команде» – для выстраивания межличностных связей и более эффективного исполнения задач компании', 'Тренинг на тему «Управление рисками» – для внедрения системы управления рисками в операционную деятельность компании', 'Серия тренингов по управленческим компетенциям для начинающих и опытных руководителей']
-            .recruitment-processes__hr-mark=item
+            .recruitment-processes__hr-mark!=item
         .corporate-responsibility__trainings-col 
           .corporate-responsibility__trainings-text.text В нашей компании есть традиция — каждый год награждать молодых специалистов «Билетом в будущее», который можно использовать для прохождения кросс-функциональных стажировок в компаниях-партнерах или участия в тематических конференциях. В рамках этой программы 3 молодых специалиста в 2022 году приняли участие в международном контейнерном форуме «ЕСЭ-2022: контейнерная логистика в новых реалиях» (г. Сочи).
           .corporate-responsibility__trainings-text.text Кроме того, 6 сотрудников приняли участие в 4-ой Конференции транспортно-логистического бизнес-блока холдинга ОАО «РЖД» (г. Нижний Новгород). В рамках одного из потоков — молодежного — эксперты и модераторы проводили оценку участников. По результатам был сформирован рейтинг ТОП-30 молодых и перспективных специалистов, куда вошли 2 наших сотрудника. А в HR-потоке директор по организационному развитию компании представил доклад на тему «Система мотивации для блока продаж».
@@ -292,7 +291,7 @@ mixin corporate-responsibility-EN
             .principes-icon 
               +univer-hat-svg
           .corporate-responsibility__principles-item.icons 
-            .principes-text.icons  environmental protection
+            .principes-text.icons  Environmental protection
             .principes-icon 
               +leafes-svg
           .corporate-responsibility__principles-item.icons 
@@ -311,14 +310,15 @@ mixin corporate-responsibility-EN
       .corporate-responsibility__care-row(data-aos="fade-up") 
         .corporate-responsibility__care-col(data-aos="fade-up") 
           .corporate-responsibility__care-subtitle People working for UTLC&nbsp;ERA are our key competitive edge, and their well-being is an integral part of our corporate culture. UTLC&nbsp;ERA is committed to creating all possible conditions for respecting the interests of our personnel, therefore, the company attaches great value to:
-        .corporate-responsibility__care-col(data-aos="fade-up")
-          .corporate-responsibility__care-subtext The personnel recruitment, onboarding and development processes adopted at the company are regulated by:
-          .corporate-responsibility__care-list 
+          .corporate-responsibility__care-list.mt-20
             .recruitment-processes__hr-mark Professional and personal development of each employee
             .recruitment-processes__hr-mark Favorable moral and psychological climate and normal workplace conditions
             .recruitment-processes__hr-mark Fair assessment of the individual contribution and proactive approach
             .recruitment-processes__hr-mark Health and well-being of our employees and their families
-          .corporate-responsibility__care-text.top.text The company goes above and beyond ensuring the decent remuneration levels and strives to render maximum social support and offer training and development opportunities to the personnel. We care about the well-being of our team members, improvement of their mental and physical state, as well as their satisfaction level
+        .corporate-responsibility__care-col(data-aos="fade-up")
+          .corporate-responsibility__care-subtext The personnel recruitment, onboarding and development processes adopted at the company are regulated by:
+         
+          .corporate-responsibility__care-text.top.text The company goes above and beyond ensuring the decent remuneration levels and strives to render maximum social support and offer training and development opportunities to the personnel. We care about the well-being of our team members, improvement of their mental and physical state, as well as their satisfaction level.
           .corporate-responsibility__care-text.text In 2022, the company implemented the well-being programs that included establishment of an employee support service, which grants unlimited access to psychological, financial or legal advice from subject matter experts.
   .container-content
     .corporate-responsibility__events(id="corporate-responsibility-events")(data-aos="fade-up") 
@@ -339,13 +339,13 @@ mixin corporate-responsibility-EN
                 .ge-card__num.light.countup-element(data-countup='78' data-countup-suffix='%')
               .ge-card__bot
                 .ge-card__text-grey Employees can work remotely
-          .corporate-responsibility__health-text To ensure uninterrupted and effective team work, we have arranged remote access to the corporate web resources and allocated personal computers to our employees. The employees hired in 2022 start working remotely upon passing their probation period.
+          .corporate-responsibility__health-text For those working in the office due to operational needs, we have purchased disinfectants, hand sanitizers and personal respiratory protective devices. Wet cleaning is made very three hours.
   .container-content 
     .personal-subsection(data-aos="fade-up") 
       .personal-subsection__title The company places special emphasis on enabling its personnel to obtain the best medical service in the most advanced medical institutions of Moscow and the Moscow Region. 
       .personal-subsection__row.first(data-aos="fade-up") 
         .personal-subsection__col.text
-          .personal-subsection__text To support health and stable emotional state within the team during the pandemic, the company has considerably expanded the voluntary health insurance plan and its geography
+          .personal-subsection__text To support health and stable emotional state within the team during the pandemic, the company has considerably expanded the voluntary health insurance plan and its geography.
         .personal-subsection__col.text
           .personal-subsection__text The company has a health resort treatment program in place. The program defines the procedures for booking, distribution and payment of vouchers to health improvement institutions, which are focused on health resort treatment, health improvement and recreation.
       .personal-subsection__row.second(data-aos="fade-up") 
@@ -355,7 +355,7 @@ mixin corporate-responsibility-EN
                 .ge-card__num.light.countup-element(data-countup='8')
                 .ge-card__text.number-animate-8.number-animate  employees
               .ge-card__bot
-                .ge-card__text-grey.short got health resort treatment in 2022
+                .ge-card__text-grey.short Got health resort treatment in 2022
           .personal-subsection__text.custom-top.text We also care about our personnel’s children. A new social guarantee is available since May 2022, namely reimbursement (compensation) of the child’s recreation and health improvement.
         .personal-subsection__col.right(data-aos="fade-up")
           .personal-subsection__subtitle The plan includes:
@@ -374,13 +374,13 @@ mixin corporate-responsibility-EN
                 .ge-card__num.light.countup-element(data-countup='60000')
                 .ge-card__text.number-animate-60000.number-animate rubles<br> per year
               .ge-card__bot
-                .ge-card__text-grey reimbursement of costs for children’s recreation or health improvement 
+                .ge-card__text-grey Reimbursement of costs for children’s recreation or health improvement 
             .ge-card.light-green
               .ge-card__top.gap-8
                 .ge-card__num.light.countup-element(data-countup='3') 
                 .ge-card__text.number-animate-3.number-animate  employees
               .ge-card__bot
-                .ge-card__text-grey took advantage of this opportunity in 2022
+                .ge-card__text-grey Took advantage of this opportunity in 2022
           .personal-subsection__text.text In addition, we have an ongoing corporate sports development program focused on personnel’s health improvement. Employees can attend various sports activities, such as yoga, pilates and dance classes. We also rent a football training facility.
   .container-content
     .material-help(id="material-help")(data-aos="fade-up")  
@@ -394,7 +394,7 @@ mixin corporate-responsibility-EN
               .ge-card__num.green.countup-element(data-countup='21') 
               .ge-card__text.number-animate-21.number-animate  employees
             .ge-card__bot
-              .ge-card__text-grey received financial aid in 2022
+              .ge-card__text-grey Received financial aid in 2022
           .material-help__text.top.text In terms of soft incentives, the company encourages its best employees by awarding certificates of appreciation, provides learning, career and horizontal rotation opportunities, arranges participation in cross-functional internships, holds trainings and other activities.
         .material-help__col(data-aos="fade-up")
           .ge-card.green
@@ -402,7 +402,7 @@ mixin corporate-responsibility-EN
               .ge-card__num.green.countup-element(data-countup='8')
               .ge-card__text.number-animate-8.number-animate employees
             .ge-card__bot
-              .ge-card__text-grey received various awards
+              .ge-card__text-grey Received various awards
           .material-help__subtext 8 employees were awarded in 2022 in accordance with the effective regulations
           p.recruitment-processes__hr-mark 3 employees were awarded by JSCo "RZD" to honor their dedicated work and high professionalism
           p.recruitment-processes__hr-mark 5 employees were awarded by Belarusian Railway to honor their great contribution to improving the operational interaction with the Belarusian Railway divisions and ensuring growth of transit container traffic volumes, high professionalism and dedicated work
@@ -449,7 +449,7 @@ mixin corporate-responsibility-EN
     .education-development__subsection(data-aos="fade-up") 
       .education-development__subsection-row.top(data-aos="fade-up") 
         .education-development__subsection-col 
-          .education-development__subsection-text.custom-1.textIn 2022, our employees continued their studies of the English and Chinese languages.
+          .education-development__subsection-text.custom-1.textIn  In 2022, our employees continued their studies of the English and Chinese languages.
           .education-development__subsection-text.text Some employees took part in the preparation for the finals of World Skills – RZDSkills 2022 as experts on such competencies as Railway Logistics Management, Sale of Transport and Logistics Services and Customer Support. The competition established the basis of the integrated professional community and the new approaches to workplace culture based on the World Skills international standards.
         .education-development__subsection-col 
           .education-development__subsection-text.text The company makes an annual sample assessment in accordance with the approved model of corporate competencies. In 2022, 11 people were assessed, with every participant obtaining recommendations and annual individual development plans.
@@ -467,8 +467,7 @@ mixin corporate-responsibility-EN
       h2.corporate-responsibility__trainings-title Trainings and Conferences
       .corporate-responsibility__trainings-row 
         .corporate-responsibility__trainings-col 
-          .corporate-responsibility__trainings-subtitle The processes of selection, adaptation and development of personnel in the company are regulated by
-          each item in ['Оффлайн-тренинг «В одной связке» – для повышения работоспособности сотрудников, сплочения и улучшения коммуникаций внутри коллектива', 'Онлайн-игра «Активация» – для поднятия осознанности сотрудников и проработки проблем, связанных с онлайн коммуникацией', 'Бизнес-тренинг «Развитие коммуникаций и навыков взаимодействия в команде» – для выстраивания межличностных связей и более эффективного исполнения задач компании', 'Тренинг на тему «Управление рисками» – для внедрения системы управления рисками в операционную деятельность компании', 'Серия тренингов по управленческим компетенциям для начинающих и опытных руководителей']
+          .corporate-responsibility__trainings-subtitle In 2022, our employees attended the following trainings:
             .recruitment-processes__hr-mark Tied Together – an offline training to promote personnel productivity, team-building and team communications.
             .recruitment-processes__hr-mark Activation – an online game to raise awareness and address the online communication issues.
             .recruitment-processes__hr-mark Development of Team Communication and Interaction Skills – a business training to build interpersonal communications and to improve performance according to the company’s tasks.
@@ -668,7 +667,7 @@ mixin corporate-responsibility-CN
               .ge-card__text-grey  2022年在公司实习
         .education-support__col(data-aos="fade-up") 
           .education-support__text.top.text 公司支持以交通为导向的教育机构，组织联合项目，邀请学生和年轻专家进行实践，并对任何其他形式的教育发展持开放态度。 
-          .education-support__text.text 2022 年期间，UTLC EPA 员工两次参加了俄罗斯交通大学 (MIIT) 的职业日线下活动。 会议是互动的：学生们被告知公司和实习机会，他们举行了关于铁路主题的职业小型咨询和测验。
+          .education-support__text.text 2022 年期间，UTLC&nbsp;EPA 员工两次参加了俄罗斯交通大学 (MIIT) 的职业日线下活动。 会议是互动的：学生们被告知公司和实习机会，他们举行了关于铁路主题的职业小型咨询和测验。
   .container-content 
     .education-development(id="education-development")(data-aos="fade-up") 
       .education-development__title 培训和发展

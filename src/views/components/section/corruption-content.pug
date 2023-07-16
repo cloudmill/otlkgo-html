@@ -6,7 +6,7 @@ mixin corruption-content
         .corruption__row 
           .col 
             ul.list
-              each item in ['Разъяснить позицию руководителей и сотрудникам компании о неприятии коррупции в любых ее формах и проявлениях','Информировать руководителей и сотрудников компании о требованиях российского законодательства и документах, принятых акционерами в области противодействия коррупции и ответственности за коррупционные правонарушения','Обобщить и разъяснить меры, которые предпринимает компания в области противодействия коррупции','Формировать антикоррупционное сознание руководителей и сотрудников компании','Минимизировать коррупционные риски в деятельности компании',]
+              each item in ['Разъяснить позицию руководителей сотрудникам компании о неприятии коррупции в любых ее формах и проявлениях','Информировать руководителей и сотрудников компании о требованиях российского законодательства и документах, принятых акционерами в области противодействия коррупции и ответственности за коррупционные правонарушения','Обобщить и разъяснить меры, которые предпринимает компания в области противодействия коррупции','Формировать антикоррупционное сознание руководителей и сотрудников компании','Минимизировать коррупционные риски в деятельности компании',]
                 li.corruption__item
                   +mark-text-svg.corruption-svg
                   p.corruption__text.text=item
@@ -20,11 +20,11 @@ mixin corruption-content
           .col 
             p.corruption-principles__text.text Чтобы не&nbsp;допустить имущественного вреда, компания занимается своевременной профилактикой преступлений и&nbsp;правонарушений на&nbsp;маршрутах следования поездов ОТЛК&nbsp;ЕРА, взаимодействуя при этом с&nbsp;правоохранительными территориальными органами.
             .corruption-principles__elem
-              +message-block('Один из главных приоритетов ОТЛК ЕРА — обеспечение безопасности перевозки грузов и построение системы информационной безопасности.')
+              +message-block('Один из главных приоритетов ОТЛК&nbsp;ЕРА — обеспечение безопасности перевозки грузов и построение системы информационной безопасности.')
           .col 
             p.corruption-principles__text.text В&nbsp;2021 году в&nbsp;компании был проведен комплексный аудит, направленный на&nbsp;поиск уязвимости ИТ-инфраструктуры. В&nbsp;2022 году для построения системы информационной безопасности и&nbsp;закрытия ИБ-рисков мы&nbsp;предприняли ряд важных мер:
             ul.list
-              each item in ['Разработали Политику обеспечения информационной безопасности  ОТЛК ЕРА','Внедрили систему DLP','Усилили меры информационной безопасности по программе Checkpoint','Внедрили систему контроля парольных требований','Внедрили систему риск-менеджмента',]
+              each item in ['Разработали Политику обеспечения информационной безопасности  ОТЛК&nbsp;ЕРА','Внедрили систему DLP','Усилили меры информационной безопасности по программе Checkpoint','Внедрили систему контроля парольных требований','Внедрили систему риск-менеджмента',]
                 li.corruption-principles__item
                   +mark-text-svg
                   p.corruption-principles__text.text=item
@@ -52,14 +52,7 @@ mixin corruption-content
           .corruption-counterparty__item 
             p.corruption-counterparty__item-title Физические лица
             p.corruption-counterparty__item-number.corruption-counterparty__item-number_light.countup-element(data-countup='17')
-  //- section(data-aos="fade-up").next 
-  //-   .container 
-  //-     .next__inner 
-  //-       p.next__text Следующий раздел
-  //-       p.next__title Стратегический отчет
-  //-       p.next__number 2
-  //-       +column-svg.next-svg
-  //-       +button
+
         
 mixin corruption-content-CN 
   section(data-aos="fade-up").corruption.mt-section(id="section-corruption") 
@@ -152,7 +145,7 @@ mixin corruption-content-EN
           .col 
             p.corruption-principles__text.text In 2021, the company conducted an integrated audit to search for any IT infrastructure vulnerabilities. In 2022, we took a number of critical actions to build the information security system and to close out IB-risks:
             ul.list
-              each item in ['We implemented the DLP system.','We enhanced the information security efforts under the Checkpoint program.','We adopted the system to monitor password compliance.','We introduced the risk management system.']
+              each item in ['We developed UTLC ERA’s Information Security Policy','We implemented the DLP system','We enhanced the information security efforts under the Checkpoint program','We adopted the system to monitor password compliance','We introduced the risk management system']
                 li.corruption-principles__item
                   +mark-text-svg
                   p.corruption-principles__text.text=item
@@ -180,13 +173,3 @@ mixin corruption-content-EN
           .corruption-counterparty__item 
             p.corruption-counterparty__item-title individuals
             p.corruption-counterparty__item-number.corruption-counterparty__item-number_light.countup-element(data-countup='17')
-  //- section(data-aos="fade-up").next 
-  //-   .container 
-  //-     .next__inner 
-  //-       p.next__text Следующий раздел
-  //-       p.next__title Стратегический отчет
-  //-       p.next__number 2
-  //-       +column-svg.next-svg
-  //-       +button
-        
-          

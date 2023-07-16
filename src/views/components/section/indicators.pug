@@ -10,9 +10,9 @@ mixin indicators
                 .indicators__number.countup-element(data-countup='89' data-countup-prefix='+' data-countup-suffix='%')
               .col 
                 p.indicators__description
-                  |Доля ОТЛК ЕРА в транзитных контейнерных перевозках&nbsp;
+                  |Доля ОТЛК&nbsp;ЕРА в транзитных контейнерных перевозках&nbsp;
                   br.br
-                  span.nowrap Китай-Европа-Китай
+                  span.nowrap Китай–Европа–Китай
         .indicators__row-bottom
           .container-content 
             .indicators__box 
@@ -38,7 +38,7 @@ mixin indicators
                   p.indicators__item-number.countup-element(data-countup='52284')
                   p.indicators__item-grey.number-animate-52284.number-animate ДФЭ
                 .row
-                  p.indicators__item-text.text Объем экспортных перевозок калийных удобрений (нового для ОТЛК&nbsp;ЕРА груза)
+                  p.indicators__item-text.text Объем экспортных перевозок калийных удобрений <br> (нового для ОТЛК&nbsp;ЕРА груза)
       .indicators__bottom(data-aos="fade-up")
         .container-content 
           .indicators__box_bottom 
@@ -90,10 +90,10 @@ mixin indicators
       .indicators-finance__inner 
         h6.indicators-finance__title Финансовые показатели 2020-2022 годов
         .indicators-finance__img.desktop
-          +picture('indicators-finance.png').indicators-finance-img
+          +picture('indicators-finance.png','t').indicators-finance-img
           +activity-buttons('indicators-finance.png')
         .indicators-finance__img.mobile
-          +picture('indicators-finance-mobile.png')
+          +picture('indicators-finance-mobile.png','t')
           +activity-buttons('indicators-finance-mobile.png')
 mixin indicators-CN 
   section.indicators.mt-section(id="section-indicators") 
@@ -184,10 +184,10 @@ mixin indicators-CN
       .indicators-finance__inner 
         h6.indicators-finance__title 2020-2022年財務指標
         .indicators-finance__img.desktop
-          +picture('indicators-finance-CN.png').indicators-finance-img
+          +picture('indicators-finance-CN.png','t').indicators-finance-img
           +activity-buttons('indicators-finance-CN.png')
         .indicators-finance__img.mobile
-          +picture('indicators-finance-mobile-CN.png')
+          +picture('indicators-finance-mobile-CN.png','t')
           +activity-buttons('indicators-finance-mobile-CN.png')
 
 mixin indicators-EN
@@ -219,13 +219,13 @@ mixin indicators-EN
               .indicators__item 
                 .row
                   p.indicators__item-number.countup-element(data-countup='681197') 
-                  p.indicators__item-grey.number-animate-681197.number-animate TEUs 
+                  p.indicators__item-grey.number-animate-681197.number-animate.tt TEUs 
                 .row
                   p.indicators__item-text.text traffic volume
               .indicators__item 
                 .row 
                   p.indicators__item-number.countup-element(data-countup='52284')
-                  p.indicators__item-grey.number-animate-52284.number-animate TEUs 
+                  p.indicators__item-grey.number-animate-52284.number-animate.tt TEUs 
                 .row
                   p.indicators__item-text.text export traffic volume of potassium fertilizers (a new cargo for UTLC&nbsp;ERA)
       .indicators__bottom(data-aos="fade-up")
@@ -279,9 +279,9 @@ mixin indicators-EN
       .indicators-finance__inner 
         h6.indicators-finance__title Financial indicators 2020-2022
         .indicators-finance__img.desktop
-          +picture('indicators-finance-EN.png').indicators-finance-img
+          +picture('indicators-finance-EN.png','t').indicators-finance-img
           +activity-buttons('indicators-finance-EN.png')
         .indicators-finance__img.mobile
-          +picture('indicators-finance-mobile-EN.png')
+          +picture('indicators-finance-mobile-EN.png','t')
           +activity-buttons('indicators-finance-mobile-EN.png')
 
