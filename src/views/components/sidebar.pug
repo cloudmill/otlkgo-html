@@ -19,7 +19,7 @@ mixin sidebar
           .header-menu__item(data-header-item="corporate")
             .header-menu__item-text Корпоративное управление
             .header-menu__item-num 5
-          .header-menu__item
+          a.header-menu__item(href="applications")
             .header-menu__item-text Приложения
             .header-menu__item-num 6
       .header-menu__bot-container
@@ -118,7 +118,8 @@ mixin sidebar
           a.header-sub__item-title(href="page-3#client-portfolio")  Клиентский портфель
           a.header-sub__item-subsection(href="page-3#client-transportation")  Развитие перевозок Китай–РФ
           a.header-sub__item-subsection(href="page-3#client-development__case")  Кейс: рефрижераторные перевозки
-          a.header-sub__item-subsection(href="page-3#client-development__paperless")  Безбумажные перевозки: инновационное <br>развитие
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3#client-development__paperless")  Безбумажные перевозки: инновационное <br>развитие
         .header-sub__item 
           a.header-sub__item-title(href="page-3#preview-main-line") Главные направления цифрового развития
           a.header-sub__item-subsection(href="page-3#direction-automation")  Автоматизация внутренних бизнес-процессов
@@ -244,7 +245,7 @@ mixin sidebar-EN
           .header-menu__item(data-header-item="corporate")
             .header-menu__item-text Corporate Governance
             .header-menu__item-num 5
-          .header-menu__item
+          a.header-menu__item(href="applications-EN")
             .header-menu__item-text Appendices
             .header-menu__item-num 6
       .header-menu__bot-container
@@ -343,7 +344,8 @@ mixin sidebar-EN
           a.header-sub__item-title(href="page-3-EN#client-portfolio")  Customer Portfolio
           a.header-sub__item-subsection(href="page-3-EN#client-transportation")  Development of China-RF transportation
           a.header-sub__item-subsection(href="page-3-EN#client-development__case")  Case: refrigerated transportation
-          a.header-sub__item-subsection(href="page-3-EN#client-development__paperless")  Paperless transportation: innovative <br>development
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3-EN#client-development__paperless") Paperless transportation: innovative <br>development
         .header-sub__item 
           a.header-sub__item-title(href="page-3-EN#preview-main-line") Main Digital Development Areas
           a.header-sub__item-subsection(href="page-3-EN#direction-automation")  Automation of internal business processes
@@ -469,7 +471,7 @@ mixin sidebar-CN
           .header-menu__item(data-header-item="corporate")
             .header-menu__item-text 公司治理
             .header-menu__item-num 5
-          .header-menu__item
+          a.header-menu__item(href="applications-CN")
             .header-menu__item-text 附件
             .header-menu__item-num 6
       .header-menu__bot-container
@@ -570,6 +572,8 @@ mixin sidebar-CN
           a.header-sub__item-subsection(href="page-3-CN#client-development__case")  案例：冷藏运输
           a.header-sub__item-subsection(href="page-3-CN#client-development__paperless")  无纸化交通：创新发展
         .header-sub__item 
+          a.header-sub__item-title(href="page-3-CN#client-development__paperless")  无纸化交通：创新发展
+        .header-sub__item 
           a.header-sub__item-title(href="page-3-CN#preview-main-line") 数字化发展的主要方向
           a.header-sub__item-subsection(href="page-3-CN#direction-automation")  内部业务流程自动化
           a.header-sub__item-subsection(href="page-3-CN#direction-site")  公司网站
@@ -647,7 +651,7 @@ mixin sidebar-CN
           a.header-sub__item-title(href="page-5-CN#incorporated-governing") 管理委员会、总经理<br>（董事会主席）
         .header-sub__item 
           a.header-sub__item-title(href="page-5-CN#preview-reward-content") 奖励系统
-          a.header-sub__item-subsection(href="page-5-CN#reward-mt") CEO
+          a.header-sub__item-subsection(href="page-5-CN#reward-mt") 总经理
           a.header-sub__item-subsection(href="page-5-CN#reward-rule") 董事会成员
         .header-sub__item 
           a.header-sub__item-title(href="page-5-CN#controls-content") 控制系统

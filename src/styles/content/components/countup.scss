@@ -14,7 +14,10 @@
   transform: translateY(30px);
   transition: $transition;
 
-}
+  &.svg-top15 {
+    top: 15px;
+  }
+} 
 
 .fade-up {
   transform: translateY(0);
