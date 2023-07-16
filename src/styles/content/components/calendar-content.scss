@@ -2,14 +2,14 @@
   &__inner {
     padding-top: 20px;
 
-    border-top: 1px solid #045C25;
+    border-top: 1px solid #045c25;
   }
 
   &__box {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #EDEDED;
+    border: 1px solid #ededed;
   }
 
   &__block {
@@ -18,14 +18,12 @@
     justify-content: space-between;
 
     &:nth-child(odd) {
-      border-top: 1px solid #045C25;
+      border-top: 1px solid #045c25;
     }
 
     &:nth-child(even) {
-      border-top: 2px solid #69DA91;
+      border-top: 2px solid #69da91;
     }
-
-
   }
 
   &__col-left {
@@ -39,7 +37,6 @@
 
   &__col-list {
     max-width: 560px;
-
   }
 
   &__right {
@@ -71,8 +68,6 @@
     gap: 12px;
 
     max-width: 560px;
-
-
   }
 
   &__item {
@@ -92,6 +87,9 @@
 
       max-width: 100%;
     }
+    &_CN {
+      justify-self: start;
+    }
   }
 
   &__col-right {
@@ -100,7 +98,7 @@
 
     width: 260px;
 
-    background: #F4F4F4;
+    background: #f4f4f4;
   }
 
   &__description {
@@ -121,7 +119,7 @@
     color: color(green);
 
     &_light {
-      color: #69DA91;
+      color: #69da91;
     }
   }
 
@@ -134,7 +132,6 @@
 
 @media #{media('<',m)} {
   .calendar {
-
     &__inner {
       padding-top: 8px;
     }
@@ -152,7 +149,6 @@
       gap: 20px;
     }
 
-
     &__right {
       flex-shrink: 0;
       width: auto;
@@ -166,7 +162,6 @@
     &__month {
       font-size: 18px;
     }
-
 
     &__list {
       display: flex;
@@ -201,5 +196,4 @@
       color: color(dark);
     }
   }
-
 }
