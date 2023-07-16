@@ -28,10 +28,10 @@ mixin incorporated
           .incorporated-capital__texts-text.text Уставный капитал Общества состоит из 98 127 обыкновенных именных бездокументарных акций номинальной стоимостью 1&nbsp;000 (одна тысяча) рублей каждая. Каждому из трех участников принадлежит по 32 709 акций. 
         .incorporated-capital__img 
           +picture('incorporated-capital.png')
-        +activity-buttons('incorporated-capital.png')
+          +activity-buttons('incorporated-capital.png')
       .incorporated-dividends(id="incorporated-dividends")(data-aos="fade-up")
         h2.incorporated-dividends__title Дивидендная политика
-        .incorporated-dividends__text.text Годовое общее собрание акционеров утвердило положение о дивидендной политике ОТЛК&nbsp;ЕРА 30 июня 2021 года (протокол от 30.06.2021 № 14). Дивидендная политика распространяет сове действие с даты исполнения Обществом обязательств по выплате дивидендов за отчетный 2020 год.  
+        .incorporated-dividends__text.text Годовое общее собрание акционеров утвердило положение о дивидендной политике ОТЛК&nbsp;ЕРА 30 июня 2021 года (протокол от 30.06.2021 № 14). Дивидендная политика распространяет свое действие с даты исполнения Обществом обязательств по выплате дивидендов за отчетный 2020 год.  
       .incorporated-dividends__principes(data-aos="fade-up")
         .incorporated-dividends__principes-title Три главных принципа
         .incorporated-dividends__cards(data-aos="fade-up") 
@@ -95,10 +95,11 @@ mixin incorporated
         .incorporated-council__subsection(data-aos="fade-up") 
           .incorporated-council__subsection-col 
             .incorporated-council__subsection-subtitle Совет директоров избирается общим собранием акционеров ОТЛК&nbsp;ЕРА на срок до следующего годового общего собрания акционеров в количестве шести членов, из которых:
+            .mt-20 
+              each item in ['Двое избираются из числа кандидатов, предложенных ОАО «РЖД»', 'Двое избираются из числа кандидатов, предложенных АО «НК «КТЖ»', 'Двое избираются из числа кандидатов, предложенных Белорусской железной дорогой']
+                .recruitment-processes__hr-mark!=item
           .incorporated-council__subsection-col
-            each item in ['Двое избираются из числа кандидатов, предложенных ОАО «РЖД»', 'Двое избираются из числа кандидатов, предложенных АО «НК «КТЖ»', 'Двое избираются из числа кандидатов, предложенных Белорусской железной дорогой']
-              .recruitment-processes__hr-mark!=item
-            .incorporated-council__subsection-text.mb-20.text В своей деятельности совет директоров руководствуется действующим российским законодательством, акционерным соглашением, уставом компании, положением о совете директоров и другими внутренними документами ОТЛК&nbsp;ЕРА.
+            .incorporated-council__subsection-text.text В своей деятельности совет директоров руководствуется действующим российским законодательством, акционерным соглашением, уставом компании, положением о совете директоров и другими внутренними документами ОТЛК&nbsp;ЕРА.
             .incorporated-council__subsection-text.text Совет директоров правомочен принимать решения по вопросам своей компетенции, если в нем участвует не менее половины от числа избранных членов. Важное условие: должна присутствовать (или предоставить письменное мнение) хотя бы одна кандидатура от каждого из акционеров. 
         .incorporated-council__chairman(data-aos="fade-up")
           .incorporated-council__chairman-title Председатель совета директоров
@@ -110,6 +111,9 @@ mixin incorporated
               .incorporated-council__chairman-text.text Председатель совета директоров избирается общим собранием акционеров ОТЛК&nbsp;ЕРА одновременно с избранием совета директоров с учетом положений акционерного соглашения.
               .incorporated-council__chairman-text.text Если на общем собрании акционеров не избрали на эту должность, совет директоров на первом заседании, состоявшемся после его избрания, простым большинством голосов от общего числа членов избирает председателя совета директоров. 
               .incorporated-council__chairman-text.text Совет директоров вправе в любое время переизбрать своего председателя большинством голосов своих членов, принимающих участие в заседании, с учетом положений акционерного соглашения.
+        .incorporated-council__insurance(data-aos="fade-up")
+          .incorporated-council__insurance-title.title-24  Страхование ответственности
+          .incorporated-council__insurance-text.text В течение 2022 года один из акционеров ОТЛК&nbsp;ЕРА (ОАО «РЖД») застраховал ответственность директоров и должностных лиц ОТЛК ЕРА.
         .incorporated-council__chairman(data-aos="fade-up")
           .incorporated-council__chairman-title Комитеты совета директоров
           .incorporated-council__chairman-row 
@@ -118,9 +122,6 @@ mixin incorporated
             .incorporated-council__chairman-col 
               .incorporated-council__chairman-text.text Цель создания комитетов –  содействие эффективной работе совета директоров. Комитеты в своей деятельности подотчетны совету директоров ОТЛК&nbsp;ЕРА, выступают его консультативно-совещательными органами. Решения комитетов носят рекомендательный характер. Основная задача комитетов –  предварительный анализ и выработка рекомендаций совету директоров.
               .incorporated-council__chairman-text.text 24 сентября 2019 года совет директоров утвердил положения о комитетах совета директоров ОТЛК&nbsp;ЕРА: комитета по стратегии, комитета по аудиту, комитета по по кадрам, вознаграждениям и корпоративному управлению (протокол от 24 сентября 2019 года № 17). 10 октября 2020 года совет директоров утвердил изменения в вышеуказанные положения в части выплаты вознаграждения членам и секретарю комитетов (протокол от 10 июня 2020 года № 25). 25 января 2021 года утверждены изменения в положение о комитете по стратегии в части расширения его компетенции.
-        .incorporated-council__insurance(data-aos="fade-up")
-          .incorporated-council__insurance-title.title-24  Страхование ответственности
-          .incorporated-council__insurance-text.text В течение 2022 года один из акционеров ОТЛК&nbsp;ЕРА (ОАО «РЖД») застраховал ответственность директоров и должностных лиц ОТЛК ЕРА.
       .incorporated-corporative(id="incorporated-corporative")(data-aos="fade-up")
         h2.incorporated-corporative__title Корпоративный секретарь  
         .incorporated-corporative__row(data-aos="fade-up") 
@@ -327,22 +328,22 @@ mixin incorporated-EN
         .incorporated-dividends__cards(data-aos="fade-up") 
           .incorporated-dividends__card
             .incorporated-dividends__card-title Legality
-            .incorporated-dividends__card-text We respect the shareholders’ rights in accordance with the Russian laws and the best international corporate governance practices.
+            .incorporated-dividends__card-text We respect the shareholders’ rights in accordance with the Russian laws and the best international corporate governance practices
           .incorporated-dividends__card
             .incorporated-dividends__card-title Balanced goals
-            .incorporated-dividends__card-text We pay dividends to, and act in the interests of, our shareholders by developing the business.
+            .incorporated-dividends__card-text We pay dividends to, and act in the interests of, our shareholders by developing the business
           .incorporated-dividends__card
             .incorporated-dividends__card-title Transparency
-            .incorporated-dividends__card-text We make the dividend definition and payment mechanism more transparent, facilitate access to information and advise the shareholders.
+            .incorporated-dividends__card-text We make the dividend definition and payment mechanism more transparent, facilitate access to information and advise the shareholders
         .incorporated-dividends__principes-subtext Dividend payment resolutions are adopted by the General Meeting of Shareholders only at the end of the six-month period and at the end of the reporting year based on the recommendations given by the Board of Directors of UTLC&nbsp;ERA. We also meet the frequency requirements by paying dividends at the end of the six months and at the end of the reporting year.
       .incorporated-conditions(data-aos="fade-up")
         .incorporated-conditions__title.desktop The prerequisites for <br>the resolution on dividend <br>announcement and payment
         .incorporated-conditions__title.mobile  The prerequisites for the resolution on dividend announcement and payment
         .incorporated-conditions__list(data-aos="fade-up") 
-          .recruitment-processes__hr-mark Net profit is defined on the basis of UTLC&nbsp;ERA’s (financial) accounting as per the Russian Accounting Standards.
-          .recruitment-processes__hr-mark At least 50% of UTLC&nbsp;ERA’s net profit in the reporting period (fixed amount) is subject to distribution.
-          .recruitment-processes__hr-mark The resolution is not in conflict with any obligations of the company or with the Russian laws.
-          .recruitment-processes__hr-mark The total dividend amount is based on the company’s financial situation and the forecast working capital demand.
+          .recruitment-processes__hr-mark Net profit is defined on the basis of UTLC&nbsp;ERA’s (financial) accounting as per the Russian Accounting Standards
+          .recruitment-processes__hr-mark At least 50% of UTLC&nbsp;ERA’s net profit in the reporting period (fixed amount) is subject to distribution
+          .recruitment-processes__hr-mark The resolution is not in conflict with any obligations of the company or with the Russian laws
+          .recruitment-processes__hr-mark The total dividend amount is based on the company’s financial situation and the forecast working capital demand
       .incorporated-accrued(data-aos="fade-up")
         .incorporated-accrued__title Dividends Accrued and Paid in 2022
         .incorporated-accrued__img.desktop(data-aos="fade-up") 
@@ -368,24 +369,24 @@ mixin incorporated-EN
             .recruitment-processes__hr-mark The powers of the member of the Management Board of UTLC&nbsp;ERA were terminated early
             .incorporated-solutions__subtitle.second Extraordinary General Meeting of Shareholders <br>on May 13, 2022
             .recruitment-processes__hr-mark The chairman was elected for the Extraordinary General Meeting of Shareholders
-            .recruitment-processes__hr-mark The powers of the members of the Board of Directors of UTLC&nbsp;ERA were terminated early.
-            .recruitment-processes__hr-mark A new Board of Directors of UTLC&nbsp;ERA was elected.
-            .recruitment-processes__hr-mark The Chairman of the Board of Directors was elected.
+            .recruitment-processes__hr-mark The powers of the members of the Board of Directors of UTLC&nbsp;ERA were terminated early
+            .recruitment-processes__hr-mark A new Board of Directors of UTLC&nbsp;ERA was elected
+            .recruitment-processes__hr-mark The Chairman of the Board of Directors was elected
             .incorporated-solutions__subtitle.third Extraordinary General Meeting of Shareholders on September 29, 2022:
-            .recruitment-processes__hr-mark.custom The resolution was adopted regarding dividend payment/announcement for the first six months of 2022.
+            .recruitment-processes__hr-mark.custom The resolution was adopted regarding dividend payment/announcement for the first six months of 2022
           .incorporated-solutions__col(data-aos="fade-up") 
             .incorporated-solutions__subtitle  Annual General Meeting of Shareholders <br>on June 15, 2022
-            .recruitment-processes__hr-mark UTLC&nbsp;ERA’s annual accounting (financial) statements for 2021 as per the Russian Accounting Standards were approved.
-            .recruitment-processes__hr-mark The company’s annual financial statements for 2021 as per the International Financial Reporting Standards were approved.
-            .recruitment-processes__hr-mark The company’s annual report for 2021 was approved.
-            .recruitment-processes__hr-mark The resolution was adopted regarding distribution of the net profit generated by UTLC&nbsp;ERA in 2021.
-            .recruitment-processes__hr-mark The resolution was adopted regarding dividend payment/announcement for 2021.
-            .recruitment-processes__hr-mark The resolution was adopted regarding the payment of the annual remuneration to the members of the Board of Directors of UTLC&nbsp;ERA in accordance with the Regulations on the Procedure for Payment of Remunerations and Compensations to Members of the Board of Directors approved by the Annual General Meeting of Shareholders (Minutes No. 10 dated 16.09.2020).
-            .recruitment-processes__hr-mark The resolution was adopted regarding the payment of the annual remuneration to the members of the Audit Commission of UTLC&nbsp;ERA in accordance with the Regulations on the Procedure for Payment of Remunerations and Compensations to Members of the Audit Commission approved by the Extraordinary General Meeting of Shareholders (Minutes No. 2 dated 10.10.2018).
-            .recruitment-processes__hr-mark A new Board of Directors of UTLC&nbsp;ERA was elected.
-            .recruitment-processes__hr-mark The Chairman of the Board of Directors was elected.
-            .recruitment-processes__hr-mark A new Audit Commission was elected.
-            .recruitment-processes__hr-mark A new member of the Management Board of UTLC&nbsp;ERA was elected for a term from June 15, 2022 to April 1, 2024 inclusive.
+            .recruitment-processes__hr-mark UTLC&nbsp;ERA’s annual accounting (financial) statements for 2021 as per the Russian Accounting Standards were approved
+            .recruitment-processes__hr-mark The company’s annual financial statements for 2021 as per the International Financial Reporting Standards were approved
+            .recruitment-processes__hr-mark The company’s annual report for 2021 was approved
+            .recruitment-processes__hr-mark The resolution was adopted regarding distribution of the net profit generated by UTLC&nbsp;ERA in 2021
+            .recruitment-processes__hr-mark The resolution was adopted regarding dividend payment/announcement for 2021
+            .recruitment-processes__hr-mark The resolution was adopted regarding the payment of the annual remuneration to the members of the Board of Directors of UTLC&nbsp;ERA in accordance with the Regulations on the Procedure for Payment of Remunerations and Compensations to Members of the Board of Directors approved by the Annual General Meeting of Shareholders (Minutes No. 10 dated 16.09.2020)
+            .recruitment-processes__hr-mark The resolution was adopted regarding the payment of the annual remuneration to the members of the Audit Commission of UTLC&nbsp;ERA in accordance with the Regulations on the Procedure for Payment of Remunerations and Compensations to Members of the Audit Commission approved by the Extraordinary General Meeting of Shareholders (Minutes No. 2 dated 10.10.2018)
+            .recruitment-processes__hr-mark A new Board of Directors of UTLC&nbsp;ERA was elected
+            .recruitment-processes__hr-mark The Chairman of the Board of Directors was elected
+            .recruitment-processes__hr-mark A new Audit Commission was elected
+            .recruitment-processes__hr-mark A new member of the Management Board of UTLC&nbsp;ERA was elected for a term from June 15, 2022 to April 1, 2024 inclusive
       .incorporated-council(id="incorporated-council")(data-aos="fade-up")
         h2.incorporated-council__title Board of Directors
         .incorporated-council__row(data-aos="fade-up") 
@@ -396,32 +397,33 @@ mixin incorporated-EN
         .incorporated-council__subsection(data-aos="fade-up") 
           .incorporated-council__subsection-col 
             .incorporated-council__subsection-subtitle The Board of Directors is elected by the General Meeting of Shareholders of UTLC&nbsp;ERA for a term until the next annual General Meeting of Shareholders, and consists of six members, of which:
+            .mb-20
+              .recruitment-processes__hr-mark Two are elected from among JSCo "RZD" nominees
+              .recruitment-processes__hr-mark Two are elected from among JSC “NC “KTZ” nominees
+              .recruitment-processes__hr-mark Two are elected from among Belarusian Railway nominees
           .incorporated-council__subsection-col
-            .recruitment-processes__hr-mark Two are elected from among JSCo "RZD" nominees
-            .recruitment-processes__hr-mark Two are elected from among JSC “NC “KTZ” nominees
-            .recruitment-processes__hr-mark Two are elected from among Belarusian Railway nominees
-            .incorporated-council__subsection-text.mb-20.text The Board of Directors is governed by the effective laws of the Russian Federation, the Shareholders’ Agreement, the Company’s Articles of Association, the Regulations on the Board of Directors and other internal documents of UTLC&nbsp;ERA.
+            .incorporated-council__subsection-text.text The Board of Directors is governed by the effective laws of the Russian Federation, the Shareholders’ Agreement, the Company’s Articles of Association, the Regulations on the Board of Directors and other internal documents of UTLC&nbsp;ERA.
             .incorporated-council__subsection-text.text The Board of Directors is authorized to adopt resolutions within its remit if its meeting is attended by at least half of the elected members. A critical prerequisite is that at least one nominee of each shareholder shall be present (or provide a written opinion).
-        .incorporated-council__chairman(data-aos="fade-up")
-          .incorporated-council__chairman-title Chairman of the Board of Directors
-          .incorporated-council__chairman-row 
-            .incorporated-council__chairman-col 
-              .incorporated-council__chairman-subtitle The Chairman of the Board of Directors plays the key role in ensuring the effective operation of the Board of Directors by coordinating its activities, including minute taking, convening and chairing meetings. 
-              .incorporated-council__chairman-text.text The Chairman of the Board of Directors also exercises other functions stipulated by the effective laws, the Company’s Articles of Association, the Regulation on the Board of Directors of UTLC&nbsp;ERA and other internal documents.
-            .incorporated-council__chairman-col 
-              .incorporated-council__chairman-text.text The Chairman of the Board of Directors is elected by the General Meeting of Shareholders of UTLC&nbsp;ERA concurrently with the election of the Board of Directors, subject to the provisions of the Shareholders’ Agreement.
-              .incorporated-council__chairman-text.text If this position is not filled at the General Meeting of Shareholders, then the Board of Directors, at its first meeting after the election, elects the Chairman of the Board of Directors by a simple majority vote of the total number of members. 
-              .incorporated-council__chairman-text.text The Board of Directors may re-elect its chairman at any time by a majority vote of the members present at the meeting, subject to the provisions of the Shareholders’ Agreement.
         .incorporated-council__insurance(data-aos="fade-up")
           .incorporated-council__insurance-title.title-24  Liability Insurance
           .incorporated-council__insurance-text.text In 2022, one of UTLC&nbsp;ERA shareholders (JSCo "RZD") obtained liability insurance for UTLC&nbsp;ERA directors and officers.
+        .incorporated-council__chairman(data-aos="fade-up")
+          .incorporated-council__chairman-title Committees of the Board of Directors
+          .incorporated-council__chairman-row 
+            .incorporated-council__chairman-col 
+              .incorporated-council__chairman-subtitle On July 24, 2019, the Board of Directors resolved to set up the Strategy Committee, the Audit Committee, and the HR, Remuneration and Corporate Governance Committee under the Board of Directors of UTLC ERA (Minutes No. 15 dated July 24, 2019).
+
+              .incorporated-council__chairman-text.text The Chairman of the Board of Directors also exercises other functions stipulated by the effective laws, the Company’s Articles of Association, the Regulation on the Board of Directors of UTLC&nbsp;ERA and other internal documents.
+            .incorporated-council__chairman-col 
+              .incorporated-council__chairman-text.text The Committees were set up to facilitate the effective operations of the Board of Directors. The Committees report to the Board of Directors of UTLC ERA and act as its consultative and advisory bodies. The resolutions of the Committees are of advisory nature. The main task of the Committees is to provide preliminary review and recommendations for the Board of Directors.
+              .incorporated-council__chairman-text.text On September 24, 2019, the Board of Directors approved the Regulations on Committees of the Board of Directors of UTLC ERA: Strategy Committee, Audit Committee, and HR, Remuneration and Corporate Governance Committee (Minutes No. 17 dated September 24, 2019). On October 10, 2020, the Board of Directors approved amendments to the above regulations with regard to payment of remuneration to the Committee members and secretary (Minutes No. 25 dated June 10, 2020). On January 25, 2021, amendments to the Regulations on the Strategy Committee were approved with regard to its remit expansion.
+
       .incorporated-corporative(id="incorporated-corporative")(data-aos="fade-up")
         h2.incorporated-corporative__title Corporate Secretary
         .incorporated-corporative__row(data-aos="fade-up") 
           .incorporated-corporative__subtitle The Corporate Secretary of UTLC&nbsp;ERA elected by the Board of Directors is in charge of communication with the shareholders and the Board of Directors, coordinates protection of their rights and interests, ensures adoption of corporate resolutions and exercises a number of other functions.
           .incorporated-corporative__desk 
             .incorporated-corporative__text.text The Corporate Secretary acts in accordance with the Company’s Articles of Association and the Regulations on the Corporate Secretary approved by the Board of Directors. In addition, the Corporate Secretary acts as Secretary at the Company’s General Meeting of Shareholders. 
-            .incorporated-corporative__text.text The Committee Secretary is elected by the relevant Committee. The job responsibilities for the position are described in the Regulations on the Committee and are aligned with the Russian laws and the Company’s Articles of Association. The Committee Secretary reports to the Committee Chairperson
             .incorporated-corporative__text.text From January 1 to May 13, 2022, the functions of the Corporate Secretary were exercised by Olga Smirnova elected by the Board of Directors (Minutes No. 39 dated 21.07.2021). From May 14 to June 23, 2022, the Company had no Corporate Secretary. From June 24, 2022 until present, the functions of the Corporate Secretary have been exercised by Dmitri Bulgakov elected by the Board of Directors (Minutes No. 53 dated 24.06.2022).
   .alt-preview(data-aos="fade-up") 
     .alt-preview__img.desktop 

@@ -1,6 +1,6 @@
 import { CountUp } from 'countup.js';
 
-const options = {
+let options = {
   separator: ' ',
 };
 
@@ -9,7 +9,8 @@ function isElementInViewport(element) {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
@@ -17,18 +18,34 @@ function isElementInViewport(element) {
 function startCountUpOnScroll() {
   const countUpElements = document.querySelectorAll('.countup-element');
   countUpElements.forEach((element) => {
-    if (!element.classList.contains('countup-started') && isElementInViewport(element)) {
+    if (
+      !element.classList.contains('countup-started') &&
+      isElementInViewport(element)
+    ) {
       const countupValue = element.getAttribute('data-countup');
       const endValue = parseFloat(countupValue);
       const suffix = element.getAttribute('data-countup-suffix') || '';
       const prefix = element.getAttribute('data-countup-prefix') || '';
+      const separator = element.getAttribute('data-countup-separator') || '';
 
-      const countUp = new CountUp(element, endValue, { ...options, suffix, prefix });
+      if (separator) {
+        options.separator = '';
+      }
 
-      const targetElement = document.querySelector(`.number-animate-${countupValue}`);
+      const countUp = new CountUp(element, endValue, {
+        ...options,
+        suffix,
+        prefix,
+      });
+
+      const targetElement = document.querySelector(
+        `.number-animate-${countupValue}`
+      );
 
       if (targetElement) {
-        const targetElements = document.querySelectorAll(`.number-animate-${countupValue}`);
+        const targetElements = document.querySelectorAll(
+          `.number-animate-${countupValue}`
+        );
         targetElements.forEach((targetEl) => {
           if (!targetEl.classList.contains('animate-started')) {
             targetEl.classList.add('animate-started');
@@ -39,13 +56,13 @@ function startCountUpOnScroll() {
         });
       }
 
-
       if (!countUp.error) {
         countUp.start();
         element.classList.add('countup-started');
       } else {
         console.error(countUp.error);
       }
+      options.separator = ' ';
     }
   });
 }
@@ -60,7 +77,9 @@ function updateCountUpOnPrint() {
     const inner = `${prefix}${countupValue}${suffix}`;
     element.innerHTML = inner;
 
-    const targetElement = document.querySelector(`.number-animate-${countupValue}`);
+    const targetElement = document.querySelector(
+      `.number-animate-${countupValue}`
+    );
     if (targetElement) {
       targetElement.classList.add('fade-up');
     }
