@@ -3,60 +3,68 @@ mixin main-contents
     .main-contents__container
       .main-contents__title Содержание
       .main-contents__list(data-aos="fade-up") 
-        .main-contents__card
-          a.main-contents__card-content(href="about" target="blank")   
-            .main-contents__card-number 1
-            .main-contents__card-img
-              +picture('main-card-hero-1.png')
-            .main-contents__card-btn 
-              .main-contents__card-arrow 
-                +arrow-right 
-          .main-contents__card-subtext О компании
-        .main-contents__card
-          a.main-contents__card-content(href="page-2" target="blank")   
-            .main-contents__card-number 2
-            .main-contents__card-img
-              +picture('main-card-hero-2.png')
-            .main-contents__card-btn 
-              .main-contents__card-arrow
-                +arrow-right 
-          .main-contents__card-subtext Стратегический отчет
-        .main-contents__card(href="#" target="blank")  
-          a.main-contents__card-content(href="page-3" target="blank")   
-            .main-contents__card-number 3
-            .main-contents__card-img
-              +picture('main-card-hero-3.png')
-            .main-contents__card-btn 
-              .main-contents__card-arrow 
-                +arrow-right 
-          .main-contents__card-subtext Результаты деятельности <br>в 2022 году
-        .main-contents__card(href="#" target="blank")  
-          a.main-contents__card-content(href="page-4" target="blank")   
-            .main-contents__card-number 4
-            .main-contents__card-img
-              +picture('main-card-hero-4.png')
-            .main-contents__card-btn 
-              .main-contents__card-arrow 
-                +arrow-right 
-          .main-contents__card-subtext Устойчивое развитие
-        .main-contents__card(href="#" target="blank")  
-          a.main-contents__card-content(href="page-5" target="blank")   
-            .main-contents__card-number 5
-            .main-contents__card-img
-              +picture('main-card-hero-5.png')
-            .main-contents__card-btn 
-              .main-contents__card-arrow 
-                +arrow-right 
-          .main-contents__card-subtext Корпоративное управление
-        a.main-contents__card(href="applications" target="blank") 
-          .main-contents__card-content 
-            .main-contents__card-number 6
-            .main-contents__card-img
-              +picture('main-card-hero-6.png')
-            .main-contents__card-btn 
-              .main-contents__card-arrow 
-                +arrow-right 
-            .main-contents__card-subtext.absolute Приложения
+        
+        each item, index in ['О компании','Стратегический отчет','Результаты деятельности в 2022 году','устойчивое развитие','корпоративное управление','приложения']
+          .main-contents__card
+            a.main-contents__card-content(href="about" target="blank")   
+              .main-contents__card-number=index+1
+              //- .main-contents__card-img
+              //-   +picture('main-card-hero-1.png')
+              .main-contents__decor 
+                +decor-main 
+              .main-contents__card-subtext О компании
+              .main-contents__card-btn 
+                .main-contents__card-arrow 
+                  +arrow-right 
+     
+          
+        
+        
+        //- .main-contents__card
+        //-   a.main-contents__card-content(href="page-2" target="blank")   
+        //-     .main-contents__card-number 2
+        //-     .main-contents__card-img
+        //-       +picture('main-card-hero-2.png')
+        //-     .main-contents__card-btn 
+        //-       .main-contents__card-arrow
+        //-         +arrow-right 
+        //-   .main-contents__card-subtext Стратегический отчет
+        //- .main-contents__card(href="#" target="blank")  
+        //-   a.main-contents__card-content(href="page-3" target="blank")   
+        //-     .main-contents__card-number 3
+        //-     .main-contents__card-img
+        //-       +picture('main-card-hero-3.png')
+        //-     .main-contents__card-btn 
+        //-       .main-contents__card-arrow 
+        //-         +arrow-right 
+        //-   .main-contents__card-subtext Результаты деятельности <br>в 2022 году
+        //- .main-contents__card(href="#" target="blank")  
+        //-   a.main-contents__card-content(href="page-4" target="blank")   
+        //-     .main-contents__card-number 4
+        //-     .main-contents__card-img
+        //-       +picture('main-card-hero-4.png')
+        //-     .main-contents__card-btn 
+        //-       .main-contents__card-arrow 
+        //-         +arrow-right 
+        //-   .main-contents__card-subtext Устойчивое развитие
+        //- .main-contents__card(href="#" target="blank")  
+        //-   a.main-contents__card-content(href="page-5" target="blank")   
+        //-     .main-contents__card-number 5
+        //-     .main-contents__card-img
+        //-       +picture('main-card-hero-5.png')
+        //-     .main-contents__card-btn 
+        //-       .main-contents__card-arrow 
+        //-         +arrow-right 
+        //-   .main-contents__card-subtext Корпоративное управление
+        //- a.main-contents__card(href="applications" target="blank") 
+        //-   .main-contents__card-content 
+        //-     .main-contents__card-number 6
+        //-     .main-contents__card-img
+        //-       +picture('main-card-hero-6.png')
+        //-     .main-contents__card-btn 
+        //-       .main-contents__card-arrow 
+        //-         +arrow-right 
+        //-     .main-contents__card-subtext.absolute Приложения
       
 mixin main-contents-EN 
   section.main-contents(data-aos="fade-up")

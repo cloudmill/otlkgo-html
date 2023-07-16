@@ -122,6 +122,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    &_CN {
+      margin-top: 20px;
+    }
   }
 
   &__video {
@@ -141,6 +144,14 @@
 
     @media #{media("<",m)} {
       height: 300px;
+    }
+    &_CN {
+      video {
+        transform: scale(1.13);
+        @media #{media("<",d)} {
+          transform: scale(1);
+        }
+      }
     }
   }
 }
@@ -357,10 +368,7 @@
     }
   }
 
-
-
   .preservation-statistics {
-
     &__row {
       display: flex;
       gap: 40px;
@@ -376,16 +384,14 @@
   }
 }
 
-
 .preservation-statistics__inner {
   padding-top: 20px;
 
-  border-top: 1px solid #045C25;
+  border-top: 1px solid #045c25;
 
   @media #{media('<',m)} {
     padding-top: 8px;
   }
-
 }
 
 .nbsp {

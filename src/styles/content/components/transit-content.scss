@@ -22,7 +22,11 @@
   &__svg {
     max-width: 872px;
   }
-
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &__elements {
     display: flex;
     flex-direction: column;

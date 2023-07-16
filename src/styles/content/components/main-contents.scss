@@ -1,6 +1,6 @@
-.main-contents{
+.main-contents {
   margin-bottom: 73px;
-  &__container{
+  &__container {
     width: 100%;
     padding: 0px 40px;
 
@@ -9,21 +9,27 @@
     }
   }
 
-  &__title{
+  &__title {
     margin-bottom: 40px;
 
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
     letter-spacing: -0.01em;
-    color: #045C25;
+    color: #045c25;
 
     @media #{media("<", m)} {
       margin-bottom: 20px;
     }
   }
 
-  &__list{
+  &__decor {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 26px;
@@ -41,77 +47,67 @@
     }
   }
 
-  &__card{
-    
-    &-content{
-      display: block;
-      padding: 20px;
+  &__card {
+    &-content {
+      // padding: 83px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: relative;
 
-      height: 290px;
+      height: 194px;
+      background: #f4f4f4;
 
-      background: #F4F4F4;
-
-      @media #{media(">", ll)} {
-        height: 360px;
-      }
       @media #{media('<', m)} {
-        height: 223px;
+        height: 130px;
         width: 100%;
       }
-
-
 
       @media #{media('<', m)} {
         height: auto;
         min-height: 200px;
       }
-      // @media (min-width:550px) and (max-width:600px) {
-      //   width: auto;
-      //   height: rem(290px);
-      // }
-      // @media (min-width:600px) and (max-width:768px) {
-      //   width: auto;
-      //   height: rem(400px);
-      // }
 
-      &:hover{
-        .main-contents__card-btn{
-          &::before{
+      &:hover {
+        .main-contents__card-btn {
+          &::before {
             transform: translateY(0%);
           }
 
-          .main-contents__card-arrow{
-            svg{
-              animation: MoveUpInitial .2s forwards,MoveUpEnd .2s forwards .2s;
+          .main-contents__card-arrow {
+            svg {
+              animation: MoveUpInitial 0.2s forwards,
+                MoveUpEnd 0.2s forwards 0.2s;
             }
           }
         }
       }
     }
-    &-number{
-      position: relative;
+    &-number {
+      position: absolute;
+      top: 20px;
+      left: 20px;
       z-index: 2;
 
       font-family: 'Halvar Breitschrift';
       font-style: normal;
       font-weight: 700;
-      font-size: 90px;
+      font-size: 48px;
       line-height: 80%;
       letter-spacing: -0.03em;
-      background: linear-gradient(180deg, #045C25 11.11%, #69DA91 77.47%);
+      background: linear-gradient(180deg, #045c25 11.11%, #69da91 77.47%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-text-fill-color: transparent;
 
       @media #{media('<', m)} {
-        font-size: 60px;
+        font-size: 32px;
         line-height: 80%;
       }
     }
 
-    &-img{
+    &-img {
       position: absolute;
       top: 0px;
       left: 0px;
@@ -119,12 +115,12 @@
       width: 100%;
       height: 100%;
 
-      picture{
+      picture {
         height: 100%;
       }
     }
 
-    &-btn{
+    &-btn {
       position: absolute;
       bottom: 20px;
       right: 20px;
@@ -135,34 +131,29 @@
       width: 40px;
       height: 40px;
 
-      background: #045C25;
-      transition: background-color .5s cubic-bezier(0.33, 1, 0.68, 1);
+      background: #045c25;
+      transition: background-color 0.5s cubic-bezier(0.33, 1, 0.68, 1);
       overflow: hidden;
 
       @media #{media('<', m)} {
         width: 32px;
         height: 32px;
       }
-      
-        
 
-        
-    
-    &::before{
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      background-color: #2A2E2B;
-      transform: translateY(100%);
-      transition: transform .5s cubic-bezier(0.33, 1, 0.68, 1);
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: #2a2e2b;
+        transform: translateY(100%);
+        transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+      }
     }
 
-    }
-
-    &-arrow{
+    &-arrow {
       z-index: 2;
       position: relative;
       display: flex;
@@ -171,8 +162,7 @@
 
       overflow: hidden;
 
-
-      svg{
+      svg {
         display: block;
         width: 12.5px;
         height: 12.5px;
@@ -181,22 +171,18 @@
           height: 10px;
         }
       }
-
-      
     }
 
-    &-subtext{
-      margin-top: 26px;
-
+    &-subtext {
       font-family: 'Halvar Breitschrift';
       font-weight: 700;
       font-size: 24px;
       line-height: 120%;
       letter-spacing: -0.06em;
       text-transform: uppercase;
-      color: #2A2E2B;
+      color: #2a2e2b;
 
-      &.absolute{
+      &.absolute {
         position: absolute;
         bottom: 20px;
         left: 20px;
@@ -210,7 +196,7 @@
     }
   }
 
-  &__code{
+  &__code {
     position: absolute;
     bottom: 40px;
     right: 40px;
