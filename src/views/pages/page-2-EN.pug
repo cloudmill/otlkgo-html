@@ -1,32 +1,32 @@
-//- extends ../app
-//- include ../components/section/strategy-content
-//- include ../components/section/transit-content
-//- include ../components/section/trends-content
-//- include ../components/section/map
-//- include ../components/section/global-economy
-//- include ../components/section/report-hero
-//- include ../components/section/report-hero-layout
-//- include ../components/bloks-ui/modal
+extends ../app
+include ../components/section/strategy-content
+include ../components/section/transit-content
+include ../components/section/trends-content
+include ../components/section/map
+include ../components/section/global-economy
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/bloks-ui/modal
 
-//- block header 
-//-   +header-EN
+block header 
+  +header-EN
 
-//- block variables
-//-   -const title = 'Strategic report'
-//- block content
-//-   +modal-EN
-//-   +sidebar-EN
-//-   +report-hero-2-EN
-//-   +preview('Global Economy<br/> and Logistics Market<br/>in 2022','Artemiy ','Ivanov','Head of Marketing Studies Section','ivanov.png','t').ivanov-preview(id="preview-ge") 
-//-   +global-economy-EN
-//-   +preview('Logistics industry trends: Time for alternative options','Denis','Korobov','Head of Customer Services Section, Customer Relations Department, Commercial Directorate','korobov.png','t').custom-id(id="preview-trends")
-//-   +trends-content-EN
-//-   +preview('China–Europe–China Rail Transit Market','Aidar','Kadyrov','Lead Manager of Logistics Department, Commercial Directorate','kadyrov.png','t').custom-id(id="preview-transit").preview__kadyrov
-//-     .kadyrov
-//-       p.kadyrov__text As of the end of 2022, the total volume of rail transit container traffic in the China – Europe – China directions on the main East – West International Transport Corridor routes has declined, while UTLC&nbsp;ERA’s market position has significantly strengthened.
-//-   +transit-content-EN 
-//-   +preview('Lead System Analyst of Information System Support Section','Orlova','Maria ','Lead System Analyst of Information System Support Section','kovaleva.png','t').custom-id(id="preview-strategy-leader")
-//-   +strategy-content-EN
-//-   +map-EN
-//-   +print-activity-buttons-EN
-//-   +next-page('Results of activity',3,'Next section')
+block variables
+  -const title = 'Strategic report'
+block content
+  +modal-EN
+  +sidebar-EN
+  +report-hero-2-EN
+  +preview('Global Economy<br/> and Logistics Market<br/>in 2022','Artemiy ','Ivanov','Head of Marketing Studies Section','ivanov.png','t').ivanov-preview(id="preview-ge") 
+  +global-economy-EN
+  +preview('Logistics industry trends: Time for alternative options','Denis','Korobov',Naushki'Head of Customer Services Section, Customer Relations Department, Commercial Directorate','korobov.png','t').custom-id(id="preview-trends")
+  +trends-content-EN
+  +preview('China–Europe–China Rail Transit Market','Aidar','Kadyrov','Lead Manager of Logistics Department, Commercial Directorate','kadyrov.png','t').custom-id(id="preview-transit").preview__kadyrov
+    .kadyrov
+      p.kadyrov__text As of the end of 2022, the total volume of rail transit container traffic in the China – Europe – China directions on the main East – West International Transport Corridor routes has declined, while UTLC&nbsp;ERA’s market position has significantly strengthened.
+  +transit-content-EN 
+  +preview('Lead System Analyst of Information System Support Section','Orlova','Maria ','Lead System Analyst of Information System Support Section','kovaleva.png','t').custom-id(id="preview-strategy-leader")
+  +strategy-content-EN
+  +map-EN
+  +print-activity-buttons-EN
+  +next-page('Results of activity',3,'Next section')
