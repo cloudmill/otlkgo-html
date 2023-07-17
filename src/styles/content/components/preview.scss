@@ -202,7 +202,7 @@
     }
 
     &__block {
-      margin-top: 20px;
+      // margin-top: 20px;
       order: 1;
     }
 
@@ -226,15 +226,15 @@
     }
   }
 
-  &__block{
-    &-top{
+  &__block {
+    &-top {
       display: flex;
       flex-direction: column;
     }
   }
 
-  &.device-debug{
-    .preview__inner{
+  &.device-debug {
+    .preview__inner {
 
       @media (min-width: 1024px) and (max-width:1100px) {
         height: 700px;
@@ -242,7 +242,7 @@
     }
   }
 
-  
+
 }
 
 .selutin {
