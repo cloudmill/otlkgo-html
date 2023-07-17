@@ -34,7 +34,7 @@ mixin risk-content
                     p.text.list__text!=item 
               +picture('w.png').risk-analysis__item-img
                 
-        .risk-analysis__box.print-gap
+        .risk-analysis__box
           p.risk-analysis__item-subtitle Внешние факторы
           .row
             .risk-analysis__item 
@@ -130,7 +130,7 @@ mixin risk-content
   section(data-aos="fade-up").risk-process.mt-section(id="risk-process") 
     .container-content 
       .risk-process__inner
-        .row.print-gap
+        .row
           p.risk-process__title Процесс управления рисками
           .risk-process__img.desktop
             +picture('risk-process.png')

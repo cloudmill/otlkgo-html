@@ -303,4 +303,37 @@
   .formation-park__structure-vector {
     height: 400px;
   }
+
+  .mt-section {
+    margin-top: 20px;
+  }
+
+  .preview {
+    margin-top: 20px;
+  }
+
+  .direction-automation,
+  .direction-documents,
+  .preservation-sales,
+  .organization-structure {
+    page-break-before: always;
+  }
+
+  .chinese-forecast__grafic {
+    width: 100%;
+  }
+
+  .block-diagram__col,
+  .block-diagram__video,
+  .block-diagram {
+    display: none;
+  }
+
+  .profit-reporting__column .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .organization-structure__title {
+    margin-bottom: 20px;
+  }
 }
