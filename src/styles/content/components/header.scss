@@ -1090,6 +1090,7 @@
 
         &__inner {
             position: relative;
+            height: 100%;
         }
 
         &__close {
@@ -1103,6 +1104,7 @@
         &__content {
             padding: 40px 60px;
             box-shadow: 3px 0px 10px -7px rgba(0, 0, 0, 0.5);
+            height: 100%;
         }
 
         &__title {
