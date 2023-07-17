@@ -34,24 +34,28 @@ mixin ecology-content
             +activity-buttons('ecology-statistics.png') 
 
           .ecology-statistics__formulas
-            p.ecology-statistics__formula
-              | Р 
+            .ecology-statistics__formula
+              p Р 
               sub ТЭР
-              |&nbsp;&nbsp;  — &nbsp;&nbsp;  расход ТЭР на 1 км пути (тонн, тыс. куб. м, Гкал или кВт в час)
-            p.ecology-statistics__formula 
-              | Н
+              p.flex-center.px-5   — 
+              p расход ТЭР на 1 км пути (тонн, тыс. куб. м, Гкал или кВт в час)
+            .ecology-statistics__formula
+              p Н
               sub КМ
-              |&nbsp;  — &nbsp;  полное расстояние маршрута (км)
-            p.ecology-statistics__formula 
-              | К 
+              p.flex-center.px-5   — 
+              p полное расстояние маршрута (км)
+            .ecology-statistics__formula
+              p К 
               sub СО
-              |&nbsp;  —  &nbsp; <span> коэффициент выброса СО<sup class='fz-8'>2</sup> (тонн СО<sup class='fz-8'>2</sup> / т или тыс. куб. м топлива, тонн СО<sup class='fz-8'>2</sup>/ Гкал тепловой энергии, кг СО<sup class='fz-8'>2</sup> / кВт в час электроэнергии);</span> 
-            p.ecology-statistics__formula 
-              | Q 
+              p.flex-center.px-5   — 
+              p <span> коэффициент выброса СО<sup class='fz-8'>2</sup> (тонн СО<sup class='fz-8'>2</sup> / т или тыс. куб. м топлива, тонн СО<sup class='fz-8'>2</sup>/ Гкал тепловой энергии, кг СО<sup class='fz-8'>2</sup> / кВт в час электроэнергии);</span> 
+            .ecology-statistics__formula
+              p Q 
               sub КТК
-              |&nbsp;  — &nbsp;  количество контейнеров в поезде
+              p.flex-center.px-5   — 
+              p  количество контейнеров в поезде
           .row 
-            p.ecology-statistics__text.text Для расчета объема прямых и косвенных выбросов СО<sup class='fz-10'>2</sup> (WTW), генерируемых ОТЛК&nbsp;ЕРА, использовались собственные данные компании для определения прямых выбросов (TTW), а также расчеты и методология портала <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> для определения непрямых выбросов (WTT). Для расчета экологического воздействия альтернативных видов транспорта также использовался портал <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> , который является признанным источником в вопросах учета и расчетов углеродного следа.
+            p.ecology-statistics__text.text Для расчета объема прямых и косвенных выбросов СО<sup class='fz-10'>2</sup>  (WTW), генерируемых ОТЛК&nbsp;ЕРА, использовались собственные данные компании для определения прямых выбросов (TTW), а также расчеты и методология портала <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> для определения непрямых выбросов (WTT). Для расчета экологического воздействия альтернативных видов транспорта также использовался портал <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> , который является признанным источником в вопросах учета и расчетов углеродного следа.
   section(data-aos="fade-up").ecology-algorithm 
     .container-content 
       .ecology-algorithm__inner 
@@ -97,7 +101,7 @@ mixin ecology-content
           .col 
             p.eclology-dynamic__text.text 
               | Развитие железнодорожного сообщения в грузоперевозках на дальние расстояния — ключевой шаг в сокращении выбросов парниковых газов во всем мире. Согласно онлайн-счетчику, в 2022 году в результате транзитных перевозок ОТЛК&nbsp;ЕРА  по направлению Китай–Европа–Китай накопленный объём выбросов составил 27,4 тыс. тонн СО<sup>2</sup>. Если бы аналогичный объем груза доставлялся морем, выбросы достигли бы 130,9 тыс. тонн, автомобильным транспортом —  2 439,5 тыс. тонн, авиаперевозками — 14 471,6 тыс. тонн.
-            p.eclology-dynamic__text.text Если рассматривать суммарный объем прямых выбросов ОТЛК&nbsp;ЕРА и косвенных выбросов, которые не являются следствием деятельности компании, то по итогам 2022 года углеродный след составил 1 214 тыс. тонн СО <sup>2</sup>, а при перевозке аналогичного объема груза авто- и авиатранспортом выбросы достигли бы 2 883,1 тыс. тонн и 17 688,4 тыс. тонн СО<sup>2</sup> соответственно.
+            p.eclology-dynamic__text.text Если рассматривать суммарный объем прямых выбросов ОТЛК&nbsp;ЕРА и косвенных выбросов, которые не являются следствием деятельности компании, то по итогам 2022 года углеродный след составил 1 214 тыс. тонн СО<sup>2</sup>, а при перевозке аналогичного объема груза авто- и авиатранспортом выбросы достигли бы 2 883,1 тыс. тонн и 17 688,4 тыс. тонн СО<sup>2</sup> соответственно.
   section(data-aos="fade-up").ecology-CO.mt-section 
     .container-content
       .ecology-CO__inner 
@@ -268,24 +272,27 @@ mixin ecology-content-CN
           .ecology-statistics__img 
             +picture('ecology-statistics.png','t')
             +activity-buttons('ecology-statistics.png') 
-
           .ecology-statistics__formulas
-            p.ecology-statistics__formula
-              | Р 
+            .ecology-statistics__formula
+              p Р 
               sub ТЭР
-              |&nbsp;  — &nbsp;  每公里铁路线燃料动力消耗量（吨，千立方米，千兆卡或千瓦时）；
-            p.ecology-statistics__formula 
-              | Н
+              p.flex-center.px-5   — 
+              p 每公里铁路线燃料动力消耗量（吨，千立方米，千兆卡或千瓦时）
+            .ecology-statistics__formula
+              p Н
               sub КМ
-              |&nbsp;  — &nbsp;  总行程距离（公里）
-            p.ecology-statistics__formula 
-              | К 
+              p.flex-center.px-5   — 
+              p 总行程距离（公里）
+            .ecology-statistics__formula
+              p К 
               sub СО
-              |&nbsp;  — &nbsp;  CO2排放系数(吨 CO<sup class='fz-10'>2</sup>/吨或千立方米燃料，吨 CO<sup class='fz-10'>2</sup>/千兆卡热能，公斤CO2/千瓦·小时电量）。
-            p.ecology-statistics__formula 
-              | Q 
+              p.flex-center.px-5   — 
+              p CO<sup class='fz-10'>2</sup>排放系数吨 CO<sup class='fz-10'>2</sup>/吨或千立方米燃料，吨 CO<sup class='fz-10'>2</sup>/千兆卡热能，公斤CO<sup class='fz-10'>2</sup>/千瓦·小时电量
+            .ecology-statistics__formula
+              p Q 
               sub КТК
-              |&nbsp;  — &nbsp;  每列车集装箱数量
+              p.flex-center.px-5   — 
+              p 每列车集装箱数量
           .row 
             p.ecology-statistics__text.text 为计算UTLC ERA产生的直接和间接CO2排放量，采用自有公司数据，确定直接排放量（TTW），以及EcoTransIT*门户网站结算及方法，以确定间接排放量（WTT）。为计算运输选择方案环保影响，同时采用作为统计和计算碳痕迹的公认源头的EcoTransIT*门户网站。 
   section(data-aos="fade-up").ecology-algorithm 
@@ -503,27 +510,27 @@ mixin ecology-content-EN
           .ecology-statistics__img 
             +picture('ecology-statistics.png','t')
             +activity-buttons('ecology-statistics.png') 
-
           .ecology-statistics__formulas
-            p.ecology-statistics__formula
-              | Р 
+            .ecology-statistics__formula
+              p Р 
               sub ТЭР
-              |&nbsp;  — &nbsp;  FER consumption per 1 km (tons, m3, Gcal or kWh)
-            p.ecology-statistics__formula 
-              | Н
+              p.flex-center.px-5   — 
+              p FER consumption per 1 km (tons, m3, Gcal or kWh)
+            .ecology-statistics__formula
+              p Н
               sub КМ
-              |&nbsp;  — &nbsp;  full route distance (km)
-            p.ecology-statistics__formula 
-              | К 
+              p.flex-center.px-5   — 
+              p full route distance (km)
+            .ecology-statistics__formula
+              p К 
               sub СО
-              |&nbsp;  — &nbsp; <p>СО<sup class='fz-8'>2</sup>  emission factor (tons СО<sup class='fz-8'>2</sup> /t or thousand m3 of fuel, tons СО<sup class='fz-8'>2</sup> /Gcal of thermal power, kg СО<sup class='fz-8'>2</sup> /kWh of electrical energy) </p>
-              
-              
-    
-            p.ecology-statistics__formula 
-              | Q 
+              p.flex-center.px-5   — 
+              p <p>СО<sup class='fz-8'>2</sup>  emission factor (tons СО<sup class='fz-8'>2</sup> /t or thousand m3 of fuel, tons СО<sup class='fz-8'>2</sup> /Gcal of thermal power, kg СО<sup class='fz-8'>2</sup> /kWh of electrical energy) </p>
+            .ecology-statistics__formula
+              p Q 
               sub КТК
-              |&nbsp;  — &nbsp;  number of containers on a train
+              p.flex-center.px-5   — 
+              p  number of containers on a train
           .row 
             p.ecology-statistics__text.text   To calculate the direct and indirect СО<sup class='fz-10'>2</sup>  emission (WTW) volume generated by UTLC ERA, we used the company's own data to determine direct emissions (TTW) and the calculations and methodology from <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> portal to determine indirect emissions (WTT). To calculate the environmental impact caused by alternative means of transport, we also used <a class="ecology-statistics__link" target="_blank" href="https://www.ecotransit.org/en/">EcoTransIT</a> portal, which is a reputable source in terms of carbon footprint recording and calculations.
   section(data-aos="fade-up").ecology-algorithm 

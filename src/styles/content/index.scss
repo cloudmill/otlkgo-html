@@ -273,6 +273,34 @@
 
   .key-forecast {
     margin-top: 150px;
+  }
 
+  .marshrute-speed {
+    page-break-before: always;
+  }
+
+  .formation-train {
+    padding-top: 40px;
+  }
+
+  .formation-train__block {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .formation-park {
+    margin-top: 0;
+  }
+
+  .formation-train {
+    height: auto;
+  }
+
+  .formation-park__vector-right {
+    height: 500px;
+  }
+
+  .formation-park__structure-vector {
+    height: 400px;
   }
 }
