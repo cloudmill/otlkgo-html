@@ -5,12 +5,13 @@
     margin-top: 40px;
   }
 
-  @media print {
-    page-break-after: always;
-  }
+  // @media print {
+  //   page-break-after: always;
+  // }
 
   &__title {
     margin-bottom: 40px;
+
     @media #{media("<", m)} {
       margin-bottom: 20px;
     }
@@ -22,7 +23,7 @@
     padding-top: 20px;
     border-top: 1px solid color(light-green);
 
-    
+
     @media #{media("<", m)} {
       margin-bottom: 20px;
       padding-top: 8px;
@@ -30,7 +31,7 @@
       line-height: 120%;
     }
 
-    &.w-100{
+    &.w-100 {
       width: 100%;
     }
   }
@@ -57,6 +58,7 @@
     &-col {
       &:nth-child(1) {
         width: 360px;
+
         @media #{media("<", d)} {
           width: 100%;
         }
@@ -122,8 +124,7 @@
     padding-top: 8px;
   }
 
-  @media print{
-    margin-top: 0px;
+  @media print {
     padding-top: 10px;
   }
 
@@ -142,18 +143,20 @@
     }
   }
 
-  &__img{
-    &-container{
+  &__img {
+    &-container {
       position: relative;
 
       @media #{media(">", m)} {
-      height: 1587px;
-        picture{
-          img{
+        height: 1587px;
+
+        picture {
+          img {
             object-fit: contain;
           }
         }
       }
+
       @media (min-width:768px) and (max-width: 1025px) {
         overflow-x: scroll;
         height: auto;
@@ -170,27 +173,28 @@
       @media print {
         padding: 0px;
         width: 100%;
-        
-        height: 750px;
-        
+
+        // height: 750px;
+
       }
 
-      
 
-      .ge-card{
+
+      .ge-card {
         position: absolute;
         width: 360px;
         right: 0px;
         bottom: 0px;
       }
     }
-    &-table{
+
+    &-table {
       @media #{media("<", m)} {
         width: rem(781px);
         height: rem(1067px);
 
-        picture{
-          img{
+        picture {
+          img {
             object-fit: fill;
           }
         }
@@ -212,6 +216,7 @@
       margin-top: 40px;
       padding-top: 5px;
     }
+
     &-title {
       margin-bottom: 40px;
 
@@ -227,8 +232,8 @@
       }
     }
 
-    &-container{
-      &.en{
+    &-container {
+      &.en {
         @media #{media("<", m)} {
           width: calc(100% + 40px);
           margin-left: -20px;
@@ -237,16 +242,17 @@
           overflow-x: scroll;
         }
       }
-      
+
     }
-    &-table{
-      &.en{
+
+    &-table {
+      &.en {
         @media #{media("<", m)} {
           width: 1160px;
           height: auto;
         }
       }
-      
+
     }
   }
 
@@ -267,8 +273,10 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
+
     &.first {
       margin-top: 100px;
+
       @media #{media("<", m)} {
         margin-top: 40px;
       }
@@ -293,8 +301,8 @@
         @media #{media("<", t)} {
           width: 50%;
 
-          picture{
-            img{
+          picture {
+            img {
               object-fit: contain;
             }
           }
@@ -327,7 +335,7 @@
       gap: 23px;
 
       width: 355px;
-      
+
       &.no-wrap {
         flex-wrap: nowrap;
 
@@ -356,22 +364,22 @@
       }
     }
 
-    &.second{
+    &.second {
       @media #{media("<", m)} {
         margin-top: 75px;
       }
     }
 
-    &-grafic{
-      picture{
-        img{
+    &-grafic {
+      picture {
+        img {
           object-fit: contain;
         }
       }
 
-      @media print {
-        height: 250px;
-      }
+      // @media print {
+      //   height: 250px;
+      // }
     }
   }
 
@@ -443,6 +451,7 @@
     @media #{media("<", m)} {
       width: 100%;
     }
+
     &-title {
       font-weight: 700;
       font-size: 20px;
@@ -504,6 +513,7 @@
     margin-top: 40px;
     padding-top: 8px;
   }
+
   &__title {
     margin-bottom: 40px;
 
@@ -515,7 +525,7 @@
 
     @media #{media("<", m)} {
       margin-bottom: 20px;
-      
+
       font-size: rem(20px);
       line-height: 120%;
     }
@@ -551,6 +561,7 @@
       margin-top: 40px;
       padding-top: 8px;
     }
+
     &-title {
       margin-bottom: 40px;
 
@@ -574,6 +585,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -590,6 +602,7 @@
       @media #{media("<", m)} {
         width: calc(100% - 20px);
       }
+
       &:nth-child(2) {
         width: 566px;
 
@@ -634,7 +647,7 @@
 
       @media #{media("<", m)} {
         margin-bottom: 12px;
-        
+
         font-size: rem(12px);
         line-height: 160%;
       }
@@ -661,7 +674,7 @@
       &.second {
         margin-top: 40px;
 
-        
+
       }
 
       @media (max-width: 900px) {
@@ -672,7 +685,7 @@
         margin-bottom: 20px;
 
         width: 100%;
-        
+
         font-size: rem(14px);
         line-height: 150%;
       }
@@ -708,7 +721,7 @@
         margin-bottom: 12px;
         width: calc(100% - 20px);
       }
-      
+
     }
   }
 }
@@ -723,11 +736,13 @@
     padding-top: 8px;
   }
 
-  @media print {
-    page-break-after: always;
-  }
+  // @media print {
+  //   page-break-after: always;
+  // }
+
   &__title {
     margin-bottom: 40px;
+
     @media #{media("<", m)} {
       margin-bottom: 20px;
     }
@@ -781,6 +796,7 @@
 
     &:nth-child(2) {
       border-left: 1px solid #045C25;
+
       @media #{media("<", m)} {
         border-left: 1px solid #69DA91;
       }
@@ -788,6 +804,7 @@
 
     &:nth-child(3) {
       border-left: 1px solid #045C25;
+
       @media #{media("<", m)} {
         border-left: 1px solid #69DA91;
       }
@@ -795,6 +812,7 @@
 
     &:nth-child(6) {
       border-left: 1px solid #045C25;
+
       @media #{media("<", m)} {
         border-left: 1px solid #69DA91;
       }
@@ -839,9 +857,9 @@
     }
 
 
-    &-icon{
+    &-icon {
       @media #{media("<", m)} {
-        svg{
+        svg {
           width: rem(35px);
           height: rem(31px);
         }

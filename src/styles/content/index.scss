@@ -18,9 +18,19 @@
   page-break-before: always;
 }
 
-@media print {
-  @page {
-    margin: 1cm;
+.tt {
+  text-transform: initial !important;
+}
+
+@page {
+  margin: 1cm;
+}
+
+.print {
+
+  .report-hero {
+    page-break-after: always;
+
   }
 
   .who-we .reference-subrow__col.icons {
@@ -212,14 +222,57 @@
     padding-left: 0;
   }
 
+
   .preview__title {
     padding-top: 0;
   }
+
 }
 
 
+.print-ios {
+  .sidebar {
+    display: none !important;
+  }
 
+  .who-we__trains-bot {
+    margin-top: 40px;
+    margin-right: 0;
+  }
 
-.tt {
-  text-transform: initial !important;
+  .who-we {
+    margin-top: 20px;
+  }
+
+  .who-we__achievement-item:nth-child(2) {
+    page-break-after: always;
+    margin-bottom: 100px;
+  }
+
+  .who-we__achievement-img {
+    top: 92px !important;
+    bottom: 20px !important;
+  }
+
+  .who-we__achievement-item {
+    overflow: hidden;
+  }
+
+  .report-hero__portrait {
+    position: absolute;
+    bottom: 0 !important;
+  }
+
+  .report-hero {
+    height: 500px !important;
+  }
+
+  .macroeconomics {
+    page-break-before: always;
+  }
+
+  .key-forecast {
+    margin-top: 150px;
+
+  }
 }

@@ -61,6 +61,7 @@
     display: none !important;
   }
 }
+
 .flex-m {
   display: none !important;
 
@@ -68,6 +69,7 @@
     display: flex !important;
   }
 }
+
 .flex-t {
   display: none !important;
 
@@ -131,6 +133,7 @@
     }
   }
 }
+
 .mt-40 {
   margin-top: 40px;
 
@@ -256,9 +259,10 @@
 
 .gap-8 {
   gap: 8px;
+
   @media #{media("<", m)} {
-    .ge-card__nums-container {
-    }
+    .ge-card__nums-container {}
+
     .ge-card__num {
       font-size: 34px;
     }
@@ -278,7 +282,10 @@
 }
 
 .print-break {
-  @media print {
-    page-break-after: always;
-  }
+  page-break-after: always;
+}
+
+.no-break {
+  page-break-after: unset !important;
+
 }

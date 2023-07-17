@@ -30,7 +30,6 @@
 
   @media print {
     margin-top: 0px;
-    page-break-after: always;
   }
 
   &__background {
@@ -203,6 +202,7 @@
         @media print {
           width: 100%;
           height: auto;
+
           picture {
             img {
               object-fit: contain;
@@ -214,9 +214,11 @@
       @media print {
         width: 100%;
         height: auto;
+
         picture {
           width: 100% !important;
           height: 100% !important;
+
           img {
             object-fit: contain;
           }
@@ -224,7 +226,7 @@
 
         &.mobile {
           width: 100% !important;
-          
+
         }
       }
     }
@@ -321,6 +323,7 @@
       opacity: 1;
       z-index: 1;
     }
+
     @media #{media(">", xl)} {
       font-size: 80px;
       line-height: 90%;
@@ -552,6 +555,7 @@
       @media #{media('<', d)} {
         font-size: 60px;
       }
+
       @media #{media("<", t)} {
         font-size: 40px;
       }
@@ -619,17 +623,10 @@
       }
     }
 
-    @media #{media("<", m)} {
-      // height: 620px;
-    }
-
     .report-hero__img-about {
       width: 100%;
       height: auto;
 
-      // @media #{media(">", xl)} {
-      //   height: calc(100vh - 84px);
-      // }
       picture {
         img {
           object-position: top;

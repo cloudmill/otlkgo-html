@@ -1,33 +1,40 @@
-.control{
-  &-hero{
+.control {
+  &-hero {
     width: 1400px;
     position: relative;
     height: 635px;
 
     background: #F4F4F4;
+
     @media #{media(">", xl)} {
       padding: 0px 20px;
 
       width: 100%;
       height: 830px;
     }
+
     @media (min-width: 1025px) and (max-width: 1280px) {
-    width: 100%;
+      width: 100%;
     }
+
     @media (min-width: 768px) and (max-width: 1024px) {
       width: 100%;
     }
+
     @media #{media("<", d)} {
       height: rem(635px);
     }
+
     @media #{media("<", t)} {
       height: rem(535px);
     }
+
     @media #{media("<", m)} {
       width: 100%;
       height: rem(290px);
     }
-    &__img{
+
+    &__img {
       position: absolute;
       top: 0px;
       left: 0px;
@@ -40,7 +47,8 @@
         display: none;
       }
     }
-    &__title{
+
+    &__title {
       position: absolute;
       top: 500px;
       left: 120px;
@@ -59,10 +67,12 @@
         left: 360px;
         top: 692px;
       }
+
       @media (min-width: 1025px) and (max-width: 1280px) {
         left: 40px;
         width: 93%;
       }
+
       @media (min-width: 768px) and (max-width: 1024px) {
         left: 10%;
         top: 75%;
@@ -71,6 +81,7 @@
         font-size: 30px;
 
       }
+
       @media #{media("<", m)} {
         left: rem(20px);
         top: rem(175px);
@@ -80,14 +91,14 @@
         line-height: 120%;
       }
 
-      @media print {
-        position: relative;
-        margin-top: 20px;
-      }
+      // @media print {
+      //   position: relative;
+      //   margin-top: 20px;
+      // }
     }
   }
 
-  &-subhero{
+  &-subhero {
     margin-top: 60px;
     padding-top: 12px;
     border-top: 1px solid #87EBAA;
@@ -96,7 +107,8 @@
       margin-top: 20px;
       padding-top: 8px;
     }
-    &__title{
+
+    &__title {
       margin-top: 40px;
       margin-bottom: 40px;
 
@@ -113,7 +125,8 @@
         line-height: 150%;
       }
     }
-    &__row{
+
+    &__row {
       display: flex;
       justify-content: space-between;
       gap: 20px;
@@ -122,23 +135,25 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
       }
-      &.listing{
+
+      &.listing {
         @media #{media("<", m)} {
           gap: 0px;
         }
       }
     }
 
-    &__col{
-      &.list-subhero{
+    &__col {
+      &.list-subhero {
         max-width: 560px;
+
         @media #{media("<", m)} {
           width: 100%;
         }
       }
     }
 
-    &__subtitle{
+    &__subtitle {
       max-width: 360px;
 
       font-weight: 700;
@@ -154,7 +169,7 @@
       }
     }
 
-    &__text{
+    &__text {
       max-width: 760px;
 
       @media #{media("<", m)} {
@@ -163,17 +178,17 @@
     }
   }
 
-  &-meetings{
+  &-meetings {
     margin-top: 120px;
 
     @media #{media("<", m)} {
       margin-top: 40px;
     }
 
-    @media print {
-      page-break-after: always;
-    }
-    &__title{
+    // @media print {
+    //   page-break-after: always;
+    // }
+    &__title {
       margin-bottom: 60px;
 
       font-weight: 700;
@@ -190,19 +205,20 @@
       }
     }
 
-    &__row{
+    &__row {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
 
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-bottom: 48px;
 
         @media #{media("<", m)} {
           margin-bottom: 20px;
         }
       }
-      &:nth-child(3){
+
+      &:nth-child(3) {
         margin-bottom: 42px;
 
         @media #{media("<", m)} {
@@ -215,11 +231,13 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
       }
+
       @media (max-width: 850px) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
       }
+
       @media #{media("<", m)} {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -227,9 +245,10 @@
       }
     }
 
-    &__col{
-      .custom-card{
+    &__col {
+      .custom-card {
         margin-bottom: 20px;
+
         @media #{media("<", m)} {
           margin-bottom: 0px;
         }
@@ -237,11 +256,11 @@
     }
   }
 
-  &-structure{
+  &-structure {
     margin-top: 120px;
     padding-top: 20px;
     border-top: 1px solid #045C25;
-    
+
     @media #{media("<", t)} {
       margin-top: 44px;
       padding-top: 8px;
@@ -252,40 +271,41 @@
       padding-top: 8px;
     }
 
-    @media print {
-      page-break-after: always;
-    }
-    
-    &__title{
-    margin-bottom: 60px;
+    // @media print {
+    //   page-break-after: always;
+    // }
 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-    color: #2A2E2B;
+    &__title {
+      margin-bottom: 60px;
 
-    @media #{media("<", m)} {
-      margin-bottom: 20px;
-
-      font-size: rem(20px);
+      font-weight: 700;
+      font-size: 24px;
       line-height: 120%;
-    }
+      letter-spacing: -0.01em;
+      color: #2A2E2B;
+
+      @media #{media("<", m)} {
+        margin-bottom: 20px;
+
+        font-size: rem(20px);
+        line-height: 120%;
+      }
     }
 
-    &__img{
+    &__img {
       @media #{media("<", m)} {
 
         width: 571px;
         height: 375px;
-        picture{
-          img{
+
+        picture {
+          img {
             object-fit: fill;
           }
         }
       }
 
-      &-container{
+      &-container {
 
         @media #{media("<", m)} {
           padding-right: 20px;

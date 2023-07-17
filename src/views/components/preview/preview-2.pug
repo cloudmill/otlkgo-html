@@ -1,7 +1,7 @@
 mixin preview(title, name, surname, job, picture,lz)
   - var mobilePicture = picture.split('.').slice(0, -1).join('.') + '-mobile.' + picture.split('.').pop()
   - var lazy = lz ? 't' : ''
-  section(data-aos="fade-up").preview.print-gap&attributes(attributes)
+  section(data-aos="fade-up").preview&attributes(attributes)
     .preview__container
       .preview__inner
         .preview__line
