@@ -1,46 +1,47 @@
-//- extends ../app
-//- include ../components/section/map
-//- include ../components/section/calendar-content
-//- include ../components/section/business-content
-//- include ../components/section/corruption-content
-//- include ../components/section/geography
-//- include ../components/section/indicators
-//- include ../components/section/report-hero
-//- include ../components/section/report-hero-layout
-//- include ../components/section/who-we
-//- include ../components/bloks-ui/modal
+extends ../app
+include ../components/section/map
+include ../components/section/calendar-content
+include ../components/section/business-content
+include ../components/section/corruption-content
+include ../components/section/geography
+include ../components/section/indicators
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/section/who-we
+include ../components/bloks-ui/modal
 
-//- block header 
-//-   +header-EN
-//- block variables
-//-   -const title = 'About the company'
-//- block content
-//-   +modal-EN
-//-   +sidebar-EN
-//-   +report-hero-about-EN
-//-   +who-we-EN
-//-   +calendar-content-EN
-//-   +indicators-EN
-//-   +preview('Business Model','Selyutin','Mikhail','Business Development and Risk Analysis Director','selutin.png','t').custom-id(id="section-business") 
-//-     .selutin
-//-       p.description.selutin__description Our operating model is aimed at increasing the transit traffic volumes in the 1,520 mm track gauge area with the help of such key processes as:
-//-       ul.list.selutin__list
-//-         each item in ['Minimizing the costs','Developing a competitive quotation','Balancing the transit routes','Launching new logistics services','Customizing transit services for new consignor groups','Increasing the transportation speed',]
-//-           li.list__item
-//-             +mark-text-svg
-//-             p.selutin__text=item
-//-   +business-content-EN
-//-   +geography-EN
-//-   +preview('Anti-Corruption Activities','Klimochkin','Alexandr','Security Director','klimochkin.png','t').custom-id(id='about-corruption')
-//-     p.description UTLC&nbsp;ERA has absolutely zero tolerance to any types and forms of corruption.
-//-       ul.list
-//-         li
-//-           p.text.text-t This policy applies not only to the company’s employees, but also to its contractors that have business and informal relations with our company.
-//-         li
-//-           p.text.text-t The company’s current day-to-day business operations comply with the new revision of UTLC&nbsp;ERA’s Anti-Corruption Policy approved by the Board of Directors on January 25, 2021.
-//-   +corruption-content-EN
-//-   +print-activity-buttons-EN
-//-   +next-page('Strategic Report',2,'Next section')
+block header 
+  +header-EN
+block variables
+  -const title = 'About the company'
+block content
+  +modal-EN
+  +sidebar-EN
+  +report-hero-about-EN
+  +who-we-EN
+  +calendar-content-EN
+  +indicators-EN
+  +preview('Business Model','Selyutin','Mikhail','Business Development and Risk Analysis Director','selutin.png','t').custom-id(id="section-business") 
+    .selutin
+      p.description.selutin__description Our operating model is aimed at increasing the transit traffic volumes in the 1,520 mm track gauge area with the help of such key processes as:
+      ul.list.selutin__list
+        each item in ['Minimizing the costs','Developing a competitive quotation','Balancing the transit routes','Launching new logistics services','Customizing transit services for new consignor groups','Increasing the transportation speed',]
+          li.list__item
+            +mark-text-svg
+            p.selutin__text=item
+  +business-content-EN
+  +geography-EN
+  +preview('Anti-Corruption Activities','Klimochkin','Alexandr','Security Director','klimochkin.png','t').custom-id(id='about-corruption')
+    .klimochkin 
+      p.description UTLC&nbsp;ERA has absolutely zero tolerance to any types and forms of corruption.
+      ul.list
+        li
+          p.text.text-t This policy applies not only to the company’s employees, but also to its contractors that have business and informal relations with our company.
+        li
+          p.text.text-t The company’s current day-to-day business operations comply with the new revision of UTLC&nbsp;ERA’s Anti-Corruption Policy approved by the Board of Directors on January 25, 2021.
+  +corruption-content-EN
+  +print-activity-buttons-EN
+  +next-page('Strategic Report',2,'Next section')
 
 
 

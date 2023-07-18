@@ -1,6 +1,6 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-  AOS.init();
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   AOS.init();
+// })

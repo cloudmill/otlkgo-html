@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         removeActive();
         removeOverlay();
       }, 100)
-      
+
     });
   });
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         removeActive();
         removeOverlay();
       }, 500)
-      
+
     });
   });
 

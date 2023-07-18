@@ -123,17 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-
-
   historyBtn.on('click', function () {
     historyMenu.toggleClass('active')
-    // $('.overlay-header').toggleClass('z-8')
     removeActive()
   })
 
   historyClose.on('click', function () {
     historyMenu.toggleClass('active')
-    // $('.overlay-header').toggleClass('z-8')
   })
 
 

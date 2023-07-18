@@ -1,5 +1,6 @@
 .main-contents {
   margin-bottom: 73px;
+
   &__container {
     width: 100%;
     padding: 0px 40px;
@@ -37,6 +38,7 @@
     @media #{media('<', d)} {
       grid-template-columns: repeat(2, 1fr);
     }
+
     @media #{media('<', m)} {
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
@@ -49,7 +51,7 @@
 
   &__card {
     &-content {
-      // padding: 83px 0;
+      padding: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -83,6 +85,7 @@
         }
       }
     }
+
     &-number {
       position: absolute;
       top: 20px;
@@ -166,6 +169,7 @@
         display: block;
         width: 12.5px;
         height: 12.5px;
+
         @media #{media('<', m)} {
           width: 10px;
           height: 10px;
@@ -181,6 +185,7 @@
       letter-spacing: -0.06em;
       text-transform: uppercase;
       color: #2a2e2b;
+      text-align: center;
 
       &.absolute {
         position: absolute;

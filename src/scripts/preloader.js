@@ -1,5 +1,5 @@
 import AOS from 'aos';
-// import * as parallax from './parallax'
+import 'aos/dist/aos.css';
 
 document.body.classList.add("body--hidden");
 
@@ -15,10 +15,14 @@ window.addEventListener('load', () => {
 
     setTimeout(() => {
       document.body.classList.remove("body--hidden");
-      // window.scrollTo(0, 0);
       preloader.classList.add('preloader--hide')
 
     }, DELAY);
+    AOS.init({
+      once: true,
+      offset: 100,
+      duration: 1000,
+    });
   } else {
     document.body.classList.remove("body--hidden");
 
@@ -28,4 +32,6 @@ window.addEventListener('load', () => {
       duration: 1000,
     });
   }
+
+
 })
