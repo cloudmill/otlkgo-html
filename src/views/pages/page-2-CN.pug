@@ -1,31 +1,31 @@
-//- extends ../app
-//- include ../components/section/strategy-content
-//- include ../components/section/transit-content
-//- include ../components/section/trends-content
-//- include ../components/section/map
-//- include ../components/section/global-economy
-//- include ../components/section/report-hero
-//- include ../components/section/report-hero-layout
-//- include ../components/bloks-ui/modal
+extends ../app
+include ../components/section/strategy-content
+include ../components/section/transit-content
+include ../components/section/trends-content
+include ../components/section/map
+include ../components/section/global-economy
+include ../components/section/report-hero
+include ../components/section/report-hero-layout
+include ../components/bloks-ui/modal
 
-//- block header 
-//-   +header-CN
-//- block variables
-//-   -const title = '策略报告'
-//- block content
-//-   +modal-CN
-//-   +sidebar-CN
-//-   +report-hero-CN
-//-   +preview('2022年全球经济与物流市场','伊万诺夫','·阿尔捷米·帕夫洛维奇','营销研究部主任','ivanov.png','t').ivanov-preview(id="preview-ge") 
-//-   +global-economy-CN
-//-   +preview('物流业趋势：替代时间','科罗波夫','杰尼斯·谢尔盖耶维奇','商务管理处客户联络部客户服务部主任','korobov.png','t').custom-id(id="preview-trends")
-//-   +trends-content-CN
-//-   +preview('中欧中铁路转运市场','卡德罗夫','艾达尔·叶尔波拉托维奇','商务管理处物流科总经理','kadyrov.png','t').custom-id(id="preview-transit").preview__kadyrov
-//-     .kadyrov
-//-       p.kadyrov__text 2022年底，东西国际运输走廊干线中欧中班列铁路集装箱运输总量下降，UTLC&nbsp;ERA在市场中的重要性极大稳固。
-//-   +transit-content-CN
-//-   +preview('技术领先者战略','奥尔洛娃','玛利亚·安德烈耶夫娜','信息系统支持部总系统分析师','kovaleva.png','t').custom-id(id="preview-strategy-leader")
-//-   +strategy-content-CN
-//-   +map-CN
-//-   +print-activity-buttons-CN
-//-   +next-page('活动结果',3,'下一节','page-3-CN')
+block header 
+  +header-CN
+block variables
+  -const title = '策略报告'
+block content
+  +modal-CN
+  +sidebar-CN
+  +report-hero-CN
+  +preview('2022年全球经济与物流市场','伊万诺夫','·阿尔捷米·帕夫洛维奇','营销研究部主任','ivanov.png','t').ivanov-preview(id="preview-ge") 
+  +global-economy-CN
+  +preview('物流业趋势：替代时间','科罗波夫','杰尼斯·谢尔盖耶维奇','商务管理处客户联络部客户服务部主任','korobov.png','t').custom-id(id="preview-trends")
+  +trends-content-CN
+  +preview('中欧中铁路转运市场','卡德罗夫','艾达尔·叶尔波拉托维奇','商务管理处物流科总经理','kadyrov.png','t').custom-id(id="preview-transit").preview__kadyrov
+    .kadyrov
+      p.kadyrov__text 2022年底，东西国际运输走廊干线中欧中班列铁路集装箱运输总量下降，UTLC&nbsp;ERA在市场中的重要性极大稳固。
+  +transit-content-CN
+  +preview('技术领先者战略','奥尔洛娃','玛利亚·安德烈耶夫娜','信息系统支持部总系统分析师','kovaleva.png','t').custom-id(id="preview-strategy-leader")
+  +strategy-content-CN
+  +map-CN
+  +print-activity-buttons-CN
+  +next-page('活动结果',3,'下一节','page-3-CN')
