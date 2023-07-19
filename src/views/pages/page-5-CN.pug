@@ -1,34 +1,34 @@
-extends ../app
+//- extends ../app
 
-include ../components/section/reward-content
-include ../components/section/controls-content
-include ../components/section/risk-content
-include ../components/bloks-ui/risks
-include ../components/bloks-ui/model
-include ../components/section/incorporated
-include ../components/section/report-hero
-include ../components/section/report-hero-layout
-include ../components/section/control
-include ../components/bloks-ui/modal
+//- include ../components/section/reward-content
+//- include ../components/section/controls-content
+//- include ../components/section/risk-content
+//- include ../components/bloks-ui/risks
+//- include ../components/bloks-ui/model
+//- include ../components/section/incorporated
+//- include ../components/section/report-hero
+//- include ../components/section/report-hero-layout
+//- include ../components/section/control
+//- include ../components/bloks-ui/modal
 
-block variables
-  -const title = '企业管治'
-block header 
-  +header-CN
-block content
-  +sidebar-CN
-  +modal-CN
-  +report-hero-5-CN
-  +control-sections-CN 
-  +preview('股本','帕芙洛娃','·克谢尼娅·维亚切斯拉沃夫娜','金融工具使用负责人','pavlova.png','t').custom-id(id="share-capital")(data-aos="fade-up")
-    .pavlova 
-      p.pavlova__text.text 联合运输和物流公司-欧亚铁路联盟股份公司于2018年4月2日由莫斯科联邦税务局第46号区际监察局注册，主要国家注册号为1187746369590（纳税人识别码 9701104646）。
-  +incorporated-CN
-  +preview('薪酬制度','伊万诺娃','马丽娜·弗拉基米罗夫娜','人力资源部部长','ivanova.png','t').custom-id(id="preview-reward-content")
-  +reward-content-CN
-  +preview('监管系统','帕夫卢申科娃','·伊莉娜·安纳托利耶夫娜','总会计师-部门经理','pavluchkova.png','t').custom-id(id="controls-content")
-  +controls-content-CN
-  +preview('风险管理 ','别利亚科娃','安娜·弗拉基米罗夫娜','商务副经理-商务管理处结算监督与生产分析科经理','belyakova.png','t').custom-id(id="risk-content")
-  +risk-content-CN
-  +print-activity-buttons-CN
-  +next-page('申请表格',6,'下一节')
+//- block variables
+//-   -const title = '企业管治'
+//- block header 
+//-   +header-CN
+//- block content
+//-   +sidebar-CN
+//-   +modal-CN
+//-   +report-hero-5-CN
+//-   +control-sections-CN 
+//-   +preview('股本','帕芙洛娃','·克谢尼娅·维亚切斯拉沃夫娜','金融工具使用负责人','pavlova.png','t').custom-id(id="share-capital")(data-aos="fade-up")
+//-     .pavlova 
+//-       p.pavlova__text.text 联合运输和物流公司-欧亚铁路联盟股份公司于2018年4月2日由莫斯科联邦税务局第46号区际监察局注册，主要国家注册号为1187746369590（纳税人识别码 9701104646）。
+//-   +incorporated-CN
+//-   +preview('薪酬制度','伊万诺娃','马丽娜·弗拉基米罗夫娜','人力资源部部长','ivanova.png','t').custom-id(id="preview-reward-content")
+//-   +reward-content-CN
+//-   +preview('监管系统','帕夫卢申科娃','·伊莉娜·安纳托利耶夫娜','总会计师-部门经理','pavluchkova.png','t').custom-id(id="controls-content")
+//-   +controls-content-CN
+//-   +preview('风险管理 ','别利亚科娃','安娜·弗拉基米罗夫娜','商务副经理-商务管理处结算监督与生产分析科经理','belyakova.png','t').custom-id(id="risk-content")
+//-   +risk-content-CN
+//-   +print-activity-buttons-CN
+//-   +next-page('申请表格',6,'下一节','applications-CN')

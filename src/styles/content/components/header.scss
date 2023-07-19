@@ -749,7 +749,8 @@
                 transition: color .35s 0s cubic-bezier(0.33, 1, 0.68, 1);
 
                 &::before {
-                    display: block;
+                    display: flex;
+                    flex-shrink: 0;
                     content: "";
 
                     width: 12px;

@@ -1,68 +1,68 @@
-extends ../app
-include ../components/section/security-content
-include ../components/section/ecology-content
-include ../components/section/purchase-content
-include ../components/section/charity-content
+//- extends ../app
+//- include ../components/section/security-content
+//- include ../components/section/ecology-content
+//- include ../components/section/purchase-content
+//- include ../components/section/charity-content
 
-include ../components/section/report-hero
-include ../components/section/report-hero-layout
-include ../components/section/corporate-responsibility
-include ../components/section/human-capital
-include ../components/bloks-ui/modal
+//- include ../components/section/report-hero
+//- include ../components/section/report-hero-layout
+//- include ../components/section/corporate-responsibility
+//- include ../components/section/human-capital
+//- include ../components/bloks-ui/modal
 
-block header 
-  +header-CN
-block variables
-  -const title = '可持续发展'
-block content
-  +modal-CN
-  +sidebar-CN
-  +report-hero-4-CN
-  +human-capital-CN 
-  +preview('','库丘林娜','·伊莉娜·弗拉基米罗夫娜','人事管理部负责人','cuchurina-preview.png')(data-aos="fade-up")
-    .cuchurina 
-      p.cuchurina__text.text_big 2022年期间，公司共录用27人，比2021年增加4人，增长12.5%。解雇9人。
-      .item
-        .item__row 
-          .item__col 
-            p.item__number.flex
-              span.countup-element(data-countup='5')
-              span ,
-              span.countup-element(data-countup='88' data-countup-suffix='%')
-          .item__col 
-            p.item__grey 
-        .item__row 
-          p.item__subtext 2022年的员工流失率，<br>  标准为5-7%
-  +organization-structure-CN
-  +preview(' 企业和社会责任','施密特·','叶列娜·维亚切斯拉沃夫娜','内部联络部总专员','shmidt.png','t').custom-id(id="preview-corporate-responsibility") 
-  +corporate-responsibility-CN
-  +preview('职业安全和消防安全','塔拉索娃','贾丽娜·亚历山德罗夫娜','行政管理部副经理','tarasova.png','t').custom-id(id="preview-security-content")  
-  +security-content-CN
-  +preview('环境可持续性是我们的竞争优势','赫梅里尼茨卡亚','安娜·亚历山德罗夫娜','营销联络部主任','xm.png','t').custom-id(id="preview-ecology-content").xmelnitskaya 
-  +ecology-content-CN
-  +preview('以人为本：慈善事业','芭鲁兹金娜','奥尔加·亚历山德罗夫娜','组织发展部经理','baruzdina.png','t').custom-id(id="preview-charity-content").baruzdina 
-  +charity-content-CN
-  +purchase-content-CN
-  +preview('能源资源利用','波罗夏伊','阿丽娜·尤里耶夫娜','行政管理部经理','porochay.png','t').porochay(id="preview-energetic-resourses") 
-    .porochay__table
-      .preview__table
-        table.preview-table
-          thead.preview-table__top  
-            tr.preview-table__row
-              each i in ['2022年指标','支出','金额，卢布']
-                th.preview-table__name=i
-          tbody.preview-table__bottom
-            tr.preview-table__row
-              td.preview-table__item 供电，千瓦 
-              td.preview-table__item.preview-table__item_bold 218 122,14
-              td.preview-table__item.preview-table__item_bold  1 415 662,45
-            tr.preview-table__row
-              td.preview-table__item 供水，立方米 
-              td.preview-table__item.preview-table__item_bold 1540,44
-              td.preview-table__item.preview-table__item_bold  112 002,63
-            tr.preview-table__row
-              td.preview-table__item 热量消耗，千兆卡/立方米 
-              td.preview-table__item.preview-table__item_bold 369,16
-              td.preview-table__item.preview-table__item_bold  766 022,07
-  +print-activity-buttons-CN
-  +next-page('企业管治',5,'下一节')
+//- block header 
+//-   +header-CN
+//- block variables
+//-   -const title = '可持续发展'
+//- block content
+//-   +modal-CN
+//-   +sidebar-CN
+//-   +report-hero-4-CN
+//-   +human-capital-CN 
+//-   +preview('','库丘林娜','·伊莉娜·弗拉基米罗夫娜','人事管理部负责人','cuchurina-preview.png')(data-aos="fade-up")
+//-     .cuchurina 
+//-       p.cuchurina__text.text_big 2022年期间，公司共录用27人，比2021年增加4人，增长12.5%。解雇9人。
+//-       .item
+//-         .item__row 
+//-           .item__col 
+//-             p.item__number.flex
+//-               span.countup-element(data-countup='5')
+//-               span ,
+//-               span.countup-element(data-countup='88' data-countup-suffix='%')
+//-           .item__col 
+//-             p.item__grey 
+//-         .item__row 
+//-           p.item__subtext 2022年的员工流失率，<br>  标准为5-7%
+//-   +organization-structure-CN
+//-   +preview(' 企业和社会责任','施密特·','叶列娜·维亚切斯拉沃夫娜','内部联络部总专员','shmidt.png','t').custom-id(id="preview-corporate-responsibility") 
+//-   +corporate-responsibility-CN
+//-   +preview('职业安全和消防安全','塔拉索娃','贾丽娜·亚历山德罗夫娜','行政管理部副经理','tarasova.png','t').custom-id(id="preview-security-content")  
+//-   +security-content-CN
+//-   +preview('环境可持续性是我们的竞争优势','赫梅里尼茨卡亚','安娜·亚历山德罗夫娜','营销联络部主任','xm.png','t').custom-id(id="preview-ecology-content").xmelnitskaya 
+//-   +ecology-content-CN
+//-   +preview('以人为本：慈善事业','芭鲁兹金娜','奥尔加·亚历山德罗夫娜','组织发展部经理','baruzdina.png','t').custom-id(id="preview-charity-content").baruzdina 
+//-   +charity-content-CN
+//-   +purchase-content-CN
+//-   +preview('能源资源利用','波罗夏伊','阿丽娜·尤里耶夫娜','行政管理部经理','porochay.png','t').porochay(id="preview-energetic-resourses") 
+//-     .porochay__table
+//-       .preview__table
+//-         table.preview-table
+//-           thead.preview-table__top  
+//-             tr.preview-table__row
+//-               each i in ['2022年指标','支出','金额，卢布']
+//-                 th.preview-table__name=i
+//-           tbody.preview-table__bottom
+//-             tr.preview-table__row
+//-               td.preview-table__item 供电，千瓦 
+//-               td.preview-table__item.preview-table__item_bold 218 122,14
+//-               td.preview-table__item.preview-table__item_bold  1 415 662,45
+//-             tr.preview-table__row
+//-               td.preview-table__item 供水，立方米 
+//-               td.preview-table__item.preview-table__item_bold 1540,44
+//-               td.preview-table__item.preview-table__item_bold  112 002,63
+//-             tr.preview-table__row
+//-               td.preview-table__item 热量消耗，千兆卡/立方米 
+//-               td.preview-table__item.preview-table__item_bold 369,16
+//-               td.preview-table__item.preview-table__item_bold  766 022,07
+//-   +print-activity-buttons-CN
+//-   +next-page('企业管治',5,'下一节','page-5-CN')

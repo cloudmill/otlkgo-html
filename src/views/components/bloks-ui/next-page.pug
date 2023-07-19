@@ -1,4 +1,4 @@
-mixin next-page(text,number, textNext)
+mixin next-page(text,number, textNext, href)
   - const next= textNext?textNext:'Следующий раздел'
   section(data-aos="fade-up").next 
     .container 
@@ -7,5 +7,5 @@ mixin next-page(text,number, textNext)
         p.next__title=text
         p.next__number=number
         +column-svg.next-svg
-        +button
+        +button(href)
         
