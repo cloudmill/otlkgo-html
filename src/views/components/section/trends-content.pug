@@ -381,8 +381,6 @@ mixin trends-content-EN
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
         +activity-buttons('trends-rates.png').desktop
         +activity-buttons('trends-rates-mobile.png').flex-m
-
-          
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -390,13 +388,25 @@ mixin trends-content-EN
           .col
             h6.trends-demand__title Global Sea Container Traffic Demand, 2020 to 2022 (actual), 2023 to 2026 (forecast), million TEUs and %
           .col 
+            .links.trends-demand__links.desktop
+              p.links__text.trends-demand__links-text Source:&nbsp;
+              a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+        .trends-demand__elements
+          .trends-demand__elem
+            .elem
+              span.chart-decor.chart-decor_light-green 
+              span.chart-decor.chart-decor_green
+              span.chart-decor.chart-decor_gray
+            p.trends-demand__text Throughput
+            .elem
+              .elem_line
+              p.trends-demand__text YoY change (right axis)
             .trends-demand__svg 
               +picture('trends-demand-mobile.png','t').mobile
               +activity-buttons('trends-demand-mobile.png').mobile
-
-            .links.trends-demand__links 
-              p.links__text.trends-demand__links-text Source:&nbsp;
-              a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+            //- .links.trends-demand__links 
+            //-   p.links__text.trends-demand__links-text Source:&nbsp;
+            //-   a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         .trends-demand__svg 
           +picture('trends-demand.png','t').desktop
           +activity-buttons('trends-demand.png').desktop
@@ -423,6 +433,7 @@ mixin trends-content-EN
             p.trends-forecast2__description.trends-forecast2__description_EN According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023.
             
           .col 
-            p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period. The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
+            p.text.trends-forecast2__text  The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
+            p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period.
 
             
