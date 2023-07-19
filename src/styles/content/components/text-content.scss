@@ -10,13 +10,10 @@ h2 {
     line-height: 120%;
   }
 
-
   @media #{media('<',m)} {
     font-size: 24px;
   }
-
 }
-
 
 h3 {
   font-weight: 700;
@@ -45,19 +42,19 @@ h5 {
   font-weight: 700;
   font-size: 16px;
   line-height: 140%;
-  color: color(black)
+  color: color(black);
 }
 
 h6 {
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;
-  color: #2A2E2B;
+  color: #2a2e2b;
 
   @media #{media('<',m)} {
     font-size: 14px;
     line-height: 150%;
-    color: #2A2E2B;
+    color: #2a2e2b;
   }
 }
 
@@ -87,29 +84,25 @@ h6 {
     @media #{media('<',m)} {
       font-size: 14px;
     }
-
   }
-
 }
 
 .links {
   display: flex;
 
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
 
   &__text {
     color: color(dark);
-
   }
 
   &__link {
-    color: color(alt-grey)
+    color: color(alt-grey);
   }
 }
-
 
 .list {
   display: flex;
@@ -131,8 +124,6 @@ h6 {
   }
 }
 
-
-
 .description {
   font-weight: 700;
   font-size: 16px;
@@ -153,8 +144,6 @@ h6 {
       font-size: 14px;
     }
   }
-
-
 }
 
 //title
@@ -163,17 +152,37 @@ h6 {
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
-  color: #2A2E2B;
+  color: #2a2e2b;
 
   @media #{media('<',m)} {
     font-size: 14px;
   }
 }
 
-
 .normal-text {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  color: #2A2E2B;
+  color: #2a2e2b;
+}
+
+.secret-com {
+  display: flex;
+  flex-direction: column;
+  .row {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    @media #{media('<',m)}{
+      margin-top: 12px;
+      grid-template-columns: repeat(1,1fr);
+      gap: 12px;
+    }
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 }

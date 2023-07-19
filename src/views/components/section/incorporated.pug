@@ -28,7 +28,7 @@ mixin incorporated
           .incorporated-capital__texts-text.text Уставный капитал Общества состоит из 98 127 обыкновенных именных бездокументарных акций номинальной стоимостью 1&nbsp;000 (одна тысяча) рублей каждая. Каждому из трех участников принадлежит по 32 709 акций. 
         .incorporated-capital__img 
           +picture('incorporated-capital.png')
-          +activity-buttons('incorporated-capital.jpg')
+      +activity-buttons('incorporated-capital.jpg')
       .incorporated-dividends(id="incorporated-dividends")(data-aos="fade-up")
         h2.incorporated-dividends__title Дивидендная политика
         .incorporated-dividends__text.text Годовое общее собрание акционеров утвердило положение о дивидендной политике ОТЛК&nbsp;ЕРА 30 июня 2021 года (протокол от 30.06.2021 № 14). Дивидендная политика распространяет свое действие с даты исполнения Обществом обязательств по выплате дивидендов за отчетный 2020 год.  
@@ -184,7 +184,21 @@ mixin incorporated
             .alt-preview__knowledge-bot.bulgakov 
               .alt-preview__knowledge-shares Доля в уставном капитале ОТЛК&nbsp;ЕРА — 0%
               .alt-preview__knowledge-shares Доля обыкновенных акций ОТЛК&nbsp;ЕРА — 0%
+
+
+
   .container-content
+    section.secret-com.mt-section(data-aos="fade-up")
+      h2.incorporated-governing__title Секретарь комитетов
+      .description.description_big Секретарь комитетов – специалист, который осуществляет информационное и документарное обеспечение деятельности комитета. 
+      .row
+        .col
+          .text  На него  возложен контроль за ходом выполнения принятых комитетом решений. Секретарь комитета отвечает за хранение протоколов заседаний  и других документов и материалов комитета в соответствии с процедурами хранения документации ОТЛК ЕРА.
+          .text  Секретаря комитета совета директоров избирает соответствующий комитет. Функции специалиста закреплены в положении о комитете, они соответствуют российскому законодательству и уставу компании. Секретарь комитета подотчетен в своей деятельности председателю комитета. 
+        .col
+          .text  С 1 января 2022 года секретарем комитетов была Маргарита Павловна Герасина (протоколы комитета по стратегии от 30.07.2021 № 11, от 11.07.2022 № 20; протоколы комитета по аудиту от 05.08.2021 № 11, от 06.07.2022 № 18; протоколы комитета по кадрам, вознаграждениям и корпоративному управлению от 02.08.2021 № 9, от 15.06.2022 № 15). Ее полномочия были досрочно прекращены с 6 сентября 2022 года. Начиная с 29 сентября 2022 года и по настоящее время функции секретаря комитетов осуществляет Дмитрий Александрович Булгаков (протокол комитета по стратегии от 29.09.2022 № 23; протокол комитета по аудиту от 29.09.2022 № 19; протокол комитета по кадрам, вознаграждениям и корпоративному управлению от 29.09.2022 № 17).
+
+
     .incorporated-governing(id="incorporated-governing")(data-aos="fade-up") 
       h2.incorporated-governing__title Правление и генеральный директор
       .incorporated-governing__row 
@@ -192,6 +206,11 @@ mixin incorporated
         .incorporated-governing__desk 
           .incorporated-governing__text.text  К компетенции исполнительных органов устав компании относит решение всех вопросов текущей деятельности. Исключение составляют вопросы, отнесенных к компетенции общего собрания акционеров и совета директоров. 
           .incorporated-governing__text.text Исполнительные органы подотчетны общему собранию акционеров и совету директоров. Генеральный директор представляет совету директоров ежеквартальные отчеты, позволяющие оценить эффективность и результаты работы ОТЛК&nbsp;ЕРА.
+   
+   
+   
+   
+   
     .incorporated-general(data-aos="fade-up")
       .incorporated-general__title Генеральный директор 
       .incorporated-general__row 
@@ -320,7 +339,7 @@ mixin incorporated-EN
           .incorporated-capital__texts-text.text The company’s authorized capital consists of 98,127 ordinary registered uncertified shares with a nominal value of one thousand (1,000) rubles each. Each of the three participants holds 32,709 shares.
         .incorporated-capital__img 
           +picture('incorporated-capital-EN.png')
-          +activity-buttons('incorporated-capital-EN.jpg')
+      +activity-buttons('incorporated-capital-EN.jpg')
       .incorporated-dividends(id="incorporated-dividends")(data-aos="fade-up")
         h2.incorporated-dividends__title Dividend Policy
         .incorporated-dividends__text.text The annual General Meeting of Shareholders approved the Regulations on UTLC&nbsp;ERA’s Dividend Policy on June 30, 2021 (Minutes No. 14 dated 30.06.2021). The dividend policy shall apply from the date of fulfillment of the Company’s dividend payment obligations for the reporting year 2020.
@@ -437,7 +456,7 @@ mixin incorporated-EN
               .incorporated-council__chairman-text.text On September 24, 2019, the Board of Directors approved the Regulations on Committees of the Board of Directors of UTLC ERA: Strategy Committee, Audit Committee, and HR, Remuneration and Corporate Governance Committee (Minutes No. 17 dated September 24, 2019). On October 10, 2020, the Board of Directors approved amendments to the above regulations with regard to payment of remuneration to the Committee members and secretary (Minutes No. 25 dated June 10, 2020). On January 25, 2021, amendments to the Regulations on the Strategy Committee were approved with regard to its remit expansion.
 
       .incorporated-corporative(id="incorporated-corporative")(data-aos="fade-up")
-        h2.incorporated-corporative__title Corporate Secretary
+        h3.incorporated-corporative__title Corporate Secretary
         .incorporated-corporative__row(data-aos="fade-up") 
           .incorporated-corporative__subtitle The Corporate Secretary of UTLC&nbsp;ERA elected by the Board of Directors is in charge of communication with the shareholders and the Board of Directors, coordinates protection of their rights and interests, ensures adoption of corporate resolutions and exercises a number of other functions.
           .incorporated-corporative__desk 
@@ -497,6 +516,17 @@ mixin incorporated-EN
               .alt-preview__knowledge-shares Share in UTLC&nbsp;ERA authorized capital — 0%
               .alt-preview__knowledge-shares Share of UTLC&nbsp;ERA ordinary stock — 0%
   .container-content
+    section.secret-com.mt-section(data-aos="fade-up")
+      h2.incorporated-governing__title Committee Secretary
+      .description.description_big The Committee Secretary is in charge of informational and documentary support of the Committee’s operations. 
+      .row
+        .col
+          .text This person is responsible for following up on the Committee’s resolutions. The Committee Secretary is responsible for retaining minutes and other Committee’s documents and records in accordance with UTLC ERA’s documentation retention procedures.
+          .text The Committee Secretary is elected by the relevant Committee. The job responsibilities for the position are described in the Regulations on the Committee and are aligned with the Russian laws and the Company’s Articles of Association. The Committee Secretary reports to the Committee Chairperson. 
+        .col
+          .text  From January 1, 2022, the functions of the Committee Secretary were exercised by Margarita Gerasina (Strategy Committee Minutes No. 11 dated 30.07.2021, No. 20 dated 11.07.2022; Audit Committee Minutes No. 11 dated 05.08.2021, No. 18 dated 06.07.2022; Minutes of the HR, Remuneration and Corporate Governance Committee No. 9 dated 02.08.2021, No. 15 dated 15.06.2022). Her powers were terminated early starting from September 6, 2022. From September 29, 2022 until present, the functions of the Committee Secretary have been exercised by Dmitri Bulgakov (Strategy Committee Minutes No. 23 dated 29.09.2022; Audit Committee Minutes No. 19 dated 29.09.2022; Minutes of the HR, Remuneration and Corporate Governance Committee No. 17 dated 29.09.2022).
+
+
     .incorporated-governing(id="incorporated-governing")(data-aos="fade-up") 
       h2.incorporated-governing__title Management Board and General Director
       .incorporated-governing__row 
@@ -638,7 +668,7 @@ mixin incorporated-CN
           .incorporated-capital__texts-text.text 公司注册资本由98 127股记名普通股组成，每股面值1 000卢布。三名成员各持有32,709股。 
         .incorporated-capital__img 
           +picture('incorporated-capital-CN.png')
-          +activity-buttons('incorporated-capital-CN.jpg')
+      +activity-buttons('incorporated-capital-CN.jpg')
       .incorporated-dividends(id="incorporated-dividends")(data-aos="fade-up")
         h2.incorporated-dividends__title 股利政策
         .incorporated-dividends__text.text 年度股东大会于2021年6月30日通过了《UTLC&nbsp;ERA股利政策规定》（2021年6月30日第14号纪要）。股息政策自公司履行2020年报告年度股息支付义务之日起扩大其效力。
@@ -797,6 +827,15 @@ mixin incorporated-CN
               .alt-preview__knowledge-shares 在UTLC&nbsp;ERA股份公司注册资本中的份额为0%。
               .alt-preview__knowledge-shares UTLC&nbsp;ERA股份公司普通股份额为0%。
   .container-content
+    section.secret-com.mt-section(data-aos="fade-up")
+      h2.incorporated-governing__title 委员会秘书
+      .description.description_big 委员会秘书是一名专家，为委员会的活动提供资料和文件支助。
+      .row
+        .col
+          .text  他负责监测执行委员会所作决定的进展情况。 委员会秘书负责按照环境保护局文件储存程序储存委员会的会议记录和其他文件和材料。
+          .text  董事会委员会秘书由相关委员会选举产生。 专家的职能固定在委员会的规定中，它们符合俄罗斯立法和公司章程。 委员会秘书在其活动中向委员会主席负责。
+        .col
+          .text  自2022年1月1日起，Margarita Pavlovna Gerasina一直担任委员会秘书（战略委员会第11号会议记录日期为2021年7月30日，第20号会议记录日期为2022年7月11日；审计委员会第11号会议记录日期为2021年8月5日，第18号会议记录日期为2022年7月6日；人力资源、薪酬和公司治理委员会第9号会议记录日期为2021年8月2日，2022年6月15日第15号)。 她的权力从2022年9月6日提前终止。 从2022年9月29日起至今，德米特里*亚历山德罗维奇*布尔加科夫履行委员会秘书的职责（2022年9月29日战略委员会第23号议定书）; 2022年9月29日审核委员会第19号会议记录；2022年9月29日人力资源、薪酬及企业管治委员会第17号会议记录）。
     .incorporated-governing(id="incorporated-governing")(data-aos="fade-up") 
       h2.incorporated-governing__title 董事会和总经理
       .incorporated-governing__row 
