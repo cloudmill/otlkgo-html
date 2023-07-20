@@ -280,6 +280,16 @@ mixin global-economy
       .mutal-trade__balance(data-aos="fade-up") 
         .mutal-trade__balance-top 
           .mutal-trade__balance-title Взаимная торговля Китая и Европы, 2021–2022&nbsp;гг., млрд евро
+        .mutal-trade__balance-legend 
+          .legend-cube
+            .legend-cube__line.green 
+            .legend-cube__text Импорт из Китая в ЕС 
+          .legend-cube
+            .legend-cube__line.light 
+            .legend-cube__text Экспорт в Китай из ЕС 
+          .legend-cube
+            .legend-cube__cube 
+            .legend-cube__text Торговый  баланс (положительное сальдно для Китая)
         .mutal-trade__balance-container
           .mutal-trade__balance-vector 
             +picture('mutal-trade-balance.png')
@@ -748,12 +758,23 @@ mixin global-economy
         .mutal-trade__shares2-container
       .mutal-trade__export(data-aos="fade-up") 
         .mutal-trade__export-title Экспорт Китай-Европа посредством основных видов транспорта, 2021–2022&nbsp;гг., % от стоимостной торговли
+        .mutal-trade__export-legend 
+          .export-legend 
+            .export-legend__cube.light 
+            .export-legend__text Авиа
+          .export-legend 
+            .export-legend__cube.green 
+            .export-legend__text Ж/Д
+          .export-legend 
+            .export-legend__cube.gray 
+            .export-legend__text Авто
+          .export-legend 
+            .export-legend__cube.semi-gray 
+            .export-legend__text Море
         .mutal-trade__export-vector.custom-desktop
           +picture('mutal-trade-export.png')
-        
         .mutal-trade__export-vector.custom-mobile
           +picture('mutal-trade-ex-mobile1.png')
-        
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Источники: 
               span.macroeconomics-grafics__col-list 
@@ -762,6 +783,19 @@ mixin global-economy
         +activity-buttons('mutal-trade-export.jpg').flex-m
       .mutal-trade__export2(data-aos="fade-up") 
         .mutal-trade__export2-title Экспорт Европа-Китай посредством основных видов транспорта, 2021–2022&nbsp;гг., % от стоимостной торговли
+        .mutal-trade__export-legend 
+          .export-legend 
+            .export-legend__cube.light 
+            .export-legend__text Авиа
+          .export-legend 
+            .export-legend__cube.green 
+            .export-legend__text Ж/Д
+          .export-legend 
+            .export-legend__cube.gray 
+            .export-legend__text Авто
+          .export-legend 
+            .export-legend__cube.semi-gray 
+            .export-legend__text Море
         .mutal-trade__export2-vector.custom-desktop
           +picture('mutal-trade-export2.png')
         .mutal-trade__export2-vector.custom-mobile
@@ -812,7 +846,7 @@ mixin global-economy-EN
           h4.macroeconomics-grafics__col-title Global GDP Growth in 2022
           .macroeconomics-grafics__col-img 
             +picture('macro-grafic1.png')
-          +activity-buttons('macro-grafic1.png')
+          +activity-buttons('macro-grafic1.jpg')
           .macroeconomics-grafics__col-links.first
             .macroeconomics-grafics__col-text Source: 
               span.macroeconomics-grafics__col-list 
@@ -825,7 +859,7 @@ mixin global-economy-EN
           h4.macroeconomics-grafics__col-title.second Global GDP growth forecast for 2023
           .macroeconomics-grafics__col-img 
             +picture('macro-grafic2.png')
-          +activity-buttons('macro-grafic2.png')
+          +activity-buttons('macro-grafic2.jpg')
           .macroeconomics-grafics__col-links.second
             .macroeconomics-grafics__col-text Source: 
               span.macroeconomics-grafics__col-list 
@@ -854,7 +888,7 @@ mixin global-economy-EN
                 a.macroeconomics-grafics__col-link(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
                 a.macroeconomics-grafics__col-link(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,<br class="desktop">
                 a.macroeconomics-grafics__col-link(href="https://www.un.org/" target="blank") UN World Economic Situation and Prospects Report
-          +activity-buttons('chinese-eco-grafic1-EN.png')
+          +activity-buttons('chinese-eco-grafic1-EN.jpg')
       .chinese-economy__quarter(data-aos="fade-up")
         h4.chinese-economy__quarter-title Chinese GNP Profile by Quarters, 2020 to 2022 (%)
         .macroeconomics-grafics__col-links.quarter.desktop
@@ -873,8 +907,8 @@ mixin global-economy-EN
           .macroeconomics-grafics__col-text Source: 
             span.macroeconomics-grafics__col-list 
               a.macroeconomics-grafics__col-link(href="http://www.stats.gov.cn/" target="blank") National Bureau of Statistics of China
-        +activity-buttons('quarter-vector.png').flex-desktop
-        +activity-buttons('quarter-vector-mobile.png').flex-m
+        +activity-buttons('quarter-vector.jpg').flex-desktop
+        +activity-buttons('quarter-vector.jpg').flex-m
         .chinese-economy__quarter-row 
           .chinese-economy__quarter-col 
             .ge-card.green.upper
@@ -909,13 +943,13 @@ mixin global-economy-EN
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html" target="blank") ECB
-          +activity-buttons('chinese-forecast-vector1-EN.png')
+          +activity-buttons('chinese-forecast-vector1-EN.jpg')
           h4.chinese-forecast__subtitle.mg-top Retail trade growth
           .chinese-forecast__text.line The retail trade volumes are expected to grow approximately by 2.5 to 3% in 2023 after their reduction by 0.2% in 2022. The COVID outbursts influenced the consumption in the final quarter of 2022, but their impact was not as strong as at the initial stage of the pandemic. 
           .chinese-forecast__subtitle-small.mg-bot30 Year-to-Year Retail Trade Volume Profile, 2020 to 2022 (%)
           .chinese-forecast__grafic-left 
             +picture('chinese-forecast-vector2.png')
-          +activity-buttons('chinese-forecast-vector2.png')
+          +activity-buttons('chinese-forecast-vector2.jpg')
         .chinese-forecast__col(data-aos="fade-up")
           h4.chinese-forecast__subtitle Rapid recovery starting from the second quarter
           .chinese-forecast__text.margin-small In the first quarter of 2023, the national economy will be adversely affected by COVID. Most of China’s population is reported to be previously infected by January, hence any repeated strong outbursts are less likely during the year. As a result, economic activity and consumption may rapidly recover starting from the second quarter triggered by the potential improvement of the epidemiological situation, release of excess savings in the household sector, and the government’s incentives.
@@ -930,7 +964,7 @@ mixin global-economy-EN
             .macroeconomics-grafics__col-text.big-14 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-14(href="http://www.stats.gov.cn/" target="blank") National Bureau of Statistics of China
-          +activity-buttons('chinese-forecast-vector3-EN.png')
+          +activity-buttons('chinese-forecast-vector3-EN.jpg')
     section(data-aos="fade-up").europe-economy(id="section-ge-europe")
       h2.europe-economy__title European Economy
       .europe-economy__row 
@@ -955,7 +989,7 @@ mixin global-economy-EN
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('eco-europe-vector.png')
+        +activity-buttons('eco-europe-vector.jpg')
     section(data-aos="fade-up").key-forecast(id="section-ge-key") 
       h2.key-forecast__title Key Forecasts for European Union
       .key-forecast__row.top
@@ -975,7 +1009,7 @@ mixin global-economy-EN
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.goldmansachs.com/" target="blank") Goldman Sachs,
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.fitchratings.com/" target="blank") Fitch Ratings,
                 a.macroeconomics-grafics__col-link.big-12(href="https://www.ecb.europa.eu/home/html/index.en.html" target="blank") ECB
-          +activity-buttons('key-forecast1-EN.png')
+          +activity-buttons('key-forecast1-EN.jpg')
       .key-forecast__row.bot(data-aos="fade-up") 
         .key-forecast__col 
           h4.key-forecast__subtitle Germany will avoid recession
@@ -1066,6 +1100,16 @@ mixin global-economy-EN
       .mutal-trade__balance(data-aos="fade-up") 
         .mutal-trade__balance-top 
           .mutal-trade__balance-title China’s and Europe’s Mutual Trade, 2021 to 2022 (billion euros)
+        .mutal-trade__balance-legend 
+          .legend-cube
+            .legend-cube__line.green 
+            .legend-cube__text Импорт из Китая в ЕС 
+          .legend-cube
+            .legend-cube__line.light 
+            .legend-cube__text Экспорт в Китай из ЕС 
+          .legend-cube
+            .legend-cube__cube 
+            .legend-cube__text Торговый  баланс (положительное сальдно для Китая)
         .mutal-trade__balance-container
           .mutal-trade__balance-vector 
             +picture('mutal-trade-balance-EN.png')
@@ -1073,7 +1117,7 @@ mixin global-economy-EN
               .macroeconomics-grafics__col-text.big-12 Source: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('mutal-trade-balance-EN.png')
+        +activity-buttons('mutal-trade-balance-EN.jpg')
       .mutal-trade__shares.desktop.shares-flex(data-aos="fade-up")
         .mutal-trade__col-share
           .mutal-trade__shares-title Percentage of European Countries in Total Import from China, 2022 (%)
@@ -1083,7 +1127,7 @@ mixin global-economy-EN
               .macroeconomics-grafics__col-text.big-12 Source: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-          +activity-buttons('mutal-trade-shares-EN.png').flex-desktop
+          +activity-buttons('mutal-trade-shares-EN.jpg').flex-desktop
         .mutal-trade__col-share
           .mutal-trade__shares-title Percentage of European Countries in Total Export to China, 2022 (%)
           .mutal-trade__shares-vector 
@@ -1092,7 +1136,7 @@ mixin global-economy-EN
               .macroeconomics-grafics__col-text.big-12 Source: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-          +activity-buttons('mutal-trade-shares-right-EN.png').flex-desktop
+          +activity-buttons('mutal-trade-shares-right-EN.jpg').flex-desktop
       .mutal-trade__shares.mobile(data-aos="fade-up")
         .mutal-trade__shares-title Percentage of European Countries in Total Import from China, 2022 (%)
         .mutal-trade__shares-vector 
@@ -1101,7 +1145,7 @@ mixin global-economy-EN
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('shares-mobile-1.png').flex-m
+        +activity-buttons('mutal-trade-shares-EN.jpg').flex-m
         .mutal-trade__shares-title Percentage of European Countries in Total Export to China, 2022 (%)
         .mutal-trade__shares-vector 
           +picture('shares-mobile-2.png')
@@ -1109,7 +1153,7 @@ mixin global-economy-EN
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('shares-mobile-2.png').flex-m
+        +activity-buttons('mutal-trade-shares-right-EN.jpg').flex-m
       .mutal-trade__shares2(data-aos="fade-up") 
         .mutal-trade__shares2-top 
           .mutal-trade__shares2-title Percentage of Goods in Total China–Europe Export, 2022 (%)
@@ -1534,28 +1578,54 @@ mixin global-economy-EN
         .mutal-trade__shares2-container
       .mutal-trade__export(data-aos="fade-up") 
         .mutal-trade__export-title China–Europe Export Using Main Transportation Modes, 2021 to 2022 (% of value trade)
+        .mutal-trade__export-legend 
+          .export-legend 
+            .export-legend__cube.light 
+            .export-legend__text Авиа
+          .export-legend 
+            .export-legend__cube.green 
+            .export-legend__text Ж/Д
+          .export-legend 
+            .export-legend__cube.gray 
+            .export-legend__text Авто
+          .export-legend 
+            .export-legend__cube.semi-gray 
+            .export-legend__text Море
         .mutal-trade__export-vector.custom-desktop
-          +picture('mutal-trade-export-EN.png')
+          +picture('mutal-trade-export.png')
         .mutal-trade__export-vector.custom-mobile
-          +picture('mutal-trade-ex-mobile1-EN.png')
+          +picture('mutal-trade-ex-mobile1.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('mutal-trade-export-EN.png').flex-desktop
-        +activity-buttons('mutal-trade-ex-mobile1-EN.png').flex-m
+        +activity-buttons('mutal-trade-export-EN.jpg').flex-desktop
+        +activity-buttons('mutal-trade-export-EN.jpg').flex-m
       .mutal-trade__export2(data-aos="fade-up") 
         .mutal-trade__export2-title Europe–China Export Using Main Transportation Modes, 2021 to 2022 (% of value trade)
+        .mutal-trade__export-legend 
+          .export-legend 
+            .export-legend__cube.light 
+            .export-legend__text Авиа
+          .export-legend 
+            .export-legend__cube.green 
+            .export-legend__text Ж/Д
+          .export-legend 
+            .export-legend__cube.gray 
+            .export-legend__text Авто
+          .export-legend 
+            .export-legend__cube.semi-gray 
+            .export-legend__text Море
         .mutal-trade__export2-vector.custom-desktop
-          +picture('mutal-trade-export2-EN.png')
+          +picture('mutal-trade-export2.png')
         .mutal-trade__export2-vector.custom-mobile
-          +picture('mutal-trade-ex-mobile2-EN.png')
+          +picture('mutal-trade-ex-mobile2.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 Source: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('mutal-trade-export2-EN.png').flex-desktop
-        +activity-buttons('mutal-trade-ex-mobile2-EN.png').flex-m
+        +activity-buttons('mutal-trade-export2-EN.jpg').flex-desktop
+        +activity-buttons('mutal-trade-export2-EN.jpg').flex-m
     section(data-aos="fade-up").ge-results 
       .ge-results__rect 
         +result-plug-svg
@@ -1846,6 +1916,16 @@ mixin global-economy-CN
       .mutal-trade__balance(data-aos="fade-up") 
         .mutal-trade__balance-top 
           .mutal-trade__balance-title 2021-2022年中欧双边贸易，亿欧元
+        .mutal-trade__balance-legend 
+          .legend-cube
+            .legend-cube__line.green 
+            .legend-cube__text Импорт из Китая в ЕС 
+          .legend-cube
+            .legend-cube__line.light 
+            .legend-cube__text Экспорт в Китай из ЕС 
+          .legend-cube
+            .legend-cube__cube 
+            .legend-cube__text Торговый  баланс (положительное сальдно для Китая)
         .mutal-trade__balance-container
           .mutal-trade__balance-vector 
             +picture('mutal-trade-balance-CN.png')
@@ -1853,7 +1933,7 @@ mixin global-economy-CN
               .macroeconomics-grafics__col-text.big-12 资料来源: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('mutal-trade-balance-CN.png')
+        +activity-buttons('mutal-trade-balance-CN.jpg')
       .mutal-trade__shares.desktop.shares-flex(data-aos="fade-up")
         .mutal-trade__col-share
           .mutal-trade__shares-title 2022年欧洲国家从中国进口的份额，%
@@ -1863,7 +1943,7 @@ mixin global-economy-CN
               .macroeconomics-grafics__col-text.big-12 资料来源: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-          +activity-buttons('mutal-trade-shares-CN.png').flex-desktop
+          +activity-buttons('mutal-trade-shares-CN.jpg').flex-desktop
         .mutal-trade__col-share
           .mutal-trade__shares-title 2022年欧洲国家对中国出口的份额，%
           .mutal-trade__shares-vector 
@@ -1872,7 +1952,7 @@ mixin global-economy-CN
               .macroeconomics-grafics__col-text.big-12 资料来源: 
                 span.macroeconomics-grafics__col-list 
                   a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-          +activity-buttons('mutal-trade-shares-right-CN.png').flex-desktop
+          +activity-buttons('mutal-trade-shares-right-CN.jpg').flex-desktop
       .mutal-trade__shares.mobile(data-aos="fade-up")
         .mutal-trade__shares-title 2022年欧洲国家从中国进口的份额，%
         .mutal-trade__shares-vector 
@@ -1881,7 +1961,7 @@ mixin global-economy-CN
             .macroeconomics-grafics__col-text.big-12 资料来源: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('mutal-trade-shares-CN.png').flex-m
+        +activity-buttons('mutal-trade-shares-CN.jpg').flex-m
         .mutal-trade__shares-title 2022年欧洲国家对中国出口的份额，%
         .mutal-trade__shares-vector 
           +picture('mutal-trade-shares-right-CN.png')
@@ -1889,7 +1969,7 @@ mixin global-economy-CN
             .macroeconomics-grafics__col-text.big-12 资料来源: 
               span.macroeconomics-grafics__col-list 
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
-        +activity-buttons('mutal-trade-shares-right-CN.png').flex-m
+        +activity-buttons('mutal-trade-shares-right-CN.jpg').flex-m
       .mutal-trade__shares2(data-aos="fade-up") 
         .mutal-trade__shares2-top 
           .mutal-trade__shares2-title 2022年中欧出口货物份额，%
@@ -2314,10 +2394,23 @@ mixin global-economy-CN
         .mutal-trade__shares2-container
       .mutal-trade__export(data-aos="fade-up") 
         .mutal-trade__export-title 2021-2022年通过主要运输方式运输的中欧出口占贸易额的%
+        .mutal-trade__export-legend 
+          .export-legend 
+            .export-legend__cube.light 
+            .export-legend__text Авиа
+          .export-legend 
+            .export-legend__cube.green 
+            .export-legend__text Ж/Д
+          .export-legend 
+            .export-legend__cube.gray 
+            .export-legend__text Авто
+          .export-legend 
+            .export-legend__cube.semi-gray 
+            .export-legend__text Море
         .mutal-trade__export-vector.custom-desktop
-          +picture('mutal-trade-export-CN.png')
+          +picture('mutal-trade-export.png')
         .mutal-trade__export-vector.custom-mobile
-          +picture('mutal-trade-ex-mobile1-CN.png')
+          +picture('mutal-trade-ex-mobile1.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 资料来源: 
               span.macroeconomics-grafics__col-list 
@@ -2326,10 +2419,23 @@ mixin global-economy-CN
         +activity-buttons('mutal-trade-ex-mobile1-CN.png').flex-m
       .mutal-trade__export2(data-aos="fade-up") 
         .mutal-trade__export2-title 2021-2022年通过主要运输方式运输的欧洲-中国出口占贸易价值%
+        .mutal-trade__export-legend 
+          .export-legend 
+            .export-legend__cube.light 
+            .export-legend__text Авиа
+          .export-legend 
+            .export-legend__cube.green 
+            .export-legend__text Ж/Д
+          .export-legend 
+            .export-legend__cube.gray 
+            .export-legend__text Авто
+          .export-legend 
+            .export-legend__cube.semi-gray 
+            .export-legend__text Море
         .mutal-trade__export2-vector.custom-desktop
-          +picture('mutal-trade-export2-CN.png')
+          +picture('mutal-trade-export2.png')
         .mutal-trade__export2-vector.custom-mobile
-          +picture('mutal-trade-ex-mobile2-CN.png')
+          +picture('mutal-trade-ex-mobile2.png')
         .macroeconomics-grafics__col-links.shares
             .macroeconomics-grafics__col-text.big-12 资料来源: 
               span.macroeconomics-grafics__col-list 

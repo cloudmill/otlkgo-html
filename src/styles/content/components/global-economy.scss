@@ -1766,6 +1766,61 @@
     height: auto;
   }
 
+  &__balance{
+    &-legend{
+      display: flex;
+      align-items: center;
+      gap: 34px;
+
+      @media #{media("<", m)} {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      .legend-cube {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        &__line{
+          width: 18px;
+          height: 4px; 
+          border-radius: 4.427px; 
+          flex-shrink: 0;
+          
+          &.green{
+            background-color: color(green);
+          }
+          &.light{
+            background-color: color(light-green);
+          }
+        }
+
+        &__text{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        @media #{media("<", m)} {
+          font-size: 10px; 
+        }
+        }
+
+        &__cube{
+          width: 18px;
+          height: 18px; 
+          border-radius: 4.427px;
+          background: #BECBC3; 
+          flex-shrink: 0;
+        }
+      }
+    }
+    &.desktop {
+      display: none;
+    }
+  }
+
   &__title {
     margin-bottom: 40px;
 
@@ -2330,6 +2385,47 @@
 
         @media #{media("<", m)} {
           display: block;
+        }
+      }
+    }
+
+    &-legend{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      .export-legend {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &__cube{
+
+          width: 17px;
+          height: 17px; 
+          border-radius: 4.427px; 
+          &.light{
+            background-color: #69DA91;
+          }
+          &.green{
+            background-color: #045C25;
+          }
+          &.gray{
+            background-color: #96BCA4;
+          }
+          &.semi-gray{
+            background-color: #C4DACC;
+          }
+        }
+
+        &__text{
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+
+          @media #{media("<", m)} {
+            font-size: 10px;
+          }
         }
       }
     }
