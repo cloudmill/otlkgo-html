@@ -42,7 +42,7 @@
 
   &__grey {
     font-weight: 700;
-    
+
     font-size: 16px;
     letter-spacing: -0.06em;
     text-transform: uppercase;
@@ -633,4 +633,89 @@
   height: 4px;
 
   background-color: #045c25;
+}
+
+
+.trends-avia {
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+
+    @media #{media('<',m)} {
+      padding-top: 8px;
+    }
+  }
+
+  &_min {
+    font-size: 12px;
+  }
+
+  &__top {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    &_text {
+      grid-column: span 2;
+
+      @media #{media('<',t)} {
+        grid-column: span 3;
+      }
+    }
+
+    @media #{media('<',m)} {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+  }
+
+  &__row {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 140px;
+
+    @media #{media('<',t)} {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 40px;
+      gap: 40px;
+    }
+
+    @media #{media('<',m)} {
+      gap: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__elem {
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 6px;
+
+  }
+
+  &__img {
+    margin-top: 20px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 }

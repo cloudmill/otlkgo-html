@@ -96,6 +96,8 @@ mixin trends-content
         +activity-buttons('trends-rates-mobile.png').flex-m
 
 
+  
+  
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -105,7 +107,7 @@ mixin trends-content
           .col 
             .links.trends-demand__links.desktop
               p.links__text.trends-demand__links-text Источник:&nbsp;
-              a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+              a.links__link.trends-demand__link(href="https://www.iata.org/" target='blank') IATA
         .trends-demand__elements
           .trends-demand__elem
             .elem
@@ -125,6 +127,13 @@ mixin trends-content
             a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
         +activity-buttons('trends-demand.png').desktop
         +activity-buttons('trends-demand-mobile.png').flex-m
+
+
+
+
+
+
+
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
       .trends-forecast__inner 
@@ -149,7 +158,56 @@ mixin trends-content
           .col 
             p.text.trends-forecast2__text Осторожный оптимизм преимущественно связан с перспективой резкого подъема экономической активности в Китае. Тем не менее, неопределенность относительно будущих перспектив высока, как минимум из-за высоких запасов нереализованной продукции у ритейлеров в Европе, но также и из-за растущей конкуренции со стороны морских сервисов. Если работа в портах и соблюдение сроков доставки продолжат показывать улучшения, то это может привести еще к большему оттоку грузов &nbsp; <br class='br'> в пользу морских перевозчиков. Также необходимо учитывать фактор транзитного времени. При текущих высоких запасах инвентаря в Европе у ритейлеров нет необходимости в быстром восполнении продукции, то есть ключевое преимущество авиаперевозок — скорость — не имеет сильной востребованности.
             p.text.trends-forecast2__text Сокращение ставок авиа-сервисов, в свою очередь, может изменить ситуацию. Уровень предложения, вероятнее всего, продолжит восстанавливаться, что вкупе со слабыми ожиданиями по росту объемов перевозок может привести к снижению ставок в ближайшие кварталы. Таким образом, вероятно улучшение конкурентоспособности ставок на авиагрузоперевозки относительно железнодорожных &nbsp; <br class='br'> за указанный период.
+  
+  
+  section(data-aos="fade-up").trends-avia.mt-section
+    .container-content 
+      .trends-avia__inner 
+        h3 Рынок грузовых авиаперевозок
+        .trends-avia__top
+          p.trends-avia__text.text.trends-avia__top_text В прошлом году привлекательность авиа-сервисов была крайне высокой. Одним из ключевых факторов стала стоимость — ставки морского фрахта выросли настолько, что грузовладельцы предпочли авиа-доставку. Однако, стабилизация на рынке морских грузоперевозок привела к развороту тренда, что сказалось на объемах авиаперевозчиков.
+          .item.item_size-4
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='8' data-countup-prefix='-' data-countup-suffix='%') 
+            .item__row 
+              p.item__subtext Сокращение объемов грузовых авиаперевозок по миру в 2022 году
+        .trends-avia__row 
+          .trends-avia__col 
+            p.text Ухудшение экономических показателей по всему миру, рост цен на энергоносители и разгон инфляции также имели негативное влияние. Среди всех регионов Европа ожидаемо показала наиболее слабую динамику. 
+            p.text Объемы перевозок по всем основным международным трейдам также показывали стабильное снижение в последние месяцы. Динамика объемов на трейде Азия-Европа начала сильное сокращение со второго полугодия 2022 года, а в ноябре показатель в годовом выражении составил около 23-24%.
+          .trends-avia__right 
+            .trends-avia__subtitle Динамика объемов грузовых авиаперевозок в Азии, Европе и глобально, изм. г/г в %
+            .trends-avia__elem 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_green 
+                p.trends-avia_min Азия
+              .trends-avia__item 
+                span.chart-decor.chart-decor_light-green 
+                p.trends-avia_min Европа
+              .trends-avia__item 
+                span.chart-decor.chart-decor_gray 
+                p.trends-avia_min Глобальная индустрия
+            .trends-avia__img 
+              +picture('trends-avia.png')
+              .links.trends-demand__links
+                p.links__text.trends-demand__links-text Источник:&nbsp;
+                a.links__link.trends-demand__link(href="https://www.iata.org/" target='blank') IATA
+              +activity-buttons('trends-avia.png')
+  
 
+
+
+
+
+
+
+
+
+
+
+
+  
 mixin trends-content-CN
   section(data-aos="fade-up").trends-market(id="trends-market") 
     .container-content 
@@ -244,6 +302,12 @@ mixin trends-content-CN
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
         +activity-buttons('trends-rates.png').desktop
         +activity-buttons('trends-rates-mobile.png').flex-m
+  
+  
+
+  
+  
+  
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -251,22 +315,32 @@ mixin trends-content-CN
           .col
             h6.trends-demand__title 全球海运集装箱运输需求，2020-2022年事实，2023-2026年预测，百万TEU和%
           .col 
-            .trends-demand__svg 
-              +picture('trends-demand-mobile.png','t').mobile
-              +activity-buttons('trends-demand-mobile.png').mobile
-
-            .links.trends-demand__links 
+            .links.trends-demand__links.desktop
               p.links__text.trends-demand__links-text 资料来源:&nbsp;
-              a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+              a.links__link.trends-demand__link(href="https://www.iata.org/" target='blank') IATA
+        .trends-demand__elements
+          .trends-demand__elem
+            .elem
+              span.chart-decor.chart-decor_light-green 
+              span.chart-decor.chart-decor_green
+              span.chart-decor.chart-decor_gray
+            p.trends-demand__text 吞吐量，百萬標準箱
+            .elem
+              .elem_line
+              p.trends-demand__text 逐年變化
         .trends-demand__svg 
-          +picture('trends-demand.png','t').desktop
-          +activity-buttons('trends-demand.png').desktop
-
+          +picture('trends-demand-mobile.png','t').mobile
+        .trends-demand__svg 
+        +picture('trends-demand.png','t').desktop
+        .links.trends-demand__links.flex-m
+            p.links__text.trends-demand__links-text 资料来源:&nbsp;
+            a.links__link.trends-demand__link(href="https://www.drewry.co.uk/" target='blank') Drewry
+        +activity-buttons('trends-demand.png').desktop
+        +activity-buttons('trends-demand-mobile.png').flex-m
   section(data-aos="fade-up").trends-forecast(id="trends-forecast")  
     .container-content 
       .trends-forecast__inner 
         h3.trends-forecast__title 预测：买方市场
-
         .row  
           .col 
             p.trends-forecast__description 中欧经济增长前景近期明显好转，因此，承运人对2023年非常乐观。
@@ -285,6 +359,43 @@ mixin trends-content-CN
             p.trends-forecast2__description 据市场人士分析，未来几个月航空货运需求可能会下降，但从2023年上半年开始可能会有所增长。谨慎的乐观情绪主要与中国经济活动大幅复苏的前景有关。未来前景的不确定性很高，至少是因为欧洲零售商的未销售产品库存很高，但也因为来自海运服务的竞争日益激烈。如果港口和交货时间继续有所改善，这可能导致更多的货物流向海运承运人。同时需要考虑过境时间的因素。在欧洲目前库存高企的情况下，零售商并不需要快速补充产品，也就是说，空运的关键优势 —— 速度 —— 没有强大的需求空间。
           .col 
             p.text.trends-forecast2__text 反之，降低航空服务费率可以改变这种情况。供应水平可能会继续复苏，加上对交通量增长的预期疲软，可能会导致未来几个季度的费率下降。因此，在特定时期内，航空货运费率相对于铁路货运费率的竞争力有可能提高。
+
+  section(data-aos="fade-up").trends-avia.mt-section
+    .container-content 
+      .trends-avia__inner 
+        h3 航空货运市场
+        .trends-avia__top
+          p.trends-avia__text.text.trends-avia__top_text 去年，航空服务的吸引力极高。关键因素之一是成本 — 海运费上涨如此之多，以至于货主更青睐空运。但是，海运市场的企稳导致趋势逆转，影响了航空承运人的运输量。
+          .item.item_size-4
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='8' data-countup-prefix='-' data-countup-suffix='%') 
+            .item__row 
+              p.item__subtext 2022年全球航空货运量下降
+        .trends-avia__row 
+          .trends-avia__col 
+            p.text 世界各地经济表现的恶化、能源价格的上涨和通货膨胀的加速也产生了负面影响。在所有地区中，正如预期的那样，欧洲表现出最弱的动态。
+            p.text 近几个月来，所有主要国际贸易的运输量也稳步下降。亚欧贸易的交易量动态从2022年下半年开始大幅下降，11月，按年计算约为23-24%。
+          .trends-avia__right 
+            .trends-avia__subtitle 亚洲、欧洲航空货运量动态和与去年相比全球变化，%
+            .trends-avia__elem 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_green 
+                p.trends-avia_min 亚洲 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_light-green 
+                p.trends-avia_min 欧洲
+              .trends-avia__item 
+                span.chart-decor.chart-decor_gray 
+                p.trends-avia_min 全球产业
+            .trends-avia__img 
+              +picture('trends-avia.png')
+              .links.trends-demand__links
+                p.links__text.trends-demand__links-text Источник:&nbsp;
+                a.links__link.trends-demand__link(href="https://www.iata.org/" target='blank') IATA
+              +activity-buttons('trends-avia.png')
+  
+
 mixin trends-content-EN
   section(data-aos="fade-up").trends-market(id="trends-market") 
     .container-content 
@@ -381,6 +492,14 @@ mixin trends-content-EN
           a.links__link.trends-rates__links-link(href='https://index1520.com/' target='blank') ERAI
         +activity-buttons('trends-rates.png').desktop
         +activity-buttons('trends-rates-mobile.png').flex-m
+
+
+
+
+
+
+
+
   section(data-aos="fade-up").trends-demand 
     .container-content 
       .trends-demand__inner 
@@ -436,4 +555,39 @@ mixin trends-content-EN
             p.text.trends-forecast2__text  The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
             p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period.
 
-            
+  section(data-aos="fade-up").trends-avia.mt-section
+    .container-content 
+      .trends-avia__inner 
+        h3 Air Freight Market
+        .trends-avia__top
+          p.trends-avia__text.text.trends-avia__top_text Last year, the air services were extremely attractive. One of the main drivers was their cost: the sea freight rates grew so much that cargo owners preferred to switch to air transportation. However, the trend changed as the sea freight market stabilized, which affected the cargo volumes transported by air carriers.
+          .item.item_size-4
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='8' data-countup-prefix='-' data-countup-suffix='%') 
+            .item__row 
+              p.item__subtext Reduction in global air freight volumes in 2022
+        .trends-avia__row 
+          .trends-avia__col 
+            p.text The declining global economic indicators, growing energy prices and rampant inflation also contributed to the adverse impact. As expected, Europe demonstrated the weakest profile among all regions. 
+            p.text The traffic volumes for all major international trades also demonstrated stable decline over the recent months. The volume profile in the Asia–Europe trade started to reduce drastically in the second half of 2022, with the year-to-year indicator reaching approximately 23 to 24% in November.
+          .trends-avia__right 
+            .trends-avia__subtitle Air Freight Volume Profile in Asia, Europe and Globally, year-to-year changes in %
+            .trends-avia__elem 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_green 
+                p.trends-avia_min Asia
+              .trends-avia__item 
+                span.chart-decor.chart-decor_light-green 
+                p.trends-avia_min Europe
+              .trends-avia__item 
+                span.chart-decor.chart-decor_gray 
+                p.trends-avia_min Global industry
+            .trends-avia__img 
+              +picture('trends-avia.png')
+              .links.trends-demand__links
+                p.links__text.trends-demand__links-text Source:&nbsp;
+                a.links__link.trends-demand__link(href="https://www.iata.org/" target='blank') IATA
+              +activity-buttons('trends-avia.png')
+  
+  
