@@ -33,10 +33,6 @@ mixin sidebar
               .header-media__share-col 
                 .header-media__cubes 
                   a.header-media__cube(href="#") 
-                    +facebook-svg
-                  a.header-media__cube(href="#") 
-                    +twitter-svg
-                  a.header-media__cube(href="#") 
                     +vk-svg
                   a.header-media__cube(href="#") 
                     +telegram-svg
@@ -69,33 +65,29 @@ mixin sidebar
           a.header-sub__item-title(href="about#section-geography")  География деятельности
         .header-sub__item 
           a.header-sub__item-title(href="about#section-corruption") Противодействие коррупции
-        .header-sub__item 
-          a.header-sub__item-title(href="about#section-corruption") Стратегический отчет
     .header-sub(data-header-sub="strategy") 
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Стратегический отчет
       .header-sub__list 
         .header-sub__item 
           a.header-sub__item-title(href="page-2#preview-ge")  Глобальная экономика <br> и логистический рынок в 2022 году
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Макроэкономическая ситуация
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Экономика Китая
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Экономика Европы
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Взаимная торговля Китая и Европы
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Вывод
+          a.header-sub__item-subsection(href="page-2#section-ge-macroeconomics")  Макроэкономическая ситуация
+          a.header-sub__item-subsection(href="page-2#section-ge-chinese")  Экономика Китая
+          a.header-sub__item-subsection(href="page-2#section-ge-europe")  Экономика Европы
+          a.header-sub__item-subsection(href="page-2#section-ge-mutal")  Взаимная торговля Китая и Европы
+          a.header-sub__item-subsection(href="page-2#nav-res")  Вывод
         .header-sub__item 
           a.header-sub__item-title(href="page-2#preview-trends") Тренды логистической отрасли: <br>время альтернатив
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Рынок морских контейнерных перевозок
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Прогноз: рынок покупателя
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Рынок грузовых авиаперевозок
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report")  Прогноз: осторожный оптимизм
+          a.header-sub__item-subsection(href="page-2#trends-market")  Рынок морских контейнерных перевозок
+          a.header-sub__item-subsection(href="page-2#trends-forecast")  Прогноз: рынок покупателя
+          a.header-sub__item-subsection(href="page-2#nav-avia")  Рынок грузовых авиаперевозок
+          a.header-sub__item-subsection(href="page-2#trends-forecast2")  Прогноз: осторожный оптимизм
         .header-sub__item 
           a.header-sub__item-title(href="page-2#preview-transit")  Рынок ж/д транзита Китай–Европа–Китай
         .header-sub__item 
           a.header-sub__item-title(href="page-2#preview-strategy-leader")  Стратегия технологического <br>лидера 
         .header-sub__item 
-          a.header-sub__item-title(href="page-2#preview-strategy-leader")  Что было сделано в рамках сотрудничества в 2022 году
-        .header-sub__item 
-          a.header-sub__item-title(href="page-2#preview-strategy-leader")  Результаты <br> деятельности в 2022 году
+          a.header-sub__item-title(href="page-2#nav-outcome")  Что было сделано в рамках сотрудничества в 2022 году
     .header-sub(data-header-sub="results") 
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Результаты <br> деятельности в 2022 году
@@ -105,16 +97,19 @@ mixin sidebar
         .header-sub__item 
           a.header-sub__item-title(href="page-3#formation-park") Формирование парка: оптимизация
         .header-sub__item 
-          a.header-sub__item-title(href="page-3#client-development__paperless")  Безбумажные перевозки: инновационное <br>развитие
+          a.header-sub__item-title(href="page-3#client-portfolio")  Клиентский профиль
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3#client-transportation") Развитие перевозок Китай-РФ
+        .header-sub__item 
+          a.header-sub__item-title(href="page-3#preview-section-save")  Безбумажные перевозки: инновационное развитие
         .header-sub__item 
           a.header-sub__item-title(href="page-3#preview-main-line") Главные направления цифрового развития
         .header-sub__item 
-          a.header-sub__item-title(href="page-3#preview-section-save")  Сохранить достигнутое
-          a.header-sub__item-subsection(href="about-EN#section-who-we-report") Финансовый обзор
+          a.header-sub__item-title(href="page-3#preview-section-save") Сохранить достигнутое
+          a.header-sub__item-subsection(href="page-3#preservation-finance")  Финансовый обзор
         .header-sub__item 
           a.header-sub__item-title(href="page-3#preview-care") С заботой о деловом климате
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3#preview-care") Устойчивое развитие
+
     .header-sub(data-header-sub="growth") 
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Устойчивое развитие
@@ -150,8 +145,6 @@ mixin sidebar
           a.header-sub__item-title(href="page-4#section-purchase") Закупочная деятельность
         .header-sub__item 
           a.header-sub__item-title(href="page-4#preview-energetic-resourses") Использование энергетических<br> ресурсов
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4#preview-energetic-resourses") Корпоративное <br>управление
     .header-sub(data-header-sub="corporate")
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Корпоративное <br>управление
@@ -219,10 +212,6 @@ mixin sidebar-EN
               .header-media__share-col 
                 .header-media__cubes 
                   a.header-media__cube(href="#") 
-                    +facebook-svg
-                  a.header-media__cube(href="#") 
-                    +twitter-svg
-                  a.header-media__cube(href="#") 
                     +vk-svg
                   a.header-media__cube(href="#") 
                     +telegram-svg
@@ -252,12 +241,9 @@ mixin sidebar-EN
         .header-sub__item 
           a.header-sub__item-title(href="about-EN#section-business")  Business Model
         .header-sub__item 
-          a.header-sub__item-title(href="about-EN#section-geography")  Operating Geography 2022
+          a.header-sub__item-title(href="about-EN#section-geography")  Operating Geography 
         .header-sub__item 
           a.header-sub__item-title(href="about-EN#section-corruption") Anti-Corruption Activities 
-        .header-sub__item 
-          a.header-sub__item-title(href="page-2-EN") Strategic Report
-
     .header-sub(data-header-sub="strategy") 
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Strategic Report
@@ -289,9 +275,6 @@ mixin sidebar-EN
 
         .header-sub__item 
           a.header-sub__item-title(href="page-2-EN#nav-outcome")  The outcome of the cooperation in 2022
-        .header-sub__item 
-          a.header-sub__item-title(href="page-3-EN")  2022 Performance
-
     .header-sub(data-header-sub="results") 
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text 2022 Performance
@@ -313,9 +296,6 @@ mixin sidebar-EN
           a.header-sub__item-subsection(href="about-EN#section-who-we-mission") Financial Overview
         .header-sub__item 
           a.header-sub__item-title(href="page-3-EN#preview-care")  Caring for Business Climate
-        .header-sub__item 
-          a.header-sub__item-title(href="page-4-EN")  Sustainable Development
-             
     .header-sub(data-header-sub="growth") 
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Sustainable development
@@ -344,7 +324,7 @@ mixin sidebar-EN
         .header-sub__item 
           a.header-sub__item-title(href="page-4-EN#nav-environmental") Environmental Performance <br> as a Competitive Edge
           a.header-sub__item-subsection(href="about-EN#section-who-we-mission") Climate Impact
-          a.header-sub__item-subsection(href="about-EN#section-who-we-mission") СО2  Emission Profile at UTLC ERA
+          a.header-sub__item-subsection(href="about-EN#section-who-we-mission") СО<span class="fz-10">2</span> Emission Profile at UTLC ERA
           a.header-sub__item-subsection(href="about-EN#section-who-we-mission") Environmental Protection
 
         .header-sub__item 
@@ -355,8 +335,6 @@ mixin sidebar-EN
           a.header-sub__item-title(href="page-4-EN#section-purchase") Procurement
         .header-sub__item 
           a.header-sub__item-title(href="page-4-EN#preview-energetic-resourses") Use of Energy Resources
-        .header-sub__item 
-          a.header-sub__item-title(href="page-5-EN") Corporate Governance
     .header-sub(data-header-sub="corporate")
       .header-sub__back-item.mobile-custom(data-sub-back='')
         .header-sub__back-text Corporate <br>Governance
@@ -379,8 +357,6 @@ mixin sidebar-EN
           a.header-sub__item-title(href="page-5-EN#control-hero") Control System
         .header-sub__item 
           a.header-sub__item-title(href="page-5-EN#control-hero") Risk Management
-        .header-sub__item 
-          a.header-sub__item-title(href="page-5-EN#control-hero") Appendices
   .header-history(data-menu-history)
     .header-history__inner 
       .header-history__close(data-history-close)
@@ -427,10 +403,6 @@ mixin sidebar-CN
                 .header-media__share-text.header-media__text 分享
               .header-media__share-col 
                 .header-media__cubes 
-                  a.header-media__cube(href="#") 
-                    +facebook-svg
-                  a.header-media__cube(href="#") 
-                    +twitter-svg
                   a.header-media__cube(href="#") 
                     +vk-svg
                   a.header-media__cube(href="#") 

@@ -148,19 +148,9 @@ mixin trends-content
             p.text.trends-forecast__text Так, еще в пресс-релизе за декабрь Maersk прогнозировали сниженный спрос в течение всего 2023 года из-за относительной слабости мировой экономики и высоких запасов нереализованной продукции &nbsp; <br class='br'> у ритейлеров. В январском выпуске компания уже заявила о причинах для оптимизма, отметив возможность значительного подъема торговли и спроса со второго полугодия на фоне отказа Китая &nbsp; <br class='br'> от жестких антиковидных мер. Тем не менее, вероятность того, что на рынке образуется переизбыток мощностей, все еще высока.
             p.text.trends-forecast__text Текущие прогнозы по спросу и предложению приводят к выводу, что в 2023 году наиболее вероятен «рынок покупателя». Тем не менее, морские перевозчики могут начать принимать меры для усиленного контроля предложения и обеспечения роста ставок. По информации Drewry, рентабельность сервисов Азия-Северная Европа уже снизилась практически до нуля, соответственно, компаниям придется применять все доступные рычаги для избежания финансовых потерь.
             p.text.trends-forecast__text Помимо стандартного инструмента в виде отмены рейсов, перевозчики могут улучшить экономику перевозок за счет применения практики «slow steaming» (подразумевает намеренное снижение скорости судов, что позволяет снизить издержки за счет уменьшения расхода топлива, сокращения выбросов СО<span class="fz-10">2</span>) и направления судов через Мыс Доброй Надежды (для избежания сборов &nbsp; <br class='br'> за проследование через Суэцкий канал, вывода части предложения с рынка за счет роста транзитного времени на 10-12 суток). Безусловно, эффективность действий перевозчиков будет зависеть &nbsp; <br class='br'> от множества фундаментальных факторов, влияющих на индустрию. Внезапные скачки спроса, заторы &nbsp; <br class='br'> в портах, природные катаклизмы и многие другие причины могут значительно изменить ситуацию &nbsp; <br class='br'> на рынке.
-  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
-    .container-content 
-      .trends-forecast2__inner 
-        h3.trends-forecast2__title Прогноз: осторожный оптимизм
-        .row
-          .col 
-            p.trends-forecast2__description По мнению участников рынка, спрос на грузовые авиаперевозки, вероятнее всего, будет находиться на пониженных уровнях &nbsp; <br class='br'> в ближайшие месяцы, но некоторый рост возможен с первого полугодия 2023 года.
-          .col 
-            p.text.trends-forecast2__text Осторожный оптимизм преимущественно связан с перспективой резкого подъема экономической активности в Китае. Тем не менее, неопределенность относительно будущих перспектив высока, как минимум из-за высоких запасов нереализованной продукции у ритейлеров в Европе, но также и из-за растущей конкуренции со стороны морских сервисов. Если работа в портах и соблюдение сроков доставки продолжат показывать улучшения, то это может привести еще к большему оттоку грузов &nbsp; <br class='br'> в пользу морских перевозчиков. Также необходимо учитывать фактор транзитного времени. При текущих высоких запасах инвентаря в Европе у ритейлеров нет необходимости в быстром восполнении продукции, то есть ключевое преимущество авиаперевозок — скорость — не имеет сильной востребованности.
-            p.text.trends-forecast2__text Сокращение ставок авиа-сервисов, в свою очередь, может изменить ситуацию. Уровень предложения, вероятнее всего, продолжит восстанавливаться, что вкупе со слабыми ожиданиями по росту объемов перевозок может привести к снижению ставок в ближайшие кварталы. Таким образом, вероятно улучшение конкурентоспособности ставок на авиагрузоперевозки относительно железнодорожных &nbsp; <br class='br'> за указанный период.
+
   
-  
-  section(data-aos="fade-up").trends-avia.mt-section
+  section(data-aos="fade-up" id='nav-avia').trends-avia.mt-section
     .container-content 
       .trends-avia__inner 
         h3 Рынок грузовых авиаперевозок
@@ -196,14 +186,50 @@ mixin trends-content
               +activity-buttons('trends-avia.png')
   
 
+  section(data-aos="fade-up").mt-section.trends-avia2
+    .container-content 
+      .trends-avia2__inner 
+        .trends-avia2__left 
+          .trends-avia__subtitle Уровень предложения на рынке грузовых авиаперевозок сейчас снижен относительно доковидного уровня, но является достаточным, учитывая относительную слабость спроса. 
+          .item.item_size-4
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='17' data-countup-suffix='%' data-countup-prefix='-') 
+            .item__row 
+              p.item__subtext Отставание провозных мощностей европейских перевозчиков в 2022 году от уровня 2019 года
+          .text В отличие от морских перевозчиков, авиакомпании грамотно контролировали уровень предложения в 2022 году и не допустили сильного снижения ставок. Однако, динамика сильно зависела от направления перевозки. Так, в заключительную неделю декабря средняя ставка для направления Китай-Европа составила 4,43 $/кг, что на 44% ниже прошлогоднего значения, но на ~50% выше значения 2020 года. Ставка Европа-Китай составила 2,80 $/кг, что на 12% выше в годовом выражении и на ~90% выше аналогичной ставки за 2020 год. 
+        .trends-avia2__right
+          .trends-avia2__text
+            .text В 2023 году возможен рост предложения на рынке за счет возрождения международного туризма в странах, где ранее были жесткие антиковидные меры. В начале января перевозчики уже нарастили провозные мощности на трейдах в сообщении с Китаем на 10%. 
+            .text Дальнейшая динамика ставок будет преимущественно зависеть от силы потребительского спроса в Европе, ситуации с коронавирусом в Китае.
+          .trends-avia2__elem
+            .trends-avia__subtitle Динамика объемов грузовых авиаперевозок в Азии, Европе и глобально, изм. г/г в %
+            .trends-avia__elem 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_green 
+                p.trends-avia_min Китай — Европа
+              .trends-avia__item 
+                span.chart-decor.chart-decor_light-green 
+                p.trends-avia_min Европа — Китай
+            .trends-avia__img
+              +picture('trends-avia2.png')
+              .links.trends-demand__links.mt-20
+                p.links__text.trends-demand__links-text Источник:&nbsp;
+                a.links__link.trends-demand__link(href="https://terminal.freightos.com/freightos-baltic-index-global-container-pricing-index/" target='blank') Freightos
+              +activity-buttons('trends-avia2.png')
 
 
-
-
-
-
-
-
+  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
+    .container-content 
+      .trends-forecast2__inner 
+        h3.trends-forecast2__title Прогноз: осторожный оптимизм
+        .row
+          .col 
+            p.trends-forecast2__description По мнению участников рынка, спрос на грузовые авиаперевозки, вероятнее всего, будет находиться на пониженных уровнях &nbsp; <br class='br'> в ближайшие месяцы, но некоторый рост возможен с первого полугодия 2023 года.
+          .col 
+            p.text.trends-forecast2__text Осторожный оптимизм преимущественно связан с перспективой резкого подъема экономической активности в Китае. Тем не менее, неопределенность относительно будущих перспектив высока, как минимум из-за высоких запасов нереализованной продукции у ритейлеров в Европе, но также и из-за растущей конкуренции со стороны морских сервисов. Если работа в портах и соблюдение сроков доставки продолжат показывать улучшения, то это может привести еще к большему оттоку грузов &nbsp; <br class='br'> в пользу морских перевозчиков. Также необходимо учитывать фактор транзитного времени. При текущих высоких запасах инвентаря в Европе у ритейлеров нет необходимости в быстром восполнении продукции, то есть ключевое преимущество авиаперевозок — скорость — не имеет сильной востребованности.
+            p.text.trends-forecast2__text Сокращение ставок авиа-сервисов, в свою очередь, может изменить ситуацию. Уровень предложения, вероятнее всего, продолжит восстанавливаться, что вкупе со слабыми ожиданиями по росту объемов перевозок может привести к снижению ставок в ближайшие кварталы. Таким образом, вероятно улучшение конкурентоспособности ставок на авиагрузоперевозки относительно железнодорожных &nbsp; <br class='br'> за указанный период.
+  
 
 
 
@@ -350,15 +376,6 @@ mixin trends-content-CN
           .col 
             p.text.trends-forecast__text 目前对供需的预测得出的结论是，2023年最有可能出现“买方市场”的局面。不过，海运承运人可能会开始采取措施，加强对供应的控制，确保费率上涨。据Drewry称，亚洲-北欧服务的盈利能力已经下降到几乎为零，因此，公司将不得不使用所有可用的杠杆，以避免财务损失。
             p.text.trends-forecast__text 除了取消航班的标准工具外，承运人还可以通过“slow steaming（慢速航行）”（意为故意降低船舶速度，从而通过减少燃料消耗、减少二氧化碳排放）和通过好望角派遣船只（以避免通过苏伊士运河的费用，通过增加10-12天的过境时间从市场上撤出部分供应）来提高运输的经济性。当然，承运人行动的有效性将取决于影响该行业的许多基本因素。突然的需求激增、港口拥堵、自然灾害和许多其他原因可能会极大地改变市场状况。
-  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
-    .container-content 
-      .trends-forecast2__inner 
-        h3.trends-forecast2__title 预测：谨慎乐观
-        .row
-          .col 
-            p.trends-forecast2__description 据市场人士分析，未来几个月航空货运需求可能会下降，但从2023年上半年开始可能会有所增长。谨慎的乐观情绪主要与中国经济活动大幅复苏的前景有关。未来前景的不确定性很高，至少是因为欧洲零售商的未销售产品库存很高，但也因为来自海运服务的竞争日益激烈。如果港口和交货时间继续有所改善，这可能导致更多的货物流向海运承运人。同时需要考虑过境时间的因素。在欧洲目前库存高企的情况下，零售商并不需要快速补充产品，也就是说，空运的关键优势 —— 速度 —— 没有强大的需求空间。
-          .col 
-            p.text.trends-forecast2__text 反之，降低航空服务费率可以改变这种情况。供应水平可能会继续复苏，加上对交通量增长的预期疲软，可能会导致未来几个季度的费率下降。因此，在特定时期内，航空货运费率相对于铁路货运费率的竞争力有可能提高。
 
   section(data-aos="fade-up").trends-avia.mt-section
     .container-content 
@@ -395,6 +412,48 @@ mixin trends-content-CN
                 a.links__link.trends-demand__link(href="https://www.iata.org/" target='blank') IATA
               +activity-buttons('trends-avia.png')
   
+  section(data-aos="fade-up").mt-section.trends-avia2
+    .container-content 
+      .trends-avia2__inner 
+        .trends-avia2__left 
+          .trends-avia__subtitle 现在，相对于疫情前，航空货运市场的供应水平所下降，但考虑到需求的相对疲软，供应水平是充足的。 
+          .item.item_size-4
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='17' data-countup-suffix='%' data-countup-prefix='-') 
+            .item__row 
+              p.item__subtext 2022年欧洲承运人运力落后于2019年水平
+          .text 与海运承运人不同，航空公司在2022年正确控制了供应水平，不允许大幅降低费率。但是，动态在很大程度上取决于运输方向。因此，在12月的最后一周，中欧方向的平均费率为4.43美元/公斤，比去年的数值低44%，但比2020年的值高约50%。欧中费率为2.80美元/公斤，按年计算高出12%，比2020年的类似费率高出约90%。费率的进一步动态将主要取决于欧洲消费者需求的强度，以及中国冠状病毒的状况。 
+        .trends-avia2__right
+          .trends-avia2__text
+            .text 2023年，由于之前执行了严格的防疫施的国家恢复了国际旅游业，市场供应可能会增加。1月初，航空公司已经将与中国的贸易运输能力提高了10%。 
+            //- .text Дальнейшая динамика ставок будет преимущественно зависеть от силы потребительского спроса в Европе, ситуации с коронавирусом в Китае.
+          .trends-avia2__elem
+            .trends-avia__subtitle 中欧、欧中航线运价，美元/公斤
+            .trends-avia__elem 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_green 
+                p.trends-avia_min 中-欧 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_light-green 
+                p.trends-avia_min 欧-中：
+            .trends-avia__img
+              +picture('trends-avia2.png')
+              .links.trends-demand__links.mt-20
+                p.links__text.trends-demand__links-text 资料来源:&nbsp;
+                a.links__link.trends-demand__link(href="https://terminal.freightos.com/freightos-baltic-index-global-container-pricing-index/" target='blank') Freightos
+              +activity-buttons('trends-avia2.png')
+
+  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
+    .container-content 
+      .trends-forecast2__inner 
+        h3.trends-forecast2__title 预测：谨慎乐观
+        .row
+          .col 
+            p.trends-forecast2__description 据市场人士分析，未来几个月航空货运需求可能会下降，但从2023年上半年开始可能会有所增长。谨慎的乐观情绪主要与中国经济活动大幅复苏的前景有关。未来前景的不确定性很高，至少是因为欧洲零售商的未销售产品库存很高，但也因为来自海运服务的竞争日益激烈。如果港口和交货时间继续有所改善，这可能导致更多的货物流向海运承运人。同时需要考虑过境时间的因素。在欧洲目前库存高企的情况下，零售商并不需要快速补充产品，也就是说，空运的关键优势 —— 速度 —— 没有强大的需求空间。
+          .col 
+            p.text.trends-forecast2__text 反之，降低航空服务费率可以改变这种情况。供应水平可能会继续复苏，加上对交通量增长的预期疲软，可能会导致未来几个季度的费率下降。因此，在特定时期内，航空货运费率相对于铁路货运费率的竞争力有可能提高。
+
 
 mixin trends-content-EN
   section(data-aos="fade-up").trends-market(id="trends-market") 
@@ -543,17 +602,7 @@ mixin trends-content-EN
             p.text.trends-forecast__text «Specifically, in its press release in December, Maersk predicted the decline in demand throughout 2023 due to a relatively weak state of the global economy and the significant inventories still to be sold by retailers. Yet, in its January publication, the company stated that there were causes for optimism and predicted a significant growth in trade and demand starting from the second half of the year against the cancellation of strong anti-COVID restrictions by China. However, the potential for excessive market capacities is still high.
             p.text.trends-forecast__text The current supply and demand predictions show that the “buyer’s market” is the most probable option in 2023. Nevertheless, sea carriers may take action to strengthen the supply controls and to boost the rate growth. According to Drewry, the cost effectiveness of the Asia – North Europe services has already decreased almost to zero, thus the companies will have to leverage all available tools to avoid financial loss. 
             p.text.trends-forecast__text Apart from the standard voyage cancellation tool, carriers may improve the traffic economics by adopting the “slow streaming” practice (i.e. intentionally slowing down the vessel speed in order to cut the costs by reducing fuel consumption and CO<span class="fz-10">2</span> emissions) and re-routing the vessels via the Cape of Good Hope (to avoid the fees to cross the Suez Canal and to partially withdraw the supply from the market by extending the time in transit by 10 to 12 days). The efficiency of the actions taken by carriers will definitely depend on multiple fundamental drivers affecting the industry. The rapid swings in demand, port congestion, natural disasters and many more reasons may significantly change the market situation.»
-  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
-    .container-content 
-      .trends-forecast2__inner 
-        h3.trends-forecast2__title Forecast: Cautious Optimism
-        .row
-          .col 
-            p.trends-forecast2__description.trends-forecast2__description_EN According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023.
-            
-          .col 
-            p.text.trends-forecast2__text  The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
-            p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period.
+
 
   section(data-aos="fade-up").trends-avia.mt-section
     .container-content 
@@ -591,3 +640,45 @@ mixin trends-content-EN
               +activity-buttons('trends-avia.png')
   
   
+  section(data-aos="fade-up").mt-section.trends-avia2
+    .container-content 
+      .trends-avia2__inner 
+        .trends-avia2__left 
+          .trends-avia__subtitle The supply level in the air freight market is currently lower as compared to the pre-COVID level, but sufficient in view of the relatively weak demand. 
+          .item.item_size-4
+            .item__row 
+              .item__col 
+                p.item__number.countup-element(data-countup='17' data-countup-suffix='%' data-countup-prefix='-') 
+            .item__row 
+              p.item__subtext Backlog in traffic capacities of European carriers in 2022 as compared to 2019
+          .text As opposed to sea carriers, airlines efficiently controlled the supply levels in 2022 and succeeded in preventing rapid rate decline. However, the profiles were significantly affected by the traffic direction. Specifically, in the last week of December, the average rate for the China–Europe route was $4.43/kg, which is 44% lower than in the previous year, but approximately 50% higher than in 2020. The Europe–China rate was $2.80/kg, which is 12% higher on a year-on-year basis and approximately 90% higher than the similar rate in 2020. 
+        .trends-avia2__right
+          .trends-avia2__text
+            .text In 2023, the market supply may potentially grow due to recovery of international tourism in the countries previously affected by strict anti-COVID measures. In early January, carriers already ramped up their traffic capacities in the China route trades by 10%. 
+            .text The future rate profile will largely depend on the consumer demand in Europe and the COVID situation in China.
+          .trends-avia2__elem
+            .trends-avia__subtitle Traffic Rates for China–Europe and Europe–China Routes ($/kg)
+            .trends-avia__elem 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_green 
+                p.trends-avia_min China–Europe 
+              .trends-avia__item 
+                span.chart-decor.chart-decor_light-green 
+                p.trends-avia_min Europe–China
+            .trends-avia__img
+              +picture('trends-avia2.png')
+              .links.trends-demand__links.mt-20
+                p.links__text.trends-demand__links-text Source:&nbsp;
+                a.links__link.trends-demand__link(href="https://terminal.freightos.com/freightos-baltic-index-global-container-pricing-index/" target='blank') Freightos
+              +activity-buttons('trends-avia2.png')
+  section(data-aos="fade-up").trends-forecast2(id="trends-forecast2")   
+    .container-content 
+      .trends-forecast2__inner 
+        h3.trends-forecast2__title Forecast: Cautious Optimism
+        .row
+          .col 
+            p.trends-forecast2__description.trends-forecast2__description_EN According to the market players, the air freight demand will most probably remain low in the next months, but will grow to a certain extent starting from the first half of 2023.
+            
+          .col 
+            p.text.trends-forecast2__text  The cautious optimism is mainly related to the expected economic boom in China. Nevertheless, the future prospects are highly uncertain, at least due to the significant inventory still to be sold by retailers in Europe and also due to the growing competition from sea services. If the port operations and delivery schedules continue to improve, this may lead to even more intensive cargo outflow to sea carriers. The time in transit is also worth taking into account. Given the current significant inventories accumulated in Europe, retailers do not need to immediately replenish their stocks, thus the speed, which is the key benefit of air transportation, is not particularly sought after.
+            p.text.trends-forecast2__text In its turn, the air service rate reduction may change the situation. The supply level is most likely to recover further, which along with the weak expectations regarding the traffic volume growth may cause the rates to reduce in the next quarters. Hence, the air freight rates are likely to become more competitive as compared to the railway rates for the given period.

@@ -647,6 +647,15 @@
     }
   }
 
+  &__right {
+    padding-top: 20px;
+    border-top: 1px solid#E8E8E8;
+
+    @media #{media('<',m)} {
+      padding-top: 8px;
+    }
+  }
+
   &_min {
     font-size: 12px;
   }
@@ -718,5 +727,65 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+}
+
+
+.trends-avia2 {
+  &__inner {
+    border-top: 1px solid color(green);
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 140px;
+
+    @media #{media('<',t)} {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+
+    @media #{media('<',m)} {
+      padding-top: 8px;
+      gap: 12px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media #{media('<',m)} {
+      gap: 12px;
+    }
+  }
+
+  .item__number {
+    color: #69da91 !important
+  }
+
+  &__elem {
+    border-top: 1px solid #E8E8E8;
+    padding-top: 20px;
+
+    @media #{media('<',m)} {
+      padding-top: 8px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media #{media('<',m)} {
+      gap: 12px;
+    }
   }
 }

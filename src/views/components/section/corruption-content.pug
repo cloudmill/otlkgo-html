@@ -27,7 +27,7 @@ mixin corruption-content
               each item in ['Разработали Политику обеспечения информационной безопасности  ОТЛК&nbsp;ЕРА','Внедрили систему DLP','Усилили меры информационной безопасности по программе Checkpoint','Внедрили систему контроля парольных требований','Внедрили систему риск-менеджмента',]
                 li.corruption-principles__item
                   +mark-text-svg
-                  p.corruption-principles__text.text=item
+                  p.corruption-principles__text.text!=item
             p.corruption-principles__text.text Все используемые программы относятся к отечественными разработкам. Комплекс мероприятий и созданная система информационной безопасности соответствуют требованиям ФСТЭК и ФСБ.
   section(data-aos="fade-up").corruption-examenation.mt-section(id="section-examenation") 
     .container-content 

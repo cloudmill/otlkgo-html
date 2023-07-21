@@ -4,7 +4,7 @@
 
   &_EN {
     .geography__inner {
-      background: url('../assets/images/geography-bg-EN.jpg') center/cover no-repeat;
+      background: url('../assets/images/geography-bg-EN.jpg') bottom/cover no-repeat;
 
       @media #{media('<',d)} {
         height: auto;
@@ -14,7 +14,7 @@
     }
 
     .geography__box {
-      background: url('../assets/images/geography-bg-EN.jpg') center/cover no-repeat;
+      background: url('../assets/images/geography-bg-EN.jpg') bottom/cover no-repeat;
     }
   }
 
@@ -39,10 +39,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 
     height: 100vh;
     min-height: 845px;
-    background: url('../assets/images/geography-bg.jpg') center/cover no-repeat;
+    background: url('../assets/images/geography-bg.jpg') bottom/cover no-repeat;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: #F8F8F8;
+      bottom: -40px;
+      height: 40px;
+      width: 100%;
+
+      @media #{media('<',d)} {
+        background-color: transparent;
+      }
+    }
 
     @media #{media('<',d)} {
       min-height: auto;
@@ -50,6 +65,8 @@
       background: none;
       gap: 40px;
     }
+
+
   }
 
   &__bg-desktop {
@@ -188,11 +205,16 @@
       }
     }
 
+    @media #{media('<',xl)} {
+      margin-bottom: -20px;
+    }
+
     @media #{media('<',d)} {
       // margin-top: -400px;
     }
 
     @media #{media('<',t)} {
+      margin-bottom: 0;
       margin-top: 24px;
     }
   }
@@ -288,8 +310,7 @@
     &__box {
       margin-top: 24px;
 
-      height: 497px;
-
+      height: auto;
       background: none;
 
       img {

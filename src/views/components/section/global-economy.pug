@@ -806,7 +806,7 @@ mixin global-economy
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
         +activity-buttons('mutal-trade-export2.jpg').flex-desktop
         +activity-buttons('mutal-trade-export2.jpg').flex-m
-    section(data-aos="fade-up").ge-results 
+    section(data-aos="fade-up" id='nav-res').ge-results 
       .ge-results__rect 
         +result-plug-svg
       .ge-results__title Вывод
@@ -843,7 +843,7 @@ mixin global-economy-EN
                 .macroeconomics-subcol__text-grey global GNP growth forecast for 2023
       .macroeconomics-grafics(data-aos="fade-up") 
         .macroeconomics-grafics__col
-          h4.macroeconomics-grafics__col-title Global GDP Growth in 2022
+          h4.macroeconomics-grafics__col-title Global GDP growth in 2022
           .macroeconomics-grafics__col-img 
             +picture('macro-grafic1.png')
           +activity-buttons('macro-grafic1.jpg')

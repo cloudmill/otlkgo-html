@@ -259,6 +259,14 @@
   }
 }
 
+.fz-25 {
+  font-size: 25px;
+
+  @media #{media('<',m)} {
+    font-size: 12px;
+  }
+}
+
 .flex-center {
   display: flex;
   align-items: center;

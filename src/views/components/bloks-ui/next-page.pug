@@ -2,7 +2,7 @@ mixin next-page(text,number, textNext, href)
   - const next= textNext?textNext:'Следующий раздел'
   section(data-aos="fade-up").next 
     .container 
-      .next__inner 
+      .next__inner.mt-section
         p.next__text=next
         p.next__title=text
         p.next__number=number

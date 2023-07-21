@@ -1,89 +1,52 @@
-import { removeBurger, removeActive, removeOverlay } from "scripts/header-menu.js";
+document.addEventListener("DOMContentLoaded", function () {
+  // Получаем все ссылки с атрибутом href, начинающимся с #
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
+  // Получаем значение из localStorage для расстояния прокрутки
+  let scrollOffsetValue = parseInt(localStorage.getItem("scrollOffsetValue")) || 200;
 
+  // Обрабатываем клик по каждой якорной ссылке
+  anchorLinks.forEach(link => {
+    link.addEventListener("click", function (event) {
+      // Отменяем стандартное поведение ссылки
+      event.preventDefault();
 
-let offsetScroll = 100;
+      // Получаем элемент, к которому ведет якорь
+      const targetElement = document.querySelector(link.getAttribute("href"));
 
-if (window.screen.width < 768) {
-  offsetScroll = 70;
-}
+      // Если элемент найден, выполняем прокрутку к нему
+      if (targetElement) {
+        // Вычисляем позицию элемента относительно верхней границы документа
+        const targetPosition = targetElement.getBoundingClientRect().top;
 
-setTimeout(() => {
-  $(function () {
-    var hash = document.location.hash;
-    if (hash.length > 1 && $(hash).length) {
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - offsetScroll
-      }, 100);
+        // Вычисляем позицию элемента относительно верхней границы окна просмотра
+        const offsetPosition = targetPosition + window.pageYOffset;
+
+        // Выполняем плавную прокрутку к элементу с учетом отступа
+        window.scroll({
+          top: offsetPosition - scrollOffsetValue,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+
+  // При загрузке страницы, учитываем якорь, если он присутствует в URL
+  const hash = window.location.hash;
+  if (hash) {
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      const targetPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = targetPosition + window.pageYOffset;
+      window.scroll({
+        top: offsetPosition - scrollOffsetValue,
+        behavior: "smooth"
+      });
     }
-  });
-}, 600)
+  }
 
-
-document.addEventListener('DOMContentLoaded', () => {
-
-  // const allLinks = document.querySelectorAll('a');
-
-  const allLinkTitles = document.querySelectorAll('.header-sub__item-title')
-  const allLinkSubTitles = document.querySelectorAll('.header-sub__item-subsection')
-  const reportHeroLinks = document.querySelectorAll('.report-hero__list-item')
-
-
-  allLinkTitles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      setTimeout(() => {
-        $(function () {
-          var hash = document.location.hash;
-          if (hash.length > 1 && $(hash).length) {
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top - offsetScroll
-            }, 500);
-          }
-        });
-        removeBurger();
-        removeActive();
-        removeOverlay();
-      }, 100)
-
-    });
-  });
-
-  reportHeroLinks.forEach(btn => {
-    btn.addEventListener('click', () => {
-      setTimeout(() => {
-        $(function () {
-          var hash = document.location.hash;
-          if (hash.length > 1 && $(hash).length) {
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top - offsetScroll
-            }, 500);
-          }
-        });
-        removeBurger();
-        removeActive();
-        removeOverlay();
-      }, 500)
-
-    });
-  });
-
-  allLinkSubTitles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      setTimeout(() => {
-        $(function () {
-          var hash = document.location.hash;
-          if (hash.length > 1 && $(hash).length) {
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top - offsetScroll
-            }, 500);
-          }
-        });
-        removeBurger();
-        removeActive();
-        removeOverlay();
-      }, 100)
-
-    });
+  // Сохраняем значение scrollOffsetValue в localStorage при изменении
+  window.addEventListener("beforeunload", function () {
+    localStorage.setItem("scrollOffsetValue", scrollOffsetValue.toString());
   });
 });
-
