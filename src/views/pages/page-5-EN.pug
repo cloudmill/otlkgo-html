@@ -1,36 +1,36 @@
-extends ../app
+//- extends ../app
 
 
-include ../components/section/reward-content
-include ../components/section/controls-content
-include ../components/section/risk-content
+//- include ../components/section/reward-content
+//- include ../components/section/controls-content
+//- include ../components/section/risk-content
 
-include ../components/section/incorporated
-include ../components/section/report-hero
-include ../components/section/report-hero-layout
-include ../components/section/control
-include ../components/bloks-ui/modal
-include ../components/bloks-ui/model
-include ../components/bloks-ui/risks
+//- include ../components/section/incorporated
+//- include ../components/section/report-hero
+//- include ../components/section/report-hero-layout
+//- include ../components/section/control
+//- include ../components/bloks-ui/modal
+//- include ../components/bloks-ui/model
+//- include ../components/bloks-ui/risks
 
-block header 
-  +header-EN
-block variables
-  -const title = 'Corporate governance'
-block content
-  +modal-EN
-  +sidebar-EN
-  +report-hero-5-EN
-  +control-sections-EN 
-  +preview('Authorized Capital','Kseniya ','Pavlova ','Head of Financial Instruments Operation Function','pavlova.png','t').custom-id(id="share-capital")(data-aos="fade-up")
-    .pavlova 
-      p.pavlova__text.text Joint Stock Company “UTLC&nbsp;ERA“ was registered by Interdistrict Tax Inspectorate No. 46 for Moscow on 2 April 2018 under Principal State Registration Number 1187746369590 (TIN 9701104646).
-  +incorporated-EN
-  +preview('Remuneration system','Marina','Ivanova','HR Management Department Director','ivanova.png','t').custom-id(id="preview-reward-content")
-  +reward-content-EN
-  +preview('Control System','Irina','Pavlushkova','Chief Accountant — Department Director','pavluchkova.png','t').custom-id(id="controls-content")
-  +controls-content-EN
-  +preview('Risk Management ','Anna','Belyakova','Deputy Commercial Director — Director of Account Settlement Control and Production Analysis Department, Commercial Directorate','belyakova.png','t').custom-id(id="risk-content")
-  +risk-content-EN
-  +print-activity-buttons-EN
-  +next-page('Appendices',6,'Next section','applications-EN')
+//- block header 
+//-   +header-EN
+//- block variables
+//-   -const title = 'Corporate governance'
+//- block content
+//-   +modal-EN
+//-   +sidebar-EN
+//-   +report-hero-5-EN
+//-   +control-sections-EN 
+//-   +preview('Authorized Capital','Kseniya ','Pavlova ','Head of Financial Instruments Operation Function','pavlova.png','t').custom-id(id="share-capital")(data-aos="fade-up")
+//-     .pavlova 
+//-       p.pavlova__text.text Joint Stock Company “UTLC&nbsp;ERA“ was registered by Interdistrict Tax Inspectorate No. 46 for Moscow on 2 April 2018 under Principal State Registration Number 1187746369590 (TIN 9701104646).
+//-   +incorporated-EN
+//-   +preview('Remuneration system','Marina','Ivanova','HR Management Department Director','ivanova.png','t').custom-id(id="preview-reward-content")
+//-   +reward-content-EN
+//-   +preview('Control System','Irina','Pavlushkova','Chief Accountant — Department Director','pavluchkova.png','t').custom-id(id="controls-content")
+//-   +controls-content-EN
+//-   +preview('Risk Management ','Anna','Belyakova','Deputy Commercial Director — Director of Account Settlement Control and Production Analysis Department, Commercial Directorate','belyakova.png','t').custom-id(id="risk-content")
+//-   +risk-content-EN
+//-   +print-activity-buttons-EN
+//-   +next-page('Appendices',6,'Next section','applications-EN')
