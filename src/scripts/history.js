@@ -1,5 +1,9 @@
 import moment from 'moment';
-moment.locale('ru');
+
+
+const localization = document.querySelector('body').dataset.localization
+moment.locale(localization ? localization : 'ru');
+
 
 function addToHistory(page) {
   const currentDate = moment().toISOString();
