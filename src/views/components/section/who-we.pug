@@ -7,8 +7,8 @@ mixin who-we
           h2.who-we__hero-title ОТЛК&nbsp;ЕРА. Кто мы?
           .who-we__hero-subtitle Акционерное общество «Объединенная транспортно-логистическая компания —&nbsp;Евразийский железнодорожный альянс» (далее в&nbsp;Отчете — ОТЛК&nbsp;ЕРА) — крупнейший оператор транзитных контейнерных перевозок в сообщении Китай-Европа-Китай по территории России, Казахстана и Беларуси.
           .who-we__hero-text.text Несмотря на события 2022 года, мы активно развивались во многих направлениях: расширяли карту перевозок, наращивали долю импортных сервисов, инвестировали в человеческий капитал и экологические инициативы.
-      .who-we__trains(data-parallax-container='')
-        .who-we__parallax-img.desktop(data-parallax-img='') 
+      .who-we__trains
+        .who-we__parallax-img.desktop
           +picture('parallax-trains-about-big.png')
         .container-content
           .who-we__trains-top
@@ -199,11 +199,12 @@ mixin who-we-EN
       .container-content  
         .who-we__hero.hero 
           .who-we__hero-line 
-          h2.who-we__hero-title UTLC&nbsp;ERA. Who are we?
+          .test
+            h2.who-we__hero-title UTLC&nbsp;ERA. Who are we?
           .who-we__hero-subtitle Joint stock company UTLC ERA (hereinafter referred to in this report as UTLC&nbsp;ERA) is the largest transit container traffic operator on the <span class='nbsp'>China–Europe–China </span> route via Russia, Kazakhstan and Belarus
           .who-we__hero-text.text Despite the 2022 events, we have been actively developing in many areas, expanding our traffic route map, increasing the share of import services, investing in human capital assets and environmental initiatives.
-      .who-we__trains(data-parallax-container='')
-        .who-we__parallax-img.desktop(data-parallax-img='') 
+      .who-we__trains
+        .who-we__parallax-img.desktop
           +picture('parallax-trains-about-big.png')
         .container-content
           .who-we__trains-top
@@ -339,55 +340,55 @@ mixin who-we-EN
             .who-we__achievement-text UTLC&nbsp;ERA General Director is listed among 250 best top managers in Russia (according to Kommersant Publishing House)
             .who-we__achievement-img 
               +picture('achievement-number-10.png')
-    .container-content
-      section.who-we__report(id="section-who-we-report")(data-aos="fade-up") 
-        h2.who-we__report-title About this Report
-        .who-we__report-subtitle The annual report discloses the details of UTLC&nbsp;ERA’s activities.
-        .report-row 
-          .report-col 
-            .report__text.report__text_big The report is based on the information available as of its development date. The document contains the overview of our company’s performance for 2022, as well as:
-            .report__text.report__text_mark.top <span>Performance profiles in 2020 to 2022.</span>  The financial performance has been calculated on the basis of the Russian accounting standards and the company’s accounting policy effective in the corresponding reporting periods and is confirmed by the auditor’s opinion
-            .report__text.report__text_mark <span>The forecast statements,</span> which reflect UTLC&nbsp;ERA management’s expectations regarding its future performance and financial standing. These statements depend on the circumstances, which may or may not occur in the future, and are highly uncertain. The company does not guarantee that the forecasts will correspond to the actual performance. UTLC&nbsp;ERA is not liable for any potential losses related to the decisions that rely on these forecast statements
+    //- .container-content
+    //-   section.who-we__report(id="section-who-we-report")(data-aos="fade-up") 
+    //-     h2.who-we__report-title About this Report
+    //-     .who-we__report-subtitle The annual report discloses the details of UTLC&nbsp;ERA’s activities.
+    //-     .report-row 
+    //-       .report-col 
+    //-         .report__text.report__text_big The report is based on the information available as of its development date. The document contains the overview of our company’s performance for 2022, as well as:
+    //-         .report__text.report__text_mark.top <span>Performance profiles in 2020 to 2022.</span>  The financial performance has been calculated on the basis of the Russian accounting standards and the company’s accounting policy effective in the corresponding reporting periods and is confirmed by the auditor’s opinion
+    //-         .report__text.report__text_mark <span>The forecast statements,</span> which reflect UTLC&nbsp;ERA management’s expectations regarding its future performance and financial standing. These statements depend on the circumstances, which may or may not occur in the future, and are highly uncertain. The company does not guarantee that the forecasts will correspond to the actual performance. UTLC&nbsp;ERA is not liable for any potential losses related to the decisions that rely on these forecast statements
 
-          .report-col 
-            .report__text.right An important note: apart from the formal information to describe UTLC&nbsp;ERA’s operations, the Annual Report may contain the data obtained from third parties. Sources of these data are indicated in the report. Unless otherwise expressly stipulated in the laws, UTLC&nbsp;ERA does not undertake to distribute or publish any updates or amendments to the forecast statements to incorporate any changes in the expectations or any new information and subsequent events, conditions or circumstances
-            .report__protocol 
-              .report__protocol-item The Annual Report was reviewed by the Audit Committee under UTLC&nbsp;ERA Board of Directors (Minutes No. 24 dated 15.05.2023)
-              .report__protocol-item The report is provisionally approved by UTLC&nbsp;ERA Board of Directors <br>(Minutes No. 64 dated 25.05.2023)
-              .report__protocol-item The report is approved by UTLC&nbsp;ERA Annual General Meeting of Shareholders <br>(Minutes No. 22 dated 30.06.2023)
-              .report__protocol-item The authenticity of the information contained in the Annual Report is confirmed by UTLC&nbsp;ERA Audit Commission
-    .container 
-      section.who-we__appeal(id="section-who-we-appeal")(data-aos="fade-up") 
-        .appeal-row 
-          .appeal-col 
-            .appeal-line 
-            h2.appeal-title Message from the General Director
-            .appeal-name.desktop  
-              .appeal-name__surname Alexey Grom
-              .appeal-name__job General director
-            .appeal-img.desktop  
-              +picture("appeal-grom.png")
-            .appeal-img.mobile  
-              +picture("appeal-grom-mobile.png")
-            .appeal-name.mobile  
-              .appeal-name__surname Alexey Grom
-              .appeal-name__job General director
-            .appeal-name.devices  
-              .appeal-name__surname Alexey Grom
-              .appeal-name__job General director
-          .appeal-col 
-            .appeal-subtitle Dear shareholders, customers and partners, <br>I am glad to present to you the Annual Report of UTLC&nbsp;ERA for 2022.
-            .appeal-text.text The global trends and the recent events have significantly influenced our company’s production and commercial processes. As a large player in the Eurasian traffic service market, we are constantly seeking the best logistics solutions for our customers, partners and shareholders. 2022 was no exception.
-            .appeal-text.text The final performance indicators shown in our annual report clearly demonstrate that UTLC&nbsp;ERA has successfully addressed the new challenges in the past year and, in spite of multiple pressures and uncertainties, has almost reached the record high indicators of 2021, both in terms of traffic volumes and financial performance.
-            .appeal-text.text A significant achievement was also the development of the new routes within the EAEU, which helped completely make up for the declining China–Europe–China transit volumes in 2022.
-            .appeal-text.text I would like to highlight that our baseline model has not changed, and UTLC&nbsp;ERA remains focused on promoting its services on the China–Europe and Europe–China routes. To this end, we coordinate with our shareholders to improve the technological aspects of our services and to develop infrastructure for future growth.
-            .appeal-text.text We have a lot of exciting and relevant tasks for 2023. We have no time to take a break. We keep creating favorable conditions to strengthen our railway transit bridge that connects many countries, a vast number of companies and millions of people on the Eurasian continent.
-            .appeal-subtext I would like to thank everyone for their successful efforts in 2022 and wish all of us, prosperity and success in 2023!
-            .appeal-signature On behalf of UTLC&nbsp;ERA team, Respectfully yours, <br>Alexey Grom
-            .appeal-svg.grey
-              +appeal-svg
-            .appeal-svg.green
-              +appeal2-svg
+    //-       .report-col 
+    //-         .report__text.right An important note: apart from the formal information to describe UTLC&nbsp;ERA’s operations, the Annual Report may contain the data obtained from third parties. Sources of these data are indicated in the report. Unless otherwise expressly stipulated in the laws, UTLC&nbsp;ERA does not undertake to distribute or publish any updates or amendments to the forecast statements to incorporate any changes in the expectations or any new information and subsequent events, conditions or circumstances
+    //-         .report__protocol 
+    //-           .report__protocol-item The Annual Report was reviewed by the Audit Committee under UTLC&nbsp;ERA Board of Directors (Minutes No. 24 dated 15.05.2023)
+    //-           .report__protocol-item The report is provisionally approved by UTLC&nbsp;ERA Board of Directors <br>(Minutes No. 64 dated 25.05.2023)
+    //-           .report__protocol-item The report is approved by UTLC&nbsp;ERA Annual General Meeting of Shareholders <br>(Minutes No. 22 dated 30.06.2023)
+    //-           .report__protocol-item The authenticity of the information contained in the Annual Report is confirmed by UTLC&nbsp;ERA Audit Commission
+    //- .container 
+    //-   section.who-we__appeal(id="section-who-we-appeal")(data-aos="fade-up") 
+    //-     .appeal-row 
+    //-       .appeal-col 
+    //-         .appeal-line 
+    //-         h2.appeal-title Message from the General Director
+    //-         .appeal-name.desktop  
+    //-           .appeal-name__surname Alexey Grom
+    //-           .appeal-name__job General director
+    //-         .appeal-img.desktop  
+    //-           +picture("appeal-grom.png")
+    //-         .appeal-img.mobile  
+    //-           +picture("appeal-grom-mobile.png")
+    //-         .appeal-name.mobile  
+    //-           .appeal-name__surname Alexey Grom
+    //-           .appeal-name__job General director
+    //-         .appeal-name.devices  
+    //-           .appeal-name__surname Alexey Grom
+    //-           .appeal-name__job General director
+    //-       .appeal-col 
+    //-         .appeal-subtitle Dear shareholders, customers and partners, <br>I am glad to present to you the Annual Report of UTLC&nbsp;ERA for 2022.
+    //-         .appeal-text.text The global trends and the recent events have significantly influenced our company’s production and commercial processes. As a large player in the Eurasian traffic service market, we are constantly seeking the best logistics solutions for our customers, partners and shareholders. 2022 was no exception.
+    //-         .appeal-text.text The final performance indicators shown in our annual report clearly demonstrate that UTLC&nbsp;ERA has successfully addressed the new challenges in the past year and, in spite of multiple pressures and uncertainties, has almost reached the record high indicators of 2021, both in terms of traffic volumes and financial performance.
+    //-         .appeal-text.text A significant achievement was also the development of the new routes within the EAEU, which helped completely make up for the declining China–Europe–China transit volumes in 2022.
+    //-         .appeal-text.text I would like to highlight that our baseline model has not changed, and UTLC&nbsp;ERA remains focused on promoting its services on the China–Europe and Europe–China routes. To this end, we coordinate with our shareholders to improve the technological aspects of our services and to develop infrastructure for future growth.
+    //-         .appeal-text.text We have a lot of exciting and relevant tasks for 2023. We have no time to take a break. We keep creating favorable conditions to strengthen our railway transit bridge that connects many countries, a vast number of companies and millions of people on the Eurasian continent.
+    //-         .appeal-subtext I would like to thank everyone for their successful efforts in 2022 and wish all of us, prosperity and success in 2023!
+    //-         .appeal-signature On behalf of UTLC&nbsp;ERA team, Respectfully yours, <br>Alexey Grom
+    //-         .appeal-svg.grey
+    //-           +appeal-svg
+    //-         .appeal-svg.green
+    //-           +appeal2-svg
 
 mixin who-we-CN 
   .who-we
@@ -398,8 +399,8 @@ mixin who-we-CN
           h2.who-we__hero-title UTLC&nbsp;ERA我们是谁？
           .who-we__hero-subtitle UTLC&nbsp;ERA股份公司（以下简称UTLC&nbsp;ERA是中国-欧洲-中国途经俄罗斯、哈萨克斯坦和白俄罗斯运输中最大的集装箱中转运输运营商
           .who-we__hero-text.text 尽管2022年发生了一些事件，但我们还是在许多方面取得了积极的发展：我们扩大了运输版图，增加了进口服务的份额，投资人力资本和环境倡议
-      .who-we__trains(data-parallax-container='')
-        .who-we__parallax-img.desktop(data-parallax-img='') 
+      .who-we__trains
+        .who-we__parallax-img.desktop
           +picture('parallax-trains-about-big.png')
         .container-content
           .who-we__trains-top

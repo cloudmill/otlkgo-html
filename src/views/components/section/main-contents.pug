@@ -5,7 +5,7 @@ mixin main-contents
       .main-contents__list(data-aos="fade-up") 
         each item, index in ['О компании','Стратегический отчет','Результаты деятельности в 2022 году','устойчивое развитие','корпоративное управление','приложения']
           .main-contents__card
-            a.main-contents__card-content(href="about" target="blank")   
+            a.main-contents__card-content(href="about")   
               .main-contents__card-number=index+1
               .main-contents__decor 
                 +decor-main 
@@ -20,7 +20,7 @@ mixin main-contents-EN
       .main-contents__title Table of Contents
       .main-contents__list(data-aos="fade-up") 
         .main-contents__card
-          a.main-contents__card-content(href="about" target="blank")   
+          a.main-contents__card-content(href="about" )   
             .main-contents__card-number 1
             .main-contents__decor 
               +decor-main 
@@ -29,7 +29,7 @@ mixin main-contents-EN
               .main-contents__card-arrow 
                 +arrow-right 
         .main-contents__card
-          a.main-contents__card-content(href="about" target="blank")   
+          a.main-contents__card-content(href="about" )   
             .main-contents__card-number 2
             .main-contents__decor 
               +decor-main 
@@ -38,7 +38,7 @@ mixin main-contents-EN
               .main-contents__card-arrow 
                 +arrow-right 
         .main-contents__card
-          a.main-contents__card-content(href="about" target="blank")   
+          a.main-contents__card-content(href="about" )   
             .main-contents__card-number 3
             .main-contents__decor 
               +decor-main 
@@ -47,7 +47,7 @@ mixin main-contents-EN
               .main-contents__card-arrow 
                 +arrow-right 
         .main-contents__card
-          a.main-contents__card-content(href="about" target="blank")   
+          a.main-contents__card-content(href="about")   
             .main-contents__card-number 4
             .main-contents__decor 
               +decor-main 
@@ -56,7 +56,7 @@ mixin main-contents-EN
               .main-contents__card-arrow 
                 +arrow-right 
         .main-contents__card
-          a.main-contents__card-content(href="about" target="blank")   
+          a.main-contents__card-content(href="about")   
             .main-contents__card-number 5
             .main-contents__decor 
               +decor-main 
@@ -65,7 +65,7 @@ mixin main-contents-EN
               .main-contents__card-arrow 
                 +arrow-right 
         .main-contents__card
-          a.main-contents__card-content(href="about" target="blank")   
+          a.main-contents__card-content(href="about")   
             .main-contents__card-number 6
             .main-contents__decor 
               +decor-main 
@@ -82,7 +82,7 @@ mixin main-contents-CN
 
         each item, index in ['关于公司','战略报告','2022年业绩','可持续发展','公司治理','附件']
           .main-contents__card
-            a.main-contents__card-content(href="about" target="blank")   
+            a.main-contents__card-content(href="about" )   
               .main-contents__card-number=index+1
               .main-contents__decor 
                 +decor-main 
