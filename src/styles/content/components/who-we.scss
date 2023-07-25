@@ -153,6 +153,10 @@
       @media #{media("<", t)} {
         width: 400px;
       }
+
+      @media #{media("<", m)} {
+        width: auto;
+      }
     }
 
     &-number {

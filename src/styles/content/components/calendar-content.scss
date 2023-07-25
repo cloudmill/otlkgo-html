@@ -87,6 +87,7 @@
 
       max-width: 100%;
     }
+
     &_CN {
       justify-self: start;
     }
@@ -127,6 +128,12 @@
     font-size: 15px;
     line-height: 160%;
     color: color(dark);
+  }
+}
+
+.calendar__CN {
+  .calendar__col-list {
+    justify-self: start;
   }
 }
 

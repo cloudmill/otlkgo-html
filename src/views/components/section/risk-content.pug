@@ -6,7 +6,7 @@ mixin risk-content
           p.risk__desciption.description Учитывая высокую степень геополитической напряженности, правление ОТЛК&nbsp;ЕРА приняло решение о формировании полноценной системы управления рисками.
         .col 
           ul.list
-            each item in ['Сформирована рабочая группа по вопросам управления рисками (приказ ОТЛК&nbsp;ЕРА от 24 декабря 2021 года № 64)','Утверждена политика по управлению рисками ОТЛК&nbsp;ЕРА (протокол совета директоров от 11 мая 2022 года № 52)','Утверждены регламент по управлению рисками ОТЛК&nbsp;ЕРА и методические рекомендации по управлению рисками 11 мая 2022 года','Проведено обучение широкого круга сотрудников, вовлеченных в процессы управления рисками',]
+            each item in ['Сформирована рабочая группа по вопросам управления рисками <br> (приказ ОТЛК&nbsp;ЕРА от 24 декабря 2021 года № 64)','Утверждена политика по управлению рисками ОТЛК&nbsp;ЕРА <br> (протокол совета директоров от 11 мая 2022 года № 52)','Утверждены регламент по управлению рисками ОТЛК&nbsp;ЕРА и методические рекомендации по управлению рисками 11 мая 2022 года','Проведено обучение широкого круга сотрудников, вовлеченных в процессы управления рисками',]
               li
                 +mark-text-svg.list-svg
                 p.text.list__text!=item 
@@ -20,7 +20,7 @@ mixin risk-content
             .risk-analysis__item 
               p.risk-analysis__item-title Сильные стороны
               ul.list.risk-analysis__list
-                each item in ['Уникальность ресурса – международного сотрудничества на пространстве ЕАЭC','Лидерство на рынке по издержкам за счет постоянной оптимизации и выстраивания системы долгосрочного партнерства','Адаптивность выстроенных бизнес-процессов Общества к внешним вызовам','Отлаженная технология организации контейнерных поездов на маршруте','Клиентский сервис в формате «единого окна»','Операционная и финансовая стабильность  <br class ="br-t"> Общества',]
+                each item in ['Уникальность ресурса – международного сотрудничества на пространстве ЕАЭC','Лидерство на рынке по издержкам за счет постоянной оптимизации и выстраивания системы долгосрочного партнерства','Адаптивность выстроенных бизнес-процессов Общества к внешним вызовам','Отлаженная технология организации контейнерных поездов на маршруте','Клиентский сервис в формате «единого окна»','Операционная и финансовая стабильность  <br class ="br-t">&nbsp;Общества',]
                   li
                     +mark-text-svg.list-svg
                     p.text.list__text!=item
@@ -426,6 +426,10 @@ mixin risk-content-EN
           .risk-process__control.mobile
             +activity-buttons('risk-process-mobile-EN.png')
         .risk-process__box 
+          .risk-process__item
+            p.risk-process__item-description.description_big Monitoring
+            p.risk-process__text.text  Monitoring is a continuous process covering all risk management stages Monitoring includes review of risk treatment implementation status and analysis of changes to be taken into consideration in the course of risk management
+
           .risk-process__item
             p.risk-process__item-description.description_big Planning
             p.risk-process__text.text  Risk management planning includes definition of the purpose and application sphere of risk management, subject to the internal and external context, and development of implementation plan.
