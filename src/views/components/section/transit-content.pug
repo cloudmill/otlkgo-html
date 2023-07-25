@@ -243,10 +243,10 @@ mixin transit-content-CN
           .transit-volume__row_top
             h4.transit-volume__title 2021年至2022年UTLC时代中国–欧洲-中国过境量(TEU)
             a.transit-volume__link.desktop-t <span>來源: </span>«UTLC&nbsp;ERA"
-          .transit-volume__svg.desktop
+          .transit-volume__svg
             +picture('transit-volumeTransit-CN.png','t')
-          .transit-volume__svg.mobile
-            +picture('transit-volumeTransit-mobile-CN.png','t')
+          //- .transit-volume__svg.mobile
+          //-   +picture('transit-volumeTransit-mobile-CN.png','t')
            
           a.transit-volume__link.flex-t <span>來源: </span>«UTLC&nbsp;ERA"
           +activity-buttons('transit-volumeTransit.png','t').flex-desktop
@@ -271,13 +271,13 @@ mixin transit-content-CN
         .row
           h4.transit-china__title 2022年中欧中欧方向过境点份额的动态
           a.transit-china__link.desktop(href="#" target='blank') 
-            <span>资料来源: </span>UTLC&nbsp;ERA股份公司
+            <span>资料来源: </span>UTLC&nbsp;ERA
 
         .row 
           .transit-china__items 
             .transit-china__item 
               span.transit-china__item_green-dark
-              p UTLC&nbsp;ERA股份公司
+              p UTLC&nbsp;ERA
             .transit-china__item 
               span.transit-china__item_green
               p 后贝加尔斯克
@@ -336,14 +336,14 @@ mixin transit-content-CN
           p.text.transit-level__text 因此，UTLC&nbsp;ERA服务在28条新航线上完成了过境运输，其中10条是欧洲-中国方向，18条是中国-欧洲方向。2022年新站点地图上，新增4个货物发源/注销点：陶洛夫（丹麦）、科特卡（芬兰）、上饶和Dulain（中国）。
           p.text.transit-level__text 外部环境的变化迫使外部经济活动的参与者在2022年大幅调整自己的流程。因此，物流链发生了变化，影响了UTLC&nbsp;ERA总量份额的重新分配。
           p.text.transit-level__text 因此，进口服务的数量显着增加，使得部分抵消减少的过境货物流量。2022年，公司服务在中俄方向运输了148,560辆TEU。因此，该细分市场较2021年增长了771%。2022年4月，我公司接受了其中一次运输的首笔人民币货款，年底与客户签订12份人民币货款合同，协议发车31列。  
-          p.text.transit-level__text 在此期间，公司总共在194条新航线上提供了进口运输。我们在俄罗斯联邦境内增加了14个新的货物注销点：西里卡特娜娅、科利佐沃、阿尼索夫卡、科斯塔利哈、车尔尼亚霍夫斯克、阿夫托沃、下卡姆斯克、罗斯托夫 -- 货物、车尔尼科夫卡、鲁日斯卡娅、吉洪诺沃、伊尼亚－东、巴扎伊哈和布龙卡，以及12个新的进口货物发源地：海防（越南）、高邑、石家庄、文登、泸州、临沂、闵行、广元、南沙、团结村、枣家铺、石河子（中国）。2022年，UTLC&nbsp;ERAD 另一个进口细分，即中国-白俄罗斯的运输量达到14 098 TEU（年增长536%）。
+          p.text.transit-level__text 在此期间，公司总共在194条新航线上提供了进口运输。我们在俄罗斯联邦境内增加了14个新的货物注销点：西里卡特娜娅、科利佐沃、阿尼索夫卡、科斯塔利哈、车尔尼亚霍夫斯克、阿夫托沃、下卡姆斯克、罗斯托夫 -- 货物、车尔尼科夫卡、鲁日斯卡娅、吉洪诺沃、伊尼亚－东、巴扎伊哈和布龙卡，以及12个新的进口货物发源地：海防（越南）、高邑、石家庄、文登、泸州、临沂、闵行、广元、南沙、团结村、枣家铺、石河子（中国）。2022年，UTLC&nbsp;ERA 另一个进口细分，即中国-白俄罗斯的运输量达到14 098 TEU（年增长536%）。
   section(data-aos="fade-up").transit-value 
     .container-content 
       .transit-value__inner 
         h4.transit-value__title 2021-2022年UTLC&nbsp;ERA服务中的中俄进口集装箱运输量、TEU和进口航线数量
         .links.transit-value__links.desktop
           p.links__text.transit-value__links-text 资料来源&nbsp;
-          a.links__link.transit-value__link(href="#" target='blank') UTLC&nbsp;ERA股份公司
+          a.links__link.transit-value__link(href="#" target='blank') UTLC&nbsp;ERA
         .transit-value__items 
           .transit-value__item 
             span.transit-value__span.green-light-bg 
@@ -376,8 +376,9 @@ mixin transit-content-CN
         h3.transit-adaptation__title 适应性是灵活性的证据
         .transit-adaptation__row 
           .col 
-            p.transit-adaptation__description  2022年，欧亚铁路集装箱运输经营条件发生重大变化。影响运输参与国的国际政治环境的恶化是贸易关系既定秩序发生大多数变化的主要出发点。然而，鉴于许多新活动领域的UTLC&nbsp;ERA数量成倍增长，市场适应当前现实显而易见。因此，铁路集装箱运输固有的灵活性得到了证实。考虑到欧洲方面的需求暂时下降，进出口方向新航线的引入，以及主要过境航线服务质量的保持，在欧亚铁路集装箱运输的艰难一年，取得了积极成果。此外，有可能将运输量指标保持在创纪录的2021年水平。
+            p.transit-adaptation__description  2022年，欧亚铁路集装箱运输经营条件发生重大变化。
           .col 
+            p.text.transit-adaptation__text 影响运输参与国的国际政治环境的恶化是贸易关系既定秩序发生大多数变化的主要出发点。然而，鉴于许多新活动领域的UTLC&nbsp;ERA数量成倍增长，市场适应当前现实显而易见。因此，铁路集装箱运输固有的灵活性得到了证实。考虑到欧洲方面的需求暂时下降，进出口方向新航线的引入，以及主要过境航线服务质量的保持，在欧亚铁路集装箱运输的艰难一年，取得了积极成果。此外，有可能将运输量指标保持在创纪录的2021年水平。
             p.text.transit-adaptation__text 2023年，某些政治和环境因素将继续影响行业，复杂的地缘政治环境将继续成为中欧班列成功工作的主要障碍。反之，将出现一系列机会。例如，中国取消对COVID的“零容忍”政策可以激活该国的生产和出口，并导致消费需求的复苏，从而刺激进口。中国制造商增加向西方方向出口电动汽车的愿望也可以为运输业带来新的货运量，以及电子商务货运的持续增长。因此，为了进一步成功发展，重要的是要利用新出现的机会并继续努力提高服务质量。
   section(data-aos="fade-up").transit-conclusion 
     .container-content 
@@ -460,12 +461,12 @@ mixin transit-content-EN
         .row
           h4.transit-china__title Border Crossing Share Profile in the China–Europe–China Direction, 2022 (%)
           a.transit-china__link.desktop(href="#" target='blank') 
-            <span>Source: </span>UTLK&nbsp;ERA
+            <span>Source: </span>UTLC&nbsp;ERA
         .row 
           .transit-china__items 
             .transit-china__item 
               span.transit-china__item_green-dark
-              p UTLK&nbsp;ERA
+              p UTLC&nbsp;ERA
             .transit-china__item 
               span.transit-china__item_green
               p Naushki

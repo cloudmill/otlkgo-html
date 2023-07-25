@@ -65,7 +65,7 @@ mixin corruption-content-CN
               each item in ['向公司员工澄清负责人关于拒绝任何形式和表现的腐败行为的立场；','向管理人员和员工通报俄罗斯立法的要求，以及股东在反腐败和腐败犯罪责任领域通过的文件；','总结并解释UTLC&nbsp;ERA在反腐败领域所采取的措施；','树立公司领导和员工的反腐倡廉意识；','最大限度地减少公司活动中的腐败风险。',]
                 li.corruption__item
                   +mark-text-svg.corruption-svg
-                  p.corruption__text.text=item
+                  p.corruption__text.text!=item
           .col 
             p.corruption__text.text 我们的管理人员和员工有义务严格按照反腐败政策的原则和目标组织工作。如果发生有腐败迹象的事件（例如，员工和协作单位玩忽职守或滥用职权），每个人都有义务向现有的反腐败热线报告。 
   section(data-aos="fade-up").corruption-principles.mt-section(id="section-principles") 
@@ -84,7 +84,7 @@ mixin corruption-content-CN
               each item in ['制定了一项政策，以确保UTLC&nbsp;ERA的信息安全；','实施行了DLP系统；','加强了CheckPoint计划的信息安全措施；','实施了密码控制系统；','实施了风险管理系统。',]
                 li.corruption-principles__item
                   +mark-text-svg
-                  p.corruption-principles__text.text=item
+                  p.corruption-principles__text.text!=item
             p.corruption-principles__text.text 所有使用的方案都是国内自行开发。  一系列措施和创建的信息安全系统符合联邦技术出口监督局和联邦安全局的要求。
   section(data-aos="fade-up").corruption-examenation.mt-section(id="section-examenation") 
     .container-content 
@@ -148,7 +148,7 @@ mixin corruption-content-EN
               each item in ['We developed UTLC ERA’s Information Security Policy','We implemented the DLP system','We enhanced the information security efforts under the Checkpoint program','We adopted the system to monitor password compliance','We introduced the risk management system']
                 li.corruption-principles__item
                   +mark-text-svg
-                  p.corruption-principles__text.text=item
+                  p.corruption-principles__text.text!=item
             p.corruption-principles__text.text All adopted programs are developed by local companies. The action plan and the established information security system comply with the requirements of the Federal Service for Technical and Export Control and the Federal Security Service.
   section(data-aos="fade-up").corruption-examenation.mt-section(id="section-examenation") 
     .container-content 

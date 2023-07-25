@@ -1103,10 +1103,10 @@ mixin global-economy-EN
         .mutal-trade__balance-legend 
           .legend-cube
             .legend-cube__line.green 
-            .legend-cube__text EU 27 import from China
+            .legend-cube__text EU import from China
           .legend-cube
             .legend-cube__line.light 
-            .legend-cube__text EU 27 export to China
+            .legend-cube__text EU export to China
           .legend-cube
             .legend-cube__cube 
             .legend-cube__text Trade balance (positive net balance for China)
@@ -1919,13 +1919,13 @@ mixin global-economy-CN
         .mutal-trade__balance-legend 
           .legend-cube
             .legend-cube__line.green 
-            .legend-cube__text Импорт из Китая в ЕС 
+            .legend-cube__text 欧盟 从中国进口
           .legend-cube
             .legend-cube__line.light 
-            .legend-cube__text Экспорт в Китай из ЕС 
+            .legend-cube__text 欧盟 向中国出口
           .legend-cube
             .legend-cube__cube 
-            .legend-cube__text Торговый  баланс (положительное сальдно для Китая)
+            .legend-cube__text 贸易差额
         .mutal-trade__balance-container
           .mutal-trade__balance-vector 
             +picture('mutal-trade-balance-CN.png')
@@ -2442,7 +2442,7 @@ mixin global-economy-CN
                 a.macroeconomics-grafics__col-link.big-12(href="https://appsso.eurostat.ec.europa.eu/" target="blank") Eurostat
         +activity-buttons('mutal-trade-export2-CN.png').flex-desktop
         +activity-buttons('mutal-trade-ex-mobile2-CN.png').flex-m
-    section(data-aos="fade-up").ge-results 
+    section(data-aos="fade-up" id="nav-res").ge-results 
       .ge-results__rect 
         +result-plug-svg
       .ge-results__title.flex-shrink 结论
