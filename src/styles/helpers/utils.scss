@@ -134,6 +134,11 @@
   }
 }
 
+.z-2 {
+  position: relative;
+  z-index: 2;
+}
+
 .mt-20-m {
 
   @media #{media('<',m)} {
