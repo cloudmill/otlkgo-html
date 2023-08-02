@@ -26,11 +26,9 @@ mixin picture(fileName,lazy)
       srcset=(file.getPath(fileTitle, "webp") + " 1x")
       data-fancybox
       alt=fileTitle
-      class=lazyloading
     )
     img.picture__img(
       src=(file.getPath(fileTitle, fileExtension))
             data-fancybox
        alt=fileTitle
-       class=lazyloading
     )
