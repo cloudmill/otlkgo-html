@@ -15,7 +15,9 @@ import { modal } from './scripts/modal';
 document.addEventListener('DOMContentLoaded', () => {
   fancybox();
   modal();
+  select();
 });
 
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import { select } from './scripts/select';

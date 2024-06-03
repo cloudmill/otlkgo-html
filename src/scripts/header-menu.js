@@ -112,14 +112,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const currentTitle = document.querySelector('.report-hero__title ')
   const headerTextBot = document.querySelector('.header-text__bot ')
-  const headerTextTop = document.querySelector('.header-text__top')
+  const headerTextTop = document.querySelector('.header-text__top');
+  const mainTitle = document.querySelector('[data-main-title]');
 
   if (currentTitle) {
     const titleText = currentTitle.textContent
     headerTextBot.textContent = titleText
+
+    if (!mainTitle){
+      document.querySelector('[data-header-select]').remove();
+    }
   } else {
     headerTextBot.remove()
     headerTextTop.remove()
+
+    if (!mainTitle){
+      document.querySelector('[data-header-select]').remove();
+    }
   }
 
 

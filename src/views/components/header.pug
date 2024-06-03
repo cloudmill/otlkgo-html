@@ -1,3 +1,4 @@
+
 mixin header
   header.header
     .header-container
@@ -13,7 +14,21 @@ mixin header
         .header-text 
           .header-text__top годовой отчет 2022
           .header-text__bot 0
-      .header-col
+      .header-col.right
+        .header-select.header-col__select(data-header-select) 
+          .select.select-wrapper
+            .select__button
+              input.desktop-t(type="text" readonly required value="Годовой отчёт 2023")
+              input.mobile-t(type="text" readonly required value="2023")
+              +header-arrow-svg
+            .select__list.links
+              ul
+                li
+                  a(href="./google.com" target="blank")
+                    p Годовой отчёт 2023
+                li
+                  a(href="./google.com" target="blank")
+                    p Годовой отчёт 2022
         .header-actions
           .header-actions__item.header-actions_search.header-actions_before(data-header-search='') 
             .header-actions__item-icon 
@@ -61,7 +76,21 @@ mixin header-EN
         .header-text 
           .header-text__top Annual Report for 2022
           .header-text__bot 0
-      .header-col
+      .header-col.right
+        .header-select.header-col__select(data-header-select) 
+          .select.select-wrapper
+            .select__button
+              input.desktop-t(type="text" readonly required value="Annual Report 2023")
+              input.mobile-t(type="text" readonly required value="2023")
+              +header-arrow-svg
+            .select__list.links
+              ul
+                li
+                  a(href="./google.com" target="blank")
+                    p Annual Report 2023
+                li
+                  a(href="./google.com" target="blank")
+                    p Annual Report 2022
         .header-actions
           .header-actions__item.header-actions_search.header-actions_before(data-header-search='') 
             .header-actions__item-icon 
@@ -108,7 +137,21 @@ mixin header-CN
         .header-text 
           .header-text__top 2022年年度报告
           .header-text__bot 0
-      .header-col
+      .header-col.right
+        .header-select.header-col__select(data-header-select) 
+          .select.select-wrapper
+            .select__button
+              input.desktop-t(type="text" readonly required value="年度报告 2023")
+              input.mobile-t(type="text" readonly required value="2023")
+              +header-arrow-svg
+            .select__list.links
+              ul
+                li
+                  a(href="./google.com" target="blank")
+                    p 年度报告 2023
+                li
+                  a(href="./google.com" target="blank")
+                    p 年度报告 2022
         .header-actions
           .header-actions__item.header-actions_search.header-actions_before(data-header-search='') 
             .header-actions__item-icon 

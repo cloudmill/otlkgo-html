@@ -45,6 +45,18 @@
         &:nth-child(2) {
             padding-right: 6px;
         }
+
+        &.right{
+            gap: rem(330px);
+
+            @media #{media('>', xl)} {
+                gap: rem(410px);
+            }
+
+            @media #{media('<', t)} {
+                gap: rem(16px);
+            }
+        }
     }
 
     &-burger {
@@ -1344,6 +1356,8 @@
 
 
     }
+
+
 }
 
 

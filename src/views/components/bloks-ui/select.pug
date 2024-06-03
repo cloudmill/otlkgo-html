@@ -1,0 +1,22 @@
+mixin select(options)
+  .select.select-wrapper
+    .select__button
+      input(type="text" readonly required )&attributes(attributes)
+      +accord-arrow-svg
+    .select__list(data-lenis-prevent="true")
+      ul
+        each i in options
+          li
+            p=i
+
+mixin select-links(options)
+  .select.select-wrapper
+    .select__button
+      input(type="text" readonly required )&attributes(attributes)
+      //- +accord-arrow-svg
+    .select__list.links(data-lenis-prevent="true")
+      ul
+        each i in options
+          li
+            a(href="./google.com" target="blank")
+              p=i
